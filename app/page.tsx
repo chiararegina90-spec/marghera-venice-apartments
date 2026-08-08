@@ -13,7 +13,7 @@ const inspiration=[
  {title:'Guide & Eventi',text:'Redentore, Carnevale, Biennale e informazioni pratiche.',image:'/images/redentore.webp',href:'/#journal'}
 ];
 const journal=[
- {title:'Come raggiungere Venezia da Marghera',text:'Bus e treni, orari utili e libertà di rientrare anche di notte.',image:'/images/bus-motion-clean.webp',href:'/come-raggiungere-venezia'},
+ {title:'Come raggiungere Venezia da Marghera',text:'Bus e treni, orari utili e libertà di rientrare anche di notte.',image:'/images/home-come-raggiungere-venezia.webp',href:'/come-raggiungere-venezia'},
  {title:'Riviera del Brenta in un giorno',text:'Ville venete, arte, natura e itinerari a pochi minuti in auto.',image:'/images/veneto-riviera-brenta-final.webp',href:'/guide/riviera-del-brenta'},
  {title:'Venezia con bambini',text:'Musei, attività e consigli per una giornata piacevole in famiglia.',image:'/images/venezia-bambini-museo-storia-naturale.webp',href:'/journal/venezia-con-bambini'}
 ];
