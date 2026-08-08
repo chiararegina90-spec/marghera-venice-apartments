@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #09283f;
+  --gold: #c79f55;
+  --cream: #f8f4ec;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #17242d; }
+::selection { background: var(--gold); color: var(--navy); }
+.hero-overlay { background: linear-gradient(90deg, rgba(4,24,39,.88) 0%, rgba(4,24,39,.52) 48%, rgba(4,24,39,.12) 100%); }
+.card-image { transition: transform .7s ease; }
+.group:hover .card-image { transform: scale(1.035); }
+
+a, button { -webkit-tap-highlight-color: transparent; }
+@media (max-width: 640px) {
+  .hero-overlay { background: linear-gradient(180deg, rgba(4,24,39,.55) 0%, rgba(4,24,39,.84) 100%); }
+}
