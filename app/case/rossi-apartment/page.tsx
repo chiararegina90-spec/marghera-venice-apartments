@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata:Metadata={
@@ -23,6 +24,14 @@ const services = [
   'Fino a 7 ospiti','Due camere','Cucina ampia e attrezzata','Smart TV da 55 pollici',
   'Wi-Fi ad alta velocità','Aria condizionata indipendente','Lavatrice','Biancheria professionale',
   'Terrazza arredata','Area fumatori esterna','Oltre 100 m²','Parcheggio privato','Cuccia e ciotole','Culla o lettino gratuito'
+];
+
+const rossiReviews = [
+  {name:'Sarah',date:'2026',text:'L’appartamento era spazioso, pulitissimo e molto ben attrezzato. Abbiamo apprezzato il parcheggio recintato e la fermata dell’autobus a pochi minuti a piedi. Alessio e Chiara sono stati cordiali, accoglienti e sempre disponibili.'},
+  {name:'Giuseppe',date:'luglio 2025',text:'Abbiamo trascorso un soggiorno fantastico. La fermata dell’autobus per Venezia e il supermercato sono dietro l’angolo. L’appartamento è dotato di tutto il necessario ed è ben attrezzato.'},
+  {name:'P (Som)',date:'ottobre 2025',text:'Appartamento incantevole e spazioso, soprattutto per chi dispone di un’auto. Raggiungere Venezia è stato molto facile in autobus. Chiara è stata molto disponibile e ci ha accolto di persona.'},
+  {name:'Ana',date:'giugno 2026',text:'L’ospitalità e il calore con cui ci hanno accolto sono stati il punto chiave del nostro viaggio. L’alloggio è perfetto e ricco di informazioni utili per visitare i luoghi d’interesse. Ci torneremmo senza dubbio.'},
+  {name:'Summer',date:'aprile 2026',text:'Appartamento vicino alla stazione, ampio e confortevole. Abbiamo ricevuto molti consigli su come muoverci a Venezia, dove mangiare e come acquistare i biglietti. Lo sceglierei di nuovo.'}
 ];
 
 export default function RossiApartment(){
@@ -155,6 +164,8 @@ export default function RossiApartment(){
         </div>
       </div>
     </section>
+
+    <ReviewSection property="Rossi Apartment" reviews={rossiReviews}/>
 
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">

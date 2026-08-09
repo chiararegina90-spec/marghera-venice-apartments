@@ -20,3 +20,38 @@ a, button { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 640px) {
   .hero-overlay { background: linear-gradient(180deg, rgba(4,24,39,.55) 0%, rgba(4,24,39,.84) 100%); }
 }
+
+
+/* Mobile rhythm and overflow — shared across the whole site */
+html, body { max-width: 100%; overflow-x: hidden; }
+main { overflow-x: clip; }
+
+@media (max-width: 767px) {
+  section.py-24,
+  section[class*="py-24"] {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  section.py-20,
+  section[class*="py-20"] {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  section.py-16,
+  section[class*="py-16"] {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  h1, h2 {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .mobile-tight-title {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: .98;
+  }
+}

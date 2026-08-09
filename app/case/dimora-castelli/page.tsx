@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
@@ -43,6 +44,14 @@ const services = [
   'Cuccia e ciotole',
   'Culla o lettino gratuito',
   'Biancheria inclusa',
+];
+
+const castelliReviews = [
+  {name:'Semra',date:'marzo 2026',text:'Raggiungere la casa è stato facile e la fermata dell’autobus è vicinissima. Siamo riusciti a raggiungere il centro di Venezia in circa 15 minuti. Ci siamo sentiti come a casa e il parcheggio proprio all’ingresso è stato molto comodo.'},
+  {name:'Marwa',date:'gennaio 2026',text:'La città è facilmente raggiungibile in autobus e in treno. L’appartamento è pulito, spazioso e i letti sono confortevoli. L’accoglienza è stata calorosa, con informazioni utili e piccole attenzioni da parte degli host.'},
+  {name:'Lee',date:'aprile 2026',text:'Alessio e Chiara conoscono molto bene Venezia e ci hanno dato informazioni utili per orientarci. L’appartamento è molto spazioso e pulito, con tè e caffè per la colazione e un piacevole spazio con giardino.'},
+  {name:'Lynda',date:'2026',text:'L’appartamento era comodo per raggiungere Venezia in autobus. È stato fantastico avere il parcheggio proprio di fronte all’unità. Al nostro arrivo il condizionatore era già acceso: un’attenzione molto apprezzata.'},
+  {name:'Katharina',date:'agosto 2025',text:'Eravamo in quattro con un piccolo cane. L’appartamento era fornito di tutto il necessario, ristrutturato e con aria condizionata. In pochi minuti si raggiunge la fermata dell’autobus per Venezia. Ci torneremo.'}
 ];
 
 export default function DimoraCastelli() {
@@ -225,6 +234,8 @@ export default function DimoraCastelli() {
         </div>
       </div>
     </section>
+
+    <ReviewSection property="Dimora Castelli" reviews={castelliReviews}/>
 
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">

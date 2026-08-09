@@ -32,6 +32,13 @@ const guides = [
     "href": "/guide/lido-di-venezia"
   },
   {
+    "title": "Jesolo",
+    "subtitle": "Spiaggia, mare e vita estiva",
+    "text": "Una giornata sull’Adriatico, raggiungibile in auto o con ATVO da Venezia Mestre.",
+    "image": "/images/guide-jesolo.webp",
+    "href": "/guide/jesolo"
+  },
+  {
     "title": "Pellestrina",
     "subtitle": "Laguna lenta e biciclette",
     "text": "Laguna lenta e biciclette",
@@ -111,7 +118,7 @@ export default function GuideIndex(){
           <Link href="/" className="hover:text-gold">Home</Link><span>›</span><span className="text-gold">Guide</span>
         </nav>
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Marghera Venice Guide</p>
-        <h1 className="mt-4 max-w-4xl font-serif text-6xl leading-none md:text-8xl">Guide per vivere Venezia e il Veneto con più consapevolezza.</h1>
+        <h1 className="mt-4 max-w-4xl break-words font-serif text-5xl leading-[.98] sm:text-6xl md:text-8xl">Guide per vivere Venezia e il Veneto con più consapevolezza.</h1>
         <p className="mt-6 max-w-3xl text-xl text-white/75">Itinerari, informazioni pratiche e consigli per organizzare il viaggio senza perdere tempo tra pagine sparse.</p>
       </div>
     </section>
