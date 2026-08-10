@@ -10,7 +10,7 @@ const inspiration=[
  {title:'Scopri Venezia',text:'Itinerari, isole, eventi e consigli per vivere la città con curiosità.',image:'/images/scopri-venezia-michael-heise.webp',href:'/scopri-venezia'},
  {title:'Scopri il Veneto',text:'Riviera del Brenta, colline del Prosecco e città d’arte.',image:'/images/valdobbiadene.webp',href:'/scopri-il-veneto'},
  {title:'Esperienze',text:'Gondola, NCC, cantine e attività selezionate.',image:'/images/gondola.webp',href:'/#ispirazione'},
- {title:'Guide & Eventi',text:'Redentore, Carnevale, Biennale e informazioni pratiche.',image:'/images/redentore.webp',href:'/#journal'}
+ {title:'Guide & Eventi',text:'Redentore, Carnevale, Biennale e informazioni pratiche.',image:'/images/redentore.webp',href:'/journal'}
 ];
 const journal=[
  {title:'Come raggiungere Venezia da Marghera',text:'Bus e treni, orari utili e libertà di rientrare anche di notte.',image:'/images/home-come-raggiungere-venezia.webp',href:'/come-raggiungere-venezia'},
@@ -34,7 +34,7 @@ export default function Home(){return <><Header/><main>
   fill
   sizes="(min-width:1024px) 33vw, 100vw"
   className={`object-cover ${x.title === 'Come raggiungere Venezia da Marghera' ? 'object-top' : 'object-center'}`}
-/></div><div className="p-7"><h3 className="font-serif text-3xl text-navy">{x.title}</h3><p className="mt-3 text-slate-600">{x.text}</p><Link href={x.href} className="mt-5 inline-block font-bold text-gold transition hover:translate-x-1">Leggi la guida →</Link></div></article>)}</div></div></section>
+/></div><div className="p-7"><h3 className="font-serif text-3xl text-navy">{x.title}</h3><p className="mt-3 text-slate-600">{x.text}</p><Link href={x.href} className="mt-5 inline-block font-bold text-gold transition hover:translate-x-1">Leggi la guida →</Link></div></article>)}</div><div className="mt-10 text-center"><Link href="/journal" className="inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-navy/90">Scopri tutto il Journal →</Link></div></div></section>
 <section id="mappa" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="Tutto a portata di mano" title="Una base, moltissime destinazioni" text="La mappa illustrata mostra la reale disposizione di Venezia, della laguna e delle principali località del Veneto."/><div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-cream shadow-soft"><Image src="/images/mappa-veneto-definitiva.webp" alt="Mappa illustrata delle principali destinazioni raggiungibili da Marghera, tra Venezia, laguna e Veneto" width={1536} height={1024} className="h-auto w-full"/></div></div></section>
 <section id="contatto-diretto" className="scroll-mt-20 bg-navy py-20 text-center text-white"><div className="mx-auto max-w-3xl px-5"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">Contatto diretto</p><h2 className="mt-3 font-serif text-5xl">Raccontaci il tuo viaggio</h2><p className="mt-5 text-lg text-white/75">Nessuna prenotazione automatica: rispondiamo personalmente via WhatsApp o email.</p><a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-navy">Richiedi disponibilità</a></div></section>
 </main><Footer/></>}
