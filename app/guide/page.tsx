@@ -118,7 +118,7 @@ export default function GuideIndex(){
           <Link href="/" className="hover:text-gold">Home</Link><span>›</span><span className="text-gold">Guide</span>
         </nav>
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Marghera Venice Guide</p>
-        <h1 className="mt-4 max-w-4xl break-words font-serif text-5xl leading-[.98] sm:text-6xl md:text-8xl">Guide per vivere Venezia e il Veneto con più consapevolezza.</h1>
+        <h1 className="mt-4 max-w-4xl font-serif text-[clamp(2.75rem,11vw,4rem)] leading-[.98] tracking-[-0.02em] sm:text-6xl md:text-8xl">Guide per vivere Venezia e il Veneto al meglio.</h1>
         <p className="mt-6 max-w-3xl text-xl text-white/75">Itinerari, informazioni pratiche e consigli per organizzare il viaggio senza perdere tempo tra pagine sparse.</p>
       </div>
     </section>
