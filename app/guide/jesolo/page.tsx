@@ -65,7 +65,8 @@ export default function JesoloGuide(){
         <h2 className="mt-3 font-serif text-5xl text-navy">Scegli l’auto per la massima libertà, il bus per non pensare al parcheggio</h2>
         <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">Se viaggi con bambini, molte borse o attrezzatura da spiaggia, l’auto è spesso la soluzione più pratica. Se preferisci lasciare l’auto parcheggiata all’appartamento, raggiungi Venezia Mestre e prosegui con ATVO.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Link href="/guide" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Tutte le guide</Link>
+          <a href="https://www.visitjesolo.it/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Eventi e informazioni su Visit Jesolo ↗</a>
+          <Link href="/guide" className="rounded-full border border-navy px-7 py-4 font-bold text-navy">Tutte le guide</Link>
           <Link href="/scopri-il-veneto" className="rounded-full border border-navy px-7 py-4 font-bold text-navy">Scopri il Veneto</Link>
         </div>
       </div>

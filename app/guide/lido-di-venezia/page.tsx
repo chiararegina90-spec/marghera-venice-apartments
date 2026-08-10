@@ -167,6 +167,19 @@ export default function LidoGuide(){
       </div>
     </section>
 
+
+    <section className="bg-cream py-16">
+      <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
+        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Informazioni aggiornate</p>
+        <h2 className="mt-3 font-serif text-5xl text-navy">Eventi e vita del Lido</h2>
+        <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">Per eventi, servizi e informazioni sull’isola consulta Visit Lido. Se programmi la visita durante la Mostra Internazionale d’Arte Cinematografica, trovi programma e informazioni aggiornate sul sito ufficiale della Biennale Cinema 2026.</p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="https://www.visitlido.it/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Visit Lido ↗</a>
+          <a href="https://www.labiennale.org/it/cinema/2026" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-7 py-4 font-bold text-navy">Biennale Cinema 2026 ↗</a>
+        </div>
+      </div>
+    </section>
+
     <section className="py-16">
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
         <SectionTitle eyebrow="Domande frequenti" title="Prima di visitare il Lido" text="Risposte rapide ai dubbi più comuni."/>

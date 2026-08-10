@@ -163,6 +163,10 @@ export const guideData = {
     ],
     "officialLinks": [
       [
+        "Visit Pellestrina",
+        "https://visitpellestrina.it/"
+      ],
+      [
         "Terminal Fusina",
         "https://www.terminalfusina.it/"
       ],
@@ -338,8 +342,8 @@ export const guideData = {
         "https://www.arrivaveneto.it/orari-e-percorsi/"
       ],
       [
-        "Comune di Chioggia",
-        "https://www.chioggia.org/"
+        "Visit Chioggia",
+        "https://www.visitchioggia.com/it/"
       ]
     ]
   },
@@ -837,8 +841,8 @@ export const guideData = {
     ],
     "officialLinks": [
       [
-        "Turismo Treviso",
-        "https://www.turismotreviso.it/"
+        "Visit Treviso",
+        "https://www.visittreviso.it/"
       ]
     ]
   },
@@ -1004,8 +1008,8 @@ export const guideData = {
     ],
     "officialLinks": [
       [
-        "Turismo Verona",
-        "https://www.visitverona.it/"
+        "Visit Verona",
+        "https://www.visitverona.it/it"
       ],
       [
         "Arena di Verona",
