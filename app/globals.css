@@ -46,8 +46,9 @@ main { overflow-x: clip; }
   }
 
   h1, h2 {
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
     word-break: normal;
+    hyphens: none;
   }
 
   .mobile-tight-title {

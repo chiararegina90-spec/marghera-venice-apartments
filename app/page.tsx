@@ -9,7 +9,7 @@ import SectionTitle from '@/components/SectionTitle';
 const inspiration=[
  {title:'Scopri Venezia',text:'Itinerari, isole, eventi e consigli per vivere la città con curiosità.',image:'/images/scopri-venezia-michael-heise.webp',href:'/scopri-venezia'},
  {title:'Scopri il Veneto',text:'Riviera del Brenta, colline del Prosecco e città d’arte.',image:'/images/valdobbiadene.webp',href:'/scopri-il-veneto'},
- {title:'Esperienze',text:'Gondola, NCC, cantine e attività selezionate.',image:'/images/gondola.webp',href:'/#ispirazione'},
+ {title:'Esperienze',text:'Gondola, NCC, cantine e attività selezionate.',image:'/images/gondola.webp',href:'/collaborazioni'},
  {title:'Guide & Eventi',text:'Redentore, Carnevale, Biennale e informazioni pratiche.',image:'/images/redentore.webp',href:'/journal'}
 ];
 const journal=[

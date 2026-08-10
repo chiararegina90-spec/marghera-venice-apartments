@@ -47,7 +47,7 @@ export default function RossiApartment(){
             <span className="text-gold">Rossi Apartment</span>
           </nav>
           <p className="text-xs font-black uppercase tracking-[.25em] text-gold">Fino a 7 ospiti · Marghera</p>
-          <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Rossi Apartment</h1>
+          <h1 className="mt-4 font-serif text-5xl leading-none sm:text-6xl md:text-8xl">Rossi Apartment</h1>
           <p className="mt-6 max-w-2xl text-xl text-white/85">Oltre 100 m² di comfort per vivere Venezia in totale libertà, con spazi ampi pensati per famiglie e gruppi fino a 7 ospiti.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Richiedi disponibilità</a>
@@ -71,7 +71,7 @@ export default function RossiApartment(){
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionTitle eyebrow="La casa" title="Ampia, luminosa, pensata per essere vissuta" text="Rossi Apartment accoglie famiglie e gruppi con ambienti comodi, una grande cucina e tutti i servizi necessari per un soggiorno senza pensieri."/>
         <div className="grid gap-4 lg:grid-cols-12">
-          {gallery.map(([src,alt],index)=><div key={src} className={`relative overflow-hidden rounded-3xl ${index===0?'h-[460px] lg:col-span-7 lg:row-span-2':'h-[220px] lg:col-span-5'}`}>
+          {gallery.map(([src,alt],index)=><div key={src} className={`relative overflow-hidden rounded-3xl ${index===0?'h-[340px] sm:h-[420px] lg:h-[460px] lg:col-span-7 lg:row-span-2':'h-[220px] sm:h-[240px] lg:h-[220px] lg:col-span-5'}`}>
             <Image src={src} alt={alt} fill sizes="(min-width:1024px) 55vw, 100vw" className="object-cover transition duration-700 hover:scale-[1.025]"/>
           </div>)}
         </div>
@@ -82,7 +82,7 @@ export default function RossiApartment(){
       <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Sentiti a casa</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Ogni ambiente ha una funzione precisa</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Ogni ambiente ha una funzione precisa</h2>
           <div className="mt-8 space-y-6 text-lg text-slate-600">
             <p><strong className="text-navy">Cucina ampia e abitabile.</strong> Pentole, stoviglie, lavastoviglie, forno, microonde, bollitore, tostapane e macchina Nespresso.</p>
             <p><strong className="text-navy">Soggiorno per stare insieme.</strong> Grande divano, tavolo allungabile e Smart TV da 55 pollici con servizi di streaming.</p>
@@ -95,7 +95,7 @@ export default function RossiApartment(){
             <p className="mt-2 text-slate-600">Lascia l'auto nel parcheggio privato, raggiungi Venezia con i mezzi pubblici e rientra con calma: i collegamenti sono disponibili anche nelle ore notturne.</p>
           </div>
         </div>
-        <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
+        <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
           <Image src="/images/rossi-page-kitchen-2.webp" alt="Cucina di Rossi Apartment" fill className="object-cover"/>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function RossiApartment(){
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Posizione strategica</p>
-          <h2 className="mt-3 font-serif text-5xl">Venezia quando vuoi, il Veneto quando ti va</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Venezia quando vuoi, il Veneto quando ti va</h2>
           <p className="mt-6 text-lg text-white/75">La fermata Sant'Antonio Municipio è vicina all'appartamento. Le linee diurne e notturne collegano Marghera a Venezia 24 ore su 24; la stazione di Venezia Mestre è raggiungibile a piedi dall'uscita Via Ulloa.</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -170,7 +170,7 @@ export default function RossiApartment(){
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Rossi Apartment</p>
-        <h2 className="mt-3 font-serif text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
+        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
         <p className="mt-5 text-lg text-slate-600">Scrivici direttamente: nessuna prenotazione automatica, riceverai una risposta personale.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">WhatsApp</a>
@@ -184,7 +184,7 @@ export default function RossiApartment(){
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come raggiungerci</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Comodo in auto, treno o aereo</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Comodo in auto, treno o aereo</h2>
           <p className="mt-5 text-lg text-slate-600">Rossi Apartment dispone di parcheggio privato. Dalla stazione di Venezia Mestre puoi arrivare a piedi, in tram T2 o in taxi; dagli aeroporti puoi raggiungere Mestre con taxi o navetta.</p>
           <Link href="/come-raggiungere-venezia" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Come arrivare: trasporti, aeroporti e Venezia →</Link>
         </div>

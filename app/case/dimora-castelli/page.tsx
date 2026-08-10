@@ -21,11 +21,11 @@ const gallery = [
 ];
 
 const galleryLayout = [
-  'h-[616px] lg:col-span-7 lg:row-span-2',
-  'h-[300px] lg:col-span-5',
-  'h-[300px] lg:col-span-5',
-  'h-[300px] lg:col-span-7',
-  'h-[300px] lg:col-span-5',
+  'h-[360px] sm:h-[480px] lg:h-[616px] lg:col-span-7 lg:row-span-2',
+  'h-[240px] sm:h-[280px] lg:h-[300px] lg:col-span-5',
+  'h-[240px] sm:h-[280px] lg:h-[300px] lg:col-span-5',
+  'h-[240px] sm:h-[280px] lg:h-[300px] lg:col-span-7',
+  'h-[240px] sm:h-[280px] lg:h-[300px] lg:col-span-5',
 ];
 
 const services = [
@@ -67,7 +67,7 @@ export default function DimoraCastelli() {
             <span className="text-gold">Dimora Castelli</span>
           </nav>
           <p className="text-xs font-black uppercase tracking-[.25em] text-gold">Circa 60 m² · fino a 5 ospiti</p>
-          <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Dimora Castelli</h1>
+          <h1 className="mt-4 font-serif text-5xl leading-none sm:text-6xl md:text-8xl">Dimora Castelli</h1>
           <p className="mt-6 max-w-3xl text-xl text-white/85">Una casa silenziosa, immersa nel verde e pensata per adattarsi ai tuoi ritmi, a pochi minuti da Venezia.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Richiedi disponibilità</a>
@@ -108,7 +108,7 @@ export default function DimoraCastelli() {
       <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">La casa che si adatta ai tuoi ritmi</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Pratica, silenziosa e circondata dal verde</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Pratica, silenziosa e circondata dal verde</h2>
           <div className="mt-8 space-y-6 text-lg text-slate-600">
             <p><strong className="text-navy">Accesso semplice.</strong> La casa si trova al piano terra rialzato: una soluzione comoda per chi ha difficoltà motorie, viaggia con passeggini oppure porta valigie grandi e pesanti.</p>
             <p><strong className="text-navy">Finestre sul verde.</strong> L'edificio è circondato dalla vegetazione e tutte le finestre sono dotate di zanzariere, così puoi arieggiare gli ambienti anche nelle sere estive.</p>
@@ -120,7 +120,7 @@ export default function DimoraCastelli() {
             <p className="mt-2 text-slate-600">Approfitta del giardino condominiale sul retro per leggere qualche pagina, prendere aria o stendere il bucato durante i soggiorni più lunghi.</p>
           </div>
         </div>
-        <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
+        <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
           <Image src="/images/dimora-page-kitchen-2.webp" alt="Cucina di Dimora Castelli" fill className="object-cover"/>
         </div>
       </div>
@@ -147,12 +147,12 @@ export default function DimoraCastelli() {
 
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
-        <div className="relative min-h-[520px] overflow-hidden rounded-[2rem]">
+        <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem]">
           <Image src="/images/dimora-castelli-giardino-reale.webp" alt="Giardino condominiale reale di Dimora Castelli" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover object-center"/>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Un angolo verde</p>
-          <h2 className="mt-3 font-serif text-5xl">Il giardino sul retro</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Il giardino sul retro</h2>
           <p className="mt-6 text-lg text-white/75">L'accesso al giardino condominiale aggiunge un piccolo spazio di libertà alla casa: puoi fermarti a leggere un libro, prendere aria o utilizzare l'area per stendere i panni.</p>
           <p className="mt-5 text-white/75">Il verde che circonda l'edificio rende l'atmosfera più tranquilla e piacevole durante tutto l'anno.</p>
         </div>
@@ -206,12 +206,12 @@ export default function DimoraCastelli() {
 
     <section className="bg-cream py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
-        <div className="relative min-h-[500px] overflow-hidden rounded-[2rem] shadow-soft">
+        <div className="relative min-h-[350px] sm:min-h-[440px] lg:min-h-[500px] overflow-hidden rounded-[2rem] shadow-soft">
           <Image src="/images/dimora-castelli-edificio-storia.webp" alt="Edificio storico di Dimora Castelli" fill className="object-cover"/>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Un edificio con storia</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Nel cuore della Città Giardino</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Nel cuore della Città Giardino</h2>
           <p className="mt-6 text-lg text-slate-600">Dimora Castelli si trova in una zona che racconta una parte importante della storia urbana di Marghera. All'inizio del Novecento il quartiere residenziale fu progettato secondo il modello della <strong>Città Giardino</strong>, ispirato alle Garden Cities inglesi: viali alberati, spazi verdi, villini e abitazioni pensate per tenere distinta la vita residenziale dalla nuova area industriale e portuale.</p>
           <p className="mt-5 text-slate-600">Via Castelli si inserì in questo disegno urbano, in posizione strategica tra il centro di Marghera, Mestre e le direttrici verso la Riviera del Brenta. Durante la Seconda Guerra Mondiale la vicinanza a Porto Marghera e alla rete ferroviaria rese l'intera zona particolarmente esposta ai bombardamenti.</p>
           <p className="mt-5 text-slate-600">Nel dopoguerra il quartiere fu ricostruito e trasformato insieme alla crescita della città. Oggi conserva tracce dell'idea originaria di Città Giardino, affiancate a servizi, negozi e collegamenti che rendono questa parte di Marghera una base pratica e autentica per scoprire Venezia e il Veneto.</p>
@@ -223,7 +223,7 @@ export default function DimoraCastelli() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Posizione strategica</p>
-          <h2 className="mt-3 font-serif text-5xl">Venezia e il Veneto, senza rinunciare alla tranquillità</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Venezia e il Veneto, senza rinunciare alla tranquillità</h2>
           <p className="mt-6 text-lg text-white/75">La fermata Sant'Antonio Municipio è vicina alla casa e offre collegamenti diurni e notturni con Venezia. La stazione di Venezia Mestre è raggiungibile a piedi dall'uscita Via Ulloa.</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -240,7 +240,7 @@ export default function DimoraCastelli() {
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Dimora Castelli</p>
-        <h2 className="mt-3 font-serif text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
+        <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
         <p className="mt-5 text-lg text-slate-600">Scrivici direttamente: nessuna prenotazione automatica, riceverai una risposta personale.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">WhatsApp</a>
@@ -254,7 +254,7 @@ export default function DimoraCastelli() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come raggiungerci</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Facile da raggiungere con qualsiasi mezzo</h2>
+          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Facile da raggiungere con qualsiasi mezzo</h2>
           <p className="mt-5 text-lg text-slate-600">Dimora Castelli dispone di parcheggio gratuito. Dalla stazione di Venezia Mestre puoi arrivare a piedi, con il tram T2 o in taxi; dagli aeroporti sono disponibili navette verso Mestre.</p>
           <Link href="/come-raggiungere-venezia" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Come arrivare: trasporti, aeroporti e Venezia →</Link>
         </div>
