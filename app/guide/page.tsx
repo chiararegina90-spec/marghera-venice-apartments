@@ -32,6 +32,13 @@ const guides = [
     "href": "/guide/lido-di-venezia"
   },
   {
+    "title": "Veneto in bicicletta",
+    "subtitle": "Cicloturismo tra laguna, colline e montagne",
+    "text": "Itinerari per pedalare tra fiumi, vigneti, borghi, Dolomiti e grandi ciclovie del Veneto.",
+    "image": "/images/guide-veneto-bicicletta.webp",
+    "href": "/guide/veneto-in-bicicletta"
+  },
+  {
     "title": "Jesolo",
     "subtitle": "Spiaggia, mare e vita estiva",
     "text": "Una giornata sull’Adriatico, raggiungibile in auto o con ATVO da Venezia Mestre.",
