@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SocialLinks from './SocialLinks';
 
 export default function Footer(){
   return <footer id="contatti" className="bg-navy py-16 text-white">
@@ -29,6 +30,8 @@ export default function Footer(){
           <a className="break-all" href="mailto:rossiapartmentvenice@gmail.com">rossiapartmentvenice@gmail.com</a>
           <a className="break-all" href="mailto:dimoracastelli22@gmail.com">dimoracastelli22@gmail.com</a>
         </div>
+        <p className="mt-6 text-xs font-black uppercase tracking-[.18em] text-gold">Seguici</p>
+        <SocialLinks className="mt-3 text-white/80" showWhatsApp compact/>
       </div>
       <div>
         <h4 className="font-bold text-gold">Codici CIN</h4>
