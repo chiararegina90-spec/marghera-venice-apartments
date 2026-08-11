@@ -6,7 +6,7 @@ export default function Footer(){
     <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-2 xl:grid-cols-4 lg:px-8">
       <div>
         <div className="flex items-center gap-3">
-          <Image src="/images/logo.png" alt="Marghera Venice Apartments" width={64} height={52} className="rounded-lg bg-white p-1"/>
+          <Image src="/images/logo.png" alt="Marghera Venice Apartments" width={58} height={58} className="h-[58px] w-[58px] rounded-full bg-cream object-contain"/>
           <div className="font-serif tracking-widest">MARGHERA<br/><span className="text-xs">VENICE APARTMENTS</span></div>
         </div>
         <p className="mt-5 max-w-sm text-white/70">La tua casa per scoprire Venezia e il Veneto, con parcheggio privato, collegamenti H24 e accoglienza Pet & Family.</p>

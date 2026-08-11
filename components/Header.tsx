@@ -22,7 +22,7 @@ export default function Header(){
   return <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur-xl">
     <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 lg:px-8">
       <Link href="/" className="flex items-center gap-3 text-white" onClick={()=>setOpen(false)}>
-        <Image src="/images/logo.png" alt="Marghera Venice Apartments" width={66} height={52} className="rounded-lg bg-white p-1"/>
+        <Image src="/images/logo.png" alt="Marghera Venice Apartments" width={58} height={58} priority className="h-[58px] w-[58px] rounded-full bg-cream object-contain shadow-sm"/>
         <span className="hidden font-serif tracking-[.16em] sm:block">MARGHERA<br/><span className="text-xs tracking-[.25em]">VENICE APARTMENTS</span></span>
       </Link>
 
