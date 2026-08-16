@@ -11,7 +11,7 @@ export const metadata:Metadata = {
   openGraph:{
     title:'Come arrivare e come raggiungere Venezia',
     description:'Indicazioni chiare per pianificare il viaggio verso gli appartamenti e gli spostamenti a Venezia.',
-    images:['/images/home-come-raggiungere-venezia.webp']
+    images:['/images/come-arrivare-hero-originale.webp']
   },
   alternates:{canonical:'/come-raggiungere-venezia',languages:{'it-IT':'/come-raggiungere-venezia','en-GB':'/en/getting-to-venice','de-DE':'/de/getting-to-venice','fr-FR':'/fr/getting-to-venice','es-ES':'/es/getting-to-venice','zh-CN':'/zh/getting-to-venice','x-default':'/come-raggiungere-venezia'}},
 twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
@@ -60,7 +60,7 @@ const faq = [
 export default function Mobilita(){
   return <><Header/><main>
     <section className="relative min-h-[80vh] overflow-hidden pt-20">
-      <Image src="/images/home-come-raggiungere-venezia.webp" alt="Autobus e mezzi pubblici per raggiungere Venezia da Marghera" fill priority sizes="100vw" className="object-cover"/>
+      <Image src="/images/come-arrivare-hero-originale.webp" alt="Autobus e mezzi pubblici per raggiungere Venezia da Marghera" fill priority sizes="100vw" className="object-cover object-top"/>
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20"/>
       <div className="relative mx-auto flex min-h-[calc(80vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8">
         <div className="max-w-4xl text-white">
@@ -194,7 +194,7 @@ export default function Mobilita(){
         <SectionTitle eyebrow="FAQ trasporti" title="Domande frequenti" text="Le informazioni operative su check-in, check-out e deposito bagagli si trovano invece nella pagina FAQ del soggiorno."/>
         <div className="space-y-4">
           {faq.map(([q,a])=><details key={q} className="group rounded-3xl border border-slate-200 bg-white p-6">
-            <summary className="cursor-pointer list-none font-serif text-2xl text-navy">{q}<span className="float-right text-gold group-open:rotate-45">+</span></summary>
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-2xl text-navy"><span className="min-w-0">{q}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary>
             <p className="mt-4 text-slate-600">{a}</p>
           </details>)}
         </div>

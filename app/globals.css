@@ -105,3 +105,26 @@ img, svg { max-width: 100%; }
     line-height: 1.2;
   }
 }
+
+/* Long translated text safety — prevents visual collisions in DE/FR/ES/ZH */
+h1, h2, h3, summary, a, button {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.hero-copy,
+.hero-copy > * {
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  h1, h2 { text-wrap: balance; }
+}
+
+/* Buttons may wrap in translated languages instead of overflowing their card/hero. */
+a[class*="rounded-full"],
+button[class*="rounded-full"] {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+}

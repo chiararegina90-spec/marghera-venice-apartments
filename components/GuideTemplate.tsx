@@ -145,7 +145,7 @@ export default function GuideTemplate({data}:{data:GuideData}){
         <SectionTitle eyebrow="Domande frequenti" title={`Prima di visitare ${data.title}`} text="Risposte rapide ai dubbi più comuni."/>
         <div className="space-y-4">
           {data.faq.map(([question,answer])=><details key={question} className="group rounded-3xl border border-slate-200 bg-white p-6">
-            <summary className="cursor-pointer list-none font-serif text-2xl text-navy">{question}<span className="float-right text-gold group-open:rotate-45">+</span></summary>
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-2xl text-navy"><span className="min-w-0">{question}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary>
             <p className="mt-4 max-w-4xl text-slate-600">{answer}</p>
           </details>)}
         </div>

@@ -72,7 +72,7 @@ export default function FAQ(){
           <SectionTitle eyebrow="FAQ" title={group.title} text="Le richieste soggette a disponibilità devono essere concordate direttamente con noi."/>
           <div className="space-y-4">
             {group.items.map(([q,a])=><details key={q} className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-              <summary className="cursor-pointer list-none font-serif text-2xl text-navy">{q}<span className="float-right text-gold group-open:rotate-45">+</span></summary>
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-2xl text-navy"><span className="min-w-0">{q}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary>
               <p className="mt-4 text-slate-600">{a}</p>
             </details>)}
           </div>

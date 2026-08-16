@@ -11,10 +11,10 @@ export const metadata:Metadata = {
   openGraph:{
     title:'Getting here and reaching Venice from Marghera',
     description:'Practical directions for reaching our apartments and travelling easily from Marghera to Venice.',
-    images:[{url:'/images/home-come-raggiungere-venezia.webp',alt:'Public transport connections between Marghera and Venice'}],
+    images:[{url:'/images/come-arrivare-hero-originale.webp',alt:'Public transport connections between Marghera and Venice'}],
     type:'website'
   },
-  twitter:{card:'summary_large_image',title:'Getting to Venice from Marghera',description:'Bus, train, airport and parking information for an easy stay near Venice.',images:['/images/home-come-raggiungere-venezia.webp']},
+  twitter:{card:'summary_large_image',title:'Getting to Venice from Marghera',description:'Bus, train, airport and parking information for an easy stay near Venice.',images:['/images/come-arrivare-hero-originale.webp']},
   alternates:{canonical:'/en/getting-to-venice',languages:{'it-IT':'/come-raggiungere-venezia','en-GB':'/en/getting-to-venice','de-DE':'/de/getting-to-venice','fr-FR':'/fr/getting-to-venice','es-ES':'/es/getting-to-venice','zh-CN':'/zh/getting-to-venice','x-default':'/come-raggiungere-venezia'}}
 };
 
@@ -62,7 +62,7 @@ const faq = [
 export default function Mobilita(){
   return <><Header lang="en"/><main>
     <section className="relative min-h-[80vh] overflow-hidden pt-20">
-      <Image src="/images/home-come-raggiungere-venezia.webp" alt="Bus and public transport connections from Marghera to Venice" fill priority sizes="100vw" className="object-cover"/>
+      <Image src="/images/come-arrivare-hero-originale.webp" alt="Bus and public transport connections from Marghera to Venice" fill priority sizes="100vw" className="object-cover object-top"/>
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20"/>
       <div className="relative mx-auto flex min-h-[calc(80vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8">
         <div className="max-w-4xl text-white">
@@ -196,7 +196,7 @@ export default function Mobilita(){
         <SectionTitle eyebrow="Transport FAQ" title="Frequently asked questions" text="For check-in, check-out, luggage storage and stay-related information, see our main FAQ page."/>
         <div className="space-y-4">
           {faq.map(([q,a])=><details key={q} className="group rounded-3xl border border-slate-200 bg-white p-6">
-            <summary className="cursor-pointer list-none font-serif text-2xl text-navy">{q}<span className="float-right text-gold group-open:rotate-45">+</span></summary>
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-2xl text-navy"><span className="min-w-0">{q}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary>
             <p className="mt-4 text-slate-600">{a}</p>
           </details>)}
         </div>
