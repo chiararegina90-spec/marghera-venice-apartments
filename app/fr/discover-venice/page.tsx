@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import {LocalizedRichPage} from '@/components/LocalizedRich';
-import {richPages} from '@/data/localized-rich';
-export const metadata:Metadata={title:'Découvrir Venise',description:richPages.fr['discover-venice'].subtitle,alternates:languageAlternates('/fr/discover-venice'),openGraph:{type:'website',images:[richPages.fr['discover-venice'].hero]},twitter:{card:'summary_large_image',images:[richPages.fr['discover-venice'].hero]}};
-export default function Page(){return <LocalizedRichPage lang="fr" data={richPages.fr['discover-venice']}/>}
+import {LocalizedDiscoverVeniceFull} from '@/components/LocalizedParityPages';
+import {veniceParity} from '@/data/parity-pages';
+export const metadata:Metadata={title:'Découvrir Venise',description:veniceParity['fr'].heroText,alternates:languageAlternates('/fr/discover-venice'),openGraph:{type:'website',images:['/images/scopri-venezia-michael-heise.webp']},twitter:{card:'summary_large_image',images:['/images/scopri-venezia-michael-heise.webp']}};
+export default function Page(){return <LocalizedDiscoverVeniceFull lang="fr" data={veniceParity['fr']}/>}

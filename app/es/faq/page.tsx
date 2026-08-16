@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import {LocalizedRichPage} from '@/components/LocalizedRich';
-import {richPages} from '@/data/localized-rich';
-export const metadata:Metadata={title:'Preguntas frecuentes',description:richPages.es['faq'].subtitle,alternates:languageAlternates('/es/faq'),openGraph:{type:'website',images:[richPages.es['faq'].hero]},twitter:{card:'summary_large_image',images:[richPages.es['faq'].hero]}};
-export default function Page(){return <LocalizedRichPage lang="es" data={richPages.es['faq']}/>}
+import {LocalizedFAQFull} from '@/components/LocalizedParityPages';
+import {faqParity} from '@/data/parity-pages';
+export const metadata:Metadata={title:'Preguntas frecuentes',description:faqParity['es'].subtitle,alternates:languageAlternates('/es/faq'),openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
+export default function Page(){return <LocalizedFAQFull lang="es" data={faqParity['es']}/>}

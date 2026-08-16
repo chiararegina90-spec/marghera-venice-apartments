@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import {LocalizedRichPage} from '@/components/LocalizedRich';
-import {richPages} from '@/data/localized-rich';
-export const metadata:Metadata={title:'Rejoindre Venise depuis Marghera',description:richPages.fr['getting-to-venice'].subtitle,alternates:languageAlternates('/fr/getting-to-venice'),openGraph:{type:'website',images:[richPages.fr['getting-to-venice'].hero]},twitter:{card:'summary_large_image',images:[richPages.fr['getting-to-venice'].hero]}};
-export default function Page(){return <LocalizedRichPage lang="fr" data={richPages.fr['getting-to-venice']}/>}
+import {LocalizedGettingFull} from '@/components/LocalizedParityPages';
+import {gettingParity} from '@/data/parity-pages';
+export const metadata:Metadata={title:'Rejoindre Venise',description:gettingParity['fr'].heroText,alternates:languageAlternates('/fr/getting-to-venice'),openGraph:{type:'website',images:['/images/home-come-raggiungere-venezia.webp']},twitter:{card:'summary_large_image',images:['/images/home-come-raggiungere-venezia.webp']}};
+export default function Page(){return <LocalizedGettingFull lang="fr" data={gettingParity['fr']}/>}
