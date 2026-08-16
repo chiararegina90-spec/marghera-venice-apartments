@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Dimora Castelli',
   description: 'Dimora Castelli in Marghera near Venice: approx. 60 m² for up to 5 guests, free private parking, access to a shared garden and convenient day-and-night connections to Venice.',
   openGraph:{
-    title:'Dimora Castelli | Up to 5 guests vicino a Venezia',
+    title:'Dimora Castelli | Up to 5 guests near Venice',
     description:'A welcoming apartment in Marghera with free private parking, access to a shared garden and convenient connections to Venice.',
     images:[{url:'/images/dimora-page-hero.webp',alt:'Bright bedroom at Dimora Castelli in Marghera near Venice'}]
   },
@@ -23,7 +23,7 @@ const gallery = [
   ['/images/dimora-page-hero.webp', 'Bright double bedroom at Dimora Castelli in Marghera near Venice'],
   ['/images/dimora-page-twin.webp', 'Second bedroom at Dimora Castelli with single beds'],
   ['/images/dimora-page-bathroom.webp', 'Modern bathroom with shower at Dimora Castelli'],
-  ['/images/dimora-page-kitchen.webp', 'Fully equipped kitchenmente attrezzata di Dimora Castelli'],
+  ['/images/dimora-page-kitchen.webp', 'Fully equipped kitchen at Dimora Castelli'],
   ['/images/dimora-page-sofabed.webp', 'Bedroom at Dimora Castelli with double bed and sofa bed'],
 ];
 
@@ -89,7 +89,7 @@ export default function DimoraCastelli() {
         <div className="rounded-2xl bg-white p-5 shadow-soft"><div className="text-3xl font-black text-gold">60</div><h2 className="mt-3 font-serif text-2xl text-navy">Approx. 60 m²</h2><p className="mt-2 text-sm text-slate-600">Bright, well-organised spaces with a cosy feel.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><CarIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Private parking</h2><p className="mt-2 text-sm text-slate-600">Convenient for guests travelling by car.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><MoonIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Venice day & night</h2><p className="mt-2 text-sm text-slate-600">Day and night public transport connections.</p></div>
-        <div className="rounded-2xl bg-white p-5 shadow-soft"><PawIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Pet Friendly</h2><p className="mt-2 text-sm text-slate-600">Pet bed and bowls disponibili.</p></div>
+        <div className="rounded-2xl bg-white p-5 shadow-soft"><PawIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Pet Friendly</h2><p className="mt-2 text-sm text-slate-600">Pet bed and bowls available.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><BabyIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Family Friendly</h2><p className="mt-2 text-sm text-slate-600">Cot or toddler bed with linen available.</p></div>
       </div>
     </section>

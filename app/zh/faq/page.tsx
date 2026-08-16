@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPageZh from '@/components/LocalizedPageZh';
-export const metadata:Metadata={title:'常见问题',description:'预订前最常见的问题：入住、停车、家庭、宠物、交通与住宿服务。',alternates:{canonical:'/zh/faq',languages:{'it-IT':'/faq','en-GB':'/en/faq','de-DE':'/de/faq','fr-FR':'/fr/faq','es-ES':'/es/faq','zh-CN':'/zh/faq','x-default':'/faq'}},openGraph:{title:'常见问题',description:'预订前最常见的问题：入住、停车、家庭、宠物、交通与住宿服务。',url:'/zh/faq',locale:'zh_CN',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[["入住与退房", "入住通常从 15:00 开始，退房请在 10:00 前完成。具体入住方式会在到达前与您确认。"], ["停车免费吗？", "是的，两套公寓均提供免费私人停车位。"], ["可以带宠物吗？", "可以。两套公寓均欢迎宠物，并可提供宠物垫及食水碗。"], ["适合带孩子入住吗？", "适合。可按需免费提供婴儿床或幼儿床及床品。"], ["如何去威尼斯？", "可乘公交或从 Venezia Mestre 火车站乘火车前往。最新班次和票价请查看官方交通网站。"], ["需要提供证件吗？", "根据意大利住宿登记规定，所有住客都需要提供有效身份证件用于法定登记。"], ["城市税如何计算？", "威尼斯住宿税的金额和减免条件可能根据规定变化；入住前我们会提供适用于您住宿日期的准确信息。"]];
-export default function Page(){return <LocalizedPageZh title={'常见问题'} subtitle={'预订前最常见的问题：入住、停车、家庭、宠物、交通与住宿服务。'} image={'/images/home-rialto-vincenzo-landino.webp'} imageAlt={'威尼斯大运河景色'} sections={sections as any}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'常见问题',description:richPages.zh['faq'].subtitle,alternates:languageAlternates('/zh/faq'),openGraph:{type:'website',images:[richPages.zh['faq'].hero]},twitter:{card:'summary_large_image',images:[richPages.zh['faq'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="zh" data={richPages.zh['faq']}/>}

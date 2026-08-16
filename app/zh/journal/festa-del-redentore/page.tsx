@@ -1,1 +1,7 @@
-import type {Metadata} from 'next'; import JournalArticleZh from '@/components/JournalArticleZh'; import {journalZh} from '@/data/journal-zh'; const data=journalZh['festa-del-redentore']; export const metadata:Metadata={title:`${data.title}｜威尼斯旅行日志`,description:data.description,alternates:{canonical:'/zh/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}},openGraph:{title:data.title,description:data.description,url:'/zh/journal/festa-del-redentore',locale:'zh_CN',type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}}; export default function Page(){return <JournalArticleZh data={data}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedJournalArticle} from '@/components/LocalizedRich';
+import {journalZh} from '@/data/journal-zh';
+const data=journalZh['festa-del-redentore'];
+export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/festa-del-redentore'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
+export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}

@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPage from '@/components/LocalizedPage';
-export const metadata:Metadata={title:'Enlaces útiles',description:'Fuentes oficiales para transportes, billetes y planificación del viaje.',alternates:{canonical:'/es/useful-links',languages:{'it-IT':'/link-utili','en-GB':'/en/useful-links','de-DE':'/de/useful-links','fr-FR':'/fr/useful-links','es-ES':'/es/useful-links','zh-CN':'/zh/useful-links','x-default':'/link-utili'}},openGraph:{title:'Enlaces útiles',description:'Fuentes oficiales para transportes, billetes y planificación del viaje.',url:'/es/useful-links',locale:'es_ES',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[{title:'Enlaces útiles',text:'Fuentes oficiales para transportes, billetes y planificación del viaje.',links:[['ACTV / AVM', 'https://avm.avmspa.it/en'], ['Trenitalia', 'https://www.trenitalia.com/en.html'], ['Venezia Unica', 'https://www.veneziaunica.it/en/']]}];
-export default function Page(){return <LocalizedPage lang='es' title='Enlaces útiles' subtitle='Fuentes oficiales para transportes, billetes y planificación del viaje.' image='/images/home-rialto-vincenzo-landino.webp' imageAlt='Enlaces útiles' sections={sections}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Enlaces útiles',description:richPages.es['useful-links'].subtitle,alternates:languageAlternates('/es/useful-links'),openGraph:{type:'website',images:[richPages.es['useful-links'].hero]},twitter:{card:'summary_large_image',images:[richPages.es['useful-links'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="es" data={richPages.es['useful-links']}/>}

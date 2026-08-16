@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPageZh from '@/components/LocalizedPageZh';
-export const metadata:Metadata={title:'精选体验',description:'让威尼斯之旅更特别的体验灵感。',alternates:{canonical:'/zh/experiences',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},openGraph:{title:'精选体验',description:'让威尼斯之旅更特别的体验灵感。',url:'/zh/experiences',locale:'zh_CN',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[["贡多拉与水上体验", "贡多拉、私人水上出租车和泻湖游船都能从不同角度感受威尼斯。价格和条件请以运营方最新信息为准。"], ["美食与葡萄酒", "从 bacaro 小吃到威尼托酒庄，建议选择透明、评价良好并能清楚说明服务内容的供应商。"], ["私人接送", "对于携带大量行李、带小孩或深夜抵达的旅客，私人接送可能更方便。"], ["预订建议", "旺季和大型活动期间，热门体验可能很快满位，建议提前确认取消政策和集合地点。"]];
-export default function Page(){return <LocalizedPageZh title={'精选体验'} subtitle={'让威尼斯之旅更特别的体验灵感。'} image={'/images/gondola.webp'} imageAlt={'威尼斯运河上的贡多拉'} sections={sections as any}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'精选体验',description:richPages.zh['experiences'].subtitle,alternates:languageAlternates('/zh/experiences'),openGraph:{type:'website',images:[richPages.zh['experiences'].hero]},twitter:{card:'summary_large_image',images:[richPages.zh['experiences'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="zh" data={richPages.zh['experiences']}/>}

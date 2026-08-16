@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPage from '@/components/LocalizedPage';
-export const metadata:Metadata={title:'Descubrir Véneto',description:'Marghera es un punto de partida práctico para excursiones a la Riviera del Brenta, Padua, Treviso, Verona, las colinas del Prosecco y los Dolomitas.',alternates:{canonical:'/es/discover-veneto',languages:{'it-IT':'/scopri-il-veneto','en-GB':'/en/discover-veneto','de-DE':'/de/discover-veneto','fr-FR':'/fr/discover-veneto','es-ES':'/es/discover-veneto','zh-CN':'/zh/discover-veneto','x-default':'/scopri-il-veneto'}},openGraph:{title:'Descubrir Véneto',description:'Marghera es un punto de partida práctico para excursiones a la Riviera del Brenta, Padua, Treviso, Verona, las colinas del Prosecco y los Dolomitas.',url:'/es/discover-veneto',locale:'es_ES',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[{title:'Descubrir Véneto',text:'Marghera es un punto de partida práctico para excursiones a la Riviera del Brenta, Padua, Treviso, Verona, las colinas del Prosecco y los Dolomitas.',links:[['Guías de viaje', '/es/guide']]}];
-export default function Page(){return <LocalizedPage lang='es' title='Descubrir Véneto' subtitle='Marghera es un punto de partida práctico para excursiones a la Riviera del Brenta, Padua, Treviso, Verona, las colinas del Prosecco y los Dolomitas.' image='/images/valdobbiadene.webp' imageAlt='Descubrir Véneto' sections={sections}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Descubrir Véneto',description:richPages.es['discover-veneto'].subtitle,alternates:languageAlternates('/es/discover-veneto'),openGraph:{type:'website',images:[richPages.es['discover-veneto'].hero]},twitter:{card:'summary_large_image',images:[richPages.es['discover-veneto'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="es" data={richPages.es['discover-veneto']}/>}

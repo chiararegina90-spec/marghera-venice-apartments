@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPage from '@/components/LocalizedPage';
-export const metadata:Metadata={title:'Venedig entdecken',description:'Planen Sie Ihren Aufenthalt mit praktischen Tipps zu Stadtteilen, Inseln, Familienausflügen, Reisen mit Hund und saisonalen Veranstaltungen.',alternates:{canonical:'/de/discover-venice',languages:{'it-IT':'/scopri-venezia','en-GB':'/en/discover-venice','de-DE':'/de/discover-venice','fr-FR':'/fr/discover-venice','es-ES':'/es/discover-venice','zh-CN':'/zh/discover-venice','x-default':'/scopri-venezia'}},openGraph:{title:'Venedig entdecken',description:'Planen Sie Ihren Aufenthalt mit praktischen Tipps zu Stadtteilen, Inseln, Familienausflügen, Reisen mit Hund und saisonalen Veranstaltungen.',url:'/de/discover-venice',locale:'de_DE',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[{title:'Venedig entdecken',text:'Planen Sie Ihren Aufenthalt mit praktischen Tipps zu Stadtteilen, Inseln, Familienausflügen, Reisen mit Hund und saisonalen Veranstaltungen.',links:[['Reiseführer', '/de/guide'], ['Journal', '/de/journal']]}];
-export default function Page(){return <LocalizedPage lang='de' title='Venedig entdecken' subtitle='Planen Sie Ihren Aufenthalt mit praktischen Tipps zu Stadtteilen, Inseln, Familienausflügen, Reisen mit Hund und saisonalen Veranstaltungen.' image='/images/scopri-venezia-michael-heise.webp' imageAlt='Venedig entdecken' sections={sections}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Venedig entdecken',description:richPages.de['discover-venice'].subtitle,alternates:languageAlternates('/de/discover-venice'),openGraph:{type:'website',images:[richPages.de['discover-venice'].hero]},twitter:{card:'summary_large_image',images:[richPages.de['discover-venice'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="de" data={richPages.de['discover-venice']}/>}

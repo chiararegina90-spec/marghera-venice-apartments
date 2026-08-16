@@ -11,7 +11,7 @@ export const metadata:Metadata={
   title:'Rossi Apartment',
   description:'Rossi Apartment in Marghera near Venice: over 100 m² for up to 7 guests, free private parking, a furnished terrace and day-and-night public transport to Venice.',
   openGraph:{
-    title:'Rossi Apartment | Up to 7 guests vicino a Venezia',
+    title:'Rossi Apartment | Up to 7 guests near Venice',
     description:'Over 100 m² in Marghera with free private parking, a furnished terrace and convenient day-and-night connections to Venice.',
     images:[{url:'/images/rossi-page-hero.webp',alt:'Bright and spacious living room at Rossi Apartment in Marghera near Venice'}]
   },
@@ -69,7 +69,7 @@ export default function RossiApartment(){
         <div className="rounded-2xl bg-white p-5 shadow-soft"><div className="text-3xl font-black text-gold">100+</div><h2 className="mt-3 font-serif text-2xl text-navy">Over 100 m²</h2><p className="mt-2 text-sm text-slate-600">Spacious, bright rooms for families and groups.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><CarIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Private parking</h2><p className="mt-2 text-sm text-slate-600">Reserved parking inside the condominium grounds.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><MoonIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Venice day & night</h2><p className="mt-2 text-sm text-slate-600">Day and night connections so you can return when it suits you.</p></div>
-        <div className="rounded-2xl bg-white p-5 shadow-soft"><PawIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Pet Friendly</h2><p className="mt-2 text-sm text-slate-600">Pet bed and bowls disponibili gratuitamente.</p></div>
+        <div className="rounded-2xl bg-white p-5 shadow-soft"><PawIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Pet Friendly</h2><p className="mt-2 text-sm text-slate-600">Pet bed and bowls available free of charge.</p></div>
         <div className="rounded-2xl bg-white p-5 shadow-soft"><BabyIcon/><h2 className="mt-3 font-serif text-2xl text-navy">Family Friendly</h2><p className="mt-2 text-sm text-slate-600">Cot or toddler bed with linen available on request.</p></div>
       </div>
     </section>
@@ -92,8 +92,8 @@ export default function RossiApartment(){
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Every space is designed for real life</h2>
           <div className="mt-8 space-y-6 text-lg text-slate-600">
             <p><strong className="text-navy">Large eat-in kitchen.</strong> Cookware, tableware, dishwasher, oven, microwave, kettle, toaster and Nespresso machine.</p>
-            <p><strong className="text-navy">A living room made for time together.</strong> Grande divano, tavolo allungabile e 55-inch Smart TV con servizi di streaming.</p>
-            <p><strong className="text-navy">Two bedrooms confortevoli.</strong> Generous wardrobes, individual Smart TVs and access to the furnished terrace.</p>
+            <p><strong className="text-navy">A living room made for time together.</strong> A large sofa, extendable dining table and 55-inch Smart TV with streaming services.</p>
+            <p><strong className="text-navy">Two comfortable bedrooms.</strong> Generous wardrobes, individual Smart TVs and access to the furnished terrace.</p>
             <p><strong className="text-navy">Furnished terrace.</strong> An outdoor space to relax, enjoy a coffee or smoke: this is the apartment’s designated smoking area.</p>
             <p><strong className="text-navy">Everyday comfort.</strong> Air conditioning in every room, washing machine, iron, towels and professionally laundered bed linen.</p>
           </div>

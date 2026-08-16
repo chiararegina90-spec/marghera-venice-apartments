@@ -1,1 +1,7 @@
-import type {Metadata} from 'next'; import JournalArticleZh from '@/components/JournalArticleZh'; import {journalZh} from '@/data/journal-zh'; const data=journalZh['cicchetti-veneziani']; export const metadata:Metadata={title:`${data.title}｜威尼斯旅行日志`,description:data.description,alternates:{canonical:'/zh/journal/cicchetti-veneziani',languages:{'it-IT':'/journal/cicchetti-veneziani','en-GB':'/en/journal/cicchetti-veneziani','de-DE':'/de/journal/cicchetti-veneziani','fr-FR':'/fr/journal/cicchetti-veneziani','es-ES':'/es/journal/cicchetti-veneziani','zh-CN':'/zh/journal/cicchetti-veneziani','x-default':'/journal/cicchetti-veneziani'}},openGraph:{title:data.title,description:data.description,url:'/zh/journal/cicchetti-veneziani',locale:'zh_CN',type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}}; export default function Page(){return <JournalArticleZh data={data}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedJournalArticle} from '@/components/LocalizedRich';
+import {journalZh} from '@/data/journal-zh';
+const data=journalZh['cicchetti-veneziani'];
+export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/cicchetti-veneziani'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
+export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}

@@ -1,1 +1,7 @@
-import type {Metadata} from 'next'; import JournalArticleZh from '@/components/JournalArticleZh'; import {journalZh} from '@/data/journal-zh'; const data=journalZh['buone-maniere-a-venezia']; export const metadata:Metadata={title:`${data.title}｜威尼斯旅行日志`,description:data.description,alternates:{canonical:'/zh/journal/buone-maniere-a-venezia',languages:{'it-IT':'/journal/buone-maniere-a-venezia','en-GB':'/en/journal/buone-maniere-a-venezia','de-DE':'/de/journal/buone-maniere-a-venezia','fr-FR':'/fr/journal/buone-maniere-a-venezia','es-ES':'/es/journal/buone-maniere-a-venezia','zh-CN':'/zh/journal/buone-maniere-a-venezia','x-default':'/journal/buone-maniere-a-venezia'}},openGraph:{title:data.title,description:data.description,url:'/zh/journal/buone-maniere-a-venezia',locale:'zh_CN',type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}}; export default function Page(){return <JournalArticleZh data={data}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedJournalArticle} from '@/components/LocalizedRich';
+import {journalZh} from '@/data/journal-zh';
+const data=journalZh['buone-maniere-a-venezia'];
+export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/buone-maniere-a-venezia'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
+export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}

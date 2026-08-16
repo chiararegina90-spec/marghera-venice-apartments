@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPageZh from '@/components/LocalizedPageZh';
-export const metadata:Metadata={title:'实用链接',description:'出发前值得收藏的官方信息与旅行工具。',alternates:{canonical:'/zh/useful-links',languages:{'it-IT':'/link-utili','en-GB':'/en/useful-links','de-DE':'/de/useful-links','fr-FR':'/fr/useful-links','es-ES':'/es/useful-links','zh-CN':'/zh/useful-links','x-default':'/link-utili'}},openGraph:{title:'实用链接',description:'出发前值得收藏的官方信息与旅行工具。',url:'/zh/useful-links',locale:'zh_CN',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[["公共交通", "ACTV / AVM 提供威尼斯市区公交和水上交通信息。", [["AVM / ACTV（英文）", "https://avm.avmspa.it/en"], ["Venezia Unica（英文）", "https://www.veneziaunica.it/en/"]]], ["火车", "查询 Venezia Mestre 与 Venezia Santa Lucia 等线路的实时车次和购票信息。", [["Trenitalia（英文）", "https://www.trenitalia.com/en.html"]]], ["威尼托旅游", "了解威尼托各地官方旅游信息。", [["Veneto.eu（英文）", "https://www.veneto.eu/en/"]]], ["重要提示", "开放时间、票价、交通和活动安排可能变化。涉及可变信息时，请始终以官方来源为准。"]];
-export default function Page(){return <LocalizedPageZh title={'实用链接'} subtitle={'出发前值得收藏的官方信息与旅行工具。'} image={'/images/home-come-raggiungere-venezia.webp'} imageAlt={'威尼斯公共交通信息'} sections={sections as any}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'实用链接',description:richPages.zh['useful-links'].subtitle,alternates:languageAlternates('/zh/useful-links'),openGraph:{type:'website',images:[richPages.zh['useful-links'].hero]},twitter:{card:'summary_large_image',images:[richPages.zh['useful-links'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="zh" data={richPages.zh['useful-links']}/>}

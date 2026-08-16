@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPage from '@/components/LocalizedPage';
-export const metadata:Metadata={title:'Experiencias',description:'Ideas de góndolas, islas de la laguna, cultura, naturaleza y excursiones por Véneto. Comprueba siempre disponibilidad y condiciones con los proveedores.',alternates:{canonical:'/es/experiences',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},openGraph:{title:'Experiencias',description:'Ideas de góndolas, islas de la laguna, cultura, naturaleza y excursiones por Véneto. Comprueba siempre disponibilidad y condiciones con los proveedores.',url:'/es/experiences',locale:'es_ES',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[{title:'Experiencias',text:'Ideas de góndolas, islas de la laguna, cultura, naturaleza y excursiones por Véneto. Comprueba siempre disponibilidad y condiciones con los proveedores.',links:undefined}];
-export default function Page(){return <LocalizedPage lang='es' title='Experiencias' subtitle='Ideas de góndolas, islas de la laguna, cultura, naturaleza y excursiones por Véneto. Comprueba siempre disponibilidad y condiciones con los proveedores.' image='/images/gondola.webp' imageAlt='Experiencias' sections={sections}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Experiencias',description:richPages.es['experiences'].subtitle,alternates:languageAlternates('/es/experiences'),openGraph:{type:'website',images:[richPages.es['experiences'].hero]},twitter:{card:'summary_large_image',images:[richPages.es['experiences'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="es" data={richPages.es['experiences']}/>}

@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPage from '@/components/LocalizedPage';
-export const metadata:Metadata={title:'Erlebnisse',description:'Ideen für Gondelfahrten, Laguneninseln, Kultur, Natur und Ausflüge in Venetien. Verfügbarkeit und Bedingungen bitte immer beim jeweiligen Anbieter prüfen.',alternates:{canonical:'/de/experiences',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},openGraph:{title:'Erlebnisse',description:'Ideen für Gondelfahrten, Laguneninseln, Kultur, Natur und Ausflüge in Venetien. Verfügbarkeit und Bedingungen bitte immer beim jeweiligen Anbieter prüfen.',url:'/de/experiences',locale:'de_DE',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[{title:'Erlebnisse',text:'Ideen für Gondelfahrten, Laguneninseln, Kultur, Natur und Ausflüge in Venetien. Verfügbarkeit und Bedingungen bitte immer beim jeweiligen Anbieter prüfen.',links:undefined}];
-export default function Page(){return <LocalizedPage lang='de' title='Erlebnisse' subtitle='Ideen für Gondelfahrten, Laguneninseln, Kultur, Natur und Ausflüge in Venetien. Verfügbarkeit und Bedingungen bitte immer beim jeweiligen Anbieter prüfen.' image='/images/gondola.webp' imageAlt='Erlebnisse' sections={sections}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Erlebnisse',description:richPages.de['experiences'].subtitle,alternates:languageAlternates('/de/experiences'),openGraph:{type:'website',images:[richPages.de['experiences'].hero]},twitter:{card:'summary_large_image',images:[richPages.de['experiences'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="de" data={richPages.de['experiences']}/>}

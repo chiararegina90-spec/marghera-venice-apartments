@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPageZh from '@/components/LocalizedPageZh';
-export const metadata:Metadata={title:'Dimora Castelli｜最多 5 位客人',description:'温馨安静的马尔盖拉公寓，提供私人停车位，适合家庭、情侣和朋友。',alternates:{canonical:'/zh/apartments/dimora-castelli',languages:{'it-IT':'/case/dimora-castelli','en-GB':'/en/apartments/dimora-castelli','de-DE':'/de/apartments/dimora-castelli','fr-FR':'/fr/apartments/dimora-castelli','es-ES':'/es/apartments/dimora-castelli','zh-CN':'/zh/apartments/dimora-castelli','x-default':'/case/dimora-castelli'}},openGraph:{title:'Dimora Castelli｜最多 5 位客人',description:'温馨安静的马尔盖拉公寓，提供私人停车位，适合家庭、情侣和朋友。',url:'/zh/apartments/dimora-castelli',locale:'zh_CN',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[["舒适住宿", "最多可入住 5 位客人。空间温馨实用，配有设备齐全的厨房、现代浴室和智能电视。"], ["免费私人停车", "住客可使用免费私人停车位，把车留在住宿处后再轻松前往威尼斯。"], ["交通便利", "可通过公交或从 Venezia Mestre 火车站前往威尼斯。实际班次请以官方交通信息为准。"], ["家庭与宠物友好", "欢迎家庭和宠物入住；可按需提供婴儿床、幼儿床及宠物用品。"], ["花园", "住客可进入公寓楼的公共花园区域。Dimora Castelli 没有私人露台。"]];
-export default function Page(){return <LocalizedPageZh title={'Dimora Castelli｜最多 5 位客人'} subtitle={'温馨安静的马尔盖拉公寓，提供私人停车位，适合家庭、情侣和朋友。'} image={'/images/castelli-card.webp'} imageAlt={'Dimora Castelli 卧室实景'} sections={sections as any}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedApartment} from '@/components/LocalizedRich';
+import {apartmentData} from '@/data/localized-rich';
+export const metadata:Metadata={title:'Dimora Castelli',description:apartmentData.zh.dimora.subtitle,alternates:languageAlternates('/zh/apartments/dimora-castelli'),openGraph:{type:'website',images:[apartmentData.zh.dimora.hero]},twitter:{card:'summary_large_image',images:[apartmentData.zh.dimora.hero]}};
+export default function Page(){return <LocalizedApartment lang="zh" data={apartmentData.zh.dimora}/>}

@@ -23,3 +23,7 @@ export function localePath(pathname:string,target:SiteLang){
  return logical==='/'?`/${target}`:`/${target}${logical}`;
 }
 export const hreflang:Record<SiteLang,string>={it:'it-IT',en:'en-GB',de:'de-DE',fr:'fr-FR',es:'es-ES',zh:'zh-CN'};
+
+export function languageAlternates(pathname:string){
+  return {canonical:pathname,languages:{'it-IT':localePath(pathname,'it'),'en-GB':localePath(pathname,'en'),'de-DE':localePath(pathname,'de'),'fr-FR':localePath(pathname,'fr'),'es-ES':localePath(pathname,'es'),'zh-CN':localePath(pathname,'zh'),'x-default':localePath(pathname,'it')}};
+}

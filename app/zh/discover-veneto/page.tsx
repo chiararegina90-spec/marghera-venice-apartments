@@ -1,4 +1,6 @@
-import type {Metadata} from 'next'; import LocalizedPageZh from '@/components/LocalizedPageZh';
-export const metadata:Metadata={title:'探索威尼托',description:'从马尔盖拉出发，发现艺术城市、葡萄酒丘陵、泻湖与多洛米蒂。',alternates:{canonical:'/zh/discover-veneto',languages:{'it-IT':'/scopri-il-veneto','en-GB':'/en/discover-veneto','de-DE':'/de/discover-veneto','fr-FR':'/fr/discover-veneto','es-ES':'/es/discover-veneto','zh-CN':'/zh/discover-veneto','x-default':'/scopri-il-veneto'}},openGraph:{title:'探索威尼托',description:'从马尔盖拉出发，发现艺术城市、葡萄酒丘陵、泻湖与多洛米蒂。',url:'/zh/discover-veneto',locale:'zh_CN',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-const sections=[["不仅只有威尼斯", "住在马尔盖拉的优势之一，是既能快速进入威尼斯，也方便驾车探索威尼托其他地区。"], ["艺术城市", "帕多瓦、特雷维索和维罗纳都适合一日游，各自拥有不同的历史、建筑与饮食文化。"], ["自然与风景", "普罗塞克丘陵、多洛米蒂、Brenta Riviera 与 Chioggia 提供完全不同的景观。"], ["自驾更自由", "公寓提供免费私人停车位，因此可以根据天气和兴趣灵活安排威尼托自驾日。", [["威尼托官方旅游网站（英文）", "https://www.veneto.eu/en/"]]]];
-export default function Page(){return <LocalizedPageZh title={'探索威尼托'} subtitle={'从马尔盖拉出发，发现艺术城市、葡萄酒丘陵、泻湖与多洛米蒂。'} image={'/images/valdobbiadene.webp'} imageAlt={'威尼托普罗塞克丘陵与葡萄园'} sections={sections as any}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedRichPage} from '@/components/LocalizedRich';
+import {richPages} from '@/data/localized-rich';
+export const metadata:Metadata={title:'探索威尼托',description:richPages.zh['discover-veneto'].subtitle,alternates:languageAlternates('/zh/discover-veneto'),openGraph:{type:'website',images:[richPages.zh['discover-veneto'].hero]},twitter:{card:'summary_large_image',images:[richPages.zh['discover-veneto'].hero]}};
+export default function Page(){return <LocalizedRichPage lang="zh" data={richPages.zh['discover-veneto']}/>}

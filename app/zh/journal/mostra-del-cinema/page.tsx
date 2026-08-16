@@ -1,1 +1,7 @@
-import type {Metadata} from 'next'; import JournalArticleZh from '@/components/JournalArticleZh'; import {journalZh} from '@/data/journal-zh'; const data=journalZh['mostra-del-cinema']; export const metadata:Metadata={title:`${data.title}｜威尼斯旅行日志`,description:data.description,alternates:{canonical:'/zh/journal/mostra-del-cinema',languages:{'it-IT':'/journal/mostra-del-cinema','en-GB':'/en/journal/mostra-del-cinema','de-DE':'/de/journal/mostra-del-cinema','fr-FR':'/fr/journal/mostra-del-cinema','es-ES':'/es/journal/mostra-del-cinema','zh-CN':'/zh/journal/mostra-del-cinema','x-default':'/journal/mostra-del-cinema'}},openGraph:{title:data.title,description:data.description,url:'/zh/journal/mostra-del-cinema',locale:'zh_CN',type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}}; export default function Page(){return <JournalArticleZh data={data}/>}
+import type {Metadata} from 'next';
+import {languageAlternates} from '@/lib/i18n';
+import {LocalizedJournalArticle} from '@/components/LocalizedRich';
+import {journalZh} from '@/data/journal-zh';
+const data=journalZh['mostra-del-cinema'];
+export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/mostra-del-cinema'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
+export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}
