@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:"Lo Spritz veneziano | Journal | Marghera Venice Apartments",
-  description:"Per il resto del mondo è un cocktail. Per noi veneziani è semplicemente l’aperitivo."
+  description:"Per il resto del mondo è un cocktail. Per noi veneziani è semplicemente l’aperitivo.",
+  alternates:{canonical:'/journal/spritz-veneziano',languages:{'it-IT':'/journal/spritz-veneziano','en-GB':'/en/journal/spritz-veneziano','de-DE':'/de/journal/spritz-veneziano','fr-FR':'/fr/journal/spritz-veneziano','es-ES':'/es/journal/spritz-veneziano','zh-CN':'/zh/journal/spritz-veneziano','x-default':'/journal/spritz-veneziano'}}
 };
 
 const sections = [

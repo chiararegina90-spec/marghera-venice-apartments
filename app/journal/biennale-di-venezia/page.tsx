@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Biennale di Venezia | Journal | Marghera Venice Apartments',
-  description:'Giardini, Arsenale e mostre diffuse: una giornata non basta per vedere tutto, ed è proprio questo il punto.'
+  description:'Giardini, Arsenale e mostre diffuse: una giornata non basta per vedere tutto, ed è proprio questo il punto.',
+  alternates:{canonical:'/journal/biennale-di-venezia',languages:{'it-IT':'/journal/biennale-di-venezia','en-GB':'/en/journal/biennale-di-venezia','de-DE':'/de/journal/biennale-di-venezia','fr-FR':'/fr/journal/biennale-di-venezia','es-ES':'/es/journal/biennale-di-venezia','zh-CN':'/zh/journal/biennale-di-venezia','x-default':'/journal/biennale-di-venezia'}}
 };
 
 const sections = [

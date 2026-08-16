@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Natale e Capodanno a Venezia | Journal | Marghera Venice Apartments',
-  description:'Luci, inverno, calli più intime e grandi eventi: Venezia cambia ritmo durante le feste.'
+  description:'Luci, inverno, calli più intime e grandi eventi: Venezia cambia ritmo durante le feste.',
+  alternates:{canonical:'/journal/natale-capodanno-venezia',languages:{'it-IT':'/journal/natale-capodanno-venezia','en-GB':'/en/journal/natale-capodanno-venezia','de-DE':'/de/journal/natale-capodanno-venezia','fr-FR':'/fr/journal/natale-capodanno-venezia','es-ES':'/es/journal/natale-capodanno-venezia','zh-CN':'/zh/journal/natale-capodanno-venezia','x-default':'/journal/natale-capodanno-venezia'}}
 };
 
 const sections = [

@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:"Venezia senza far arrabbiare i veneziani | Journal | Marghera Venice Apartments",
-  description:"Piccole buone maniere per godersi la città come un ospite, senza dimenticare che qualcuno qui ci vive davvero."
+  description:"Piccole buone maniere per godersi la città come un ospite, senza dimenticare che qualcuno qui ci vive davvero.",
+  alternates:{canonical:'/journal/buone-maniere-a-venezia',languages:{'it-IT':'/journal/buone-maniere-a-venezia','en-GB':'/en/journal/buone-maniere-a-venezia','de-DE':'/de/journal/buone-maniere-a-venezia','fr-FR':'/fr/journal/buone-maniere-a-venezia','es-ES':'/es/journal/buone-maniere-a-venezia','zh-CN':'/zh/journal/buone-maniere-a-venezia','x-default':'/journal/buone-maniere-a-venezia'}}
 };
 
 const sections = [

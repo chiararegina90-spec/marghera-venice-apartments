@@ -6,7 +6,8 @@ import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
-  description:'Servizi ed esperienze che vogliamo selezionare per gli ospiti: transfer, gondole, guide, cantine, biciclette e ristorazione.'
+  description:'Servizi ed esperienze che vogliamo selezionare per gli ospiti: transfer, gondole, guide, cantine, biciclette e ristorazione.',
+  alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}}
 };
 
 const areas = [

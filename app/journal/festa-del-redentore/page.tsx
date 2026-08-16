@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Festa del Redentore | Journal | Marghera Venice Apartments',
-  description:'Una delle notti più sentite dai veneziani: memoria, tavolate, barche e fuochi riflessi nel Bacino di San Marco.'
+  description:'Una delle notti più sentite dai veneziani: memoria, tavolate, barche e fuochi riflessi nel Bacino di San Marco.',
+  alternates:{canonical:'/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}}
 };
 
 const sections = [

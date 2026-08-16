@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:"Acqua alta a Venezia: cosa sapere | Journal | Marghera Venice Apartments",
-  description:"Un fenomeno naturale della laguna da conoscere senza allarmismi: cosa significa, quanto dura e come il MOSE protegge la città."
+  description:"Un fenomeno naturale della laguna da conoscere senza allarmismi: cosa significa, quanto dura e come il MOSE protegge la città.",
+  alternates:{canonical:'/journal/acqua-alta-a-venezia',languages:{'it-IT':'/journal/acqua-alta-a-venezia','en-GB':'/en/journal/acqua-alta-a-venezia','de-DE':'/de/journal/acqua-alta-a-venezia','fr-FR':'/fr/journal/acqua-alta-a-venezia','es-ES':'/es/journal/acqua-alta-a-venezia','zh-CN':'/zh/journal/acqua-alta-a-venezia','x-default':'/journal/acqua-alta-a-venezia'}}
 };
 
 const sections = [

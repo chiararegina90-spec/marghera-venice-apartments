@@ -12,6 +12,7 @@ export type GuideData = {
   subtitle: string;
   description: string;
   image: string;
+  imageAlt: string;
   badges: [string,string][];
   introTitle: string;
   intro: string[];
@@ -32,7 +33,7 @@ export type GuideData = {
 export default function GuideTemplate({data}:{data:GuideData}){
   return <><Header/><main data-guide={data.slug}>
     <section className="relative min-h-[84vh] overflow-hidden pt-20">
-      <Image src={data.image} alt={data.title} fill priority sizes="100vw" className="object-cover object-center"/>
+      <Image src={data.image} alt={data.imageAlt} fill priority sizes="100vw" className="object-cover object-center"/>
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-navy/10"/>
       {data.slug === "dolomiti" && <p className="absolute bottom-4 right-5 z-20 text-[11px] text-white/90 drop-shadow-md">Foto di Stefano Bazzoli su Unsplash</p>}
       <div className="relative mx-auto flex min-h-[calc(84vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-24 lg:px-8">
@@ -117,7 +118,7 @@ export default function GuideTemplate({data}:{data:GuideData}){
     <section className="py-16">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
         <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] shadow-soft">
-          <Image src={data.image} alt={data.title} fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover"/>
+          <Image src={data.image} alt={data.imageAlt} fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover"/>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come ci andiamo noi</p>

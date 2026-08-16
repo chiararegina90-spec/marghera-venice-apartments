@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Carnevale di Venezia | Journal | Marghera Venice Apartments',
-  description:'Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.'
+  description:'Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.',
+  alternates:{canonical:'/journal/carnevale-di-venezia',languages:{'it-IT':'/journal/carnevale-di-venezia','en-GB':'/en/journal/carnevale-di-venezia','de-DE':'/de/journal/carnevale-di-venezia','fr-FR':'/fr/journal/carnevale-di-venezia','es-ES':'/es/journal/carnevale-di-venezia','zh-CN':'/zh/journal/carnevale-di-venezia','x-default':'/journal/carnevale-di-venezia'}}
 };
 
 const sections = [

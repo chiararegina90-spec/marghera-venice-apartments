@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:"Cicchetti veneziani | Journal | Marghera Venice Apartments",
-  description:"Non sono tapas, non sono un antipasto e non sono un pasto in miniatura. Sono… cicchetti."
+  description:"Non sono tapas, non sono un antipasto e non sono un pasto in miniatura. Sono… cicchetti.",
+  alternates:{canonical:'/journal/cicchetti-veneziani',languages:{'it-IT':'/journal/cicchetti-veneziani','en-GB':'/en/journal/cicchetti-veneziani','de-DE':'/de/journal/cicchetti-veneziani','fr-FR':'/fr/journal/cicchetti-veneziani','es-ES':'/es/journal/cicchetti-veneziani','zh-CN':'/zh/journal/cicchetti-veneziani','x-default':'/journal/cicchetti-veneziani'}}
 };
 
 const sections = [

@@ -8,6 +8,7 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata: Metadata = {
   title: 'Jesolo: spiaggia, mare e come arrivare | Marghera Venice Apartments',
   description: 'Piccola guida a Lido di Jesolo: spiaggia, famiglie, passeggiate e collegamenti in auto o autobus ATVO da Venezia Mestre.',
+  alternates:{canonical:'/guide/jesolo',languages:{'it-IT':'/guide/jesolo','en-GB':'/en/guide/jesolo','de-DE':'/de/guide/jesolo','fr-FR':'/fr/guide/jesolo','es-ES':'/es/guide/jesolo','zh-CN':'/zh/guide/jesolo','x-default':'/guide/jesolo'}}
 };
 
 const highlights = [

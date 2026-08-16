@@ -9,15 +9,22 @@ import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Dimora Castelli | Marghera Venice Apartments',
-  description: 'Dimora Castelli a Marghera: circa 60 m², fino a 5 ospiti, piano terra rialzato, giardino condominiale, parcheggio privato, collegamenti H24 per Venezia, Pet Friendly e Family Friendly.',
+  description: 'Dimora Castelli a Marghera: circa 60 m², fino a 5 ospiti, giardino condominiale, parcheggio privato e collegamenti H24 per Venezia.',
+  openGraph:{
+    title:'Dimora Castelli | Fino a 5 ospiti vicino a Venezia',
+    description:'Appartamento accogliente a Marghera con parcheggio privato, accesso al giardino condominiale e collegamenti H24 per Venezia.',
+    images:[{url:'/images/dimora-page-hero.webp',alt:'Camera luminosa di Dimora Castelli a Marghera'}]
+  },
+  twitter:{card:'summary_large_image',title:'Dimora Castelli | Marghera Venice Apartments',description:'Fino a 5 ospiti, parcheggio privato e collegamenti H24 per Venezia.',images:['/images/dimora-page-hero.webp']},
+  alternates:{canonical:'/case/dimora-castelli',languages:{'it-IT':'/case/dimora-castelli','en-GB':'/en/apartments/dimora-castelli','de-DE':'/de/apartments/dimora-castelli','fr-FR':'/fr/apartments/dimora-castelli','es-ES':'/es/apartments/dimora-castelli','zh-CN':'/zh/apartments/dimora-castelli','x-default':'/case/dimora-castelli'}}
 };
 
 const gallery = [
-  ['/images/dimora-page-hero.webp', 'Camera matrimoniale di Dimora Castelli'],
-  ['/images/dimora-page-twin.webp', 'Seconda camera con letti singoli'],
-  ['/images/dimora-page-bathroom.webp', 'Bagno di Dimora Castelli'],
-  ['/images/dimora-page-kitchen.webp', 'Cucina completa di Dimora Castelli'],
-  ['/images/dimora-page-sofabed.webp', 'Camera matrimoniale con divano letto aperto'],
+  ['/images/dimora-page-hero.webp', 'Camera matrimoniale luminosa di Dimora Castelli a Marghera'],
+  ['/images/dimora-page-twin.webp', 'Seconda camera di Dimora Castelli con letti singoli'],
+  ['/images/dimora-page-bathroom.webp', 'Bagno moderno di Dimora Castelli con doccia'],
+  ['/images/dimora-page-kitchen.webp', 'Cucina completamente attrezzata di Dimora Castelli'],
+  ['/images/dimora-page-sofabed.webp', 'Camera di Dimora Castelli con letto matrimoniale e divano letto'],
 ];
 
 const galleryLayout = [
@@ -57,7 +64,7 @@ const castelliReviews = [
 export default function DimoraCastelli() {
   return <><Header/><main>
     <section className="relative min-h-[78vh] overflow-hidden pt-20">
-      <Image src="/images/dimora-page-hero.webp" alt="Dimora Castelli" fill priority className="object-cover"/>
+      <Image src="/images/dimora-page-hero.webp" alt="Camera luminosa di Dimora Castelli a Marghera vicino a Venezia" fill priority sizes="100vw" className="object-cover"/>
       <div className="hero-overlay absolute inset-0"/>
       <div className="relative mx-auto flex min-h-[calc(78vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-24 lg:px-8">
         <div className="max-w-4xl text-white">
@@ -70,7 +77,7 @@ export default function DimoraCastelli() {
           <h1 className="mt-4 font-serif text-5xl leading-none sm:text-6xl md:text-8xl">Dimora Castelli</h1>
           <p className="mt-6 max-w-3xl text-xl text-white/85">Una casa silenziosa, immersa nel verde e pensata per adattarsi ai tuoi ritmi, a pochi minuti da Venezia.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Richiedi disponibilità</a>
+            <a href="https://wa.me/393514462261?text=Ciao%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20di%20Dimora%20Castelli.%20Le%20mie%20date%20sono%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Verifica disponibilità</a>
             <Link href="/#case" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white">← Torna alle case</Link>
           </div>
         </div>
@@ -121,7 +128,7 @@ export default function DimoraCastelli() {
           </div>
         </div>
         <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
-          <Image src="/images/dimora-page-kitchen-2.webp" alt="Cucina di Dimora Castelli" fill className="object-cover"/>
+          <Image src="/images/dimora-page-kitchen-2.webp" alt="Cucina moderna e attrezzata di Dimora Castelli a Marghera" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover"/>
         </div>
       </div>
     </section>
@@ -148,7 +155,7 @@ export default function DimoraCastelli() {
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
         <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem]">
-          <Image src="/images/dimora-castelli-giardino-reale.webp" alt="Giardino condominiale reale di Dimora Castelli" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover object-center"/>
+          <Image src="/images/dimora-castelli-giardino-reale.webp" alt="Giardino condominiale accessibile agli ospiti di Dimora Castelli" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover object-center"/>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Un angolo verde</p>
@@ -207,7 +214,7 @@ export default function DimoraCastelli() {
     <section className="bg-cream py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
         <div className="relative min-h-[350px] sm:min-h-[440px] lg:min-h-[500px] overflow-hidden rounded-[2rem] shadow-soft">
-          <Image src="/images/dimora-castelli-edificio-storia.webp" alt="Edificio storico di Dimora Castelli" fill className="object-cover"/>
+          <Image src="/images/dimora-castelli-edificio-storia.webp" alt="Edificio che ospita Dimora Castelli nel centro di Marghera" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover"/>
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Un edificio con storia</p>
@@ -241,9 +248,9 @@ export default function DimoraCastelli() {
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Dimora Castelli</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
-        <p className="mt-5 text-lg text-slate-600">Scrivici direttamente: nessuna prenotazione automatica, riceverai una risposta personale.</p>
+        <p className="mt-5 text-lg text-slate-600">Scrivici le date e il numero di ospiti: ti risponderemo personalmente con disponibilità e informazioni per il soggiorno.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">WhatsApp</a>
+          <a href="https://wa.me/393514462261?text=Ciao%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20di%20Dimora%20Castelli.%20Le%20mie%20date%20sono%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Verifica su WhatsApp</a>
           <a href="mailto:dimoracastelli22@gmail.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Invia un'email</a>
         </div>
         <p className="mt-8 text-sm text-slate-500">CIN Dimora Castelli: IT027042C2YOUCUFM2</p>
@@ -255,11 +262,11 @@ export default function DimoraCastelli() {
         <div>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come raggiungerci</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Facile da raggiungere con qualsiasi mezzo</h2>
-          <p className="mt-5 text-lg text-slate-600">Dimora Castelli dispone di parcheggio gratuito. Dalla stazione di Venezia Mestre puoi arrivare a piedi, con il tram T2 o in taxi; dagli aeroporti sono disponibili navette verso Mestre.</p>
+          <p className="mt-5 text-lg text-slate-600">Dimora Castelli dispone di parcheggio privato gratuito. Dalla stazione di Venezia Mestre puoi arrivare a piedi, con il tram T2 o in taxi; dagli aeroporti sono disponibili navette verso Mestre.</p>
           <Link href="/come-raggiungere-venezia" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Come arrivare: trasporti, aeroporti e Venezia →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {['🚗 Parcheggio nella proprietà','🚋 Tram T2 da Venezia Mestre','✈️ Navette aeroportuali verso Mestre'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
+          {['🚗 Parcheggio privato gratuito','🚋 Tram T2 da Venezia Mestre','✈️ Navette aeroportuali verso Mestre'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
         </div>
       </div>
     </section>

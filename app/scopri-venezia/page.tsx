@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Una guida pratica e autentica per vivere Venezia partendo da Marghera.',
     images: ['/images/scopri-venezia-michael-heise.webp'],
   },
+  alternates:{canonical:'/scopri-venezia',languages:{'it-IT':'/scopri-venezia','en-GB':'/en/discover-venice','de-DE':'/de/discover-venice','fr-FR':'/fr/discover-venice','es-ES':'/es/discover-venice','zh-CN':'/zh/discover-venice','x-default':'/scopri-venezia'}}
 };
 
 const itinerary = [
@@ -185,7 +186,7 @@ export default function ScopriVenezia(){
           <p className="text-xs font-black uppercase tracking-[.22em]">Il consiglio di Marghera Venice Apartments</p>
           <h2 className="mt-4 font-serif text-5xl">Se hai almeno tre giorni, non fermarti a Venezia.</h2>
           <p className="mx-auto mt-5 max-w-3xl text-lg text-navy/75">Il parcheggio privato ti permette di dedicare una giornata alla Riviera del Brenta, alle Colline del Prosecco o a una delle città d’arte del Veneto.</p>
-          <a href="/#mappa" className="mt-8 inline-block rounded-full bg-navy px-8 py-4 font-bold text-white">Scopri il Veneto</a>
+          <Link href="/scopri-il-veneto" className="mt-8 inline-block rounded-full bg-navy px-8 py-4 font-bold text-white">Scopri il Veneto</Link>
         </div>
       </section>
 

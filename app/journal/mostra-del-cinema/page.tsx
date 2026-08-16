@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Mostra del Cinema di Venezia | Journal | Marghera Venice Apartments',
-  description:'Il Lido diventa il centro internazionale del cinema: proiezioni, red carpet e un’atmosfera completamente diversa dal resto dell’anno.'
+  description:'Il Lido diventa il centro internazionale del cinema: proiezioni, red carpet e un’atmosfera completamente diversa dal resto dell’anno.',
+  alternates:{canonical:'/journal/mostra-del-cinema',languages:{'it-IT':'/journal/mostra-del-cinema','en-GB':'/en/journal/mostra-del-cinema','de-DE':'/de/journal/mostra-del-cinema','fr-FR':'/fr/journal/mostra-del-cinema','es-ES':'/es/journal/mostra-del-cinema','zh-CN':'/zh/journal/mostra-del-cinema','x-default':'/journal/mostra-del-cinema'}}
 };
 
 const sections = [

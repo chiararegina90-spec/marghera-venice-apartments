@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:"Dove parcheggiare per visitare Venezia | Journal | Marghera Venice Apartments",
-  description:"No, in Piazza San Marco non si arriva in macchina. Ma per chi preferisce l’auto esistono diverse soluzioni molto comode."
+  description:"No, in Piazza San Marco non si arriva in macchina. Ma per chi preferisce l’auto esistono diverse soluzioni molto comode.",
+  alternates:{canonical:'/journal/dove-parcheggiare-venezia',languages:{'it-IT':'/journal/dove-parcheggiare-venezia','en-GB':'/en/journal/dove-parcheggiare-venezia','de-DE':'/de/journal/dove-parcheggiare-venezia','fr-FR':'/fr/journal/dove-parcheggiare-venezia','es-ES':'/es/journal/dove-parcheggiare-venezia','zh-CN':'/zh/journal/dove-parcheggiare-venezia','x-default':'/journal/dove-parcheggiare-venezia'}}
 };
 
 const sections = [

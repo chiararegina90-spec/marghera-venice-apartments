@@ -7,7 +7,8 @@ const data = guideData['dolomiti'];
 export const metadata:Metadata={
   title:`${data.title} | Marghera Venice Apartments`,
   description:data.description,
-  openGraph:{title:data.title,description:data.description,images:[data.image]}
+  openGraph:{title:data.title,description:data.description,images:[data.image]},
+  alternates:{canonical:'/guide/dolomiti',languages:{'it-IT':'/guide/dolomiti','en-GB':'/en/guide/dolomiti','de-DE':'/de/guide/dolomiti','fr-FR':'/fr/guide/dolomiti','es-ES':'/es/guide/dolomiti','zh-CN':'/zh/guide/dolomiti','x-default':'/guide/dolomiti'}}
 };
 
 export default function Page(){return <GuideTemplate data={data}/>}

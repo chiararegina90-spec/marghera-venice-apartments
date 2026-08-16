@@ -6,7 +6,8 @@ import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
   title:'FAQ | Marghera Venice Apartments',
-  description:'Check-in, check-out, self check-in, deposito bagagli, parcheggio, bambini, animali e informazioni sul soggiorno.'
+  description:'Check-in, check-out, self check-in, deposito bagagli, parcheggio, bambini, animali e informazioni sul soggiorno.',
+  alternates:{canonical:'/faq',languages:{'it-IT':'/faq','en-GB':'/en/faq','de-DE':'/de/faq','fr-FR':'/fr/faq','es-ES':'/es/faq','zh-CN':'/zh/faq','x-default':'/faq'}}
 };
 
 const groups = [
@@ -31,9 +32,9 @@ const groups = [
   {
     title:'Parcheggio e mobilità',
     items:[
-      ['Il parcheggio è gratuito?','Sì. Entrambi gli appartamenti dispongono di parcheggio gratuito secondo le indicazioni specifiche della struttura.'],
+      ['Il parcheggio è gratuito?','Sì. Entrambi gli appartamenti dispongono di parcheggio privato gratuito, secondo le indicazioni specifiche della struttura.'],
       ['È necessario usare l’auto per visitare Venezia?','No. Consigliamo di lasciare l’auto parcheggiata e usare autobus o treno.'],
-      ['Dove trovo le informazioni su autobus, treni e biglietti?','Nella pagina “Come arrivare e muoversi” trovi indicazioni dagli aeroporti, dalla stazione e verso Venezia.'],
+      ['Dove trovo le informazioni su autobus, treni e biglietti?','Nella pagina “Come arrivare” trovi indicazioni dagli aeroporti, dalla stazione e verso Venezia.'],
     ]
   },
   {
@@ -80,7 +81,7 @@ export default function FAQ(){
         <div className="rounded-[2rem] bg-gold p-8 text-center text-navy">
           <h2 className="font-serif text-4xl">Non hai trovato la risposta?</h2>
           <p className="mx-auto mt-4 max-w-2xl">Scrivici prima della prenotazione: preferiamo chiarire ogni dettaglio in anticipo.</p>
-          <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Contattaci su WhatsApp ↗</a>
+          <a href="https://wa.me/393514462261?text=Ciao%2C%20avrei%20una%20domanda%20sul%20soggiorno%20presso%20Marghera%20Venice%20Apartments.%20" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Contattaci su WhatsApp ↗</a>
         </div>
       </div>
     </section>

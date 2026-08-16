@@ -11,8 +11,9 @@ export const metadata:Metadata = {
   openGraph:{
     title:'Come arrivare e come raggiungere Venezia',
     description:'Indicazioni chiare per pianificare il viaggio verso gli appartamenti e gli spostamenti a Venezia.',
-    images:['/images/come-venezia-movimento.webp']
-  }
+    images:['/images/home-come-raggiungere-venezia.webp']
+  },
+  alternates:{canonical:'/come-raggiungere-venezia',languages:{'it-IT':'/come-raggiungere-venezia','en-GB':'/en/getting-to-venice','de-DE':'/de/getting-to-venice','fr-FR':'/fr/getting-to-venice','es-ES':'/es/getting-to-venice','zh-CN':'/zh/getting-to-venice','x-default':'/come-raggiungere-venezia'}}
 };
 
 const veneziaOptions = [
@@ -20,9 +21,9 @@ const veneziaOptions = [
     title:'Autobus – consigliato',
     text:'La fermata Sant’Antonio Municipio è il riferimento principale per raggiungere Venezia – Piazzale Roma. Sono presenti collegamenti diurni e notturni.',
     rows:[
-      ['Fino alle 21:00','Linee 6 e 6L','circa ogni 10 minuti'],
-      ['Dalle 21:00 alle 00:40','Linea 6','circa ogni 20 minuti'],
-      ['Servizio notturno','Linea N2','circa ogni 30 minuti'],
+      ['Di giorno','Linee 6 e 6L','direzione Venezia – Piazzale Roma'],
+      ['Sera','Linea 6','verifica la corsa nell’app AVM Venezia Official'],
+      ['Notte','Linea N2','collegamento notturno via Sant’Antonio Municipio'],
     ]
   },
   {
@@ -36,16 +37,16 @@ const veneziaOptions = [
 ];
 
 const ticketCards = [
-  ['Treno','€ 1,50','a persona, a tratta'],
+  ['Treno','da € 1,50','Venezia Mestre → Venezia Santa Lucia; verifica la corsa scelta'],
   ['Autobus','€ 1,50','a persona, a tratta'],
-  ['Vaporetto','€ 9,50','Venezia centro, corsa singola'],
+  ['Rete unica ACTV','€ 9,50','75 minuti: include anche la navigazione urbana ACTV'],
 ];
 
 const passes = [
   ['24 ore','€ 25,00'],
   ['2 giorni','€ 35,00'],
   ['3 giorni','€ 45,00'],
-  ['Young 3 giorni','€ 33,00 – indicativamente 6-29 anni, acquisto online secondo condizioni'],
+  ['Young 3 giorni','€ 33,00 – Rolling Venice + ACTV 72h, per giovani 6-29 anni secondo condizioni'],
 ];
 
 const faq = [
@@ -59,7 +60,7 @@ const faq = [
 export default function Mobilita(){
   return <><Header/><main>
     <section className="relative min-h-[80vh] overflow-hidden pt-20">
-      <Image src="/images/come-venezia-movimento.webp" alt="Autobus e mezzi pubblici per raggiungere Venezia da Marghera" fill priority sizes="100vw" className="object-cover"/>
+      <Image src="/images/home-come-raggiungere-venezia.webp" alt="Autobus e mezzi pubblici per raggiungere Venezia da Marghera" fill priority sizes="100vw" className="object-cover"/>
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20"/>
       <div className="relative mx-auto flex min-h-[calc(80vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8">
         <div className="max-w-4xl text-white">
@@ -107,7 +108,7 @@ export default function Mobilita(){
 
     <section id="venezia" className="bg-navy py-24 text-white">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Come arrivare a Venezia" title="Autobus o treno: due soluzioni comode" text="Gli orari qui riportati sono indicativi e devono essere verificati sui canali ufficiali."/>
+        <SectionTitle eyebrow="Come arrivare a Venezia" title="Autobus o treno: due soluzioni comode" text="Le linee e le tariffe sono state ricontrollate sui canali ufficiali. Gli orari possono cambiare: verifica sempre la corsa del giorno sull’app AVM Venezia Official o sui siti degli operatori."/>
         <div className="grid gap-7 lg:grid-cols-2">
           {veneziaOptions.map((option)=><article key={option.title} className="rounded-[2rem] bg-white/10 p-8">
             <h2 className="font-serif text-4xl">{option.title}</h2>
@@ -118,6 +119,10 @@ export default function Mobilita(){
               </div>)}
             </div>
           </article>)}
+        </div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a href="https://avm.avmspa.it/it/content/app-avm-venezia-official" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/30 px-5 py-3 text-sm font-bold text-white">Orari ufficiali AVM/ACTV ↗</a>
+          <a href="https://www.trenitalia.com/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/30 px-5 py-3 text-sm font-bold text-white">Orari Trenitalia ↗</a>
         </div>
       </div>
     </section>
@@ -140,7 +145,7 @@ export default function Mobilita(){
 
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Informazioni utili sui biglietti" title="Tariffe indicative e pass turistici" text="I prezzi possono cambiare. Prima dell’acquisto verifica sempre Venezia Unica, AVM/ACTV e Trenitalia."/>
+        <SectionTitle eyebrow="Informazioni utili sui biglietti" title="Tariffe verificate e pass turistici" text="Tariffe ricontrollate sui canali ufficiali AVM/ACTV e Venezia Unica. I prezzi possono cambiare: verifica sempre la tariffa in vigore prima dell’acquisto."/>
         <div className="grid gap-5 md:grid-cols-3">
           {ticketCards.map(([title,price,note])=><article key={title} className="rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-soft">
             <p className="text-sm font-black uppercase tracking-[.18em] text-gold">{title}</p>
@@ -155,7 +160,11 @@ export default function Mobilita(){
           <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {passes.map(([duration,price])=><div key={duration} className="rounded-2xl bg-white p-5 shadow-soft"><p className="font-bold text-navy">{duration}</p><p className="mt-2 text-lg text-slate-600">{price}</p></div>)}
           </div>
-          <p className="mt-6 text-sm text-slate-500">Nota famiglie: i bambini fino al compimento dei 6 anni, quindi fino a 5 anni compiuti, viaggiano gratuitamente sui servizi urbani del Comune di Venezia.</p>
+          <p className="mt-6 text-sm text-slate-500">Nota famiglie: sui servizi urbani del Comune di Venezia i bambini viaggiano gratuitamente fino al compimento del 6° anno. Per i giovani dai 6 ai 29 anni è disponibile, secondo le condizioni in vigore, l’offerta Rolling Venice con titolo ACTV 72 ore.</p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href="https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia" target="_blank" rel="noopener noreferrer" className="rounded-full bg-navy px-5 py-3 text-sm font-bold text-white">Tariffe Venezia Unica ↗</a>
+            <a href="https://avm.avmspa.it/it/content/tariffe" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy/20 px-5 py-3 text-sm font-bold text-navy">Tariffe AVM/ACTV ↗</a>
+          </div>
         </div>
       </div>
     </section>
@@ -165,7 +174,7 @@ export default function Mobilita(){
         <SectionTitle eyebrow="Dove acquistare" title="Biglietti prima o durante il soggiorno" text="Acquistare e convalidare correttamente il titolo di viaggio evita perdite di tempo e sanzioni."/>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           <a href="https://avm.avmspa.it/it/content/app-avm-venezia-official" target="_blank" rel="noopener noreferrer" className="rounded-[2rem] bg-white p-7 shadow-soft"><h2 className="font-serif text-3xl text-navy">App AVM Venezia</h2><p className="mt-3 text-slate-600">Acquisto digitale e informazioni sul servizio.</p><span className="mt-5 inline-block font-bold text-gold">Apri ↗</span></a>
-          <a href="https://www.veneziaunica.it/en/e-commerce/services" target="_blank" rel="noopener noreferrer" className="rounded-[2rem] bg-white p-7 shadow-soft"><h2 className="font-serif text-3xl text-navy">Venezia Unica</h2><p className="mt-3 text-slate-600">Pass e servizi turistici acquistabili online.</p><span className="mt-5 inline-block font-bold text-gold">Apri ↗</span></a>
+          <a href="https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia" target="_blank" rel="noopener noreferrer" className="rounded-[2rem] bg-white p-7 shadow-soft"><h2 className="font-serif text-3xl text-navy">Venezia Unica</h2><p className="mt-3 text-slate-600">Pass e servizi turistici acquistabili online.</p><span className="mt-5 inline-block font-bold text-gold">Apri ↗</span></a>
           <a href="https://maps.app.goo.gl/bJzKjQh8vEJWbF5g9" target="_blank" rel="noopener noreferrer" className="rounded-[2rem] bg-white p-7 shadow-soft"><h2 className="font-serif text-3xl text-navy">Tabaccheria vicina</h2><p className="mt-3 text-slate-600">Acquisto di persona durante gli orari di apertura.</p><span className="mt-5 inline-block font-bold text-gold">Apri la mappa ↗</span></a>
           <a href="https://actv.avmspa.it/" target="_blank" rel="noopener noreferrer" className="rounded-[2rem] bg-white p-7 shadow-soft"><h2 className="font-serif text-3xl text-navy">ACTV</h2><p className="mt-3 text-slate-600">Orari, fermate, validità e aggiornamenti ufficiali.</p><span className="mt-5 inline-block font-bold text-gold">Apri ↗</span></a>
         </div>

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Una guida pratica per vivere il Lido con ritmi più lenti.',
     images: ['/images/lido-guide-hero.webp'],
   },
+  alternates:{canonical:'/guide/lido-di-venezia',languages:{'it-IT':'/guide/lido-di-venezia','en-GB':'/en/guide/lido-di-venezia','de-DE':'/de/guide/lido-di-venezia','fr-FR':'/fr/guide/lido-di-venezia','es-ES':'/es/guide/lido-di-venezia','zh-CN':'/zh/guide/lido-di-venezia','x-default':'/guide/lido-di-venezia'}}
 };
 
 const highlights = [

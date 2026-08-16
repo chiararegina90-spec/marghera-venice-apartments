@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Venezia con bambini | Journal | Marghera Venice Apartments',
-  description:'Una Venezia fatta di campi, musei, barche e pause: con i bambini il segreto è non trasformarla in una corsa.'
+  description:'Una Venezia fatta di campi, musei, barche e pause: con i bambini il segreto è non trasformarla in una corsa.',
+  alternates:{canonical:'/journal/venezia-con-bambini',languages:{'it-IT':'/journal/venezia-con-bambini','en-GB':'/en/journal/venezia-con-bambini','de-DE':'/de/journal/venezia-con-bambini','fr-FR':'/fr/journal/venezia-con-bambini','es-ES':'/es/journal/venezia-con-bambini','zh-CN':'/zh/journal/venezia-con-bambini','x-default':'/journal/venezia-con-bambini'}}
 };
 
 const sections = [

@@ -9,15 +9,22 @@ import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata:Metadata={
   title:'Rossi Apartment | Marghera Venice Apartments',
-  description:'Rossi Apartment a Marghera: fino a 7 ospiti, parcheggio privato, collegamenti H24 per Venezia, Pet Friendly e Family Friendly.',
+  description:'Rossi Apartment a Marghera: oltre 100 m², fino a 7 ospiti, parcheggio privato, terrazza arredata e collegamenti H24 per Venezia.',
+  openGraph:{
+    title:'Rossi Apartment | Fino a 7 ospiti vicino a Venezia',
+    description:'Oltre 100 m² a Marghera con parcheggio privato, terrazza e collegamenti H24 per Venezia.',
+    images:[{url:'/images/rossi-page-hero.webp',alt:'Soggiorno ampio e luminoso di Rossi Apartment a Marghera'}]
+  },
+  twitter:{card:'summary_large_image',title:'Rossi Apartment | Marghera Venice Apartments',description:'Fino a 7 ospiti, parcheggio privato e collegamenti H24 per Venezia.',images:['/images/rossi-page-hero.webp']},
+  alternates:{canonical:'/case/rossi-apartment',languages:{'it-IT':'/case/rossi-apartment','en-GB':'/en/apartments/rossi-apartment','de-DE':'/de/apartments/rossi-apartment','fr-FR':'/fr/apartments/rossi-apartment','es-ES':'/es/apartments/rossi-apartment','zh-CN':'/zh/apartments/rossi-apartment','x-default':'/case/rossi-apartment'}}
 };
 
 const gallery = [
-  ['/images/rossi-page-hero.webp','Soggiorno di Rossi Apartment'],
-  ['/images/rossi-page-kitchen.webp','Cucina completa'],
-  ['/images/rossi-page-bedroom-1.webp','Camera matrimoniale'],
-  ['/images/rossi-page-bedroom-2.webp','Seconda camera'],
-  ['/images/rossi-page-extra-bed.webp','Zona notte aggiuntiva'],
+  ['/images/rossi-page-hero.webp','Soggiorno ampio e luminoso di Rossi Apartment a Marghera'],
+  ['/images/rossi-page-kitchen.webp','Cucina abitabile e completamente attrezzata di Rossi Apartment'],
+  ['/images/rossi-page-bedroom-1.webp','Camera matrimoniale di Rossi Apartment con biancheria professionale'],
+  ['/images/rossi-page-bedroom-2.webp','Seconda camera di Rossi Apartment configurabile per famiglie e gruppi'],
+  ['/images/rossi-page-extra-bed.webp','Zona notte aggiuntiva di Rossi Apartment per gruppi fino a 7 ospiti'],
 ];
 
 const services = [
@@ -37,7 +44,7 @@ const rossiReviews = [
 export default function RossiApartment(){
   return <><Header/><main>
     <section className="relative min-h-[78vh] overflow-hidden pt-20">
-      <Image src="/images/rossi-page-hero.webp" alt="Rossi Apartment" fill priority className="object-cover"/>
+      <Image src="/images/rossi-page-hero.webp" alt="Soggiorno ampio e luminoso di Rossi Apartment a Marghera vicino a Venezia" fill priority sizes="100vw" className="object-cover"/>
       <div className="hero-overlay absolute inset-0"/>
       <div className="relative mx-auto flex min-h-[calc(78vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-24 lg:px-8">
         <div className="max-w-4xl text-white">
@@ -50,7 +57,7 @@ export default function RossiApartment(){
           <h1 className="mt-4 font-serif text-5xl leading-none sm:text-6xl md:text-8xl">Rossi Apartment</h1>
           <p className="mt-6 max-w-2xl text-xl text-white/85">Oltre 100 m² di comfort per vivere Venezia in totale libertà, con spazi ampi pensati per famiglie e gruppi fino a 7 ospiti.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Richiedi disponibilità</a>
+            <a href="https://wa.me/393514462261?text=Ciao%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20di%20Rossi%20Apartment.%20Le%20mie%20date%20sono%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Verifica disponibilità</a>
             <Link href="/#case" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white">← Torna alle case</Link>
           </div>
         </div>
@@ -96,7 +103,7 @@ export default function RossiApartment(){
           </div>
         </div>
         <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem] shadow-soft">
-          <Image src="/images/rossi-page-kitchen-2.webp" alt="Cucina di Rossi Apartment" fill className="object-cover"/>
+          <Image src="/images/rossi-page-kitchen-2.webp" alt="Cucina abitabile e attrezzata di Rossi Apartment a Marghera" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover"/>
         </div>
       </div>
     </section>
@@ -171,9 +178,9 @@ export default function RossiApartment(){
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Rossi Apartment</p>
         <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Vuoi sapere se è disponibile?</h2>
-        <p className="mt-5 text-lg text-slate-600">Scrivici direttamente: nessuna prenotazione automatica, riceverai una risposta personale.</p>
+        <p className="mt-5 text-lg text-slate-600">Scrivici le date e il numero di ospiti: ti risponderemo personalmente con disponibilità e informazioni per il soggiorno.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href="https://wa.me/393514462261" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">WhatsApp</a>
+          <a href="https://wa.me/393514462261?text=Ciao%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20di%20Rossi%20Apartment.%20Le%20mie%20date%20sono%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Verifica su WhatsApp</a>
           <a href="mailto:rossiapartmentvenice@gmail.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Invia un'email</a>
         </div>
         <p className="mt-8 text-sm text-slate-500">CIN Rossi Apartment: IT027042C2EDHHAM7Z</p>

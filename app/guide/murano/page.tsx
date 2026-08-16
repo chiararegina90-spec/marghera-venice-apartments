@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Una guida pratica e originale per organizzare la visita a Murano.',
     images: ['/images/murano-guide-hero.webp'],
   },
+  alternates:{canonical:'/guide/murano',languages:{'it-IT':'/guide/murano','en-GB':'/en/guide/murano','de-DE':'/de/guide/murano','fr-FR':'/fr/guide/murano','es-ES':'/es/guide/murano','zh-CN':'/zh/guide/murano','x-default':'/guide/murano'}}
 };
 
 const highlights = [

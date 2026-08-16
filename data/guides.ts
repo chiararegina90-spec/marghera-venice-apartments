@@ -8,6 +8,7 @@ export const guideData = {
     "subtitle": "Biciclette, case di pescatori e orizzonti aperti.",
     "description": "Una striscia sottile tra mare e laguna, da vivere lentamente tra Murazzi, borghi e natura.",
     "image": "/images/guide-pellestrina-final.webp",
+    "imageAlt": "Vista aerea dell’isola di Pellestrina tra laguna e mare Adriatico",
     "badges": [
       [
         "Visita consigliata",
@@ -183,6 +184,7 @@ export const guideData = {
     "subtitle": "Canali, mercato del pesce e una Venezia più quotidiana.",
     "description": "Una città lagunare da raggiungere anche senza auto, perfetta per una giornata tra centro storico e Sottomarina.",
     "image": "/images/veneto-chioggia-pellestrina-final.webp",
+    "imageAlt": "Canale di Chioggia con ponti, barche e case affacciate sull’acqua",
     "badges": [
       [
         "Visita consigliata",
@@ -354,6 +356,7 @@ export const guideData = {
     "subtitle": "Un itinerario tra giardini, borghi e dimore veneziane.",
     "description": "Una delle escursioni più vicine agli appartamenti e una delle più sottovalutate dai visitatori.",
     "image": "/images/veneto-riviera-brenta-final.webp",
+    "imageAlt": "Paesaggio della Riviera del Brenta con canale, ponti e case storiche",
     "badges": [
       [
         "Visita consigliata",
@@ -520,6 +523,7 @@ export const guideData = {
     "subtitle": "Una città da vivere tra Giotto, mercati e portici.",
     "description": "Una giornata d’arte e vita urbana, facilmente combinabile con un soggiorno a Marghera.",
     "image": "/images/veneto-padova-final.webp",
+    "imageAlt": "Prato della Valle a Padova con canale, statue e palazzi storici",
     "badges": [
       [
         "Visita consigliata",
@@ -691,6 +695,7 @@ export const guideData = {
     "subtitle": "Una città elegante, raccolta e facile da vivere.",
     "description": "Canali, piazze e cicchetti in un centro storico a misura di passeggiata.",
     "image": "/images/veneto-treviso-final.webp",
+    "imageAlt": "Canale nel centro storico di Treviso con portici e salici",
     "badges": [
       [
         "Visita consigliata",
@@ -853,6 +858,7 @@ export const guideData = {
     "subtitle": "Arena, piazze e quartieri da vivere oltre Romeo e Giulietta.",
     "description": "Una città d’arte completa, perfetta per un’escursione in auto o in treno.",
     "image": "/images/veneto-verona-final.webp",
+    "imageAlt": "Arena di Verona e Piazza Bra in una giornata di sole",
     "badges": [
       [
         "Visita consigliata",
@@ -1024,6 +1030,7 @@ export const guideData = {
     "subtitle": "Strade panoramiche, borghi e vigneti tra Conegliano e Valdobbiadene.",
     "description": "Un itinerario ideale in auto, da costruire con poche soste selezionate e una degustazione responsabile.",
     "image": "/images/veneto-colline-prosecco-final.webp",
+    "imageAlt": "Colline del Prosecco con vigneti, borghi e paesaggio rurale veneto",
     "badges": [
       [
         "Visita consigliata",
@@ -1195,6 +1202,7 @@ export const guideData = {
     "subtitle": "Laghi, passi e panorami alpini partendo dalla pianura.",
     "description": "Un’escursione più lunga, ideale per chi viaggia in auto e vuole dedicare un’intera giornata alla montagna.",
     "image": "/images/guide-dolomiti-final.webp",
+    "imageAlt": "Panorama delle Dolomiti con cime rocciose, prati e case alpine",
     "badges": [
       [
         "Visita consigliata",
@@ -1366,6 +1374,7 @@ export const guideData = {
     "subtitle": "Verde, silenzio e laguna a pochi minuti da Venezia.",
     "description": "Un’isola diversa, ideale per chi vuole rallentare senza allontanarsi troppo dal centro storico.",
     "image": "/images/guide-certosa-final.webp",
+    "imageAlt": "Vista aerea dell’Isola della Certosa nella laguna di Venezia",
     "badges": [
       [
         "Visita consigliata",
@@ -1532,6 +1541,7 @@ export const guideData = {
     "subtitle": "Campi, carciofi e il Bacan amato dai veneziani.",
     "description": "Un’isola agricola, ampia e lenta, da vivere in bicicletta e con grande rispetto per i ritmi locali.",
     "image": "/images/guide-sant-erasmo-final.webp",
+    "imageAlt": "Vista aerea di Sant’Erasmo con canali, campi e case nella laguna di Venezia",
     "badges": [
       [
         "Visita consigliata",
