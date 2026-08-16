@@ -1,191 +1,43 @@
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Feature from '@/components/Feature';
+import SectionTitle from '@/components/SectionTitle';
 import WeChatCard from '@/components/WeChatCard';
 
-export const metadata: Metadata = {
-  title: '威尼斯附近公寓与免费私人停车',
-  description:
-    'Rossi Apartment 与 Dimora Castelli 位于马尔盖拉，前往威尼斯方便，提供免费私人停车位，适合家庭、朋友及携宠旅客。',
-  alternates: {
-    canonical: '/zh',
-    languages: {
-      'it-IT': '/',
-      'en-GB': '/en',
-      'de-DE': '/de',
-      'fr-FR': '/fr',
-      'es-ES': '/es',
-      'zh-CN': '/zh',
-      'x-default': '/',
-    },
-  },
-  openGraph: {
-    title: 'Marghera Venice Apartments｜您的威尼斯之家',
-    description:
-      '住在马尔盖拉，轻松前往威尼斯：两套舒适公寓、免费私人停车位与全天候交通连接。',
-    url: '/zh',
-    locale: 'zh_CN',
-    images: ['/images/home-rialto-vincenzo-landino.webp'],
-  },
-twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
-
-const cards = [
-  [
-    'Rossi Apartment',
-    '最多 7 位客人 · 适合家庭和朋友团体',
-    '/images/rossi-card.webp',
-    '/zh/apartments/rossi-apartment',
-  ],
-  [
-    'Dimora Castelli',
-    '最多 5 位客人 · 温馨、安静、舒适',
-    '/images/castelli-card.webp',
-    '/zh/apartments/dimora-castelli',
-  ],
-] as const;
-
-export default function Home() {
-  return (
-    <>
-      <Header lang="zh" />
-      <main>
-        <section className="relative min-h-[88vh] overflow-hidden pt-20">
-          <Image
-            src="/images/home-rialto-vincenzo-landino.webp"
-            alt="威尼斯里亚托桥与大运河"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="hero-overlay absolute inset-0" />
-
-          <div className="relative mx-auto flex min-h-[calc(88vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8">
-            <div className="max-w-4xl text-white">
-              <p className="text-xs font-black uppercase tracking-[.25em] text-gold">
-                Marghera · Venezia
-              </p>
-              <h1 className="mt-5 break-words font-serif text-5xl leading-[1.02] sm:text-6xl md:text-8xl">
-                威尼斯，只是旅程的开始。
-              </h1>
-              <p className="mt-7 max-w-2xl text-xl text-white/85">
-                两套位于马尔盖拉的舒适公寓，提供免费私人停车位，公共交通可便捷前往威尼斯，并贴心欢迎家庭与宠物。
-              </p>
-
-              <div className="mt-9 flex flex-wrap gap-3">
-                <a
-                  href="#case"
-                  className="rounded-full bg-gold px-7 py-4 font-bold text-navy"
-                >
-                  查看公寓
-                </a>
-                <a
-                  href="#direct-contact"
-                  className="rounded-full border border-white/60 px-7 py-4 font-bold text-white"
-                >
-                  微信咨询
-                </a>
-              </div>
-
-              <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm font-bold">
-                <span>免费私人停车</span>
-                <span>全天候交通连接</span>
-                <span>宠物友好</span>
-                <span>家庭友好</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="case" className="py-24">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">
-              我们的公寓
-            </p>
-            <h2 className="mt-3 break-words font-serif text-5xl text-navy">
-              选择您在威尼斯附近的家
-            </h2>
-            <p className="mt-4 max-w-3xl text-lg text-slate-600">
-              既能轻松游览威尼斯，也能享受真实住宅的空间、厨房和停车便利。
-            </p>
-
-            <div className="mt-10 grid gap-8 lg:grid-cols-2">
-              {cards.map(([title, sub, img, href]) => (
-                <article
-                  key={title}
-                  className="overflow-hidden rounded-[2rem] bg-white shadow-soft"
-                >
-                  <div className="relative h-[420px]">
-                    <Image
-                      src={img}
-                      alt={`${title} 公寓实景`}
-                      fill
-                      sizes="(min-width:1024px) 50vw,100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-8">
-                    <h3 className="font-serif text-4xl text-navy">{title}</h3>
-                    <p className="mt-2 text-slate-600">{sub}</p>
-                    <Link
-                      href={href}
-                      className="mt-6 inline-block font-bold text-gold"
-                    >
-                      查看详情 →
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-cream py-20">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <h2 className="break-words font-serif text-5xl text-navy">
-              从这里开始规划威尼斯之旅
-            </h2>
-            <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-              {[
-                ['探索威尼斯', '景点、岛屿、亲子与实用建议', '/zh/discover-venice'],
-                ['探索威尼托', '帕多瓦、维罗纳、普罗塞克丘陵与多洛米蒂', '/zh/discover-veneto'],
-                ['如何前往威尼斯', '公交、火车与机场交通信息', '/zh/getting-to-venice'],
-                ['旅行指南', '15 个值得探索的目的地', '/zh/guide'],
-              ].map(([title, description, href]) => (
-                <Link
-                  href={href}
-                  key={href}
-                  className="rounded-3xl bg-white p-7 shadow-soft"
-                >
-                  <h3 className="font-serif text-3xl text-navy">{title}</h3>
-                  <p className="mt-3 text-slate-600">{description}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="direct-contact" className="bg-navy py-20 text-white">
-          <div className="mx-auto max-w-4xl px-5 text-center">
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">
-              微信联系
-            </p>
-            <h2 className="mt-3 break-words font-serif text-5xl">
-              告诉我们您的旅行计划
-            </h2>
-            <p className="mx-auto mt-5 max-w-2xl text-white/75">
-              发送入住日期、人数和您感兴趣的公寓，我们会亲自回复可订情况与住宿信息。
-            </p>
-
-            <div className="mt-8">
-              <WeChatCard dark title="添加我们的微信" />
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer lang="zh" />
-    </>
-  );
-}
+export const metadata:Metadata={
+  title:'威尼斯附近公寓与免费私人停车',
+  description:'Rossi Apartment 与 Dimora Castelli 位于马尔盖拉：免费私人停车、全天候前往威尼斯的交通连接，并贴心欢迎家庭与携宠旅客。',
+  openGraph:{title:'Marghera Venice Apartments｜您的威尼斯之家',description:'两套位于马尔盖拉的舒适公寓，提供免费私人停车位与全天候前往威尼斯的交通连接。',images:[{url:'/images/home-rialto-vincenzo-landino.webp',alt:'威尼斯里亚托桥与大运河'}],type:'website'},
+  twitter:{card:'summary_large_image',title:'Marghera Venice Apartments',description:'两套位于马尔盖拉的舒适公寓，提供免费私人停车位与全天候前往威尼斯的交通连接。',images:['/images/home-rialto-vincenzo-landino.webp']},
+  alternates:{canonical:'/zh',languages:{'it-IT':'/','en-GB':'/en','de-DE':'/de','fr-FR':'/fr','es-ES':'/es','zh-CN':'/zh','x-default':'/'}}
+};
+const inspiration=[
+ {title:'探索威尼斯',text:'岛屿、活动与本地建议，帮助您更深入地体验威尼斯。',image:'/images/scopri-venezia-michael-heise.webp',alt:'威尼斯圣马可湾与总督宫',href:'/zh/discover-venice'},
+ {title:'探索威尼托',text:'布伦塔河沿岸、普罗塞克丘陵与迷人的艺术城市。',image:'/images/valdobbiadene.webp',alt:'瓦尔多比亚德内的普罗塞克丘陵与葡萄园',href:'/zh/discover-veneto'},
+ {title:'精选体验',text:'贡多拉、私人接送、酒庄与我们为旅客精选的体验。',image:'/images/gondola.webp',alt:'贡多拉行驶在威尼斯运河中',href:'/zh/experiences'},
+ {title:'指南与活动',text:'救世主节、嘉年华、双年展以及实用旅行信息。',image:'/images/redentore.webp',alt:'威尼斯救世主节与泻湖庆典',href:'/zh/journal'}
+];
+const journal=[
+ {title:'从马尔盖拉前往威尼斯',text:'公交、火车、实用信息，以及夜间也能轻松返回的便利。',image:'/images/home-come-raggiungere-venezia.webp',alt:'马尔盖拉与威尼斯之间的公共交通连接',href:'/zh/getting-to-venice'},
+ {title:'布伦塔河沿岸一日游',text:'威尼斯别墅、艺术与自然，驾车不远即可抵达。',image:'/images/veneto-riviera-brenta-final.webp',alt:'布伦塔河沿岸历史建筑与河道风景',href:'/zh/guide/riviera-del-brenta'},
+ {title:'带孩子游威尼斯',text:'适合家庭的博物馆、活动与轻松游览建议。',image:'/images/venezia-bambini-museo-storia-naturale.webp',alt:'适合亲子参观的威尼斯自然历史博物馆',href:'/zh/journal/venezia-con-bambini'}
+];
+export default function Home(){return <><Header lang="zh"/><main>
+<section className="relative min-h-[88vh] overflow-hidden pt-20"><Image src="/images/home-rialto-vincenzo-landino.webp" alt="威尼斯里亚托桥与大运河" fill priority sizes="100vw" className="object-cover object-center"/><div className="hero-overlay absolute inset-0"/><p className="absolute bottom-4 right-5 z-20 text-[11px] text-white/90 drop-shadow-md">摄影：Vincenzo Landino – Unsplash</p><div className="relative mx-auto flex min-h-[calc(88vh-5rem)] max-w-7xl items-center px-5 py-20 lg:px-8"><div className="max-w-4xl text-white"><p className="text-xs font-black uppercase tracking-[.25em] text-gold">Marghera · Venezia</p><h1 className="mt-5 break-words font-serif text-5xl leading-[1.02] sm:text-6xl md:text-8xl">威尼斯，只是旅程的开始。</h1><p className="mt-7 max-w-2xl text-xl text-white/85">两套舒适公寓，提供免费私人停车位、全天候前往威尼斯的交通连接，并贴心欢迎家庭与宠物。</p><div className="mt-9 flex flex-wrap gap-3"><a href="#case" className="rounded-full bg-gold px-7 py-4 font-bold text-navy transition hover:-translate-y-1">查看我们的公寓</a><a href="#direct-contact" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white transition hover:bg-white hover:text-navy">微信咨询</a></div><div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm font-bold text-white/90"><span>免费私人停车</span><span>全天候连接威尼斯</span><span>宠物友好</span><span>家庭友好</span></div></div></div></section>
+<section className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="为什么选择我们" title="更多自由，更少烦恼" text="住在威尼斯附近，同时保留自驾便利、真正住宅的空间，以及让旅程更轻松的贴心服务。"/><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4"><Feature icon={<CarIcon/>} title="免费私人停车" text="游览威尼斯时，您的车辆可停放在专属私人停车位。"/><Feature icon={<MoonIcon/>} title="全天候前往威尼斯" text="白天与夜间均有交通连接，让您可以自在游览并按自己的节奏返回。"/><Feature icon={<PawIcon/>} title="宠物友好" text="可免费提供宠物窝以及饮水和食物碗。"/><Feature icon={<BabyIcon/>} title="家庭友好" text="两套公寓均可应要求免费提供婴儿床或儿童床及床品。"/></div></div></section>
+<section id="case" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="我们的公寓" title="选择您在威尼斯附近的家" text="两套真实舒适的公寓，照片所展示的就是您抵达时会看到的样子。"/><div className="grid gap-8 lg:grid-cols-2">{[
+ {title:'Rossi Apartment',sub:'最多 7 位客人 · 适合家庭和朋友团体',image:'/images/rossi-card.webp',alt:'Rossi Apartment 位于马尔盖拉的明亮卧室',href:'/zh/apartments/rossi-apartment'},
+ {title:'Dimora Castelli',sub:'最多 5 位客人 · 温馨、舒适、安静',image:'/images/castelli-card.webp',alt:'Dimora Castelli 位于马尔盖拉的卧室',href:'/zh/apartments/dimora-castelli'}
+].map(x=><article key={x.title} className="group overflow-hidden rounded-[2rem] bg-white shadow-soft"><div className="relative h-[420px] overflow-hidden"><Image src={x.image} alt={x.alt} fill sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw" className="card-image object-cover"/></div><div className="p-8"><h3 className="font-serif text-4xl text-navy">{x.title}</h3><p className="mt-2 text-slate-600">{x.sub}</p><div className="mt-6 flex flex-wrap gap-2 text-xs font-bold text-navy"><span className="rounded-full bg-cream px-3 py-2">免费私人停车</span><span className="rounded-full bg-cream px-3 py-2">宠物友好</span><span className="rounded-full bg-cream px-3 py-2">家庭友好</span></div><Link href={x.href} className="mt-7 inline-block font-bold text-gold">查看公寓 →</Link></div></article>)}</div></div></section>
+<section id="ispirazione" className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="旅行灵感" title="旅程在抵达之前就已开始" text="威尼斯、威尼托，以及我们推荐给客人的精选体验。" center/><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">{inspiration.map(x=><article key={x.title} className="group overflow-hidden rounded-3xl bg-white shadow-soft"><div className="relative h-56 overflow-hidden"><Image src={x.image} alt={x.alt} fill sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw" className="card-image object-cover"/></div><div className="p-6"><h3 className="font-serif text-3xl text-navy">{x.title}</h3><p className="mt-3 text-slate-600">{x.text}</p><Link href={x.href} className="mt-5 inline-block font-bold text-gold">了解更多 →</Link></div></article>)}</div></div></section>
+<section id="pet-family" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="宠物 & 家庭" title="每一位客人都真心受到欢迎" text="可应要求免费提供的贴心服务，让全家的旅程更加轻松。"/><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">{[
+ ['/images/pet-dog-clean.webp','四足伙伴','宠物窝以及饮水和食物碗。','宠物友好公寓中的狗狗'],['/images/family-culla-reale.webp','免费婴儿床','含床垫与床品。','公寓可免费提供的婴儿床'],['/images/family-lettino-reale.webp','免费儿童床','为小朋友的休息准备妥当。','可应要求提供的儿童床'],['/images/family-together-clean.webp','适合家庭的空间','宽敞空间与设备齐全的厨房。','家庭在宽敞舒适的公寓中']
+].map(([img,title,text,alt])=><article key={title} className="overflow-hidden rounded-3xl border border-slate-200 bg-white"><div className="relative h-52"><Image src={img} alt={alt} fill sizes="(min-width:1280px) 25vw, (min-width:768px) 50vw, 100vw" className="object-cover"/></div><div className="p-6"><h3 className="font-serif text-2xl text-navy">{title}</h3><p className="mt-2 text-slate-600">{text}</p></div></article>)}</div></div></section>
+<section id="journal" className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="旅行日志" title="真正实用的旅行指南" text="本地、实用的内容，帮助您更安心地规划旅程。"/><div className="grid gap-6 lg:grid-cols-3">{journal.map(x=><article key={x.title} className="overflow-hidden rounded-3xl bg-white shadow-soft"><div className="relative h-60"><Image src={x.image} alt={x.alt} fill sizes="(min-width:1024px) 33vw, 100vw" className="object-cover object-center"/></div><div className="p-7"><h3 className="font-serif text-3xl text-navy">{x.title}</h3><p className="mt-3 text-slate-600">{x.text}</p><Link href={x.href} className="mt-5 inline-block font-bold text-gold transition hover:translate-x-1">阅读指南 →</Link></div></article>)}</div><div className="mt-10 text-center"><Link href="/zh/journal" className="inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-navy/90">浏览全部旅行日志 →</Link></div></div></section>
+<section id="mappa" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow="精彩目的地近在咫尺" title="一个落脚点，探索多种目的地" text="我们的插画地图展示威尼斯、泻湖以及威尼托主要目的地的真实位置关系。"/><div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-cream shadow-soft"><Image src="/images/mappa-veneto-definitiva.webp" alt="从马尔盖拉可前往的威尼斯、泻湖与威尼托主要目的地插画地图" width={1536} height={1024} className="h-auto w-full"/></div></div></section>
+<section id="direct-contact" className="scroll-mt-20 bg-navy py-20 text-center text-white"><div className="mx-auto max-w-4xl px-5"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">微信联系</p><h2 className="mt-3 break-words font-serif text-5xl">告诉我们您的旅行计划</h2><p className="mx-auto mt-5 max-w-2xl text-lg text-white/75">发送入住日期、人数和您感兴趣的公寓，我们会亲自回复可订情况与住宿信息。</p><div className="mt-8"><WeChatCard dark title="添加我们的微信"/></div></div></section>
+</main><Footer lang="zh"/></>}
