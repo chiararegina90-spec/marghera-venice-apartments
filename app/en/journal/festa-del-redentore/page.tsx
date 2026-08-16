@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Festa del Redentore | Venice Travel Journal',
   description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',
   alternates:{canonical:'/en/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}},
-  openGraph:{title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',url:'/en/journal/festa-del-redentore',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.'}
+  openGraph:{title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',url:'/en/journal/festa-del-redentore',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

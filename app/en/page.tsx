@@ -10,7 +10,7 @@ import SectionTitle from '@/components/SectionTitle';
 
 
 export const metadata:Metadata={
-  title:'Marghera Venice Apartments | Apartments near Venice',
+  title:'Apartments near Venice',
   description:'Rossi Apartment and Dimora Castelli in Marghera: private parking, 24/7 connections to Venice, Pet Friendly and Family Friendly hospitality.',
   openGraph:{
     title:'Marghera Venice Apartments | Your stay near Venice',

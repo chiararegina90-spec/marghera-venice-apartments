@@ -8,8 +8,8 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata: Metadata = {
   title: 'Veneto in bicicletta | Itinerari e cicloturismo | Marghera Venice Apartments',
   description: 'Idee e percorsi per scoprire il Veneto in bicicletta: laguna, fiumi, colline, Dolomiti, ex ferrovie e grandi ciclovie.',
-  alternates:{canonical:'/guide/veneto-in-bicicletta',languages:{'it-IT':'/guide/veneto-in-bicicletta','en-GB':'/en/guide/veneto-in-bicicletta','de-DE':'/de/guide/veneto-in-bicicletta','fr-FR':'/fr/guide/veneto-in-bicicletta','es-ES':'/es/guide/veneto-in-bicicletta','zh-CN':'/zh/guide/veneto-in-bicicletta','x-default':'/guide/veneto-in-bicicletta'}}
-};
+  alternates:{canonical:'/guide/veneto-in-bicicletta',languages:{'it-IT':'/guide/veneto-in-bicicletta','en-GB':'/en/guide/veneto-in-bicicletta','de-DE':'/de/guide/veneto-in-bicicletta','fr-FR':'/fr/guide/veneto-in-bicicletta','es-ES':'/es/guide/veneto-in-bicicletta','zh-CN':'/zh/guide/veneto-in-bicicletta','x-default':'/guide/veneto-in-bicicletta'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const percorsi = [
   {

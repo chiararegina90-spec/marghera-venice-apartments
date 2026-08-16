@@ -8,14 +8,14 @@ import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata:Metadata={
-  title:'Rossi Apartment | Marghera Venice Apartments',
+  title:'Rossi Apartment',
   description:'Rossi Apartment in Marghera near Venice: over 100 m² for up to 7 guests, free private parking, a furnished terrace and day-and-night public transport to Venice.',
   openGraph:{
     title:'Rossi Apartment | Up to 7 guests vicino a Venezia',
     description:'Over 100 m² in Marghera with free private parking, a furnished terrace and convenient day-and-night connections to Venice.',
     images:[{url:'/images/rossi-page-hero.webp',alt:'Bright and spacious living room at Rossi Apartment in Marghera near Venice'}]
   },
-  twitter:{card:'summary_large_image',title:'Rossi Apartment | Marghera Venice Apartments',description:'Up to 7 guests, free private parking and convenient day-and-night connections to Venice.',images:['/images/rossi-page-hero.webp']},
+  twitter:{card:'summary_large_image',title:'Rossi Apartment',description:'Up to 7 guests, free private parking and convenient day-and-night connections to Venice.',images:['/images/rossi-page-hero.webp']},
   alternates:{canonical:'/en/apartments/rossi-apartment',languages:{'it-IT':'/case/rossi-apartment','en-GB':'/en/apartments/rossi-apartment','de-DE':'/de/apartments/rossi-apartment','fr-FR':'/fr/apartments/rossi-apartment','es-ES':'/es/apartments/rossi-apartment','zh-CN':'/zh/apartments/rossi-apartment','x-default':'/case/rossi-apartment'}}
 };
 

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: 'Una guida per esplorare il Veneto partendo da Marghera.',
     images: ['/images/veneto-colline-prosecco-final.webp'],
   },
-  alternates:{canonical:'/scopri-il-veneto',languages:{'it-IT':'/scopri-il-veneto','en-GB':'/en/discover-veneto','de-DE':'/de/discover-veneto','fr-FR':'/fr/discover-veneto','es-ES':'/es/discover-veneto','zh-CN':'/zh/discover-veneto','x-default':'/scopri-il-veneto'}}
-};
+  alternates:{canonical:'/scopri-il-veneto',languages:{'it-IT':'/scopri-il-veneto','en-GB':'/en/discover-veneto','de-DE':'/de/discover-veneto','fr-FR':'/fr/discover-veneto','es-ES':'/es/discover-veneto','zh-CN':'/zh/discover-veneto','x-default':'/scopri-il-veneto'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const destinations = [
   {

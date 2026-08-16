@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venice with children | Venice Travel Journal',
   description:'A Venice of campi, museums, boats and breaks: with children, the secret is not turning the day into a race.',
   alternates:{canonical:'/en/journal/venezia-con-bambini',languages:{'it-IT':'/journal/venezia-con-bambini','en-GB':'/en/journal/venezia-con-bambini','de-DE':'/de/journal/venezia-con-bambini','fr-FR':'/fr/journal/venezia-con-bambini','es-ES':'/es/journal/venezia-con-bambini','zh-CN':'/zh/journal/venezia-con-bambini','x-default':'/journal/venezia-con-bambini'}},
-  openGraph:{title:'Venice with children | Venice Travel Journal',description:'A Venice of campi, museums, boats and breaks: with children, the secret is not turning the day into a race.',url:'/en/journal/venezia-con-bambini',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venice with children | Venice Travel Journal',description:'A Venice of campi, museums, boats and breaks: with children, the secret is not turning the day into a race.'}
+  openGraph:{title:'Venice with children | Venice Travel Journal',description:'A Venice of campi, museums, boats and breaks: with children, the secret is not turning the day into a race.',url:'/en/journal/venezia-con-bambini',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice with children | Venice Travel Journal',description:'A Venice of campi, museums, boats and breaks: with children, the secret is not turning the day into a race.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

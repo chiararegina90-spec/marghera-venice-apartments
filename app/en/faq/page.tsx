@@ -5,10 +5,10 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
-  title:'FAQ | Marghera Venice Apartments',
+  title:'FAQ',
   description:'Check-in, check-out, self check-in, luggage storage, private parking, children, pets and practical information for your stay near Venice.',
-  openGraph:{title:'FAQ | Marghera Venice Apartments',description:'Practical answers about staying in our apartments near Venice, from check-in and parking to families and pets.',type:'website'},
-  twitter:{card:'summary',title:'FAQ | Marghera Venice Apartments',description:'Practical answers for planning your stay near Venice.'},
+  openGraph:{title:'FAQ',description:'Practical answers about staying in our apartments near Venice, from check-in and parking to families and pets.',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary',title:'FAQ',description:'Practical answers for planning your stay near Venice.',images:['/images/home-rialto-vincenzo-landino.webp']},
   alternates:{canonical:'/en/faq',languages:{'it-IT':'/faq','en-GB':'/en/faq','de-DE':'/de/faq','fr-FR':'/fr/faq','es-ES':'/es/faq','zh-CN':'/zh/faq','x-default':'/faq'}}
 };
 

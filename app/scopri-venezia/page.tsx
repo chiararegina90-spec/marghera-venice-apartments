@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: 'Una guida pratica e autentica per vivere Venezia partendo da Marghera.',
     images: ['/images/scopri-venezia-michael-heise.webp'],
   },
-  alternates:{canonical:'/scopri-venezia',languages:{'it-IT':'/scopri-venezia','en-GB':'/en/discover-venice','de-DE':'/de/discover-venice','fr-FR':'/fr/discover-venice','es-ES':'/es/discover-venice','zh-CN':'/zh/discover-venice','x-default':'/scopri-venezia'}}
-};
+  alternates:{canonical:'/scopri-venezia',languages:{'it-IT':'/scopri-venezia','en-GB':'/en/discover-venice','de-DE':'/de/discover-venice','fr-FR':'/fr/discover-venice','es-ES':'/es/discover-venice','zh-CN':'/zh/discover-venice','x-default':'/scopri-venezia'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const itinerary = [
   ['08:30','Piazza San Marco','Arriva presto, quando la luce è più bella e la città è ancora tranquilla.'],

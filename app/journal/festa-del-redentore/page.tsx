@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:'Festa del Redentore | Journal | Marghera Venice Apartments',
   description:'Una delle notti più sentite dai veneziani: memoria, tavolate, barche e fuochi riflessi nel Bacino di San Marco.',
-  alternates:{canonical:'/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}}
-};
+  alternates:{canonical:'/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:'Il ponte votivo',text:'Per la ricorrenza viene realizzato un ponte galleggiante temporaneo tra le Zattere e la Giudecca, verso la Chiesa del Redentore. È uno dei simboli più riconoscibili della festa.'},

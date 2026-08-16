@@ -5,11 +5,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Venice & Veneto Travel Guides | Marghera Venice Apartments',
+  title: 'Venice & Veneto Travel Guides',
   description: 'Local travel guides to Venice, the lagoon islands and Veneto: Murano, Burano, Lido, Chioggia, Padua, Verona, the Dolomites and more.',
   alternates:{canonical:'/en/guide',languages:{'it-IT':'/guide','en-GB':'/en/guide','de-DE':'/de/guide','fr-FR':'/fr/guide','es-ES':'/es/guide','zh-CN':'/zh/guide','x-default':'/guide'}},
-  openGraph:{title:'Venice & Veneto Travel Guides | Marghera Venice Apartments',description:'Plan day trips and discover Venice, its lagoon islands and Veneto with practical local guides.',url:'/en/guide',locale:'en_GB',type:'website'}
-};
+  openGraph:{title:'Venice & Veneto Travel Guides',description:'Plan day trips and discover Venice, its lagoon islands and Veneto with practical local guides.',url:'/en/guide',locale:'en_GB',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const guides = [
   ['Murano','Where glass becomes art','Furnaces, workshops and centuries of glassmaking tradition.','/images/murano-glass.webp','Artistic coloured Murano glass details','murano'],

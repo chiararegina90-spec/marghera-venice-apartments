@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:"Dove parcheggiare per visitare Venezia | Journal | Marghera Venice Apartments",
   description:"No, in Piazza San Marco non si arriva in macchina. Ma per chi preferisce l’auto esistono diverse soluzioni molto comode.",
-  alternates:{canonical:'/journal/dove-parcheggiare-venezia',languages:{'it-IT':'/journal/dove-parcheggiare-venezia','en-GB':'/en/journal/dove-parcheggiare-venezia','de-DE':'/de/journal/dove-parcheggiare-venezia','fr-FR':'/fr/journal/dove-parcheggiare-venezia','es-ES':'/es/journal/dove-parcheggiare-venezia','zh-CN':'/zh/journal/dove-parcheggiare-venezia','x-default':'/journal/dove-parcheggiare-venezia'}}
-};
+  alternates:{canonical:'/journal/dove-parcheggiare-venezia',languages:{'it-IT':'/journal/dove-parcheggiare-venezia','en-GB':'/en/journal/dove-parcheggiare-venezia','de-DE':'/de/journal/dove-parcheggiare-venezia','fr-FR':'/fr/journal/dove-parcheggiare-venezia','es-ES':'/es/journal/dove-parcheggiare-venezia','zh-CN':'/zh/journal/dove-parcheggiare-venezia','x-default':'/journal/dove-parcheggiare-venezia'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:"La soluzione più semplice per i nostri ospiti",text:"Rossi Apartment e Dimora Castelli dispongono di parcheggio gratuito. Per visitare Venezia consigliamo normalmente di lasciare l’auto all’alloggio e utilizzare autobus o treno: niente ricerca del posto auto e nessun costo di garage per la giornata."},

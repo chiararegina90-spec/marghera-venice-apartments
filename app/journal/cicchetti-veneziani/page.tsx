@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:"Cicchetti veneziani | Journal | Marghera Venice Apartments",
   description:"Non sono tapas, non sono un antipasto e non sono un pasto in miniatura. Sono… cicchetti.",
-  alternates:{canonical:'/journal/cicchetti-veneziani',languages:{'it-IT':'/journal/cicchetti-veneziani','en-GB':'/en/journal/cicchetti-veneziani','de-DE':'/de/journal/cicchetti-veneziani','fr-FR':'/fr/journal/cicchetti-veneziani','es-ES':'/es/journal/cicchetti-veneziani','zh-CN':'/zh/journal/cicchetti-veneziani','x-default':'/journal/cicchetti-veneziani'}}
-};
+  alternates:{canonical:'/journal/cicchetti-veneziani',languages:{'it-IT':'/journal/cicchetti-veneziani','en-GB':'/en/journal/cicchetti-veneziani','de-DE':'/de/journal/cicchetti-veneziani','fr-FR':'/fr/journal/cicchetti-veneziani','es-ES':'/es/journal/cicchetti-veneziani','zh-CN':'/zh/journal/cicchetti-veneziani','x-default':'/journal/cicchetti-veneziani'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:"Una tradizione da osteria",text:"I cicchetti appartengono alla cultura dei bàcari e delle osterie veneziane. Da secoli piccoli bocconi accompagnano il vino e permettono di fermarsi, mangiare qualcosa e continuare la giornata senza trasformare ogni sosta in un pranzo seduti."},

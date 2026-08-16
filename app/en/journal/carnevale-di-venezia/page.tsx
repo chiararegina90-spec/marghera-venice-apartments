@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venice Carnival | Venice Travel Journal',
   description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',
   alternates:{canonical:'/en/journal/carnevale-di-venezia',languages:{'it-IT':'/journal/carnevale-di-venezia','en-GB':'/en/journal/carnevale-di-venezia','de-DE':'/de/journal/carnevale-di-venezia','fr-FR':'/fr/journal/carnevale-di-venezia','es-ES':'/es/journal/carnevale-di-venezia','zh-CN':'/zh/journal/carnevale-di-venezia','x-default':'/journal/carnevale-di-venezia'}},
-  openGraph:{title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',url:'/en/journal/carnevale-di-venezia',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.'}
+  openGraph:{title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',url:'/en/journal/carnevale-di-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

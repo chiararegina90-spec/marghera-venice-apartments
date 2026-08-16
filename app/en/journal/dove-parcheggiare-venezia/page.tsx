@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Where to park when visiting Venice | Venice Travel Journal',
   description:'No, you cannot drive to St Mark’s Square. But if you prefer travelling by car, there are several very convenient options.',
   alternates:{canonical:'/en/journal/dove-parcheggiare-venezia',languages:{'it-IT':'/journal/dove-parcheggiare-venezia','en-GB':'/en/journal/dove-parcheggiare-venezia','de-DE':'/de/journal/dove-parcheggiare-venezia','fr-FR':'/fr/journal/dove-parcheggiare-venezia','es-ES':'/es/journal/dove-parcheggiare-venezia','zh-CN':'/zh/journal/dove-parcheggiare-venezia','x-default':'/journal/dove-parcheggiare-venezia'}},
-  openGraph:{title:'Where to park when visiting Venice | Venice Travel Journal',description:'No, you cannot drive to St Mark’s Square. But if you prefer travelling by car, there are several very convenient options.',url:'/en/journal/dove-parcheggiare-venezia',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Where to park when visiting Venice | Venice Travel Journal',description:'No, you cannot drive to St Mark’s Square. But if you prefer travelling by car, there are several very convenient options.'}
+  openGraph:{title:'Where to park when visiting Venice | Venice Travel Journal',description:'No, you cannot drive to St Mark’s Square. But if you prefer travelling by car, there are several very convenient options.',url:'/en/journal/dove-parcheggiare-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Where to park when visiting Venice | Venice Travel Journal',description:'No, you cannot drive to St Mark’s Square. But if you prefer travelling by car, there are several very convenient options.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

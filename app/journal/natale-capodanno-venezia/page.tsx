@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:'Natale e Capodanno a Venezia | Journal | Marghera Venice Apartments',
   description:'Luci, inverno, calli più intime e grandi eventi: Venezia cambia ritmo durante le feste.',
-  alternates:{canonical:'/journal/natale-capodanno-venezia',languages:{'it-IT':'/journal/natale-capodanno-venezia','en-GB':'/en/journal/natale-capodanno-venezia','de-DE':'/de/journal/natale-capodanno-venezia','fr-FR':'/fr/journal/natale-capodanno-venezia','es-ES':'/es/journal/natale-capodanno-venezia','zh-CN':'/zh/journal/natale-capodanno-venezia','x-default':'/journal/natale-capodanno-venezia'}}
-};
+  alternates:{canonical:'/journal/natale-capodanno-venezia',languages:{'it-IT':'/journal/natale-capodanno-venezia','en-GB':'/en/journal/natale-capodanno-venezia','de-DE':'/de/journal/natale-capodanno-venezia','fr-FR':'/fr/journal/natale-capodanno-venezia','es-ES':'/es/journal/natale-capodanno-venezia','zh-CN':'/zh/journal/natale-capodanno-venezia','x-default':'/journal/natale-capodanno-venezia'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:'Venezia a Natale',text:'Mercatini e iniziative possono variare di anno in anno. Il piacere più grande resta spesso passeggiare tra campi illuminati, chiese e sestieri con un ritmo più tranquillo.'},

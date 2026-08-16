@@ -8,8 +8,8 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata: Metadata = {
   title: 'Jesolo: spiaggia, mare e come arrivare | Marghera Venice Apartments',
   description: 'Piccola guida a Lido di Jesolo: spiaggia, famiglie, passeggiate e collegamenti in auto o autobus ATVO da Venezia Mestre.',
-  alternates:{canonical:'/guide/jesolo',languages:{'it-IT':'/guide/jesolo','en-GB':'/en/guide/jesolo','de-DE':'/de/guide/jesolo','fr-FR':'/fr/guide/jesolo','es-ES':'/es/guide/jesolo','zh-CN':'/zh/guide/jesolo','x-default':'/guide/jesolo'}}
-};
+  alternates:{canonical:'/guide/jesolo',languages:{'it-IT':'/guide/jesolo','en-GB':'/en/guide/jesolo','de-DE':'/de/guide/jesolo','fr-FR':'/fr/guide/jesolo','es-ES':'/es/guide/jesolo','zh-CN':'/zh/guide/jesolo','x-default':'/guide/jesolo'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const highlights = [
   ['Una lunga giornata al mare','Jesolo è una delle mete balneari più conosciute del Veneto e permette di alternare facilmente giornate culturali a Venezia e tempo sulla spiaggia.'],
@@ -46,7 +46,7 @@ export default function JesoloGuide(){
           <h2 className="mt-3 font-serif text-4xl">Auto oppure ATVO</h2>
           <p className="mt-5 text-white/75"><strong>In auto:</strong> da Marghera puoi raggiungere Jesolo direttamente con il tuo mezzo, soluzione comoda soprattutto per famiglie e per chi porta con sé tutto il necessario per la spiaggia.</p>
           <p className="mt-4 text-white/75"><strong>In autobus:</strong> la linea ATVO 10A collega la stazione ferroviaria di Venezia Mestre con Lido di Jesolo. Gli orari sono stagionali: controllali sempre prima di partire.</p>
-          <a href="https://www.atvo.it/assets/bus_routes/010a_08.06.26-30.08.26.pdf" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Orari ATVO 10A 2026 ↗</a>
+          <a href="https://www.atvo.it/" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Orari ATVO aggiornati ↗</a>
         </aside>
       </div>
     </section>

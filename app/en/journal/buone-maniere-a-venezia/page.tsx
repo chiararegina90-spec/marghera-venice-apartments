@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'How to enjoy Venice without annoying Venetians | Venice Travel Journal',
   description:'A few simple manners for enjoying the city as a guest, without forgetting that people really live here.',
   alternates:{canonical:'/en/journal/buone-maniere-a-venezia',languages:{'it-IT':'/journal/buone-maniere-a-venezia','en-GB':'/en/journal/buone-maniere-a-venezia','de-DE':'/de/journal/buone-maniere-a-venezia','fr-FR':'/fr/journal/buone-maniere-a-venezia','es-ES':'/es/journal/buone-maniere-a-venezia','zh-CN':'/zh/journal/buone-maniere-a-venezia','x-default':'/journal/buone-maniere-a-venezia'}},
-  openGraph:{title:'How to enjoy Venice without annoying Venetians | Venice Travel Journal',description:'A few simple manners for enjoying the city as a guest, without forgetting that people really live here.',url:'/en/journal/buone-maniere-a-venezia',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'How to enjoy Venice without annoying Venetians | Venice Travel Journal',description:'A few simple manners for enjoying the city as a guest, without forgetting that people really live here.'}
+  openGraph:{title:'How to enjoy Venice without annoying Venetians | Venice Travel Journal',description:'A few simple manners for enjoying the city as a guest, without forgetting that people really live here.',url:'/en/journal/buone-maniere-a-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'How to enjoy Venice without annoying Venetians | Venice Travel Journal',description:'A few simple manners for enjoying the city as a guest, without forgetting that people really live here.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

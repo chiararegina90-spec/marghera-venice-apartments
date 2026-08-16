@@ -119,6 +119,8 @@ const routes = [
   "/journal/venezia-con-bambini",
   "/journal/venezia-con-il-cane",
   "/link-utili",
+  "/privacy-policy",
+  "/cookie-policy",
   "/scopri-il-veneto",
   "/scopri-venezia",
   "/es",
@@ -241,14 +243,14 @@ const routes = [
   "/zh/journal/venezia-con-bambini",
   "/zh/journal/venezia-con-il-cane",
   "/zh/privacy-policy",
-  "/zh/useful-links",];
+  "/zh/useful-links",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${baseUrl}${route === '/' ? '' : route}`,
-    lastModified: new Date(),
     changeFrequency: route === '/' ? 'weekly' : route.startsWith('/journal/') ? 'monthly' : 'monthly',
-    priority: route === '/' ? 1 : route.startsWith('/case/') ? 0.9 : route === '/come-raggiungere-venezia' ? 0.8 : 0.7,
+    priority: route === '/' ? 1 : (route.startsWith('/case/') || route.includes('/apartments/')) ? 0.9 : (route === '/come-raggiungere-venezia' || route.endsWith('/getting-to-venice')) ? 0.8 : 0.7,
     alternates: { languages: Object.fromEntries(siteLangs.map((lang) => [hreflang[lang], `${baseUrl}${localePath(route, lang) === '/' ? '' : localePath(route, lang)}`])) },
   }));
 }

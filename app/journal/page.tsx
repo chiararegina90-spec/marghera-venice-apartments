@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:'Journal | Venezia, eventi e consigli | Marghera Venice Apartments',
   description:'Eventi, tradizioni, cultura veneziana, famiglie, trasporti e informazioni pratiche per vivere Venezia con maggiore consapevolezza.',
-  alternates:{canonical:'/journal',languages:{'it-IT':'/journal','en-GB':'/en/journal','de-DE':'/de/journal','fr-FR':'/fr/journal','es-ES':'/es/journal','zh-CN':'/zh/journal','x-default':'/journal'}}
-};
+  alternates:{canonical:'/journal',languages:{'it-IT':'/journal','en-GB':'/en/journal','de-DE':'/de/journal','fr-FR':'/fr/journal','es-ES':'/es/journal','zh-CN':'/zh/journal','x-default':'/journal'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const articles = [
   {title:'Carnevale di Venezia',category:'Eventi',text:'Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.',image:'/images/journal-carnevale.webp',alt:'Maschere e atmosfera del Carnevale di Venezia',href:'/journal/carnevale-di-venezia'},

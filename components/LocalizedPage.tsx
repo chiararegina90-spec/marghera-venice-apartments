@@ -125,7 +125,7 @@ export default function LocalizedPage({
           </div>
         </section>
 
-        <section className="py-20">
+        <section id="case" className="py-20">
           <div className="mx-auto max-w-5xl space-y-12 px-5 lg:px-8">
             {sections.map((s) => (
               <section
@@ -159,7 +159,7 @@ export default function LocalizedPage({
         </section>
 
         {/* Direct contact section: same visual logic as IT / EN */}
-        <section className="bg-navy py-20 text-white">
+        <section id="direct-contact" className="bg-navy py-20 text-white">
           <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
             <p className="text-sm font-black uppercase tracking-[0.28em] text-gold">
               {copy.eyebrow}

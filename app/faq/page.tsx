@@ -7,8 +7,8 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata:Metadata = {
   title:'FAQ | Marghera Venice Apartments',
   description:'Check-in, check-out, self check-in, deposito bagagli, parcheggio, bambini, animali e informazioni sul soggiorno.',
-  alternates:{canonical:'/faq',languages:{'it-IT':'/faq','en-GB':'/en/faq','de-DE':'/de/faq','fr-FR':'/fr/faq','es-ES':'/es/faq','zh-CN':'/zh/faq','x-default':'/faq'}}
-};
+  alternates:{canonical:'/faq',languages:{'it-IT':'/faq','en-GB':'/en/faq','de-DE':'/de/faq','fr-FR':'/fr/faq','es-ES':'/es/faq','zh-CN':'/zh/faq','x-default':'/faq'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const groups = [
   {

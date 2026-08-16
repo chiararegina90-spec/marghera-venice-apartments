@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:"Lo Spritz veneziano | Journal | Marghera Venice Apartments",
   description:"Per il resto del mondo è un cocktail. Per noi veneziani è semplicemente l’aperitivo.",
-  alternates:{canonical:'/journal/spritz-veneziano',languages:{'it-IT':'/journal/spritz-veneziano','en-GB':'/en/journal/spritz-veneziano','de-DE':'/de/journal/spritz-veneziano','fr-FR':'/fr/journal/spritz-veneziano','es-ES':'/es/journal/spritz-veneziano','zh-CN':'/zh/journal/spritz-veneziano','x-default':'/journal/spritz-veneziano'}}
-};
+  alternates:{canonical:'/journal/spritz-veneziano',languages:{'it-IT':'/journal/spritz-veneziano','en-GB':'/en/journal/spritz-veneziano','de-DE':'/de/journal/spritz-veneziano','fr-FR':'/fr/journal/spritz-veneziano','es-ES':'/es/journal/spritz-veneziano','zh-CN':'/zh/journal/spritz-veneziano','x-default':'/journal/spritz-veneziano'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:"Da dove arriva",text:"Il nome viene generalmente collegato al verbo tedesco spritzen, “spruzzare”, e al periodo della presenza austriaca nel Veneto, quando il vino locale veniva alleggerito con acqua. Nel tempo quella semplice abitudine si è evoluta fino allo Spritz moderno, diventato uno dei simboli più riconoscibili dell’aperitivo italiano."},

@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:'Venezia con il cane | Journal | Marghera Venice Apartments',
   description:'Passeggiare tra calli e campi con il proprio cane è possibile: servono solo un po’ di organizzazione e ritmi adatti.',
-  alternates:{canonical:'/journal/venezia-con-il-cane',languages:{'it-IT':'/journal/venezia-con-il-cane','en-GB':'/en/journal/venezia-con-il-cane','de-DE':'/de/journal/venezia-con-il-cane','fr-FR':'/fr/journal/venezia-con-il-cane','es-ES':'/es/journal/venezia-con-il-cane','zh-CN':'/zh/journal/venezia-con-il-cane','x-default':'/journal/venezia-con-il-cane'}}
-};
+  alternates:{canonical:'/journal/venezia-con-il-cane',languages:{'it-IT':'/journal/venezia-con-il-cane','en-GB':'/en/journal/venezia-con-il-cane','de-DE':'/de/journal/venezia-con-il-cane','fr-FR':'/fr/journal/venezia-con-il-cane','es-ES':'/es/journal/venezia-con-il-cane','zh-CN':'/zh/journal/venezia-con-il-cane','x-default':'/journal/venezia-con-il-cane'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:'Scegli gli orari migliori',text:'Mattina presto e tardo pomeriggio sono spesso più piacevoli delle ore centrali. Nei periodi caldi presta particolare attenzione alla temperatura della pavimentazione e all’idratazione.'},

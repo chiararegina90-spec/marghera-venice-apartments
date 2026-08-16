@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'The Venetian Spritz | Venice Travel Journal',
   description:'For much of the world it is a cocktail. For Venetians, it is simply aperitivo.',
   alternates:{canonical:'/en/journal/spritz-veneziano',languages:{'it-IT':'/journal/spritz-veneziano','en-GB':'/en/journal/spritz-veneziano','de-DE':'/de/journal/spritz-veneziano','fr-FR':'/fr/journal/spritz-veneziano','es-ES':'/es/journal/spritz-veneziano','zh-CN':'/zh/journal/spritz-veneziano','x-default':'/journal/spritz-veneziano'}},
-  openGraph:{title:'The Venetian Spritz | Venice Travel Journal',description:'For much of the world it is a cocktail. For Venetians, it is simply aperitivo.',url:'/en/journal/spritz-veneziano',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'The Venetian Spritz | Venice Travel Journal',description:'For much of the world it is a cocktail. For Venetians, it is simply aperitivo.'}
+  openGraph:{title:'The Venetian Spritz | Venice Travel Journal',description:'For much of the world it is a cocktail. For Venetians, it is simply aperitivo.',url:'/en/journal/spritz-veneziano',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'The Venetian Spritz | Venice Travel Journal',description:'For much of the world it is a cocktail. For Venetians, it is simply aperitivo.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

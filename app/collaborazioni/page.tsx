@@ -7,8 +7,8 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
   description:'Servizi ed esperienze che vogliamo selezionare per gli ospiti: transfer, gondole, guide, cantine, biciclette e ristorazione.',
-  alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}}
-};
+  alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const areas = [
   ['Transfer e NCC','Collegamenti con aeroporti, stazioni e destinazioni del Veneto.'],

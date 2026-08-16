@@ -9,7 +9,7 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata: Metadata={
  title:'Discover Venice | Local Tips & Venice in One Day',
  description:'Plan your Venice visit from Marghera: a one-day itinerary, local tips, Venice with children or a dog, lagoon islands and easy 24/7 connections.',
- openGraph:{title:'Discover Venice | Marghera Venice Apartments',description:'Practical local tips for exploring Venice, its neighbourhoods and lagoon islands from Marghera.',images:['/images/scopri-venezia-michael-heise.webp'],locale:'en_GB'},
+ openGraph:{title:'Discover Venice',description:'Practical local tips for exploring Venice, its neighbourhoods and lagoon islands from Marghera.',images:['/images/scopri-venezia-michael-heise.webp'],locale:'en_GB'},
  twitter:{card:'summary_large_image',title:'Discover Venice | Local Tips',description:'Plan Venice from Marghera with practical tips, itineraries and lagoon ideas.',images:['/images/scopri-venezia-michael-heise.webp']},
  alternates:{canonical:'/en/discover-venice',languages:{'it-IT':'/scopri-venezia','en-GB':'/en/discover-venice','de-DE':'/de/discover-venice','fr-FR':'/fr/discover-venice','es-ES':'/es/discover-venice','zh-CN':'/zh/discover-venice','x-default':'/scopri-venezia'}}
 };

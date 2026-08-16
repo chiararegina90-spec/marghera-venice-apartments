@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venice with your dog | Venice Travel Journal',
   description:'Walking through Venice’s calli and campi with your dog is possible: it just takes a little planning and the right pace.',
   alternates:{canonical:'/en/journal/venezia-con-il-cane',languages:{'it-IT':'/journal/venezia-con-il-cane','en-GB':'/en/journal/venezia-con-il-cane','de-DE':'/de/journal/venezia-con-il-cane','fr-FR':'/fr/journal/venezia-con-il-cane','es-ES':'/es/journal/venezia-con-il-cane','zh-CN':'/zh/journal/venezia-con-il-cane','x-default':'/journal/venezia-con-il-cane'}},
-  openGraph:{title:'Venice with your dog | Venice Travel Journal',description:'Walking through Venice’s calli and campi with your dog is possible: it just takes a little planning and the right pace.',url:'/en/journal/venezia-con-il-cane',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venice with your dog | Venice Travel Journal',description:'Walking through Venice’s calli and campi with your dog is possible: it just takes a little planning and the right pace.'}
+  openGraph:{title:'Venice with your dog | Venice Travel Journal',description:'Walking through Venice’s calli and campi with your dog is possible: it just takes a little planning and the right pace.',url:'/en/journal/venezia-con-il-cane',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice with your dog | Venice Travel Journal',description:'Walking through Venice’s calli and campi with your dog is possible: it just takes a little planning and the right pace.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

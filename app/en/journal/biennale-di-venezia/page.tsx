@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venice Biennale | Venice Travel Journal',
   description:'Giardini, Arsenale and exhibitions across Venice: one day is not enough to see everything, and that is exactly the point.',
   alternates:{canonical:'/en/journal/biennale-di-venezia',languages:{'it-IT':'/journal/biennale-di-venezia','en-GB':'/en/journal/biennale-di-venezia','de-DE':'/de/journal/biennale-di-venezia','fr-FR':'/fr/journal/biennale-di-venezia','es-ES':'/es/journal/biennale-di-venezia','zh-CN':'/zh/journal/biennale-di-venezia','x-default':'/journal/biennale-di-venezia'}},
-  openGraph:{title:'Venice Biennale | Venice Travel Journal',description:'Giardini, Arsenale and exhibitions across Venice: one day is not enough to see everything, and that is exactly the point.',url:'/en/journal/biennale-di-venezia',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venice Biennale | Venice Travel Journal',description:'Giardini, Arsenale and exhibitions across Venice: one day is not enough to see everything, and that is exactly the point.'}
+  openGraph:{title:'Venice Biennale | Venice Travel Journal',description:'Giardini, Arsenale and exhibitions across Venice: one day is not enough to see everything, and that is exactly the point.',url:'/en/journal/biennale-di-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice Biennale | Venice Travel Journal',description:'Giardini, Arsenale and exhibitions across Venice: one day is not enough to see everything, and that is exactly the point.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

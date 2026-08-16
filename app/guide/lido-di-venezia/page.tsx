@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: 'Una guida pratica per vivere il Lido con ritmi più lenti.',
     images: ['/images/lido-guide-hero.webp'],
   },
-  alternates:{canonical:'/guide/lido-di-venezia',languages:{'it-IT':'/guide/lido-di-venezia','en-GB':'/en/guide/lido-di-venezia','de-DE':'/de/guide/lido-di-venezia','fr-FR':'/fr/guide/lido-di-venezia','es-ES':'/es/guide/lido-di-venezia','zh-CN':'/zh/guide/lido-di-venezia','x-default':'/guide/lido-di-venezia'}}
-};
+  alternates:{canonical:'/guide/lido-di-venezia',languages:{'it-IT':'/guide/lido-di-venezia','en-GB':'/en/guide/lido-di-venezia','de-DE':'/de/guide/lido-di-venezia','fr-FR':'/fr/guide/lido-di-venezia','es-ES':'/es/guide/lido-di-venezia','zh-CN':'/zh/guide/lido-di-venezia','x-default':'/guide/lido-di-venezia'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const highlights = [
   ['Spiagge e mare Adriatico','Le spiagge del Lido comprendono stabilimenti con noleggio di lettini e ombrelloni e anche una spiaggia libera. Servizi e accessi vanno verificati in base alla stagione.'],
@@ -135,7 +135,7 @@ export default function LidoGuide(){
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           <article className="rounded-[2rem] bg-white p-8 shadow-soft"><h2 className="font-serif text-3xl text-navy">Ferry dal Tronchetto</h2><p className="mt-3 text-slate-600">Puoi raggiungere il Lido con la bicicletta utilizzando il ferry boat dal Tronchetto, verificando orari, tariffe e regole per il trasporto bici.</p></article>
           <article className="rounded-[2rem] bg-white p-8 shadow-soft"><h2 className="font-serif text-3xl text-navy">Alberoni e Pellestrina</h2><p className="mt-3 text-slate-600">Pedalando verso sud puoi raggiungere gli Alberoni e proseguire verso Pellestrina con il ferry, secondo il servizio disponibile.</p></article>
-          <article className="rounded-[2rem] bg-white p-8 shadow-soft"><h2 className="font-serif text-3xl text-navy">Terminal Fusina</h2><p className="mt-3 text-slate-600">In stagione il Terminal Fusina offre collegamenti verso Alberoni e, in alcuni giorni, Pellestrina. Il servizio 2026 include il primo giorno di parcheggio per auto o moto secondo le condizioni pubblicate.</p><a href="https://www.terminalfusina.it/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-bold text-gold">Terminal Fusina ↗</a></article>
+          <article className="rounded-[2rem] bg-white p-8 shadow-soft"><h2 className="font-serif text-3xl text-navy">Terminal Fusina</h2><p className="mt-3 text-slate-600">In stagione il Terminal Fusina può offrire collegamenti verso Alberoni e Pellestrina. Giorni, orari e condizioni possono cambiare: verifica sempre il servizio aggiornato sul sito ufficiale prima di partire.</p><a href="https://www.terminalfusina.it/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-bold text-gold">Terminal Fusina ↗</a></article>
         </div>
       </div>
     </section>
@@ -173,10 +173,10 @@ export default function LidoGuide(){
       <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Informazioni aggiornate</p>
         <h2 className="mt-3 font-serif text-5xl text-navy">Eventi e vita del Lido</h2>
-        <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">Per eventi, servizi e informazioni sull’isola consulta Visit Lido. Se programmi la visita durante la Mostra Internazionale d’Arte Cinematografica, trovi programma e informazioni aggiornate sul sito ufficiale della Biennale Cinema 2026.</p>
+        <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">Per eventi, servizi e informazioni sull’isola consulta Visit Lido. Se programmi la visita durante la Mostra Internazionale d’Arte Cinematografica, trovi programma e informazioni aggiornate sul sito ufficiale della Biennale Cinema.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="https://www.visitlido.it/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Visit Lido ↗</a>
-          <a href="https://www.labiennale.org/it/cinema/2026" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-7 py-4 font-bold text-navy">Biennale Cinema 2026 ↗</a>
+          <a href="https://www.labiennale.org/it/cinema" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-7 py-4 font-bold text-navy">Biennale Cinema ↗</a>
         </div>
       </div>
     </section>

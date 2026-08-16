@@ -8,14 +8,14 @@ import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
-  title: 'Dimora Castelli | Marghera Venice Apartments',
+  title: 'Dimora Castelli',
   description: 'Dimora Castelli in Marghera near Venice: approx. 60 m² for up to 5 guests, free private parking, access to a shared garden and convenient day-and-night connections to Venice.',
   openGraph:{
     title:'Dimora Castelli | Up to 5 guests vicino a Venezia',
     description:'A welcoming apartment in Marghera with free private parking, access to a shared garden and convenient connections to Venice.',
     images:[{url:'/images/dimora-page-hero.webp',alt:'Bright bedroom at Dimora Castelli in Marghera near Venice'}]
   },
-  twitter:{card:'summary_large_image',title:'Dimora Castelli | Marghera Venice Apartments',description:'Up to 5 guests, free private parking and convenient day-and-night connections to Venice.',images:['/images/dimora-page-hero.webp']},
+  twitter:{card:'summary_large_image',title:'Dimora Castelli',description:'Up to 5 guests, free private parking and convenient day-and-night connections to Venice.',images:['/images/dimora-page-hero.webp']},
   alternates:{canonical:'/en/apartments/dimora-castelli',languages:{'it-IT':'/case/dimora-castelli','en-GB':'/en/apartments/dimora-castelli','de-DE':'/de/apartments/dimora-castelli','fr-FR':'/fr/apartments/dimora-castelli','es-ES':'/es/apartments/dimora-castelli','zh-CN':'/zh/apartments/dimora-castelli','x-default':'/case/dimora-castelli'}}
 };
 

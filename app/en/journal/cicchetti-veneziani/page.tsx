@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venetian cicchetti | Venice Travel Journal',
   description:'They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti.',
   alternates:{canonical:'/en/journal/cicchetti-veneziani',languages:{'it-IT':'/journal/cicchetti-veneziani','en-GB':'/en/journal/cicchetti-veneziani','de-DE':'/de/journal/cicchetti-veneziani','fr-FR':'/fr/journal/cicchetti-veneziani','es-ES':'/es/journal/cicchetti-veneziani','zh-CN':'/zh/journal/cicchetti-veneziani','x-default':'/journal/cicchetti-veneziani'}},
-  openGraph:{title:'Venetian cicchetti | Venice Travel Journal',description:'They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti.',url:'/en/journal/cicchetti-veneziani',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venetian cicchetti | Venice Travel Journal',description:'They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti.'}
+  openGraph:{title:'Venetian cicchetti | Venice Travel Journal',description:'They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti.',url:'/en/journal/cicchetti-veneziani',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venetian cicchetti | Venice Travel Journal',description:'They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

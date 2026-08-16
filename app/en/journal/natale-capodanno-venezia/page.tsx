@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Christmas & New Year in Venice | Venice Travel Journal',
   description:'Lights, winter, more intimate calli and major celebrations: Venice changes rhythm during the festive season.',
   alternates:{canonical:'/en/journal/natale-capodanno-venezia',languages:{'it-IT':'/journal/natale-capodanno-venezia','en-GB':'/en/journal/natale-capodanno-venezia','de-DE':'/de/journal/natale-capodanno-venezia','fr-FR':'/fr/journal/natale-capodanno-venezia','es-ES':'/es/journal/natale-capodanno-venezia','zh-CN':'/zh/journal/natale-capodanno-venezia','x-default':'/journal/natale-capodanno-venezia'}},
-  openGraph:{title:'Christmas & New Year in Venice | Venice Travel Journal',description:'Lights, winter, more intimate calli and major celebrations: Venice changes rhythm during the festive season.',url:'/en/journal/natale-capodanno-venezia',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Christmas & New Year in Venice | Venice Travel Journal',description:'Lights, winter, more intimate calli and major celebrations: Venice changes rhythm during the festive season.'}
+  openGraph:{title:'Christmas & New Year in Venice | Venice Travel Journal',description:'Lights, winter, more intimate calli and major celebrations: Venice changes rhythm during the festive season.',url:'/en/journal/natale-capodanno-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Christmas & New Year in Venice | Venice Travel Journal',description:'Lights, winter, more intimate calli and major celebrations: Venice changes rhythm during the festive season.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

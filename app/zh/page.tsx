@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import WeChatCard from '@/components/WeChatCard';
 
 export const metadata: Metadata = {
-  title: 'Marghera Venice Apartments｜威尼斯附近公寓与免费私人停车',
+  title: '威尼斯附近公寓与免费私人停车',
   description:
     'Rossi Apartment 与 Dimora Castelli 位于马尔盖拉，前往威尼斯方便，提供免费私人停车位，适合家庭、朋友及携宠旅客。',
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: 'zh_CN',
     images: ['/images/home-rialto-vincenzo-landino.webp'],
   },
-};
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const cards = [
   [

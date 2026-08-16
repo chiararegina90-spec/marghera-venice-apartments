@@ -8,8 +8,8 @@ export const metadata:Metadata = {
   title:'Venice Film Festival | Venice Travel Journal',
   description:'The Lido becomes an international centre for cinema, with screenings, red carpets and an atmosphere unlike any other time of year.',
   alternates:{canonical:'/en/journal/mostra-del-cinema',languages:{'it-IT':'/journal/mostra-del-cinema','en-GB':'/en/journal/mostra-del-cinema','de-DE':'/de/journal/mostra-del-cinema','fr-FR':'/fr/journal/mostra-del-cinema','es-ES':'/es/journal/mostra-del-cinema','zh-CN':'/zh/journal/mostra-del-cinema','x-default':'/journal/mostra-del-cinema'}},
-  openGraph:{title:'Venice Film Festival | Venice Travel Journal',description:'The Lido becomes an international centre for cinema, with screenings, red carpets and an atmosphere unlike any other time of year.',url:'/en/journal/mostra-del-cinema',locale:'en_GB',type:'article'},
-  twitter:{card:'summary_large_image',title:'Venice Film Festival | Venice Travel Journal',description:'The Lido becomes an international centre for cinema, with screenings, red carpets and an atmosphere unlike any other time of year.'}
+  openGraph:{title:'Venice Film Festival | Venice Travel Journal',description:'The Lido becomes an international centre for cinema, with screenings, red carpets and an atmosphere unlike any other time of year.',url:'/en/journal/mostra-del-cinema',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice Film Festival | Venice Travel Journal',description:'The Lido becomes an international centre for cinema, with screenings, red carpets and an atmosphere unlike any other time of year.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [

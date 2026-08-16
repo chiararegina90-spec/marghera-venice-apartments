@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: 'Una guida pratica e originale per organizzare la visita a Murano.',
     images: ['/images/murano-guide-hero.webp'],
   },
-  alternates:{canonical:'/guide/murano',languages:{'it-IT':'/guide/murano','en-GB':'/en/guide/murano','de-DE':'/de/guide/murano','fr-FR':'/fr/guide/murano','es-ES':'/es/guide/murano','zh-CN':'/zh/guide/murano','x-default':'/guide/murano'}}
-};
+  alternates:{canonical:'/guide/murano',languages:{'it-IT':'/guide/murano','en-GB':'/en/guide/murano','de-DE':'/de/guide/murano','fr-FR':'/fr/guide/murano','es-ES':'/es/guide/murano','zh-CN':'/zh/guide/murano','x-default':'/guide/murano'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const highlights = [
   ['Le fornaci','Assistere alla lavorazione del vetro permette di comprendere la precisione e la velocità dei maestri muranesi.'],

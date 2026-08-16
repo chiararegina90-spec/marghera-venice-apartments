@@ -13,8 +13,8 @@ export const metadata:Metadata = {
     description:'Indicazioni chiare per pianificare il viaggio verso gli appartamenti e gli spostamenti a Venezia.',
     images:['/images/home-come-raggiungere-venezia.webp']
   },
-  alternates:{canonical:'/come-raggiungere-venezia',languages:{'it-IT':'/come-raggiungere-venezia','en-GB':'/en/getting-to-venice','de-DE':'/de/getting-to-venice','fr-FR':'/fr/getting-to-venice','es-ES':'/es/getting-to-venice','zh-CN':'/zh/getting-to-venice','x-default':'/come-raggiungere-venezia'}}
-};
+  alternates:{canonical:'/come-raggiungere-venezia',languages:{'it-IT':'/come-raggiungere-venezia','en-GB':'/en/getting-to-venice','de-DE':'/de/getting-to-venice','fr-FR':'/fr/getting-to-venice','es-ES':'/es/getting-to-venice','zh-CN':'/zh/getting-to-venice','x-default':'/come-raggiungere-venezia'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const veneziaOptions = [
   {

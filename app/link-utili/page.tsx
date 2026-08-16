@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:'Link utili | Marghera Venice Apartments',
   description:'Una raccolta di fonti ufficiali per trasporti, biglietti, eventi, musei e informazioni utili per Venezia e il Veneto.',
-  alternates:{canonical:'/link-utili',languages:{'it-IT':'/link-utili','en-GB':'/en/useful-links','de-DE':'/de/useful-links','fr-FR':'/fr/useful-links','es-ES':'/es/useful-links','zh-CN':'/zh/useful-links','x-default':'/link-utili'}}
-};
+  alternates:{canonical:'/link-utili',languages:{'it-IT':'/link-utili','en-GB':'/en/useful-links','de-DE':'/de/useful-links','fr-FR':'/fr/useful-links','es-ES':'/es/useful-links','zh-CN':'/zh/useful-links','x-default':'/link-utili'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const groups = [
   {

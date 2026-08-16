@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     description: 'Una guida pratica e originale per organizzare la visita a Burano.',
     images: ['/images/burano-guide-hero.webp'],
   },
-  alternates:{canonical:'/guide/burano',languages:{'it-IT':'/guide/burano','en-GB':'/en/guide/burano','de-DE':'/de/guide/burano','fr-FR':'/fr/guide/burano','es-ES':'/es/guide/burano','zh-CN':'/zh/guide/burano','x-default':'/guide/burano'}}
-};
+  alternates:{canonical:'/guide/burano',languages:{'it-IT':'/guide/burano','en-GB':'/en/guide/burano','de-DE':'/de/guide/burano','fr-FR':'/fr/guide/burano','es-ES':'/es/guide/burano','zh-CN':'/zh/guide/burano','x-default':'/guide/burano'}},
+twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const highlights = [
   ['Le case colorate','Facciate vivaci, canali stretti e riflessi che cambiano durante la giornata.'],

@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata:Metadata = {
   title:"Acqua alta a Venezia: cosa sapere | Journal | Marghera Venice Apartments",
   description:"Un fenomeno naturale della laguna da conoscere senza allarmismi: cosa significa, quanto dura e come il MOSE protegge la città.",
-  alternates:{canonical:'/journal/acqua-alta-a-venezia',languages:{'it-IT':'/journal/acqua-alta-a-venezia','en-GB':'/en/journal/acqua-alta-a-venezia','de-DE':'/de/journal/acqua-alta-a-venezia','fr-FR':'/fr/journal/acqua-alta-a-venezia','es-ES':'/es/journal/acqua-alta-a-venezia','zh-CN':'/zh/journal/acqua-alta-a-venezia','x-default':'/journal/acqua-alta-a-venezia'}}
-};
+  alternates:{canonical:'/journal/acqua-alta-a-venezia',languages:{'it-IT':'/journal/acqua-alta-a-venezia','en-GB':'/en/journal/acqua-alta-a-venezia','de-DE':'/de/journal/acqua-alta-a-venezia','fr-FR':'/fr/journal/acqua-alta-a-venezia','es-ES':'/es/journal/acqua-alta-a-venezia','zh-CN':'/zh/journal/acqua-alta-a-venezia','x-default':'/journal/acqua-alta-a-venezia'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
 {title:"Cos’è davvero l’acqua alta",text:"L’innalzamento temporaneo della marea dipende dalla combinazione di livello del mare, vento, pressione atmosferica e condizioni dell’Adriatico. Gli eventi sono normalmente limitati nel tempo e uno stesso livello di marea può produrre effetti molto diversi nei vari punti della città."},

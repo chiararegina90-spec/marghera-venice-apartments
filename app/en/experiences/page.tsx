@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 
-export const metadata:Metadata={title:'Experiences near Venice | Marghera Venice Apartments',description:'Selected ideas for transfers, licensed guides, gondolas, cycling, wineries and dining around Venice and Veneto.',alternates:{canonical:'/en/experiences',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}}};
+export const metadata:Metadata={title:'Experiences near Venice',description:'Selected ideas for transfers, licensed guides, gondolas, cycling, wineries and dining around Venice and Veneto.',alternates:{canonical:'/en/experiences',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 const areas=[
  ['Transfers & private drivers','Connections with airports, railway stations and destinations across Veneto.'],
  ['Licensed tour guides','Private or group visits with qualified local professionals.'],

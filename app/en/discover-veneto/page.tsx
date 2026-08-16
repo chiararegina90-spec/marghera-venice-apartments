@@ -9,7 +9,7 @@ import SectionTitle from '@/components/SectionTitle';
 export const metadata: Metadata = {
   title: 'Discover Veneto from Venice | Day Trips from Marghera',
   description: 'Explore Veneto from Marghera: Brenta Riviera, Prosecco Hills, Padua, Treviso, Verona, Chioggia and the Dolomites, with free private parking at your apartment.',
-  openGraph: {title:'Discover Veneto from Venice | Marghera Venice Apartments',description:'Day-trip ideas across Veneto with Marghera as your convenient base near Venice.',images:['/images/veneto-colline-prosecco-final.webp'],locale:'en_GB'},
+  openGraph: {title:'Discover Veneto from Venice',description:'Day-trip ideas across Veneto with Marghera as your convenient base near Venice.',images:['/images/veneto-colline-prosecco-final.webp'],locale:'en_GB'},
   twitter:{card:'summary_large_image',title:'Discover Veneto from Venice',description:'Day trips across Veneto from your apartment in Marghera.',images:['/images/veneto-colline-prosecco-final.webp']},
   alternates:{canonical:'/en/discover-veneto',languages:{'it-IT':'/scopri-il-veneto','en-GB':'/en/discover-veneto','de-DE':'/de/discover-veneto','fr-FR':'/fr/discover-veneto','es-ES':'/es/discover-veneto','zh-CN':'/zh/discover-veneto','x-default':'/scopri-il-veneto'}}
 };

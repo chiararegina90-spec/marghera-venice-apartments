@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Guide di viaggio | Marghera Venice Apartments',
   description: 'Scopri le guide di Marghera Venice Apartments dedicate a Venezia, alle isole della laguna e alle destinazioni del Veneto.',
-  alternates:{canonical:'/guide',languages:{'it-IT':'/guide','en-GB':'/en/guide','de-DE':'/de/guide','fr-FR':'/fr/guide','es-ES':'/es/guide','zh-CN':'/zh/guide','x-default':'/guide'}}
-};
+  alternates:{canonical:'/guide',languages:{'it-IT':'/guide','en-GB':'/en/guide','de-DE':'/de/guide','fr-FR':'/fr/guide','es-ES':'/es/guide','zh-CN':'/zh/guide','x-default':'/guide'}},
+openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const guides = [
   {
