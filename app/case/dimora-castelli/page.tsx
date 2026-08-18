@@ -251,7 +251,7 @@ export default function DimoraCastelli() {
         <p className="mt-5 text-lg text-slate-600">Scrivici le date e il numero di ospiti: ti risponderemo personalmente con disponibilità e informazioni per il soggiorno.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="https://wa.me/393514462261?text=Ciao%2C%20vorrei%20verificare%20la%20disponibilit%C3%A0%20di%20Dimora%20Castelli.%20Le%20mie%20date%20sono%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Verifica su WhatsApp</a>
-          <a href="mailto:dimoracastelli22@gmail.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Invia un'email</a>
+          <a href="mailto:info@margheraveniceapartments.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Invia un'email</a>
         </div>
         <p className="mt-8 text-sm text-slate-500">CIN Dimora Castelli: IT027042C2YOUCUFM2</p>
       </div>

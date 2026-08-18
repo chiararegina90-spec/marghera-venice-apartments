@@ -251,7 +251,7 @@ export default function DimoraCastelli() {
         <p className="mt-5 text-lg text-slate-600">Send us your dates and number of guests. We’ll reply personally with availability and useful information for your stay.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a href="https://wa.me/393514462261?text=Hello%2C%20I%27d%20like%20to%20check%20availability%20for%20Dimora%20Castelli.%20My%20dates%20are%3A%20" target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Check on WhatsApp</a>
-          <a href="mailto:dimoracastelli22@gmail.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Send an email</a>
+          <a href="mailto:info@margheraveniceapartments.com" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Send an email</a>
         </div>
         <p className="mt-8 text-sm text-slate-500">CIN Dimora Castelli: IT027042C2YOUCUFM2</p>
       </div>
