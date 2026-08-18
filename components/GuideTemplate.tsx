@@ -42,7 +42,7 @@ export default function GuideTemplate({data}:{data:GuideData}){
             <Link href="/">Home</Link><span>›</span><Link href="/guide">Guide</Link><span>›</span><span className="text-gold">{data.title}</span>
           </nav>
           <p className="text-xs font-black uppercase tracking-[.25em] text-gold">{data.kicker}</p>
-          <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">{data.title}</h1>
+          <h1 className="mt-4 break-words font-serif text-[clamp(3rem,9vw,6rem)] leading-none">{data.title}</h1>
           <p className="mt-4 font-serif text-3xl">{data.subtitle}</p>
           <p className="mt-6 max-w-3xl text-xl text-white/80">{data.description}</p>
           <div className="mt-8 flex flex-wrap gap-3">
