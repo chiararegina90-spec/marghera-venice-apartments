@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import {headers} from 'next/headers';
+import {Suspense} from 'react';
+import AnalyticsConsent from '@/components/AnalyticsConsent';
 
 export const metadata:Metadata={
   metadataBase:new URL('https://www.margheraveniceapartments.com'),
@@ -46,5 +48,5 @@ export default async function RootLayout({children}:{children:React.ReactNode}){
       'https://www.facebook.com/margheraveniceapartments/'
     ]
   };
-  return <html lang={htmlLang} data-scroll-behavior="smooth"><body className="font-sans antialiased"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationJsonLd)}}/>{children}</body></html>
+  return <html lang={htmlLang} data-scroll-behavior="smooth"><body className="font-sans antialiased"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationJsonLd)}}/>{children}<Suspense fallback={null}><AnalyticsConsent lang={lang as 'it'|'en'|'de'|'fr'|'es'|'zh'}/></Suspense></body></html>
 }
