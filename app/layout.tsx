@@ -48,5 +48,19 @@ export default async function RootLayout({children}:{children:React.ReactNode}){
       'https://www.facebook.com/margheraveniceapartments/'
     ]
   };
-  return <html lang={htmlLang} data-scroll-behavior="smooth"><body className="font-sans antialiased"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationJsonLd)}}/>{children}<Suspense fallback={null}><AnalyticsConsent lang={lang as 'it'|'en'|'de'|'fr'|'es'|'zh'}/></Suspense></body></html>
+  return <html lang={htmlLang} data-scroll-behavior="smooth"><head>
+    <script dangerouslySetInnerHTML={{__html:`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = window.gtag || gtag;
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+    `}}/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2HWSG9YG1"/>
+  </head><body className="font-sans antialiased"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationJsonLd)}}/>{children}<Suspense fallback={null}><AnalyticsConsent lang={lang as 'it'|'en'|'de'|'fr'|'es'|'zh'}/></Suspense></body></html>
 }

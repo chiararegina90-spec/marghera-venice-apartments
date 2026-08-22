@@ -7,7 +7,7 @@ type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 type ConsentChoice='granted'|'denied'|null;
 
 const MEASUREMENT_ID='G-W2HWSG9YG1';
-const STORAGE_KEY='mva-analytics-consent-v1';
+const STORAGE_KEY='mva-analytics-consent-v2';
 
 const copy:Record<Lang,{title:string;text:string;accept:string;reject:string;policy:string}>={
   it:{title:'La tua privacy conta',text:'Usiamo Google Analytics solo con il tuo consenso per capire come viene utilizzato il sito e migliorarlo. I cookie analitici restano disattivati finché non accetti.',accept:'Accetta analytics',reject:'Rifiuta',policy:'Cookie Policy'},
@@ -20,25 +20,40 @@ const copy:Record<Lang,{title:string;text:string;accept:string;reject:string;pol
 
 declare global {
   interface Window {
-    dataLayer?: unknown[];
+    dataLayer?: IArguments[];
     gtag?: (...args: unknown[])=>void;
+    __mvaGaConfigured?: boolean;
   }
 }
 
 function ensureGtag(){
   window.dataLayer=window.dataLayer||[];
-  if(!window.gtag){window.gtag=(...args:unknown[])=>{window.dataLayer!.push(args);};}
+  if(!window.gtag){
+    // Keep the exact queue format used by Google's official gtag snippet.
+    window.gtag=function(){window.dataLayer!.push(arguments);};
+  }
 }
 
-function setDefaultDenied(){
+function updateConsent(value:'granted'|'denied'){
   ensureGtag();
-  window.gtag?.('consent','default',{
-    analytics_storage:'denied',
+  window.gtag?.('consent','update',{
+    analytics_storage:value,
     ad_storage:'denied',
     ad_user_data:'denied',
-    ad_personalization:'denied',
-    wait_for_update:500
+    ad_personalization:'denied'
   });
+}
+
+function configureGoogleAnalytics(){
+  ensureGtag();
+  if(window.__mvaGaConfigured) return;
+  window.gtag?.('js',new Date());
+  window.gtag?.('config',MEASUREMENT_ID,{
+    send_page_view:false,
+    allow_google_signals:false,
+    allow_ad_personalization_signals:false
+  });
+  window.__mvaGaConfigured=true;
 }
 
 function clearAnalyticsCookies(){
@@ -51,19 +66,6 @@ function clearAnalyticsCookies(){
   }
 }
 
-function loadGoogleAnalytics(){
-  ensureGtag();
-  if(!document.querySelector(`script[data-mva-ga4="${MEASUREMENT_ID}"]`)){
-    const script=document.createElement('script');
-    script.async=true;
-    script.src=`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
-    script.dataset.mvaGa4=MEASUREMENT_ID;
-    document.head.appendChild(script);
-  }
-  window.gtag?.('js',new Date());
-  window.gtag?.('config',MEASUREMENT_ID,{send_page_view:false,allow_google_signals:false});
-}
-
 export default function AnalyticsConsent({lang}:{lang:Lang}){
   const pathname=usePathname();
   const searchParams=useSearchParams();
@@ -73,24 +75,31 @@ export default function AnalyticsConsent({lang}:{lang:Lang}){
   const base=lang==='it'?'':`/${lang}`;
 
   useEffect(()=>{
-    setDefaultDenied();
+    // The Google script is present in the server-rendered page, but no GA4
+    // configuration/event is sent until the visitor grants analytics consent.
+    ensureGtag();
     const saved=window.localStorage.getItem(STORAGE_KEY) as ConsentChoice;
     if(saved==='granted'){
-      window.gtag?.('consent','update',{analytics_storage:'granted'});
-      loadGoogleAnalytics();
+      updateConsent('granted');
+      configureGoogleAnalytics();
       setChoice('granted');
     }else if(saved==='denied'){
+      updateConsent('denied');
       setChoice('denied');
     }
     setReady(true);
 
-    const reopen=()=>{window.localStorage.removeItem(STORAGE_KEY);setChoice(null);};
+    const reopen=()=>{
+      window.localStorage.removeItem(STORAGE_KEY);
+      setChoice(null);
+    };
     window.addEventListener('mva-cookie-settings',reopen);
     return()=>window.removeEventListener('mva-cookie-settings',reopen);
   },[]);
 
   useEffect(()=>{
     if(choice!=='granted') return;
+    configureGoogleAnalytics();
     const query=searchParams.toString();
     const pagePath=query?`${pathname}?${query}`:pathname;
     window.gtag?.('event','page_view',{
@@ -117,26 +126,14 @@ export default function AnalyticsConsent({lang}:{lang:Lang}){
   },[choice]);
 
   const accept=()=>{
-    ensureGtag();
-    window.gtag?.('consent','update',{
-      analytics_storage:'granted',
-      ad_storage:'denied',
-      ad_user_data:'denied',
-      ad_personalization:'denied'
-    });
-    loadGoogleAnalytics();
+    updateConsent('granted');
+    configureGoogleAnalytics();
     window.localStorage.setItem(STORAGE_KEY,'granted');
     setChoice('granted');
   };
 
   const reject=()=>{
-    ensureGtag();
-    window.gtag?.('consent','update',{
-      analytics_storage:'denied',
-      ad_storage:'denied',
-      ad_user_data:'denied',
-      ad_personalization:'denied'
-    });
+    updateConsent('denied');
     clearAnalyticsCookies();
     window.localStorage.setItem(STORAGE_KEY,'denied');
     setChoice('denied');
