@@ -11,6 +11,7 @@ export const metadata:Metadata = {
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const articles = [
+  {title:'Regata Storica di Venezia 2026',category:'Eventi',text:'Domenica 6 settembre: corteo storico, voga alla veneta e regate sul Canal Grande.',image:'/images/journal-regata-storica-2026.webp',alt:'Corteo storico della Regata Storica di Venezia sul Canal Grande',href:'/journal/regata-storica-2026'},
   {title:'Carnevale di Venezia',category:'Eventi',text:'Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.',image:'/images/journal-carnevale.webp',alt:'Maschere e atmosfera del Carnevale di Venezia',href:'/journal/carnevale-di-venezia'},
   {title:'Festa del Redentore',category:'Eventi',text:'Una delle notti più sentite dai veneziani: memoria, barche e fuochi nel Bacino di San Marco.',image:'/images/journal-redentore.webp',alt:'Barche e festa nella laguna durante il Redentore a Venezia',href:'/journal/festa-del-redentore'},
   {title:'Natale e Capodanno a Venezia',category:'Eventi',text:'Luci, inverno, calli più intime e il Capodanno veneziano nel cuore della laguna.',image:'/images/journal-natale-capodanno.webp',alt:'Venezia illuminata durante il periodo di Natale e Capodanno',href:'/journal/natale-capodanno-venezia'},

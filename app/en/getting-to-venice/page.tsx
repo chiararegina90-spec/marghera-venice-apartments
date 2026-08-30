@@ -23,9 +23,9 @@ const veneziaOptions = [
     title:'Bus – recommended',
     text:'Sant’Antonio Municipio is the main nearby stop for travelling to Venice – Piazzale Roma, with both daytime and night connections.',
     rows:[
-      ['Daytime','Lines 6 and 6L','towards Venice – Piazzale Roma'],
-      ['Evening','Line 6','check your service in the AVM Venezia Official app'],
-      ['Night','Line N2','night service via Sant’Antonio Municipio'],
+      ['Daytime','Lines 6 and 6L','about every 10 minutes · towards Venice – Piazzale Roma'],
+      ['Evening','Line 6','about every 20 minutes · check your service in the AVM Venezia Official app'],
+      ['Night','Line N2','about every 30 minutes · night service via Sant’Antonio Municipio'],
     ]
   },
   {

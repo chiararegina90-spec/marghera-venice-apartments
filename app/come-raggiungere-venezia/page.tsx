@@ -21,9 +21,9 @@ const veneziaOptions = [
     title:'Autobus – consigliato',
     text:'La fermata Sant’Antonio Municipio è il riferimento principale per raggiungere Venezia – Piazzale Roma. Sono presenti collegamenti diurni e notturni.',
     rows:[
-      ['Di giorno','Linee 6 e 6L','direzione Venezia – Piazzale Roma'],
-      ['Sera','Linea 6','verifica la corsa nell’app AVM Venezia Official'],
-      ['Notte','Linea N2','collegamento notturno via Sant’Antonio Municipio'],
+      ['Di giorno','Linee 6 e 6L','circa ogni 10 minuti · direzione Venezia – Piazzale Roma'],
+      ['Sera','Linea 6','circa ogni 20 minuti · verifica la corsa nell’app AVM Venezia Official'],
+      ['Notte','Linea N2','circa ogni 30 minuti · collegamento notturno via Sant’Antonio Municipio'],
     ]
   },
   {
