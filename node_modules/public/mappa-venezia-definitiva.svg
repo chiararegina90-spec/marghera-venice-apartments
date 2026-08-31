@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1080" role="img" aria-labelledby="title desc">
+<title id="title">Mappa illustrata dei principali punti di interesse di Venezia</title>
+<desc id="desc">Mappa stilizzata di Venezia con sestieri, Canal Grande, Piazzale Roma, Ferrovia Santa Lucia, Rialto, Accademia, Piazza San Marco, Palazzo Ducale, Arsenale, Giardini della Biennale, Murano e Burano.</desc>
+<defs>
+  <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#d9edf0"/><stop offset="1" stop-color="#9cc7ce"/>
+  </linearGradient>
+  <linearGradient id="city" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f3c0a4"/><stop offset="1" stop-color="#df9275"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#0b2940" flood-opacity=".16"/>
+  </filter>
+  <style>
+    .district{font:700 26px Arial,sans-serif;fill:#5b241a;letter-spacing:.5px}
+    .landmark{font:700 19px Arial,sans-serif;fill:#0b2940}
+    .small{font:600 16px Arial,sans-serif;fill:#0b2940}
+    .labelbox{fill:#fffaf2;stroke:#0b2940;stroke-width:3}
+    .route{fill:none;stroke-width:5;stroke-dasharray:14 10}
+  </style>
+</defs>
+
+<rect width="1800" height="1080" rx="38" fill="url(#water)"/>
+
+<!-- Corpo principale di Venezia -->
+<path d="M205 650
+C165 570 185 475 260 420
+C320 375 400 365 470 390
+C530 315 630 270 755 278
+C880 286 980 342 1065 418
+C1158 395 1260 420 1325 485
+C1395 555 1412 650 1362 730
+C1312 810 1218 845 1128 827
+C1055 880 955 914 845 904
+C737 894 640 850 568 787
+C487 810 398 790 332 742
+C272 698 235 680 205 650Z"
+fill="url(#city)" stroke="#6b3b2d" stroke-width="6" filter="url(#shadow)"/>
+
+<!-- Isole vicine -->
+<path d="M940 905c75-50 162-43 224 12-70 45-151 55-224 20-32-15-31-14 0-32Z" fill="url(#city)" stroke="#6b3b2d" stroke-width="5"/>
+<path d="M1175 250c72-45 160-35 220 23-66 44-147 55-219 24-39-17-38-27-1-47Z" fill="url(#city)" stroke="#6b3b2d" stroke-width="5"/>
+<path d="M1450 160c58-34 125-27 177 18-54 39-118 49-177 24-32-14-31-24 0-42Z" fill="url(#city)" stroke="#6b3b2d" stroke-width="5"/>
+
+<!-- Canal Grande -->
+<path d="M285 610
+C410 510 545 470 668 495
+C790 520 845 615 958 640
+C1078 668 1180 625 1285 540"
+fill="none" stroke="#2f8c9b" stroke-width="45" stroke-linecap="round"/>
+<path d="M290 615
+C415 525 543 491 660 512
+C778 534 840 627 955 652
+C1068 677 1175 637 1277 552"
+fill="none" stroke="#cfeff1" stroke-width="12" stroke-linecap="round"/>
+
+<!-- Canali secondari -->
+<g fill="none" stroke="#477d86" stroke-width="8" stroke-linecap="round" opacity=".85">
+  <path d="M420 420C500 515 520 640 505 748"/>
+  <path d="M650 330C650 450 695 570 740 710"/>
+  <path d="M895 350C850 460 865 575 905 745"/>
+  <path d="M1085 430C1035 520 1038 645 1088 770"/>
+  <path d="M1235 470C1188 555 1195 655 1235 735"/>
+</g>
+
+<!-- Suddivisione sestieri -->
+<g fill="none" stroke="#f7e4d5" stroke-width="9">
+  <path d="M340 515L570 465L650 330"/>
+  <path d="M570 465L650 590L505 748"/>
+  <path d="M650 590L740 710L905 745"/>
+  <path d="M650 590L895 350"/>
+  <path d="M895 350L1085 430L1038 645"/>
+  <path d="M1038 645L1235 470L1325 485"/>
+</g>
+
+<!-- Etichette sestieri -->
+<text x="490" y="390" class="district">CANNAREGIO</text>
+<text x="455" y="675" class="district">SANTA CROCE</text>
+<text x="680" y="570" class="district">SAN POLO</text>
+<text x="690" y="790" class="district">DORSODURO</text>
+<text x="940" y="520" class="district">SAN MARCO</text>
+<text x="1170" y="620" class="district">CASTELLO</text>
+
+<!-- Punti principali -->
+<g>
+  <circle cx="300" cy="585" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="202" y="520" width="196" height="44" rx="12" class="labelbox"/>
+  <text x="300" y="549" text-anchor="middle" class="landmark">PIAZZALE ROMA</text>
+
+  <circle cx="392" cy="450" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="286" y="392" width="212" height="44" rx="12" class="labelbox"/>
+  <text x="392" y="421" text-anchor="middle" class="landmark">FERROVIA S. LUCIA</text>
+
+  <circle cx="760" cy="620" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="693" y="646" width="134" height="44" rx="12" class="labelbox"/>
+  <text x="760" y="675" text-anchor="middle" class="landmark">RIALTO</text>
+
+  <circle cx="860" cy="790" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="768" y="815" width="184" height="44" rx="12" class="labelbox"/>
+  <text x="860" y="844" text-anchor="middle" class="landmark">ACCADEMIA</text>
+
+  <circle cx="1050" cy="650" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="946" y="578" width="208" height="44" rx="12" class="labelbox"/>
+  <text x="1050" y="607" text-anchor="middle" class="landmark">PIAZZA SAN MARCO</text>
+
+  <circle cx="1128" cy="665" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="1148" y="646" width="185" height="44" rx="12" class="labelbox"/>
+  <text x="1240" y="675" text-anchor="middle" class="landmark">PALAZZO DUCALE</text>
+
+  <circle cx="1300" cy="630" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="1260" y="560" width="154" height="44" rx="12" class="labelbox"/>
+  <text x="1337" y="589" text-anchor="middle" class="landmark">ARSENALE</text>
+
+  <circle cx="1335" cy="742" r="12" fill="#c79f55" stroke="#fff" stroke-width="5"/>
+  <rect x="1225" y="770" width="220" height="44" rx="12" class="labelbox"/>
+  <text x="1335" y="799" text-anchor="middle" class="landmark">GIARDINI BIENNALE</text>
+</g>
+
+<!-- Altri luoghi -->
+<g class="small">
+  <text x="520" y="438">Ghetto Ebraico</text>
+  <text x="615" y="660">Basilica dei Frari</text>
+  <text x="820" y="738">Peggy Guggenheim</text>
+  <text x="975" y="575">Teatro La Fenice</text>
+  <text x="1210" y="500">S. Maria Formosa</text>
+</g>
+
+<!-- Murano e Burano -->
+<g>
+  <rect x="1110" y="305" width="180" height="46" rx="12" class="labelbox"/>
+  <text x="1200" y="335" text-anchor="middle" class="landmark">MURANO</text>
+  <rect x="1370" y="210" width="180" height="46" rx="12" class="labelbox"/>
+  <text x="1460" y="240" text-anchor="middle" class="landmark">BURANO</text>
+</g>
+
+<!-- Rotte vaporetto -->
+<path d="M310 585C520 790 835 865 1050 650C1200 495 1285 370 1200 328" class="route" stroke="#174d75"/>
+<path d="M1050 650C1230 565 1350 455 1460 235" class="route" stroke="#b84b3f"/>
+<path d="M1050 650C1150 770 1250 900 1400 980" class="route" stroke="#5a8b4a"/>
+
+<!-- Intestazione -->
+<g transform="translate(55 55)">
+  <rect width="590" height="142" rx="25" fill="#fffaf2" opacity=".96" filter="url(#shadow)"/>
+  <text x="30" y="57" font-family="Georgia,serif" font-size="46" fill="#0b2940">Mappa dei punti d’interesse</text>
+  <text x="30" y="98" font-family="Arial,sans-serif" font-size="24" fill="#a85c38">VENEZIA</text>
+  <text x="30" y="126" font-family="Arial,sans-serif" font-size="17" fill="#6d756f">Illustrazione orientativa, non in scala.</text>
+</g>
+
+<!-- Rosa dei venti -->
+<g transform="translate(140 895)" stroke="#0b2940" fill="none" stroke-width="4">
+  <circle r="62"/><path d="M0-50L14 0 0 50-14 0Z" fill="#c79f55"/>
+  <path d="M-50 0L0 14 50 0 0-14Z" fill="#fffaf2"/>
+  <text x="-10" y="-78" font-family="Arial" font-size="23" fill="#0b2940" stroke="none">N</text>
+</g>
+
+<!-- Legenda -->
+<g transform="translate(1370 860)">
+  <rect width="350" height="145" rx="20" fill="#fffaf2" opacity=".96" filter="url(#shadow)"/>
+  <line x1="28" y1="38" x2="95" y2="38" class="route" stroke="#174d75"/>
+  <text x="112" y="45" class="small">Linea verso Murano</text>
+  <line x1="28" y1="76" x2="95" y2="76" class="route" stroke="#b84b3f"/>
+  <text x="112" y="83" class="small">Linea verso Burano</text>
+  <line x1="28" y1="114" x2="95" y2="114" class="route" stroke="#5a8b4a"/>
+  <text x="112" y="121" class="small">Collegamento lagunare</text>
+</g>
+</svg>

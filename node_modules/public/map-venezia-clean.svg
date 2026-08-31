@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+<title id="title">Mappa illustrata di Venezia e della laguna</title>
+<desc id="desc">Mappa vettoriale stilizzata con la forma riconoscibile di Venezia, il Canal Grande, Piazzale Roma, Rialto, Accademia, San Marco, Arsenale, Murano, Burano, Lido e Pellestrina.</desc>
+<defs>
+  <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#dff1f3"/><stop offset="1" stop-color="#9ccbd2"/>
+  </linearGradient>
+  <linearGradient id="city" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f5e8c2"/><stop offset="1" stop-color="#ddc98d"/>
+  </linearGradient>
+  <pattern id="waves" width="64" height="30" patternUnits="userSpaceOnUse">
+    <path d="M0 18c16-11 32-11 48 0s32 11 48 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+  </pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#09283f" flood-opacity=".16"/>
+  </filter>
+  <style>
+    .label{font:700 22px Arial,sans-serif;fill:#fff}
+    .small{font:600 18px Arial,sans-serif;fill:#09283f}
+    .box{fill:#09283f;stroke:#fff;stroke-width:3}
+    .dot{fill:#c79f55;stroke:#fff;stroke-width:5}
+  </style>
+</defs>
+
+<rect width="1600" height="980" rx="42" fill="url(#sea)"/>
+<rect width="1600" height="980" rx="42" fill="url(#waves)"/>
+
+<!-- Mainland -->
+<path d="M0 0H380C345 160 365 280 330 390C295 500 245 610 260 730C270 820 300 900 330 980H0Z" fill="#d8dfc8"/>
+
+<!-- Venice fish-shaped historic center -->
+<path d="M420 555
+C470 475 555 415 655 397
+C750 380 835 401 922 443
+C986 474 1058 484 1124 462
+C1089 516 1030 551 960 562
+C1018 593 1060 638 1075 690
+C1002 651 932 634 856 642
+C770 651 691 690 608 684
+C525 678 448 637 420 555Z"
+fill="url(#city)" filter="url(#shadow)"/>
+
+<!-- Smaller islands inside lagoon -->
+<g fill="url(#city)" filter="url(#shadow)">
+  <path d="M760 215c76-42 160-35 220 16-55 56-143 78-213 49-43-18-46-44-7-65Z"/>
+  <path d="M1180 170c59-25 130-13 177 33-55 40-123 57-181 33-33-14-31-49 4-66Z"/>
+  <path d="M1180 610c90-26 192-7 273 51-92 34-188 43-276 15-51-16-51-51 3-66Z"/>
+  <path d="M1260 780c86-15 174 10 242 55-77 25-161 31-239 6-45-15-42-50-3-61Z"/>
+</g>
+
+<!-- Grand Canal -->
+<path d="M470 575C555 495 658 475 746 509C824 539 859 600 929 610C986 618 1027 592 1060 560"
+fill="none" stroke="#5eaab6" stroke-width="34" stroke-linecap="round"/>
+<path d="M475 580C560 510 653 492 739 521C814 546 857 608 926 619C977 627 1018 604 1052 570"
+fill="none" stroke="#dff5f6" stroke-width="9" stroke-linecap="round"/>
+
+<!-- Main route from Piazzale Roma -->
+<path d="M315 565C360 566 390 566 433 565" fill="none" stroke="#c79f55" stroke-width="6" stroke-dasharray="13 11"/>
+
+<!-- Lagoon routes -->
+<g fill="none" stroke="#c79f55" stroke-width="5" stroke-dasharray="12 10" opacity=".85">
+  <path d="M870 398C870 330 875 286 890 250"/>
+  <path d="M1010 450C1080 372 1145 280 1220 210"/>
+  <path d="M1055 650C1140 671 1214 681 1280 680"/>
+  <path d="M1280 690C1310 735 1330 785 1350 830"/>
+</g>
+
+<!-- Simple landmarks -->
+<g stroke="#b58b45" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M923 590v-72m-22 72h44m-34-72 12-33 12 33"/>
+  <path d="M615 520c20-28 42-28 64 0m-53 0h42"/>
+  <path d="M860 230c22-27 45-27 68 0m-56 0h44"/>
+  <path d="M1198 184c23-27 46-27 69 0m-57 0h45"/>
+</g>
+
+<!-- Label helper function rendered manually -->
+<g font-family="Arial, sans-serif">
+  <g transform="translate(310 565)">
+    <circle r="13" class="dot"/>
+    <rect x="-132" y="-68" width="264" height="46" rx="13" class="box"/>
+    <text x="0" y="-37" text-anchor="middle" class="label">PIAZZALE ROMA</text>
+  </g>
+
+  <g transform="translate(625 535)">
+    <circle r="12" class="dot"/>
+    <rect x="-76" y="-67" width="152" height="46" rx="13" class="box"/>
+    <text x="0" y="-36" text-anchor="middle" class="label">RIALTO</text>
+  </g>
+
+  <g transform="translate(748 625)">
+    <circle r="12" class="dot"/>
+    <rect x="-104" y="24" width="208" height="46" rx="13" class="box"/>
+    <text x="0" y="55" text-anchor="middle" class="label">ACCADEMIA</text>
+  </g>
+
+  <g transform="translate(930 600)">
+    <circle r="12" class="dot"/>
+    <rect x="-104" y="-68" width="208" height="46" rx="13" class="box"/>
+    <text x="0" y="-37" text-anchor="middle" class="label">SAN MARCO</text>
+  </g>
+
+  <g transform="translate(1030 525)">
+    <circle r="12" class="dot"/>
+    <rect x="22" y="-23" width="165" height="46" rx="13" class="box"/>
+    <text x="104" y="8" text-anchor="middle" class="label">ARSENALE</text>
+  </g>
+
+  <g transform="translate(890 250)">
+    <circle r="12" class="dot"/>
+    <rect x="-92" y="-68" width="184" height="46" rx="13" class="box"/>
+    <text x="0" y="-37" text-anchor="middle" class="label">MURANO</text>
+  </g>
+
+  <g transform="translate(1225 210)">
+    <circle r="12" class="dot"/>
+    <rect x="-92" y="-68" width="184" height="46" rx="13" class="box"/>
+    <text x="0" y="-37" text-anchor="middle" class="label">BURANO</text>
+  </g>
+
+  <g transform="translate(1285 680)">
+    <circle r="12" class="dot"/>
+    <rect x="22" y="-23" width="116" height="46" rx="13" class="box"/>
+    <text x="80" y="8" text-anchor="middle" class="label">LIDO</text>
+  </g>
+
+  <g transform="translate(1355 830)">
+    <circle r="12" class="dot"/>
+    <rect x="-190" y="24" width="190" height="46" rx="13" class="box"/>
+    <text x="-95" y="55" text-anchor="middle" class="label">PELLESTRINA</text>
+  </g>
+</g>
+
+<!-- Compass -->
+<g transform="translate(1450 845)" stroke="#09283f" fill="none" stroke-width="4" opacity=".78">
+  <circle r="55"/><path d="M0-45L13 0 0 45-13 0Z" fill="#c79f55"/>
+  <text x="-10" y="-68" font-family="Arial" font-size="23" fill="#09283f" stroke="none">N</text>
+</g>
+
+<!-- Intro card -->
+<g transform="translate(55 55)">
+  <rect width="500" height="170" rx="28" fill="#fff" opacity=".94" filter="url(#shadow)"/>
+  <text x="34" y="58" font-family="Georgia, serif" font-size="46" fill="#09283f">Venezia e la laguna</text>
+  <text x="34" y="103" font-family="Arial, sans-serif" font-size="22" fill="#66757d">Una mappa leggibile dei luoghi principali.</text>
+  <text x="34" y="140" font-family="Arial, sans-serif" font-size="18" fill="#8c7755">Illustrazione orientativa, non in scala.</text>
+</g>
+</svg>
