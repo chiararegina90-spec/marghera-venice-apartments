@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #09283f;
+  --gold: #c79f55;
+  --cream: #f8f4ec;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #17242d; }
+::selection { background: var(--gold); color: var(--navy); }
+.hero-overlay { background: linear-gradient(90deg, rgba(4,24,39,.88) 0%, rgba(4,24,39,.52) 48%, rgba(4,24,39,.12) 100%); }
+.card-image { transition: transform .7s ease; }
+.group:hover .card-image { transform: scale(1.035); }
+
+a, button { -webkit-tap-highlight-color: transparent; }
+@media (max-width: 640px) {
+  .hero-overlay { background: linear-gradient(180deg, rgba(4,24,39,.55) 0%, rgba(4,24,39,.84) 100%); }
+}
+
+
+/* Mobile rhythm and overflow — shared across the whole site */
+html, body { max-width: 100%; overflow-x: hidden; }
+main { overflow-x: clip; }
+
+@media (max-width: 767px) {
+  section.py-24,
+  section[class*="py-24"] {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  section.py-20,
+  section[class*="py-20"] {
+    padding-top: 3.25rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  section.py-16,
+  section[class*="py-16"] {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  h1, h2 {
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+    text-wrap: balance;
+  }
+
+  h1[class*="text-6xl"],
+  h1[class*="text-7xl"],
+  h1[class*="text-8xl"] {
+    font-size: clamp(2.55rem, 12vw, 3.75rem) !important;
+    line-height: 1 !important;
+  }
+
+  h2[class*="text-5xl"],
+  h2[class*="text-6xl"] {
+    font-size: clamp(2rem, 9vw, 3rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  a, button {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .mobile-tight-title {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: .98;
+  }
+}
+
+/* Accessibility — visible keyboard focus without changing the visual design */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: .5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* Multilingual layout safety */
+img, svg { max-width: 100%; }
+.min-w-0-safe { min-width: 0; }
+
+@media (max-width: 479px) {
+  .mobile-wrap-label {
+    white-space: normal !important;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+/* Long translated text safety — prevents visual collisions in DE/FR/ES/ZH */
+h1, h2, h3, summary, a, button {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.hero-copy,
+.hero-copy > * {
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  h1, h2 { text-wrap: balance; }
+}
+
+/* Buttons may wrap in translated languages instead of overflowing their card/hero. */
+a[class*="rounded-full"],
+button[class*="rounded-full"] {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+}

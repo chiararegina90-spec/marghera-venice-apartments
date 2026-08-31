@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 820" role="img" aria-labelledby="title desc">
+<title id="title">Mappa illustrata di Venezia, della laguna e del Veneto orientale</title>
+<desc id="desc">Mappa stilizzata con Marghera, Mestre, Venezia, Lido, Pellestrina, Chioggia, Jesolo, Treviso, Riviera del Brenta, Padova, Valdobbiadene e Verona.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbf7ef"/><stop offset="1" stop-color="#f1eadb"/></linearGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dceff1"/><stop offset="1" stop-color="#9bcbd3"/></linearGradient>
+  <linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecedda"/><stop offset="1" stop-color="#d7dfc4"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#09283f" flood-opacity=".14"/></filter>
+  <pattern id="waves" width="56" height="26" patternUnits="userSpaceOnUse"><path d="M0 16c14-12 28-12 42 0s28 12 42 0" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/></pattern>
+</defs>
+<rect width="1600" height="820" rx="34" fill="url(#paper)"/>
+<path d="M0 0H1170C1125 70 1112 132 1130 190C1152 255 1125 310 1092 358C1058 408 1053 466 1085 520C1118 576 1126 660 1095 820H0Z" fill="url(#land)"/>
+<path d="M1140 0H1600V820H1090C1120 680 1108 585 1075 530C1042 476 1051 405 1088 350C1125 295 1148 242 1127 184C1108 128 1118 67 1140 0Z" fill="url(#sea)"/>
+<path d="M1140 0H1600V820H1090C1120 680 1108 585 1075 530C1042 476 1051 405 1088 350C1125 295 1148 242 1127 184C1108 128 1118 67 1140 0Z" fill="url(#waves)"/>
+<path d="M1080 225C1150 160 1260 150 1350 193C1437 235 1460 320 1436 410C1410 508 1335 605 1228 652C1155 684 1098 643 1080 575C1057 489 1024 425 1045 350C1057 305 1062 262 1080 225Z" fill="#cae5e8" opacity=".95"/>
+<path d="M1195 300c48-30 104-28 151 4-34 35-86 52-137 43-30-6-41-27-14-47Z" fill="#f2e7c5"/>
+<path d="M1268 432c72-30 154-20 217 18-72 24-145 37-215 25-40-7-39-27-2-43Z" fill="#f2e7c5"/>
+<path d="M1194 523c86-17 178 2 247 43-84 22-174 28-252 8-39-10-35-42 5-51Z" fill="#efe2b9"/>
+<path d="M1350 610c58-8 120 10 168 39-62 14-122 15-177-3-33-11-25-31 9-36Z" fill="#eee0b5"/>
+<g fill="none" stroke-linecap="round">
+  <path d="M130 605C360 540 620 558 820 494S1010 394 1115 350" stroke="#74b5c1" stroke-width="9" opacity=".74"/>
+  <path d="M500 120C675 210 805 275 930 360S1040 413 1110 450" stroke="#87bcc4" stroke-width="7" opacity=".62"/>
+  <path d="M780 55C840 150 920 240 1025 315" stroke="#87bcc4" stroke-width="6" opacity=".55"/>
+</g>
+<g fill="none" stroke="#b9904e" stroke-width="4" stroke-dasharray="12 11" opacity=".85">
+  <path d="M920 410C830 405 740 430 650 488S490 565 350 600"/>
+  <path d="M920 410C970 370 1020 335 1095 325"/>
+  <path d="M920 410C970 300 950 220 905 145"/>
+  <path d="M920 410C810 350 700 285 555 190"/>
+  <path d="M920 410C1080 335 1260 275 1410 165"/>
+  <path d="M920 410C1080 515 1190 630 1275 715"/>
+</g>
+<g fill="none" stroke="#8da676" stroke-linecap="round">
+  <path d="M210 165l70-100 74 100" stroke-width="14" opacity=".45"/>
+  <path d="M345 180l92-132 98 132" stroke-width="17" opacity=".43"/>
+  <path d="M530 170l72-105 82 105" stroke-width="13" opacity=".40"/>
+</g>
+<g stroke="#a0b785" stroke-width="5" fill="none" opacity=".72">
+  <path d="M515 180c75-38 150-38 225 0"/>
+  <path d="M525 205c72-33 144-33 216 0"/>
+  <path d="M540 230c68-29 136-29 204 0"/>
+</g>
+<g transform="translate(1495 95)" stroke="#09283f" fill="none" stroke-width="3" opacity=".65">
+  <circle r="42"/><path d="M0-34L10 0 0 34-10 0Z" fill="#c79f55"/><text x="-8" y="-51" font-family="Arial" font-size="18" fill="#09283f" stroke="none">N</text>
+</g>
+<g stroke="#09283f" stroke-width="4" fill="none" opacity=".55">
+  <path d="M1460 335h55c-12 19-41 25-55 0Z"/><path d="M1488 298v37m0-31l25 13"/>
+  <path d="M1370 690h62c-12 19-46 24-62 0Z"/><path d="M1400 660v30"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#09283f">
+  <g transform="translate(920 410)" filter="url(#shadow)">
+    <path d="M0-27c18 0 32 14 32 32 0 22-32 54-32 54S-32 27-32 5c0-18 14-32 32-32Z" fill="#c79f55" stroke="#fff" stroke-width="7"/>
+    <circle cy="5" r="10" fill="#fff"/>
+    <rect x="-68" y="69" width="136" height="42" rx="12" fill="#09283f"/>
+    <text x="0" y="97" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">MARGHERA</text>
+  </g>
+  <g transform="translate(995 300)"><circle r="10" fill="#09283f"/><rect x="18" y="-22" width="105" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="32" y="5" font-size="19" font-weight="700">MESTRE</text></g>
+  <g transform="translate(1175 350)"><circle r="10" fill="#09283f"/><rect x="18" y="-22" width="120" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="32" y="5" font-size="19" font-weight="700">VENEZIA</text></g>
+  <g transform="translate(1295 470)"><circle r="9" fill="#09283f"/><rect x="18" y="-22" width="82" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="32" y="5" font-size="18" font-weight="700">LIDO</text></g>
+  <g transform="translate(1340 585)"><circle r="9" fill="#09283f"/><rect x="-154" y="-22" width="138" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-140" y="5" font-size="18" font-weight="700">PELLESTRINA</text></g>
+  <g transform="translate(1275 715)"><circle r="10" fill="#09283f"/><rect x="18" y="-22" width="120" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="32" y="5" font-size="19" font-weight="700">CHIOGGIA</text></g>
+  <g transform="translate(1410 165)"><circle r="10" fill="#09283f"/><rect x="-105" y="-22" width="88" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-91" y="5" font-size="19" font-weight="700">JESOLO</text></g>
+  <g transform="translate(905 145)"><circle r="10" fill="#09283f"/><rect x="18" y="-22" width="100" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="32" y="5" font-size="19" font-weight="700">TREVISO</text></g>
+  <g transform="translate(555 190)"><circle r="10" fill="#09283f"/><rect x="-157" y="-22" width="140" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-143" y="5" font-size="19" font-weight="700">VALDOBBIADENE</text></g>
+  <g transform="translate(650 488)"><circle r="10" fill="#09283f"/><rect x="-205" y="-22" width="188" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-191" y="5" font-size="18" font-weight="700">RIVIERA DEL BRENTA</text></g>
+  <g transform="translate(520 585)"><circle r="10" fill="#09283f"/><rect x="-108" y="-22" width="92" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-94" y="5" font-size="19" font-weight="700">PADOVA</text></g>
+  <g transform="translate(245 630)"><circle r="10" fill="#09283f"/><rect x="-105" y="-22" width="88" height="38" rx="10" fill="#fff" stroke="#ddd3c1"/><text x="-91" y="5" font-size="19" font-weight="700">VERONA</text></g>
+</g>
+<g stroke="#c79f55" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1138 316v-58m-17 58h38m-30-58l9-26 9 26"/>
+  <path d="M1390 126c14-29 42-29 56 0m-28 0v28"/>
+  <path d="M620 447h42v28h-42z"/>
+  <path d="M510 150c0 23 18 36 18 36s18-13 18-36"/>
+</g>
+<g transform="translate(70 75)">
+  <rect width="435" height="160" rx="24" fill="#fff" opacity=".92" filter="url(#shadow)"/>
+  <text x="32" y="55" font-family="Georgia, serif" font-size="42" fill="#09283f">Tutto a portata di mano</text>
+  <text x="32" y="95" font-family="Arial, sans-serif" font-size="21" fill="#62717a">Venezia, laguna e Veneto da una base strategica.</text>
+  <text x="32" y="128" font-family="Arial, sans-serif" font-size="18" fill="#8a7653">Mappa illustrativa, non in scala.</text>
+</g>
+</svg>
