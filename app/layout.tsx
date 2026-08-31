@@ -12,7 +12,6 @@ export const metadata:Metadata={
   authors:[{name:'Marghera Venice Apartments'}],
   creator:'Marghera Venice Apartments',
   publisher:'Marghera Venice Apartments',
-  keywords:['appartamenti vicino Venezia','appartamenti Marghera','parcheggio privato Venezia','vacanze Venezia','pet friendly Venezia','family friendly Venezia'],
   openGraph:{
     title:'Marghera Venice Apartments',
     description:'Rossi Apartment e Dimora Castelli: il tuo soggiorno vicino a Venezia con parcheggio privato e collegamenti H24.',
