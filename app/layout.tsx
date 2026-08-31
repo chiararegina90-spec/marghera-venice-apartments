@@ -60,6 +60,5 @@ export default async function RootLayout({children}:{children:React.ReactNode}){
         wait_for_update: 500
       });
     `}}/>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2HWSG9YG1"/>
   </head><body className="font-sans antialiased"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organizationJsonLd)}}/>{children}<Suspense fallback={null}><AnalyticsConsent lang={lang as 'it'|'en'|'de'|'fr'|'es'|'zh'}/></Suspense></body></html>
 }
