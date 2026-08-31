@@ -46,7 +46,7 @@ export default function Article(){
 
     <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8">
       <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Keep exploring</p><h2 className="mt-3 font-serif text-4xl text-navy">You may also like</h2>
-      <div className="mt-7 grid gap-4 md:grid-cols-2"><Link href="/en/discover-venice" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Discover Venice <span className="text-gold">→</span></Link><Link href="/en/getting-to-venice" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Getting to Venice <span className="text-gold">→</span></Link></div>
+      <div className="mt-7 grid gap-4 md:grid-cols-2"><Link href="/en/journal/mostra-del-cinema" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Venice Film Festival 2026 <span className="text-gold">→</span></Link><Link href="/en/journal/homo-faber-2026" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Homo Faber 2026 <span className="text-gold">→</span></Link></div>
       <div className="mt-10 text-center"><Link href="/en/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Back to Journal</Link></div>
     </div></section>
   </article></main><Footer lang="en"/></>;

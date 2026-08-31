@@ -31,7 +31,7 @@ export default function Article(){
         <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8">
           <div className="max-w-4xl text-white">
             <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/">Home</Link><span>›</span><Link href="/journal">Journal</Link><span>›</span><span className="text-gold">Festa del Redentore</span></nav>
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi</p>
+            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi • 17 luglio 2027</p>
             <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Festa del Redentore</h1>
             <p className="mt-6 max-w-3xl text-xl text-white/80">Una delle notti più sentite dai veneziani: memoria, tavolate, barche e fuochi riflessi nel Bacino di San Marco.</p>
           </div>

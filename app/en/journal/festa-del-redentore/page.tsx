@@ -5,11 +5,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
-  title:'Festa del Redentore | Venice Travel Journal',
-  description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',
+  title:'Festa del Redentore 2027 | Venice Travel Journal',
+  description:'Festa del Redentore 2027 reaches its highlight on Saturday 17 July: boats, tradition and fireworks across St Mark’s Basin.',
   alternates:{canonical:'/en/journal/festa-del-redentore',languages:{'it-IT':'/journal/festa-del-redentore','en-GB':'/en/journal/festa-del-redentore','de-DE':'/de/journal/festa-del-redentore','fr-FR':'/fr/journal/festa-del-redentore','es-ES':'/es/journal/festa-del-redentore','zh-CN':'/zh/journal/festa-del-redentore','x-default':'/journal/festa-del-redentore'}},
-  openGraph:{title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',url:'/en/journal/festa-del-redentore',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
-  twitter:{card:'summary_large_image',title:'Festa del Redentore | Venice Travel Journal',description:'One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.',images:['/images/home-rialto-vincenzo-landino.webp']}
+  openGraph:{title:'Festa del Redentore 2027 | Venice Travel Journal',description:'Festa del Redentore 2027 reaches its highlight on Saturday 17 July: boats, tradition and fireworks across St Mark’s Basin.',url:'/en/journal/festa-del-redentore',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Festa del Redentore 2027 | Venice Travel Journal',description:'Festa del Redentore 2027 reaches its highlight on Saturday 17 July: boats, tradition and fireworks across St Mark’s Basin.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [
@@ -30,7 +30,7 @@ export default function Article(){
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/75 to-navy/20"/>
       <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8"><div className="max-w-4xl text-white">
         <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/en">Home</Link><span>›</span><Link href="/en/journal">Journal</Link><span>›</span><span className="text-gold">Festa del Redentore</span></nav>
-        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Events</p><h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Festa del Redentore</h1><p className="mt-6 max-w-3xl text-xl text-white/80">One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.</p>
+        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Events • 17 July 2027</p><h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Festa del Redentore 2027</h1><p className="mt-6 max-w-3xl text-xl text-white/80">One of the nights Venetians care about most: remembrance, shared tables, boats and fireworks reflected across St Mark’s Basin.</p>
       </div></div>
     </section>
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">The Redentore grew from the city’s vow after liberation from the sixteenth-century plague. It still has a deeply Venetian character today: the religious tradition is joined by celebrations on boats, outdoor dinners and the spectacular fireworks display.</p><div className="mt-14 space-y-12">{sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div></div></section>

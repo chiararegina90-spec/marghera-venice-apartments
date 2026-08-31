@@ -5,11 +5,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
-  title:'Venice Carnival | Venice Travel Journal',
-  description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',
+  title:'Venice Carnival 2027 | Dates & Practical Guide',
+  description:'Venice Carnival 2027 runs from 23 January to 9 February: masks, parades, performances and practical tips for visiting the city.',
   alternates:{canonical:'/en/journal/carnevale-di-venezia',languages:{'it-IT':'/journal/carnevale-di-venezia','en-GB':'/en/journal/carnevale-di-venezia','de-DE':'/de/journal/carnevale-di-venezia','fr-FR':'/fr/journal/carnevale-di-venezia','es-ES':'/es/journal/carnevale-di-venezia','zh-CN':'/zh/journal/carnevale-di-venezia','x-default':'/journal/carnevale-di-venezia'}},
-  openGraph:{title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',url:'/en/journal/carnevale-di-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
-  twitter:{card:'summary_large_image',title:'Venice Carnival | Venice Travel Journal',description:'Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.',images:['/images/home-rialto-vincenzo-landino.webp']}
+  openGraph:{title:'Venice Carnival 2027 | Dates & Practical Guide',description:'Venice Carnival 2027 runs from 23 January to 9 February: masks, parades, performances and practical tips for visiting the city.',url:'/en/journal/carnevale-di-venezia',locale:'en_GB',type:'article',images:['/images/home-rialto-vincenzo-landino.webp']},
+  twitter:{card:'summary_large_image',title:'Venice Carnival 2027 | Dates & Practical Guide',description:'Venice Carnival 2027 runs from 23 January to 9 February: masks, parades, performances and practical tips for visiting the city.',images:['/images/home-rialto-vincenzo-landino.webp']}
 };
 
 const sections = [
@@ -29,7 +29,7 @@ export default function Article(){
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/75 to-navy/20"/>
       <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8"><div className="max-w-4xl text-white">
         <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/en">Home</Link><span>›</span><Link href="/en/journal">Journal</Link><span>›</span><span className="text-gold">Venice Carnival</span></nav>
-        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Events</p><h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Venice Carnival</h1><p className="mt-6 max-w-3xl text-xl text-white/80">Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.</p>
+        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Events • 23 January – 9 February 2027</p><h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Venice Carnival 2027</h1><p className="mt-6 max-w-3xl text-xl text-white/80">Masks, parades, performances and a city that changes character completely for a few extraordinary weeks.</p>
       </div></div>
     </section>
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">Carnival is not only St Mark’s Square: events spread through calli, campi, palaces, islands and the mainland. The best way to experience it is to alternate the most famous events with time away from the busiest areas.</p><div className="mt-14 space-y-12">{sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div></div></section>

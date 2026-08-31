@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
   title:'Carnevale di Venezia | Journal | Marghera Venice Apartments',
-  description:'Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.',
+  description:'Carnevale di Venezia 2027, dal 23 gennaio al 9 febbraio: maschere, cortei, spettacoli e consigli pratici per vivere la festa.',
   alternates:{canonical:'/journal/carnevale-di-venezia',languages:{'it-IT':'/journal/carnevale-di-venezia','en-GB':'/en/journal/carnevale-di-venezia','de-DE':'/de/journal/carnevale-di-venezia','fr-FR':'/fr/journal/carnevale-di-venezia','es-ES':'/es/journal/carnevale-di-venezia','zh-CN':'/zh/journal/carnevale-di-venezia','x-default':'/journal/carnevale-di-venezia'}},
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
@@ -30,7 +30,7 @@ export default function Article(){
         <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8">
           <div className="max-w-4xl text-white">
             <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/">Home</Link><span>›</span><Link href="/journal">Journal</Link><span>›</span><span className="text-gold">Carnevale di Venezia</span></nav>
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi</p>
+            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi • 23 gennaio – 9 febbraio 2027</p>
             <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Carnevale di Venezia</h1>
             <p className="mt-6 max-w-3xl text-xl text-white/80">Maschere, cortei, spettacoli e una città che per alcune settimane cambia completamente volto.</p>
           </div>

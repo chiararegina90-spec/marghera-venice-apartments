@@ -5,15 +5,15 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata:Metadata = {
-  title:'Biennale di Venezia | Journal | Marghera Venice Apartments',
-  description:'Giardini, Arsenale e mostre diffuse: una giornata non basta per vedere tutto, ed è proprio questo il punto.',
+  title:'Biennale Arte Venezia 2026: date, sedi e consigli per la visita',
+  description:'Biennale Arte 2026, dal 9 maggio al 22 novembre: Giardini, Arsenale, Forte Marghera e mostre diffuse. Come organizzare la visita.',
   alternates:{canonical:'/journal/biennale-di-venezia',languages:{'it-IT':'/journal/biennale-di-venezia','en-GB':'/en/journal/biennale-di-venezia','de-DE':'/de/journal/biennale-di-venezia','fr-FR':'/fr/journal/biennale-di-venezia','es-ES':'/es/journal/biennale-di-venezia','zh-CN':'/zh/journal/biennale-di-venezia','x-default':'/journal/biennale-di-venezia'}},
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
-{title:'Giardini e Arsenale',text:'Sono i due poli principali delle esposizioni internazionali di arte e architettura. La visita completa può facilmente occupare un’intera giornata.'},
-{title:'Venezia diventa una mostra diffusa',text:'Durante i periodi della Biennale numerosi palazzi e spazi cittadini ospitano esposizioni ed eventi collaterali. Alcuni sono un’occasione per entrare in luoghi normalmente meno accessibili.'},
-{title:'Organizza per zone',text:'Se hai più giorni, dedica una giornata alle sedi principali e un’altra agli eventi diffusi che ti interessano davvero.'}
+{title:'Biennale Arte 2026: In Minor Keys',text:'La 61. Esposizione Internazionale d’Arte si svolge dal 9 maggio al 22 novembre 2026. Il progetto In Minor Keys, ideato da Koyo Kouoh, si sviluppa nelle sedi della Biennale e in diversi luoghi della città.'},
+{title:'Giardini, Arsenale e Forte Marghera',text:'Le sedi principali comprendono Giardini e Arsenale, a cui si aggiunge Forte Marghera e una rete di partecipazioni nazionali ed eventi collaterali distribuiti in città.'},
+{title:'Organizza la visita per zone',text:'Se hai un solo giorno, scegli con attenzione cosa vedere. Se hai più tempo, dedica una giornata alle sedi principali e un’altra alle esposizioni diffuse che ti interessano davvero.'}
 ];
 
 const related = [
@@ -30,9 +30,9 @@ export default function Article(){
         <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8">
           <div className="max-w-4xl text-white">
             <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/">Home</Link><span>›</span><Link href="/journal">Journal</Link><span>›</span><span className="text-gold">Biennale di Venezia</span></nav>
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Arte & Cultura</p>
-            <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Biennale di Venezia</h1>
-            <p className="mt-6 max-w-3xl text-xl text-white/80">Giardini, Arsenale e mostre diffuse: una giornata non basta per vedere tutto, ed è proprio questo il punto.</p>
+            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Arte & Cultura • 9 maggio – 22 novembre 2026</p>
+            <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Biennale Arte 2026</h1>
+            <p className="mt-6 max-w-3xl text-xl text-white/80">Dal 9 maggio al 22 novembre, la 61. Esposizione Internazionale d’Arte porta In Minor Keys tra Giardini, Arsenale, Forte Marghera e tutta Venezia.</p>
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function Article(){
           <div className="mt-8 rounded-[2rem] bg-white p-8 shadow-soft">
             <p className="text-xs font-black uppercase tracking-[.18em] text-gold">Informazioni aggiornate</p>
             <p className="mt-3 text-slate-600">Date, programmi, tariffe e condizioni possono cambiare. Per gli elementi variabili consulta sempre la fonte ufficiale prima della visita.</p>
-            <a href="https://www.labiennale.org/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">La Biennale di Venezia ↗</a>
+            <a href="https://www.labiennale.org/it/arte/2026" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">Biennale Arte 2026 – sito ufficiale ↗</a>
           </div>
         </div>
       </section>
