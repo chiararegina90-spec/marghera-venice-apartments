@@ -27,7 +27,6 @@ export const metadata:Metadata={
     description:'Due appartamenti a Marghera con parcheggio privato e collegamenti H24 per Venezia.',
     images:['/images/home-rialto-vincenzo-landino.webp']
   },
-  robots:{index:true,follow:true,googleBot:{index:true,follow:true,'max-image-preview':'large','max-snippet':-1,'max-video-preview':-1}},
   icons:{icon:'/icon.png',shortcut:'/favicon.ico',apple:'/apple-icon.png'}
 };
 
