@@ -18,7 +18,7 @@ const sections = [
 
 const related = [
 ['Mostra del Cinema di Venezia','/journal/mostra-del-cinema'],
-['Scopri Venezia','/scopri-venezia']
+['The Venice Glass Week 2026','/journal/venice-glass-week-2026']
 ];
 
 export default function Article(){

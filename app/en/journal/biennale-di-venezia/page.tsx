@@ -19,7 +19,7 @@ const sections = [
 ];
 const related = [
 ['Venice Film Festival','/en/journal/mostra-del-cinema'],
-['Discover Venice','/en/discover-venice']
+['The Venice Glass Week 2026','/en/journal/venice-glass-week-2026']
 ];
 
 export default function Article(){
