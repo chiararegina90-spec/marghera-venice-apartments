@@ -1,1 +1,5 @@
-import GuestLanguageChooser from '@/components/GuestLanguageChooser'; export default function Page(){return <GuestLanguageChooser apartment="castelli"/>}
+import {redirect} from 'next/navigation';
+
+export default function LegacyCastelliGuestPage(){
+  redirect('/guest/dimora-castelli');
+}

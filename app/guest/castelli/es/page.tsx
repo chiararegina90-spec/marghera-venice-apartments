@@ -1,1 +1,5 @@
-import GuestPlaceholder from '@/components/GuestPlaceholder'; export default function Page(){return <GuestPlaceholder apartment="castelli" lang="es"/>}
+import {redirect} from 'next/navigation';
+
+export default function LegacyCastelliGuestLanguagePage(){
+  redirect('/guest/dimora-castelli/es');
+}
