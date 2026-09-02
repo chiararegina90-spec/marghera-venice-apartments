@@ -7,7 +7,7 @@ import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
-  description:'Esperienze selezionate per vivere Venezia e il Veneto in modo autentico, dalla voga alla veneta con Row Venice ad altre attività locali.',
+  description:'Esperienze selezionate per vivere Venezia e il Veneto in modo autentico: dalla voga alla veneta con Row Venice alla Wine Experience presso Azienda Agricola I Campi.',
   alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},
 openGraph:{type:'website',images:['/images/experience-row-venice-cover.webp']},twitter:{card:'summary_large_image',images:['/images/experience-row-venice-cover.webp']}};
 
@@ -16,7 +16,6 @@ const areas = [
   ['Guide turistiche','Visite private o di gruppo con professionisti abilitati.'],
   ['Gondole e barche','Esperienze in laguna da proporre con condizioni trasparenti.'],
   ['Biciclette','Noleggio e itinerari verso Lido, Pellestrina e terraferma.'],
-  ['Cantine','Degustazioni nelle Colline del Prosecco, preferibilmente su prenotazione.'],
   ['Ristorazione','Locali selezionati a Marghera, Venezia e nelle destinazioni delle guide.'],
 ];
 
@@ -39,6 +38,12 @@ export default function Collaborazioni(){
             <Link href="/collaborazioni/row-venice" className="block">
               <div className="relative h-64 overflow-hidden"><Image src="/images/experience-row-venice-card.webp" alt="Lezione di voga alla veneta con Row Venice" fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"/></div>
               <div className="p-8"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">Voga alla veneta</p><h2 className="mt-3 font-serif text-3xl text-navy">Row Venice: Venezia vista dal remo</h2><p className="mt-3 text-slate-600">Una lezione privata per provare la voga alla veneta nei canali di Cannaregio e scoprire Venezia partecipando, non solo osservando.</p><span className="mt-6 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Scopri l’esperienza</span></div>
+            </Link>
+          </article>
+          <article className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
+            <Link href="/collaborazioni/i-campi" className="block">
+              <div className="relative h-64 overflow-hidden"><Image src="/images/experience-i-campi-card.webp" alt="Azienda Agricola I Campi tra vigneti e colline della Val d’Illasi" fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"/></div>
+              <div className="p-8"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">Wine Experience • Val d’Illasi</p><h2 className="mt-3 font-serif text-3xl text-navy">I Campi: degustazione tra Valpolicella e Monti Lessini</h2><p className="mt-3 text-slate-600">Quattro percorsi di degustazione tra Soave, Valpolicella, Ripasso e Amarone, con sapori del territorio e possibilità di visitare la cantina.</p><span className="mt-6 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Scopri l’esperienza</span></div>
             </Link>
           </article>
           {areas.map(([title,text])=><article key={title} className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
