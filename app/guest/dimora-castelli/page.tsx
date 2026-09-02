@@ -5,8 +5,8 @@ import {guestCode, guestCookieName, hasValidGuestCookie} from '@/lib/guest-auth'
 
 export default async function Page({searchParams}:{searchParams:Promise<{error?:string}>}){
   const jar=await cookies();
-  const authenticated=await hasValidGuestCookie('rossi',jar.get(guestCookieName('rossi'))?.value);
-  if(authenticated) return <GuestLanguageChooser apartment="rossi"/>;
+  const authenticated=await hasValidGuestCookie('dimora-castelli',jar.get(guestCookieName('dimora-castelli'))?.value);
+  if(authenticated) return <GuestLanguageChooser apartment="dimora-castelli"/>;
   const query=await searchParams;
-  return <GuestAccessGate apartment="rossi" error={query.error} configured={Boolean(guestCode('rossi'))}/>;
+  return <GuestAccessGate apartment="dimora-castelli" error={query.error} configured={Boolean(guestCode('dimora-castelli'))}/>;
 }
