@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PracticalGuideCards from '@/components/PracticalGuideCards';
 
 export const metadata: Metadata = {
   title: 'Venice & Veneto Travel Guides',
@@ -36,6 +37,7 @@ export default function GuideIndex(){return <><Header lang="en"/><main>
 <h1 className="mt-4 max-w-4xl font-serif text-[clamp(2.75rem,11vw,4rem)] leading-[.98] tracking-[-0.02em] sm:text-6xl md:text-8xl">Travel guides for discovering Venice and Veneto.</h1>
 <p className="mt-6 max-w-3xl text-xl text-white/75">Practical ideas, day trips and local inspiration to help you plan more than just the obvious Venice highlights.</p>
 </div></section>
+<PracticalGuideCards lang="en"/>
 <section className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="grid gap-8 lg:grid-cols-2">
 {guides.map(([title,subtitle,text,image,alt,slug])=><article key={slug} className="overflow-hidden rounded-[2rem] bg-white shadow-soft"><div className="relative h-64 sm:h-72 lg:h-80"><Image src={image} alt={alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover"/></div><div className="p-6 sm:p-8"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{subtitle}</p><h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">{title}</h2><p className="mt-4 text-lg text-slate-600">{text}</p><Link href={`/en/guide/${slug}`} className="mt-7 inline-flex rounded-full bg-gold px-6 py-3 font-bold text-navy">Open guide</Link></div></article>)}
 </div></div></section></main><Footer lang="en"/></>}
