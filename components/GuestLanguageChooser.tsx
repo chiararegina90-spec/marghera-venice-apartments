@@ -4,7 +4,7 @@ import {useRouter} from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const langs=[['it','🇮🇹','Italiano'],['en','🇬🇧','English'],['fr','🇫🇷','Français'],['de','🇩🇪','Deutsch'],['es','🇪🇸','Español'],['zh','🇨🇳','中文']] as const;
+const langs=[['it','🇮🇹','Italiano'],['en','🇬🇧','English'],['fr','🇫🇷','Français'],['de','🇩🇪','Deutsch'],['es','🇪🇸','Español'],['zh','CH','中文']] as const;
 type GuestApartment='rossi'|'dimora-castelli';
 
 export default function GuestLanguageChooser({apartment}:{apartment:GuestApartment}){

@@ -15,11 +15,20 @@ export async function POST(request:NextRequest){
   }
 
   const response=NextResponse.redirect(new URL(`/guest/${apartment}`,request.url),303);
-  response.cookies.set(guestCookieName(apartment),await guestToken(apartment,expected),{
+  // Remove the legacy /guest-scoped cookie, then issue the session for the whole origin.
+  // The broader path is required because protected Welcome Book images live under /guest-content/.
+  response.cookies.set(guestCookieName(apartment),'',{
     httpOnly:true,
     secure:true,
     sameSite:'lax',
     path:'/guest',
+    maxAge:0,
+  });
+  response.cookies.set(guestCookieName(apartment),await guestToken(apartment,expected),{
+    httpOnly:true,
+    secure:true,
+    sameSite:'lax',
+    path:'/',
     maxAge:60*60*24*30,
   });
   response.headers.set('Cache-Control','private, no-store');
