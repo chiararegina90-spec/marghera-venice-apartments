@@ -11,12 +11,15 @@ export const metadata:Metadata = {
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
-{title:'Scegli gli orari migliori',text:'Mattina presto e tardo pomeriggio sono spesso più piacevoli delle ore centrali. Nei periodi caldi presta particolare attenzione alla temperatura della pavimentazione e all’idratazione.'},
-{title:'Trasporto pubblico',text:'Sui mezzi pubblici porta sempre con te la museruola oltre al guinzaglio: può essere richiesto di farla indossare. Prima di partire verifica comunque le condizioni aggiornate ACTV per il trasporto degli animali su autobus e navigazione.'},
-{title:'Dove fare una pausa',text:'Allontanarsi per qualche tratto dagli assi San Marco–Rialto permette di trovare campi e fondamenta più tranquilli. Lido e altre zone lagunari possono essere ottime alternative per giornate meno urbane.'}
+{title:'Scegli gli orari migliori',text:'Mattina presto e tardo pomeriggio sono spesso più piacevoli delle ore centrali. Nei mesi caldi controlla la temperatura della pavimentazione, porta acqua e prevedi pause frequenti all’ombra.'},
+{title:'Muoversi senza stress',text:'Calli strette, ponti e folla possono stancare anche il cane. Evita gli assi più affollati nelle ore di punta, fai pause regolari e lascia spazio agli altri passanti quando ti fermi.'},
+{title:'Trasporto pubblico: controlla le regole ACTV',text:'Le regole cambiano tra navigazione e rete automobilistica/tranviaria. In navigazione i cani devono essere muniti di museruola e tenuti al guinzaglio o in braccio; su autobus e tram ACTV non è consentito il trasporto di cani di taglia media o grande. Verifica sempre le condizioni aggiornate prima di partire.'},
+{title:'Zone più tranquille',text:'Allontanarsi dall’asse San Marco–Rialto aiuta a trovare campi e fondamenta più rilassati. Castello, Sant’Elena e alcune zone del Lido sono spesso più adatte a una passeggiata con ritmi tranquilli.'},
+{title:'Rientrare in una casa pet-friendly',text:'Rossi Apartment e Dimora Castelli accolgono gli animali. Negli appartamenti mettiamo a disposizione ciotole e cuccia; per pet shop, toelettatura e veterinario trovi i riferimenti aggiornati nella pagina Servizi in zona.'}
 ];
 
 const related = [
+['Servizi in zona','/servizi-in-zona'],
 ['Lido di Venezia','/guide/lido-di-venezia'],
 ['Come muoversi','/come-raggiungere-venezia']
 ];

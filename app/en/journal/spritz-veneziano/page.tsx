@@ -13,13 +13,14 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'Where it comes from',text:'The name is generally linked to the German verb spritzen, “to spray”, and to the period of Austrian presence in Veneto, when local wine was lightened with water. Over time, that simple habit evolved into the modern Spritz, now one of the most recognisable symbols of the Italian aperitivo.'},
-{title:'How it is made',text:'There is no single Venetian version. The basic structure is simple: sparkling wine or Prosecco, a bitter component and a splash of soda or seltzer, served with ice and a garnish. What changes most is the bitter you choose.'},
-{title:'Aperol, Select, Campari or Cynar?',text:'Aperol is softer and more citrusy; Select is strongly connected with Venetian tradition; Campari is more assertive and bitter; Cynar brings characteristic herbal notes. In Venice, being asked “which one do you want it with?” is part of the ritual.'},
-{title:'Spritz and cicchetti',text:'The Spritz is naturally at home beside cicchetti: small counter bites chosen according to what the bàcaro has prepared. There is no need to build a menu—have a drink, one or two cicchetti and continue your walk.'},
-{title:'Terrazza Aperol in Venice',text:'In Campo Santo Stefano you will find Terrazza Aperol, the official Aperol venue dedicated to the aperitivo ritual. It can be a fun stop for anyone who wants to experience an Aperol Spritz in a space entirely devoted to the Aperol world.'}
+{title:'Spritz and aperitivo are not the same thing',text:'The Spritz is the drink. Aperitivo is the moment: a pause before dinner, a conversation, a few cicchetti and perhaps a second stop somewhere else. That social ritual, more than the cocktail itself, is what makes it part of everyday Venetian life.'},
+{title:'Where it comes from',text:'The name is generally linked to the German verb spritzen, “to spray”, and to the period of Austrian presence in Veneto, when local wine was lightened with water. Over time that habit evolved into the modern Spritz.'},
+{title:'Aperol, Select, Campari or Cynar?',text:'There is no single Venetian version: Aperol is softer and more citrusy, Select is strongly connected with local tradition, Campari is more assertive and Cynar more herbal. In Venice, being asked “what would you like it with?” is part of the ritual.'},
+{title:'Spritz and cicchetti',text:'A Spritz naturally goes with cicchetti: small counter bites chosen according to what the bàcaro has prepared. One drink, one or two cicchetti and then you continue your walk.'},
+{title:'Where to try it',text:'Choose a neighbourhood bàcaro or a better-known venue such as Terrazza Aperol in Campo Santo Stefano. Our Where to eat page collects a selection of places in Marghera and Venice.'}
 ];
 const related = [
+['Where to eat','/en/where-to-eat'],
 ['Venetian cicchetti','/en/journal/cicchetti-veneziani'],
 ['Discover Venice','/en/discover-venice']
 ];

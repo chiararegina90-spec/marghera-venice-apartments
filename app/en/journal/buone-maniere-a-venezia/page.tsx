@@ -13,18 +13,18 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'Calli are our streets',text:'Keep to the right and, if you need to check Maps, photograph a pigeon or decide where to go, move to the side. Stopping is not the problem; stopping as a group at the narrowest point while someone behind you is trying to get to work is.'},
-{title:'Bridges are not benches',text:'Sitting on bridge steps to eat may seem romantic, but that bridge is a street. People carrying groceries, pushing a stroller, making a delivery or simply going home need to get through.'},
-{title:'The vaporetto is our bus',text:'It is not a sightseeing vehicle designed only for tourists. Let people get off before you board, move forward when staff ask you to, do not block doors or corridors, and take your backpack off your shoulders when the boat is crowded.'},
-{title:'Photograph everything, but step aside',text:'Venice is extraordinary and taking photographs is natural. Before stopping suddenly, however, check that there are not twenty people behind you. This matters especially on bridges, narrow calli, at vaporetto exits and in front of the station.'},
+{title:'Calli are our streets',text:'Keep to the right and, in the narrowest passages, walk single file. If you need to check Maps, photograph a pigeon or decide where to go, move to the side: stopping suddenly in the middle of a calle is the quickest way to create a tiny Venetian traffic jam.'},
+{title:'Bridges are not benches',text:'Sitting on bridge steps to eat may seem romantic, but that bridge is a street. Do not block it for lunch, photographs or while waiting for your group: people carrying groceries, pushing a stroller, making deliveries or simply going home need to get through.'},
+{title:'The vaporetto is our bus',text:'Let people get off before you board, keep landing exits clear, move forward when staff ask you to and take your backpack off your shoulders when the boat is crowded. It is more comfortable for you and much safer for the nose of the person behind you. 😄'},
+{title:'Photograph everything, but step aside',text:'Venice is extraordinary and taking photographs is natural. Before stopping suddenly, check that there are not other people behind you. This matters especially on bridges, in narrow calli, at vaporetto exits and in front of the railway station.'},
+{title:'Keep an eye on bags and phones',text:'In very busy areas, on crowded transport and around major transport hubs, keep an eye on your wallet, phone and bag. Venice is a safe city to visit, but crowds are an ideal environment for pickpockets.'},
 {title:'If you need a toilet, ask',text:'Venice has public toilets as well as bars and cafés. If a child urgently needs the toilet, ask politely; where appropriate, buying something small is a courteous way to return the favour. Calli, sottoporteghi and hidden corners are not toilets.'},
-{title:'Rubbish and dogs',text:'If you cannot immediately find a bin, keep your rubbish with you until you do. Dog waste must always be picked up. If you travel with a dog on public transport, also carry what ACTV rules require, including a muzzle.'},
-{title:'Suitcases, waterfronts and canals',text:'Do not leave suitcases in the middle of a passage and do not occupy waterfront edges or landing areas used for loading, unloading and transport. Canals are not swimming pools: they are real transport routes used by vaporetti, taxis, work boats and emergency services.'},
-{title:'The simplest rule',text:'Remember that someone lives here. The calle you want to photograph is someone’s street; that vaporetto is someone’s bus; that postcard canal is also a transport route. Enjoy Venice, get lost and take as many photographs as you like—just leave a little space for those who are not on holiday.'}
+{title:'Rubbish, dogs and canals',text:'If you cannot immediately find a bin, keep your rubbish with you until you do. Dog waste must always be picked up. And no: canals are not swimming pools, but real transport routes used by vaporetti, taxis, work boats and emergency services.'},
+{title:'The simplest rule',text:'Remember that someone lives here. The calle you want to photograph is someone’s street and that vaporetto is someone’s bus. Enjoy Venice, get lost and take as many photographs as you like—just leave a little space for people who are not on holiday.'}
 ];
 const related = [
-['Venice with children','/en/journal/venezia-con-bambini'],
-['Venice with your dog','/en/journal/venezia-con-il-cane']
+['Venice with your dog','/en/journal/venezia-con-il-cane'],
+['Getting to Venice','/en/getting-to-venice']
 ];
 
 export default function Article(){

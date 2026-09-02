@@ -350,171 +350,18 @@ export const guideData = {
     ]
   },
   "riviera-del-brenta": {
-    "slug": "riviera-del-brenta",
-    "title": "Riviera del Brenta",
-    "kicker": "Ville e paesaggio fluviale",
-    "subtitle": "Un itinerario tra giardini, borghi e dimore veneziane.",
-    "description": "Una delle escursioni più vicine agli appartamenti e una delle più sottovalutate dai visitatori.",
-    "image": "/images/veneto-riviera-brenta-final.webp",
-    "imageAlt": "Paesaggio della Riviera del Brenta con canale, ponti e case storiche",
-    "badges": [
-      [
-        "Visita consigliata",
-        "Giornata intera"
-      ],
-      [
-        "Come arrivare",
-        "Auto consigliata"
-      ],
-      [
-        "Ideale per",
-        "Ville, giardini e storia"
-      ],
-      [
-        "Stile",
-        "Itinerario panoramico"
-      ]
-    ],
-    "introTitle": "La villeggiatura dei veneziani",
-    "intro": [
-      "Lungo il Brenta le famiglie veneziane costruirono ville e giardini per trascorrere periodi lontano dalla città. Oggi la Riviera unisce architettura, piccoli centri e paesaggio fluviale.",
-      "Dal parcheggio privato degli appartamenti puoi partire con libertà, scegliendo poche ville da visitare e lasciando spazio alle soste spontanee."
-    ],
-    "highlights": [
-      [
-        "Villa Pisani",
-        "Una delle dimore più imponenti."
-      ],
-      [
-        "Villa Foscari La Malcontenta",
-        "Architettura palladiana vicina a Marghera."
-      ],
-      [
-        "Dolo",
-        "Molini, ponti e un centro piacevole."
-      ],
-      [
-        "Stra",
-        "Ville e giardini lungo il fiume."
-      ],
-      [
-        "Mira",
-        "Un tratto ricco di edifici storici."
-      ],
-      [
-        "Navigazione sul Brenta",
-        "Un modo diverso di leggere il paesaggio."
-      ]
-    ],
-    "experiences": [
-      [
-        "Visitare una villa",
-        "Scegli in base agli orari e agli interni aperti."
-      ],
-      [
-        "Passeggiare a Dolo",
-        "Una pausa semplice tra una visita e l’altra."
-      ],
-      [
-        "Fotografare il fiume",
-        "Ponti, rive e giardini."
-      ],
-      [
-        "Pranzo in Riviera",
-        "Cucina veneta e ritmi più lenti."
-      ],
-      [
-        "Tour in battello",
-        "Da prenotare e verificare in anticipo."
-      ],
-      [
-        "Giardini storici",
-        "Una componente importante quanto gli edifici."
-      ]
-    ],
-    "itinerary": [
-      [
-        "09:30",
-        "La Malcontenta",
-        "Inizia dalla villa più vicina."
-      ],
-      [
-        "11:00",
-        "Mira",
-        "Prosegui lungo la Riviera."
-      ],
-      [
-        "13:00",
-        "Dolo",
-        "Pranzo e passeggiata."
-      ],
-      [
-        "15:00",
-        "Villa Pisani",
-        "Dedica tempo a interni e parco."
-      ],
-      [
-        "18:00",
-        "Rientro panoramico",
-        "Torna senza fretta verso Marghera."
-      ]
-    ],
-    "adviceTitle": "Non provare a vedere tutte le ville",
-    "advice": "Meglio scegliere due visite importanti e dedicare il resto della giornata ai borghi e al paesaggio. Controlla sempre aperture e prenotazioni.",
-    "heartTitle": "La Riviera fuori stagione",
-    "heartText": "In primavera e autunno offre luce, tranquillità e un rapporto più autentico con il territorio.",
-    "historyTitle": "La tromba d’aria dell’8 luglio 2015",
-    "historyText": "Un tornado attraversò Dolo, Mira e Pianiga, provocando danni gravissimi anche a edifici storici. La ricostruzione successiva è diventata un simbolo della capacità della comunità di reagire.",
-    "faq": [
-      [
-        "Serve l’auto?",
-        "È il mezzo più pratico per costruire un itinerario libero."
-      ],
-      [
-        "Quante ville visitare?",
-        "Due visite complete sono spesso sufficienti."
-      ],
-      [
-        "È adatta ai bambini?",
-        "Sì, soprattutto alternando parchi e visite brevi."
-      ],
-      [
-        "Si può navigare sul Brenta?",
-        "Esistono servizi dedicati, da verificare e prenotare."
-      ],
-      [
-        "Quando andare?",
-        "Primavera e autunno sono particolarmente piacevoli."
-      ],
-      [
-        "Quanto dista dagli appartamenti?",
-        "Le prime località della Riviera sono molto vicine, ma i tempi variano con traffico e percorso."
-      ]
-    ],
-    "related": [
-      [
-        "Padova",
-        "/guide/padova"
-      ],
-      [
-        "Treviso",
-        "/guide/treviso"
-      ],
-      [
-        "Scopri il Veneto",
-        "/scopri-il-veneto"
-      ]
-    ],
-    "officialLinks": [
-      [
-        "Ville Venete",
-        "https://www.irvv.net/"
-      ],
-      [
-        "Villa Pisani",
-        "https://cultura.gov.it/luogo/museo-nazionale-di-villa-pisani"
-      ]
-    ]
+    "slug":"riviera-del-brenta","title":"Riviera del Brenta","kicker":"Ville e paesaggio fluviale","subtitle":"Un itinerario tra giardini, borghi e dimore veneziane.","description":"Ville Venete, bici e navigazione sul Brenta: una delle escursioni più vicine a Marghera.","image":"/images/veneto-riviera-brenta-final.webp","imageAlt":"Paesaggio della Riviera del Brenta con canale, ponti e ville storiche",
+    "badges":[["Visita consigliata","Giornata intera"],["Come arrivare","Auto, bici o navigazione"],["Ideale per","Ville, giardini e storia"],["Stile","Panoramico e flessibile"]],
+    "introTitle":"La villeggiatura dei veneziani","intro":["Tra Seicento e Settecento la Riviera del Brenta divenne il luogo di villeggiatura delle famiglie veneziane, che costruirono lungo il fiume ville e giardini per vivere la campagna senza allontanarsi troppo da Venezia.","Oggi puoi leggere quello stesso legame tra città e terraferma visitando alcune Ville Venete, pedalando lungo il Brenta oppure scegliendo una navigazione fluviale."],
+    "highlights":[["Villa Foscari “La Malcontenta”","Capolavoro palladiano a Malcontenta, tra le prime tappe arrivando da Marghera."],["Villa Widmann","Villa settecentesca a Mira con affreschi, giardino e servizi informativi dedicati alla Riviera."],["Villa Pisani","La grande villa nazionale di Stra, con interni monumentali e parco storico."],["Dolo","Molini, ponti e un centro piacevole per una pausa."],["Mira","Uno dei tratti più ricchi di ville e paesaggio fluviale."],["Naviglio del Brenta","Il filo d’acqua che unisce ville, borghi e storia veneziana."]],
+    "experiences":[["Visitare due ville","Meglio scegliere poche visite importanti e lasciare tempo al paesaggio."],["Riviera in bicicletta","Il percorso lungo il Brenta è prevalentemente pianeggiante; verifica sempre itinerario, traffico e tratti ciclabili prima di partire."],["Il Burchiello","La navigazione tra Padova e Venezia permette di osservare le ville dal fiume e prevede programmi con visite guidate."],["Passeggiare a Dolo","Una sosta semplice tra una villa e l’altra."],["Pranzo in Riviera","Cucina veneta e ritmi più lenti."],["Fotografia","Ville, ponti, rive e riflessi cambiano continuamente lungo il percorso."]],
+    "itinerary":[["09:30","Villa Foscari","Inizia dalla Malcontenta, verificando apertura e prenotazioni."],["11:00","Mira e Villa Widmann","Prosegui lungo la Riviera e dedica tempo a una seconda visita."],["13:00","Dolo","Pranzo e passeggiata."],["15:00","Villa Pisani","Concludi a Stra con villa e parco, secondo gli orari disponibili."],["18:00","Rientro","Torna verso Marghera senza fretta lungo il Brenta."]],
+    "adviceTitle":"Non provare a vedere tutte le ville","advice":"Scegli due o tre tappe e costruisci la giornata sugli orari reali di apertura. Se preferisci non guidare, valuta la navigazione del Burchiello; se ami pedalare, pianifica un tratto della Riviera in bici.",
+    "heartTitle":"Un pezzo di storia veneziana fuori Venezia","heartText":"Le ville raccontano come le famiglie veneziane abbiano portato arte, architettura e vita sociale dalla laguna alla campagna lungo il Brenta.",
+    "historyTitle":"Venezia e le Ville Venete","historyText":"La Riviera fu una naturale estensione della vita veneziana sulla terraferma: il fiume permetteva collegamenti e trasporto, mentre le ville diventavano luoghi di villeggiatura, rappresentanza e gestione delle proprietà agricole.",
+    "faq":[["Serve l’auto?","È molto comoda, ma non è l’unica possibilità: esistono itinerari in bici e navigazioni turistiche sul Brenta."],["Quali ville scegliere?","Villa Foscari, Villa Widmann e Villa Pisani sono tre riferimenti importanti, ma aperture e condizioni cambiano: controlla sempre i siti ufficiali."],["Si può fare in bici?","Sì, scegliendo un percorso adatto al proprio livello e verificando viabilità e tratti ciclabili."],["Cos’è il Burchiello?","È un servizio di navigazione turistica lungo la Riviera del Brenta, con programmi tra Venezia e Padova e visite ad alcune ville."],["È adatta alle famiglie?","Sì, soprattutto con poche tappe e tempo per giardini e pause."]],
+    "related":[["Padova","/guide/padova"],["Veneto in bicicletta","/guide/veneto-in-bicicletta"],["Scopri il Veneto","/scopri-il-veneto"]],
+    "officialLinks":[["Villa Widmann","https://servizimetropolitani.ve.it/it/villawidmann"],["Villa Foscari","https://www.lamalcontenta.it/"],["Villa Pisani","https://museiveneto.cultura.gov.it/musei/villa-pisani-di-stra"],["Il Burchiello","https://www.ilburchiello.it/"]]
   },
   "padova": {
     "slug": "padova",
@@ -1731,13 +1578,14 @@ export const guideData = {
   "lido-di-venezia": {
     "slug":"lido-di-venezia","title":"Lido di Venezia","kicker":"Venezia sul mare","subtitle":"Spiagge, biciclette e Murazzi.","description":"Un volto diverso di Venezia, tra spiagge, viali alberati, percorsi in bici e vedute sulla laguna e sull’Adriatico.","image":"/images/lido-venezia-spiaggia.webp","imageAlt":"Spiaggia del Lido di Venezia affacciata sul mare Adriatico",
     "badges":[["Visita consigliata","Mezza giornata o giornata intera"],["Come arrivare","Vaporetto"],["Ideale per","Mare, bici e famiglie"],["Stile","Rilassato e all’aperto"]],
-    "introTitle":"Una pausa sul mare restando a Venezia","intro":["Il Lido cambia completamente il ritmo rispetto al centro storico: strade più larghe, spiagge e spostamenti facili in bicicletta.","È perfetto in estate, ma Murazzi, vedute sulla laguna e atmosfera residenziale lo rendono interessante anche fuori stagione."],
+    "introTitle":"Una pausa sul mare restando a Venezia","intro":["Dal terminal di Piazzale Roma e dalla zona della stazione Venezia Santa Lucia puoi raggiungere il Lido con i vaporetti ACTV; scegli la linea migliore in base all’orario del giorno e verifica sempre il servizio ufficiale.","Il Lido cambia completamente il ritmo rispetto al centro storico: strade più larghe, spiagge, bici e spazi più semplici da gestire anche con bambini."],
     "highlights":[["Spiagge","La classica pausa estiva sul mare Adriatico."],["Murazzi","Storiche difese costiere con lunghi panorami sul mare."],["Gran Viale","L’asse principale tra laguna e mare."],["Bicicletta","Uno dei modi più semplici per esplorare l’isola."],["Alberoni","Zona meridionale più tranquilla e vicina alla natura."],["Area della Mostra del Cinema","Il volto culturale internazionale del Lido."]],
-    "experiences":[["Giornata al mare","Rallenta dopo le giornate più intense a Venezia."],["Giro in bici","Scopri più zone dell’isola senza fatica eccessiva."],["Passeggiata sui Murazzi","Aria di mare e orizzonti aperti."],["Aperitivo lato laguna","Goditi la luce della sera guardando verso Venezia."],["Escursione agli Alberoni","Aggiungi natura e un’atmosfera più tranquilla."],["Architettura Liberty","Osserva ville e dettagli del primo Novecento."]],
-    "itinerary":[["09:30","Arrivo al Lido SME","Parti dal principale nodo dei vaporetti."],["10:00","Bici o passeggiata","Raggiungi il mare ed esplora i viali laterali."],["12:30","Pranzo","Scegli una sosta informale sul mare o nel quartiere."],["14:00","Spiaggia o Murazzi","Adatta il pomeriggio a stagione e meteo."],["17:00","Lato laguna","Rientra lentamente con vedute verso Venezia."]],
-    "adviceTitle":"Pensa anche oltre la spiaggia","advice":"Fuori dall’estate il Lido resta ottimo per pedalare, camminare a lungo e osservare Venezia da una prospettiva più tranquilla.",
-    "faq":[["Quanto tempo dedicare al Lido?","Da mezza giornata a una giornata intera, in base a spiaggia, bici e stagione."],["È adatto alle famiglie?","Sì: spazi più ampi, spiaggia e percorsi pianeggianti lo rendono pratico con bambini."],["Si può visitare con il cane?","Le aree esterne sono facilmente percorribili; verifica regole di spiagge e trasporti."],["Serve prenotare?","Per stabilimenti balneari e servizi stagionali è consigliabile controllare disponibilità e condizioni."]],
-    "related":[["Pellestrina","/guide/pellestrina"],["Certosa","/guide/certosa"],["Murano","/guide/murano"]],"officialLinks":[["Venezia Unica","https://www.veneziaunica.it/"],["ACTV","https://actv.avmspa.it/"]]
+    "experiences":[["Giornata al mare","Rallenta dopo le giornate più intense a Venezia."],["Giro in bici","Scopri più zone dell’isola senza fatica eccessiva."],["Passeggiata sui Murazzi","Aria di mare e orizzonti aperti."],["Aperitivo lato laguna","Goditi la luce della sera guardando verso Venezia."],["Escursione agli Alberoni","Aggiungi natura e un’atmosfera più tranquilla."],["Giornata in famiglia","Spiaggia, percorsi pianeggianti e pause rendono il Lido pratico con i bambini."]],
+    "itinerary":[["09:00","Partenza da Venezia","Nei weekend estivi parti presto: code e spiagge possono riempirsi velocemente."],["09:45","Arrivo al Lido SME","Dal principale nodo dei vaporetti raggiungi facilmente Gran Viale e il mare."],["10:00","Bici o passeggiata","Raggiungi la spiaggia ed esplora i viali laterali."],["12:30","Pranzo","Scegli una sosta informale sul mare o nel quartiere."],["14:00","Spiaggia o Murazzi","Adatta il pomeriggio a stagione e meteo."],["17:00","Lato laguna","Rientra lentamente con vedute verso Venezia."]],
+    "adviceTitle":"Pass ACTV e orari: controllali prima di partire","advice":"I pass ACTV possono essere utili se nella stessa giornata prevedi più corse in vaporetto. Prima di partire controlla sempre linee, validità del titolo scelto e servizio del giorno; nei weekend estivi meglio muoversi presto.",
+    "faq":[["Quanto tempo dedicare al Lido?","Da mezza giornata a una giornata intera, in base a spiaggia, bici e stagione."],["È adatto alle famiglie?","Sì: spazi più ampi, spiaggia e percorsi pianeggianti lo rendono pratico con bambini."],["Come si arriva?","In vaporetto da Venezia; da Piazzale Roma e dalla zona di Santa Lucia sono disponibili collegamenti ACTV con percorsi e tempi diversi."],["Posso usare un pass ACTV?","Sì, quando il titolo acquistato include la rete di navigazione e la validità temporale copre il viaggio. Controlla sempre le condizioni aggiornate."],["Si può visitare con il cane?","Le aree esterne sono facilmente percorribili; verifica regole di spiagge e trasporti."]],
+    "related":[["Pellestrina","/guide/pellestrina"],["Jesolo","/guide/jesolo"],["Venezia con bambini","/journal/venezia-con-bambini"]],
+    "officialLinks":[["Venezia Unica","https://www.veneziaunica.it/"],["ACTV","https://actv.avmspa.it/"]]
   },
   "jesolo": {
     "slug":"jesolo","title":"Jesolo","kicker":"Costa Adriatica","subtitle":"Spiaggia, mare e atmosfera estiva.","description":"Una semplice escursione al mare dalla zona di Venezia, con una lunga spiaggia, attività per famiglie e una vivace estate.","image":"/images/guide-jesolo.webp","imageAlt":"Spiaggia di Jesolo sulla costa adriatica",

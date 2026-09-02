@@ -11,16 +11,17 @@ export const metadata:Metadata = {
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
-{title:"Da dove arriva",text:"Il nome viene generalmente collegato al verbo tedesco spritzen, “spruzzare”, e al periodo della presenza austriaca nel Veneto, quando il vino locale veniva alleggerito con acqua. Nel tempo quella semplice abitudine si è evoluta fino allo Spritz moderno, diventato uno dei simboli più riconoscibili dell’aperitivo italiano."},
-{title:"Come si prepara",text:"Non esiste una sola versione veneziana. La struttura è semplice: vino frizzante o prosecco, una componente bitter e una parte di soda o seltz, serviti con ghiaccio e guarnizione. Cambia soprattutto ciò che scegli come bitter."},
-{title:"Aperol, Select, Campari o Cynar?",text:"Aperol è più morbido e agrumato; Select è fortemente legato alla tradizione veneziana; Campari è più deciso e amaro; Cynar porta note erbacee caratteristiche. A Venezia la domanda “con cosa lo vuoi?” è parte del rito."},
-{title:"Spritz e cicchetti",text:"Lo Spritz trova il suo ambiente naturale accanto ai cicchetti: piccoli assaggi da banco da scegliere in base a ciò che il bàcaro ha preparato. Non serve costruire un menu: si prende qualcosa da bere, uno o due cicchetti e si continua la passeggiata."},
-{title:"Terrazza Aperol a Venezia",text:"In Campo Santo Stefano si trova Terrazza Aperol, il locale ufficiale del brand Aperol dedicato al rituale dell’aperitivo. È una tappa divertente per chi vuole vivere l’Aperol Spritz in uno spazio interamente dedicato al mondo Aperol."}
+{title:"Spritz e aperitivo non sono sinonimi",text:"Lo Spritz è il bicchiere. L’aperitivo è il momento: una pausa prima di cena, una chiacchiera, qualche cicchetto e magari un secondo locale. È questa dimensione sociale, più del cocktail in sé, a renderlo parte della quotidianità veneziana."},
+{title:"Da dove arriva",text:"Il nome viene generalmente collegato al verbo tedesco spritzen, “spruzzare”, e al periodo della presenza austriaca nel Veneto, quando il vino locale veniva alleggerito con acqua. Nel tempo l’abitudine si è evoluta fino allo Spritz moderno."},
+{title:"Aperol, Select, Campari o Cynar?",text:"Non esiste una sola versione veneziana: Aperol è più morbido e agrumato, Select è fortemente legato alla tradizione locale, Campari è più deciso e Cynar più erbaceo. A Venezia sentirsi chiedere “con cosa lo vuoi?” fa parte del rito."},
+{title:"Spritz e cicchetti",text:"Lo Spritz si accompagna naturalmente ai cicchetti: piccoli assaggi da banco scelti in base a ciò che il bàcaro ha preparato. Un bicchiere, uno o due cicchetti e poi si continua la passeggiata."},
+{title:"Dove provarlo",text:"Puoi scegliere un bàcaro di quartiere oppure un locale più noto come Terrazza Aperol in Campo Santo Stefano. Nella pagina Dove mangiare trovi una selezione di indirizzi tra Marghera e Venezia."}
 ];
 
 const related = [
+["Dove mangiare","/dove-mangiare"],
 ["Cicchetti veneziani","/journal/cicchetti-veneziani"],
-["Venezia senza far arrabbiare i veneziani","/journal/buone-maniere-a-venezia"]
+["Scopri Venezia","/scopri-venezia"]
 ];
 
 export default function Article(){

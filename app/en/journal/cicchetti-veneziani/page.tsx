@@ -13,13 +13,14 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'An osteria tradition',text:'Cicchetti belong to the culture of Venetian bàcari and osterie. For centuries, small bites have accompanied wine, allowing people to stop, eat something and continue their day without turning every pause into a sit-down meal.'},
-{title:'What are they for?',text:'Nothing complicated: they accompany an ombra of wine or a Spritz, take the edge off your hunger and, above all, are part of the pleasure of being together. One or two, then perhaps move on to another bàcaro. If you are full after five places, technically it has become dinner, although that probably was not the plan. 😄'},
-{title:'What you may find on the counter',text:'Baccalà mantecato, sarde in saor, meatballs, crostini, small octopus, mozzarella in carrozza, eggs, vegetables, fried fish and preparations that change from place to place and from one day to the next.'},
-{title:'Cicchetto is a format, not a recipe',text:'That is the key point: there is no universal cicchetti menu. Walk in, look at the counter and choose whatever catches your eye. That is much more Venetian than arriving with a rigid checklist.'},
-{title:'The bàcaro tour',text:'Cannaregio, San Polo, Santa Croce and Dorsoduro are just some of the areas where it is enjoyable to move from one bàcaro to another. You do not need to chase ten famous addresses: often the place that looks inviting during your walk is part of the experience.'}
+{title:'A bàcaro tradition',text:'Cicchetti belong to the culture of Venetian bàcari and osterie. They are small bites designed to accompany a drink and a pause, rather than a miniature starter with a fixed set of rules.'},
+{title:'A bàcaro is not a restaurant',text:'A bàcaro is an informal place where you have an ombra of wine or a Spritz and choose cicchetti from the counter. A restaurant is a seated meal with a different pace and structure. Both are worth experiencing, but they are not the same thing.'},
+{title:'What you may find on the counter',text:'Baccalà mantecato, sarde in saor, meatballs, crostini, baby octopus, mozzarella in carrozza, eggs, vegetables and fish: the selection changes from one place to another and often during the day.'},
+{title:'How and when to eat them',text:'One or two cicchetti can accompany aperitivo, a mid-morning pause or a small crawl between several bàcari. With an ombra of wine or a Spritz they work perfectly; after five stops, technically, it may have become dinner. 😄'},
+{title:'Walk a few calli away',text:'Cannaregio, San Polo, Santa Croce and Dorsoduro offer plenty of good options. You do not have to follow only the most famous addresses around Rialto and St Mark’s: a few extra calli can often bring a more relaxed atmosphere.'}
 ];
 const related = [
+['Where to eat','/en/where-to-eat'],
 ['The Venetian Spritz','/en/journal/spritz-veneziano'],
 ['How to enjoy Venice respectfully','/en/journal/buone-maniere-a-venezia']
 ];

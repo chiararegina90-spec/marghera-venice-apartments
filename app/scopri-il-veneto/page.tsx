@@ -76,6 +76,30 @@ const reasons = [
   ['Viaggio su misura','Scegli ogni giorno in base al meteo, alla stagione e ai tuoi ritmi.'],
 ];
 
+const trainCities = [
+  {
+    name:'Padova',
+    time:'circa 15–30 min da Venezia Mestre',
+    why:'Una delle gite in treno più semplici: arte, piazze e vita cittadina in una giornata molto facile da organizzare.',
+    sights:'Cappella degli Scrovegni · Basilica di Sant’Antonio · Prato della Valle · Piazza delle Erbe e Piazza della Frutta',
+    href:'/guide/padova'
+  },
+  {
+    name:'Treviso',
+    time:'circa 20–30 min da Venezia Mestre',
+    why:'Raccolta, elegante e rilassata: perfetta anche per una mezza giornata tra canali, portici e centro storico.',
+    sights:'Piazza dei Signori · Canale dei Buranelli · Duomo · Isola della Pescheria',
+    href:'/guide/treviso'
+  },
+  {
+    name:'Verona',
+    time:'circa 55–75 min da Venezia Mestre, secondo il treno',
+    why:'Una giornata completa in una delle grandi città d’arte del Veneto, raggiungibile senza usare l’auto.',
+    sights:'Arena · Piazza delle Erbe · Castelvecchio · Ponte Scaligero e lungadige',
+    href:'/guide/verona'
+  }
+];
+
 const tips = [
   'Non riempire ogni giornata: lascia spazio a soste, deviazioni e piccoli borghi.',
   'Per cantine e visite guidate, prenota in anticipo e verifica sempre gli orari.',
@@ -114,6 +138,25 @@ export default function ScopriIlVeneto(){
             <p className="mt-3 text-slate-600">{text}</p>
           </article>)}
         </div>
+      </div>
+    </section>
+
+    <section className="py-24">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+        <SectionTitle eyebrow="Senza auto" title="Città d’arte raggiungibili in treno" text="Marghera è una base strategica anche per chi vuole esplorare il Veneto senza guidare: dalla stazione di Venezia Mestre puoi raggiungere direttamente diverse città d’arte."/>
+        <div className="grid gap-6 lg:grid-cols-3">
+          {trainCities.map(city=><article key={city.name} className="flex h-full flex-col rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft">
+            <p className="text-xs font-black uppercase tracking-[.18em] text-gold">{city.time}</p>
+            <h2 className="mt-3 font-serif text-4xl text-navy">{city.name}</h2>
+            <p className="mt-4 text-slate-600">{city.why}</p>
+            <p className="mt-5 rounded-2xl bg-cream p-4 text-sm font-semibold leading-6 text-navy">{city.sights}</p>
+            <div className="mt-auto flex flex-wrap gap-3 pt-6">
+              <Link href={city.href} className="rounded-full bg-gold px-5 py-3 font-bold text-navy">Apri la guida</Link>
+              <a href="https://www.trenitalia.com/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-5 py-3 font-bold text-navy">Trenitalia ↗</a>
+            </div>
+          </article>)}
+        </div>
+        <p className="mt-5 text-sm text-slate-500">I tempi sono indicativi e cambiano in base al servizio scelto. Controlla sempre l’orario del giorno prima di partire.</p>
       </div>
     </section>
 

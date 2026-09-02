@@ -13,13 +13,15 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'Build a lighter day',text:'Choose one major visit in the morning and keep the afternoon more flexible. Venice with children works best when monuments, vaporetto rides, breaks and moments when they can simply play are alternated.'},
-{title:'Natural History Museum',text:'The Giancarlo Ligabue Natural History Museum of Venice, housed in the Fontego dei Turchi on the Grand Canal, is particularly suitable for families. Natural-history collections and displays provide an engaging change of pace from exploring the city, including for younger children.'},
-{title:'Green spaces and play',text:'Venice also has places where you can slow down. Sant’Elena and the Giardini della Biennale area allow you to add a green break to the day; in equipped areas, children can play and move around away from the busiest routes.'},
-{title:'Campi are part of the itinerary',text:'Venice does not always need organised attractions. Quieter campi are perfect for a snack, a break and a few minutes of freedom before continuing your visit.'},
-{title:'Stroller or baby carrier?',text:'Bridges and steps make some routes more demanding with a stroller. A carefully planned itinerary and a few vaporetto journeys can make the day considerably easier.'}
+{title:'Build a lighter day',text:'Choose one major visit in the morning and keep the afternoon flexible. Venice with children works best when monuments, vaporetto rides, breaks and simple playtime are alternated.'},
+{title:'Natural History Museum',text:'The Giancarlo Ligabue Natural History Museum, in the Fontego dei Turchi on the Grand Canal, is a family-friendly stop and a useful change of pace from bridges, streets and monuments.'},
+{title:'Campi and places for a break',text:'Campo Santa Margherita, Campo San Polo and Campo Santa Maria Formosa work well for a snack or a short pause. For more greenery, consider Sant’Elena; back on the mainland, Parco San Giuliano offers far more open space.'},
+{title:'Workshops that become memories',text:'A mask-making workshop or a glass activity can turn sightseeing into something children actively remember. Always check minimum ages, duration and booking requirements with the organiser.'},
+{title:'Light stroller, baby carrier and water',text:'Bridges and steps make heavy strollers impractical, so a lightweight model is easier; for younger children, a baby carrier can be a useful alternative. Carry a reusable bottle and refill it at public drinking fountains when available.'},
+{title:'A day trip beyond Venice?',text:'If you have a car and want a full family day outside the city, Parco Natura Viva can be an option. It is a substantial trip from Venice, so choose it only if your itinerary has enough time.'}
 ];
 const related = [
+['Discover Venice','/en/discover-venice'],
 ['How to enjoy Venice respectfully','/en/journal/buone-maniere-a-venezia'],
 ['Acqua alta in Venice','/en/journal/acqua-alta-a-venezia']
 ];

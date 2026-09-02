@@ -12,13 +12,15 @@ openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},
 
 const sections = [
 {title:'Costruisci una giornata leggera',text:'Scegli una grande visita al mattino e lascia il pomeriggio più libero. Venezia con i bambini funziona meglio quando si alternano monumenti, vaporetto, pause e momenti in cui possono semplicemente giocare.'},
-{title:'Museo di Storia Naturale',text:'Il Museo di Storia Naturale di Venezia Giancarlo Ligabue, ospitato nel Fontego dei Turchi sul Canal Grande, è una tappa particolarmente adatta alle famiglie. Collezioni naturalistiche e allestimenti permettono di alternare la visita della città a un’esperienza coinvolgente anche per i più piccoli.'},
-{title:'Aree verdi e giochi',text:'Venezia offre anche spazi dove rallentare. Sant’Elena e l’area dei Giardini della Biennale permettono di inserire una pausa nel verde durante la giornata; nelle zone attrezzate i bambini possono giocare e muoversi lontano dai percorsi più affollati.'},
-{title:'I campi sono parte dell’itinerario',text:'A Venezia non servono sempre attrazioni organizzate. I campi più tranquilli sono perfetti per una merenda, una pausa e qualche minuto di libertà prima di riprendere la visita.'},
-{title:'Passeggino o marsupio?',text:'Ponti e gradini rendono alcuni percorsi più impegnativi con il passeggino. Un itinerario ragionato e qualche tratta in vaporetto possono alleggerire molto la giornata.'}
+{title:'Museo di Storia Naturale',text:'Il Museo di Storia Naturale di Venezia Giancarlo Ligabue, nel Fontego dei Turchi sul Canal Grande, è una tappa molto adatta alle famiglie: collezioni naturalistiche e allestimenti danno ai bambini un cambio di ritmo rispetto a calli e monumenti.'},
+{title:'Campi e spazi dove fare una pausa',text:'Campo Santa Margherita, Campo San Polo e Campo Santa Maria Formosa sono utili per spezzare la giornata con una merenda o qualche minuto di libertà. Per una pausa nel verde, valuta Sant’Elena; tornando in terraferma, il grande Parco San Giuliano è un’ottima alternativa.'},
+{title:'Laboratori che diventano ricordi',text:'Un laboratorio di maschere o un’attività dedicata al vetro può trasformare una visita in un’esperienza da ricordare. Controlla sempre età minima, durata e prenotazione direttamente con l’organizzatore.'},
+{title:'Passeggino leggero, marsupio e acqua',text:'Ponti e gradini rendono i passeggini pesanti poco pratici: meglio un modello leggero e, con i più piccoli, un marsupio come alternativa. Porta una borraccia riutilizzabile e sfrutta le fontanelle pubbliche quando le incontri.'},
+{title:'Una gita fuori Venezia?',text:'Se viaggi in auto e vuoi dedicare una giornata intera ai bambini, Parco Natura Viva può essere una buona gita fuori porta. È però una destinazione distante da Venezia: considerala solo se hai tempo e desideri alternare città e natura.'}
 ];
 
 const related = [
+['Scopri Venezia','/scopri-venezia'],
 ['Venezia senza far arrabbiare i veneziani','/journal/buone-maniere-a-venezia'],
 ['Acqua alta a Venezia','/journal/acqua-alta-a-venezia']
 ];

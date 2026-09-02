@@ -11,14 +11,15 @@ export const metadata:Metadata = {
 openGraph:{type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 
 const sections = [
-{title:"Una tradizione da osteria",text:"I cicchetti appartengono alla cultura dei bàcari e delle osterie veneziane. Da secoli piccoli bocconi accompagnano il vino e permettono di fermarsi, mangiare qualcosa e continuare la giornata senza trasformare ogni sosta in un pranzo seduti."},
-{title:"A cosa servono?",text:"A niente di complicato: accompagnano un’ombra di vino o uno Spritz, tolgono un po’ di fame e soprattutto fanno parte del piacere di stare insieme. Uno, due, poi magari si cambia bàcaro. Se dopo cinque locali siete sazi, tecnicamente è diventata una cena, ma probabilmente non era quello il piano. 😄"},
-{title:"Cosa puoi trovare sul banco",text:"Baccalà mantecato, sarde in saor, polpette, crostini, folpetti, mozzarella in carrozza, uova, verdure, pesce fritto e preparazioni che cambiano da locale a locale e da un giorno all’altro."},
-{title:"Il cicchetto è un formato, non una ricetta",text:"La caratteristica più importante è proprio questa: non esiste il menu universale dei cicchetti. Entra, guarda il banco e scegli ciò che ti incuriosisce. È molto più veneziano che arrivare con una lista rigida."},
-{title:"Il bacaro tour",text:"Cannaregio, San Polo, Santa Croce e Dorsoduro sono solo alcune delle zone dove è piacevole passare da un bàcaro all’altro. Non serve inseguire dieci indirizzi famosi: spesso il locale che ti ispira durante la passeggiata è parte dell’esperienza."}
+{title:"Una tradizione da osteria",text:"I cicchetti appartengono alla cultura dei bàcari e delle osterie veneziane. Sono piccoli bocconi pensati per accompagnare un bicchiere e una pausa, non un antipasto in miniatura con regole precise."},
+{title:"Bàcaro e ristorante non sono la stessa cosa",text:"Il bàcaro è un locale informale dove si beve un’ombra di vino o uno Spritz e si scelgono cicchetti dal banco. Il ristorante è un pasto seduti, con tempi e struttura diversi. Entrambe le esperienze valgono la pena, ma non vanno confuse."},
+{title:"Cosa puoi trovare sul banco",text:"Baccalà mantecato, sarde in saor, polpette, crostini, folpetti, mozzarella in carrozza, uova, verdure e pesce: l’offerta cambia da locale a locale e spesso anche durante la giornata."},
+{title:"Come e quando si mangiano",text:"Uno o due cicchetti possono accompagnare l’aperitivo, una pausa a metà mattina o un piccolo giro tra più bàcari. Con un’ombra di vino o uno Spritz funzionano perfettamente; dopo cinque locali, tecnicamente, potrebbe essere diventata cena. 😄"},
+{title:"Allontanati di qualche calle",text:"Cannaregio, San Polo, Santa Croce e Dorsoduro offrono tantissime possibilità. Non serve inseguire soltanto gli indirizzi più famosi intorno a Rialto e San Marco: spesso bastano poche calli per trovare un’atmosfera più piacevole."}
 ];
 
 const related = [
+["Dove mangiare","/dove-mangiare"],
 ["Lo Spritz veneziano","/journal/spritz-veneziano"],
 ["Venezia senza far arrabbiare i veneziani","/journal/buone-maniere-a-venezia"]
 ];

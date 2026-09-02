@@ -13,16 +13,17 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'The simplest option for our guests',text:'Rossi Apartment and Dimora Castelli both offer free private parking. To visit Venice, we normally recommend leaving the car at your accommodation and using the bus or train: no searching for a space and no city-garage cost for the day.'},
+{title:'The simplest option for our guests',text:'Rossi Apartment and Dimora Castelli offer free parking. For a day in Venice, we normally recommend leaving the car at your accommodation and using the bus or train: no searching for a space and no city-garage cost for the day.'},
 {title:'Piazzale Roma: AVM Municipal Garage',text:'If you want to drive as close as possible to the historic centre, cross the Ponte della Libertà to Piazzale Roma and leave your car in the municipal garage. Check the AVM website for current rates, conditions and booking options.'},
 {title:'Piazzale Roma: Garage San Marco',text:'Also at Piazzale Roma is Garage San Marco, another multi-storey option for travellers who prefer to arrive at the edge of Venice by car. It is wise to check availability and book during busy periods.'},
-{title:'Tronchetto',text:'Tronchetto is another major vehicle-access area for Venice. It is particularly useful if you want to park before Piazzale Roma and continue towards the centre using public transport.'},
-{title:'Car or public transport?',text:'A car offers independence, but parking garages in Venice cost considerably more than buses or trains. If parking is already included in your stay, leaving the car in Marghera is almost always the simplest choice.'},
-{title:'After Piazzale Roma',text:'This is where car-accessible Venice ends. From the terminal you can continue on foot or by ACTV vaporetto. Driving to St Mark’s Square, on the other hand, is best left to the imagination. 😄'}
+{title:'Tronchetto',text:'Tronchetto is another major vehicle-access area for Venice. It can be useful if you prefer to park before Piazzale Roma and then continue towards the historic centre by public transport.'},
+{title:'Car or public transport?',text:'Driving gives you independence, but parking garages in Venice cost considerably more than a bus or train ride. If parking is already included in your stay, leaving the car in Marghera is usually the simplest and most economical choice.'},
+{title:'From Piazzale Roma onwards',text:'This is where Venice for cars ends. From the terminal you continue on foot or by ACTV vaporetto. Driving to St Mark’s Square, meanwhile, belongs safely in the imagination. 😄'}
 ];
 const related = [
-['Getting to Venice','/en/getting-to-venice'],
-['Discover Venice','/en/discover-venice']
+['Rossi Apartment','/en/apartments/rossi-apartment'],
+['Dimora Castelli','/en/apartments/dimora-castelli'],
+['Getting to Venice','/en/getting-to-venice']
 ];
 
 export default function Article(){

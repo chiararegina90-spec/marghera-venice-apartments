@@ -13,11 +13,14 @@ export const metadata:Metadata = {
 };
 
 const sections = [
-{title:'Choose the best times',text:'Early morning and late afternoon are often more pleasant than the middle of the day. In warm weather, pay particular attention to pavement temperature and hydration.'},
-{title:'Public transport',text:'On public transport, always carry a muzzle as well as a lead, as you may be asked to use it. Before travelling, check the latest ACTV conditions for animals on buses and water services.'},
-{title:'Where to take a break',text:'Moving away from the San Marco–Rialto axis for part of the day makes it easier to find quieter campi and fondamenta. The Lido and other lagoon areas can also be excellent alternatives for less urban days.'}
+{title:'Choose the best times',text:'Early morning and late afternoon are often more pleasant than the middle of the day. In warm weather, check pavement temperature, carry water and plan frequent shaded breaks.'},
+{title:'Move without adding stress',text:'Narrow streets, bridges and crowds can tire a dog quickly. Avoid the busiest routes at peak times, take regular breaks and move to the side whenever you stop.'},
+{title:'Public transport: check ACTV rules',text:'Rules differ between water services and the bus/tram network. On water services dogs must have a muzzle and be kept on a lead or carried; ACTV buses and trams do not allow medium or large dogs. Always check the latest official conditions before travelling.'},
+{title:'Quieter areas',text:'Moving away from the San Marco–Rialto axis makes it easier to find calmer campi and fondamenta. Castello, Sant’Elena and parts of the Lido often suit a slower walk.'},
+{title:'Return to a pet-friendly apartment',text:'Both Rossi Apartment and Dimora Castelli welcome pets. Bowls and a pet bed are provided; our Services nearby page lists a pet shop, grooming service and veterinary clinic in Marghera.'}
 ];
 const related = [
+['Services nearby','/en/services-nearby'],
 ['Venice Lido','/en/guide/lido-di-venezia'],
 ['Getting around Venice','/en/getting-to-venice']
 ];

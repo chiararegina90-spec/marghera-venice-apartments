@@ -8,6 +8,8 @@ const localizedToIt:Record<string,string>={
  '/getting-to-venice':'/come-raggiungere-venezia',
  '/experiences':'/collaborazioni',
  '/useful-links':'/link-utili',
+ '/where-to-eat':'/dove-mangiare',
+ '/services-nearby':'/servizi-in-zona',
 };
 const itToLocalized=Object.fromEntries(Object.entries(localizedToIt).map(([k,v])=>[v,k]));
 export function stripLocale(pathname:string){

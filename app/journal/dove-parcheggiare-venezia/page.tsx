@@ -20,8 +20,9 @@ const sections = [
 ];
 
 const related = [
-["Come arrivare","/come-raggiungere-venezia"],
-["Venezia senza far arrabbiare i veneziani","/journal/buone-maniere-a-venezia"]
+["Rossi Apartment","/case/rossi-apartment"],
+["Dimora Castelli","/case/dimora-castelli"],
+["Come arrivare","/come-raggiungere-venezia"]
 ];
 
 export default function Article(){
