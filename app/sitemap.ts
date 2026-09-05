@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 import {localePath, siteLangs, hreflang} from '@/lib/i18n';
+import {culturePlaces, type CultureLang, type CultureScope} from '@/data/culturePlaces';
+import {cultureDetailPath, cultureIndexPath} from '@/data/cultureTranslations';
 
 const baseUrl = 'https://www.margheraveniceapartments.com';
 const routes = [
@@ -300,11 +302,27 @@ const routes = [
   "/zh/services-nearby",
 ];
 
+function cultureAlternates(scope:CultureScope,slug?:string){
+  return Object.fromEntries(siteLangs.map((lang)=>[hreflang[lang],`${baseUrl}${slug?cultureDetailPath(scope,lang as CultureLang,slug):cultureIndexPath(scope,lang as CultureLang)}`]));
+}
+
+function cultureSitemap():MetadataRoute.Sitemap{
+  const scopes:CultureScope[]=['venice','veneto'];
+  const indexes=scopes.flatMap(scope=>siteLangs.map(lang=>({
+    url:`${baseUrl}${cultureIndexPath(scope,lang as CultureLang)}`,changeFrequency:'weekly' as const,priority:0.85,alternates:{languages:cultureAlternates(scope)}
+  })));
+  const details=culturePlaces.flatMap(place=>siteLangs.map(lang=>({
+    url:`${baseUrl}${cultureDetailPath(place.scope,lang as CultureLang,place.slug)}`,changeFrequency:'monthly' as const,priority:0.72,alternates:{languages:cultureAlternates(place.scope,place.slug)}
+  })));
+  return [...indexes,...details];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
+  const existing=routes.map((route) => ({
     url: `${baseUrl}${route === '/' ? '' : route}`,
     changeFrequency: route === '/' ? 'weekly' : route.startsWith('/journal/') ? 'monthly' : 'monthly',
     priority: route === '/' ? 1 : (route.startsWith('/case/') || route.includes('/apartments/')) ? 0.9 : (route === '/come-raggiungere-venezia' || route.endsWith('/getting-to-venice')) ? 0.8 : 0.7,
     alternates: { languages: Object.fromEntries(siteLangs.map((lang) => [hreflang[lang], `${baseUrl}${localePath(route, lang) === '/' ? '' : localePath(route, lang)}`])) },
   }));
+  return [...existing,...cultureSitemap()];
 }

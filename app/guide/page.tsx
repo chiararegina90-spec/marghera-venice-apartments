@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PracticalGuideCards from '@/components/PracticalGuideCards';
+import CultureGuidePromoCards from '@/components/CultureGuidePromoCards';
 
 export const metadata: Metadata = {
   title: 'Guide di viaggio | Marghera Venice Apartments',
@@ -148,6 +149,7 @@ export default function GuideIndex(){
     </section>
 
     <PracticalGuideCards />
+    <CultureGuidePromoCards lang="it"/>
     <section className="bg-cream py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2">

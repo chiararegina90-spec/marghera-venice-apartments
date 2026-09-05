@@ -12,6 +12,34 @@ const localizedToIt:Record<string,string>={
  '/services-nearby':'/servizi-in-zona',
 };
 const itToLocalized=Object.fromEntries(Object.entries(localizedToIt).map(([k,v])=>[v,k]));
+const cultureLocalizedPrefixes:Record<SiteLang,{venice:string;veneto:string}>={
+ it:{venice:'/guide/musei-venezia',veneto:'/guide/veneto'},
+ en:{venice:'/guide/venice-museums',veneto:'/guide/veneto'},
+ de:{venice:'/guide/museen-venedig',veneto:'/guide/venetien'},
+ fr:{venice:'/guide/musees-venise',veneto:'/guide/venetie'},
+ es:{venice:'/guide/museos-venecia',veneto:'/guide/veneto'},
+ zh:{venice:'/guide/venice-museums',veneto:'/guide/veneto'},
+};
+const cultureCanonical={venice:'/guide/musei-venezia',veneto:'/guide/veneto'} as const;
+function normalizeCulture(pathname:string){
+ for(const lang of siteLangs){
+  for(const scope of ['venice','veneto'] as const){
+   const from=cultureLocalizedPrefixes[lang][scope],to=cultureCanonical[scope];
+   if(pathname===from) return to;
+   if(pathname.startsWith(`${from}/`)) return `${to}${pathname.slice(from.length)}`;
+  }
+ }
+ return pathname;
+}
+function localizeCulture(pathname:string,target:SiteLang){
+ for(const scope of ['venice','veneto'] as const){
+  const from=cultureCanonical[scope],to=cultureLocalizedPrefixes[target][scope];
+  if(pathname===from) return to;
+  if(pathname.startsWith(`${from}/`)) return `${to}${pathname.slice(from.length)}`;
+ }
+ return null;
+}
+
 
 function replacePathPrefix(pathname:string,map:Record<string,string>){
   const entries=Object.entries(map).sort((a,b)=>b[0].length-a[0].length);
@@ -29,6 +57,9 @@ export function stripLocale(pathname:string){
 export function localePath(pathname:string,target:SiteLang){
  let logical=stripLocale(pathname||'/');
  if(logical!=='/' && !logical.startsWith('/')) logical='/'+logical;
+ logical=normalizeCulture(logical);
+ const culturePath=localizeCulture(logical,target);
+ if(culturePath) return target==='it'?culturePath:`/${target}${culturePath}`;
  // Normalize Italian special route prefixes to the shared localized route tree.
  // Prefix replacement keeps nested pages (e.g. /collaborazioni/row-venice)
  // aligned with /en/experiences/row-venice and the other locales.

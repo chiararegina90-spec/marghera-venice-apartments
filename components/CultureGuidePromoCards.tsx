@@ -1,0 +1,22 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import type {CultureLang} from '@/data/culturePlaces';
+import {cultureCounts} from '@/data/culturePlaces';
+import {cultureIndexPath} from '@/data/cultureTranslations';
+
+const copy={
+ it:{altVenice:'Venezia e il Canal Grande',altVeneto:'Patrimonio culturale del Veneto',eyebrow:'Nuove guide culturali',title:'Scegli cosa visitare, non solo dove andare.',venice:['Musei, monumenti e chiese di Venezia','Una directory pratica con tempi medi, prezzi, orari, biglietti ufficiali e schede dedicate.', 'Apri Musei a Venezia'],veneto:['Cultura in Veneto','Musei, ville, castelli, chiese e grandi capolavori organizzati provincia per provincia.','Esplora il Veneto']},
+ en:{altVenice:'Venice and the Grand Canal',altVeneto:'Cultural heritage of Veneto',eyebrow:'New culture guides',title:'Choose what to visit, not only where to go.',venice:['Venice museums, monuments and churches','A practical directory with average visit times, tickets, opening hours, official links and dedicated entries.','Open Venice museums'],veneto:['Culture in Veneto','Museums, villas, castles, churches and major cultural sites organised by province.','Explore Veneto']},
+ de:{altVenice:'Venedig und der Canal Grande',altVeneto:'Kulturerbe Venetiens',eyebrow:'Neue Kulturführer',title:'Entscheiden Sie, was Sie besuchen möchten – nicht nur wohin.',venice:['Museen, Monumente und Kirchen in Venedig','Praktisches Verzeichnis mit Besuchsdauer, Eintritt, Öffnungszeiten, offiziellen Links und Detailseiten.','Venedigs Museen öffnen'],veneto:['Kultur in Venetien','Museen, Villen, Burgen, Kirchen und Kulturstätten nach Provinzen geordnet.','Venetien entdecken']},
+ fr:{altVenice:'Venise et le Grand Canal',altVeneto:'Patrimoine culturel de la Vénétie',eyebrow:'Nouveaux guides culturels',title:'Choisissez quoi visiter, pas seulement où aller.',venice:['Musées, monuments et églises de Venise','Un répertoire pratique avec durée moyenne, billets, horaires, liens officiels et fiches détaillées.','Ouvrir les musées de Venise'],veneto:['Culture en Vénétie','Musées, villas, châteaux, églises et grands sites culturels classés par province.','Explorer la Vénétie']},
+ es:{altVenice:'Venecia y el Gran Canal',altVeneto:'Patrimonio cultural del Véneto',eyebrow:'Nuevas guías culturales',title:'Elige qué visitar, no solo adónde ir.',venice:['Museos, monumentos e iglesias de Venecia','Un directorio práctico con duración media, entradas, horarios, enlaces oficiales y fichas detalladas.','Abrir Museos de Venecia'],veneto:['Cultura en el Véneto','Museos, villas, castillos, iglesias y grandes lugares culturales organizados por provincia.','Explorar el Véneto']},
+ zh:{altVenice:'威尼斯与大运河',altVeneto:'威尼托文化遗产',eyebrow:'全新文化指南',title:'不仅选择去哪里，更能选择看什么。',venice:['威尼斯博物馆、古迹与教堂','包含建议参观时长、门票、开放时间、官方链接和独立详情页的实用目录。','打开威尼斯文化指南'],veneto:['威尼托文化景点','按省份整理的博物馆、别墅、城堡、教堂与重要文化遗产。','探索威尼托']}
+} as const;
+
+export default function CultureGuidePromoCards({lang='it'}:{lang?:CultureLang}){
+ const t=copy[lang]; const cards=[
+  {scope:'venice' as const,count:cultureCounts.venice,title:t.venice[0],text:t.venice[1],cta:t.venice[2],image:'/images/home-rialto-vincenzo-landino.webp',alt:t.altVenice},
+  {scope:'veneto' as const,count:cultureCounts.veneto,title:t.veneto[0],text:t.veneto[1],cta:t.veneto[2],image:'/images/veneto-padova-final.webp',alt:t.altVeneto}
+ ];
+ return <section className="bg-white py-20"><div className="mx-auto max-w-7xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.eyebrow}</p><h2 className="mt-3 max-w-4xl font-serif text-4xl text-navy sm:text-5xl">{t.title}</h2><div className="mt-9 grid gap-7 lg:grid-cols-2">{cards.map(c=><article key={c.scope} className="overflow-hidden rounded-[2rem] bg-cream shadow-soft"><div className="relative h-64"><Image src={c.image} alt={c.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover"/><div className="absolute right-4 top-4 rounded-xl border-2 border-white bg-white/95 px-3 py-2 text-sm font-black text-navy shadow-lg">{c.count}</div></div><div className="p-7"><h3 className="font-serif text-4xl text-navy">{c.title}</h3><p className="mt-4 text-lg leading-7 text-slate-600">{c.text}</p><Link href={cultureIndexPath(c.scope,lang)} className="mt-6 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{c.cta}</Link></div></article>)}</div></div></section>;
+}

@@ -1,0 +1,83 @@
+VALIDATION REPORT — CULTURE GUIDES
+MARGHERA VENICE APARTMENTS
+Data: 05/09/2026
+
+CONTENUTI
+[OK] 80 luoghi culturali Venezia
+[OK] 49 luoghi culturali Veneto
+[OK] Veneto distribuito su tutte le 7 province
+[OK] 129 slug unici
+[OK] 129 officialUrl validi sintatticamente
+[OK] nessun campo pratico obbligatorio vuoto
+[OK] query Wikimedia Commons uniche
+[OK] query Google Maps uniche
+
+MULTILINGUA
+[OK] IT / EN / DE / FR / ES / ZH
+[OK] 12 pagine indice
+[OK] 774 pagine dettaglio generate
+[OK] 786 nuove URL culturali complessive
+[OK] 786 URL uniche
+[OK] 0 sovrapposizioni con le 294 route statiche preesistenti
+[OK] 4.716 test di cambio lingua sulle schede: 0 errori
+[OK] audit dei campi pratici esteri: nessun residuo italiano rilevato
+[OK] prezzi/condizioni particolari tradotti, non ridotti a stringhe italiane
+[OK] nomi geografici localizzati nella UI quando opportuno (Venice/Venedig/Venise/Venecia ecc.)
+
+UX / MOBILE
+[OK] mobile Venezia a fisarmonica per categoria
+[OK] mobile Veneto a fisarmonica per provincia
+[OK] filtro family-friendly trasversale
+[OK] desktop con ricerca e filtri
+[OK] badge categoria sopra foto con z-index, fondo bianco, bordo bianco e ombra
+[OK] Info pratiche subito sotto foto su mobile
+[OK] Info pratiche sticky su desktop
+
+WIKIMEDIA COMMONS
+[OK] route server-side per ricerca foto Commons
+[OK] filtri per jpeg/png/webp e dimensione minima
+[OK] ranking orientato a fotografie orizzontali
+[OK] penalizzazione mappe/loghi/stemmi/planimetrie/disegni
+[OK] autore + licenza + link alla pagina Commons visibili
+[OK] fallback pulito se non viene trovata una foto adatta
+[OK] controlli campione eseguiti su Palazzo Ducale, Cappella degli Scrovegni e Teatro Olimpico
+
+SEO
+[OK] metadata localizzati
+[OK] canonical
+[OK] hreflang 6 lingue + x-default
+[OK] FAQPage JSON-LD
+[OK] BreadcrumbList JSON-LD
+[OK] TouristAttraction JSON-LD
+[OK] sitemap automatica delle nuove directory
+[OK] nessuna route /guest aggiunta alla sitemap
+
+COLLEGAMENTI
+[OK] card nelle Guide IT e EN
+[OK] card nelle Guide DE/FR/ES/ZH tramite LocalizedGuideIndex
+[OK] collegamenti nel footer in tutte le lingue
+[OK] collegamenti ai due indici culturali nei Welcome Book Rossi e Castelli
+[OK] /guest disallow in robots
+[OK] /guest noindex/follow false nel layout
+
+CODICE
+[OK] 720 file .ts/.tsx (esclusi .d.ts) passati dal parser TypeScript: 0 errori di sintassi/transpile
+[OK] moduli dati/traduzioni/i18n compilati con TypeScript strict
+[OK] 129 record controllati: 0 problemi dati
+[OK] 24 file route Next.js presenti per gli alberi culturali
+
+DATI 2026 RICONTROLLATI
+[OK] Scala Contarini del Bovolo: €9 intero / €7 ridotto
+[OK] Cappella degli Scrovegni: €15 + €1 prevendita; prenotazione necessaria
+[OK] Ca' d'Oro: chiusura dal 02/02/2026 e riapertura prevista primavera 2027
+[OK] principali tariffe MUVE e Peggy Guggenheim mantenute secondo le fonti verificate
+[OK] nuovo sistema 2026 delle chiese veneziane gestito distinguendo chiesa gratuita e spazi interni separati
+
+BUILD NEXT.JS
+[NOTA] Il pacchetto originale contiene una cartella chiamata node_modules, ma non contiene le vere dipendenze npm: è una copia di file del progetto.
+[NOTA] È stato tentato npm ci in un ambiente pulito; il registry npm non è raggiungibile da questo container e l'installazione è andata in timeout.
+[OK] package.json e package-lock.json sono presenti.
+[OK] il pacchetto finale esclude node_modules e cache di build; Vercel installerà le dipendenze da package-lock.json.
+
+ULTIMO CONTROLLO DA FARE DOPO IL DEPLOY
+Aprire il deployment Vercel su desktop e smartphone per il controllo visuale finale di immagini remote, responsive e badge. È l'unico test che richiede il sito realmente online.
