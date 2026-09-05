@@ -632,6 +632,14 @@ export default function DoveMangiarePage() {
             <h1 className="mt-4 max-w-4xl font-serif text-4xl font-semibold leading-tight md:text-6xl">Dove mangiare</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-[#58636d] md:text-xl">Non una classifica, ma una piccola guida ai posti che conosciamo e che consigliamo davvero: vicino agli appartamenti e durante le vostre giornate a Venezia.</p>
 
+            <div className="mt-8 rounded-[24px] border border-[#d8c29a] bg-white px-5 py-4 shadow-[0_8px_24px_rgba(22,42,62,0.05)] md:flex md:items-start md:gap-4 md:px-6 md:py-5">
+              <div className="mb-2 text-2xl md:mb-0">📞</div>
+              <div>
+                <p className="font-semibold text-[#17324a]">Un consiglio prima di andare</p>
+                <p className="mt-1 text-sm leading-6 text-[#5f6971] md:text-[15px]">Se vuoi fermarti a mangiare, chiama sempre il locale prima di partire per prenotare il tavolo e verificare apertura e disponibilità. Giorni di chiusura, orari e posti liberi possono cambiare.</p>
+              </div>
+            </div>
+
             <div className="mt-10 grid gap-4 md:grid-cols-2">
               <a href="#marghera" className="rounded-[30px] bg-[#17324a] p-7 text-white transition hover:-translate-y-1">
                 <span className="text-3xl">🏠</span>
@@ -717,7 +725,7 @@ export default function DoveMangiarePage() {
 
         <section className="border-t border-[#e6ded2] bg-white">
           <div className="mx-auto max-w-7xl px-5 py-10 md:px-8">
-            <p className="max-w-4xl text-sm leading-6 text-[#727b82]">I locali presenti in questa guida sono suggerimenti personali e non inserzioni a pagamento. Orari, giorni di chiusura, menu e contatti possono cambiare: prima di partire consigliamo sempre di controllare il sito del locale o Google Maps.</p>
+            <p className="max-w-4xl text-sm leading-6 text-[#727b82]">I locali presenti in questa guida sono suggerimenti personali e non inserzioni a pagamento. Orari, giorni di chiusura, menu e contatti possono cambiare. Per ristoranti, osterie e pizzerie consigliamo sempre di telefonare prima di andare, sia per verificare l'apertura sia per prenotare il tavolo.</p>
           </div>
         </section>
       </main>
