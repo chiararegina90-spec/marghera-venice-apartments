@@ -318,9 +318,9 @@ function cultureSitemap():MetadataRoute.Sitemap{
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const existing=routes.map((route) => ({
+  const existing: MetadataRoute.Sitemap = routes.map((route) => ({
     url: `${baseUrl}${route === '/' ? '' : route}`,
-    changeFrequency: route === '/' ? 'weekly' : route.startsWith('/journal/') ? 'monthly' : 'monthly',
+    changeFrequency: route === '/' ? ('weekly' as const) : ('monthly' as const),
     priority: route === '/' ? 1 : (route.startsWith('/case/') || route.includes('/apartments/')) ? 0.9 : (route === '/come-raggiungere-venezia' || route.endsWith('/getting-to-venice')) ? 0.8 : 0.7,
     alternates: { languages: Object.fromEntries(siteLangs.map((lang) => [hreflang[lang], `${baseUrl}${localePath(route, lang) === '/' ? '' : localePath(route, lang)}`])) },
   }));
