@@ -42,12 +42,13 @@ const margheraCategories: Category[] = [
         name: "Osteria Al Diplomatico",
         type: "Osteria · cicchetti · cucina veneziana",
         area: "Marghera",
-        address: "Via Domenico Giuriati, 11",
+        address: "Via della Sortita, 17",
         description: "Cicchetti, piatti di pesce e cucina veneziana in un ambiente informale e molto locale.",
         try: "Cicchetti e piatti di pesce",
         phone: "+39 338 870 6955",
         website: "https://www.osterialdiplomatico.com/",
         mapsQuery: "Osteria Al Diplomatico Marghera",
+        dietary: ["vegetarian"],
       },
       {
         name: "Osteria 0.75",
@@ -70,7 +71,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 921563",
         website: "https://www.ilgiardinettomarghera.it/",
         mapsQuery: "Il Giardinetto Marghera",
-        dietary: ["vegetarian", "glutenFree"],
+        dietary: ["vegetarian", "vegan", "glutenFree"],
         dietaryNote: "Per celiachia: la cucina può preparare piatti senza glutine, ma la pizza non è indicata come sicura per celiaci perché non può essere garantita l’assenza di contaminazione. Chiamare sempre prima.",
       },
       {
@@ -122,6 +123,7 @@ const margheraCategories: Category[] = [
         try: "Pizza",
         phone: "+39 041 922570",
         mapsQuery: "Pizzeria Al Calesse Marghera",
+        dietary: ["vegetarian", "vegan"],
       },
       {
         name: "84010 Pizzosteria",
@@ -133,6 +135,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 921966",
         website: "https://www.pizzosteria.it/",
         mapsQuery: "84010 Pizzosteria Marghera",
+        dietary: ["vegetarian"],
       },
       {
         name: "Marciano Pub",
@@ -144,6 +147,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 309 1441",
         website: "https://marciano-pub-marghera.com/",
         mapsQuery: "Marciano Pub Marghera",
+        dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
         name: "Pizzalonga Away",
@@ -155,6 +159,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 241 3578",
         website: "https://www.pizzalongaway.it/",
         mapsQuery: "Pizzalonga Away Marghera",
+        dietary: ["vegetarian"],
       },
     ],
   },
@@ -212,6 +217,7 @@ const margheraCategories: Category[] = [
         try: "Gelato artigianale",
         phone: "+39 041 937030",
         mapsQuery: "Gelateria Eta Beta Marghera",
+        dietary: ["vegetarian", "glutenFree"],
       },
     ],
   },
@@ -233,7 +239,7 @@ const veniceCategories: Category[] = [
         try: "Cena in terrazza con vista laguna",
         website: "https://www.algiubagio.net/",
         mapsQuery: "Algiubagio Venezia Fondamente Nove",
-        dietary: ["vegetarian"],
+        dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
         name: "Osteria Al Timon",
@@ -244,6 +250,7 @@ const veniceCategories: Category[] = [
         try: "Carne, pesce, cicchetti e vino",
         website: "https://www.altimon.it/",
         mapsQuery: "Osteria Al Timon Venezia",
+        dietary: ["vegetarian", "glutenFree"],
       },
       {
         name: "Hard Rock Cafe Venice",
@@ -265,6 +272,7 @@ const veniceCategories: Category[] = [
         description: "Storica trattoria veneziana vicino a Rialto, indicata per piatti tradizionali e cucina di pesce.",
         try: "Pesce e cucina veneziana",
         mapsQuery: "Trattoria alla Madonna Venezia",
+        dietary: ["vegetarian"],
       },
       {
         name: "Paradiso Perduto",
@@ -274,6 +282,7 @@ const veniceCategories: Category[] = [
         description: "Locale storico e vivace dove cibo, convivialità e musica fanno parte della stessa esperienza.",
         try: "Piatti veneziani e atmosfera",
         mapsQuery: "Paradiso Perduto Venezia",
+        dietary: ["vegetarian"],
       },
       {
         name: "Ristorante Lineadombra",
@@ -283,6 +292,7 @@ const veniceCategories: Category[] = [
         description: "Una proposta più raffinata con una splendida terrazza sull'acqua, ideale per una cena speciale.",
         try: "Cena di pesce con vista",
         mapsQuery: "Ristorante Lineadombra Venezia",
+        dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
         name: "Ostaria Al Vecio Pozzo",
@@ -292,7 +302,7 @@ const veniceCategories: Category[] = [
         description: "Una buona soluzione per una cena veneziana in una zona meno frenetica rispetto a San Marco.",
         try: "Cucina veneziana e italiana",
         mapsQuery: "Ostaria Al Vecio Pozzo Venezia",
-        dietary: ["vegetarian", "glutenFree"],
+        dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
         name: "Al Profeta",
@@ -303,6 +313,7 @@ const veniceCategories: Category[] = [
         try: "Pizza e cena in giardino",
         website: "https://alprofeta.it/",
         mapsQuery: "Al Profeta Venezia",
+        dietary: ["vegetarian", "vegan", "glutenFree"],
       },
     ],
   },
@@ -348,6 +359,7 @@ const veniceCategories: Category[] = [
         try: "Cicchetti, baccalà e ombra",
         website: "https://www.cantinadospade.com/",
         mapsQuery: "Cantina Do Spade Venezia",
+        dietary: ["vegetarian", "glutenFree"],
       },
       {
         name: "Al Mercà",
@@ -424,6 +436,7 @@ const veniceCategories: Category[] = [
         try: "Paste, brioche e caffè",
         phone: "+39 041 2410173",
         mapsQuery: "Pasticceria Ponte delle Paste Venezia",
+        dietary: ["glutenFree"],
       },
       {
         name: "Pasticceria Tonolo",
@@ -461,6 +474,7 @@ const veniceCategories: Category[] = [
         description: "Una delle gelaterie più iconiche di Venezia, con terrazza sul Canale della Giudecca.",
         try: "Il famoso Gianduiotto",
         mapsQuery: "Gelateria Nico Zattere Venezia",
+        dietary: ["glutenFree"],
       },
       {
         name: "Suso Gelatoteca",
@@ -508,6 +522,7 @@ const veniceCategories: Category[] = [
         try: "Aperol Spritz",
         website: "https://terrazza.aperol.com/",
         mapsQuery: "Terrazza Aperol Venezia Campo Santo Stefano",
+        dietary: ["vegetarian", "glutenFree"],
       },
       {
         name: "Il Mercante",
@@ -696,7 +711,7 @@ export default function DoveMangiarePage() {
                 <span>🌱 Opzioni vegane</span>
                 <span>🚫🌾 Opzioni senza glutine</span>
               </div>
-              <p className="mt-3 max-w-4xl text-xs leading-5 text-[#746b62] md:text-sm md:leading-6">Le icone sono una guida indicativa. Contatta sempre il locale prima di andare per confermare quali alternative sono disponibili. In caso di celiachia, allergie o intolleranze, chiedi espressamente se possono garantire preparazioni e cotture senza contaminazione: un locale può, per esempio, offrire piatti senza glutine dalla cucina ma non una pizza adatta ai celiaci.</p>
+              <p className="mt-3 max-w-4xl text-xs leading-5 text-[#746b62] md:text-sm md:leading-6">Le icone sono una guida indicativa e segnalano che risultano disponibili alcune alternative. Contatta sempre il locale prima di andare per confermare quali varianti possono preparare. In caso di celiachia, allergie o intolleranze, chiedi espressamente se possono garantire preparazioni, utensili e cotture senza contaminazione. L’icona 🚫🌾 non significa che tutto il locale sia adatto ai celiaci: per esempio, un ristorante può offrire piatti senza glutine dalla cucina ma non una pizza sicura per celiachia.</p>
             </div>
 
             <div className="mt-10 grid gap-4 md:grid-cols-2">
