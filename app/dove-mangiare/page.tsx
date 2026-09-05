@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Dove mangiare a Marghera e Venezia | Marghera Venice Apartments",
@@ -18,6 +19,8 @@ type Venue = {
   phone?: string;
   website?: string;
   mapsQuery: string;
+  dietary?: ("vegetarian" | "vegan" | "glutenFree")[];
+  dietaryNote?: string;
 };
 
 type Category = {
@@ -67,6 +70,8 @@ const margheraCategories: Category[] = [
         phone: "+39 041 921563",
         website: "https://www.ilgiardinettomarghera.it/",
         mapsQuery: "Il Giardinetto Marghera",
+        dietary: ["vegetarian", "glutenFree"],
+        dietaryNote: "Per celiachia: la cucina può preparare piatti senza glutine, ma la pizza non è indicata come sicura per celiaci perché non può essere garantita l’assenza di contaminazione. Chiamare sempre prima.",
       },
       {
         name: "Osteria Trattoria La Campana",
@@ -88,6 +93,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 925793",
         website: "https://ristorantedagigimarghera.it/",
         mapsQuery: "Da Gigi Cucina e Pizzeria Marghera",
+        dietary: ["vegetarian", "vegan"],
       },
       {
         name: "Cicchetteria Venexiana",
@@ -227,6 +233,7 @@ const veniceCategories: Category[] = [
         try: "Cena in terrazza con vista laguna",
         website: "https://www.algiubagio.net/",
         mapsQuery: "Algiubagio Venezia Fondamente Nove",
+        dietary: ["vegetarian"],
       },
       {
         name: "Osteria Al Timon",
@@ -247,6 +254,8 @@ const veniceCategories: Category[] = [
         try: "Burger e atmosfera Hard Rock",
         website: "https://cafe.hardrock.com/venice/it/",
         mapsQuery: "Hard Rock Cafe Venice",
+        dietary: ["vegetarian", "vegan", "glutenFree"],
+        dietaryNote: "Sono disponibili opzioni dedicate, ma la cucina utilizza anche aree condivise: in caso di celiachia o allergie avvisare sempre il personale prima dell’ordine.",
       },
       {
         name: "Trattoria alla Madonna",
@@ -283,6 +292,7 @@ const veniceCategories: Category[] = [
         description: "Una buona soluzione per una cena veneziana in una zona meno frenetica rispetto a San Marco.",
         try: "Cucina veneziana e italiana",
         mapsQuery: "Ostaria Al Vecio Pozzo Venezia",
+        dietary: ["vegetarian", "glutenFree"],
       },
       {
         name: "Al Profeta",
@@ -383,6 +393,8 @@ const veniceCategories: Category[] = [
         try: "Pizzette con l'acciuga",
         website: "https://www.aciugheta.com/",
         mapsQuery: "Aciugheta Venezia",
+        dietary: ["vegetarian", "glutenFree"],
+        dietaryNote: "È disponibile anche l’impasto senza glutine; per celiachia o allergie chiedere sempre al locale come viene gestita la contaminazione.",
       },
     ],
   },
@@ -459,6 +471,7 @@ const veniceCategories: Category[] = [
         try: "Gusti stagionali e specialità della casa",
         website: "https://suso.gelatoteca.it/",
         mapsQuery: "Suso Gelatoteca Venezia",
+        dietary: ["vegan", "glutenFree"],
       },
       {
         name: "Gelateria Il Pinguino",
@@ -551,6 +564,17 @@ function VenueCard({ venue }: { venue: Venue }) {
           </div>
         )}
 
+        {venue.dietary && venue.dietary.length > 0 && (
+          <div className="mt-4">
+            <div className="flex flex-wrap items-center gap-2" aria-label="Opzioni alimentari segnalate">
+              {venue.dietary.includes("vegetarian") && <span title="Opzioni vegetariane" aria-label="Opzioni vegetariane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🥕</span>}
+              {venue.dietary.includes("vegan") && <span title="Opzioni vegane" aria-label="Opzioni vegane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🌱</span>}
+              {venue.dietary.includes("glutenFree") && <span title="Opzioni senza glutine" aria-label="Opzioni senza glutine" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🚫🌾</span>}
+            </div>
+            {venue.dietaryNote && <p className="mt-2 text-xs leading-5 text-[#7a6e62]">{venue.dietaryNote}</p>}
+          </div>
+        )}
+
         <div className="mt-5 space-y-2 border-t border-[#eee7dc] pt-4 text-sm text-[#4f5c66]">
           <p className="flex gap-2"><span>📍</span><span>{venue.address}</span></p>
           {venue.phone && (
@@ -622,6 +646,31 @@ export default function DoveMangiarePage() {
   return (
     <>
       <Header />
+      <Script id="food-guide-clean-hash" strategy="afterInteractive">{`
+        (() => {
+          const cleanUrl = () => {
+            if (window.location.hash) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search);
+            }
+          };
+
+          document.querySelectorAll('[data-food-scroll]').forEach((link) => {
+            link.addEventListener('click', (event) => {
+              const href = link.getAttribute('href');
+              if (!href || !href.startsWith('#')) return;
+              const target = document.querySelector(href);
+              if (!target) return;
+              event.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.history.replaceState(null, '', window.location.pathname + window.location.search);
+            });
+          });
+
+          if (window.location.hash) {
+            window.setTimeout(cleanUrl, 250);
+          }
+        })();
+      `}</Script>
       <style>{`
         details.food-category > summary::-webkit-details-marker { display: none; }
       `}</style>
@@ -640,8 +689,18 @@ export default function DoveMangiarePage() {
               </div>
             </div>
 
+            <div className="mt-5 rounded-[24px] border border-[#e2dbcf] bg-[#fbfaf7] px-5 py-4 md:px-6 md:py-5">
+              <p className="font-semibold text-[#17324a]">Esigenze alimentari</p>
+              <div className="mt-2 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#425666]">
+                <span>🥕 Opzioni vegetariane</span>
+                <span>🌱 Opzioni vegane</span>
+                <span>🚫🌾 Opzioni senza glutine</span>
+              </div>
+              <p className="mt-3 max-w-4xl text-xs leading-5 text-[#746b62] md:text-sm md:leading-6">Le icone sono una guida indicativa. Contatta sempre il locale prima di andare per confermare quali alternative sono disponibili. In caso di celiachia, allergie o intolleranze, chiedi espressamente se possono garantire preparazioni e cotture senza contaminazione: un locale può, per esempio, offrire piatti senza glutine dalla cucina ma non una pizza adatta ai celiaci.</p>
+            </div>
+
             <div className="mt-10 grid gap-4 md:grid-cols-2">
-              <a href="#marghera" className="rounded-[30px] bg-[#17324a] p-7 text-white transition hover:-translate-y-1">
+              <a href="#marghera" data-food-scroll className="rounded-[30px] bg-[#17324a] p-7 text-white transition hover:-translate-y-1">
                 <span className="text-3xl">🏠</span>
                 <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#ddc186]">Vicino agli appartamenti</p>
                 <h2 className="mt-2 font-serif text-3xl font-semibold">Mangiare a Marghera</h2>
@@ -649,7 +708,7 @@ export default function DoveMangiarePage() {
                 <span className="mt-5 inline-block font-semibold text-[#ead29f]">Vai a Marghera ↓</span>
               </a>
 
-              <a href="#venezia" className="rounded-[30px] border border-[#d8c29a] bg-white p-7 transition hover:-translate-y-1">
+              <a href="#venezia" data-food-scroll className="rounded-[30px] border border-[#d8c29a] bg-white p-7 transition hover:-translate-y-1">
                 <span className="text-3xl">🦁</span>
                 <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-[#a47b34]">Durante la giornata in città</p>
                 <h2 className="mt-2 font-serif text-3xl font-semibold">Mangiare a Venezia</h2>
@@ -672,7 +731,7 @@ export default function DoveMangiarePage() {
           <div className="mx-auto max-w-7xl px-5 py-6 md:px-8">
             <nav className="hidden flex-wrap gap-2 py-4 md:flex" aria-label="Categorie Marghera">
               {margheraCategories.map((category) => (
-                <a key={category.id} href={`#${category.id}`} className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
+                <a key={category.id} href={`#${category.id}`} data-food-scroll className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
               ))}
             </nav>
             {margheraCategories.map((category) => <CategoryBlock key={category.id} category={category} />)}
@@ -706,7 +765,7 @@ export default function DoveMangiarePage() {
           <div className="mx-auto max-w-7xl px-5 py-6 md:px-8">
             <nav className="hidden flex-wrap gap-2 py-4 md:flex" aria-label="Categorie Venezia">
               {veniceCategories.map((category) => (
-                <a key={category.id} href={`#${category.id}`} className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
+                <a key={category.id} href={`#${category.id}`} data-food-scroll className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
               ))}
             </nav>
             {veniceCategories.map((category) => <CategoryBlock key={category.id} category={category} />)}
@@ -725,7 +784,7 @@ export default function DoveMangiarePage() {
 
         <section className="border-t border-[#e6ded2] bg-white">
           <div className="mx-auto max-w-7xl px-5 py-10 md:px-8">
-            <p className="max-w-4xl text-sm leading-6 text-[#727b82]">I locali presenti in questa guida sono suggerimenti personali e non inserzioni a pagamento. Orari, giorni di chiusura, menu e contatti possono cambiare. Per ristoranti, osterie e pizzerie consigliamo sempre di telefonare prima di andare, sia per verificare l'apertura sia per prenotare il tavolo.</p>
+            <p className="max-w-4xl text-sm leading-6 text-[#727b82]">I locali presenti in questa guida sono suggerimenti personali e non inserzioni a pagamento. Orari, giorni di chiusura, menu e contatti possono cambiare. Consigliamo sempre di telefonare prima di andare, sia per verificare l'apertura e prenotare il tavolo sia per confermare eventuali esigenze alimentari. In caso di celiachia, allergie o intolleranze, chiedere sempre direttamente al locale informazioni sulla preparazione e sul rischio di contaminazione.</p>
           </div>
         </section>
       </main>
