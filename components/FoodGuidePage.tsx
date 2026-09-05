@@ -649,7 +649,7 @@ function mapsUrl(query: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
-type LocalizedUi = typeof foodGuideUi.en;
+type LocalizedUi = { readonly [K in keyof typeof foodGuideUi.en]: string };
 
 function localizedVenue(venue: Venue, lang: FoodLang): Venue {
   if (lang === "it") return venue;
