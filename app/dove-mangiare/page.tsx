@@ -45,13 +45,13 @@ const venueImages: Record<string, VenueImage> = {
   "Osteria Trattoria La Campana": { src: "/images/dove-mangiare/04.webp", alt: "Interno dell'Osteria Trattoria La Campana a Marghera", position: "center 45%" },
   "Da Gigi Cucina e Pizzeria": { src: "/images/dove-mangiare/05.webp", alt: "Ingresso della pizzeria e ristorante Da Gigi a Marghera" },
   "Cicchetteria Venexiana": { src: "/images/dove-mangiare/06.webp", alt: "Interno della Cicchetteria Venexiana a Marghera" },
-  "Al Calesse": { src: "/images/dove-mangiare/07.webp", alt: "Ingresso della pizzeria Al Calesse a Marghera" },
+  "Al Calesse": { src: "/images/dove-mangiare/07.webp", alt: "Pizzeria Al Calesse a Marghera", position: "center 18%" },
   "84010 Pizzosteria": { src: "/images/dove-mangiare/08.webp", alt: "84010 Pizzosteria a Marghera" },
   "Marciano Pub": { src: "/images/dove-mangiare/09.webp", alt: "Facciata del Marciano Pub a Marghera" },
   "Pizzalonga Away": { src: "/images/dove-mangiare/10.webp", alt: "Pizzalonga Away, pizza da asporto a Marghera" },
   "Pasticceria Vanin": { src: "/images/dove-mangiare/11.webp", alt: "Banco della Pasticceria Vanin a Marghera" },
   "Pasticceria Danieli": { src: "/images/dove-mangiare/12.webp", alt: "Pasticceria Danieli a Marghera", position: "center 55%" },
-  "Le Delizie di Dea": { src: "/images/dove-mangiare/13.webp", alt: "Dolci della pasticceria Le Delizie di Dea a Marghera", position: "center 52%" },
+  "Le Delizie di Dea": { src: "/images/dove-mangiare/13.webp", alt: "Logo di Le Delizie di Dea a Marghera", position: "center 50%" },
   "Gelateria Eta Beta": { src: "/images/dove-mangiare/14.webp", alt: "Gelato artigianale della Gelateria Eta Beta a Marghera" },
   "Ristorante Algiubagiò": { src: "/images/dove-mangiare/15.webp", alt: "Terrazza del Ristorante Algiubagiò alle Fondamente Nove a Venezia" },
   "Osteria Al Timon": { src: "/images/dove-mangiare/16.webp", alt: "Osteria Al Timon a Cannaregio, Venezia" },
@@ -60,14 +60,14 @@ const venueImages: Record<string, VenueImage> = {
   "Paradiso Perduto": { src: "/images/dove-mangiare/19.webp", alt: "Paradiso Perduto a Cannaregio, Venezia" },
   "Ristorante Lineadombra": { src: "/images/dove-mangiare/20.webp", alt: "Terrazza del Ristorante Lineadombra alle Zattere a Venezia" },
   "Ostaria Al Vecio Pozzo": { src: "/images/dove-mangiare/21.webp", alt: "Ostaria Al Vecio Pozzo a Venezia" },
-  "Al Profeta": { src: "/images/dove-mangiare/22.webp", alt: "Terrazza del Ristorante Al Profeta a Venezia", position: "center 56%" },
+  "Al Profeta": { src: "/images/dove-mangiare/22.webp", alt: "Terrazza del Ristorante Al Profeta a Venezia", position: "center 66%" },
   "All'Arco": { src: "/images/dove-mangiare/23.webp", alt: "Bacaro All'Arco vicino a Rialto a Venezia, con l'arco ben visibile", position: "center 44%" },
   "Al Volto": { src: "/images/dove-mangiare/24.webp", alt: "Banco con cicchetti dell'Osteria Al Volto a Venezia" },
   "Ca' d'Oro Alla Vedova": { src: "/images/dove-mangiare/25.webp", alt: "Polpetta della Ca' d'Oro Alla Vedova a Venezia" },
   "Cantina Do Spade": { src: "/images/dove-mangiare/26.webp", alt: "Cantina Do Spade vicino al Mercato di Rialto a Venezia" },
   "Al Mercà": { src: "/images/dove-mangiare/27.webp", alt: "Bacaro Al Mercà al Mercato di Rialto a Venezia", position: "center 44%" },
   "Bar Tiziano": { src: "/images/dove-mangiare/28.webp", alt: "Tramezzini del Bar Tiziano a Venezia" },
-  "Rosticceria Rialto · ex Gislon": { src: "/images/dove-mangiare/29.webp", alt: "Fritti e banco della Rosticceria Rialto ex Gislon a Venezia", position: "center 52%" },
+  "Rosticceria Rialto · ex Gislon": { src: "/images/dove-mangiare/29.webp", alt: "Mozzarelle in carrozza e vino alla Rosticceria Rialto ex Gislon a Venezia", position: "41% 67%" },
   "Aciugheta": { src: "/images/dove-mangiare/30.webp", alt: "Ingresso di Aciugheta a Venezia", position: "center 46%" },
   "Rosa Salva · San Salvador": { src: "/images/dove-mangiare/31.webp", alt: "Banco della Pasticceria Rosa Salva San Salvador a Venezia" },
   "Pasticceria Ponte delle Paste": { src: "/images/dove-mangiare/32.webp", alt: "Pasticceria Ponte delle Paste a Venezia" },
@@ -77,7 +77,7 @@ const venueImages: Record<string, VenueImage> = {
   "Suso Gelatoteca": { src: "/images/dove-mangiare/36.webp", alt: "Gelato di Suso Gelatoteca a Venezia", position: "center 47%" },
   "Gelateria Il Pinguino": { src: "/images/dove-mangiare/37.webp", alt: "Gelato della Gelateria Il Pinguino a Venezia" },
   "La Mela Verde": { src: "/images/dove-mangiare/38.webp", alt: "Gelato della Gelateria La Mela Verde a Venezia", position: "center 48%" },
-  "Terrazza Aperol": { src: "/images/dove-mangiare/39.webp", alt: "Terrazza Aperol a Venezia" },
+  "Terrazza Aperol": { src: "/images/dove-mangiare/39.webp", alt: "Terrazza Aperol a Venezia, con insegna e ingresso del locale", position: "center 58%" },
   "Il Mercante": { src: "/images/dove-mangiare/40.webp", alt: "Cocktail e menu de Il Mercante a Venezia", position: "center 68%" },
   "Il Santo Bevitore": { src: "/images/dove-mangiare/41.webp", alt: "Banco delle birre de Il Santo Bevitore a Venezia" },
   "Ombra del Leone": { src: "/images/dove-mangiare/42.webp", alt: "Terrazza dell'Ombra del Leone con vista a Venezia" },
@@ -628,7 +628,7 @@ function VenueCard({ venue }: { venue: Venue }) {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f273a]/70 via-transparent to-transparent" aria-hidden="true" />
-        <span className="relative z-10 rounded-full border border-white/50 bg-white/92 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#17324a] shadow-sm backdrop-blur-sm">📍 {venue.area}</span>
+        <span className="relative z-10 rounded-full border border-white/80 bg-[linear-gradient(90deg,rgba(255,255,255,0.98),rgba(255,255,255,0.93),rgba(255,255,255,0.82))] px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#17324a] shadow-[0_10px_24px_rgba(15,39,58,0.16)] backdrop-blur-md">📍 {venue.area}</span>
       </div>
 
       <div className="p-6">
