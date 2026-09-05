@@ -1,3 +1,13 @@
-import type {Metadata} from 'next'; import PublicLocalGuide from '@/components/PublicLocalGuide'; import {languageAlternates} from '@/lib/i18n';
-export const metadata:Metadata={title:'Dónde comer en Marghera y Venecia | Marghera Venice Apartments',description:'Restaurantes, pastelerías, cicchetti, aperitivos, pizza y comida para llevar en Marghera y Venecia.',alternates:languageAlternates('/es/where-to-eat')};
-export default function Page(){return <PublicLocalGuide lang="es" kind="food"/>}
+import type { Metadata } from "next";
+import FoodGuidePage from "@/components/FoodGuidePage";
+import { languageAlternates } from "@/lib/i18n";
+
+export const metadata: Metadata = {
+  title: 'Dónde comer en Marghera y Venecia | Marghera Venice Apartments',
+  description: 'Nuestra guía personal de restaurantes, osterie, bacari, pizza, pastelerías, heladerías y delivery en Marghera y Venecia.',
+  alternates: languageAlternates('/es/where-to-eat'),
+};
+
+export default function Page() {
+  return <FoodGuidePage lang='es' />;
+}

@@ -1,0 +1,32 @@
+VALIDATION REPORT — MARGHERA VENICE APARTMENTS
+Data: 05/09/2026
+
+CONTROLLI STRUTTURALI ESEGUITI
+[OK] 42 locali presenti nella guida
+[OK] 42 fasce di spesa presenti
+[OK] 42 immagini WebP presenti in /public/images/dove-mangiare/
+[OK] 42 traduzioni venue per ciascuna lingua EN / DE / FR / ES / ZH
+[OK] 10 categorie tradotte per ciascuna lingua
+[OK] 6 route pubbliche della guida presenti
+[OK] metadata localized + languageAlternates/hreflang sulle 6 route
+[OK] sitemap contiene IT / EN / DE / FR / ES / ZH per Dove mangiare
+[OK] lib/i18n.ts mappa /dove-mangiare <-> /<lang>/where-to-eat
+[OK] robots esclude /guest e /guest-content
+[OK] 12 Welcome Book controllati (Rossi + Dimora Castelli, 6 lingue ciascuno)
+[OK] link Dove mangiare del Welcome Book corretto per la lingua selezionata
+[OK] 96 link interni assoluti presenti nei Welcome Book: target locali trovati, 0 mancanti
+[OK] scansione caratteri invisibili che possono sporcare gli URL (U+2060 / U+200B): nessun problema
+[OK] 672 file TS/TSX analizzati dal parser TypeScript: 0 errori di sintassi
+[OK] nessun placeholder "foto in arrivo" nella guida finale
+[OK] script clean-hash mantenuto
+[OK] accordion mobile e griglia desktop mantenuti
+
+LINK ESTERNI
+Sono stati mantenuti gli URL ufficiali selezionati per i locali, Google Maps, Deliveroo e Just Eat.
+Durante la verifica web diversi siti ufficiali hanno risposto regolarmente (tra cui Osteria 0.75, Pizzalonga, Vanin, Algiubagio, Al Timon, Hard Rock Cafe, Aciugheta, Rosa Salva, Suso, Terrazza Aperol, Deliveroo e Just Eat). Alcuni domini possono rifiutare/ritardare i crawler automatici pur essendo raggiungibili da browser.
+
+BUILD
+Il pacchetto sorgente non include node_modules. In questo ambiente non è quindi stato eseguito un build Next.js completo con dipendenze installate. package.json e package-lock.json sono presenti e invariati; Vercel installerà le dipendenze durante il deployment.
+
+ULTIMO PASSAGGIO DOPO IL PUSH
+Controllare il deployment Vercel e aprire live le 6 URL Dove mangiare. Questo è l'unico controllo che può essere confermato definitivamente dopo la pubblicazione del nuovo codice.
