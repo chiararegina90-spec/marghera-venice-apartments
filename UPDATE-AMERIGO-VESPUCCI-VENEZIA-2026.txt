@@ -1,0 +1,60 @@
+MARGHERA VENICE APARTMENTS
+UPDATE — AMERIGO VESPUCCI A VENEZIA 2026
+Data: 05/09/2026
+
+IMPLEMENTAZIONE
+- Nuovo articolo Journal: /journal/amerigo-vespucci-venezia-2026
+- Versioni complete: IT, EN, DE, FR, ES, ZH
+- Articolo inserito come prima card del Journal in tutte le lingue
+- Categoria: Eventi / Events / equivalente localizzato
+- 4 immagini fornite dall'utente integrate e ottimizzate in WebP
+- Metadata SEO localizzati
+- Canonical e hreflang per tutte le 6 lingue + x-default
+- Open Graph e Twitter Card
+- JSON-LD: Article + Event
+- Nuove rotte aggiunte alla sitemap
+- Link interni a Regata Storica 2026 e Venice Glass Week 2026 verificati
+
+INFORMAZIONI EVENTO VERIFICATE AL 05/09/2026
+- Tappa Venezia: 2–8 ottobre 2026
+- Ormeggio annunciato: Riva di San Biasio, davanti al Museo Storico Navale
+- Partenza: 8 ottobre verso Trieste
+- Visite a bordo previste; slot/orari/prenotazioni non ancora pubblicati
+- Campagna Nord America 2026: partenza da Genova il 9 maggio, 13 soste, oltre 12.000 miglia nautiche
+- Nave varata il 22 febbraio 1931; 95 anni nel 2026
+- 89 campagne addestrative e oltre 800.000 miglia nautiche all'attivo
+
+FONTI PRINCIPALI
+- https://tourvespucci.it/
+- https://www.marina.difesa.it/
+- https://www.nuovavenezia.it/regione/amerigo-vespucci-venezia-riva-san-biasio-quando-pgpm6372
+- https://www.velaveneta.it/2026/09/02/lamerigo-vespucci-torna-a-venezia-il-2-ottobre-larrivo-della-nave-piu-bella-del-mondo/
+
+CONTROLLI TECNICI
+- 6/6 pagine articolo presenti
+- 4/4 immagini presenti e leggibili
+- 6/6 rotte presenti nella sitemap
+- Card Journal presente in tutte le lingue
+- Percorsi relativi e articoli correlati presenti
+- Link ufficiali Tour Vespucci e Marina Militare presenti
+- Controllo TypeScript mirato del nuovo componente e delle 6 route: OK
+- Controllo sintattico/transpile: OK
+- Crop 16:9 delle 4 immagini verificato visivamente
+
+NOTA BUILD
+Il progetto base aveva già superato la build Vercel prima di questo aggiornamento.
+Per questo aggiornamento è stato eseguito un controllo TypeScript mirato sulle nuove parti. Un full Next.js build locale non è stato eseguito perché l'ambiente di lavoro non dispone della dependency tree completa; la build Vercel rimane il test definitivo dopo il push su GitHub.
+
+NOTA IMMAGINI
+Le immagini dell'articolo sono state fornite dall'utente. Prima della pubblicazione definitiva, il titolare del sito deve assicurarsi di disporre dei diritti o delle autorizzazioni necessarie per il loro utilizzo.
+
+SEO UPDATE — 05/09/2026
+- Intenti di ricerca aggiunti: “come visitare Amerigo Vespucci Venezia”, “prenotare Amerigo Vespucci Venezia”, visite/orari/prenotazioni.
+- SEO title e meta description ottimizzati in IT, EN, DE, FR, ES, ZH.
+- Sezione H2 dedicata a come visitare la nave.
+- Blocco pratico separa visite a bordo, prenotazione e orari.
+- FAQ visibili in tutte le lingue con domande su prenotazione, apertura prenotazioni, ormeggio e orari.
+- JSON-LD FAQPage aggiunto accanto ad Article + Event.
+- Card Journal aggiornata con testo orientato all'intento “come visitare / prenotare”.
+- Formulazione prudente verificata al 05/09/2026: per Venezia non risultano ancora pubblicati orari, slot o una procedura specifica di prenotazione; non viene affermato che la prenotazione sarà obbligatoria finché non comunicato ufficialmente.
+- Controllo sintattico/transpile TypeScript delle 6 route e del componente: OK.
