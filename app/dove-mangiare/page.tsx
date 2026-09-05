@@ -571,18 +571,25 @@ function VenueCard({ venue }: { venue: Venue }) {
 
 function CategoryBlock({ category }: { category: Category }) {
   return (
-    <section id={category.id} className="scroll-mt-28 py-10">
-      <div className="mb-6 flex items-start gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#f2e8d6] text-2xl">{category.emoji}</div>
-        <div>
-          <h2 className="font-serif text-3xl font-semibold text-[#17324a] md:text-4xl">{category.title}</h2>
-          <p className="mt-2 max-w-2xl text-base leading-7 text-[#68727a]">{category.subtitle}</p>
+    <details id={category.id} className="food-category group scroll-mt-28 border-b border-[#e6ded2] md:border-0 md:py-10">
+      <summary className="flex cursor-pointer list-none items-start gap-4 py-5 md:pointer-events-none md:mb-6 md:cursor-default md:py-0">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#f2e8d6] text-xl md:h-12 md:w-12 md:text-2xl">{category.emoji}</div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="font-serif text-[1.65rem] font-semibold leading-tight text-[#17324a] md:text-4xl">{category.title}</h2>
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#ddd5c8] bg-white text-lg text-[#8a682f] transition duration-200 group-open:rotate-180 md:hidden" aria-hidden="true">⌄</span>
+          </div>
+          <p className="mt-1.5 max-w-2xl text-sm leading-6 text-[#68727a] md:mt-2 md:text-base md:leading-7">{category.subtitle}</p>
+          <p className="mt-2 text-xs font-bold uppercase tracking-[0.14em] text-[#a47b34] md:hidden">{category.venues.length} {category.venues.length === 1 ? "locale" : "locali"} · tocca per aprire</p>
+        </div>
+      </summary>
+
+      <div className="food-category-content pb-7 md:pb-0">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
+          {category.venues.map((venue) => <VenueCard key={venue.name} venue={venue} />)}
         </div>
       </div>
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {category.venues.map((venue) => <VenueCard key={venue.name} venue={venue} />)}
-      </div>
-    </section>
+    </details>
   );
 }
 
@@ -590,6 +597,12 @@ export default function DoveMangiarePage() {
   return (
     <>
       <Header />
+      <style>{`
+        details.food-category > summary::-webkit-details-marker { display: none; }
+        @media (min-width: 768px) {
+          details.food-category:not([open]) > .food-category-content { display: block; }
+        }
+      `}</style>
       <main className="bg-[#fbfaf7] text-[#17324a]">
         <section className="border-b border-[#e6ded2] bg-[#f4efe7]">
           <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
@@ -627,7 +640,7 @@ export default function DoveMangiarePage() {
           </div>
 
           <div className="mx-auto max-w-7xl px-5 py-6 md:px-8">
-            <nav className="flex flex-wrap gap-2 py-4" aria-label="Categorie Marghera">
+            <nav className="hidden flex-wrap gap-2 py-4 md:flex" aria-label="Categorie Marghera">
               {margheraCategories.map((category) => (
                 <a key={category.id} href={`#${category.id}`} className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
               ))}
@@ -661,7 +674,7 @@ export default function DoveMangiarePage() {
           </div>
 
           <div className="mx-auto max-w-7xl px-5 py-6 md:px-8">
-            <nav className="flex flex-wrap gap-2 py-4" aria-label="Categorie Venezia">
+            <nav className="hidden flex-wrap gap-2 py-4 md:flex" aria-label="Categorie Venezia">
               {veniceCategories.map((category) => (
                 <a key={category.id} href={`#${category.id}`} className="rounded-full border border-[#d9d0c3] bg-white px-4 py-2 text-sm font-semibold text-[#344b5e] hover:border-[#b28a43] hover:text-[#8a682f]">{category.emoji} {category.title}</a>
               ))}
