@@ -22,6 +22,7 @@ type Venue = {
   mapsQuery: string;
   dietary?: ("vegetarian" | "vegan" | "glutenFree")[];
   dietaryNote?: string;
+  priceLevel: "€" | "€€" | "€€€" | "€€€€";
 };
 
 type Category = {
@@ -52,7 +53,7 @@ const venueImages: Record<string, VenueImage> = {
   "Pasticceria Vanin": { src: "/images/dove-mangiare/11.webp", alt: "Banco della Pasticceria Vanin a Marghera" },
   "Pasticceria Danieli": { src: "/images/dove-mangiare/12.webp", alt: "Pasticceria Danieli a Marghera", position: "center 55%" },
   "Le Delizie di Dea": { src: "/images/dove-mangiare/13.webp", alt: "Logo di Le Delizie di Dea a Marghera", position: "center 50%" },
-  "Gelateria Eta Beta": { src: "/images/dove-mangiare/14.webp", alt: "Gelato artigianale della Gelateria Eta Beta a Marghera" },
+  "Gelateria Eta Beta": { src: "/images/dove-mangiare/14.webp", alt: "Gelato artigianale della Gelateria Eta Beta a Marghera", position: "center 66%" },
   "Ristorante Algiubagiò": { src: "/images/dove-mangiare/15.webp", alt: "Terrazza del Ristorante Algiubagiò alle Fondamente Nove a Venezia" },
   "Osteria Al Timon": { src: "/images/dove-mangiare/16.webp", alt: "Osteria Al Timon a Cannaregio, Venezia" },
   "Hard Rock Cafe Venice": { src: "/images/dove-mangiare/17.webp", alt: "Hard Rock Cafe Venice al Bacino Orseolo", position: "center 40%" },
@@ -60,7 +61,7 @@ const venueImages: Record<string, VenueImage> = {
   "Paradiso Perduto": { src: "/images/dove-mangiare/19.webp", alt: "Paradiso Perduto a Cannaregio, Venezia" },
   "Ristorante Lineadombra": { src: "/images/dove-mangiare/20.webp", alt: "Terrazza del Ristorante Lineadombra alle Zattere a Venezia" },
   "Ostaria Al Vecio Pozzo": { src: "/images/dove-mangiare/21.webp", alt: "Ostaria Al Vecio Pozzo a Venezia" },
-  "Al Profeta": { src: "/images/dove-mangiare/22.webp", alt: "Terrazza del Ristorante Al Profeta a Venezia", position: "center 66%" },
+  "Al Profeta": { src: "/images/dove-mangiare/22.webp", alt: "Ingresso del ristorante Al Profeta a Venezia, con il cartello e il passaggio ben visibili", position: "56% 52%" },
   "All'Arco": { src: "/images/dove-mangiare/23.webp", alt: "Bacaro All'Arco vicino a Rialto a Venezia, con l'arco ben visibile", position: "center 44%" },
   "Al Volto": { src: "/images/dove-mangiare/24.webp", alt: "Banco con cicchetti dell'Osteria Al Volto a Venezia" },
   "Ca' d'Oro Alla Vedova": { src: "/images/dove-mangiare/25.webp", alt: "Polpetta della Ca' d'Oro Alla Vedova a Venezia" },
@@ -100,7 +101,7 @@ const margheraCategories: Category[] = [
         phone: "+39 338 870 6955",
         website: "https://www.osterialdiplomatico.com/",
         mapsQuery: "Osteria Al Diplomatico Marghera",
-        dietary: ["vegetarian"],
+        priceLevel: "€€",
       },
       {
         name: "Osteria 0.75",
@@ -112,6 +113,7 @@ const margheraCategories: Category[] = [
         phone: "+39 328 480 8422",
         website: "https://www.osteria075.com/",
         mapsQuery: "Osteria 0.75 Marghera",
+        priceLevel: "€€",
       },
       {
         name: "Il Giardinetto",
@@ -123,6 +125,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 921563",
         website: "https://www.ilgiardinettomarghera.it/",
         mapsQuery: "Il Giardinetto Marghera",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
         dietaryNote: "Per celiachia: la cucina può preparare piatti senza glutine, ma la pizza non è indicata come sicura per celiaci perché non può essere garantita l’assenza di contaminazione. Chiamare sempre prima.",
       },
@@ -135,6 +138,7 @@ const margheraCategories: Category[] = [
         try: "Cicchetti e cucina da osteria",
         phone: "+39 334 342 5301",
         mapsQuery: "Osteria Trattoria La Campana Marghera",
+        priceLevel: "€€",
       },
       {
         name: "Da Gigi Cucina e Pizzeria",
@@ -146,6 +150,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 925793",
         website: "https://ristorantedagigimarghera.it/",
         mapsQuery: "Da Gigi Cucina e Pizzeria Marghera",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan"],
       },
       {
@@ -157,6 +162,7 @@ const margheraCategories: Category[] = [
         try: "Pesce e piatti del giorno",
         phone: "+39 041 303 0453",
         mapsQuery: "Cicchetteria Venexiana Marghera",
+        priceLevel: "€€",
       },
     ],
   },
@@ -175,6 +181,7 @@ const margheraCategories: Category[] = [
         try: "Pizza",
         phone: "+39 041 922570",
         mapsQuery: "Pizzeria Al Calesse Marghera",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan"],
       },
       {
@@ -187,6 +194,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 921966",
         website: "https://www.pizzosteria.it/",
         mapsQuery: "84010 Pizzosteria Marghera",
+        priceLevel: "€€",
         dietary: ["vegetarian"],
       },
       {
@@ -199,6 +207,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 309 1441",
         website: "https://marciano-pub-marghera.com/",
         mapsQuery: "Marciano Pub Marghera",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
@@ -211,6 +220,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 241 3578",
         website: "https://www.pizzalongaway.it/",
         mapsQuery: "Pizzalonga Away Marghera",
+        priceLevel: "€",
         dietary: ["vegetarian"],
       },
     ],
@@ -231,6 +241,7 @@ const margheraCategories: Category[] = [
         phone: "+39 041 923257",
         website: "https://pasticceriavanin.com/",
         mapsQuery: "Pasticceria Vanin Marghera",
+        priceLevel: "€",
       },
       {
         name: "Pasticceria Danieli",
@@ -241,6 +252,7 @@ const margheraCategories: Category[] = [
         try: "Paste, brioche e frittelle in stagione",
         phone: "+39 329 346 8923",
         mapsQuery: "Pasticceria Danieli Marghera",
+        priceLevel: "€",
       },
       {
         name: "Le Delizie di Dea",
@@ -251,6 +263,7 @@ const margheraCategories: Category[] = [
         try: "Cornetti, pasticceria e caffè",
         phone: "+39 041 312 1521",
         mapsQuery: "Le Delizie di Dea Marghera",
+        priceLevel: "€",
       },
     ],
   },
@@ -269,6 +282,7 @@ const margheraCategories: Category[] = [
         try: "Gelato artigianale",
         phone: "+39 041 937030",
         mapsQuery: "Gelateria Eta Beta Marghera",
+        priceLevel: "€",
         dietary: ["vegetarian", "glutenFree"],
       },
     ],
@@ -291,6 +305,7 @@ const veniceCategories: Category[] = [
         try: "Cena in terrazza con vista laguna",
         website: "https://www.algiubagio.net/",
         mapsQuery: "Algiubagio Venezia Fondamente Nove",
+        priceLevel: "€€€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
@@ -302,6 +317,7 @@ const veniceCategories: Category[] = [
         try: "Carne, pesce, cicchetti e vino",
         website: "https://www.altimon.it/",
         mapsQuery: "Osteria Al Timon Venezia",
+        priceLevel: "€€€",
         dietary: ["vegetarian", "glutenFree"],
       },
       {
@@ -313,8 +329,9 @@ const veniceCategories: Category[] = [
         try: "Burger e atmosfera Hard Rock",
         website: "https://cafe.hardrock.com/venice/it/",
         mapsQuery: "Hard Rock Cafe Venice",
+        priceLevel: "€€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
-        dietaryNote: "Sono disponibili opzioni dedicate, ma la cucina utilizza anche aree condivise: in caso di celiachia o allergie avvisare sempre il personale prima dell’ordine.",
+        dietaryNote: "Il menu segnala opzioni vegetariane, vegane e senza glutine e mette a disposizione informazioni sugli allergeni. In caso di celiachia o allergie, avvisa sempre il personale al momento dell’ordine.",
       },
       {
         name: "Trattoria alla Madonna",
@@ -324,6 +341,7 @@ const veniceCategories: Category[] = [
         description: "Storica trattoria veneziana vicino a Rialto, indicata per piatti tradizionali e cucina di pesce.",
         try: "Pesce e cucina veneziana",
         mapsQuery: "Trattoria alla Madonna Venezia",
+        priceLevel: "€€€",
         dietary: ["vegetarian"],
       },
       {
@@ -334,6 +352,7 @@ const veniceCategories: Category[] = [
         description: "Locale storico e vivace dove cibo, convivialità e musica fanno parte della stessa esperienza.",
         try: "Piatti veneziani e atmosfera",
         mapsQuery: "Paradiso Perduto Venezia",
+        priceLevel: "€€",
         dietary: ["vegetarian"],
       },
       {
@@ -344,6 +363,7 @@ const veniceCategories: Category[] = [
         description: "Una proposta più raffinata con una splendida terrazza sull'acqua, ideale per una cena speciale.",
         try: "Cena di pesce con vista",
         mapsQuery: "Ristorante Lineadombra Venezia",
+        priceLevel: "€€€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
@@ -354,6 +374,7 @@ const veniceCategories: Category[] = [
         description: "Una buona soluzione per una cena veneziana in una zona meno frenetica rispetto a San Marco.",
         try: "Cucina veneziana e italiana",
         mapsQuery: "Ostaria Al Vecio Pozzo Venezia",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
       },
       {
@@ -365,6 +386,7 @@ const veniceCategories: Category[] = [
         try: "Pizza e cena in giardino",
         website: "https://alprofeta.it/",
         mapsQuery: "Al Profeta Venezia",
+        priceLevel: "€€",
         dietary: ["vegetarian", "vegan", "glutenFree"],
       },
     ],
@@ -383,6 +405,7 @@ const veniceCategories: Category[] = [
         description: "Piccolo, essenziale e molto conosciuto per i cicchetti. Perfetto per una sosta al bancone.",
         try: "Cicchetti di pesce e ombra di vino",
         mapsQuery: "All'Arco Venezia",
+        priceLevel: "€",
       },
       {
         name: "Al Volto",
@@ -392,6 +415,7 @@ const veniceCategories: Category[] = [
         description: "Una storica osteria veneziana dove fermarsi per cicchetti, vino e cucina tradizionale.",
         try: "Cicchetti e vino",
         mapsQuery: "Osteria Al Volto Venezia",
+        priceLevel: "€€",
       },
       {
         name: "Ca' d'Oro Alla Vedova",
@@ -401,6 +425,7 @@ const veniceCategories: Category[] = [
         description: "Un classico veneziano. Anche se mangiate altrove, vale una sosta per le sue famosissime polpette.",
         try: "Le polpette della Vedova",
         mapsQuery: "Ca d'Oro Alla Vedova Venezia",
+        priceLevel: "€€",
       },
       {
         name: "Cantina Do Spade",
@@ -411,6 +436,7 @@ const veniceCategories: Category[] = [
         try: "Cicchetti, baccalà e ombra",
         website: "https://www.cantinadospade.com/",
         mapsQuery: "Cantina Do Spade Venezia",
+        priceLevel: "€€",
         dietary: ["vegetarian", "glutenFree"],
       },
       {
@@ -421,6 +447,7 @@ const veniceCategories: Category[] = [
         description: "Piccolissimo e senza fronzoli: bicchiere, paninetto o cicchetto in piedi vicino al Mercato di Rialto.",
         try: "Paninetti, cicchetti e vino",
         mapsQuery: "Al Merca Venezia Rialto",
+        priceLevel: "€",
       },
     ],
   },
@@ -438,6 +465,8 @@ const veniceCategories: Category[] = [
         description: "Un bar semplice e molto conosciuto per i tramezzini abbondantemente farciti.",
         try: "I tramezzini",
         mapsQuery: "Bar Tiziano Venezia San Giovanni Grisostomo",
+        priceLevel: "€",
+        dietary: ["vegetarian", "vegan"],
       },
       {
         name: "Rosticceria Rialto · ex Gislon",
@@ -447,6 +476,8 @@ const veniceCategories: Category[] = [
         description: "Una vera istituzione vicino a Rialto. Oltre ai fritti trovate primi e secondi e potete anche mangiare seduti.",
         try: "Mozzarella in carrozza con acciuga",
         mapsQuery: "Rosticceria Rialto ex Gislon Venezia",
+        priceLevel: "€",
+        dietary: ["vegetarian"],
       },
       {
         name: "Aciugheta",
@@ -457,6 +488,7 @@ const veniceCategories: Category[] = [
         try: "Pizzette con l'acciuga",
         website: "https://www.aciugheta.com/",
         mapsQuery: "Aciugheta Venezia",
+        priceLevel: "€€",
         dietary: ["vegetarian", "glutenFree"],
         dietaryNote: "È disponibile anche l’impasto senza glutine; per celiachia o allergie chiedere sempre al locale come viene gestita la contaminazione.",
       },
@@ -478,6 +510,7 @@ const veniceCategories: Category[] = [
         phone: "+39 041 5226808",
         website: "https://rosasalva.it/",
         mapsQuery: "Rosa Salva San Salvador Venezia",
+        priceLevel: "€",
       },
       {
         name: "Pasticceria Ponte delle Paste",
@@ -488,6 +521,7 @@ const veniceCategories: Category[] = [
         try: "Paste, brioche e caffè",
         phone: "+39 041 2410173",
         mapsQuery: "Pasticceria Ponte delle Paste Venezia",
+        priceLevel: "€",
         dietary: ["glutenFree"],
       },
       {
@@ -499,6 +533,7 @@ const veniceCategories: Category[] = [
         try: "Frittelle, paste e dolci tradizionali",
         phone: "+39 041 5237209",
         mapsQuery: "Pasticceria Tonolo Venezia",
+        priceLevel: "€",
       },
       {
         name: "Pasticceria Marchini Time",
@@ -509,6 +544,7 @@ const veniceCategories: Category[] = [
         try: "Pasticceria artigianale e colazione",
         phone: "+39 041 2413087",
         mapsQuery: "Pasticceria Marchini Time Venezia",
+        priceLevel: "€",
       },
     ],
   },
@@ -526,6 +562,7 @@ const veniceCategories: Category[] = [
         description: "Una delle gelaterie più iconiche di Venezia, con terrazza sul Canale della Giudecca.",
         try: "Il famoso Gianduiotto",
         mapsQuery: "Gelateria Nico Zattere Venezia",
+        priceLevel: "€",
         dietary: ["glutenFree"],
       },
       {
@@ -537,6 +574,7 @@ const veniceCategories: Category[] = [
         try: "Gusti stagionali e specialità della casa",
         website: "https://suso.gelatoteca.it/",
         mapsQuery: "Suso Gelatoteca Venezia",
+        priceLevel: "€",
         dietary: ["vegan", "glutenFree"],
       },
       {
@@ -547,6 +585,7 @@ const veniceCategories: Category[] = [
         description: "Una gelateria più defilata, comoda se state visitando Castello, l'Arsenale o la Biennale.",
         try: "Gelato artigianale e gusti stagionali",
         mapsQuery: "Gelateria Il Pinguino Venezia",
+        priceLevel: "€",
       },
       {
         name: "La Mela Verde",
@@ -556,6 +595,7 @@ const veniceCategories: Category[] = [
         description: "Piccola gelateria artigianale a Castello, ideale per allontanarsi un po' dalle soste più turistiche.",
         try: "Gelato artigianale",
         mapsQuery: "Gelateria La Mela Verde Venezia",
+        priceLevel: "€",
       },
     ],
   },
@@ -574,6 +614,7 @@ const veniceCategories: Category[] = [
         try: "Aperol Spritz",
         website: "https://terrazza.aperol.com/",
         mapsQuery: "Terrazza Aperol Venezia Campo Santo Stefano",
+        priceLevel: "€€",
         dietary: ["vegetarian", "glutenFree"],
       },
       {
@@ -584,6 +625,7 @@ const veniceCategories: Category[] = [
         description: "Cocktail bar raccolto e curato, per chi cerca drink più creativi del classico aperitivo.",
         try: "Cocktail signature",
         mapsQuery: "Il Mercante Venezia cocktail bar",
+        priceLevel: "€€",
       },
       {
         name: "Il Santo Bevitore",
@@ -593,6 +635,7 @@ const veniceCategories: Category[] = [
         description: "Una sosta informale per chi preferisce una buona birra allo spritz.",
         try: "Birre",
         mapsQuery: "Il Santo Bevitore Venezia",
+        priceLevel: "€€",
       },
       {
         name: "Ombra del Leone",
@@ -602,6 +645,7 @@ const veniceCategories: Category[] = [
         description: "Una terrazza con vista sul Bacino di San Marco, indicata per un aperitivo panoramico.",
         try: "Spritz o calice di vino con vista",
         mapsQuery: "Ombra del Leone Venezia",
+        priceLevel: "€€€",
       },
     ],
   },
@@ -643,16 +687,15 @@ function VenueCard({ venue }: { venue: Venue }) {
           </div>
         )}
 
-        {venue.dietary && venue.dietary.length > 0 && (
-          <div className="mt-4">
-            <div className="flex flex-wrap items-center gap-2" aria-label="Opzioni alimentari segnalate">
-              {venue.dietary.includes("vegetarian") && <span title="Opzioni vegetariane" aria-label="Opzioni vegetariane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🥕</span>}
-              {venue.dietary.includes("vegan") && <span title="Opzioni vegane" aria-label="Opzioni vegane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🌱</span>}
-              {venue.dietary.includes("glutenFree") && <span title="Opzioni senza glutine" aria-label="Opzioni senza glutine" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🚫🌾</span>}
-            </div>
-            {venue.dietaryNote && <p className="mt-2 text-xs leading-5 text-[#7a6e62]">{venue.dietaryNote}</p>}
+        <div className="mt-4">
+          <div className="flex flex-wrap items-center gap-2">
+            <span title="Fascia di spesa indicativa" aria-label={`Fascia di spesa ${venue.priceLevel}`} className="rounded-full border border-[#d8c29a] bg-[#fffaf0] px-3 py-1 text-sm font-bold tracking-[0.08em] text-[#8a682f]">{venue.priceLevel}</span>
+            {venue.dietary?.includes("vegetarian") && <span title="Opzioni vegetariane" aria-label="Opzioni vegetariane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🥕</span>}
+            {venue.dietary?.includes("vegan") && <span title="Opzioni vegane" aria-label="Opzioni vegane" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🌱</span>}
+            {venue.dietary?.includes("glutenFree") && <span title="Opzioni senza glutine" aria-label="Opzioni senza glutine" className="rounded-full border border-[#d9d0c3] bg-white px-2.5 py-1 text-base">🚫🌾</span>}
           </div>
-        )}
+          {venue.dietaryNote && <p className="mt-2 text-xs leading-5 text-[#7a6e62]">{venue.dietaryNote}</p>}
+        </div>
 
         <div className="mt-5 space-y-2 border-t border-[#eee7dc] pt-4 text-sm text-[#4f5c66]">
           <p className="flex gap-2"><span>📍</span><span>{venue.address}</span></p>
@@ -769,8 +812,18 @@ export default function DoveMangiarePage() {
             </div>
 
             <div className="mt-5 rounded-[24px] border border-[#e2dbcf] bg-[#fbfaf7] px-5 py-4 md:px-6 md:py-5">
-              <p className="font-semibold text-[#17324a]">Esigenze alimentari</p>
-              <div className="mt-2 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#425666]">
+              <p className="font-semibold text-[#17324a]">Fascia di spesa & esigenze alimentari</p>
+              <div className="mt-3 rounded-2xl bg-white/75 px-4 py-3">
+                <p className="text-sm font-semibold text-[#344b5e]">💶 Fascia di spesa indicativa</p>
+                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-[#5f6971]">
+                  <span><strong>€</strong> economico</span>
+                  <span><strong>€€</strong> medio</span>
+                  <span><strong>€€€</strong> medio-alto</span>
+                  <span><strong>€€€€</strong> cena speciale</span>
+                </div>
+                <p className="mt-2 text-xs leading-5 text-[#746b62]">La fascia è orientativa e considera il tipo di esperienza suggerita nella card. Bevande, vini, quantità e piatti scelti possono cambiare molto il conto.</p>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-[#425666]">
                 <span>🥕 Opzioni vegetariane</span>
                 <span>🌱 Opzioni vegane</span>
                 <span>🚫🌾 Opzioni senza glutine</span>
