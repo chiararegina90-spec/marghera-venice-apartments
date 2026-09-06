@@ -29,13 +29,13 @@ export const metadata:Metadata={
 
 const inspiration=[
  {title:'Discover Venice',text:'Itineraries, islands, events and local tips to experience Venice with curiosity.',image:'/images/scopri-venezia-michael-heise.webp',alt:'St Mark’s Basin in Venice with the Doge’s Palace and St Mark’s Campanile',href:'/en/discover-venice'},
- {title:'Discover Veneto',text:'The Brenta Riviera, Prosecco Hills and beautiful art cities.',image:'/images/valdobbiadene.webp',alt:'Colline e vigneti del Prosecco nel territorio di Valdobbiadene',href:'/en/discover-veneto'},
+ {title:'Discover Veneto',text:'The Brenta Riviera, Prosecco Hills and beautiful art cities.',image:'/images/valdobbiadene.webp',alt:'Prosecco Hills and vineyards around Valdobbiadene',href:'/en/discover-veneto'},
  {title:'Experiences',text:'Gondola rides, private transfers, wineries and selected experiences.',image:'/images/gondola.webp',alt:'Venetian gondola travelling through the canals of Venice',href:'/en/experiences'},
  {title:'Guides & Events',text:'Redentore, Carnival, Biennale and practical travel information.',image:'/images/redentore.webp',alt:'Redentore Festival in Venice with boats and celebrations in the lagoon',href:'/en/journal'}
 ];
 const journal=[
  {title:'How to reach Venice from Marghera',text:'Buses and trains, useful information and the freedom to return even at night.',image:'/images/home-come-raggiungere-venezia.webp',alt:'Bus and public transport connections between Marghera and Venice',href:'/en/getting-to-venice'},
- {title:'Brenta Riviera in one day',text:'Venetian villas, art and nature just a short drive away.',image:'/images/veneto-riviera-brenta-final.webp',alt:'Paesaggio della Riviera del Brenta con canale e case storiche',href:'/en/guide/riviera-del-brenta'},
+ {title:'Brenta Riviera in one day',text:'Venetian villas, art and nature just a short drive away.',image:'/images/veneto-riviera-brenta-final.webp',alt:'Brenta Riviera landscape with canal and historic houses',href:'/en/guide/riviera-del-brenta'},
  {title:'Venice with children',text:'Museums, activities and tips for an enjoyable family day.',image:'/images/venezia-bambini-museo-storia-naturale.webp',alt:'Natural History Museum of Venice, a family-friendly activity for children',href:'/en/journal/venezia-con-bambini'}
 ];
 export default function Home(){return <><Header lang="en"/><main>

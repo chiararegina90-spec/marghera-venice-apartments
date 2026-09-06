@@ -12,6 +12,26 @@ const localizedToIt:Record<string,string>={
  '/services-nearby':'/servizi-in-zona',
 };
 const itToLocalized=Object.fromEntries(Object.entries(localizedToIt).map(([k,v])=>[v,k]));
+const imageCreditsLocalizedPath:Record<SiteLang,string>={
+ it:'/crediti-immagini',
+ en:'/image-credits',
+ de:'/bildnachweise',
+ fr:'/credits-images',
+ es:'/creditos-imagenes',
+ zh:'/image-credits',
+};
+function normalizeImageCredits(pathname:string){
+ for(const lang of siteLangs){
+  const from=imageCreditsLocalizedPath[lang];
+  if(pathname===from) return imageCreditsLocalizedPath.it;
+ }
+ return pathname;
+}
+function localizeImageCredits(pathname:string,target:SiteLang){
+ if(pathname!==imageCreditsLocalizedPath.it) return null;
+ return imageCreditsLocalizedPath[target];
+}
+
 const cultureLocalizedPrefixes:Record<SiteLang,{venice:string;veneto:string}>={
  it:{venice:'/guide/musei-venezia',veneto:'/guide/veneto'},
  en:{venice:'/guide/venice-museums',veneto:'/guide/veneto'},
@@ -57,6 +77,9 @@ export function stripLocale(pathname:string){
 export function localePath(pathname:string,target:SiteLang){
  let logical=stripLocale(pathname||'/');
  if(logical!=='/' && !logical.startsWith('/')) logical='/'+logical;
+ logical=normalizeImageCredits(logical);
+ const imageCreditsPath=localizeImageCredits(logical,target);
+ if(imageCreditsPath) return target==='it'?imageCreditsPath:`/${target}${imageCreditsPath}`;
  logical=normalizeCulture(logical);
  const culturePath=localizeCulture(logical,target);
  if(culturePath) return target==='it'?culturePath:`/${target}${culturePath}`;

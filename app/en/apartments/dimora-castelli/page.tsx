@@ -143,7 +143,7 @@ export default function DimoraCastelli() {
             ['Mosquito screens','Fitted to every window for comfortable ventilation.'],
             ['Central climate control','Air conditioning and heat pump controlled from one panel.'],
             ['Shared condominium garden','A rear garden area for reading, relaxing or hanging laundry.'],
-            ['Venice day & night','Collegamenti diurni e notturni per muoverti senza vincoli.'],
+            ['Venice day & night','Day and night connections let you travel without being tied to a rigid schedule.'],
           ].map(([title,copy])=><div key={title} className="rounded-[2rem] bg-cream p-8 shadow-soft">
             <h3 className="font-serif text-3xl text-navy">{title}</h3>
             <p className="mt-3 text-slate-600">{copy}</p>

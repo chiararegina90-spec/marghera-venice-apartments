@@ -55,7 +55,7 @@ export function cultureDetailPath(scope:CultureScope,lang:CultureLang,slug:strin
 
 const cityMap:Record<CultureLang,Record<string,string>>={
  it:{},en:{Venezia:'Venice',Padova:'Padua',Treviso:'Treviso',Verona:'Verona',Vicenza:'Vicenza',Belluno:'Belluno',Rovigo:'Rovigo',Mestre:'Mestre',Murano:'Murano',Burano:'Burano',Torcello:'Torcello'},
- de:{Venezia:'Venedig',Padova:'Padua'},fr:{Venezia:'Venise',Padova:'Padoue'},es:{Venezia:'Venecia',Padova:'Padua'},zh:{Venezia:'威尼斯',Padova:'帕多瓦',Verona:'维罗纳',Vicenza:'维琴察',Treviso:'特雷维索',Belluno:'贝卢诺',Rovigo:'罗维戈',Mestre:'梅斯特雷',Murano:'穆拉诺',Burano:'布拉诺',Torcello:'托尔切洛'}
+ de:{Venezia:'Venedig',Padova:'Padua',Verona:'Verona',Vicenza:'Vicenza',Treviso:'Treviso',Belluno:'Belluno',Rovigo:'Rovigo',Mestre:'Mestre',Murano:'Murano',Burano:'Burano',Torcello:'Torcello'},fr:{Venezia:'Venise',Padova:'Padoue',Verona:'Vérone',Vicenza:'Vicence',Treviso:'Trévise',Belluno:'Belluno',Rovigo:'Rovigo',Mestre:'Mestre',Murano:'Murano',Burano:'Burano',Torcello:'Torcello'},es:{Venezia:'Venecia',Padova:'Padua',Verona:'Verona',Vicenza:'Vicenza',Treviso:'Treviso',Belluno:'Belluno',Rovigo:'Rovigo',Mestre:'Mestre',Murano:'Murano',Burano:'Burano',Torcello:'Torcello'},zh:{Venezia:'威尼斯',Padova:'帕多瓦',Verona:'维罗纳',Vicenza:'维琴察',Treviso:'特雷维索',Belluno:'贝卢诺',Rovigo:'罗维戈',Mestre:'梅斯特雷',Murano:'穆拉诺',Burano:'布拉诺',Torcello:'托尔切洛'}
 };
 export function cityLabel(city:string,lang:CultureLang){return cityMap[lang][city]||city;}
 
