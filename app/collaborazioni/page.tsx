@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import {stockImages} from '@/data/stockImages';
 
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
@@ -12,11 +13,11 @@ export const metadata:Metadata = {
 openGraph:{type:'website',images:['/images/experience-row-venice-cover.webp']},twitter:{card:'summary_large_image',images:['/images/experience-row-venice-cover.webp']}};
 
 const areas = [
-  ['Transfer e NCC','Collegamenti con aeroporti, stazioni e destinazioni del Veneto.'],
-  ['Guide turistiche','Visite private o di gruppo con professionisti abilitati.'],
-  ['Gondole e barche','Esperienze in laguna da proporre con condizioni trasparenti.'],
-  ['Biciclette','Noleggio e itinerari verso Lido, Pellestrina e terraferma.'],
-  ['Ristorazione','Locali selezionati a Marghera, Venezia e nelle destinazioni delle guide.'],
+  {title:'Transfer e NCC',text:'Collegamenti con aeroporti, stazioni e destinazioni del Veneto.',image:stockImages.transfer.src,alt:'Viaggiatrice con bagagli durante un transfer privato da un aeroporto',position:stockImages.transfer.position},
+  {title:'Guide turistiche',text:'Visite private o di gruppo con professionisti abilitati.',image:stockImages.tourGuide.src,alt:'Gruppo di visitatori con guida in Piazza San Marco a Venezia',position:stockImages.tourGuide.position},
+  {title:'Gondole e barche',text:'Esperienze in laguna da proporre con condizioni trasparenti.',image:stockImages.gondola.src,alt:'Gondola che naviga in un canale stretto di Venezia',position:stockImages.gondola.position},
+  {title:'Biciclette',text:'Noleggio e itinerari verso Lido, Pellestrina e terraferma.',image:stockImages.cycling.src,alt:'Bicicletta nel paesaggio del Bellunese in Veneto',position:stockImages.cycling.position},
+  {title:'Ristorazione',text:'Locali selezionati a Marghera, Venezia e nelle destinazioni delle guide.',image:stockImages.food.src,alt:'Cicchetti veneziani serviti con uno Spritz',position:stockImages.food.position},
 ];
 
 export default function Collaborazioni(){
@@ -46,11 +47,12 @@ export default function Collaborazioni(){
               <div className="p-8"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">Wine Experience • Val d’Illasi</p><h2 className="mt-3 font-serif text-3xl text-navy">I Campi: degustazione tra Valpolicella e Monti Lessini</h2><p className="mt-3 text-slate-600">Quattro percorsi di degustazione tra Soave, Valpolicella, Ripasso e Amarone, con sapori del territorio e possibilità di visitare la cantina.</p><span className="mt-6 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Scopri l’esperienza</span></div>
             </Link>
           </article>
-          {areas.map(([title,text])=><article key={title} className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft">
-            <div className="text-2xl text-gold">✦</div>
-            <h2 className="mt-4 font-serif text-3xl text-navy">{title}</h2>
-            <p className="mt-3 text-slate-600">{text}</p>
-            <p className="mt-6 rounded-2xl bg-cream p-4 text-sm font-semibold text-navy">Partner in fase di selezione</p>
+          {areas.map(area=><article key={area.title} className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
+            <div className="relative h-64 overflow-hidden"><Image src={area.image} alt={area.alt} fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover transition duration-500 group-hover:scale-[1.03]" style={{objectPosition:area.position}}/></div>
+            <div className="p-8"><div className="text-2xl text-gold">✦</div>
+            <h2 className="mt-4 font-serif text-3xl text-navy">{area.title}</h2>
+            <p className="mt-3 text-slate-600">{area.text}</p>
+            <p className="mt-6 rounded-2xl bg-cream p-4 text-sm font-semibold text-navy">Partner in fase di selezione</p></div>
           </article>)}
         </div>
       </div>

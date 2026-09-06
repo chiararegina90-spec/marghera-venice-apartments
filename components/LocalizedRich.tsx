@@ -9,8 +9,8 @@ import JournalFilterGrid from '@/components/JournalFilterGrid';
 import EditorialHero from '@/components/EditorialHero';
 
 type Lang='de'|'fr'|'es'|'zh';
-export type RichCard={title:string;text:string;image?:string;alt?:string;href?:string;label?:string};
-export type RichSection={eyebrow?:string;title:string;text?:string;image?:string;alt?:string;cards?:RichCard[];links?:[string,string][]};
+export type RichCard={title:string;text:string;image?:string;alt?:string;position?:string;href?:string;label?:string};
+export type RichSection={eyebrow?:string;title:string;text?:string;image?:string;alt?:string;position?:string;cards?:RichCard[];links?:[string,string][]};
 export type RichPageData={title:string;subtitle:string;hero:string;heroAlt:string;sections:RichSection[]};
 
 const home:Record<Lang,string>={de:'Startseite',fr:'Accueil',es:'Inicio',zh:'首页'};
@@ -27,9 +27,9 @@ export function LocalizedRichPage({lang,data}:{lang:Lang;data:RichPageData}){
   <EditorialHero image={data.hero} imageAlt={data.heroAlt} crumbs={[{label:home[lang],href:`/${lang}`},{label:data.title}]} title={data.title} subtitle={data.subtitle}/>
   {data.sections.map((s,i)=><section key={s.title} className={i%2?'bg-cream py-20':'py-20'}><div className="mx-auto max-w-7xl px-5 lg:px-8">
    <SectionTitle eyebrow={s.eyebrow||''} title={s.title} text={s.text||''}/>
-   {s.image&&<div className="relative mt-10 h-[300px] overflow-hidden rounded-[2rem] shadow-soft sm:h-[420px]"><Image src={s.image} alt={s.alt||s.title} fill sizes="100vw" className="object-cover"/></div>}
+   {s.image&&<div className="relative mt-10 h-[300px] overflow-hidden rounded-[2rem] shadow-soft sm:h-[420px]"><Image src={s.image} alt={s.alt||s.title} fill sizes="100vw" className="object-cover" style={{objectPosition:s.position??'center'}}/></div>}
    {s.cards&&<div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">{s.cards.map(card=><article key={card.title} className="overflow-hidden rounded-[2rem] bg-white shadow-soft">
-    {card.image&&<div className="relative h-60 overflow-hidden"><Image src={card.image} alt={card.alt||card.title} fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover"/></div>}
+    {card.image&&<div className="relative h-60 overflow-hidden"><Image src={card.image} alt={card.alt||card.title} fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover" style={{objectPosition:card.position??'center'}}/></div>}
     <div className="p-7"><h2 className="font-serif text-3xl text-navy">{card.title}</h2><p className="mt-3 leading-7 text-slate-600">{card.text}</p>{card.href&&<Link href={card.href} className="mt-6 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">{card.label||'→'}</Link>}</div>
    </article>)}</div>}
    {s.links&&<div className="mt-9 flex flex-wrap gap-3">{s.links.map(([label,href])=>href.startsWith('http')?<a key={href} href={href} target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-6 py-3 font-bold text-navy hover:bg-navy hover:text-white">{label} ↗</a>:<Link key={href} href={href} className="rounded-full border border-navy px-6 py-3 font-bold text-navy hover:bg-navy hover:text-white">{label}</Link>)}</div>}
