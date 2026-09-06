@@ -118,43 +118,9 @@ export default function RossiApartment(){
     </section>
 
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Perché sceglierlo" title="Più spazio, più libertà, più comfort" text="Rossi Apartment è pensato per chi vuole vivere Venezia senza rinunciare a una vera casa."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['Oltre 100 m²','Spazi davvero ampi per famiglie e gruppi fino a 7 persone.'],
-            ['Parcheggio privato','Lascia l’auto in sicurezza e raggiungi Venezia con i mezzi.'],
-            ['Venezia H24','Collegamenti diurni e notturni per muoverti senza vincoli.'],
-            ['Cucina completa','Colazioni, pranzi e cene insieme come a casa.'],
-            ['Terrazza arredata','Relax all’aperto e area fumatori dedicata.'],
-            ['Pet & Family Friendly','Cuccia, ciotole, culla e lettino disponibili su richiesta.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] bg-white p-8 shadow-soft">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Una giornata tipo" title="Immagina il tuo soggiorno" text="Dalla colazione al rientro serale, Rossi Apartment accompagna ogni momento della giornata."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['08:00','Colazione nella grande cucina prima di partire.'],
-            ['09:00','Bus o treno verso Venezia.'],
-            ['10:00','Una giornata tra calli, canali e musei.'],
-            ['18:00','Aperitivo e rientro senza fretta.'],
-            ['21:00','Relax in terrazza, anche per gli ospiti fumatori.'],
-            ['23:00','Riposo in camere silenziose e confortevoli.'],
-          ].map(([time,copy])=><div key={time} className="rounded-[2rem] border border-slate-200 bg-white p-8">
-            <div className="text-sm font-black uppercase tracking-[.18em] text-gold">{time}</div>
-            <p className="mt-3 font-serif text-2xl text-navy">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
@@ -187,18 +153,6 @@ export default function RossiApartment(){
       </div>
     </section>
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-        <div>
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come raggiungerci</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Comodo in auto, treno o aereo</h2>
-          <p className="mt-5 text-lg text-slate-600">Rossi Apartment dispone di parcheggio privato. Dalla stazione di Venezia Mestre puoi arrivare a piedi, in tram T2 o in taxi; dagli aeroporti puoi raggiungere Mestre con taxi o navetta.</p>
-          <Link href="/come-raggiungere-venezia" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Come arrivare: trasporti, aeroporti e Venezia →</Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {['🚗 Parcheggio privato','🚆 Venezia Mestre nelle vicinanze','✈️ Collegamenti dagli aeroporti'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
-        </div>
-      </div>
-    </section>
+    
   </main><Footer/></>
 }

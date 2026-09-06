@@ -114,10 +114,10 @@ export default function DimoraCastelli() {
     <section className="bg-cream py-24">
       <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
         <div>
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">The apartment che si adatta ai tuoi ritmi</p>
+          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Designed around your pace</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Practical, quiet and surrounded by greenery</h2>
           <div className="mt-8 space-y-6 text-lg text-slate-600">
-            <p><strong className="text-navy">Easy access.</strong> The apartment si trova al piano terra rialzato: una soluzione comoda per chi ha difficoltà motorie, viaggia con passeggini oppure porta valigie grandi e pesanti.</p>
+            <p><strong className="text-navy">Easy access.</strong> The apartment is on a raised ground floor: a practical solution for guests with reduced mobility, pushchairs or large, heavy luggage.</p>
             <p><strong className="text-navy">Windows overlooking greenery.</strong> The building is surrounded by greenery and every window has a mosquito screen, so you can let fresh air in even on summer evenings.</p>
             <p><strong className="text-navy">Comfortable temperature year-round.</strong> The central climate system is controlled from a convenient panel by the entrance and also works as a heat pump.</p>
             <p><strong className="text-navy">Fully equipped kitchen.</strong> A practical space for a relaxed breakfast or dinner after a day in Venice.</p>
@@ -133,24 +133,7 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Why choose it" title="Comfort in every detail" text="Dimora Castelli combines tranquillity, practicality and a strategic location for exploring Venice and Veneto."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['Raised ground floor','Easier with heavy luggage, pushchairs or reduced mobility.'],
-            ['Surrounded by greenery','Green views and a relaxing atmosphere.'],
-            ['Mosquito screens','Fitted to every window for comfortable ventilation.'],
-            ['Central climate control','Air conditioning and heat pump controlled from one panel.'],
-            ['Shared condominium garden','A rear garden area for reading, relaxing or hanging laundry.'],
-            ['Venice day & night','Day and night connections let you travel without being tied to a rigid schedule.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] bg-cream p-8 shadow-soft">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
@@ -166,41 +149,9 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Ideal for" title="Choose a stay that matches your trip" text="Dimora Castelli is especially suited to guests looking for simplicity, tranquillity and convenient access."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {[
-            ['Couples','A cosy, quiet place to return to after a day in the city.'],
-            ['Small families','Practical spaces for up to 5 guests with family-friendly amenities.'],
-            ['Business stays','Wi-Fi, a kitchen and a comfortable base for longer stays.'],
-            ['Guests looking for peace and quiet','Greenery, quiet surroundings and well-organised spaces.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] border border-slate-200 bg-white p-8">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="A typical day" title="Follow your own pace" text="Dimora Castelli makes it easy to combine Venice, work, relaxation and everyday life."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['08:00','A relaxed breakfast in your own kitchen.'],
-            ['09:00','Head to Venice using day or night public transport.'],
-            ['10:00','Museums, calli, islands or a day of work.'],
-            ['18:00','An easy return and dinner at home or nearby.'],
-            ['21:00','A book, some fresh air in the garden or time to relax on the sofa.'],
-            ['23:00','Rest in a quiet apartment surrounded by greenery.'],
-          ].map(([time,copy])=><div key={time} className="rounded-[2rem] bg-white p-8 shadow-soft">
-            <div className="text-sm font-black uppercase tracking-[.18em] text-gold">{time}</div>
-            <p className="mt-3 font-serif text-2xl text-navy">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -257,18 +208,6 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-        <div>
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Getting here</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Easy to reach however you travel</h2>
-          <p className="mt-5 text-lg text-slate-600">Dimora Castelli offers free private parking. From Venezia Mestre station you can arrive on foot, by T2 tram or taxi; airport shuttle services connect the airports with Mestre.</p>
-          <Link href="/en/getting-to-venice" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Getting here: transport, airports and Venice →</Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {['🚗 Free private parking','🚋 T2 tram from Venezia Mestre','✈️ Airport shuttles to Mestre'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
-        </div>
-      </div>
-    </section>
+    
   </main><Footer lang="en"/></>
 }

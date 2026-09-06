@@ -118,43 +118,9 @@ export default function RossiApartment(){
     </section>
 
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Why choose it" title="More space, more freedom, more comfort" text="Rossi Apartment is for travellers who want to experience Venice without giving up the comfort and space of a real home."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['Over 100 m²','Genuinely spacious rooms for families and groups of up to 7.'],
-            ['Private parking','Leave your car safely parked and reach Venice by public transport.'],
-            ['Venice day & night','Day and night connections give you more freedom.'],
-            ['Fully equipped kitchen','Breakfast, lunch and dinner together, just like at home.'],
-            ['Furnished terrace','Outdoor relaxation and a dedicated smoking area.'],
-            ['Pet & Family Friendly','Pet bed, bowls, cot and toddler bed available on request.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] bg-white p-8 shadow-soft">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="A typical day" title="Imagine your stay" text="From breakfast to your evening return, Rossi Apartment fits naturally into every part of your day."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['08:00','Breakfast in the large kitchen before heading out.'],
-            ['09:00','Bus or train to Venice.'],
-            ['10:00','A day among Venice’s calli, canals and museums.'],
-            ['18:00','Aperitivo and an easy journey home.'],
-            ['21:00','Relax on the terrace, including a dedicated area for guests who smoke.'],
-            ['23:00','Rest in quiet, comfortable bedrooms.'],
-          ].map(([time,copy])=><div key={time} className="rounded-[2rem] border border-slate-200 bg-white p-8">
-            <div className="text-sm font-black uppercase tracking-[.18em] text-gold">{time}</div>
-            <p className="mt-3 font-serif text-2xl text-navy">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:px-8">
@@ -187,18 +153,6 @@ export default function RossiApartment(){
       </div>
     </section>
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-        <div>
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Getting here</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Easy to reach by car, train or plane</h2>
-          <p className="mt-5 text-lg text-slate-600">Rossi Apartment has private parking. From Venezia Mestre station you can arrive on foot, by T2 tram or taxi; from the airports, Mestre is served by taxis and shuttle services.</p>
-          <Link href="/en/getting-to-venice" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Getting here: transport, airports and Venice →</Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {['🚗 Private parking','🚆 Venezia Mestre station nearby','✈️ Airport connections'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
-        </div>
-      </div>
-    </section>
+    
   </main><Footer lang="en"/></>
 }

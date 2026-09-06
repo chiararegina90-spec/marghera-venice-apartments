@@ -61,161 +61,114 @@ const islands = [
 ];
 
 export default function ScopriVenezia(){
+  const explore = [
+    ['01','Musei, monumenti e chiese','Scegli cosa vale davvero il tuo tempo con durata media, prezzi e informazioni pratiche.','/guide/musei-venezia'],
+    ['02','Le isole della laguna','Murano, Burano, Lido, Pellestrina, Sant’Erasmo e Certosa: scegli in base alla giornata.','#isole'],
+    ['03','Venezia con bambini','Musei, vaporetto, pause e idee per vivere la città senza trasformarla in una maratona.','/journal/venezia-con-bambini'],
+    ['04','Venezia con il cane','Trasporti, passeggiate tranquille e piccole regole pratiche per una giornata più semplice.','/journal/venezia-con-il-cane'],
+    ['05','Come arrivare e muoversi','Bus, treno, biglietti e collegamenti notturni partendo dagli appartamenti.','/come-raggiungere-venezia'],
+    ['06','Eventi e storie','Mostre, feste tradizionali, curiosità e appuntamenti nel Journal.','/journal'],
+  ] as const;
+
   return <><Header/>
-    <main data-build="isole-finali-1">
-      <section className="relative min-h-[82vh] overflow-hidden pt-20">
-        <Image src="/images/scopri-venezia-michael-heise.webp" alt="Bacino di San Marco con Palazzo Ducale e Campanile. Foto di Michael Heise su Unsplash" fill priority sizes="100vw" className="object-cover object-center"/>
+    <main className="editorial-page" data-build="discover-venice-refresh-2026-09-06">
+      <section className="relative min-h-[74vh] overflow-hidden pt-20">
+        <Image src="/images/scopri-venezia-michael-heise.webp" alt="Bacino di San Marco con Palazzo Ducale e Campanile" fill priority sizes="100vw" className="object-cover object-center"/>
         <div className="hero-overlay absolute inset-0"/>
-        <p className="absolute bottom-4 right-5 z-20 text-[11px] text-white/90 drop-shadow-md">Foto di Michael Heise su Unsplash</p>
-        <div className="relative mx-auto flex min-h-[calc(82vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-24 lg:px-8">
+        <div className="relative mx-auto flex min-h-[calc(74vh-5rem)] max-w-7xl items-end px-5 pb-14 pt-24 lg:px-8">
           <div className="max-w-4xl text-white">
-            <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-white/75">
-              <Link href="/" className="hover:text-gold">Home</Link><span>›</span><span className="text-gold">Scopri Venezia</span>
-            </nav>
-            <p className="text-xs font-black uppercase tracking-[.25em] text-gold">La città, le isole, i nostri consigli</p>
+            <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-2 text-sm text-white/75"><Link href="/" className="hover:text-gold">Home</Link><span>›</span><span className="text-gold">Scopri Venezia</span></nav>
+            <p className="text-xs font-black uppercase tracking-[.25em] text-gold">La città, la laguna, il tuo modo di viverle</p>
             <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Scopri Venezia, con il tuo ritmo.</h1>
-            <p className="mt-6 max-w-3xl text-xl text-white/85">Dai luoghi iconici agli angoli meno scontati: una guida pratica per vivere Venezia partendo da Marghera e rientrare quando vuoi.</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#come-arrivare" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Come raggiungerla</a>
-              <a href="#itinerario" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white">Venezia in un giorno</a>
-            </div>
+            <p className="mt-6 max-w-3xl text-xl text-white/85">Non serve leggere tutto prima di partire. Scegli ciò che ti interessa — arte, isole, bambini, cane, eventi o trasporti — e costruisci la tua giornata da lì.</p>
+            <div className="mt-8 flex flex-wrap gap-3"><a href="#inizia" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Da dove vuoi iniziare?</a><Link href="/guide/musei-venezia" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white">Musei e monumenti</Link></div>
           </div>
         </div>
       </section>
 
-      <section id="come-arrivare" className="bg-cream pb-12 pt-20">
+      <section id="inizia" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Da Marghera a Venezia" title="Più semplice di quanto immagini" text="Lascia l’auto nel parcheggio privato e raggiungi Venezia con collegamenti diurni e notturni."/>
-          <div className="grid gap-5 lg:grid-cols-5">
+          <SectionTitle eyebrow="Scegli il tuo percorso" title="Che Venezia vuoi vivere?" text="Questa pagina ora fa da bussola: i dettagli restano nelle guide dedicate, così trovi prima ciò che ti serve e scorri molto meno."/>
+          <div className="mt-8 grid border-y border-navy/15 md:grid-cols-2">
+            {explore.map(([n,title,text,href],i)=><Link key={title} href={href} className={`group grid grid-cols-[42px_1fr_auto] gap-3 py-6 transition hover:bg-cream md:px-6 ${i%2===0?'md:border-r md:border-navy/10':''} ${i<4?'border-b border-navy/10':''}`}>
+              <span className="pt-1 text-xs font-black tracking-[.16em] text-gold">{n}</span><span><span className="block font-serif text-2xl text-navy">{title}</span><span className="mt-2 block max-w-xl leading-7 text-slate-600">{text}</span></span><span className="pt-1 text-2xl text-gold transition group-hover:translate-x-1">→</span>
+            </Link>)}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream py-16 sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_.85fr] lg:px-8">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Da Marghera a Venezia</p>
+            <h2 className="mt-3 max-w-3xl font-serif text-5xl text-navy">Lascia l’auto. A Venezia entra senza pensieri.</h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">Dagli appartamenti puoi raggiungere Piazzale Roma con le linee diurne 6 e 6L e rientrare anche di notte con la N2. In alternativa, Venezia Santa Lucia è raggiungibile in treno dalla stazione di Venezia Mestre.</p>
+            <div className="mt-7 flex flex-wrap gap-3"><Link href="/come-raggiungere-venezia" className="rounded-full bg-navy px-6 py-3.5 font-bold text-white">Trasporti, biglietti e aeroporti →</Link><a href="https://actv.avmspa.it/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy/25 px-6 py-3.5 font-bold text-navy">ACTV ufficiale ↗</a></div>
+          </div>
+          <div className="self-start border-y border-navy/15">
             {[
-              ['1','Parcheggia','Lascia l’auto presso il tuo appartamento.'],
-              ['2','Sant’Antonio Municipio','Raggiungi la fermata vicina alle case.'],
-              ['3','Bus diurno','Linee 6 e 6L nelle fasce diurne.'],
-              ['4','Piazzale Roma','Arrivi direttamente all’ingresso di Venezia.'],
-              ['5','Rientro H24','La linea N2 assicura il collegamento notturno.'],
-            ].map(([n,title,text])=><article key={n} className="rounded-[2rem] bg-white p-7 shadow-soft">
-              <div className="grid h-12 w-12 place-items-center rounded-full bg-gold font-black text-navy">{n}</div>
-              <h2 className="mt-5 font-serif text-3xl text-navy">{title}</h2>
-              <p className="mt-3 text-slate-600">{text}</p>
-            </article>)}
-          </div>
-          <div className="mt-8 rounded-[2rem] border-l-4 border-aqua bg-white p-7 shadow-soft">
-            <p className="font-bold text-navy">Informazioni sui trasporti</p>
-            <p className="mt-2 text-slate-600">Orari, frequenze e tariffe possono cambiare. Prima del viaggio verifica sempre le fonti ufficiali e acquista o valida correttamente il titolo di viaggio.</p><a href="https://actv.avmspa.it/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-5 py-3 font-bold text-white">Verifica orari e servizi ACTV ↗</a>
+              ['Di giorno','6 · 6L','Marghera → Piazzale Roma'],
+              ['Di notte','N2','Rientro da Venezia verso Marghera'],
+              ['In treno','Mestre → Santa Lucia','Corse regionali frequenti'],
+            ].map(([a,b,c])=><div key={a} className="grid grid-cols-[88px_1fr] gap-4 border-b border-navy/10 py-5 last:border-b-0"><span className="text-xs font-black uppercase tracking-[.14em] text-gold">{a}</span><span><strong className="block text-navy">{b}</strong><span className="mt-1 block text-sm text-slate-600">{c}</span></span></div>)}
           </div>
         </div>
       </section>
 
-      <section id="itinerario" className="pb-20 pt-12">
+      <section id="itinerario" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Venezia in un giorno" title="Un itinerario equilibrato, senza correre" text="Una proposta semplice per una prima visita, con tempo per osservare, fermarsi e cambiare programma."/>
-          <div className="relative">
-            <div className="absolute bottom-0 left-6 top-0 hidden w-px bg-gold/40 md:block"/>
-            <div className="space-y-5">
-              {itinerary.map(([time,title,text])=><article key={time} className="relative grid gap-4 rounded-[2rem] bg-cream p-7 md:ml-16 md:grid-cols-[120px_1fr]">
-                <div className="absolute -left-[53px] top-8 hidden h-5 w-5 rounded-full border-4 border-white bg-gold shadow md:block"/>
-                <div className="font-black tracking-[.12em] text-gold">{time}</div>
-                <div><h2 className="font-serif text-3xl text-navy">{title}</h2><p className="mt-2 text-slate-600">{text}</p></div>
-              </article>)}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-navy py-24 text-white">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="La nostra firma" title="Consigli che fanno davvero la differenza" text="Piccoli suggerimenti nati dall’esperienza quotidiana."/>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {tips.map(([title,text])=><article key={title} className="rounded-[2rem] bg-white/10 p-8">
-              <div className="text-2xl text-gold">✦</div>
-              <h2 className="mt-4 font-serif text-3xl">{title}</h2>
-              <p className="mt-3 text-white/70">{text}</p>
-            </article>)}
-          </div>
+          <SectionTitle eyebrow="Prima visita" title="Venezia in un giorno, senza trasformarla in una gara" text="Una traccia semplice: serve per dare un ordine alla giornata, non per obbligarti a seguire ogni tappa."/>
+          <ol className="mt-8 border-y border-slate-200 lg:grid lg:grid-cols-2 lg:gap-x-10">
+            {itinerary.map(([time,title,text])=><li key={time} className="grid grid-cols-[72px_1fr] gap-4 border-b border-slate-200 py-5 last:border-b-0 lg:[&:nth-last-child(-n+2)]:border-b-0"><span className="pt-1 text-xs font-black tracking-[.12em] text-gold">{time}</span><span><strong className="block font-serif text-2xl font-normal text-navy">{title}</strong><span className="mt-1.5 block leading-7 text-slate-600">{text}</span></span></li>)}
+          </ol>
         </div>
       </section>
 
       <HubCultureSection scope="venice" lang="it"/>
 
-      <section className="py-24">
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Orientarsi" title="Venezia e la laguna in una sola mappa" text="Una lettura illustrata dei principali punti di interesse e delle isole più conosciute."/>
-          <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-cream shadow-soft">
-            <Image src="/images/mappa-venezia-finale.webp" alt="Mappa illustrata dei principali punti di interesse di Venezia, con Canal Grande, San Marco, Rialto, Murano, Burano e Lido" width={1408} height={1056} className="h-auto w-full"/>
+          <SectionTitle eyebrow="Venezia per come viaggi" title="Bambini o cane? Abbiamo due guide dedicate." text="Qui teniamo solo l’essenziale. Per consigli, regole e idee complete apri la guida che riguarda davvero il tuo viaggio."/>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            <article className="group overflow-hidden rounded-[2rem] bg-cream"><div className="relative h-72"><Image src="/images/venezia-bambini-campo-nuova.webp" alt="Bambini che giocano in un campo veneziano" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover transition duration-700 group-hover:scale-[1.02]"/></div><div className="p-7 sm:p-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Venezia con bambini</p><h2 className="mt-3 font-serif text-4xl text-navy">Pause, vaporetto e piccole avventure</h2><p className="mt-4 leading-7 text-slate-600">{family[0][1]} {family[3][1]}</p><Link href="/journal/venezia-con-bambini" className="mt-6 inline-flex font-bold text-navy">Apri la guida per famiglie →</Link></div></article>
+            <article className="group overflow-hidden rounded-[2rem] bg-navy text-white"><div className="relative h-72"><Image src="/images/journal-venezia-cane.webp" alt="Visitare Venezia con il cane" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover transition duration-700 group-hover:scale-[1.02]"/></div><div className="p-7 sm:p-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Pet Friendly</p><h2 className="mt-3 font-serif text-4xl">Venezia insieme al tuo cane</h2><p className="mt-4 leading-7 text-white/75">{pet[0][1]} {pet[2][1]}</p><Link href="/journal/venezia-con-il-cane" className="mt-6 inline-flex font-bold text-gold">Apri la guida Pet Friendly →</Link></div></article>
           </div>
         </div>
       </section>
 
-      <section className="bg-cream py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[1fr_1.1fr] lg:px-8">
-          <div className="relative min-h-[390px] overflow-hidden rounded-[2rem] shadow-soft lg:min-h-[470px]">
-            <Image src="/images/venezia-bambini-campo-nuova.webp" alt="Bambini che giocano a pallone in un campo veneziano" fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover object-center"/>
-          </div>
-          <div>
-            <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Venezia con bambini</p>
-            <h2 className="mt-3 font-serif text-5xl text-navy">La città può diventare una grande avventura</h2>
-            <p className="mt-6 text-lg text-slate-600">Alterna musei, vaporetto, pause e piccole scoperte. Un programma troppo rigido è raramente la scelta migliore con i più piccoli.</p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {family.map(([title,text])=><article key={title} className="rounded-3xl bg-white p-6 shadow-soft">
-                <h3 className="font-serif text-2xl text-navy">{title}</h3><p className="mt-2 text-sm text-slate-600">{text}</p>
-              </article>)}
-            </div>
-          </div>
+      <section className="bg-navy py-16 text-white sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+          <div><p className="text-xs font-black uppercase tracking-[.22em] text-gold">La nostra firma</p><h2 className="mt-3 font-serif text-5xl">Sei piccoli consigli che fanno una grande differenza.</h2><p className="mt-5 leading-7 text-white/70">Niente regole rigide: sono solo accorgimenti semplici per goderti meglio la città.</p></div>
+          <div className="divide-y divide-white/15 border-y border-white/15 sm:grid sm:grid-cols-2 sm:divide-x sm:divide-y-0">{tips.map(([title,text],i)=><div key={title} className={`py-5 sm:px-6 ${i<4?'sm:border-b sm:border-white/15':''}`}><p className="text-xs font-black tracking-[.14em] text-gold">0{i+1}</p><h3 className="mt-2 font-serif text-2xl">{title}</h3><p className="mt-2 text-sm leading-6 text-white/70">{text}</p></div>)}</div>
         </div>
       </section>
 
-      <section className="py-24">
+      <section id="isole" className="bg-cream py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Pet Friendly" title="Venezia insieme al tuo cane" text="Con un po’ di organizzazione, anche il tuo compagno di viaggio può vivere una giornata piacevole in laguna."/>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {pet.map(([title,text])=><article key={title} className="rounded-[2rem] border border-slate-200 bg-white p-7">
-              <h2 className="font-serif text-3xl text-navy">{title}</h2><p className="mt-3 text-slate-600">{text}</p>
-            </article>)}
+          <SectionTitle eyebrow="Le isole" title="La laguna oltre il centro storico" text="Murano e Burano sono solo l’inizio. Scegli l’isola in base al tempo che hai e al tipo di giornata che vuoi vivere."/>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {islands.map(([title,text,image,href])=><article key={title} className="group overflow-hidden rounded-[1.75rem] bg-white"><div className="relative h-56 overflow-hidden"><Image src={image} alt={title} fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover transition duration-700 group-hover:scale-[1.03]"/></div><div className="p-6"><h2 className="font-serif text-3xl text-navy">{title}</h2><p className="mt-2.5 leading-7 text-slate-600">{text}</p><Link href={href} className="mt-5 inline-flex font-bold text-navy">Scopri l’isola →</Link></div></article>)}
           </div>
         </div>
       </section>
 
-      <section className="bg-cream py-24">
+      <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Le isole" title="La laguna oltre il centro storico" text="La laguna non finisce con Murano e Burano: ogni isola ha un carattere diverso e merita di essere scelta in base al tempo e al tipo di giornata."/>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {islands.map(([title,text,image,href])=><article key={title} className="overflow-hidden rounded-[2rem] bg-white shadow-soft">
-              <div className="relative h-64"><Image src={image} alt={title} fill sizes="(min-width:1024px) 33vw, 100vw" className="object-cover"/></div>
-              <div className="p-7"><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-3 text-slate-600">{text}</p><Link href={href} className="mt-5 inline-block font-bold text-gold">Scopri di più →</Link></div>
-            </article>)}
+          <div className="grid items-center gap-10 lg:grid-cols-[.72fr_1.28fr]">
+            <div><p className="text-xs font-black uppercase tracking-[.22em] text-gold">Orientarsi</p><h2 className="mt-3 font-serif text-5xl text-navy">Venezia e la laguna in una sola mappa</h2><p className="mt-5 leading-7 text-slate-600">Usala per capire le distanze tra centro storico, isole e principali punti di interesse; per il percorso esatto apri poi Google Maps.</p></div>
+            <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-cream"><Image src="/images/mappa-venezia-finale.webp" alt="Mappa illustrata dei principali punti di interesse di Venezia e della laguna" width={1408} height={1056} className="h-auto w-full"/></div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gold py-20 text-navy">
-        <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
-          <p className="text-xs font-black uppercase tracking-[.22em]">Il consiglio di Marghera Venice Apartments</p>
-          <h2 className="mt-4 font-serif text-5xl">Se hai almeno tre giorni, non fermarti a Venezia.</h2>
-          <p className="mx-auto mt-5 max-w-3xl text-lg text-navy/75">Il parcheggio privato ti permette di dedicare una giornata alla Riviera del Brenta, alle Colline del Prosecco o a una delle città d’arte del Veneto.</p>
-          <Link href="/scopri-il-veneto" className="mt-8 inline-block rounded-full bg-navy px-8 py-4 font-bold text-white">Scopri il Veneto</Link>
-        </div>
-      </section>
-
-      <section className="py-24">
-        <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Scegli la tua casa</p>
-          <h2 className="mt-3 font-serif text-5xl text-navy">Venezia ti aspetta. Ora scegli dove rientrare.</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">Rossi Apartment per famiglie e gruppi fino a 7 ospiti; Dimora Castelli per coppie, piccole famiglie e chi cerca tranquillità.</p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link href="/case/rossi-apartment" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Rossi Apartment</Link>
-            <Link href="/case/dimora-castelli" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Dimora Castelli</Link>
-          </div>
+      <section className="bg-gold py-16 text-navy sm:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8">
+          <div><p className="text-xs font-black uppercase tracking-[.22em]">Se hai più tempo</p><h2 className="mt-3 font-serif text-5xl">Venezia è solo l’inizio.</h2><p className="mt-5 max-w-xl text-lg leading-8 text-navy/75">Con il parcheggio privato puoi dedicare una giornata alla Riviera del Brenta, alle Colline del Prosecco o a una città d’arte del Veneto.</p><Link href="/scopri-il-veneto" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Scopri il Veneto →</Link></div>
+          <div className="border-t border-navy/20 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0"><p className="text-xs font-black uppercase tracking-[.22em]">Scegli la tua casa</p><h2 className="mt-3 font-serif text-4xl">Dove vuoi rientrare la sera?</h2><p className="mt-4 leading-7 text-navy/75">Rossi Apartment per famiglie e gruppi fino a 7 ospiti; Dimora Castelli per coppie, piccole famiglie e chi cerca tranquillità.</p><div className="mt-7 flex flex-wrap gap-3"><Link href="/case/rossi-apartment" className="rounded-full bg-white px-6 py-3 font-bold text-navy">Rossi Apartment</Link><Link href="/case/dimora-castelli" className="rounded-full border border-navy px-6 py-3 font-bold text-navy">Dimora Castelli</Link></div></div>
         </div>
       </section>
     </main>
     <Footer/>
-    <Script id="tourist-attraction-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-      '@context':'https://schema.org',
-      '@type':'TouristDestination',
-      name:'Venezia',
-      description:'Guida pratica a Venezia e alla laguna a cura di Marghera Venice Apartments.',
-      touristType:['Famiglie','Coppie','Viaggiatori con animali domestici'],
-      containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}
-    })}}/>
-  </>
+    <Script id="tourist-attraction-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'TouristDestination',name:'Venezia',description:'Guida pratica a Venezia e alla laguna a cura di Marghera Venice Apartments.',touristType:['Famiglie','Coppie','Viaggiatori con animali domestici'],containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}})}}/>
+  </>;
 }

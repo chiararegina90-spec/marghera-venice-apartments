@@ -21,8 +21,7 @@ const ui:Record<CultureLang,{
 };
 
 const genericMarkers:Record<CultureLang,string[]>={
- it:[],
- en:[],
+ it:[],en:[],
  de:['Ein Reiseziel, das Zeit verdient','Atmosphäre','Spaziergänge','Fotomotive'],
  fr:['Bien préparer votre visite de','Ambiance locale','Pause gourmande','Informations pratiques'],
  es:['Cómo preparar tu visita a','Ambiente local','Pausa gastronómica','Información práctica'],
@@ -43,19 +42,18 @@ export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang})
  const t=ui[lang]; const generic=isGeneric(data,lang); const base=prefix[lang];
  const apartmentPaths=lang==='it'?['/case/rossi-apartment','/case/dimora-castelli']:[`${base}/apartments/rossi-apartment`,`${base}/apartments/dimora-castelli`];
  return <>
-   {/* The story comes first: explain the destination before asking the reader to follow a route. */}
    <GuideEditorialEnhancement slug={data.slug} lang={lang}/>
 
    <section className="guide-practical-intro py-14 sm:py-16">
-    <div className="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-     <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft sm:p-9">
+    <div className="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[1.15fr_.85fr] lg:px-8">
+     <div className="border-b border-slate-200 pb-7 sm:pb-9 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-10">
       <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.overview}</p>
-      <h2 className="mt-3 font-serif text-4xl text-navy">{generic?t.overviewFallback(data.title):data.introTitle}</h2>
-      <div className="mt-5 space-y-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+      <h2 className="mt-3 max-w-3xl font-serif text-4xl text-navy">{generic?t.overviewFallback(data.title):data.introTitle}</h2>
+      <div className="mt-5 max-w-3xl space-y-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
        {generic?<p>{t.overviewFallbackText}</p>:data.intro.map(p=><p key={p}>{p}</p>)}
       </div>
      </div>
-     <aside className="rounded-[2rem] bg-navy p-7 text-white shadow-soft sm:p-9">
+     <aside className="self-start rounded-[1.5rem] bg-navy p-6 text-white sm:p-7">
       <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.before}</p>
       <h2 className="mt-3 font-serif text-3xl">{t.beforeTitle}</h2>
       <p className="mt-4 leading-7 text-white/76">{t.beforeText}</p>
@@ -67,8 +65,11 @@ export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang})
    {!generic&&data.highlights.length>0&&<section className="bg-cream py-14 sm:py-16">
     <div className="mx-auto max-w-7xl px-5 lg:px-8">
      <SectionTitle eyebrow={t.see} title={t.seeTitle(data.title)} text={t.seeText}/>
-     <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-      {data.highlights.map(([title,text])=><article key={title} className="rounded-[1.65rem] bg-white p-6 shadow-soft sm:p-7"><div className="text-lg text-gold">✦</div><h2 className="mt-3 font-serif text-2xl text-navy">{title}</h2><p className="mt-2.5 leading-7 text-slate-600">{text}</p></article>)}
+     <div className="divide-y divide-navy/10 border-y border-navy/10 md:grid md:grid-cols-2 md:divide-x md:divide-y-0">
+      {data.highlights.map(([title,text],i)=><article key={title} className="grid grid-cols-[36px_1fr] gap-3 py-5 md:px-6 md:first:pl-0 md:last:pr-0">
+       <div className="pt-1 text-xs font-black tracking-[.15em] text-gold">{String(i+1).padStart(2,'0')}</div>
+       <div><h2 className="font-serif text-2xl text-navy">{title}</h2><p className="mt-2 leading-7 text-slate-600">{text}</p></div>
+      </article>)}
      </div>
     </div>
    </section>}
@@ -77,21 +78,24 @@ export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang})
     <div className="mx-auto max-w-7xl px-5 lg:px-8">
      <SectionTitle eyebrow={t.itin} title={t.itinTitle(data.title)} text={t.itinText}/>
      <GuideItineraryIntro slug={data.slug} lang={lang}/>
-     <div className="grid gap-3.5">
-      {data.itinerary.map(([time,title,text])=><article key={`${time}-${title}`} className="grid gap-2.5 rounded-[1.65rem] bg-white/[.09] p-5 sm:grid-cols-[96px_1fr] sm:gap-4 sm:p-6"><div className="text-xs font-black uppercase tracking-[.14em] text-gold sm:pt-1">{time}</div><div><h2 className="font-serif text-2xl">{title}</h2><p className="mt-1.5 leading-7 text-white/72">{text}</p></div></article>)}
+     <div className="mt-8 border-y border-white/15">
+      {data.itinerary.map(([time,title,text])=><article key={`${time}-${title}`} className="grid gap-2 border-b border-white/10 py-5 last:border-b-0 sm:grid-cols-[110px_1fr] sm:gap-5 sm:py-6">
+       <div className="text-xs font-black uppercase tracking-[.14em] text-gold sm:pt-1">{time}</div>
+       <div><h2 className="font-serif text-2xl">{title}</h2><p className="mt-1.5 max-w-4xl leading-7 text-white/72">{text}</p></div>
+      </article>)}
      </div>
     </div>
    </section>
 
    <section className="py-14 sm:py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="grid gap-5 lg:grid-cols-2">
-    <div className="rounded-[2rem] bg-navy p-7 text-white shadow-soft sm:p-9"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.tip}</p><h2 className="mt-3 font-serif text-3xl sm:text-4xl">{data.adviceTitle}</h2><p className="mt-4 text-base leading-7 text-white/76 sm:text-lg sm:leading-8">{data.advice}</p></div>
-    {data.heartText?<div className="rounded-[2rem] border-l-4 border-aqua bg-cream p-7 sm:p-9"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.detail}</p><h2 className="mt-3 font-serif text-3xl text-navy">❤️ {data.heartTitle||t.detailFallback}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{data.heartText}</p></div>:<div className="rounded-[2rem] bg-cream p-7 sm:p-9"><h2 className="font-serif text-3xl text-navy">{t.unexpected}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{t.unexpectedText}</p></div>}
+    <div className="rounded-[1.65rem] bg-navy p-7 text-white sm:p-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.tip}</p><h2 className="mt-3 font-serif text-3xl sm:text-4xl">{data.adviceTitle}</h2><p className="mt-4 text-base leading-7 text-white/76 sm:text-lg sm:leading-8">{data.advice}</p></div>
+    {data.heartText?<div className="rounded-[1.65rem] border-l-4 border-aqua bg-cream p-7 sm:p-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.detail}</p><h2 className="mt-3 font-serif text-3xl text-navy">❤️ {data.heartTitle||t.detailFallback}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{data.heartText}</p></div>:<div className="rounded-[1.65rem] bg-cream p-7 sm:p-8"><h2 className="font-serif text-3xl text-navy">{t.unexpected}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{t.unexpectedText}</p></div>}
    </div></div></section>
 
    {data.historyText&&<section className="bg-gold py-14 text-navy sm:py-16"><div className="mx-auto max-w-5xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em]">{t.history}</p><h2 className="mt-3 font-serif text-4xl">{data.historyTitle}</h2><p className="mx-auto mt-4 max-w-3xl leading-7 text-navy/75 sm:text-lg sm:leading-8">{data.historyText}</p></div></section>}
 
-   <section className="py-14 sm:py-16"><div className="mx-auto max-w-5xl px-5 lg:px-8"><SectionTitle eyebrow={t.faq} title={t.faqTitle(data.title)} text={t.faqText}/><div className="space-y-3">{data.faq.map(([question,answer])=><details key={question} className="group rounded-[1.4rem] border border-slate-200 bg-white p-5 sm:p-6"><summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-xl text-navy sm:text-2xl"><span className="min-w-0">{question}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary><p className="mt-3 max-w-4xl leading-7 text-slate-600">{answer}</p></details>)}</div></div></section>
+   <section className="py-14 sm:py-16"><div className="mx-auto max-w-5xl px-5 lg:px-8"><SectionTitle eyebrow={t.faq} title={t.faqTitle(data.title)} text={t.faqText}/><div className="divide-y divide-slate-200 border-y border-slate-200">{data.faq.map(([question,answer])=><details key={question} className="group py-5"><summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-serif text-xl text-navy sm:text-2xl"><span className="min-w-0">{question}</span><span className="shrink-0 text-gold transition-transform group-open:rotate-45">+</span></summary><p className="mt-3 max-w-4xl leading-7 text-slate-600">{answer}</p></details>)}</div></div></section>
 
-   <section className="bg-cream py-14 sm:py-16"><div className="mx-auto max-w-6xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.related}</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.relatedTitle}</h2>{data.related.length>0&&<div className="mt-6 flex flex-wrap justify-center gap-2.5">{data.related.map(([label,href])=><Link key={href} href={localizedRelatedHref(href,lang)} className="rounded-full border border-navy px-5 py-2.5 text-sm font-bold text-navy transition hover:bg-navy hover:text-white">{label}</Link>)}</div>}<div className="mt-8 flex flex-wrap justify-center gap-3"><Link href={apartmentPaths[0]} className="rounded-full bg-gold px-7 py-3.5 font-bold text-navy">{t.apartments[0]}</Link><Link href={apartmentPaths[1]} className="rounded-full border border-navy px-7 py-3.5 font-bold text-navy">{t.apartments[1]}</Link></div></div></section>
+   <section className="bg-cream py-14 sm:py-16"><div className="mx-auto max-w-6xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.related}</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.relatedTitle}</h2>{data.related.length>0&&<div className="mt-6 flex flex-wrap justify-center gap-2.5">{data.related.map(([label,href])=><Link key={href} href={localizedRelatedHref(href,lang)} className="rounded-full border border-navy/25 px-5 py-2.5 text-sm font-bold text-navy transition hover:border-navy hover:bg-navy hover:text-white">{label}</Link>)}</div>}<div className="mt-8 flex flex-wrap justify-center gap-3"><Link href={apartmentPaths[0]} className="rounded-full bg-gold px-7 py-3.5 font-bold text-navy">{t.apartments[0]}</Link><Link href={apartmentPaths[1]} className="rounded-full border border-navy px-7 py-3.5 font-bold text-navy">{t.apartments[1]}</Link></div></div></section>
  </>;
 }

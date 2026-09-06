@@ -133,24 +133,7 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Perché sceglierla" title="Comoda in ogni dettaglio" text="Dimora Castelli unisce tranquillità, praticità e una posizione strategica per Venezia e il Veneto."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['Piano terra rialzato','Più semplice con valigie pesanti, passeggini o mobilità ridotta.'],
-            ['Circondata dal verde','Finestre affacciate sulla vegetazione e atmosfera rilassante.'],
-            ['Zanzariere','Presenti su tutte le finestre per arieggiare in tranquillità.'],
-            ['Clima centralizzato','Aria condizionata e pompa di calore da un unico pannello.'],
-            ['Giardino condominiale','Uno spazio sul retro per leggere, rilassarsi o stendere il bucato.'],
-            ['Venezia H24','Collegamenti diurni e notturni per muoverti senza vincoli.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] bg-cream p-8 shadow-soft">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
@@ -166,41 +149,9 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Ideale per" title="Scegli la casa che somiglia al tuo viaggio" text="Dimora Castelli è particolarmente adatta a chi cerca semplicità, tranquillità e accesso comodo."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {[
-            ['Coppie','Un rifugio raccolto e tranquillo dopo una giornata in città.'],
-            ['Piccole famiglie','Spazi funzionali fino a 5 ospiti e servizi Family Friendly.'],
-            ['Soggiorni di lavoro','Wi-Fi, cucina e una casa comoda per permanenze più lunghe.'],
-            ['Chi cerca tranquillità','Verde, silenzio e ambienti ben organizzati.'],
-          ].map(([title,copy])=><div key={title} className="rounded-[2rem] border border-slate-200 bg-white p-8">
-            <h3 className="font-serif text-3xl text-navy">{title}</h3>
-            <p className="mt-3 text-slate-600">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionTitle eyebrow="Una giornata tipo" title="Segui il tuo ritmo" text="Dimora Castelli rende semplice alternare Venezia, lavoro, relax e vita quotidiana."/>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            ['08:00','Colazione con calma nella cucina di casa.'],
-            ['09:00','Partenza verso Venezia con i collegamenti H24.'],
-            ['10:00','Musei, calli, isole o una giornata di lavoro.'],
-            ['18:00','Rientro senza fretta e cena in casa o nei dintorni.'],
-            ['21:00','Un libro, un po’ d’aria in giardino o relax sul divano.'],
-            ['23:00','Riposo in una casa silenziosa, circondata dal verde.'],
-          ].map(([time,copy])=><div key={time} className="rounded-[2rem] bg-white p-8 shadow-soft">
-            <div className="text-sm font-black uppercase tracking-[.18em] text-gold">{time}</div>
-            <p className="mt-3 font-serif text-2xl text-navy">{copy}</p>
-          </div>)}
-        </div>
-      </div>
-    </section>
+    
 
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -257,18 +208,6 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <section className="bg-cream py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-        <div>
-          <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Come raggiungerci</p>
-          <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">Facile da raggiungere con qualsiasi mezzo</h2>
-          <p className="mt-5 text-lg text-slate-600">Dimora Castelli dispone di parcheggio privato gratuito. Dalla stazione di Venezia Mestre puoi arrivare a piedi, con il tram T2 o in taxi; dagli aeroporti sono disponibili navette verso Mestre.</p>
-          <Link href="/come-raggiungere-venezia" className="mt-7 inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Come arrivare: trasporti, aeroporti e Venezia →</Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {['🚗 Parcheggio privato gratuito','🚋 Tram T2 da Venezia Mestre','✈️ Navette aeroportuali verso Mestre'].map((x)=><div key={x} className="rounded-2xl bg-white p-5 font-semibold text-navy shadow-soft">{x}</div>)}
-        </div>
-      </div>
-    </section>
+    
   </main><Footer/></>
 }

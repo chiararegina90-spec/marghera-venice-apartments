@@ -1,1 +1,0 @@
-import GuideTemplateLocalized from '@/components/GuideTemplateLocalized'; import type {GuideData} from '@/components/GuideTemplate'; export default function GuideTemplateZh({data}:{data:GuideData}){return <GuideTemplateLocalized lang="zh" data={data}/>}

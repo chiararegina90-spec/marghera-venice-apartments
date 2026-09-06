@@ -1,0 +1,23 @@
+MARGHERA VENICE APARTMENTS — UX REFRESH VALIDATION
+Date: 2026-09-07
+
+Active TS/TSX files parsed: 428
+Parse errors: 0
+Changed-file local import errors: 0
+Mixed IT/EN residue scan on refreshed English pages: 0 confirmed residues
+
+Changed files:
+- app/scopri-venezia/page.tsx
+- app/en/discover-venice/page.tsx
+- app/come-raggiungere-venezia/page.tsx
+- app/en/getting-to-venice/page.tsx
+- app/case/rossi-apartment/page.tsx
+- app/case/dimora-castelli/page.tsx
+- app/en/apartments/rossi-apartment/page.tsx
+- app/en/apartments/dimora-castelli/page.tsx
+- components/GuideBody.tsx
+- components/LocalizedParityPages.tsx
+- components/LocalizedRich.tsx
+- components/PublicLocalGuide.tsx
+
+Production domain intentionally not modified during preview phase.

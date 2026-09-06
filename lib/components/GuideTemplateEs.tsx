@@ -1,1 +1,0 @@
-import GuideTemplateLocalized from '@/components/GuideTemplateLocalized'; import type {GuideData} from '@/components/GuideTemplate'; export default function GuideTemplateEs({data}:{data:GuideData}){return <GuideTemplateLocalized lang="es" data={data}/>}
