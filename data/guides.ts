@@ -1,4 +1,4 @@
-import type {GuideData} from '@/components/GuideTemplate';
+import type {GuideData} from '@/data/guideTypes';
 
 export const guideData = {
   "pellestrina": {

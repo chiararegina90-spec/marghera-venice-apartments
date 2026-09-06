@@ -1,0 +1,24 @@
+export type GuideData = {
+  slug: string;
+  title: string;
+  kicker: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  badges: [string,string][];
+  introTitle: string;
+  intro: string[];
+  highlights: [string,string][];
+  experiences: [string,string][];
+  itinerary: [string,string,string][];
+  adviceTitle: string;
+  advice: string;
+  heartTitle?: string;
+  heartText?: string;
+  historyTitle?: string;
+  historyText?: string;
+  faq: [string,string][];
+  related: [string,string][];
+  officialLinks?: [string,string][];
+};

@@ -1,4 +1,4 @@
-import type {GuideData} from '@/components/GuideTemplate';
+import type {GuideData} from '@/data/guideTypes';
 
 const linksVenice:[string,string][]=[['Venezia Unica','https://www.veneziaunica.it/en/'],['ACTV / AVM','https://avm.avmspa.it/en']];
 const linksVeneto:[string,string][]=[['Offizielles Tourismusportal Venetien','https://www.veneto.eu/en/'],['Trenitalia','https://www.trenitalia.com/de.html']];

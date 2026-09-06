@@ -2845,6 +2845,51 @@ export const culturePlaces:CulturePlace[] = [
     "officialUrl": "https://www.comune.rovigo.it/",
     "mapsQuery": "Tempio della Beata Vergine del Soccorso – La Rotonda, Rovigo, Italia"
   }
+  ,{
+    "slug": "basilica-santi-maria-donato-murano",
+    "name": "Basilica dei Santi Maria e Donato",
+    "scope": "venice",
+    "kind": "church",
+    "city": "Murano",
+    "province": "Venezia",
+    "duration": "30m–45m",
+    "highlights": [
+      "mosaico absidale della Madonna orante",
+      "pavimento musivo medievale",
+      "abside romanica affacciata sul canale"
+    ],
+    "commonsQuery": "Basilica Santi Maria Donato Murano Venice",
+    "family": true,
+    "panorama": false,
+    "price": "€3,50",
+    "hours": "Lun–sab 09:00–17:00; dom 12:00–17:00",
+    "booking": "not_required",
+    "officialUrl": "https://www.sandonatomurano.it/basilica-dei-santi-maria-e-donato",
+    "mapsQuery": "Basilica dei Santi Maria e Donato, Murano, Venezia, Italia"
+  },
+  {
+    "slug": "basilica-santa-maria-assunta-torcello",
+    "name": "Basilica di Santa Maria Assunta di Torcello",
+    "scope": "venice",
+    "kind": "church",
+    "city": "Torcello",
+    "province": "Venezia",
+    "duration": "45m–1h 15m",
+    "highlights": [
+      "mosaici bizantini",
+      "Giudizio Universale",
+      "campanile e panorama sulla Laguna Nord"
+    ],
+    "commonsQuery": "Basilica Santa Maria Assunta Torcello Venice",
+    "family": true,
+    "panorama": true,
+    "price": "€5 basilica; €9 basilica + campanile",
+    "hours": "Mar–ott 10:30–18:00; nov–feb 10:00–17:00; chiuso 25 dicembre e 1 gennaio",
+    "booking": "recommended",
+    "officialUrl": "https://www.patriarcatovenezia.it/basilica-di-santa-maria-assunta-di-torcello/",
+    "mapsQuery": "Basilica di Santa Maria Assunta, Torcello, Venezia, Italia"
+  }
+
 ];
 
 export const veniceCulturePlaces=culturePlaces.filter(p=>p.scope==='venice');

@@ -5,6 +5,8 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import HubCultureSection from '@/components/HubCultureSection';
+import VenetoProvinceNavigator from '@/components/VenetoProvinceNavigator';
 
 export const metadata: Metadata = {
   title: 'Scopri il Veneto | Marghera Venice Apartments',
@@ -168,6 +170,8 @@ export default function ScopriIlVeneto(){
         </div>
       </div>
     </section>
+
+    <HubCultureSection scope="veneto" lang="it"/><VenetoProvinceNavigator lang="it"/>
 
     <section id="destinazioni" className="bg-cream py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">

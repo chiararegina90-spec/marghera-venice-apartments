@@ -24,11 +24,11 @@ const related = [
 
 export default function Article(){
   return <><Header/><main>
-    <article>
-      <section className="relative min-h-[72vh] overflow-hidden pt-20">
+    <article className="editorial-page">
+      <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
         <Image src="/images/journal-redentore.webp" alt="Festa del Redentore" fill priority sizes="100vw" className="object-cover"/>
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/75 to-navy/20"/>
-        <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8">
+        <div className="absolute inset-0 editorial-cover-shade"/>
+        <div className="relative mx-auto flex min-h-[calc(64svh-5rem)] max-w-7xl sm:min-h-[calc(72vh-5rem)] items-end px-5 pb-16 pt-20 lg:px-8">
           <div className="max-w-4xl text-white">
             <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href="/">Home</Link><span>›</span><Link href="/journal">Journal</Link><span>›</span><span className="text-gold">Festa del Redentore</span></nav>
             <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi • 17 luglio 2027</p>
@@ -42,7 +42,7 @@ export default function Article(){
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
           <p className="font-serif text-3xl leading-relaxed text-navy">Il Redentore nasce dal voto della città per la liberazione dalla peste del Cinquecento. Ancora oggi conserva un carattere profondamente veneziano: alla dimensione religiosa si affiancano la festa in barca, le cene all’aperto e lo spettacolo pirotecnico.</p>
           <div className="mt-14 space-y-12">
-            {sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]">
+            {sections.map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4">
               <div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div>
               <div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div>
             </section>)}

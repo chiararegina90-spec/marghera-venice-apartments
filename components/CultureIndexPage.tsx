@@ -15,7 +15,7 @@ export default function CultureIndexPage({lang,scope,places}:{lang:CultureLang;s
    <section className="bg-navy px-5 pb-16 pt-36 text-white sm:pb-20 lg:px-8"><div className="mx-auto max-w-7xl">
      <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white/70"><Link href={home}>{ui.home}</Link><span>›</span><Link href={guides}>{ui.guides}</Link><span>›</span><span className="text-gold">{title}</span></nav>
      <p className="mt-7 text-xs font-black uppercase tracking-[.22em] text-gold">{ui.eyebrow}</p>
-     <h1 className="mt-4 max-w-5xl font-serif text-[clamp(2.65rem,9vw,6rem)] leading-[.98] tracking-[-.02em]">{title}</h1>
+     <h1 className="mt-4 max-w-5xl font-serif text-[clamp(2.55rem,6vw,4.6rem)] leading-[.98] tracking-[-.02em]">{title}</h1>
      <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75 sm:text-xl">{subtitle}</p>
      <div className="mt-8 flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full border border-white/25 px-4 py-2">{places.length} {ui.places}</span><span className="rounded-full border border-white/25 px-4 py-2">⏱️ {ui.duration}</span><span className="rounded-full border border-white/25 px-4 py-2">🧒 {ui.families}</span><span className="rounded-full border border-white/25 px-4 py-2">🎟️ {ui.practical}</span></div>
    </div></section>

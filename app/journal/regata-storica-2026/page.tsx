@@ -22,21 +22,21 @@ const sections = [
 ];
 
 export default function Article(){
-  return <><Header/><main><article>
-    <section className="relative min-h-[72vh] overflow-hidden pt-20">
+  return <><Header/><main><article className="editorial-page">
+    <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
       <Image src="/images/journal-regata-storica-2026.webp" alt="Corteo storico della Regata Storica di Venezia sul Canal Grande" fill priority sizes="100vw" className="object-cover object-center"/>
-      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/75 to-navy/20"/>
-      <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 lg:px-8"><div className="max-w-4xl text-white">
+      <div className="absolute inset-0 editorial-cover-shade"/>
+      <div className="relative mx-auto flex min-h-[calc(64svh-5rem)] max-w-7xl sm:min-h-[calc(72vh-5rem)] items-end px-5 pb-16 pt-20 lg:px-8"><div className="max-w-4xl text-white">
         <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap items-center gap-2 text-sm text-white/70"><Link href="/">Home</Link><span>›</span><Link href="/journal">Journal</Link><span>›</span><span className="text-gold">Regata Storica 2026</span></nav>
         <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Eventi</p>
-        <h1 className="mt-4 break-words font-serif text-[clamp(3rem,9vw,6rem)] leading-none">Regata Storica di Venezia 2026</h1>
+        <h1 className="mt-4 break-words editorial-hero-title font-serif">Regata Storica di Venezia 2026</h1>
         <p className="mt-6 max-w-3xl text-xl text-white/80">Domenica 6 settembre il Canal Grande torna protagonista tra corteo storico, voga alla veneta e grandi regate.</p>
       </div></div>
     </section>
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
       <p className="font-serif text-3xl leading-relaxed text-navy">Ogni prima domenica di settembre Venezia celebra uno degli appuntamenti più spettacolari e sentiti della sua tradizione. La Regata Storica unisce storia, sport, costumi d’epoca e partecipazione popolare, trasformando il Canal Grande nel grande palcoscenico della voga alla veneta.</p>
-      <div className="mt-14 space-y-12">{sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div>
+      <div className="mt-14 space-y-12">{sections.map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div>
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">

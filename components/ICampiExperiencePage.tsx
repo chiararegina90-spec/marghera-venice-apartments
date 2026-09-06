@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialHero from '@/components/EditorialHero';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 type Section={title:string;text:string};
@@ -103,19 +104,17 @@ const waText:Record<Lang,string>={
 export default function ICampiExperiencePage({lang}:{lang:Lang}){
  const t=copy[lang];
  const wa=`https://wa.me/393514462261?text=${encodeURIComponent(waText[lang])}`;
- return <><Header lang={lang}/><main><article>
-  <section className="bg-navy pt-20 text-white">
-   <div className="mx-auto max-w-7xl px-5 pb-10 pt-12 lg:px-8">
-    <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap items-center gap-2 text-sm text-white/70"><Link href={homeHref[lang]}>{t.home}</Link><span>›</span><Link href={experienceHref[lang]}>{t.experiences}</Link><span>›</span><span className="text-gold">I Campi</span></nav>
-    <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.kicker}</p>
-    <h1 className="mt-4 max-w-5xl break-words font-serif text-[clamp(3rem,8vw,5.5rem)] leading-none">{t.title}</h1>
-    <p className="mt-5 font-serif text-2xl text-gold/90">{t.subtitle}</p>
-    <p className="mt-6 max-w-3xl text-xl text-white/80">{t.lead}</p>
-   </div>
-   <div className="mx-auto max-w-7xl px-5 pb-16 lg:px-8"><div className="relative aspect-video overflow-hidden rounded-[2rem] bg-white shadow-soft"><Image src="/images/experience-i-campi-cover.webp" alt="Azienda Agricola I Campi tra i vigneti della Val d’Illasi" fill priority sizes="100vw" className="object-cover"/></div></div>
-  </section>
-
-  <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="space-y-12">{t.sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div></div></section>
+ return <><Header lang={lang}/><main><article className="editorial-page">
+  <EditorialHero
+   image="/images/experience-i-campi-cover.webp"
+   imageAlt="Azienda Agricola I Campi tra i vigneti della Val d’Illasi"
+   crumbs={[{label:t.home,href:homeHref[lang]},{label:t.experiences,href:experienceHref[lang]},{label:'I Campi'}]}
+   eyebrow={t.kicker}
+   title={t.title}
+   subtitle={<>{t.subtitle}<br/><span className="mt-3 block text-white/80">{t.lead}</span></>}
+   strongShade
+  />
+  <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="space-y-12">{t.sections.map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div></div></section>
 
   <section className="bg-cream py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy">{t.awardsTitle}</h2><p className="mt-5 text-lg leading-8 text-slate-600">{t.awards}</p><p className="mt-5 rounded-2xl bg-white p-5 text-sm leading-6 text-slate-600"><strong>{t.awardsNote}</strong></p></div></section>
 

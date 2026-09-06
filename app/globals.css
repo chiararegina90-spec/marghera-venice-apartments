@@ -55,13 +55,13 @@ main { overflow-x: clip; }
   h1[class*="text-6xl"],
   h1[class*="text-7xl"],
   h1[class*="text-8xl"] {
-    font-size: clamp(2.55rem, 12vw, 3.75rem) !important;
+    font-size: clamp(2.2rem, 9.2vw, 2.95rem) !important;
     line-height: 1 !important;
   }
 
   h2[class*="text-5xl"],
   h2[class*="text-6xl"] {
-    font-size: clamp(2rem, 9vw, 3rem) !important;
+    font-size: clamp(1.65rem, 6.8vw, 2.05rem) !important;
     line-height: 1.08 !important;
   }
 
@@ -71,7 +71,7 @@ main { overflow-x: clip; }
   }
 
   .mobile-tight-title {
-    font-size: clamp(2.8rem, 13vw, 4rem);
+    font-size: clamp(2.35rem, 10.5vw, 3.25rem);
     line-height: .98;
   }
 }
@@ -127,4 +127,325 @@ button[class*="rounded-full"] {
   white-space: normal;
   text-align: center;
   line-height: 1.2;
+}
+
+
+/* Editorial system — common hierarchy for Journal, destination guides and experiences */
+.editorial-page {
+  --editorial-body: 1.08rem;
+  --editorial-leading: 1.78;
+}
+
+.editorial-page .editorial-hero-title,
+.editorial-page > section:first-child h1 {
+  font-size: clamp(2.45rem, 5.8vw, 4.7rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.editorial-page .editorial-hero-subtitle,
+.editorial-page > section:first-child p.text-xl {
+  font-size: clamp(1.05rem, 2vw, 1.3rem) !important;
+  line-height: 1.55 !important;
+}
+
+.editorial-page .editorial-lead,
+.editorial-page p.font-serif.text-3xl.leading-relaxed {
+  font-size: clamp(1.32rem, 2.25vw, 1.65rem) !important;
+  line-height: 1.55 !important;
+}
+
+.editorial-page .editorial-number,
+.editorial-page div.font-serif.text-5xl.text-gold {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(1.05rem, 2vw, 1.35rem) !important;
+  line-height: 1.1 !important;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.editorial-page .editorial-h2,
+.editorial-page h2.font-serif.text-4xl,
+.editorial-page h2.font-serif.text-5xl,
+.editorial-page h2.font-serif.text-6xl {
+  font-size: clamp(1.72rem, 3.25vw, 2.35rem) !important;
+  line-height: 1.13 !important;
+  letter-spacing: -.015em;
+}
+
+.editorial-page .editorial-h3,
+.editorial-page h3.font-serif.text-3xl {
+  font-size: clamp(1.45rem, 3vw, 1.9rem) !important;
+  line-height: 1.2 !important;
+}
+
+.editorial-page .editorial-body,
+.editorial-page p.text-lg.leading-8,
+.editorial-page p.leading-8.text-slate-600 {
+  font-size: var(--editorial-body) !important;
+  line-height: var(--editorial-leading) !important;
+}
+
+.editorial-page blockquote.font-serif.text-4xl,
+.editorial-page blockquote.font-serif.text-5xl,
+.editorial-page p.font-serif.text-3xl:not(.editorial-lead) {
+  font-size: clamp(1.5rem, 3.3vw, 2.15rem) !important;
+  line-height: 1.35 !important;
+}
+
+.editorial-page > section.py-24,
+.editorial-page > section[class*="py-24"] {
+  padding-top: 3.9rem !important;
+  padding-bottom: 3.9rem !important;
+}
+.editorial-page > section.py-20,
+.editorial-page > section[class*="py-20"] {
+  padding-top: 3.45rem !important;
+  padding-bottom: 3.45rem !important;
+}
+.editorial-page > section.py-16,
+.editorial-page > section[class*="py-16"] {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.editorial-page .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 2.35rem !important; }
+.editorial-page .mt-14 { margin-top: 2.5rem !important; }
+.editorial-page .mt-12 { margin-top: 2.1rem !important; }
+.editorial-page .mt-10 { margin-top: 1.85rem !important; }
+.editorial-page .mt-8 { margin-top: 1.55rem !important; }
+
+/* Integrated cover: the gradient protects light imagery only where copy needs contrast. */
+.editorial-cover-shade {
+  background:
+    linear-gradient(180deg, rgba(4,24,39,.16) 0%, rgba(4,24,39,.25) 32%, rgba(4,24,39,.84) 100%),
+    linear-gradient(90deg, rgba(4,24,39,.64) 0%, rgba(4,24,39,.28) 58%, rgba(4,24,39,.06) 100%);
+}
+
+@media (max-width: 767px) {
+  .editorial-page { --editorial-body: 1.03rem; --editorial-leading: 1.7; }
+  .editorial-page .editorial-hero-title,
+  .editorial-page > section:first-child h1 {
+    font-size: clamp(2.2rem, 9.2vw, 2.9rem) !important;
+    line-height: 1 !important;
+  }
+  .editorial-page .editorial-lead,
+  .editorial-page p.font-serif.text-3xl.leading-relaxed {
+    font-size: clamp(1.22rem, 4.8vw, 1.42rem) !important;
+    line-height: 1.5 !important;
+  }
+  .editorial-page .editorial-h2,
+  .editorial-page h2.font-serif.text-4xl,
+  .editorial-page h2.font-serif.text-5xl,
+  .editorial-page h2.font-serif.text-6xl {
+    font-size: clamp(1.5rem, 6.2vw, 1.85rem) !important;
+    line-height: 1.15 !important;
+  }
+  .editorial-page > section.py-24,
+  .editorial-page > section[class*="py-24"],
+  .editorial-page > section.py-20,
+  .editorial-page > section[class*="py-20"] {
+    padding-top: 2.55rem !important;
+    padding-bottom: 2.55rem !important;
+  }
+  .editorial-page > section.py-16,
+  .editorial-page > section[class*="py-16"] {
+    padding-top: 2.3rem !important;
+    padding-bottom: 2.3rem !important;
+  }
+  .editorial-page .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.85rem !important; }
+  .editorial-page .mt-14 { margin-top: 2rem !important; }
+  .editorial-page .mt-12 { margin-top: 1.75rem !important; }
+  .editorial-page .mt-10 { margin-top: 1.55rem !important; }
+  .editorial-page .mt-8 { margin-top: 1.35rem !important; }
+  .editorial-page blockquote.font-serif.text-4xl,
+  .editorial-page blockquote.font-serif.text-5xl,
+  .editorial-page p.font-serif.text-3xl:not(.editorial-lead) {
+    font-size: clamp(1.28rem, 5.2vw, 1.55rem) !important;
+    line-height: 1.38 !important;
+  }
+  .editorial-page a.font-serif.text-2xl {
+    font-size: 1.22rem !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Site-wide rhythm guardrails — keep older pages visually aligned with the new editorial system. */
+main section[class*="py-24"] {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+main section[class*="py-20"] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+main h2[class*="text-5xl"] {
+  font-size: clamp(2rem, 3.5vw, 2.8rem) !important;
+  line-height: 1.1 !important;
+}
+main h3[class*="text-4xl"] {
+  font-size: clamp(1.65rem, 3vw, 2.2rem) !important;
+  line-height: 1.15 !important;
+}
+
+@media (min-width: 768px) {
+  main h1[class*="md:text-8xl"] {
+    font-size: clamp(3.35rem, 5.5vw, 4.5rem) !important;
+    line-height: 1 !important;
+  }
+  main h1[class*="md:text-7xl"] {
+    font-size: clamp(3.2rem, 5vw, 4.2rem) !important;
+    line-height: 1 !important;
+  }
+  main h2[class*="md:text-6xl"] {
+    font-size: clamp(2.4rem, 4vw, 3.25rem) !important;
+    line-height: 1.08 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  main section[class*="py-24"],
+  main section[class*="py-20"] {
+    padding-top: 2.6rem !important;
+    padding-bottom: 2.6rem !important;
+  }
+  main section[class*="py-16"] {
+    padding-top: 2.3rem !important;
+    padding-bottom: 2.3rem !important;
+  }
+}
+
+/* 2026-09-06 full-site visual audit
+   Shared guardrails for pages created in different development phases. */
+:root {
+  --page-section-y: 4rem;
+  --page-section-y-mobile: 2.35rem;
+  --content-gap: 1.5rem;
+  --content-gap-mobile: 1.15rem;
+}
+
+/* A readable hierarchy wins over oversized display type. */
+main h1[class*="text-8xl"],
+main h1[class*="text-7xl"],
+main h1[class*="text-6xl"] {
+  font-size: clamp(2.55rem, 5.5vw, 4.55rem) !important;
+  line-height: 1 !important;
+  letter-spacing: -.025em;
+}
+main h2[class*="text-6xl"],
+main h2[class*="text-5xl"] {
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem) !important;
+  line-height: 1.1 !important;
+}
+main h2[class*="text-4xl"],
+main h3[class*="text-4xl"] {
+  font-size: clamp(1.65rem, 3vw, 2.18rem) !important;
+  line-height: 1.14 !important;
+}
+main h3[class*="text-3xl"],
+main article h2[class*="text-3xl"] {
+  font-size: clamp(1.4rem, 2.6vw, 1.82rem) !important;
+  line-height: 1.18 !important;
+}
+
+/* Repeated editorial blocks: number is a label, not a competing headline. */
+.editorial-section-row {
+  align-items: start;
+}
+.editorial-section-row > :first-child {
+  padding-top: .18rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.15 !important;
+  font-weight: 900 !important;
+  letter-spacing: .12em !important;
+}
+.editorial-section-row > :nth-child(2) > h2 {
+  margin-top: 0 !important;
+}
+
+/* FAQ and related links should remain scannable on phones. */
+.editorial-page summary[class*="text-2xl"],
+.editorial-page a[class*="text-2xl"] {
+  font-size: clamp(1.12rem, 2.5vw, 1.35rem) !important;
+  line-height: 1.3 !important;
+}
+
+/* Functional info cards: slightly tighter than editorial cards. */
+.culture-detail section,
+.culture-directory section {
+  scroll-margin-top: 6.5rem;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-section-y: var(--page-section-y-mobile);
+    --content-gap: var(--content-gap-mobile);
+  }
+
+  main h1[class*="text-8xl"],
+  main h1[class*="text-7xl"],
+  main h1[class*="text-6xl"],
+  main .editorial-hero-title {
+    font-size: clamp(2.05rem, 8.8vw, 2.75rem) !important;
+    line-height: 1.01 !important;
+  }
+  main h2[class*="text-6xl"],
+  main h2[class*="text-5xl"] {
+    font-size: clamp(1.52rem, 6.1vw, 1.88rem) !important;
+    line-height: 1.14 !important;
+  }
+  main h2[class*="text-4xl"],
+  main h3[class*="text-4xl"] {
+    font-size: clamp(1.42rem, 5.7vw, 1.75rem) !important;
+  }
+  main h3[class*="text-3xl"],
+  main article h2[class*="text-3xl"] {
+    font-size: clamp(1.28rem, 5.2vw, 1.58rem) !important;
+  }
+
+  /* Older pages used large vertical utilities liberally. Keep breathing room without endless scrolling. */
+  main section[class*="py-24"],
+  main section[class*="py-20"],
+  main section[class*="py-16"] {
+    padding-top: var(--page-section-y-mobile) !important;
+    padding-bottom: var(--page-section-y-mobile) !important;
+  }
+  main [class~="mt-14"] { margin-top: 1.75rem !important; }
+  main [class~="mt-12"] { margin-top: 1.6rem !important; }
+  main [class~="mt-10"] { margin-top: 1.45rem !important; }
+  main [class~="mt-8"]  { margin-top: 1.25rem !important; }
+  main [class~="gap-14"] { gap: 1.5rem !important; }
+  main [class~="gap-12"] { gap: 1.4rem !important; }
+  main [class~="gap-10"] { gap: 1.3rem !important; }
+  main [class~="space-y-12"] > :not([hidden]) ~ :not([hidden]) { margin-top: 1.6rem !important; }
+  main [class~="space-y-10"] > :not([hidden]) ~ :not([hidden]) { margin-top: 1.45rem !important; }
+
+  /* Cards designed on desktop used 32px padding; 22–24px reads better on a 360–430px screen. */
+  main [class~="p-8"] { padding: 1.45rem !important; }
+  main [class~="p-7"] { padding: 1.35rem !important; }
+  main [class~="p-6"] { padding: 1.2rem !important; }
+
+  .editorial-section-row {
+    grid-template-columns: 1fr !important;
+    gap: .35rem !important;
+  }
+  .editorial-section-row > :first-child {
+    padding-top: 0;
+    font-size: .86rem !important;
+    letter-spacing: .14em !important;
+  }
+
+  .editorial-page .editorial-hero-subtitle {
+    font-size: 1.05rem !important;
+    line-height: 1.48 !important;
+  }
+
+  /* Keep the hero cinematic, but do not force a full-screen poster before content starts. */
+  .editorial-page > section:first-child,
+  .culture-detail > section:first-of-type {
+    min-height: min(68svh, 620px) !important;
+  }
 }

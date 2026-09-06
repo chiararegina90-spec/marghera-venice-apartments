@@ -3,8 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import PracticalGuideCards from '@/components/PracticalGuideCards';
-import CultureGuidePromoCards from '@/components/CultureGuidePromoCards';
+import GuideDirectoryIndex from '@/components/GuideDirectoryIndex';
 
 export const metadata: Metadata = {
   title: 'Guide di viaggio | Marghera Venice Apartments',
@@ -148,26 +147,7 @@ export default function GuideIndex(){
       </div>
     </section>
 
-    <PracticalGuideCards />
-    <CultureGuidePromoCards lang="it"/>
-    <section className="bg-cream py-24">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-2">
-          {guides.map((guide)=><article key={guide.href} className="overflow-hidden rounded-[2rem] bg-white shadow-soft">
-            <div className="relative h-64 sm:h-72 lg:h-80">
-              <Image src={guide.image} alt={guide.alt} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover"/>
-            </div>
-            <div className="p-6 sm:p-8">
-              <p className="text-xs font-black uppercase tracking-[.18em] text-gold">{guide.subtitle}</p>
-              <h2 className="mt-3 font-serif text-4xl sm:text-5xl text-navy">{guide.title}</h2>
-              <p className="mt-4 text-lg text-slate-600">{guide.text}</p>
-              <Link href={guide.href} className="mt-7 inline-flex rounded-full bg-gold px-6 py-3 font-bold text-navy">Apri la guida</Link>
-            </div>
-          </article>)}
-        </div>
-      </div>
-    </section>
-
+    <GuideDirectoryIndex lang="it" items={guides.map(g=>({slug:g.href.split('/').pop()!,title:g.title,subtitle:g.subtitle,text:g.text,image:g.image,alt:g.alt}))}/>
     
   </main><Footer/></>
 }

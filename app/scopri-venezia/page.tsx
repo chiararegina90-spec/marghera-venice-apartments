@@ -5,6 +5,7 @@ import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import HubCultureSection from '@/components/HubCultureSection';
 
 export const metadata: Metadata = {
   title: 'Scopri Venezia | Marghera Venice Apartments',
@@ -51,9 +52,12 @@ const pet = [
 ];
 
 const islands = [
-  ['Murano','Vetro, fornaci e una passeggiata semplice da organizzare.','/images/murano-glass.webp','/guide/murano'],
-  ['Burano','Case colorate, merletti e scorci fotografici.','/images/burano-canale.webp','/guide/burano'],
-  ['Lido','Spiaggia, biciclette e un volto più rilassato della laguna.','/images/lido-venezia-spiaggia.webp','/guide/lido-di-venezia'],
+  ['Murano','Vetro, fornaci e una storia produttiva che merita più di una visita veloce.','/images/murano-glass.webp','/guide/murano'],
+  ['Burano','Colori, pesca e merletto: molto più di uno sfondo fotografico.','/images/burano-canale.webp','/guide/burano'],
+  ['Lido','Mare, Liberty, cinema, Malamocco e biciclette.','/images/lido-venezia-spiaggia.webp','/guide/lido-di-venezia'],
+  ['Pellestrina','Borghi di pescatori, Murazzi e laguna da attraversare lentamente.','/images/guide-pellestrina-final.webp','/guide/pellestrina'],
+  ['Sant’Erasmo','L’orto di Venezia: campi, carciofi, biciclette e Bacan.','/images/guide-sant-erasmo-final.webp','/guide/sant-erasmo'],
+  ['Certosa','Una pausa verde vicinissima alla città, tra laguna e spazi aperti.','/images/guide-certosa-final.webp','/guide/certosa'],
 ];
 
 export default function ScopriVenezia(){
@@ -131,6 +135,8 @@ export default function ScopriVenezia(){
         </div>
       </section>
 
+      <HubCultureSection scope="venice" lang="it"/>
+
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionTitle eyebrow="Orientarsi" title="Venezia e la laguna in una sola mappa" text="Una lettura illustrata dei principali punti di interesse e delle isole più conosciute."/>
@@ -171,8 +177,8 @@ export default function ScopriVenezia(){
 
       <section className="bg-cream py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionTitle eyebrow="Le isole" title="La laguna oltre il centro storico" text="Murano, Burano e Lido possono diventare una gita dedicata o una tappa di un soggiorno più lungo."/>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <SectionTitle eyebrow="Le isole" title="La laguna oltre il centro storico" text="La laguna non finisce con Murano e Burano: ogni isola ha un carattere diverso e merita di essere scelta in base al tempo e al tipo di giornata."/>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {islands.map(([title,text,image,href])=><article key={title} className="overflow-hidden rounded-[2rem] bg-white shadow-soft">
               <div className="relative h-64"><Image src={image} alt={title} fill sizes="(min-width:1024px) 33vw, 100vw" className="object-cover"/></div>
               <div className="p-7"><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-3 text-slate-600">{text}</p><Link href={href} className="mt-5 inline-block font-bold text-gold">Scopri di più →</Link></div>

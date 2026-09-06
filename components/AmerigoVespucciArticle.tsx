@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialHero from '@/components/EditorialHero';
 
 type Locale='it'|'en'|'de'|'fr'|'es'|'zh';
 type Section={title:string;text:string};
@@ -201,18 +202,18 @@ export default function AmerigoVespucciArticle({lang}:{lang:Locale}){
     ]
   };
 
-  return <><Header lang={lang}/><main><article>
+  return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(graph)}}/>
 
-    <section className="bg-navy pt-20 text-white">
-      <div className="mx-auto max-w-7xl px-5 pb-10 pt-12 lg:px-8">
-        <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={prefix||'/'}>{c.home}</Link><span>›</span><Link href={`${prefix}/journal`}>{c.journal}</Link><span>›</span><span className="text-gold">Amerigo Vespucci</span></nav>
-        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{c.category} • {c.eventDate}</p>
-        <h1 className="mt-4 max-w-6xl font-serif text-[clamp(3rem,8vw,6rem)] leading-[.95]">{c.title}</h1>
-        <p className="mt-6 max-w-4xl text-xl leading-8 text-white/80">{c.subtitle}</p>
-      </div>
-      <div className="mx-auto max-w-7xl px-5 pb-16 lg:px-8"><div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-soft md:aspect-[16/9]"><Image src={images.cover} alt={c.imageAlt.cover} fill priority sizes="100vw" className="object-cover object-center"/></div></div>
-    </section>
+    <EditorialHero
+      image={images.cover}
+      imageAlt={c.imageAlt.cover}
+      crumbs={[{label:c.home,href:prefix||'/'},{label:c.journal,href:`${prefix}/journal`},{label:'Amerigo Vespucci'}]}
+      eyebrow={<>{c.category} • {c.eventDate}</>}
+      title={c.title}
+      subtitle={c.subtitle}
+      strongShade
+    />
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
       <p className="font-serif text-3xl leading-relaxed text-navy">{c.lead}</p>
@@ -220,19 +221,19 @@ export default function AmerigoVespucciArticle({lang}:{lang:Locale}){
     </div></section>
 
     <section className="pb-20"><div className="mx-auto max-w-4xl space-y-12 px-5 lg:px-8">
-      {c.sections.slice(0,3).map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
+      {c.sections.slice(0,3).map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] shadow-soft md:aspect-[16/9]"><Image src={images.sails} alt={c.imageAlt.sails} fill sizes="100vw" className="object-cover"/></div></div></section>
 
     <section className="py-20"><div className="mx-auto max-w-4xl space-y-12 px-5 lg:px-8">
-      {c.sections.slice(3,5).map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+4).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
+      {c.sections.slice(3,5).map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+4).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
     </div></section>
 
     <section className="bg-navy py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] shadow-soft md:aspect-[16/9]"><Image src={images.tricolor} alt={c.imageAlt.tricolor} fill sizes="100vw" className="object-cover"/></div></div></section>
 
     <section className="py-20"><div className="mx-auto max-w-4xl space-y-12 px-5 lg:px-8">
-      {c.sections.slice(5,7).map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+6).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
+      {c.sections.slice(5,7).map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+6).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-5xl px-5 lg:px-8">
@@ -242,7 +243,7 @@ export default function AmerigoVespucciArticle({lang}:{lang:Locale}){
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">FAQ • AMERIGO VESPUCCI VENEZIA 2026</p><h2 className="mt-3 font-serif text-4xl text-navy">{c.faqTitle}</h2><div className="mt-8 space-y-4">{c.faqs.map(([question,answer])=><details key={question} className="group rounded-2xl border border-navy/10 bg-cream p-6"><summary className="cursor-pointer list-none pr-8 font-serif text-2xl text-navy">{question}<span className="float-right font-sans text-gold transition group-open:rotate-45">+</span></summary><p className="mt-4 text-lg leading-8 text-slate-600">{answer}</p></details>)}</div></div></section>
 
-    <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><section className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">08</div><div><h2 className="font-serif text-4xl text-navy">{c.sections[7].title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{c.sections[7].text}</p></div></section></div></section>
+    <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><section className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">08</div><div><h2 className="font-serif text-4xl text-navy">{c.sections[7].title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{c.sections[7].text}</p></div></section></div></section>
 
     <section className="bg-navy py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] shadow-soft md:aspect-[16/9]"><Image src={images.night} alt={c.imageAlt.night} fill sizes="100vw" className="object-cover object-center"/></div><div className="mx-auto mt-10 max-w-4xl text-center text-white"><p className="text-xs font-black uppercase tracking-[.24em] text-gold">NON CHI COMINCIA MA QUEL CHE PERSEVERA</p><p className="mt-5 font-serif text-4xl leading-tight md:text-5xl">{c.closing}</p></div></div></section>
 

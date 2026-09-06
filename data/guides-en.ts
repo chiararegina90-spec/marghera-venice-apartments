@@ -1,4 +1,4 @@
-import type {GuideData} from '@/components/GuideTemplate';
+import type {GuideData} from '@/data/guideTypes';
 
 const commonFaq = (name:string):[string,string][] => [
   [`How much time should I allow for ${name}?`,`For a relaxed first visit, allow at least half a day; a full day gives you more time for meals, detours and slower exploration.`],

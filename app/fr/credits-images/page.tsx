@@ -1,0 +1,1 @@
+import type {Metadata} from 'next'; import ImageCreditsPage from '@/components/ImageCreditsPage'; export const metadata:Metadata={title:'Crédits images | Marghera Venice Apartments',robots:{index:false,follow:true}}; export default function Page(){return <ImageCreditsPage lang="fr"/>}

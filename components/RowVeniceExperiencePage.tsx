@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialHero from '@/components/EditorialHero';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 
@@ -27,19 +28,19 @@ const lessonHref:Record<Lang,string>={it:'https://rowvenice.org/it/rv-venetian-r
 
 export default function RowVeniceExperiencePage({lang}:{lang:Lang}){
  const t=copy[lang];
- return <><Header lang={lang==='it'?undefined:lang}/><main>
-  <section className="bg-navy pt-20 text-white">
-   <div className="mx-auto max-w-7xl px-5 pb-10 pt-12 lg:px-8">
-    <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={homeHref[lang]}>{t.home}</Link><span>›</span><Link href={experienceHref[lang]}>{t.experiences}</Link><span>›</span><span className="text-gold">Row Venice</span></nav>
-    <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.kicker}</p>
-    <h1 className="mt-4 max-w-5xl font-serif text-[clamp(3rem,8vw,5.5rem)] leading-none">{t.title}</h1>
-    <p className="mt-6 max-w-3xl text-xl text-white/80">{t.subtitle}</p>
-   </div>
-   <div className="mx-auto max-w-7xl px-5 pb-16 lg:px-8"><div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] bg-white shadow-soft"><Image src="/images/experience-row-venice-cover.webp" alt="Row Venice – voga alla veneta" fill priority sizes="100vw" className="object-cover"/></div></div>
-  </section>
+ return <><Header lang={lang==='it'?undefined:lang}/><main className="editorial-page">
+  <EditorialHero
+   image="/images/experience-row-venice-cover.webp"
+   imageAlt="Row Venice – voga alla veneta"
+   crumbs={[{label:t.home,href:homeHref[lang]},{label:t.experiences,href:experienceHref[lang]},{label:'Row Venice'}]}
+   eyebrow={t.kicker}
+   title={t.title}
+   subtitle={t.subtitle}
+   strongShade
+  />
   <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
    <p className="font-serif text-3xl leading-relaxed text-navy">{t.intro}</p>
-   <div className="mt-14 space-y-12">{t.sections.map((s,i)=><section key={s.title} className="grid gap-5 md:grid-cols-[70px_1fr]"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div>
+   <div className="mt-14 space-y-12">{t.sections.map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div>
   </div></section>
   <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">
    <div className="rounded-[2rem] bg-gold p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.22em]">Marghera Venice Apartments</p><p className="mt-4 font-serif text-3xl">{t.tip}</p></div>

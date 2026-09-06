@@ -1,0 +1,18 @@
+VALIDATION REPORT — SUPER REFACTOR 2026-09-06
+
+Project: Marghera Venice Apartments
+
+Static validation performed before packaging:
+- TypeScript/TSX files parsed: 431
+- TypeScript/TSX syntax parse errors: 0
+- Local/alias imports checked: 971
+- Missing project imports: 0
+  (generated .next development type references are excluded from this count)
+- Culture places: 131 total
+  - Venezia: 82
+  - Veneto: 49
+- Welcome Book Maps links present in all 6 language files for both apartments.
+- Chinese flag present in guest language selectors/content.
+- Wikimedia photo component no longer renders an attribution overlay on the image.
+
+Full `next build` was not executable in this container because the local dependency installation is incomplete and network installation timed out. The release package intentionally excludes node_modules so Vercel can perform a clean install from package-lock.json.

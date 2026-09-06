@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import JournalFilterGrid from '@/components/JournalFilterGrid';
 
 export const metadata:Metadata = {
   title:'Journal | Venezia, eventi e consigli | Marghera Venice Apartments',
@@ -41,30 +42,7 @@ export default function Journal(){
       </div>
     </section>
 
-    <section className="bg-cream py-12">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="flex flex-wrap gap-3">
-          {['Eventi','Arte & Cultura','Famiglie','Pet Friendly','Venezia pratica','Trasporti','Sapori & tradizioni','Vivere Venezia'].map(x=><span key={x} className="rounded-full border border-navy/15 bg-white px-4 py-2 text-sm font-bold text-navy">{x}</span>)}
-        </div>
-      </div>
-    </section>
-
-    <section className="bg-cream pb-24">
-      <div className="mx-auto grid max-w-7xl gap-7 px-5 md:grid-cols-2 xl:grid-cols-3 lg:px-8">
-        {articles.map((a)=><article key={a.href} className="group overflow-hidden rounded-[2rem] bg-white shadow-soft">
-          <Link href={a.href} className="block">
-            <div className="relative h-64 overflow-hidden"><Image src={a.image} alt={a.alt} fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="card-image object-cover"/></div>
-            <div className="p-7">
-              {a.eventDate&&<p className="mb-3 inline-flex rounded-full bg-navy px-3 py-1.5 text-[11px] font-black uppercase leading-4 tracking-[.14em] text-white">{a.eventDate}</p>}
-              <p className="text-xs font-black uppercase tracking-[.18em] text-gold">{a.category}</p>
-              <h2 className="mt-3 font-serif text-4xl text-navy">{a.title}</h2>
-              <p className="mt-4 text-slate-600">{a.text}</p>
-              <span className="mt-6 inline-flex rounded-full bg-gold px-5 py-3 font-bold text-navy">Leggi l’articolo</span>
-            </div>
-          </Link>
-        </article>)}
-      </div>
-    </section>
+    <JournalFilterGrid lang="it" items={articles.map(a=>({title:a.title,category:a.category,text:a.text,image:a.image,alt:a.alt,href:a.href,eventDate:a.eventDate}))}/>
 
     <section className="py-20">
       <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">

@@ -90,7 +90,7 @@ export default function Mobilita(){
               <div><h3 className="font-serif text-2xl text-navy">🚆 From Venezia Mestre station</h3><p className="mt-2">You can take a taxi, tram T2 towards Marghera and get off at Sant’Antonio, or walk via the Marghera – Via Ulloa exit.</p></div>
               <div><h3 className="font-serif text-2xl text-navy">✈️ From Venice Marco Polo Airport</h3><p className="mt-2">Take a taxi or an ACTV/ATVO bus to Venezia Mestre station, then continue to the apartment.</p></div>
             </div>
-            <a href="https://maps.app.goo.gl/RsR3uoKtqtVDwgcN6" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Open in Google Maps ↗</a>
+            <a href="https://maps.app.goo.gl/JRuHsc4BoKkYTUop9?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Open in Google Maps ↗</a>
           </article>
 
           <article className="rounded-[2rem] bg-cream p-8 shadow-soft">
@@ -101,7 +101,7 @@ export default function Mobilita(){
               <div><h3 className="font-serif text-2xl text-navy">🚆 From Venezia Mestre station</h3><p className="mt-2">You can walk via Via Ulloa, Piazzale Giovannacci and Via Cesare Rossarol, or take tram T2 to Sant’Antonio Municipio.</p></div>
               <div><h3 className="font-serif text-2xl text-navy">✈️ From Marco Polo or Treviso Canova airports</h3><p className="mt-2">ATVO coaches reach Venezia Mestre station; from there continue on foot, by tram or by taxi.</p></div>
             </div>
-            <a href="https://maps.app.goo.gl/yX3pS9GXamZyoGvUA" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Open in Google Maps ↗</a>
+            <a href="https://maps.app.goo.gl/JdPBaX8TaLqesNgM6?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Open in Google Maps ↗</a>
           </article>
         </div>
         <p className="mt-7 rounded-3xl border-l-4 border-aqua bg-white p-6 text-slate-600 shadow-soft">Taxi fares and journey times vary with traffic, time of day and service. For this reason we do not quote a guaranteed taxi price on the public website.</p>

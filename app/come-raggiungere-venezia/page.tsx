@@ -88,7 +88,7 @@ export default function Mobilita(){
               <div><h3 className="font-serif text-2xl text-navy">🚆 Dalla stazione di Venezia Mestre</h3><p className="mt-2">Puoi arrivare in taxi, con il tram T2 in direzione Marghera scendendo a Sant’Antonio, oppure a piedi attraverso l’uscita Marghera – Via Ulloa.</p></div>
               <div><h3 className="font-serif text-2xl text-navy">✈️ Dall’aeroporto Marco Polo</h3><p className="mt-2">Puoi utilizzare taxi oppure autobus ACTV/ATVO fino alla stazione di Venezia Mestre e proseguire verso l’appartamento.</p></div>
             </div>
-            <a href="https://maps.app.goo.gl/RsR3uoKtqtVDwgcN6" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Apri su Google Maps ↗</a>
+            <a href="https://maps.app.goo.gl/JRuHsc4BoKkYTUop9?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Apri su Google Maps ↗</a>
           </article>
 
           <article className="rounded-[2rem] bg-cream p-8 shadow-soft">
@@ -99,7 +99,7 @@ export default function Mobilita(){
               <div><h3 className="font-serif text-2xl text-navy">🚆 Dalla stazione di Venezia Mestre</h3><p className="mt-2">Puoi arrivare a piedi passando da Via Ulloa, Piazzale Giovannacci e Via Cesare Rossarol, oppure con il tram T2 fino a Sant’Antonio Municipio.</p></div>
               <div><h3 className="font-serif text-2xl text-navy">✈️ Da Marco Polo o Treviso Canova</h3><p className="mt-2">Le navette ATVO raggiungono la stazione di Venezia Mestre; da lì puoi proseguire a piedi, in tram o in taxi.</p></div>
             </div>
-            <a href="https://maps.app.goo.gl/yX3pS9GXamZyoGvUA" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Apri su Google Maps ↗</a>
+            <a href="https://maps.app.goo.gl/JdPBaX8TaLqesNgM6?g_st=ac" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex rounded-full bg-navy px-6 py-4 font-bold text-white">Apri su Google Maps ↗</a>
           </article>
         </div>
         <p className="mt-7 rounded-3xl border-l-4 border-aqua bg-white p-6 text-slate-600 shadow-soft">Le tariffe taxi e i tempi di viaggio possono variare in base al traffico, all’orario e al servizio scelto. Per questo nella pagina pubblica non indichiamo un prezzo garantito.</p>
