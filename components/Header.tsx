@@ -96,7 +96,7 @@ function DesktopDropdown({group}:{group:NavGroup}){
     <button type="button" className="inline-flex items-center gap-1.5 whitespace-nowrap py-7 text-[12px] text-white/90 transition hover:text-gold" aria-haspopup="true">
       {group.label}<span aria-hidden="true" className="text-[10px] text-gold">▾</span>
     </button>
-    <div className="invisible absolute left-1/2 top-[calc(100%-7px)] z-50 w-60 -translate-x-1/2 translate-y-2 rounded-2xl border border-white/10 bg-navy/98 p-2 opacity-0 shadow-2xl transition duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+    <div className="invisible absolute left-1/2 top-[calc(100%-7px)] z-50 w-60 -translate-x-1/2 translate-y-2 rounded-2xl border border-white/10 bg-navy p-2 opacity-0 shadow-2xl ring-1 ring-black/10 transition duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
       {group.items.map(item=><Link key={item.href} href={item.href} className="block rounded-xl px-4 py-3 text-sm font-semibold text-white/85 transition hover:bg-white/10 hover:text-gold">{item.label}</Link>)}
     </div>
   </div>;
