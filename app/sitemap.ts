@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import {localePath, siteLangs, hreflang} from '@/lib/i18n';
 import {culturePlaces, type CultureLang, type CultureScope} from '@/data/culturePlaces';
 import {cultureDetailPath, cultureIndexPath} from '@/data/cultureTranslations';
+import {eventSlugs} from '@/data/journal-events-2026';
 
 const baseUrl = 'https://www.margheraveniceapartments.com';
 const routes = [
@@ -317,6 +318,16 @@ function cultureSitemap():MetadataRoute.Sitemap{
   return [...indexes,...details];
 }
 
+
+function journalEventSitemap():MetadataRoute.Sitemap{
+  return eventSlugs.flatMap(slug=>siteLangs.map(lang=>{
+    const prefix=lang==='it'?'':`/${lang}`;
+    const path=`${prefix}/journal/${slug}`;
+    const languages=Object.fromEntries(siteLangs.map(l=>[hreflang[l],`${baseUrl}${l==='it'?'':`/${l}`}/journal/${slug}`]));
+    return {url:`${baseUrl}${path}`,changeFrequency:'weekly' as const,priority:0.82,alternates:{languages}};
+  }));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const existing: MetadataRoute.Sitemap = routes.map((route) => ({
     url: `${baseUrl}${route === '/' ? '' : route}`,
@@ -324,5 +335,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '/' ? 1 : (route.startsWith('/case/') || route.includes('/apartments/')) ? 0.9 : (route === '/come-raggiungere-venezia' || route.endsWith('/getting-to-venice')) ? 0.8 : 0.7,
     alternates: { languages: Object.fromEntries(siteLangs.map((lang) => [hreflang[lang], `${baseUrl}${localePath(route, lang) === '/' ? '' : localePath(route, lang)}`])) },
   }));
-  return [...existing,...cultureSitemap()];
+  return [...existing,...cultureSitemap(),...journalEventSitemap()];
 }

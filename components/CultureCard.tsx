@@ -1,15 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureUi,kindLabel,priceLabel} from '@/data/cultureTranslations';
+import {cultureImagePair} from '@/data/cultureImages';
 
 const icons={museum:'🏛️',monument:'🏰',church:'⛪',panorama:'👀'} as const;
 
 export default function CultureCard({place,lang,scope}:{place:CulturePlace;lang:CultureLang;scope:CultureScope}){
- const ui=cultureUi[lang];
+ const ui=cultureUi[lang]; const local=cultureImagePair(place.slug);
  return <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-soft ring-1 ring-black/5">
    <div className="relative h-56 overflow-hidden sm:h-64">
-     <CommonsPhoto query={place.commonsQuery} alt={`${place.name}, ${place.city}`} lang={lang} className="card-image" sizes="(min-width:1280px) 31vw, (min-width:768px) 48vw, 100vw"/>
+     {local?<Image src={local.card} alt={`${place.name}, ${place.city}`} fill sizes="(min-width:1280px) 31vw, (min-width:768px) 48vw, 100vw" className="card-image object-cover"/>:<CommonsPhoto query={place.commonsQuery} alt={`${place.name}, ${place.city}`} lang={lang} className="card-image" sizes="(min-width:1280px) 31vw, (min-width:768px) 48vw, 100vw"/>}
      <div className="absolute right-4 top-4 z-10 flex h-12 w-12 items-center justify-center rounded-xl border-2 border-white bg-white/95 text-2xl shadow-lg" title={kindLabel(place.kind,lang)} aria-label={kindLabel(place.kind,lang)}>{icons[place.kind]}</div>
    </div>
    <div className="p-6">

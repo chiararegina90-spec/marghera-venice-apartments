@@ -1,0 +1,28 @@
+export type CultureImagePair={card:string;cover:string};
+export const cultureImages:Record<string,CultureImagePair>={
+  'gallerie-dell-accademia':{card:'/images/culture/gallerie-dell-accademia-card.webp',cover:'/images/culture/gallerie-dell-accademia-cover.webp'},
+  'museo-fortuny':{card:'/images/culture/museo-fortuny-card.webp',cover:'/images/culture/museo-fortuny-cover.webp'},
+  'museo-arte-orientale':{card:'/images/culture/museo-arte-orientale-card.webp',cover:'/images/culture/museo-arte-orientale-cover.webp'},
+  'museo-del-vetro-murano':{card:'/images/culture/museo-del-vetro-murano-card.webp',cover:'/images/culture/museo-del-vetro-murano-cover.webp'},
+  'muvec-mestre':{card:'/images/culture/muvec-mestre-card.webp',cover:'/images/culture/muvec-mestre-cover.webp'},
+  'museo-storico-navale':{card:'/images/culture/museo-storico-navale-card.webp',cover:'/images/culture/museo-storico-navale-cover.webp'},
+  'museo-ebraico-venezia':{card:'/images/culture/museo-ebraico-venezia-card.webp',cover:'/images/culture/museo-ebraico-venezia-cover.webp'},
+  'querini-stampalia':{card:'/images/culture/querini-stampalia-card.webp',cover:'/images/culture/querini-stampalia-cover.webp'},
+  'punta-della-dogana':{card:'/images/culture/punta-della-dogana-card.webp',cover:'/images/culture/punta-della-dogana-cover.webp'},
+  'fondazione-giorgio-cini':{card:'/images/culture/fondazione-giorgio-cini-card.webp',cover:'/images/culture/fondazione-giorgio-cini-cover.webp'},
+  'fondazione-emilio-vedova':{card:'/images/culture/fondazione-emilio-vedova-card.webp',cover:'/images/culture/fondazione-emilio-vedova-cover.webp'},
+  'scuola-grande-san-rocco':{card:'/images/culture/scuola-grande-san-rocco-card.webp',cover:'/images/culture/scuola-grande-san-rocco-cover.webp'},
+  'casa-museo-andrich':{card:'/images/culture/casa-museo-andrich-card.webp',cover:'/images/culture/casa-museo-andrich-cover.webp'},
+  'biennale-arsenale':{card:'/images/culture/biennale-arsenale-card.webp',cover:'/images/culture/biennale-arsenale-cover.webp'},
+  'fondazione-ugo-olga-levi':{card:'/images/culture/fondazione-ugo-olga-levi-card.webp',cover:'/images/culture/fondazione-ugo-olga-levi-cover.webp'},
+  'ca-foscari-tour':{card:'/images/culture/ca-foscari-tour-card.webp',cover:'/images/culture/ca-foscari-tour-cover.webp'},
+  'torre-dell-orologio':{card:'/images/culture/torre-dell-orologio-card.webp',cover:'/images/culture/torre-dell-orologio-cover.webp'},
+  'campanile-san-marco':{card:'/images/culture/campanile-san-marco-card.webp',cover:'/images/culture/campanile-san-marco-cover.webp'},
+  'torre-civica-mestre':{card:'/images/culture/torre-civica-mestre-card.webp',cover:'/images/culture/torre-civica-mestre-cover.webp'},
+  'san-giorgio-maggiore':{card:'/images/culture/san-giorgio-maggiore-card.webp',cover:'/images/culture/san-giorgio-maggiore-cover.webp'},
+  'santo-stefano':{card:'/images/culture/santo-stefano-card.webp',cover:'/images/culture/santo-stefano-cover.webp'},
+  'san-giacomo-orio':{card:'/images/culture/san-giacomo-orio-card.webp',cover:'/images/culture/san-giacomo-orio-cover.webp'},
+  'ospedaletto':{card:'/images/culture/ospedaletto-card.webp',cover:'/images/culture/ospedaletto-cover.webp'},
+  'chiesa-penitenti':{card:'/images/culture/chiesa-penitenti-card.webp',cover:'/images/culture/chiesa-penitenti-cover.webp'},
+};
+export function cultureImagePair(slug:string){return cultureImages[slug];}

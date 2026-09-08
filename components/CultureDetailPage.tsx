@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommonsPhoto from '@/components/CommonsPhoto';
@@ -7,11 +8,12 @@ import CultureCard from '@/components/CultureCard';
 import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureIndexPath,cultureUi,highlightsLabel,kindLabel,localizedHighlights,planningText,planningTitle} from '@/data/cultureTranslations';
 import {cultureNarrative} from '@/data/cultureNarrative';
+import {cultureImagePair} from '@/data/cultureImages';
 
 const kindIcons={museum:'🏛️',monument:'🏰',church:'⛪',panorama:'👀'} as const;
 
 export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:CulturePlace;lang:CultureLang;scope:CultureScope;allPlaces:CulturePlace[]}){
- const ui=cultureUi[lang]; const city=cityLabel(place.city,lang); const index=cultureIndexPath(scope,lang); const home=lang==='it'?'/':`/${lang}`; const guide=lang==='it'?'/guide':`/${lang}/guide`; const narrative=cultureNarrative(place,lang);
+ const ui=cultureUi[lang]; const city=cityLabel(place.city,lang); const index=cultureIndexPath(scope,lang); const home=lang==='it'?'/':`/${lang}`; const guide=lang==='it'?'/guide':`/${lang}/guide`; const narrative=cultureNarrative(place,lang); const local=cultureImagePair(place.slug);
  const related=allPlaces.filter(p=>p.slug!==place.slug && (p.city===place.city||p.kind===place.kind)).slice(0,3);
  const faq=[
    [ui.faqDurationQ(place.name),ui.faqDurationA(place.name,place.duration)],
@@ -33,7 +35,7 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
 
    <section className="relative isolate min-h-[520px] overflow-hidden bg-navy text-white sm:min-h-[580px] lg:min-h-[640px]">
      <div className="absolute inset-0 -z-20">
-       <CommonsPhoto query={place.commonsQuery} alt={`${place.name}, ${city}`} lang={lang} className="object-cover" sizes="100vw"/>
+       {local?<Image src={local.cover} alt={`${place.name}, ${city}`} fill priority sizes="100vw" className="object-cover"/>:<CommonsPhoto query={place.commonsQuery} alt={`${place.name}, ${city}`} lang={lang} className="object-cover" sizes="100vw"/>}
      </div>
      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(7,43,64,.92)_0%,rgba(7,43,64,.78)_43%,rgba(7,43,64,.28)_76%,rgba(7,43,64,.12)_100%)]"/>
      <div className="absolute inset-x-0 bottom-0 -z-10 h-48 bg-gradient-to-t from-navy/70 to-transparent"/>

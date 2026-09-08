@@ -1,7 +1,17 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import JournalArticleDe from '@/components/JournalArticleDe';
-import {journalDe} from '@/data/journal-de';
-const data=journalDe['venice-glass-week-2026'];
-export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/de/journal/venice-glass-week-2026'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <JournalArticleDe data={data}/>}
+import GlassWeek2026Article from '@/components/GlassWeek2026Article';
+import {glassWeek2026} from '@/data/glassWeek2026';
+
+const data=glassWeek2026['de'];
+const image='/images/journal-venice-glass-week-2026-cover.webp';
+
+export const metadata:Metadata={
+  title:data.seoTitle,
+  description:data.metaDescription,
+  alternates:languageAlternates('/de/journal/venice-glass-week-2026'),
+  openGraph:{type:'article',title:data.seoTitle,description:data.metaDescription,url:'/de/journal/venice-glass-week-2026',locale:'de_DE',images:[{url:image,alt:data.imageAlt}]},
+  twitter:{card:'summary_large_image',title:data.seoTitle,description:data.metaDescription,images:[image]}
+};
+
+export default function Page(){return <GlassWeek2026Article data={data}/>;}

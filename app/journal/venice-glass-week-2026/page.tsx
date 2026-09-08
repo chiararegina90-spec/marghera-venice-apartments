@@ -1,27 +1,17 @@
 import type {Metadata} from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import EditorialHero from '@/components/EditorialHero';
+import {languageAlternates} from '@/lib/i18n';
+import GlassWeek2026Article from '@/components/GlassWeek2026Article';
+import {glassWeek2026} from '@/data/glassWeek2026';
+
+const data=glassWeek2026['it'];
+const image='/images/journal-venice-glass-week-2026-cover.webp';
 
 export const metadata:Metadata={
- title:'The Venice Glass Week 2026: date, eventi e Murano',
- description:'The Venice Glass Week 2026, dal 12 al 20 settembre: oltre 200 eventi tra Venezia, Mestre e Murano, HUB, workshop e Murano Illumina il Mondo.',
- alternates:{canonical:'/journal/venice-glass-week-2026',languages:{'it-IT':'/journal/venice-glass-week-2026','en-GB':'/en/journal/venice-glass-week-2026','de-DE':'/de/journal/venice-glass-week-2026','fr-FR':'/fr/journal/venice-glass-week-2026','es-ES':'/es/journal/venice-glass-week-2026','zh-CN':'/zh/journal/venice-glass-week-2026','x-default':'/journal/venice-glass-week-2026'}},
- openGraph:{type:'article',title:'The Venice Glass Week 2026: date, eventi e Murano',description:'Dal 12 al 20 settembre 2026 Venezia, Mestre e Murano celebrano l’arte del vetro con oltre 200 eventi.',images:['/images/journal-venice-glass-week-2026-cover.webp']},
- twitter:{card:'summary_large_image',images:['/images/journal-venice-glass-week-2026-cover.webp']}
+  title:data.seoTitle,
+  description:data.metaDescription,
+  alternates:languageAlternates('/journal/venice-glass-week-2026'),
+  openGraph:{type:'article',title:data.seoTitle,description:data.metaDescription,url:'/journal/venice-glass-week-2026',locale:'it_IT',images:[{url:image,alt:data.imageAlt}]},
+  twitter:{card:'summary_large_image',title:data.seoTitle,description:data.metaDescription,images:[image]}
 };
-const sections=[
- ['La decima edizione: 12–20 settembre 2026','The Venice Glass Week è il festival internazionale fondato nel 2017 per celebrare, sostenere e promuovere l’arte del vetro. La decima edizione si svolge dal 12 al 20 settembre 2026 tra Venezia, Mestre e Murano.'],
- ['Oltre 200 eventi','Il programma 2026 è il più ricco dalla nascita del festival e comprende oltre 200 appuntamenti: mostre, installazioni, talk, visite guidate, workshop, dimostrazioni e altre iniziative speciali dedicate al vetro.'],
- ['Murano, cuore di una tradizione millenaria','Venezia è conosciuta nel mondo da oltre mille anni per la lavorazione artistica del vetro e Murano resta il luogo simbolo di questa storia. La Glass Week mette in dialogo il patrimonio delle fornaci con artisti, designer e ricerca contemporanea.'],
- ['The Venice Glass Week HUB e HUB Under35','Il festival comprende The Venice Glass Week HUB by Generali e The Venice Glass Week HUB Under35. Quest’ultimo è ospitato dalla Fondazione Bevilacqua La Masa, Galleria di Piazza San Marco, e offre spazio alle nuove generazioni di artisti.'],
- ['Murano Illumina il Mondo','Dal 13 settembre al 1 novembre 2026 torna l’evento di punta Murano Illumina il Mondo. Sotto gli archi delle Procuratie Vecchie in Piazza San Marco, dodici installazioni luminose inedite reinterpretano il lampadario veneziano attraverso collaborazioni tra artisti e designer internazionali e alcune delle migliori vetrerie muranesi.'],
- ['Come organizzare la visita','Gli eventi sono distribuiti tra Venezia, Mestre e Murano. Prima di partire conviene consultare il programma del giorno, raggruppare gli appuntamenti per zona e prenotare in anticipo le attività che lo richiedono.']
-];
-export default function Article(){return <><Header/><main><article className="editorial-page">
-<EditorialHero image="/images/journal-venice-glass-week-2026-cover.webp" imageAlt="Grafica ufficiale della decima edizione di The Venice Glass Week 2026" crumbs={[{label:'Home',href:'/'},{label:'Journal',href:'/journal'},{label:'The Venice Glass Week 2026'}]} eyebrow="Arte & Cultura • 12–20 SETTEMBRE 2026" title="The Venice Glass Week 2026" subtitle="Nove giorni dedicati all’arte del vetro, con oltre 200 eventi tra Venezia, Mestre e Murano." strongShade/><section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">The Venice Glass Week trasforma la città in un grande itinerario dedicato al vetro: dalle fornaci e dagli atelier di Murano alle istituzioni, gallerie e spazi espositivi di Venezia e Mestre.</p><div className="mt-14 space-y-12">{sections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div></div></section>
-<section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] bg-gold p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.22em]">Il consiglio di Marghera Venice Apartments</p><p className="mt-4 font-serif text-3xl">Controlla il programma la sera prima e raggruppa gli eventi per zona. In questo modo eviti inutili avanti e indietro tra Venezia e Murano e lasci più tempo a mostre, dimostrazioni e atelier.</p></div><div className="mt-8 rounded-[2rem] bg-white p-8 shadow-soft"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">Informazioni ufficiali</p><p className="mt-3 text-slate-600">Programma, orari, prenotazioni e condizioni dei singoli eventi possono cambiare. Verifica sempre il sito ufficiale prima della visita.</p><a href="https://theveniceglassweek.com/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">The Venice Glass Week – sito ufficiale ↗</a></div></div></section>
-<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Settembre a Venezia</p><h2 className="mt-3 font-serif text-4xl text-navy">Potrebbe interessarti anche</h2><div className="mt-7 grid gap-4 md:grid-cols-2"><Link href="/journal/homo-faber-2026" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Homo Faber 2026 <span className="text-gold">→</span></Link><Link href="/journal/biennale-di-venezia" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Biennale Arte 2026 <span className="text-gold">→</span></Link></div><div className="mt-10 text-center"><Link href="/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Torna al Journal</Link></div></div></section>
-</article></main><Footer/></>}
+
+export default function Page(){return <GlassWeek2026Article data={data}/>;}

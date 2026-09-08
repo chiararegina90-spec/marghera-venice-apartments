@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import type {EventArticle,EventLang} from '@/data/journal-events-2026';
 import {journalEvents2026} from '@/data/journal-events-2026';
+import {journalEventImagePair} from '@/data/journal-event-images';
 
 const ui:Record<EventLang,{home:string;journal:string;tip:string;official:string;sourceNote:string;more:string;back:string;date:string}>= {
   it:{home:'Home',journal:'Journal',tip:'Il consiglio di Marghera Venice Apartments',official:'Informazioni ufficiali',sourceNote:'Programma, orari, disponibilità e condizioni possono cambiare. Per le informazioni variabili controlla sempre la fonte ufficiale prima della visita.',more:'Potrebbe interessarti anche',back:'Torna al Journal',date:'Quando'},
@@ -21,7 +23,7 @@ const schemaDates:Record<string,[string,string]>={
 function base(lang:EventLang){return lang==='it'?'':`/${lang}`;}
 
 export default function EventJournalArticle({lang,data}:{lang:EventLang;data:EventArticle}){
-  const t=ui[lang];
+  const t=ui[lang]; const eventImages=journalEventImagePair(data.slug);
   const related=data.relatedSlugs.map(slug=>journalEvents2026[lang][slug]).filter(Boolean);
   const [startDate,endDate]=schemaDates[data.slug]||['2026-01-01','2026-01-01'];
   const eventJsonLd={
@@ -37,7 +39,7 @@ export default function EventJournalArticle({lang,data}:{lang:EventLang;data:Eve
   return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
-    <section className="relative min-h-[72vh] overflow-hidden pt-20"><div className="absolute inset-0"><CommonsPhoto query={data.commonsQuery} alt={data.imageAlt} fallbackSrc={data.fallbackImage} priority sizes="100vw" className="absolute inset-0"/></div><div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/65 to-navy/20"/><div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-14 pt-24 lg:px-8"><div className="max-w-5xl text-white"><nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white/70"><Link href={base(lang)||'/'} className="hover:text-gold">{t.home}</Link><span>›</span><Link href={`${base(lang)}/journal`} className="hover:text-gold">{t.journal}</Link><span>›</span><span className="text-gold">{data.title}</span></nav><p className="mt-6 text-xs font-black uppercase tracking-[.22em] text-gold">{data.category} • {data.eventDate}</p><h1 className="mt-4 max-w-5xl break-words font-serif text-[clamp(2.6rem,7vw,5.2rem)] leading-[.98]">{data.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">{data.description}</p></div></div></section>
+    <section className="relative min-h-[72vh] overflow-hidden pt-20"><div className="absolute inset-0">{eventImages?<Image src={eventImages.cover} alt={data.imageAlt} fill priority sizes="100vw" className="object-cover"/>:<CommonsPhoto query={data.commonsQuery} alt={data.imageAlt} fallbackSrc={data.fallbackImage} priority sizes="100vw" className="absolute inset-0"/>}</div><div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/65 to-navy/20"/><div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-14 pt-24 lg:px-8"><div className="max-w-5xl text-white"><nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white/70"><Link href={base(lang)||'/'} className="hover:text-gold">{t.home}</Link><span>›</span><Link href={`${base(lang)}/journal`} className="hover:text-gold">{t.journal}</Link><span>›</span><span className="text-gold">{data.title}</span></nav><p className="mt-6 text-xs font-black uppercase tracking-[.22em] text-gold">{data.category} • {data.eventDate}</p><h1 className="mt-4 max-w-5xl break-words font-serif text-[clamp(2.6rem,7vw,5.2rem)] leading-[.98]">{data.title}</h1><p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">{data.description}</p></div></div></section>
 
     <section className="py-16 sm:py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
       <div className="mb-10 flex flex-wrap items-center gap-3 border-y border-slate-200 py-4 text-sm font-bold text-navy"><span className="text-gold">{t.date}</span><span>{data.eventDate}</span><span className="text-slate-300">•</span><span>Venezia</span></div>

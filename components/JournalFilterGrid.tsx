@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {eventSummaries} from '@/data/journal-event-summaries';
 import CommonsPhoto from '@/components/CommonsPhoto';
+import {journalEventImagePair} from '@/data/journal-event-images';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type JournalFilterItem={
@@ -30,7 +31,7 @@ const ui:Record<Lang,{all:string;filter:string;read:string;results:string}>={
 export default function JournalFilterGrid({items,lang='it',readLabel}:{items:JournalFilterItem[];lang?:Lang;readLabel?:string}){
   const t=ui[lang];
   const prefix=lang==='it'?'':`/${lang}`;
-  const injected:JournalFilterItem[]=eventSummaries[lang].map(a=>({...a,href:`${prefix}/journal/${a.slug}`,commonsQuery:undefined,fallbackImage:a.image}));
+  const injected:JournalFilterItem[]=eventSummaries[lang].map(a=>{const local=journalEventImagePair(a.slug);return {...a,image:local?.card||a.image,href:`${prefix}/journal/${a.slug}`,commonsQuery:undefined,fallbackImage:local?.cover||a.image};});
   const merged=[...injected.filter(a=>!items.some(x=>x.href===a.href)),...items];
   const categories=useMemo(()=>Array.from(new Set(merged.map(x=>x.category))),[items,lang]);
   const [active,setActive]=useState(t.all);
