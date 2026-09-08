@@ -28,7 +28,7 @@ export default function EventJournalArticle({lang,data}:{lang:EventLang;data:Eve
   const [startDate,endDate]=schemaDates[data.slug]||['2026-01-01','2026-01-01'];
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:data.title,description:data.description,
-    startDate,endDate,eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',location:{'@type':'Place',name:'Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},
+    startDate,endDate,eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',location:{'@type':'Place',name:data.eventLocation?.name||'Venezia',address:{'@type':'PostalAddress',...(data.eventLocation?.streetAddress?{streetAddress:data.eventLocation.streetAddress}:{}),addressLocality:data.eventLocation?.addressLocality||'Venezia',addressCountry:data.eventLocation?.addressCountry||'IT'}},
     url:`https://www.margheraveniceapartments.com${base(lang)}/journal/${data.slug}`
   };
   const articleJsonLd={
@@ -45,6 +45,7 @@ export default function EventJournalArticle({lang,data}:{lang:EventLang;data:Eve
       <div className="mb-10 flex flex-wrap items-center gap-3 border-y border-slate-200 py-4 text-sm font-bold text-navy"><span className="text-gold">{t.date}</span><span>{data.eventDate}</span><span className="text-slate-300">•</span><span>Venezia</span></div>
       <p className="font-serif text-[clamp(1.65rem,3vw,2.25rem)] leading-[1.42] text-navy">{data.lead}</p>
       <div className="mt-14 space-y-12">{data.sections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-[clamp(2rem,4vw,2.6rem)] leading-tight text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div>
+      {data.internalLink&&<p className="mt-10 text-lg leading-8 text-slate-600">{data.internalLink.text}<Link href={data.internalLink.href} className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{data.internalLink.label}</Link>{data.internalLink.tail}</p>}
     </div></section>
 
     <section className="bg-cream py-14 sm:py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">

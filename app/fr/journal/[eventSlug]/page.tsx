@@ -15,7 +15,8 @@ export async function generateMetadata({params}:{params:Promise<Params>}):Promis
   const data=eventArticle(lang,eventSlug);
   if(!data)return {};
   const path=`${prefix}/${eventSlug}`;
-  return {title:data.title,description:data.description,alternates:languageAlternates(path),openGraph:{type:'article',title:data.title,description:data.description,images:[data.fallbackImage]},twitter:{card:'summary_large_image',title:data.title,description:data.description,images:[data.fallbackImage]}};
+  const metaTitle=data.metaTitle||data.title;
+  return {title:metaTitle,description:data.description,alternates:languageAlternates(path),openGraph:{type:'article',title:metaTitle,description:data.description,images:[data.fallbackImage]},twitter:{card:'summary_large_image',title:metaTitle,description:data.description,images:[data.fallbackImage]}};
 }
 
 export default async function Page({params}:{params:Promise<Params>}){
