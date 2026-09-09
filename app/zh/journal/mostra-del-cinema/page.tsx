@@ -1,7 +1,18 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import {LocalizedJournalArticle} from '@/components/LocalizedRich';
-import {journalZh} from '@/data/journal-zh';
-const data=journalZh['mostra-del-cinema'];
-export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/mostra-del-cinema'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}
+import MostraCinema2026Article from '@/components/MostraCinema2026Article';
+import {mostraCinema2026} from '@/data/mostraCinema2026';
+
+const lang='zh' as const;
+const data=mostraCinema2026[lang];
+const path='/zh/journal/mostra-del-cinema';
+
+export const metadata:Metadata={
+  title:data.metaTitle,
+  description:data.metaDescription,
+  alternates:languageAlternates(path),
+  openGraph:{type:'article',title:data.metaTitle,description:data.metaDescription,url:path,locale:'zh_CN',images:['/images/journal-mostra-cinema.webp']},
+  twitter:{card:'summary_large_image',title:data.metaTitle,description:data.metaDescription,images:['/images/journal-mostra-cinema.webp']}
+};
+
+export default function Page(){return <MostraCinema2026Article lang={lang} data={data}/>;}

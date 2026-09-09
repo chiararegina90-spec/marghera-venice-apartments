@@ -6,9 +6,11 @@ import p3 from './journal-events-payload-3';
 import p4 from './journal-events-payload-4';
 import {journalEventImagePair} from './journal-event-images';
 import {salone2026Overrides} from './salone2026Overrides';
+import {biennaleMusica2026Overrides} from './biennaleMusica2026Overrides';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
-export type EventArticle={slug:string;title:string;metaTitle?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];internalLink?:{text:string;label:string;href:string;tail:string};eventLocation?:{name:string;streetAddress?:string;addressLocality:string;addressCountry:string}};
+export type EventLocation={name:string;streetAddress?:string;addressLocality:string;addressCountry:string};
+export type EventArticle={slug:string;title:string;metaTitle?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];relatedLinks?:readonly (readonly [string,string])[];internalLink?:{text:string;label:string;href:string;tail:string};eventLocation?:EventLocation;eventLocations?:readonly EventLocation[]};
 export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026'] as const;
 const decoded=JSON.parse(gunzipSync(Buffer.from(p0+p1+p2+p3+p4,'base64')).toString('utf8')) as Record<EventLang,Record<string,EventArticle>>;
 for(const lang of Object.keys(decoded) as EventLang[])for(const slug of eventSlugs){
@@ -17,6 +19,9 @@ for(const lang of Object.keys(decoded) as EventLang[])for(const slug of eventSlu
   if(item&&local){item.image=local.card;item.fallbackImage=local.cover;item.commonsQuery='';}
   if(item&&slug==='salone-alto-artigianato-italiano-2026'){
     Object.assign(item,salone2026Overrides[lang]);
+  }
+  if(item&&slug==='biennale-musica-2026'){
+    Object.assign(item,biennaleMusica2026Overrides[lang]);
   }
 }
 export const journalEvents2026=decoded;

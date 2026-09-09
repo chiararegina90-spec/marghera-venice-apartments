@@ -1,7 +1,18 @@
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
-import {LocalizedJournalArticle} from '@/components/LocalizedRich';
-import {journalDe} from '@/data/journal-de';
-const data=journalDe['biennale-di-venezia'];
-export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/de/journal/biennale-di-venezia'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <LocalizedJournalArticle lang="de" data={data} tipLabel='Tipp von Marghera Venice Apartments' officialLabel='Offizielle Informationen' backLabel='Zurück zum Journal'/>}
+import BiennaleArte2026Article from '@/components/BiennaleArte2026Article';
+import {biennaleArte2026} from '@/data/biennaleArte2026';
+
+const lang='de' as const;
+const data=biennaleArte2026[lang];
+const path='/de/journal/biennale-di-venezia';
+
+export const metadata:Metadata={
+  title:data.metaTitle,
+  description:data.metaDescription,
+  alternates:languageAlternates(path),
+  openGraph:{type:'article',title:data.metaTitle,description:data.metaDescription,url:path,locale:'de_DE',images:[data.ogImage]},
+  twitter:{card:'summary_large_image',title:data.metaTitle,description:data.metaDescription,images:[data.ogImage]}
+};
+
+export default function Page(){return <BiennaleArte2026Article lang={lang} data={data}/>;}
