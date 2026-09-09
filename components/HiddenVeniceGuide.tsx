@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import {hiddenVeniceContent} from '@/data/hiddenVeniceContent';
-import {cultureDetailPath} from '@/data/culturePlaces';
+import {cultureDetailPath} from '@/data/cultureTranslations';
 import {localePath,type SiteLang} from '@/lib/i18n';
 
 const BASE='https://www.margheraveniceapartments.com';
