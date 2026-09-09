@@ -3,10 +3,9 @@ on:
   push:
     branches: [seo-cleanup-20260909]
 permissions:
-  contents: write
+  contents: read
 jobs:
   cleanup-build:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,31 +15,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Apply SEO cleanup
-        run: python scripts/seo_cleanup_transform.py
-      - name: Apply type-safe cleanup fixes
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          for f in ['components/GlassWeek2026Article.tsx','components/HomoFaber2026Article.tsx']:
-              p=Path(f); s=p.read_text().replace('<EditorialStayCta lang={lang} context="journal"/>','<EditorialStayCta lang={data.lang} context="journal"/>'); p.write_text(s)
-          for f,label in [('app/scopri-il-veneto/page.tsx','Leggi la guida completa'),('app/en/discover-veneto/page.tsx','Read the full guide')]:
-              p=Path(f); s=p.read_text(); old=f'<Link href={{d.href}} className="mt-6 inline-flex w-fit rounded-full bg-gold px-6 py-3 font-bold text-navy">{label}</Link>'; new=f'{{d.href&&<Link href={{d.href}} className="mt-6 inline-flex w-fit rounded-full bg-gold px-6 py-3 font-bold text-navy">{label}</Link>}}'; p.write_text(s.replace(old,new))
-          PY
       - name: Validate internal SEO routes
         run: python scripts/seo_cleanup_validate.py
       - name: Install dependencies
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Commit validated cleanup
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No generated changes to commit"
-          else
-            git commit -m "SEO cleanup site-wide"
-            git push origin HEAD:seo-cleanup-20260909
-          fi
