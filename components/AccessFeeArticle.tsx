@@ -11,6 +11,14 @@ const SLUG='/journal/contributo-accesso-venezia';
 const officialPortal:Record<SiteLang,string>={
   it:'https://cda.ve.it/it/',en:'https://cda.ve.it/en/',de:'https://cda.ve.it/de/',fr:'https://cda.ve.it/fr/',es:'https://cda.ve.it/es/',zh:'https://cda.ve.it/en/'
 };
+const heroAlt:Record<SiteLang,string>={
+  it:'Ingresso a Venezia dalla terraferma, immagine introduttiva alla guida sul Contributo di Accesso',
+  en:'Approaching Venice from the mainland, introducing the Venice Access Fee guide',
+  de:'Ankunft in Venedig vom Festland, als Einführung zum Leitfaden über den Zugangsbeitrag',
+  fr:'Arrivée à Venise depuis la terre ferme, pour introduire le guide sur la contribution d’accès',
+  es:'Llegada a Venecia desde tierra firme, como introducción a la guía sobre la tasa de acceso',
+  zh:'从大陆方向进入威尼斯，用于介绍威尼斯入城费指南'
+};
 const municipality='https://www.comune.venezia.it/it/cda-info';
 const islandGuides=[
   ['Murano','murano'],['Burano','burano'],['Lido di Venezia','lido-di-venezia'],['Pellestrina','pellestrina'],["Sant’Erasmo",'sant-erasmo'],['Certosa','certosa']
@@ -53,7 +61,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>
       <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
-        <Image src="/images/journal-parcheggi-venezia.webp" alt={c.h1} fill priority sizes="100vw" className="object-cover"/>
+        <Image src="/images/journal-parcheggi-venezia.webp" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
         <div className="relative mx-auto flex min-h-[calc(64svh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 sm:min-h-[calc(72vh-5rem)] lg:px-8"><div className="max-w-4xl text-white">
           <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={localePath('/',lang)}>{c.labels.home}</Link><span>›</span><Link href={localePath('/journal',lang)}>{c.labels.journal}</Link><span>›</span><span className="text-gold">{c.h1}</span></nav>
@@ -77,7 +85,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
       <section className="bg-cream py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy">{c.faqTitle}</h2><div className="mt-8 divide-y divide-slate-200 rounded-[2rem] bg-white px-6 sm:px-8">{c.faq.map(item=><details key={item.q} className="group py-5"><summary className="cursor-pointer list-none pr-6 font-serif text-2xl text-navy">{item.q}</summary><p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">{item.a}</p></details>)}</div></div></section>
 
       <section className="py-20"><div className="mx-auto grid max-w-5xl gap-7 px-5 lg:grid-cols-2 lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.relatedTitle}</p><div className="mt-5 grid gap-3">{related.map(([label,href])=><Link key={href} href={href} className="rounded-2xl border border-slate-200 p-4 font-semibold text-navy transition hover:border-gold">{label} <span className="text-gold">→</span></Link>)}</div></div><aside className="rounded-[2rem] bg-navy p-7 text-white"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.officialTitle}</p><p className="mt-4 leading-7 text-white/75">{c.officialText}</p><div className="mt-6 grid gap-3"><a href={officialPortal[lang]} target="_blank" rel="noopener noreferrer" className="font-bold text-gold">{c.officialPortal} →</a><a href={municipality} target="_blank" rel="noopener noreferrer" className="font-bold text-gold">{c.officialComune} →</a></div></aside></div></section>
-      <EditorialStayCta lang={lang} context="journal"/>
+      <EditorialStayCta lang={lang} context="guide"/>
       <div className="pb-16 text-center"><Link href={localePath('/journal',lang)} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">← {c.labels.journal}</Link></div>
     </article></main>
     <Footer lang={lang}/>
