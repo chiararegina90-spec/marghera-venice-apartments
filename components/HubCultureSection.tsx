@@ -3,6 +3,7 @@ import CultureCard from '@/components/CultureCard';
 import SectionTitle from '@/components/SectionTitle';
 import {culturePlaces,type CultureLang,type CultureScope} from '@/data/culturePlaces';
 import {cultureIndexPath} from '@/data/cultureTranslations';
+import {localePath} from '@/lib/i18n';
 
 const picks={
  venice:['palazzo-ducale','basilica-san-marco','campanile-san-marco','gallerie-dell-accademia','peggy-guggenheim','scuola-grande-san-rocco'],
@@ -16,7 +17,15 @@ const copy:Record<CultureLang,Record<CultureScope,{eyebrow:string;title:string;t
  es:{venice:{eyebrow:'Qué ver en Venecia',title:'Museos, monumentos e iglesias: elige lo que merece tu tiempo',text:'No una lista infinita: empieza con seis lugares y después usa el directorio completo con duración, precios, acceso y fuentes oficiales.',cta:'Explorar todos los lugares culturales de Venecia'},veneto:{eyebrow:'Arte y cultura en el Véneto',title:'Obras maestras que merecen una excursión',text:'Villas, museos, teatros, castillos y lugares artísticos forman parte del viaje por Véneto, no de una sección escondida.',cta:'Explorar todos los lugares culturales del Véneto'}},
  zh:{venice:{eyebrow:'威尼斯看什么',title:'博物馆、古迹与教堂：把时间留给真正值得看的地方',text:'不是无穷无尽的清单：先从六个重点开始，再进入完整目录查看平均参观时长、票价、入场和官方来源。',cta:'查看全部威尼斯文化景点'},veneto:{eyebrow:'威尼托艺术与文化',title:'值得专门安排一日游的杰作',text:'别墅、博物馆、剧院、城堡与艺术场馆现在直接融入威尼托旅行规划。',cta:'查看全部威尼托文化景点'}}
 };
+const hiddenCopy:Record<CultureLang,{title:string;text:string;cta:string}>={
+ it:{title:'Vuoi vedere una Venezia più tranquilla?',text:'Tre passeggiate tra Cannaregio, artigiani di Dorsoduro e Castello orientale, pensate per uscire dalle direttrici più affollate senza inseguire falsi “luoghi segreti”.',cta:'Scopri Venezia nascosta'},
+ en:{title:'Looking for a quieter Venice?',text:'Three self-guided walks through Cannaregio, Dorsoduro’s artisan side and eastern Castello, away from the busiest visitor routes.',cta:'Explore Hidden Venice'},
+ de:{title:'Venedig abseits der großen Besucherströme?',text:'Drei Spaziergänge durch Cannaregio, das Handwerk in Dorsoduro und das östliche Castello.',cta:'Venedig Geheimtipps entdecken'},
+ fr:{title:'Envie d’une Venise plus calme ?',text:'Trois balades à Cannaregio, dans le Dorsoduro artisanal et à l’est de Castello, loin des axes les plus fréquentés.',cta:'Découvrir Venise secrète'},
+ es:{title:'¿Buscas una Venecia más tranquila?',text:'Tres paseos por Cannaregio, el Dorsoduro artesano y el este de Castello, lejos de los recorridos más concurridos.',cta:'Descubrir Venecia secreta'},
+ zh:{title:'想看看更安静的威尼斯？',text:'三条漫步路线连接卡纳雷吉欧、多尔索杜罗手工艺街区和城堡区东部，避开最拥挤的游客动线。',cta:'查看小众威尼斯路线'}
+};
 export default function HubCultureSection({scope,lang='it'}:{scope:CultureScope;lang?:CultureLang}){
- const t=copy[lang][scope]; const selected=picks[scope].map(slug=>culturePlaces.find(p=>p.slug===slug)).filter(Boolean);
- return <section className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text}/><div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">{selected.map(place=><CultureCard key={place!.slug} place={place!} lang={lang} scope={scope}/>)}</div><div className="mt-10 text-center"><Link href={cultureIndexPath(scope,lang)} className="inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white hover:bg-gold hover:text-navy">{t.cta} →</Link></div></div></section>;
+ const t=copy[lang][scope]; const selected=picks[scope].map(slug=>culturePlaces.find(p=>p.slug===slug)).filter(Boolean); const hidden=hiddenCopy[lang];
+ return <section className="bg-cream py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle eyebrow={t.eyebrow} title={t.title} text={t.text}/><div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">{selected.map(place=><CultureCard key={place!.slug} place={place!} lang={lang} scope={scope}/>)}</div><div className="mt-10 text-center"><Link href={cultureIndexPath(scope,lang)} className="inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white hover:bg-gold hover:text-navy">{t.cta} →</Link></div>{scope==='venice'&&<div className="mx-auto mt-10 max-w-3xl rounded-[2rem] border border-slate-200 bg-white p-7 text-center shadow-soft"><h3 className="font-serif text-3xl text-navy">{hidden.title}</h3><p className="mt-3 leading-7 text-slate-600">{hidden.text}</p><Link href={localePath('/guide/venezia-nascosta',lang)} className="mt-5 inline-flex font-bold text-gold">{hidden.cta} →</Link></div>}</div></section>;
 }
