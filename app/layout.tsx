@@ -41,6 +41,8 @@ export default async function RootLayout({children}:{children:React.ReactNode}){
     name:'Marghera Venice Apartments',
     url:'https://www.margheraveniceapartments.com',
     logo:'https://www.margheraveniceapartments.com/images/logo.png',
+    email:'info@margheraveniceapartments.com',
+    telephone:'+39 351 446 2261',
     sameAs:[
       'https://www.instagram.com/margheraveniceapartments/',
       'https://www.facebook.com/margheraveniceapartments/'

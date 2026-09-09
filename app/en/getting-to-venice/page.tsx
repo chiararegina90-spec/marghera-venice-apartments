@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
-  title:'Getting to Venice',
+  title:'Marghera to Venice: Bus, Train, Tickets & Parking',
   description:'How to reach Rossi Apartment and Dimora Castelli by car, train or plane, and how to travel from Marghera to Venice by bus or train.',
   openGraph:{
     title:'Getting here and reaching Venice from Marghera',

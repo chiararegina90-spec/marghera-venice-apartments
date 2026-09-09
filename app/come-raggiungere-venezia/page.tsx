@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata = {
-  title:'Come arrivare | Marghera Venice Apartments',
+  title:'Da Marghera a Venezia: bus, treno, biglietti e parcheggio',
   description:'Come raggiungere Rossi Apartment e Dimora Castelli in auto, treno o aereo e come andare a Venezia da Marghera con autobus, tram e treno.',
   openGraph:{
     title:'Come arrivare e come raggiungere Venezia',

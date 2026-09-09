@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata:Metadata = {
   title:"Cicchetti veneziani | Journal | Marghera Venice Apartments",
@@ -76,6 +77,7 @@ export default function Article(){
           <div className="mt-10 text-center"><Link href="/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Torna al Journal</Link></div>
         </div>
       </section>
-    </article>
+    <EditorialStayCta lang="it" context="journal"/>
+</article>
   </main><Footer/></>
 }

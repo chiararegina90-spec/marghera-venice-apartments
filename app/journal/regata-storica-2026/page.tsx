@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata:Metadata = {
   title:'Regata Storica Venezia 2026: programma, orari e dove vederla',
@@ -49,5 +50,6 @@ export default function Article(){
       <div className="mt-7 grid gap-4 md:grid-cols-2"><Link href="/journal/mostra-del-cinema" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Mostra del Cinema 2026 <span className="text-gold">→</span></Link><Link href="/journal/homo-faber-2026" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Homo Faber 2026 <span className="text-gold">→</span></Link></div>
       <div className="mt-10 text-center"><Link href="/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Torna al Journal</Link></div>
     </div></section>
-  </article></main><Footer/></>;
+  <EditorialStayCta lang="it" context="journal"/>
+</article></main><Footer/></>;
 }

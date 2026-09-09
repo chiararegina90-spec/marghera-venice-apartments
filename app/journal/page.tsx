@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import JournalFilterGrid from '@/components/JournalFilterGrid';
+import JournalDynamicGrid from '@/components/JournalDynamicGrid';
 
 export const metadata:Metadata = {
   title:'Journal | Venezia, eventi e consigli | Marghera Venice Apartments',
@@ -42,7 +42,7 @@ export default function Journal(){
       </div>
     </section>
 
-    <JournalFilterGrid lang="it" items={articles.map(a=>({title:a.title,category:a.category,text:a.text,image:a.image,alt:a.alt,href:a.href,eventDate:a.eventDate}))}/>
+    <JournalDynamicGrid lang="it" items={articles.map(a=>({title:a.title,category:a.category,text:a.text,image:a.image,alt:a.alt,href:a.href,eventDate:a.eventDate}))}/>
 
     <section className="py-20">
       <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
