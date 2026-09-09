@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -66,7 +64,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
       </section>
 
       <section className="py-16 sm:py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
-        <div className="space-y-5">{c.intro.map(p=><p key={p} className="text-lg leading-8 text-slate-700 first:font-serif first:text-3xl first:leading-relaxed first:text-navy">{p}</p>)}</div>
+        <div className="space-y-5">{c.intro.map((p,i)=><p key={p} className={i===0?'font-serif text-3xl leading-relaxed text-navy':'text-lg leading-8 text-slate-700'}>{p}</p>)}</div>
         <div className="mt-10 rounded-[2rem] border border-gold/30 bg-cream p-7 sm:p-9"><h2 className="font-serif text-3xl text-navy">{c.currentTitle}</h2><div className="mt-5 grid gap-3">{c.currentItems.map((item,i)=><div key={item} className="flex gap-3 text-base leading-7 text-slate-700"><span aria-hidden="true">{i<3?'✅':'⏳'}</span><span>{item}</span></div>)}</div></div>
       </div></section>
 
