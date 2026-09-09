@@ -9,7 +9,7 @@ import SectionTitle from '@/components/SectionTitle';
 import WeChatCard from '@/components/WeChatCard';
 
 export const metadata:Metadata={
-  title:'威尼斯附近公寓与免费私人停车',
+  title:'威尼斯附近公寓｜免费私人停车｜Marghera',
   description:'Rossi Apartment 与 Dimora Castelli 位于马尔盖拉：免费私人停车、全天候前往威尼斯的交通连接，并贴心欢迎家庭与携宠旅客。',
   openGraph:{title:'Marghera Venice Apartments｜您的威尼斯之家',description:'两套位于马尔盖拉的舒适公寓，提供免费私人停车位与全天候前往威尼斯的交通连接。',images:[{url:'/images/home-rialto-vincenzo-landino.webp',alt:'威尼斯里亚托桥与大运河'}],type:'website'},
   twitter:{card:'summary_large_image',title:'Marghera Venice Apartments',description:'两套位于马尔盖拉的舒适公寓，提供免费私人停车位与全天候前往威尼斯的交通连接。',images:['/images/home-rialto-vincenzo-landino.webp']},

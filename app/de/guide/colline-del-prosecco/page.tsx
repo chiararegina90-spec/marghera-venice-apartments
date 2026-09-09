@@ -4,7 +4,7 @@ import {guideDataDe} from '@/data/guides-de';
 
 const data=guideDataDe['colline-del-prosecco'];
 export const metadata:Metadata={
- title:`${data.title} Reiseführer`,
+ title:'Prosecco-Hügel ab Venedig | Tagesausflug',
  description:data.description,
  alternates:{canonical:'/de/guide/colline-del-prosecco',languages:{'it-IT':'/guide/colline-del-prosecco','en-GB':'/en/guide/colline-del-prosecco','de-DE':'/de/guide/colline-del-prosecco','fr-FR':'/fr/guide/colline-del-prosecco','es-ES':'/es/guide/colline-del-prosecco','zh-CN':'/zh/guide/colline-del-prosecco','x-default':'/guide/colline-del-prosecco'}},
  openGraph:{title:`${data.title} Reiseführer`,description:data.description,url:'/de/guide/colline-del-prosecco',locale:'de_DE',type:'article',images:[data.image]},

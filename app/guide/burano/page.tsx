@@ -4,7 +4,7 @@ import {guideData} from '@/data/guides';
 
 const data=guideData['burano'];
 export const metadata:Metadata={
- title:`${data.title} | Marghera Venice Apartments`,
+ title:'Guida a Burano: cosa vedere e come arrivare',
  description:data.description,
  alternates:{canonical:'/guide/burano',languages:{'it-IT':'/guide/burano','en-GB':'/en/guide/burano','de-DE':'/de/guide/burano','fr-FR':'/fr/guide/burano','es-ES':'/es/guide/burano','zh-CN':'/zh/guide/burano','x-default':'/guide/burano'}},
  openGraph:{title:data.title,description:data.description,type:'article',images:[data.image]},

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 type Locale='it'|'en'|'de'|'fr'|'es'|'zh';
 type Section={title:string;text:string};
@@ -249,6 +250,7 @@ export default function AmerigoVespucciArticle({lang}:{lang:Locale}){
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] bg-white p-8 shadow-soft"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{c.officialTitle}</p><p className="mt-3 leading-7 text-slate-600">{c.officialText}</p><div className="mt-6 flex flex-wrap gap-3"><a href="https://tourvespucci.it/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-navy px-6 py-3 font-bold text-white">{c.tourLabel} ↗</a><a href="https://www.marina.difesa.it/noi-siamo-la-marina/pilastro-operativo/mezzi/forze-navali/Pagine/Vespucci.aspx" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-6 py-3 font-bold text-navy">{c.navyLabel} ↗</a></div></div></div></section>
 
-    <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.moreLabel}</p><h2 className="mt-3 font-serif text-4xl text-navy">{c.moreTitle}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{c.related.map(([label,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{label} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={`${prefix}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{c.back}</Link></div></div></section>
+    <EditorialStayCta lang={lang} context="journal"/>
+<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.moreLabel}</p><h2 className="mt-3 font-serif text-4xl text-navy">{c.moreTitle}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{c.related.map(([label,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{label} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={`${prefix}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{c.back}</Link></div></div></section>
   </article></main><Footer lang={lang}/></>;
 }

@@ -21,49 +21,49 @@ twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landin
 
 const destinations = [
   {
-    title:'Riviera del Brenta',
+    title:'Riviera del Brenta',href:'/guide/riviera-del-brenta',
     eyebrow:'Ville, acqua e paesaggio',
     text:'Un itinerario tra ville venete, borghi, giardini storici e scorci lungo il Naviglio del Brenta. È la prima escursione che consigliamo a chi arriva in auto.',
     image:'/images/veneto-riviera-brenta-final.webp',
     note:'Ideale per mezza giornata o una giornata intera.'
   },
   {
-    title:'Colline del Prosecco',
+    title:'Colline del Prosecco',href:'/guide/colline-del-prosecco',
     eyebrow:'Valdobbiadene e dintorni',
     text:'Strade panoramiche, vigneti, piccoli paesi e cantine. Un percorso da vivere con calma, alternando paesaggio, degustazioni e soste nei borghi.',
     image:'/images/veneto-colline-prosecco-final.webp',
     note:'Perfetto per chi ama vino, natura e fotografia.'
   },
   {
-    title:'Padova',
+    title:'Padova',href:'/guide/padova',
     eyebrow:'Arte e vita cittadina',
     text:'Piazze, portici, mercati, la Basilica di Sant’Antonio e un centro storico vivace. Una città d’arte facile da inserire in un soggiorno più lungo.',
     image:'/images/veneto-padova-final.webp',
     note:'Una giornata completa tra arte, passeggiate e cucina.'
   },
   {
-    title:'Treviso',
+    title:'Treviso',href:'/guide/treviso',
     eyebrow:'Canali e portici',
     text:'Una città elegante e raccolta, con canali, piazze, portici e un’atmosfera rilassata. Ottima per una passeggiata senza fretta.',
     image:'/images/veneto-treviso-final.webp',
     note:'Adatta anche a una visita di poche ore.'
   },
   {
-    title:'Chioggia e Pellestrina',
+    title:'Chioggia e Pellestrina',href:'/guide/chioggia',
     eyebrow:'Laguna autentica',
     text:'Calli, canali, pescherie, spiagge e una Venezia più quotidiana. Un itinerario ideale per chi cerca mare e tradizioni locali.',
     image:'/images/veneto-chioggia-pellestrina-final.webp',
     note:'Consigliata soprattutto nella bella stagione.'
   },
   {
-    title:'Verona',
+    title:'Verona',href:'/guide/verona',
     eyebrow:'Storia e romanticismo',
     text:'Arena, piazze, ponti e vicoli storici. Una meta più distante, ma perfetta per una giornata dedicata a una delle città più note del Veneto.',
     image:'/images/veneto-verona-final.webp',
     note:'Meglio partire al mattino e dedicare l’intera giornata.'
   },
   {
-    title:'Dolomiti',
+    title:'Dolomiti',href:'/guide/dolomiti',
     eyebrow:'Una giornata in montagna',
     text:'Laghi, passi e panorami alpini per chi viaggia in auto e vuole dedicare un’intera giornata alla montagna. Scegli una sola area, parti presto e controlla sempre meteo e viabilità.',
     image:'/images/guide-dolomiti-final.webp',
@@ -185,7 +185,7 @@ export default function ScopriIlVeneto(){
               <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{d.eyebrow}</p>
               <h2 className="mt-3 font-serif text-5xl text-navy">{d.title}</h2>
               <p className="mt-5 text-lg text-slate-600">{d.text}</p>
-              <p className="mt-6 rounded-2xl bg-cream p-5 font-semibold text-navy">{d.note}</p>{d.title==='Dolomiti'&&<Link href="/guide/dolomiti" className="mt-6 inline-flex w-fit rounded-full bg-gold px-6 py-3 font-bold text-navy">Apri la guida Dolomiti</Link>}
+              <p className="mt-6 rounded-2xl bg-cream p-5 font-semibold text-navy">{d.note}</p>{d.href&&<Link href={d.href} className="mt-6 inline-flex w-fit rounded-full bg-gold px-6 py-3 font-bold text-navy">Leggi la guida completa</Link>}
             </div>
           </article>)}
         </div>

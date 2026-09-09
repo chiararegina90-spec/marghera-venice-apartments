@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata:Metadata = {
   title:'Venice Historical Regatta 2026: programme, times & where to watch',
@@ -49,5 +50,6 @@ export default function Article(){
       <div className="mt-7 grid gap-4 md:grid-cols-2"><Link href="/en/journal/mostra-del-cinema" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Venice Film Festival 2026 <span className="text-gold">→</span></Link><Link href="/en/journal/homo-faber-2026" className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">Homo Faber 2026 <span className="text-gold">→</span></Link></div>
       <div className="mt-10 text-center"><Link href="/en/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Back to Journal</Link></div>
     </div></section>
-  </article></main><Footer lang="en"/></>;
+  <EditorialStayCta lang="en" context="journal"/>
+</article></main><Footer lang="en"/></>;
 }

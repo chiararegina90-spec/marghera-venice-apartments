@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata:Metadata = {
   title:'Where to park when visiting Venice | Venice Travel Journal',
@@ -39,5 +40,6 @@ export default function Article(){
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">Venice’s historic centre has no cars. Arriving from the mainland, vehicles can reach Piazzale Roma or the Tronchetto area; from there, you continue on foot or by water.</p><div className="mt-14 space-y-12">{sections.map((s,i)=><section key={s.title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{s.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{s.text}</p></div></section>)}</div></div></section>
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] bg-gold p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.22em]">Marghera Venice Apartments tip</p><p className="mt-4 font-serif text-3xl">If you are staying with us, try the simplest solution first: park free at the apartment and reach Venice by bus or train. If you prefer to drive, Piazzale Roma and Tronchetto remain excellent alternatives.</p></div></div></section>
     <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Keep exploring</p><h2 className="mt-3 font-serif text-4xl text-navy">You may also like</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href="/en/journal" className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">Back to Journal</Link></div></div></section>
-  </article></main><Footer lang="en"/></>
+  <EditorialStayCta lang="en" context="journal"/>
+</article></main><Footer lang="en"/></>
 }

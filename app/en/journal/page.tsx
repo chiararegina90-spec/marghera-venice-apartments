@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import JournalFilterGrid from '@/components/JournalFilterGrid';
+import JournalDynamicGrid from '@/components/JournalDynamicGrid';
 
 export const metadata:Metadata={title:'Venice Travel Journal | Events, Food & Local Tips',description:'Venice events, traditions, family travel, food, transport and practical local advice from Marghera Venice Apartments.',alternates:{canonical:'/en/journal',languages:{'it-IT':'/journal','en-GB':'/en/journal','de-DE':'/de/journal','fr-FR':'/fr/journal','es-ES':'/es/journal','zh-CN':'/zh/journal','x-default':'/journal'}},openGraph:{title:'Venice Travel Journal',description:'Events, traditions and practical ideas for experiencing Venice with more local context.',url:'/en/journal',locale:'en_GB',type:'website',images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landino.webp']}};
 const articles=[
@@ -26,6 +26,6 @@ const articles=[
 ['How to enjoy Venice respectfully','Living Venice','Simple local etiquette for enjoying the city while remembering that Venice is also someone’s home.','/images/journal-buone-maniere.webp','Visitors walking through Venice while respecting local life','buone-maniere-a-venezia']];
 export default function Journal(){return <><Header lang="en"/><main>
 <section className="bg-navy px-5 pb-20 pt-36 text-white lg:px-8"><div className="mx-auto max-w-7xl"><nav aria-label="Breadcrumb" className="mb-6 flex gap-2 text-sm text-white/70"><Link href="/en">Home</Link><span>›</span><span className="text-gold">Journal</span></nav><p className="text-xs font-black uppercase tracking-[.22em] text-gold">Venice, events and lagoon life</p><h1 className="mt-4 max-w-5xl font-serif text-6xl leading-none md:text-8xl">The Marghera Venice Apartments Journal</h1><p className="mt-6 max-w-3xl text-xl text-white/75">Events, traditions, practical information and local inspiration to help you experience Venice with more confidence and context.</p></div></section>
-<JournalFilterGrid lang="en" items={articles.map(([title,category,text,image,alt,slug,eventDate])=>({title,category,text,image,alt,href:`/en/journal/${slug}`,eventDate}))}/>
+<JournalDynamicGrid lang="en" items={articles.map(([title,category,text,image,alt,slug,eventDate])=>({title,category,text,image,alt,href:`/en/journal/${slug}`,eventDate}))}/>
 <section className="py-20"><div className="mx-auto max-w-5xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">Keep exploring</p><h2 className="mt-3 font-serif text-5xl text-navy">Looking for a specific destination?</h2><p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">Our Guides focus on Venice, the islands and day trips across Veneto, while the Journal covers events, traditions and practical travel advice.</p><Link href="/en/guide" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Open all guides</Link></div></section>
 </main><Footer lang="en"/></>}

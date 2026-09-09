@@ -8,7 +8,7 @@ import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
-  title: 'Dimora Castelli',
+  title: 'Dimora Castelli | 5 Guests & Free Parking Near Venice',
   description: 'Dimora Castelli in Marghera near Venice: approx. 60 m² for up to 5 guests, free private parking, access to a shared garden and convenient day-and-night connections to Venice.',
   openGraph:{
     title:'Dimora Castelli | Up to 5 guests near Venice',
@@ -193,7 +193,7 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <ReviewSection property="Dimora Castelli" reviews={castelliReviews}/>
+    <ReviewSection property="Dimora Castelli" reviews={castelliReviews} lang="en"/>
 
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">

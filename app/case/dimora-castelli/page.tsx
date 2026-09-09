@@ -8,7 +8,7 @@ import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
-  title: 'Dimora Castelli | Marghera Venice Apartments',
+  title: 'Dimora Castelli | 5 ospiti e parcheggio privato vicino a Venezia',
   description: 'Dimora Castelli a Marghera: circa 60 m², fino a 5 ospiti, giardino condominiale, parcheggio privato e collegamenti H24 per Venezia.',
   openGraph:{
     title:'Dimora Castelli | Fino a 5 ospiti vicino a Venezia',
@@ -193,7 +193,7 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    <ReviewSection property="Dimora Castelli" reviews={castelliReviews}/>
+    <ReviewSection property="Dimora Castelli" reviews={castelliReviews} lang="it"/>
 
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">

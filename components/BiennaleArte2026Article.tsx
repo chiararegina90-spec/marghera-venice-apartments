@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {BiennaleArte2026Data,BiennaleArte2026Lang} from '@/data/biennaleArte2026';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 function base(lang:BiennaleArte2026Lang){return lang==='it'?'':`/${lang}`;}
 
@@ -58,6 +59,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
       <div className="mt-8 rounded-[2rem] bg-white p-8 shadow-soft"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{data.officialBoxLabel}</p><p className="mt-3 text-slate-600">{data.sourceNote}</p><a href={data.officialUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{data.officialLabel} ↗</a></div>
     </div></section>
 
-    <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="mt-3 font-serif text-4xl text-navy">{data.moreLabel}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
+    <EditorialStayCta lang={lang} context="journal"/>
+<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="mt-3 font-serif text-4xl text-navy">{data.moreLabel}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
   </article></main><Footer lang={lang}/></>;
 }

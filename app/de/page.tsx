@@ -9,7 +9,7 @@ import Feature from '@/components/Feature';
 import SectionTitle from '@/components/SectionTitle';
 
 export const metadata:Metadata={
-  title:'Apartments nahe Venedig',description:'Rossi Apartment und Dimora Castelli in Marghera: privater Parkplatz, Verbindungen nach Venedig rund um die Uhr sowie tier- und familienfreundliche Gastfreundschaft.',
+  title:'Ferienwohnungen bei Venedig mit Privatparkplatz | Marghera',description:'Rossi Apartment und Dimora Castelli in Marghera: privater Parkplatz, Verbindungen nach Venedig rund um die Uhr sowie tier- und familienfreundliche Gastfreundschaft.',
   openGraph:{title:'Marghera Venice Apartments | Ihr Aufenthalt nahe Venedig',description:'Zwei Apartments in Marghera mit privatem Parkplatz und Verbindungen nach Venedig rund um die Uhr.',images:[{url:'/images/home-rialto-vincenzo-landino.webp',alt:'Venedig ist erst der Anfang.'}],type:'website'},
   twitter:{card:'summary_large_image',title:'Marghera Venice Apartments',description:'Zwei Apartments in Marghera mit privatem Parkplatz und Verbindungen nach Venedig rund um die Uhr.',images:['/images/home-rialto-vincenzo-landino.webp']},
   alternates:{canonical:'/de',languages:{'it-IT':'/','en-GB':'/en','de-DE':'/de','fr-FR':'/fr','es-ES':'/es','zh-CN':'/zh','x-default':'/'}}

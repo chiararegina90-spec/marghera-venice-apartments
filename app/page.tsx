@@ -10,7 +10,7 @@ import SectionTitle from '@/components/SectionTitle';
 
 
 export const metadata:Metadata={
-  title:'Marghera Venice Apartments | Appartamenti vicino a Venezia',
+  title:'Appartamenti vicino a Venezia con parcheggio privato | Marghera',
   description:'Rossi Apartment e Dimora Castelli a Marghera: parcheggio privato, collegamenti H24 per Venezia, accoglienza Pet Friendly e Family Friendly.',
   openGraph:{
     title:'Marghera Venice Apartments | Il tuo soggiorno vicino a Venezia',

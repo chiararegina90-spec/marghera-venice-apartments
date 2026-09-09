@@ -8,7 +8,7 @@ import ReviewSection from '@/components/ReviewSection';
 import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata:Metadata={
-  title:'Rossi Apartment | Marghera Venice Apartments',
+  title:'Rossi Apartment | 7 ospiti e parcheggio privato vicino a Venezia',
   description:'Rossi Apartment a Marghera: oltre 100 m², fino a 7 ospiti, parcheggio privato, terrazza arredata e collegamenti H24 per Venezia.',
   openGraph:{
     title:'Rossi Apartment | Fino a 7 ospiti vicino a Venezia',
@@ -138,7 +138,7 @@ export default function RossiApartment(){
       </div>
     </section>
 
-    <ReviewSection property="Rossi Apartment" reviews={rossiReviews}/>
+    <ReviewSection property="Rossi Apartment" reviews={rossiReviews} lang="it"/>
 
     <section className="py-24">
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">

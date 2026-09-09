@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {GlassWeekContent} from '@/data/glassWeek2026';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 const heroImage='/images/journal-venice-glass-week-2026-cover.webp';
 
@@ -77,7 +78,8 @@ export default function GlassWeek2026Article({data}:{data:GlassWeekContent}){
           </div>
         </section>
 
-        <section className="py-20">
+        <EditorialStayCta lang={data.lang} context="journal"/>
+<section className="py-20">
           <div className="mx-auto max-w-5xl px-5 lg:px-8">
             <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{data.relatedEyebrow}</p>
             <h2 className="mt-3 font-serif text-4xl text-navy">{data.relatedTitle}</h2>

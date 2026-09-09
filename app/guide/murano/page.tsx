@@ -4,7 +4,7 @@ import {guideData} from '@/data/guides';
 
 const data=guideData['murano'];
 export const metadata:Metadata={
- title:`${data.title} | Marghera Venice Apartments`,
+ title:'Guida a Murano: vetro, cosa vedere e come arrivare',
  description:data.description,
  alternates:{canonical:'/guide/murano',languages:{'it-IT':'/guide/murano','en-GB':'/en/guide/murano','de-DE':'/de/guide/murano','fr-FR':'/fr/guide/murano','es-ES':'/es/guide/murano','zh-CN':'/zh/guide/murano','x-default':'/guide/murano'}},
  openGraph:{title:data.title,description:data.description,type:'article',images:[data.image]},
