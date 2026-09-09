@@ -18,6 +18,6 @@ export default function sitemap():MetadataRoute.Sitemap{
  const guideSlugs=Array.from(new Set([...Object.keys(guideData),...seoGuideSlugs]));
  const journalSlugs=Array.from(new Set([...Object.keys(journalDe),...eventSlugs,...seoJournalSlugs]));
  const logicalRoutes=[...commonLogicalRoutes,...guideSlugs.map(slug=>`/guide/${slug}`),...journalSlugs.map(slug=>`/journal/${slug}`)];
- const entries=logicalRoutes.flatMap(logical=>siteLangs.map(lang=>{const priority=logical==='/'?1:logical.startsWith('/case/')?0.9:logical==='/come-raggiungere-venezia'?0.8:logical.startsWith('/journal/')?0.78:logical.startsWith('/guide/')?0.76:0.7;const frequency=logical==='/'||logical==='/journal'||logical.startsWith('/journal/')?'weekly' as const:'monthly' as const;return item(logical,lang,priority,frequency);});
+ const entries=logicalRoutes.flatMap(logical=>siteLangs.map(lang=>{const priority=logical==='/'?1:logical.startsWith('/case/')?0.9:logical==='/come-raggiungere-venezia'?0.8:logical.startsWith('/journal/')?0.78:logical.startsWith('/guide/')?0.76:0.7;const frequency=logical==='/'||logical==='/journal'||logical.startsWith('/journal/')?'weekly' as const:'monthly' as const;return item(logical,lang,priority,frequency);}));
  const deduped=new Map<string,MetadataRoute.Sitemap[number]>();for(const entry of [...entries,...cultureSitemap()])deduped.set(entry.url,entry);return Array.from(deduped.values());
 }
