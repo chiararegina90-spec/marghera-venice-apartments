@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GuideHero from '@/components/GuideHero';
 import GuideBody from '@/components/GuideBody';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 import type {GuideData} from '@/data/guideTypes';
 export type {GuideData} from '@/data/guideTypes';
@@ -12,6 +13,7 @@ export default function GuideTemplate({data}:{data:GuideData}){
     <GuideHero lang="it" data={data}/>
     <GuideBadges data={data}/>
     <GuideBody data={data} lang="it"/>
+    <EditorialStayCta lang="it" context="guide"/>
   </main><Footer/>
   <Script id={`${data.slug}-schema`} type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
     '@context':'https://schema.org','@type':'TouristDestination',name:data.title,
