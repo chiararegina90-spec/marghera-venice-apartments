@@ -25,7 +25,7 @@ const hiddenGuideCard:Record<SiteLang,Omit<GuideDirectoryItem,'slug'>>={
   de:{title:'Venedig Geheimtipps',subtitle:'3 Spaziergänge abseits der Massen',text:'Cannaregio, das Handwerk in Dorsoduro und das östliche Castello: drei ruhige Routen für ein anderes Tempo in Venedig.',image:'/images/scopri-venezia-michael-heise.webp',alt:'Blick auf Venedig vor einem Spaziergang durch ruhigere Stadtviertel'},
   fr:{title:'Venise secrète',subtitle:'3 balades loin de la foule',text:'Cannaregio, le côté artisanal de Dorsoduro et l’est de Castello : trois itinéraires pour ralentir sans collectionner de prétendus « lieux secrets ».',image:'/images/scopri-venezia-michael-heise.webp',alt:'Vue de Venise avant de partir vers des quartiers plus calmes'},
   es:{title:'Venecia secreta',subtitle:'3 paseos lejos de las multitudes',text:'Cannaregio, la Venecia artesana de Dorsoduro y el este de Castello: tres rutas para bajar el ritmo sin perseguir listas de “lugares secretos”.',image:'/images/scopri-venezia-michael-heise.webp',alt:'Vista de Venecia antes de recorrer barrios más tranquilos'},
-  zh:{title:'小众威尼斯',subtitle:'3条远离人群的漫步路线',text:'从卡纳雷吉欧到多尔索杜罗的手工艺街区，再到卡斯特ello东部：三条适合放慢脚步、观察日常威尼斯的路线。',image:'/images/scopri-venezia-michael-heise.webp',alt:'从圣马可湾望向威尼斯，适合作为探索安静街区的起点'}
+  zh:{title:'小众威尼斯',subtitle:'3条远离人群的漫步路线',text:'从卡纳雷吉欧到多尔索杜罗的手工艺街区，再到城堡区东部：三条适合放慢脚步、观察日常威尼斯的路线。',image:'/images/scopri-venezia-michael-heise.webp',alt:'从圣马可湾望向威尼斯，适合作为探索安静街区的起点'}
 };
 
 export function seoGuideItems(lang:SiteLang):GuideDirectoryItem[]{
