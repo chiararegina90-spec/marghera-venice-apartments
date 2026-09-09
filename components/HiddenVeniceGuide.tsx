@@ -20,7 +20,7 @@ const heroAlt:Record<SiteLang,string>={
 const officialLabels:Record<SiteLang,string>={it:'Itinerari ufficiali Venezia Unica',en:'Official Venezia Unica itineraries',de:'Offizielle Routen von Venezia Unica',fr:'Itinéraires officiels Venezia Unica',es:'Itinerarios oficiales Venezia Unica',zh:'Venezia Unica官方路线'};
 const sourceLinks=[
   ['Dorsoduro','https://www.veneziaunica.it/en/things-to-do-in-venice/itineraries/dorsoduro-the-art-district'],
-  ['Castello','https://www.veneziaunica.it/en/things-to-do-in-venice/itineraries']
+  ['Castello','https://www.veneziaunica.it/en/things-to-do-in-venice/itineraries/castello-naval-art-and-traditions']
 ] as const;
 
 function Fact({icon,label,value}:{icon:string;label:string;value:string}){return <div className="flex gap-3"><span aria-hidden="true">{icon}</span><div><p className="text-xs font-black uppercase tracking-[.12em] text-gold">{label}</p><p className="mt-1 leading-6 text-slate-700">{value}</p></div></div>}
@@ -38,6 +38,10 @@ export default function HiddenVeniceGuide({lang}:{lang:SiteLang}){
     {'@type':'ListItem',position:2,name:c.labels.guides,item:`${BASE}${localePath('/guide',lang)}`},
     {'@type':'ListItem',position:3,name:c.h1,item:articleUrl}
   ]};
+  const faqSchema={
+    '@context':'https://schema.org','@type':'FAQPage',
+    mainEntity:c.faq.map(item=>({'@type':'Question',name:item.q,acceptedAnswer:{'@type':'Answer',text:item.a}}))
+  };
   const lagoon=[['Certosa','certosa'],["Sant’Erasmo",'sant-erasmo'],['Pellestrina','pellestrina']] as const;
   const related=[
     [c.labels.children,localePath('/journal/venezia-con-bambini',lang)],
@@ -51,6 +55,7 @@ export default function HiddenVeniceGuide({lang}:{lang:SiteLang}){
     <main><article className="editorial-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleSchema)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>
       <section className="relative min-h-[68svh] overflow-hidden pt-20 sm:min-h-[76vh]">
         <Image src="/images/scopri-venezia-michael-heise.webp" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
