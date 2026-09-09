@@ -1,6 +1,7 @@
 import JournalFilterGrid,{type JournalFilterItem} from '@/components/JournalFilterGrid';
 import {eventArticles,type EventLang} from '@/data/journal-events-2026';
 import {journalEventImagePair} from '@/data/journal-event-images';
+import {seoJournalItems} from '@/data/seoEvergreenContent';
 
 export default function JournalDynamicGrid({items,lang='it',readLabel}:{items:JournalFilterItem[];lang?:EventLang;readLabel?:string}){
   const prefix=lang==='it'?'':`/${lang}`;
@@ -12,5 +13,6 @@ export default function JournalDynamicGrid({items,lang='it',readLabel}:{items:Jo
       fallbackImage:local?.cover||a.fallbackImage,startDate:a.startDate,endDate:a.endDate
     };
   });
-  return <JournalFilterGrid items={items} dynamicEvents={dynamicEvents} lang={lang} readLabel={readLabel}/>;
+  const sharedEvergreen=seoJournalItems(lang);
+  return <JournalFilterGrid items={[...items,...sharedEvergreen]} dynamicEvents={dynamicEvents} lang={lang} readLabel={readLabel}/>;
 }
