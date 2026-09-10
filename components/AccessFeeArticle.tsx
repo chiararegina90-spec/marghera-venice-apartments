@@ -12,12 +12,12 @@ const officialPortal:Record<SiteLang,string>={
   it:'https://cda.ve.it/it/',en:'https://cda.ve.it/en/',de:'https://cda.ve.it/de/',fr:'https://cda.ve.it/fr/',es:'https://cda.ve.it/es/',zh:'https://cda.ve.it/en/'
 };
 const heroAlt:Record<SiteLang,string>={
-  it:'Ingresso a Venezia dalla terraferma, immagine introduttiva alla guida sul Contributo di Accesso',
-  en:'Approaching Venice from the mainland, introducing the Venice Access Fee guide',
-  de:'Ankunft in Venedig vom Festland, als Einführung zum Leitfaden über den Zugangsbeitrag',
-  fr:'Arrivée à Venise depuis la terre ferme, pour introduire le guide sur la contribution d’accès',
-  es:'Llegada a Venecia desde tierra firme, como introducción a la guía sobre la tasa de acceso',
-  zh:'从大陆方向进入威尼斯，用于介绍威尼斯入城费指南'
+  it:'Contributo di Accesso a Venezia: punto informativo per i visitatori',
+  en:'Venice Access Fee information point for visitors',
+  de:'Informationsstelle zum Zugangsbeitrag für Venedig',
+  fr:'Point d’information sur la contribution d’accès à Venise',
+  es:'Punto de información sobre la tasa de acceso a Venecia',
+  zh:'威尼斯入城费游客信息点'
 };
 const municipality='https://www.comune.venezia.it/it/cda-info';
 const islandGuides=[
@@ -37,7 +37,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
     datePublished:'2026-09-10',dateModified:'2026-09-10',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},
-    image:`${BASE}/images/journal-parcheggi-venezia.webp`
+    image:`${BASE}/images/access-fee-cover.png`
   };
   const breadcrumbSchema={
     '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
@@ -61,7 +61,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>
       <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
-        <Image src="/images/journal-parcheggi-venezia.webp" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
+        <Image src="/images/access-fee-cover.png" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
         <div className="relative mx-auto flex min-h-[calc(64svh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 sm:min-h-[calc(72vh-5rem)] lg:px-8"><div className="max-w-4xl text-white">
           <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={localePath('/',lang)}>{c.labels.home}</Link><span>›</span><Link href={localePath('/journal',lang)}>{c.labels.journal}</Link><span>›</span><span className="text-gold">{c.h1}</span></nav>

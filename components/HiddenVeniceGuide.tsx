@@ -10,12 +10,12 @@ import {localePath,type SiteLang} from '@/lib/i18n';
 const BASE='https://www.margheraveniceapartments.com';
 const LOGICAL='/guide/venezia-nascosta';
 const heroAlt:Record<SiteLang,string>={
-  it:'Venezia vista dal Bacino di San Marco prima di esplorare i quartieri più tranquilli',
-  en:'Venice seen from St Mark’s Basin before exploring quieter neighbourhoods',
-  de:'Blick auf Venedig vor einem Spaziergang durch ruhigere Stadtviertel',
-  fr:'Vue de Venise avant de partir vers des quartiers plus calmes',
-  es:'Vista de Venecia antes de recorrer barrios más tranquilos',
-  zh:'从圣马可湾望向威尼斯，作为探索安静街区路线的起点'
+  it:'Chiostro fiorito e tranquillo, immagine introduttiva alla guida Venezia nascosta',
+  en:'Quiet flower-filled cloister introducing the Hidden Venice guide',
+  de:'Ruhiger, blumengeschmückter Kreuzgang als Einstieg in den Geheimtipps-Guide für Venedig',
+  fr:'Cloître paisible et fleuri pour introduire le guide de Venise secrète',
+  es:'Claustro tranquilo y florido para presentar la guía de Venecia secreta',
+  zh:'宁静而繁花盛开的回廊，用于介绍小众威尼斯指南'
 };
 const officialLabels:Record<SiteLang,string>={it:'Itinerari ufficiali Venezia Unica',en:'Official Venezia Unica itineraries',de:'Offizielle Routen von Venezia Unica',fr:'Itinéraires officiels Venezia Unica',es:'Itinerarios oficiales Venezia Unica',zh:'Venezia Unica官方路线'};
 const sourceLinks=[
@@ -31,7 +31,7 @@ export default function HiddenVeniceGuide({lang}:{lang:SiteLang}){
   const articleUrl=`${BASE}${path}`;
   const articleSchema={
     '@context':'https://schema.org','@type':'Article',headline:c.h1,description:c.metaDescription,datePublished:'2026-09-10',dateModified:'2026-09-10',
-    mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},image:`${BASE}/images/scopri-venezia-michael-heise.webp`
+    mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},image:`${BASE}/images/venezia-nascosta-cover.png`
   };
   const breadcrumbSchema={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
     {'@type':'ListItem',position:1,name:c.labels.home,item:`${BASE}${localePath('/',lang)}`},
@@ -57,7 +57,7 @@ export default function HiddenVeniceGuide({lang}:{lang:SiteLang}){
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}}/>
       <section className="relative min-h-[68svh] overflow-hidden pt-20 sm:min-h-[76vh]">
-        <Image src="/images/scopri-venezia-michael-heise.webp" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
+        <Image src="/images/venezia-nascosta-cover.png" alt={heroAlt[lang]} fill priority sizes="100vw" className="object-cover"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
         <div className="relative mx-auto flex min-h-[calc(68svh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 sm:min-h-[calc(76vh-5rem)] lg:px-8"><div className="max-w-5xl text-white">
           <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={localePath('/',lang)}>{c.labels.home}</Link><span>›</span><Link href={localePath('/guide',lang)}>{c.labels.guides}</Link><span>›</span><span className="text-gold">{c.h1}</span></nav>
