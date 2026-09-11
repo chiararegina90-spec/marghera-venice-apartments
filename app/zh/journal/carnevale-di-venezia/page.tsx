@@ -1,7 +1,8 @@
-import type {Metadata} from 'next';
-import {languageAlternates} from '@/lib/i18n';
-import {LocalizedJournalArticle} from '@/components/LocalizedRich';
 import {journalZh} from '@/data/journal-zh';
-const data=journalZh['carnevale-di-venezia'];
-export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/carnevale-di-venezia'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}
+import {journalAuditLocalized} from '@/data/journalAuditLocalized';
+import type {JournalArticleData} from '@/components/LocalizedRich';
+import AuditedLocalizedJournalArticle from '@/components/AuditedLocalizedJournalArticle';
+import {editorialMetadata} from '@/lib/seoContentMetadata';
+const data={...journalZh['carnevale-di-venezia'],...journalAuditLocalized.zh['carnevale-di-venezia']} as unknown as JournalArticleData;
+export const metadata=editorialMetadata({lang:'zh',logicalPath:'/journal/carnevale-di-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt});
+export default function Page(){return <AuditedLocalizedJournalArticle lang="zh" data={data} tipLabel="Marghera Venice Apartments 建议" officialLabel="官方信息" backLabel="返回旅行日志"/>;}

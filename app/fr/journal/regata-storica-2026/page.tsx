@@ -1,18 +1,8 @@
-import type {Metadata} from 'next';
-import {languageAlternates} from '@/lib/i18n';
-import {LocalizedJournalArticle} from '@/components/LocalizedRich';
 import {journalFr} from '@/data/journal-fr';
-
-const data=journalFr["regata-storica-2026"];
-
-export const metadata:Metadata={
-  title:data.title,
-  description:data.description,
-  alternates:languageAlternates('/fr/journal/regata-storica-2026'),
-  openGraph:{type:'article',images:[data.image]},
-  twitter:{card:'summary_large_image',images:[data.image]}
-};
-
-export default function Page(){
-  return <LocalizedJournalArticle lang="fr" data={data} tipLabel="Conseil de Marghera Venice Apartments" officialLabel="Informations officielles" backLabel="Retour au Journal"/>;
-}
+import {journalAuditLocalized} from '@/data/journalAuditLocalized';
+import type {JournalArticleData} from '@/components/LocalizedRich';
+import AuditedLocalizedJournalArticle from '@/components/AuditedLocalizedJournalArticle';
+import {editorialMetadata} from '@/lib/seoContentMetadata';
+const data={...journalFr['regata-storica-2026'],...journalAuditLocalized.fr['regata-storica-2026']} as unknown as JournalArticleData;
+export const metadata=editorialMetadata({lang:'fr',logicalPath:'/journal/regata-storica-2026',title:data.title,description:data.description,image:data.image,alt:data.imageAlt});
+export default function Page(){return <AuditedLocalizedJournalArticle lang="fr" data={data} tipLabel="Conseil de Marghera Venice Apartments" officialLabel="Informations officielles" backLabel="Retour au Journal"/>;}
