@@ -59,7 +59,9 @@ export async function proxy(request:NextRequest){
     const apartment=clean[1] as GuestApartment;
     const lang=clean[2];
     if(!guestLanguages.has(lang)||!(await authenticated(request,apartment))){
-      return privateHeaders(NextResponse.redirect(new URL(`/guest/${apartment}`,request.url),307));
+      const gateUrl=new URL(`/guest/${apartment}`,request.url);
+      gateUrl.searchParams.set('lang',lang);
+      return privateHeaders(NextResponse.redirect(gateUrl,307));
     }
     const response=NextResponse.rewrite(new URL(`/guest-content/${apartment}/${lang}.html`,request.url));
     return privateHeaders(promoteGuestCookie(request,response,apartment));
@@ -82,7 +84,9 @@ export async function proxy(request:NextRequest){
   }
 
   const headers=new Headers(request.headers);
-  const locale=['en','de','fr','es','zh'].find(l=>path===`/${l}`||path.startsWith(`/${l}/`))||'it';
+  const requestedGuestLang=guestRoot?request.nextUrl.searchParams.get('lang'):null;
+  const guestLocale=requestedGuestLang&&guestLanguages.has(requestedGuestLang)?requestedGuestLang:null;
+  const locale=guestLocale||['en','de','fr','es','zh'].find(l=>path===`/${l}`||path.startsWith(`/${l}/`))||'it';
   headers.set('x-site-lang',locale);
   return NextResponse.next({request:{headers}});
 }
