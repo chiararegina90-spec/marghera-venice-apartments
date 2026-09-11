@@ -2,6 +2,10 @@
   const mq=window.matchMedia('(max-width:980px)');
   const labels={it:'Vai a una sezione',en:'Jump to a section',de:'Zu einem Abschnitt',fr:'Aller à une section',es:'Ir a una sección',zh:'跳转到章节'};
 
+  function secureExternalLinks(){
+    document.querySelectorAll('a[target="_blank"]').forEach(link=>link.setAttribute('rel','noopener noreferrer'));
+  }
+
   function localizeChineseGuestContact(){
     const lang=(document.documentElement.lang||'it').toLowerCase();
     if(lang!=='zh') return;
@@ -25,6 +29,7 @@
 
   function setup(){
     localizeChineseGuestContact();
+    secureExternalLinks();
     if(!mq.matches) return;
     const lang=(document.documentElement.lang||'it').toLowerCase();
     const main=document.querySelector('main');
