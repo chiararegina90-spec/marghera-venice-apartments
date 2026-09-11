@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
+import WeChatCard from '@/components/WeChatCard';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 type Section={title:string;text:string};
@@ -85,25 +86,24 @@ const copy:Record<Lang,Copy>={
   sections:[{title:'一座讲述土地故事的酒庄',text:'Azienda Agricola I Campi 位于维罗纳省 Cellore d’Illasi，由酿酒师 Flavio Prà 经营。他是葡萄种植家族的第四代传人。酒庄以长期经验、研究与对土地的深厚联系为基础不断发展。'},{title:'“每一种酒都需要属于自己的土地”',text:'针对不同葡萄品种，酒庄寻找最适宜的葡萄园，包括高海拔丘陵地块，希望酿造出具有鲜明个性、优雅并与产地紧密相连的葡萄酒。'},{title:'Val d’Illasi：葡萄园与 Lessini 山之间',text:'酒庄位于 Valpolicella 东部的 Val d’Illasi。石材、木材、现代技术与酿酒专业知识在这里结合，围绕品质、葡萄酒的真实性与可持续性展开。'}],
   awardsTitle:'获奖葡萄酒与备受认可的风格',awards:'多年来，I Campi 获得多家意大利及国际指南与酒评家的认可。Soave Classico DOC “Campo Vulcano” 获得 Gambero Rosso Tre Bicchieri，并得到 James Suckling 94/100；Valpolicella Ripasso Superiore DOC “Campo Ciotoli” 获 James Suckling 93/100；Amarone della Valpolicella DOCG “Campi Lunghi” 获 James Suckling 93/100，并在其他年份获得 Falstaff、Vinous、Asia Wine Trophy 与 Berliner Wine Trophy 等认可。',awardsNote:'上述奖项对应特定酒款与年份，并不表示品鉴时一定包含相同年份。',
   tastingTitle:'选择您的品鉴路线',tastingIntro:'共有四种方案可选，同一团体需统一选择一种品鉴路线：',tastings:[{name:'新视野',wines:'Lugana DOC、Pinot Grigio delle Venezie DOC 和 Soave DOC。'},{name:'沉浸 Valpolicella',wines:'Valpolicella Superiore DOC、Ripasso DOC 和 Amarone della Valpolicella DOCG。'},{name:'双重对比',wines:'Lugana DOC、Soave DOC、Valpolicella Superiore DOC 和 Ripasso DOC。'},{name:'完整路线',wines:'Lugana DOC、Soave DOC、Pinot Grigio delle Venezie DOC、Valpolicella Superiore DOC、Ripasso DOC 和 Amarone della Valpolicella DOCG。'}],included:'品鉴包含当地奶酪与冷切肉品；视参观时期而定，也可能安排酒窖参观。',
-  whyTitle:'为什么我们推荐',why:'我们选择 I Campi，是因为这里的品鉴不仅是喝酒，更是一种真正认识当地土地与文化的方式。您会接触到酒庄的故事、酿造理念，以及这家维罗纳酒庄清晰而受认可的身份。非常适合想在威尼斯之外探索另一面威尼托的旅客。',perfect:'适合：情侣 • 朋友团体 • 葡萄酒爱好者 • 想探索威尼斯之外威尼托地区的旅客',adviceTitle:'我们的建议',advice:'不知道该选哪一种路线？通过 WhatsApp 告诉我们您喜欢什么类型的葡萄酒，我们很乐意帮您了解不同方案，并与酒庄确认可用时间。',advance:'需至少提前 48 小时预约。',
+  whyTitle:'为什么我们推荐',why:'我们选择 I Campi，是因为这里的品鉴不仅是喝酒，更是一种真正认识当地土地与文化的方式。您会接触到酒庄的故事、酿造理念，以及这家维罗纳酒庄清晰而受认可的身份。非常适合想在威尼斯之外探索另一面威尼托的旅客。',perfect:'适合：情侣 • 朋友团体 • 葡萄酒爱好者 • 想探索威尼斯之外威尼托地区的旅客',adviceTitle:'我们的建议',advice:'不知道该选哪一种路线？通过微信告诉我们您喜欢什么类型的葡萄酒，我们很乐意帮您了解不同方案，并与酒庄确认可用时间。',advance:'需至少提前 48 小时预约。',
   infoTitle:'实用信息',info:[{label:'地点',value:'Azienda Agricola I Campi – Via delle Pezzole, 3, Località Allodola, Cellore d’Illasi (VR)'},{label:'时长',value:'约 1 小时 30 分钟至 2 小时'},{label:'预约',value:'至少提前 48 小时，并需确认可用时间'},{label:'团体',value:'整个团体统一选择一种品鉴路线'},{label:'包含',value:'葡萄酒品鉴、当地奶酪与冷切肉品，以及在适合时期安排的酒窖参观'},{label:'过敏或不耐受',value:'请提前告知'}],cta:'向我们咨询此体验',official:'I Campi 官方网站',back:'返回体验'
  }
 };
 
 const experienceHref:Record<Lang,string>={it:'/collaborazioni',en:'/en/experiences',de:'/de/experiences',fr:'/fr/experiences',es:'/es/experiences',zh:'/zh/experiences'};
 const homeHref:Record<Lang,string>={it:'/',en:'/en',de:'/de',fr:'/fr',es:'/es',zh:'/zh'};
-const waText:Record<Lang,string>={
+const waText:Record<Exclude<Lang,'zh'>,string>={
  it:'Ciao, vorrei informazioni sulla Wine Experience presso Azienda Agricola I Campi.',
  en:'Hello, I would like information about the Wine Experience at Azienda Agricola I Campi.',
  de:'Hallo, ich hätte gerne Informationen zur Wine Experience bei Azienda Agricola I Campi.',
  fr:'Bonjour, je souhaiterais des informations sur la Wine Experience chez Azienda Agricola I Campi.',
- es:'Hola, me gustaría recibir información sobre la Wine Experience en Azienda Agricola I Campi.',
- zh:'您好，我想了解 Azienda Agricola I Campi 葡萄酒体验的相关信息。'
+ es:'Hola, me gustaría recibir información sobre la Wine Experience en Azienda Agricola I Campi.'
 };
 
 export default function ICampiExperiencePage({lang}:{lang:Lang}){
  const t=copy[lang];
- const wa=`https://wa.me/393514462261?text=${encodeURIComponent(waText[lang])}`;
+ const wa=lang==='zh'?'':`https://wa.me/393514462261?text=${encodeURIComponent(waText[lang])}`;
  return <><Header lang={lang}/><main><article className="editorial-page">
   <EditorialHero
    image="/images/experience-i-campi-cover.webp"
@@ -120,7 +120,7 @@ export default function ICampiExperiencePage({lang}:{lang:Lang}){
 
   <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Wine tasting</p><h2 className="mt-3 font-serif text-5xl text-navy">{t.tastingTitle}</h2><p className="mt-5 text-lg text-slate-600">{t.tastingIntro}</p><div className="mt-8 grid gap-5 md:grid-cols-2">{t.tastings.map(x=><div key={x.name} className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft"><h3 className="font-serif text-3xl text-navy">{x.name}</h3><p className="mt-3 leading-7 text-slate-600">{x.wines}</p></div>)}</div><p className="mt-8 rounded-[2rem] bg-cream p-7 text-lg leading-8 text-navy">{t.included}</p></div></section>
 
-  <section className="bg-navy py-20 text-white"><div className="mx-auto grid max-w-5xl gap-8 px-5 lg:grid-cols-2 lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Marghera Venice Apartments</p><h2 className="mt-3 font-serif text-5xl">{t.whyTitle}</h2><p className="mt-5 text-lg leading-8 text-white/75">{t.why}</p><p className="mt-6 font-semibold text-gold">{t.perfect}</p></div><aside className="rounded-[2rem] bg-white p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.adviceTitle}</p><p className="mt-4 text-lg leading-8">{t.advice}</p><p className="mt-5 font-bold">{t.advance}</p><a href={wa} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-gold px-6 py-4 font-bold text-navy">🍷 {t.cta} ↗</a></aside></div></section>
+  <section className="bg-navy py-20 text-white"><div className="mx-auto grid max-w-5xl gap-8 px-5 lg:grid-cols-2 lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Marghera Venice Apartments</p><h2 className="mt-3 font-serif text-5xl">{t.whyTitle}</h2><p className="mt-5 text-lg leading-8 text-white/75">{t.why}</p><p className="mt-6 font-semibold text-gold">{t.perfect}</p></div><aside className="rounded-[2rem] bg-white p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.adviceTitle}</p><p className="mt-4 text-lg leading-8">{t.advice}</p><p className="mt-5 font-bold">{t.advance}</p>{lang==='zh'?<div className="mt-7"><WeChatCard title="添加我们的微信"/></div>:<a href={wa} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex rounded-full bg-gold px-6 py-4 font-bold text-navy">🍷 {t.cta} ↗</a>}</aside></div></section>
 
   <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><h2 className="font-serif text-5xl text-navy">{t.infoTitle}</h2><div className="mt-8 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">{t.info.map((x,i)=><div key={x.label} className={`grid gap-2 p-5 sm:grid-cols-[190px_1fr] sm:p-6 ${i<t.info.length-1?'border-b border-slate-200':''}`}><strong className="text-navy">{x.label}</strong><span className="text-slate-600">{x.value}</span></div>)}</div><div className="mt-8 flex flex-wrap gap-3"><a href="https://www.icampi.it/" target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-navy px-6 py-3 font-bold text-navy">{t.official} ↗</a><Link href={experienceHref[lang]} className="inline-flex rounded-full bg-gold px-6 py-3 font-bold text-navy">{t.back}</Link></div></div></section>
  </article></main><Footer lang={lang}/></>;
