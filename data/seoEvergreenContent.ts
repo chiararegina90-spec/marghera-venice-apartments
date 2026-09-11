@@ -1,9 +1,10 @@
 import type {SiteLang} from '@/lib/i18n';
 import type {JournalFilterItem} from '@/components/JournalFilterGrid';
 import type {GuideDirectoryItem} from '@/components/GuideDirectoryIndex';
+import {gondolaTourContent} from '@/data/gondolaTourContent';
 
 export const seoJournalSlugs=['contributo-accesso-venezia'] as const;
-export const seoGuideSlugs=['venezia-nascosta'] as const;
+export const seoGuideSlugs=['venezia-nascosta','gondola-tour-venezia'] as const;
 
 const accessFeeCard:Record<SiteLang,Omit<JournalFilterItem,'href'>>={
   it:{title:'Contributo di accesso a Venezia 2026/2027: devi pagare?',category:'Venezia pratica',text:'La sperimentazione 2026 è terminata il 26 luglio. Dal 27 luglio non serve pagare né chiedere esenzione: ecco cosa sappiamo sul 2027.',image:'/images/access-fee-card.png',alt:'Grafica informativa Need help? per il Contributo di Accesso a Venezia'},
@@ -29,5 +30,9 @@ const hiddenGuideCard:Record<SiteLang,Omit<GuideDirectoryItem,'slug'>>={
 };
 
 export function seoGuideItems(lang:SiteLang):GuideDirectoryItem[]{
-  return seoGuideSlugs.map(slug=>({slug,...hiddenGuideCard[lang]}));
+  const g=gondolaTourContent[lang];
+  return [
+    {slug:'venezia-nascosta',...hiddenGuideCard[lang]},
+    {slug:'gondola-tour-venezia',title:g.card.title,subtitle:g.card.subtitle,text:g.card.text,image:'/images/gondola-tour-venezia-card.jpg',alt:g.card.alt}
+  ];
 }

@@ -27,7 +27,7 @@ const accessPractical:Record<CultureLang,[string,string,string,string]>={
  es:['Tarifa de Acceso a Venecia','Estado 2026/2027, pagos y novedades oficiales.','/es/journal/contributo-accesso-venezia','🎟️'],
  zh:['威尼斯入城费','2026/2027当前状态、是否付费以及官方更新。','/zh/journal/contributo-accesso-venezia','🎟️']
 };
-const lagoon=new Set(['murano','burano','lido-di-venezia','pellestrina','certosa','sant-erasmo','venezia-nascosta']);
+const lagoon=new Set(['murano','burano','lido-di-venezia','pellestrina','certosa','sant-erasmo','venezia-nascosta','gondola-tour-venezia']);
 const veneto=new Set(['chioggia','riviera-del-brenta','padova','treviso','verona','colline-del-prosecco','dolomiti','jesolo','veneto-in-bicicletta']);
 function guideHref(lang:CultureLang,slug:string){return lang==='it'?`/guide/${slug}`:`/${lang}/guide/${slug}`}
 function Card({g,lang,label}:{g:GuideDirectoryItem;lang:CultureLang;label:string}){return <article className="overflow-hidden rounded-[2rem] bg-white shadow-soft ring-1 ring-black/5"><div className="relative h-56 sm:h-64"><Image src={g.image} alt={g.alt} fill sizes="(min-width:1280px) 31vw, (min-width:768px) 48vw, 100vw" className="object-cover"/></div><div className="p-6"><p className="text-xs font-black uppercase tracking-[.16em] text-gold">{g.subtitle}</p><h3 className="mt-3 font-serif text-3xl text-navy">{g.title}</h3><p className="mt-3 leading-7 text-slate-600">{g.text}</p><Link href={guideHref(lang,g.slug)} className="mt-6 inline-flex rounded-full bg-navy px-5 py-3 font-bold text-white hover:bg-gold hover:text-navy">{label}</Link></div></article>}
