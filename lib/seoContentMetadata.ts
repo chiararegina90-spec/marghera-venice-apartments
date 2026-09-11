@@ -18,7 +18,7 @@ export function editorialMetadata({lang,logicalPath,title,description,image,alt}
     alternates:{...alternates,canonical:path},
     openGraph:{title,description,url:path,locale:ogLocale[lang],type:'article',images:[{url:resolvedImage,alt}]},
     twitter:{card:'summary_large_image',title,description,images:[resolvedImage]},
-    other:{'article:published_time':'2026-09-10','article:modified_time':'2026-09-10'}
+    other:{'article:modified_time':'2026-09-11'}
   };
 }
 

@@ -6,6 +6,7 @@ import GuideBody from '@/components/GuideBody';
 import EditorialStayCta from '@/components/EditorialStayCta';
 
 import type {GuideData} from '@/data/guideTypes';
+import {guideStructuredData} from '@/lib/guideStructuredData';
 export type {GuideData} from '@/data/guideTypes';
 
 export default function GuideTemplate({data}:{data:GuideData}){
@@ -15,10 +16,7 @@ export default function GuideTemplate({data}:{data:GuideData}){
     <GuideBody data={data} lang="it"/>
     <EditorialStayCta lang="it" context="guide"/>
   </main><Footer/>
-  <Script id={`${data.slug}-schema`} type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
-    '@context':'https://schema.org','@type':'TouristDestination',name:data.title,
-    description:data.description, containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}
-  })}}/>
+  <Script id={`${data.slug}-schema`} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(guideStructuredData('it',data))}}/>
   </>;
 }
 
