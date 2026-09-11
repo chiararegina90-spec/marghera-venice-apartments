@@ -7,6 +7,7 @@ import p4 from './journal-events-payload-4';
 import {journalEventImagePair} from './journal-event-images';
 import {salone2026Overrides} from './salone2026Overrides';
 import {biennaleMusica2026Overrides} from './biennaleMusica2026Overrides';
+import {veniceNoir2026Overrides} from './veniceNoir2026Overrides';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type EventLocation={name:string;streetAddress?:string;addressLocality:string;addressCountry:string};
@@ -20,12 +21,9 @@ for(const lang of Object.keys(decoded) as EventLang[])for(const slug of eventSlu
   const local=journalEventImagePair(slug);
   if(item)Object.assign(item,eventTechnicalData[slug]);
   if(item&&local){item.image=local.card;item.fallbackImage=local.cover;item.commonsQuery='';}
-  if(item&&slug==='salone-alto-artigianato-italiano-2026'){
-    Object.assign(item,salone2026Overrides[lang]);
-  }
-  if(item&&slug==='biennale-musica-2026'){
-    Object.assign(item,biennaleMusica2026Overrides[lang]);
-  }
+  if(item&&slug==='salone-alto-artigianato-italiano-2026')Object.assign(item,salone2026Overrides[lang]);
+  if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
+  if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
 }
 export const journalEvents2026=decoded;
 export function eventArticles(lang:EventLang):EventArticle[]{return eventSlugs.map(slug=>decoded[lang][slug]);}
