@@ -65,11 +65,16 @@ if(!robots.includes('sitemap:')) failures.push('app/robots.ts: sitemap declarati
 const langs=['it','en','de','fr','es','zh'];
 const routeSet=new Set(pages.map(f=>rel(f).replace(/^app\//,'').replace(/\/page\.tsx$/,'').replace(/^page\.tsx$/,'')));
 const dirSlugs=(base)=>fs.existsSync(base)?fs.readdirSync(base,{withFileTypes:true}).filter(e=>e.isDirectory()&&!e.name.startsWith('[')).map(e=>e.name):[];
+const localizedGuideAliases={
+ 'musei-venezia':{en:'venice-museums',de:'museen-venedig',fr:'musees-venise',es:'museos-venecia',zh:'venice-museums'},
+ 'veneto':{en:'veneto',de:'venetien',fr:'venetie',es:'veneto',zh:'veneto'}
+};
 for(const section of ['guide','journal']){
   const itSlugs=dirSlugs(path.join(root,'app',section));
   for(const slug of itSlugs){
     for(const lang of langs.slice(1)){
-      const route=`${lang}/${section}/${slug}`;
+      const localizedSlug=section==='guide'&&localizedGuideAliases[slug]?.[lang]||slug;
+      const route=`${lang}/${section}/${localizedSlug}`;
       if(!routeSet.has(route)) warnings.push(`Locale parity: ${route} has no direct page.tsx counterpart`);
     }
   }
