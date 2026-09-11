@@ -52,5 +52,8 @@
       h.addEventListener('click',toggle); h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}});
     });
   }
-  document.addEventListener('DOMContentLoaded',setup); mq.addEventListener?.('change',()=>location.reload());
+  // The script is loaded with defer, so the document is already parsed here.
+  // Apply contact/link fixes before DOMContentLoaded to avoid a WhatsApp flash in zh.
+  setup();
+  mq.addEventListener?.('change',()=>location.reload());
 })();
