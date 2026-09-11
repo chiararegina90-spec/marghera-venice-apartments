@@ -11,6 +11,14 @@ import {localePath,type SiteLang} from '@/lib/i18n';
 const BASE='https://www.margheraveniceapartments.com';
 const LOGICAL='/guide/gondola-tour-venezia';
 const OFFICIAL='https://www.comune.venezia.it/it/node/16768';
+const BREADCRUMB_ARIA:Record<SiteLang,string>={
+  it:'Percorso di navigazione',
+  en:'Breadcrumb',
+  de:'Brotkrümelnavigation',
+  fr:'Fil d’Ariane',
+  es:'Ruta de navegación',
+  zh:'面包屑导航'
+};
 
 export default function GondolaTourGuide({lang}:{lang:SiteLang}){
   const c=gondolaTourContent[lang];
@@ -52,7 +60,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
         <Image src="/images/gondola-tour-venezia-cover.jpg" alt={c.coverAlt} fill priority sizes="100vw" className="object-cover object-center"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
         <div className="relative mx-auto flex min-h-[calc(68svh-5rem)] max-w-7xl items-end px-5 pb-16 pt-20 sm:min-h-[calc(76vh-5rem)] lg:px-8"><div className="max-w-5xl text-white">
-          <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={localePath('/',lang)}>{c.labels.home}</Link><span>›</span><Link href={localePath('/guide',lang)}>{c.labels.guides}</Link><span>›</span><span className="text-gold">{c.h1}</span></nav>
+          <nav aria-label={BREADCRUMB_ARIA[lang]} className="mb-5 flex flex-wrap gap-2 text-sm text-white/70"><Link href={localePath('/',lang)}>{c.labels.home}</Link><span>›</span><Link href={localePath('/guide',lang)}>{c.labels.guides}</Link><span>›</span><span className="text-gold">{c.h1}</span></nav>
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{c.kicker}</p>
           <h1 className="mt-4 font-serif text-[clamp(2.6rem,6vw,5.6rem)] leading-[.97]">{c.h1}</h1>
           <p className="mt-6 text-sm font-semibold text-white/80">{c.updatedLabel}</p>
