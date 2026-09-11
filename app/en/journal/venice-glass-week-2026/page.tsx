@@ -1,17 +1,7 @@
-import type {Metadata} from 'next';
-import {languageAlternates} from '@/lib/i18n';
 import GlassWeek2026Article from '@/components/GlassWeek2026Article';
+import JournalSchemaBundle from '@/components/JournalSchemaBundle';
 import {glassWeek2026} from '@/data/glassWeek2026';
-
-const data=glassWeek2026['en'];
-const image='/images/journal-venice-glass-week-2026-cover.webp';
-
-export const metadata:Metadata={
-  title:data.seoTitle,
-  description:data.metaDescription,
-  alternates:languageAlternates('/en/journal/venice-glass-week-2026'),
-  openGraph:{type:'article',title:data.seoTitle,description:data.metaDescription,url:'/en/journal/venice-glass-week-2026',locale:'en_GB',images:[{url:image,alt:data.imageAlt}]},
-  twitter:{card:'summary_large_image',title:data.seoTitle,description:data.metaDescription,images:[image]}
-};
-
-export default function Page(){return <GlassWeek2026Article data={data}/>;}
+import {editorialMetadata} from '@/lib/seoContentMetadata';
+const data=glassWeek2026.en; const image='/images/journal-venice-glass-week-2026-cover.webp';
+export const metadata=editorialMetadata({lang:'en',logicalPath:'/journal/venice-glass-week-2026',title:data.seoTitle,description:data.metaDescription,image,alt:data.imageAlt});
+export default function Page(){return <><JournalSchemaBundle lang="en" logicalPath="/journal/venice-glass-week-2026" title={data.h1} description={data.metaDescription} image={image} dateModified="2026-09-11" event={{startDate:'2026-09-12',endDate:'2026-09-20',locationName:'Venice, Murano and Mestre'}}/><GlassWeek2026Article data={data}/></>;}
