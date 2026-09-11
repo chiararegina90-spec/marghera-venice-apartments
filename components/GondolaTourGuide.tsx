@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import SocialLinks from '@/components/SocialLinks';
+import WeChatCard from '@/components/WeChatCard';
 import {gondolaTourContent} from '@/data/gondolaTourContent';
 import {localePath,type SiteLang} from '@/lib/i18n';
 
@@ -17,7 +18,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
   const articleUrl=`${BASE}${path}`;
   const articleSchema={
     '@context':'https://schema.org','@type':'Article',headline:c.h1,description:c.metaDescription,
-    datePublished:'2026-09-10',dateModified:'2026-09-10',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
+    datePublished:'2026-09-10',dateModified:'2026-09-11',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},
     image:`${BASE}/images/gondola-tour-venezia-cover.jpg`
@@ -84,7 +85,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
 
       <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy sm:text-5xl">{c.timingTitle}</h2><div className="mt-8 grid gap-5 sm:grid-cols-2">{c.times.map((item,i)=><div key={item.label} className="rounded-3xl border border-slate-200 p-6"><p className="text-xs font-black tracking-[.15em] text-gold">0{i+1}</p><h3 className="mt-2 font-serif text-3xl text-navy">{item.label}</h3><p className="mt-3 leading-7 text-slate-600">{item.text}</p></div>)}</div></div></section>
 
-      <section className="bg-navy py-20 text-white"><div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">WhatsApp</p><h2 className="mt-3 font-serif text-4xl sm:text-5xl">{c.customTitle}</h2><p className="mt-5 text-lg leading-8 text-white/75">{c.customIntro}</p><p className="mt-5 leading-7 text-white/70">{c.customTiming}</p><p className="mt-5 text-sm leading-6 text-white/55">{c.customNote}</p><p className="mt-7 font-semibold text-gold">{c.customCta}</p><SocialLinks className="mt-4 text-white" showWhatsApp lang={lang}/></div><ul className="self-start rounded-[2rem] bg-white/8 p-7 ring-1 ring-white/15">{c.customItems.map(x=><li key={x} className="flex gap-3 border-b border-white/10 py-3 last:border-0"><span className="text-gold">✓</span><span>{x}</span></li>)}</ul></div></section>
+      <section className="bg-navy py-20 text-white"><div className="mx-auto grid max-w-6xl gap-10 px-5 lg:grid-cols-[1.1fr_.9fr] lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{lang==='zh'?'微信 WeChat':'WhatsApp'}</p><h2 className="mt-3 font-serif text-4xl sm:text-5xl">{c.customTitle}</h2><p className="mt-5 text-lg leading-8 text-white/75">{c.customIntro}</p><p className="mt-5 leading-7 text-white/70">{c.customTiming}</p><p className="mt-5 text-sm leading-6 text-white/55">{c.customNote}</p><p className="mt-7 font-semibold text-gold">{lang==='zh'?'通过微信联系我们，我们会根据你的日期和人数提供建议。':c.customCta}</p>{lang==='zh'?<div className="mt-5"><WeChatCard dark title="添加我们的微信"/></div>:<SocialLinks className="mt-4 text-white" showWhatsApp lang={lang}/>}</div><ul className="self-start rounded-[2rem] bg-white/8 p-7 ring-1 ring-white/15">{c.customItems.map(x=><li key={x} className="flex gap-3 border-b border-white/10 py-3 last:border-0"><span className="text-gold">✓</span><span>{x}</span></li>)}</ul></div></section>
 
       <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy sm:text-5xl">{c.curiositiesTitle}</h2><div className="mt-9 grid gap-6 md:grid-cols-2">{c.curiosities.map((item,i)=><article key={item.title} className="rounded-[2rem] bg-cream p-7"><p className="text-xs font-black tracking-[.15em] text-gold">0{i+1}</p><h3 className="mt-3 font-serif text-3xl text-navy">{item.title}</h3><div className="mt-4 space-y-3">{item.paragraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div>{i===3&&<Link href={localePath('/guide/venezia-nascosta',lang)} className="mt-5 inline-flex font-bold text-gold">{c.labels.hidden} →</Link>}</article>)}</div></div></section>
 

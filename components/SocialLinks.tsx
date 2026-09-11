@@ -49,7 +49,7 @@ export default function SocialLinks({className='',showWhatsApp=false,compact=fal
     <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label={a[2]} className={base}>
       <FacebookIcon/>{!compact && <span>Facebook</span>}
     </a>
-    {showWhatsApp && <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label={a[3]} className={base}>
+    {showWhatsApp && lang!=='zh' && <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label={a[3]} className={base}>
       <WhatsAppIcon/>{!compact && <span>WhatsApp</span>}
     </a>}
   </div>
