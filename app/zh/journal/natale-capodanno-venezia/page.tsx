@@ -1,7 +1,6 @@
-import type {Metadata} from 'next';
-import {languageAlternates} from '@/lib/i18n';
-import {LocalizedJournalArticle} from '@/components/LocalizedRich';
-import {journalZh} from '@/data/journal-zh';
-const data=journalZh['natale-capodanno-venezia'];
-export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/zh/journal/natale-capodanno-venezia'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <LocalizedJournalArticle lang="zh" data={data} tipLabel='Marghera Venice Apartments 建议' officialLabel='官方信息' backLabel='返回旅行日志'/>}
+import AuditedLocalizedJournalArticle from '@/components/AuditedLocalizedJournalArticle';
+import {veniceChristmasAudit} from '@/data/veniceChristmasAudit';
+import {editorialMetadata} from '@/lib/seoContentMetadata';
+const data=veniceChristmasAudit.zh;
+export const metadata=editorialMetadata({lang:'zh',logicalPath:'/journal/natale-capodanno-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt});
+export default function Page(){return <AuditedLocalizedJournalArticle lang="zh" data={data} tipLabel="Marghera Venice Apartments 建议" officialLabel="官方信息" backLabel="返回旅行日志"/>;}
