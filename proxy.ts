@@ -72,8 +72,8 @@ export async function proxy(request:NextRequest){
     if(path.includes('/dimora-castelli/')||path.includes('/assets/castelli/')) apartment='dimora-castelli';
     if(path.includes('/assets/rossi/')) apartment='rossi';
 
-    // Shared CSS is harmless; all apartment-specific HTML/images remain protected.
-    if(path==='/guest-content/assets/welcome.css') return NextResponse.next();
+    // Shared presentation/behaviour assets contain no guest data and must load before authentication-specific assets.
+    if(path==='/guest-content/assets/welcome.css'||path==='/guest-content/assets/welcome.js') return NextResponse.next();
     if(apartment&&!(await authenticated(request,apartment))){
       return privateHeaders(NextResponse.redirect(new URL(`/guest/${apartment}`,request.url),307));
     }

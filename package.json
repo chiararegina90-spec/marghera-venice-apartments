@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "npm run typecheck && npm run audit:site && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "audit:site": "node scripts/site-audit.mjs"
   },
   "dependencies": {
     "next": "^16.2.12",

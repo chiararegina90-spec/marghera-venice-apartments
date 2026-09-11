@@ -6,11 +6,12 @@ import GuideBody from '@/components/GuideBody';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import {GuideBadges} from '@/components/GuideTemplate';
 import type {GuideData} from '@/data/guideTypes';
+import {guideStructuredData} from '@/lib/guideStructuredData';
 
 type Lang='de'|'fr'|'es'|'zh';
 export default function GuideTemplateLocalized({lang,data}:{lang:Lang;data:GuideData}){
  return <><Header lang={lang}/><main className="editorial-page" data-guide={data.slug}>
    <GuideHero lang={lang} data={data}/><GuideBadges data={data}/><GuideBody data={data} lang={lang}/>
    <EditorialStayCta lang={lang} context="guide"/>
-  </main><Footer lang={lang}/><Script id={`${data.slug}-schema-${lang}`} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'TouristDestination',name:data.title,description:data.description,containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}})}}/></>;
+  </main><Footer lang={lang}/><Script id={`${data.slug}-schema-${lang}`} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(guideStructuredData(lang,data))}}/></>;
 }
