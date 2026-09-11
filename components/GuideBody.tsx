@@ -78,12 +78,12 @@ export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang})
     <div className="mx-auto max-w-7xl px-5 lg:px-8">
      <SectionTitle eyebrow={t.itin} title={t.itinTitle(data.title)} text={t.itinText}/>
      <GuideItineraryIntro slug={data.slug} lang={lang}/>
-     <div className="mt-8 border-y border-white/15">
+     {!generic&&<div className="mt-8 border-y border-white/15">
       {data.itinerary.map(([time,title,text])=><article key={`${time}-${title}`} className="grid gap-2 border-b border-white/10 py-5 last:border-b-0 sm:grid-cols-[110px_1fr] sm:gap-5 sm:py-6">
        <div className="text-xs font-black uppercase tracking-[.14em] text-gold sm:pt-1">{time}</div>
        <div><h2 className="font-serif text-2xl">{title}</h2><p className="mt-1.5 max-w-4xl leading-7 text-white/72">{text}</p></div>
       </article>)}
-     </div>
+     </div>}
     </div>
    </section>
 
