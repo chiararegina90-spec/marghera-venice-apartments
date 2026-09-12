@@ -1,418 +1,334 @@
 export type MostraCinema2026Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 
 export const mostraCinema2026 = {
-  "it": {
-    "metaTitle": "Mostra del Cinema Venezia 2026: biglietti e programma",
-    "metaDescription": "83ª Mostra del Cinema di Venezia, 2–12 settembre 2026: proiezioni pubbliche, biglietti online, Venice Immersive e consigli per vivere il Lido fino alla chiusura.",
-    "category": "Arte & Cultura",
-    "eventDate": "2–12 SETTEMBRE 2026",
-    "imageAlt": "Mostra Internazionale d’Arte Cinematografica di Venezia al Lido",
-    "breadcrumb": "Mostra del Cinema 2026",
-    "heroTitle": "Mostra del Cinema di Venezia 2026",
-    "heroSubtitle": "La 83ª edizione è in corso al Lido fino al 12 settembre: proiezioni pubbliche, biglietti online e un programma da controllare giorno per giorno.",
-    "lead": "La 83ª Mostra Internazionale d’Arte Cinematografica è organizzata dalla Biennale di Venezia e diretta da Alberto Barbera. Anche negli ultimi giorni il Lido resta accessibile ai visitatori: molte proiezioni sono aperte al pubblico con biglietto acquistabile online, fino a esaurimento posti.",
-    "sections": [
-      [
-        "La 83ª Mostra resta al Lido fino al 12 settembre",
-        "L’edizione 2026 si svolge dal 2 al 12 settembre al Lido di Venezia. Il programma comprende il concorso Venezia 83 e le altre sezioni ufficiali, oltre a incontri e attività collegati al Festival. Il film d’apertura è stato Ink di Danny Boyle, presentato in prima mondiale il 2 settembre."
-      ],
-      [
-        "Cosa può ancora fare chi visita la Mostra fino al 12 settembre",
-        "Nei giorni rimanenti si può consultare il programma pubblico, scegliere una proiezione con posti disponibili e vivere l’atmosfera del Lido tra Palazzo del Cinema, sale e Lungomare. Il red carpet fa parte dello scenario del Festival, ma un normale biglietto cinematografico non garantisce l’accesso alle aree riservate. Orari e disponibilità vanno controllati il giorno stesso."
-      ],
-      [
-        "Biglietti pubblici: solo online",
-        "I biglietti per le proiezioni pubbliche si acquistano online fino a esaurimento posti. Nel listino 2026 i prezzi interi variano indicativamente da €10 a €50 in base a sala e orario, con tariffe ridotte previste nelle condizioni ufficiali. Disponibilità, prezzi e programma possono cambiare durante il Festival."
-      ],
-      [
-        "Venice Immersive: 68 progetti da 26 Paesi",
-        "La sezione dedicata alle arti immersive e alla XR presenta 68 progetti provenienti da 26 Paesi. Si svolge sull’Isola del Lazzaretto Vecchio, di fronte al Lido. L’accesso alla selezione ufficiale Venice Immersive segue le regole di accredito indicate dalla Biennale, quindi va verificato separatamente rispetto ai normali biglietti delle proiezioni."
-      ],
-      [
-        "Riconoscimenti dell’edizione 2026",
-        "George Clooney ha ricevuto il Leone d’Oro alla carriera durante l’apertura del 2 settembre ed Ellen Burstyn è la seconda destinataria del Leone d’Oro alla carriera 2026. Luca Guadagnino è il destinatario del Cartier Glory to the Filmmaker Award 2026. Le masterclass della prima settimana si sono già svolte: per chi arriva ora è più utile concentrarsi sulle proiezioni ancora in programma."
-      ],
-      [
-        "Come arrivare al Lido da Marghera",
-        "Da Marghera Venice Apartments puoi raggiungere Venezia in autobus o treno e proseguire in vaporetto verso Lido S.M.E. Nei giorni del Festival conviene lasciare un margine per coincidenze e maggiore affluenza. Se vuoi dedicare più tempo all’isola, trovi qui sotto la nostra guida completa del Lido."
-      ]
+  it: {
+    metaTitle: 'Mostra del Cinema Venezia 2026: tutti i vincitori',
+    metaDescription: 'Vincitori della Mostra del Cinema di Venezia 2026: Leone d’Oro a Woman Unknown, Coppe Volpi, Leoni d’Argento, Orizzonti e altri premi di Venezia 83.',
+    category: 'Arte & Cultura',
+    eventDate: '2–12 SETTEMBRE 2026',
+    imageAlt: 'Mostra Internazionale d’Arte Cinematografica di Venezia al Lido',
+    breadcrumb: 'Mostra del Cinema 2026',
+    heroTitle: 'Mostra del Cinema di Venezia 2026: tutti i vincitori',
+    heroSubtitle: 'Venezia 83 si è conclusa al Lido: Woman Unknown di May el-Toukhy vince il Leone d’Oro. Ecco i premi principali, le Coppe Volpi e gli altri riconoscimenti dell’edizione 2026.',
+    lead: 'La 83ª Mostra Internazionale d’Arte Cinematografica di Venezia si è conclusa il 12 settembre 2026 dopo undici giorni di anteprime, red carpet e cinema internazionale. La Giuria di Venezia 83, presieduta da Maggie Gyllenhaal, ha assegnato il Leone d’Oro per il miglior film a Woman Unknown di May el-Toukhy.',
+    awardsTitle: 'Venezia 83: tutti i vincitori del Concorso',
+    awardsIntro: 'Questi sono gli otto premi ufficiali assegnati dalla Giuria internazionale di Venezia 83.',
+    awards: [
+      ['Leone d’Oro – Miglior film','Woman Unknown','di May el-Toukhy'],
+      ['Leone d’Argento – Gran Premio della Giuria','Possible Love','di Lee Chang-dong'],
+      ['Leone d’Argento – Migliore regia','Ilya Khrzhanovsky','per DAU'],
+      ['Coppa Volpi – Migliore attrice','Mathilde Arcel','per Woman Unknown'],
+      ['Coppa Volpi – Migliore attore','John Malkovich','per Wild Horse Nine'],
+      ['Migliore sceneggiatura','Stéphane Brizé, Coralie Amédéo e Olivier Gorce','per Un bon petit soldat (A Good Little Soldier)'],
+      ['Premio Speciale della Giuria','NAZA','di Yuval Abraham e Rachel Szor'],
+      ['Premio Marcello Mastroianni','Malou Khebizi','per 15/18 (A Place to Heal)']
     ],
-    "tipLabel": "Il consiglio di Marghera Venice Apartments",
-    "tip": "Scegli prima una proiezione con biglietto disponibile e costruisci il resto della giornata intorno a quella. Lascia tempo anche per una passeggiata sul Lido: il Festival si vive meglio senza rincorrere ogni evento.",
-    "officialBoxLabel": "Informazioni ufficiali aggiornate",
-    "sourceNote": "Disponibilità, prezzi e programma possono cambiare durante il Festival. Controlla sempre il calendario pubblico e la biglietteria ufficiale il giorno della visita.",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026",
-        "https://www.labiennale.org/it/cinema/2026"
-      ],
-      [
-        "Programma per il pubblico",
-        "https://www.labiennale.org/it/cinema/2026/programma-cinema-2026-pubblico"
-      ],
-      [
-        "Biglietti e tariffe",
-        "https://www.labiennale.org/it/cinema/2026/informazioni"
-      ]
+    highlightsTitle: 'Orizzonti e gli altri premi da ricordare',
+    highlights: [
+      ['Orizzonti – Miglior film','Un détour par Diane di Ann Sirot e Raphaël Balboni.'],
+      ['Orizzonti – Migliore regia','Jacqueline Lentzou per A Day in the Life of Jo: Chapter Phaedra.'],
+      ['Leone del Futuro – Premio Venezia Opera Prima “Luigi De Laurentiis”','La maison du vent (House of the Wind) di Auguste Bernard Kouemo Yanghu.'],
+      ['Armani beauty Audience Award','I Matter (Eu contez) di Alina Șerban, vincitore della sezione Venice Spotlight.'],
+      ['Leoni d’Oro alla carriera','George Clooney ed Ellen Burstyn. Luca Guadagnino ha inoltre ricevuto il Cartier Glory to the Filmmaker Award 2026.']
     ],
-    "lidoCta": "Vuoi dedicare più tempo al Lido? Leggi la nostra guida completa. →",
-    "lidoHref": "/guide/lido-di-venezia",
-    "moreLabel": "Potrebbe interessarti anche",
-    "backLabel": "Torna al Journal",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Il Leone d’Oro 2026 va a Woman Unknown','Il film di May el-Toukhy è il grande vincitore di Venezia 83. Ambientato nella Danimarca del secondo dopoguerra, Woman Unknown racconta una donna il cui passato legato a un soldato tedesco riemerge con conseguenze profonde. Il film ha ottenuto anche la Coppa Volpi per Mathilde Arcel: un doppio riconoscimento che lo colloca al centro del palmarès 2026.'],
+      ['Un palmarès tra grandi autori e cinema politico','Lee Chang-dong ha conquistato il Gran Premio della Giuria con Possible Love, mentre Ilya Khrzhanovsky ha ricevuto il Leone d’Argento per la regia di DAU. Il Premio Speciale della Giuria è andato a NAZA, documentario di Yuval Abraham e Rachel Szor. John Malkovich ha vinto la Coppa Volpi per Wild Horse Nine e Malou Khebizi il Premio Marcello Mastroianni come giovane interprete emergente.'],
+      ['Cosa resta dell’edizione 2026','La Mostra 2026 ha confermato il Lido come uno dei grandi punti d’incontro del cinema mondiale, mescolando autori affermati, nuove voci e opere capaci di affrontare temi politici e sociali contemporanei. L’edizione si era aperta il 2 settembre con Ink di Danny Boyle e si è chiusa il 12 settembre con la cerimonia di premiazione.'],
+      ['E la Mostra del Cinema 2027?','Programma, film in concorso, ospiti e informazioni per il pubblico della prossima edizione vengono comunicati progressivamente dalla Biennale. Per evitare date o dettagli non ancora ufficiali, aggiorneremo questa guida quando saranno pubblicate le informazioni confermate per il 2027.'],
+      ['Il Lido oltre il red carpet','Il Lido di Venezia merita una visita anche fuori dai giorni della Mostra: spiagge, ville, lungomare e un ritmo diverso rispetto al centro storico. Da Marghera Venice Apartments puoi raggiungere Venezia in autobus o treno e poi proseguire in vaporetto verso Lido S.M.E.; nella nostra guida trovi idee e indicazioni per organizzare la giornata.']
+    ],
+    tipLabel: 'Il consiglio di Marghera Venice Apartments',
+    tip: 'Se vuoi vivere una futura edizione della Mostra, scegli prima le proiezioni davvero importanti per te e lascia spazio anche al Lido. Il Festival è più bello quando non si trasforma in una corsa da una sala all’altra.',
+    officialBoxLabel: 'Fonti e informazioni ufficiali',
+    sourceNote: 'L’edizione 2026 si è conclusa il 12 settembre. Per archivio, programma e future comunicazioni sulla Mostra consulta sempre i canali ufficiali della Biennale di Venezia.',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/it/cinema/2026'],
+      ['83ª Mostra: giurie e premi','https://www.labiennale.org/it/cinema/2026/83-mostra'],
+      ['Orizzonti 2026','https://www.labiennale.org/it/cinema/2026/orizzonti']
+    ],
+    lidoCta: 'Vuoi scoprire il Lido oltre la Mostra? Leggi la nostra guida completa. →',
+    lidoHref: '/guide/lido-di-venezia',
+    moreLabel: 'Potrebbe interessarti anche',
+    backLabel: 'Torna al Journal',
+    related: [
+      ['Homo Faber 2026','/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/journal/venice-glass-week-2026']
     ]
   },
-  "en": {
-    "metaTitle": "Venice Film Festival 2026 | Tickets, Programme & Lido Guide",
-    "metaDescription": "Visit the 83rd Venice Film Festival on the Lido, 2–12 September 2026: public screenings, online tickets, Venice Immersive and practical tips for the final days.",
-    "category": "Art & Culture",
-    "eventDate": "2–12 SEPTEMBER 2026",
-    "imageAlt": "Venice International Film Festival on the Lido",
-    "breadcrumb": "Venice Film Festival 2026",
-    "heroTitle": "Venice Film Festival 2026",
-    "heroSubtitle": "The 83rd Venice International Film Festival continues on the Lido until 12 September, with public screenings, online tickets and a daily programme worth checking before you go.",
-    "lead": "The 83rd Venice International Film Festival is organised by La Biennale di Venezia and directed by Alberto Barbera. Visitors can still experience the Lido during the final days: many screenings are open to the public with tickets sold online while seats remain available.",
-    "sections": [
-      [
-        "The 83rd festival continues on the Lido until 12 September",
-        "The 2026 Venice Film Festival runs from 2 to 12 September on the Lido di Venezia. Venezia 83 is joined by the other official sections and festival events. Danny Boyle’s Ink opened the Festival on 2 September with its world premiere."
-      ],
-      [
-        "What visitors can still experience until 12 September",
-        "For the remaining days, check the public programme, choose a screening with tickets still available and spend time around the Palazzo del Cinema and the Lido waterfront. The red carpet is part of the Festival atmosphere, but a cinema ticket does not promise access to restricted red-carpet areas. Always recheck the day’s schedule and availability."
-      ],
-      [
-        "Public tickets are sold online",
-        "Tickets for public screenings are available online only while seats last. In the 2026 price list, standard tickets range roughly from €10 to €50 depending on venue and screening time, with concessions available under the official conditions. Availability, prices and the programme can change during the Festival."
-      ],
-      [
-        "Venice Immersive: 68 projects from 26 countries",
-        "The official XR and immersive arts section presents 68 projects from 26 countries on the Venice Immersive Island, Isola del Lazzaretto Vecchio, opposite the Lido. Access follows La Biennale’s accreditation rules and should be checked separately from ordinary public cinema tickets."
-      ],
-      [
-        "Awards from the 2026 edition",
-        "George Clooney received a Golden Lion for Lifetime Achievement at the opening on 2 September. Ellen Burstyn is the second 2026 Golden Lion for Lifetime Achievement recipient. Luca Guadagnino is the recipient of the 2026 Cartier Glory to the Filmmaker Award. The first-week masterclasses have already taken place, so visitors arriving now are better served by focusing on the remaining public screenings."
-      ],
-      [
-        "Getting to the Lido from Marghera",
-        "From Marghera Venice Apartments, travel by bus or train to Venice and continue by vaporetto to Lido S.M.E. During the Festival, allow extra time for connections and crowds. If you want to spend longer on the island, use our complete Lido guide below."
-      ]
+  en: {
+    metaTitle: 'Venice Film Festival 2026: Winners & Golden Lion',
+    metaDescription: 'Venice Film Festival 2026 winners: Golden Lion for Woman Unknown, Volpi Cups, Silver Lions, Orizzonti and the key awards from Venezia 83.',
+    category: 'Art & Culture',
+    eventDate: '2–12 SEPTEMBER 2026',
+    imageAlt: 'Venice International Film Festival on the Lido',
+    breadcrumb: 'Venice Film Festival 2026',
+    heroTitle: 'Venice Film Festival 2026: all the winners',
+    heroSubtitle: 'Venezia 83 has ended on the Lido, with May el-Toukhy’s Woman Unknown winning the Golden Lion. Here are the main awards, Volpi Cups and other winners from the 2026 edition.',
+    lead: 'The 83rd Venice International Film Festival ended on 12 September 2026 after eleven days of premieres, red carpets and international cinema. The Venezia 83 jury, chaired by Maggie Gyllenhaal, awarded the Golden Lion for Best Film to Woman Unknown by May el-Toukhy.',
+    awardsTitle: 'Venezia 83: all Competition winners',
+    awardsIntro: 'These are the eight official awards presented by the Venezia 83 International Jury.',
+    awards: [
+      ['Golden Lion – Best Film','Woman Unknown','by May el-Toukhy'],
+      ['Silver Lion – Grand Jury Prize','Possible Love','by Lee Chang-dong'],
+      ['Silver Lion – Best Director','Ilya Khrzhanovsky','for DAU'],
+      ['Volpi Cup – Best Actress','Mathilde Arcel','for Woman Unknown'],
+      ['Volpi Cup – Best Actor','John Malkovich','for Wild Horse Nine'],
+      ['Best Screenplay','Stéphane Brizé, Coralie Amédéo and Olivier Gorce','for Un bon petit soldat (A Good Little Soldier)'],
+      ['Special Jury Prize','NAZA','by Yuval Abraham and Rachel Szor'],
+      ['Marcello Mastroianni Award','Malou Khebizi','for 15/18 (A Place to Heal)']
     ],
-    "tipLabel": "Marghera Venice Apartments tip",
-    "tip": "Choose a public screening with available tickets first, then build the rest of the day around it. Leave room for a walk on the Lido rather than trying to chase every festival moment.",
-    "officialBoxLabel": "Official information",
-    "sourceNote": "Availability, prices and the programme may change during the Festival. Check the public schedule and official ticketing on the day of your visit.",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026",
-        "https://www.labiennale.org/en/cinema/2026"
-      ],
-      [
-        "Public screening programme",
-        "https://www.labiennale.org/en/cinema/2026/program-cinema-2026-public"
-      ],
-      [
-        "Tickets and prices",
-        "https://www.labiennale.org/en/cinema/2026/information"
-      ]
+    highlightsTitle: 'Orizzonti and other awards to know',
+    highlights: [
+      ['Orizzonti – Best Film','Un détour par Diane by Ann Sirot and Raphaël Balboni.'],
+      ['Orizzonti – Best Director','Jacqueline Lentzou for A Day in the Life of Jo: Chapter Phaedra.'],
+      ['Lion of the Future – “Luigi De Laurentiis” Venice Award for a Debut Film','La maison du vent (House of the Wind) by Auguste Bernard Kouemo Yanghu.'],
+      ['Armani beauty Audience Award','I Matter (Eu contez) by Alina Șerban, winner of the Venice Spotlight section.'],
+      ['Golden Lions for Lifetime Achievement','George Clooney and Ellen Burstyn. Luca Guadagnino also received the 2026 Cartier Glory to the Filmmaker Award.']
     ],
-    "lidoCta": "Planning more time on the island? Read our complete Lido guide. →",
-    "lidoHref": "/en/guide/lido-di-venezia",
-    "moreLabel": "You may also like",
-    "backLabel": "Back to Journal",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/en/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/en/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Woman Unknown wins the 2026 Golden Lion','May el-Toukhy’s film is the headline winner of Venezia 83. Set in post-war Denmark, Woman Unknown follows a woman whose past relationship with a German soldier resurfaces with far-reaching consequences. The film also earned Mathilde Arcel the Volpi Cup for Best Actress, giving it one of the defining double wins of the 2026 festival.'],
+      ['A winners list spanning major auteurs and political cinema','Lee Chang-dong took the Grand Jury Prize for Possible Love, while Ilya Khrzhanovsky won the Silver Lion for directing DAU. The Special Jury Prize went to NAZA, the documentary by Yuval Abraham and Rachel Szor. John Malkovich won the Volpi Cup for Wild Horse Nine, while Malou Khebizi received the Marcello Mastroianni Award for emerging talent.'],
+      ['What the 2026 edition leaves behind','The 2026 festival again placed the Lido at the centre of world cinema, bringing together established filmmakers, new voices and films engaging with contemporary political and social questions. The edition opened on 2 September with Danny Boyle’s Ink and concluded on 12 September with the awards ceremony.'],
+      ['What about the 2027 Venice Film Festival?','The line-up, Competition films, guests and public information for the next edition are announced progressively by La Biennale. Rather than publish unconfirmed dates or details, we will update this guide when official information for 2027 is released.'],
+      ['The Lido beyond the red carpet','The Lido di Venezia is worth visiting outside festival dates too, for its beaches, villas, waterfront and slower pace. From Marghera Venice Apartments, travel to Venice by bus or train and continue by vaporetto to Lido S.M.E.; our complete Lido guide helps you plan the day.']
+    ],
+    tipLabel: 'Marghera Venice Apartments tip',
+    tip: 'For a future festival visit, choose the screenings that matter most to you first and leave time to enjoy the Lido itself. The Venice Film Festival is better when the day does not become a race between cinemas.',
+    officialBoxLabel: 'Official sources and information',
+    sourceNote: 'The 2026 edition ended on 12 September. For the archive, programme and future Festival announcements, always check the official La Biennale di Venezia channels.',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
+      ['83rd Festival: juries and awards','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
+      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
+    ],
+    lidoCta: 'Want to discover the Lido beyond the Festival? Read our complete guide. →',
+    lidoHref: '/en/guide/lido-di-venezia',
+    moreLabel: 'You may also like',
+    backLabel: 'Back to Journal',
+    related: [
+      ['Homo Faber 2026','/en/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/en/journal/venice-glass-week-2026']
     ]
   },
-  "de": {
-    "metaTitle": "Filmfestspiele Venedig 2026 | Tickets & Programm",
-    "metaDescription": "83. Filmfestspiele von Venedig am Lido, 2.–12. September 2026: öffentliche Vorführungen, Online-Tickets, Venice Immersive und Tipps für die letzten Festivaltage.",
-    "category": "Kunst & Kultur",
-    "eventDate": "2.–12. SEPTEMBER 2026",
-    "imageAlt": "Filmfestspiele von Venedig am Lido",
-    "breadcrumb": "Filmfestspiele Venedig 2026",
-    "heroTitle": "Filmfestspiele von Venedig 2026",
-    "heroSubtitle": "Die 83. Filmfestspiele laufen am Lido noch bis 12. September – mit öffentlichen Vorführungen, Online-Tickets und einem Tagesprogramm, das man vor der Anreise prüfen sollte.",
-    "lead": "Die 83. Mostra Internazionale d’Arte Cinematografica wird von La Biennale di Venezia organisiert und von Alberto Barbera geleitet. Auch in den letzten Tagen können Besucher den Festivalbetrieb am Lido erleben: Viele Vorführungen sind mit regulären Online-Tickets zugänglich, solange Plätze verfügbar sind.",
-    "sections": [
-      [
-        "Die 83. Filmfestspiele laufen bis 12. September",
-        "Das Festival 2026 findet vom 2. bis 12. September am Lido di Venezia statt. Zum Wettbewerb Venezia 83 kommen weitere offizielle Sektionen und Veranstaltungen. Danny Boyles Ink eröffnete die Mostra am 2. September als Weltpremiere."
-      ],
-      [
-        "Was Besucher bis 12. September noch erleben können",
-        "Für die verbleibenden Tage lohnt sich ein Blick in das öffentliche Tagesprogramm: Wählen Sie eine Vorführung mit verfügbaren Tickets und erleben Sie die Atmosphäre rund um Palazzo del Cinema und Lungomare. Der rote Teppich gehört zum Festivalbild, ein normales Kinoticket garantiert jedoch keinen Zugang zu abgesperrten Bereichen. Uhrzeiten und Verfügbarkeit am besten am selben Tag prüfen."
-      ],
-      [
-        "Öffentliche Tickets nur online",
-        "Tickets für öffentliche Vorführungen werden ausschließlich online verkauft, solange Plätze verfügbar sind. Die regulären Preise liegen 2026 je nach Saal und Uhrzeit ungefähr zwischen 10 und 50 €. Ermäßigungen gelten nach den offiziellen Bedingungen. Verfügbarkeit, Preise und Programm können sich während des Festivals ändern."
-      ],
-      [
-        "Venice Immersive: 68 Projekte aus 26 Ländern",
-        "Die offizielle XR-Sektion zeigt 68 Projekte aus 26 Ländern auf der Venice Immersive Island, der Isola del Lazzaretto Vecchio gegenüber dem Lido. Für den Zugang gelten die Akkreditierungsregeln von La Biennale; er ist daher getrennt von normalen Kinotickets zu prüfen."
-      ],
-      [
-        "Auszeichnungen der Ausgabe 2026",
-        "George Clooney erhielt am 2. September den Goldenen Löwen für sein Lebenswerk. Ellen Burstyn ist die zweite Preisträgerin des Goldenen Löwen für das Lebenswerk 2026. Luca Guadagnino ist Träger des Cartier Glory to the Filmmaker Award 2026. Die Masterclasses der ersten Festivalwoche sind bereits vorbei – für Besucher, die jetzt anreisen, stehen die verbleibenden Vorführungen im Mittelpunkt."
-      ],
-      [
-        "So kommen Sie von Marghera zum Lido",
-        "Fahren Sie von Marghera Venice Apartments mit Bus oder Zug nach Venedig und anschließend mit dem Vaporetto zum Lido S.M.E. Während der Mostra sollten Sie zusätzliche Zeit für Umstiege und Andrang einplanen. Für einen längeren Inselbesuch finden Sie unten unseren vollständigen Lido-Guide."
-      ]
+  de: {
+    metaTitle: 'Filmfestspiele Venedig 2026: Gewinner & Goldener Löwe',
+    metaDescription: 'Gewinner der Filmfestspiele Venedig 2026: Goldener Löwe für Woman Unknown, Coppa Volpi, Silberne Löwen, Orizzonti und weitere Preise von Venezia 83.',
+    category: 'Kunst & Kultur',
+    eventDate: '2.–12. SEPTEMBER 2026',
+    imageAlt: 'Internationale Filmfestspiele von Venedig am Lido',
+    breadcrumb: 'Filmfestspiele Venedig 2026',
+    heroTitle: 'Filmfestspiele Venedig 2026: alle Gewinner',
+    heroSubtitle: 'Venezia 83 ist am Lido zu Ende gegangen: Woman Unknown von May el-Toukhy gewinnt den Goldenen Löwen. Hier finden Sie die wichtigsten Preise, Coppa-Volpi-Auszeichnungen und weitere Gewinner von 2026.',
+    lead: 'Die 83. Internationalen Filmfestspiele von Venedig endeten am 12. September 2026 nach elf Tagen mit Premieren, roten Teppichen und internationalem Kino. Die von Maggie Gyllenhaal geleitete Jury von Venezia 83 verlieh den Goldenen Löwen für den besten Film an Woman Unknown von May el-Toukhy.',
+    awardsTitle: 'Venezia 83: alle Gewinner des Wettbewerbs',
+    awardsIntro: 'Dies sind die acht offiziellen Auszeichnungen der internationalen Jury von Venezia 83.',
+    awards: [
+      ['Goldener Löwe – Bester Film','Woman Unknown','von May el-Toukhy'],
+      ['Silberner Löwe – Großer Preis der Jury','Possible Love','von Lee Chang-dong'],
+      ['Silberner Löwe – Beste Regie','Ilya Khrzhanovsky','für DAU'],
+      ['Coppa Volpi – Beste Darstellerin','Mathilde Arcel','für Woman Unknown'],
+      ['Coppa Volpi – Bester Darsteller','John Malkovich','für Wild Horse Nine'],
+      ['Bestes Drehbuch','Stéphane Brizé, Coralie Amédéo und Olivier Gorce','für Un bon petit soldat (A Good Little Soldier)'],
+      ['Sonderpreis der Jury','NAZA','von Yuval Abraham und Rachel Szor'],
+      ['Marcello-Mastroianni-Preis','Malou Khebizi','für 15/18 (A Place to Heal)']
     ],
-    "tipLabel": "Tipp von Marghera Venice Apartments",
-    "tip": "Wählen Sie zuerst eine öffentliche Vorführung mit verfügbaren Tickets und planen Sie den restlichen Tag darum herum. Eine entspannte Runde über den Lido gehört genauso zum Festivalerlebnis.",
-    "officialBoxLabel": "Offizielle Informationen",
-    "sourceNote": "Verfügbarkeit, Preise und Programm können sich während des Festivals ändern. Prüfen Sie am Besuchstag den öffentlichen Spielplan und die offizielle Ticketseite.",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026",
-        "https://www.labiennale.org/en/cinema/2026"
-      ],
-      [
-        "Öffentliches Programm",
-        "https://www.labiennale.org/en/cinema/2026/program-cinema-2026-public"
-      ],
-      [
-        "Tickets und Preise",
-        "https://www.labiennale.org/en/cinema/2026/information"
-      ]
+    highlightsTitle: 'Orizzonti und weitere wichtige Preise',
+    highlights: [
+      ['Orizzonti – Bester Film','Un détour par Diane von Ann Sirot und Raphaël Balboni.'],
+      ['Orizzonti – Beste Regie','Jacqueline Lentzou für A Day in the Life of Jo: Chapter Phaedra.'],
+      ['Löwe der Zukunft – „Luigi De Laurentiis“-Preis für einen Debütfilm','La maison du vent (House of the Wind) von Auguste Bernard Kouemo Yanghu.'],
+      ['Armani beauty Audience Award','I Matter (Eu contez) von Alina Șerban, Gewinner des Bereichs Venice Spotlight.'],
+      ['Goldene Löwen für das Lebenswerk','George Clooney und Ellen Burstyn. Luca Guadagnino erhielt außerdem den Cartier Glory to the Filmmaker Award 2026.']
     ],
-    "lidoCta": "Mehr Zeit auf dem Lido geplant? Lesen Sie unseren vollständigen Lido-Guide. →",
-    "lidoHref": "/de/guide/lido-di-venezia",
-    "moreLabel": "Das könnte Sie auch interessieren",
-    "backLabel": "Zurück zum Journal",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/de/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/de/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Woman Unknown gewinnt den Goldenen Löwen 2026','May el-Toukhys Film ist der große Gewinner von Venezia 83. Woman Unknown spielt im Dänemark der Nachkriegszeit und erzählt von einer Frau, deren frühere Beziehung zu einem deutschen Soldaten wieder ans Licht kommt. Mathilde Arcel erhielt für denselben Film die Coppa Volpi als beste Darstellerin – ein prägendes Doppel des Festivals 2026.'],
+      ['Ein Palmarès zwischen großen Namen und politischem Kino','Lee Chang-dong gewann mit Possible Love den Großen Preis der Jury, Ilya Khrzhanovsky den Silbernen Löwen für die Regie von DAU. Der Sonderpreis der Jury ging an NAZA von Yuval Abraham und Rachel Szor. John Malkovich erhielt die Coppa Volpi für Wild Horse Nine, Malou Khebizi den Marcello-Mastroianni-Preis als Nachwuchstalent.'],
+      ['Was von der Ausgabe 2026 bleibt','Auch 2026 machte die Mostra den Lido zu einem Zentrum des Weltkinos und verband etablierte Filmschaffende, neue Stimmen sowie Werke zu aktuellen politischen und gesellschaftlichen Themen. Eröffnet wurde die Ausgabe am 2. September mit Danny Boyles Ink; am 12. September endete sie mit der Preisverleihung.'],
+      ['Und die Filmfestspiele Venedig 2027?','Programm, Wettbewerbsfilme, Gäste und Besucherinformationen für die nächste Ausgabe werden von La Biennale schrittweise bekannt gegeben. Wir veröffentlichen keine unbestätigten Daten und aktualisieren diesen Guide, sobald offizielle Informationen für 2027 vorliegen.'],
+      ['Der Lido jenseits des roten Teppichs','Der Lido di Venezia lohnt sich auch außerhalb der Filmfestspiele – mit Stränden, Villen, Promenade und einem ruhigeren Rhythmus. Von Marghera Venice Apartments fahren Sie per Bus oder Zug nach Venedig und weiter mit dem Vaporetto zum Lido S.M.E.; unser Lido-Guide hilft bei der Tagesplanung.']
+    ],
+    tipLabel: 'Tipp von Marghera Venice Apartments',
+    tip: 'Für eine künftige Festivalausgabe wählen Sie zuerst die Vorführungen, die Ihnen wirklich wichtig sind, und lassen Sie Zeit für den Lido selbst. Die Mostra macht mehr Spaß, wenn der Tag nicht zum Rennen zwischen den Kinos wird.',
+    officialBoxLabel: 'Offizielle Quellen und Informationen',
+    sourceNote: 'Die Ausgabe 2026 endete am 12. September. Für Archiv, Programm und künftige Ankündigungen sollten Sie immer die offiziellen Kanäle von La Biennale di Venezia prüfen.',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
+      ['83rd Festival: Jurys und Preise','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
+      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
+    ],
+    lidoCta: 'Mehr vom Lido als den roten Teppich sehen? Lesen Sie unseren vollständigen Guide. →',
+    lidoHref: '/de/guide/lido-di-venezia',
+    moreLabel: 'Das könnte Sie auch interessieren',
+    backLabel: 'Zurück zum Journal',
+    related: [
+      ['Homo Faber 2026','/de/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/de/journal/venice-glass-week-2026']
     ]
   },
-  "fr": {
-    "metaTitle": "Festival du film de Venise 2026 | Billets et programme",
-    "metaDescription": "83e Festival du film de Venise au Lido, du 2 au 12 septembre 2026 : séances publiques, billets en ligne, Venice Immersive et conseils pour les derniers jours.",
-    "category": "Art & culture",
-    "eventDate": "2–12 SEPTEMBRE 2026",
-    "imageAlt": "Mostra de Venise au Lido",
-    "breadcrumb": "Festival du film de Venise 2026",
-    "heroTitle": "Festival du film de Venise 2026",
-    "heroSubtitle": "La 83e Mostra se poursuit au Lido jusqu’au 12 septembre, avec des séances publiques, une billetterie en ligne et un programme quotidien à vérifier avant de partir.",
-    "lead": "La 83e Mostra Internazionale d’Arte Cinematografica est organisée par La Biennale di Venezia et dirigée par Alberto Barbera. Pendant les derniers jours, les visiteurs peuvent encore profiter de l’ambiance du Lido et réserver de nombreuses projections publiques en ligne, dans la limite des places disponibles.",
-    "sections": [
-      [
-        "La 83e Mostra se poursuit jusqu’au 12 septembre",
-        "Le Festival du film de Venise 2026 se tient du 2 au 12 septembre au Lido di Venezia. La compétition Venezia 83 est accompagnée des autres sections officielles et des événements du Festival. Ink de Danny Boyle a ouvert l’édition le 2 septembre en première mondiale."
-      ],
-      [
-        "Ce que les visiteurs peuvent encore vivre jusqu’au 12 septembre",
-        "Pour les derniers jours, consultez le programme public, choisissez une séance encore disponible et profitez de l’atmosphère autour du Palazzo del Cinema et du front de mer du Lido. Le tapis rouge fait partie du décor, mais un billet de cinéma ne garantit pas l’accès aux zones réservées. Horaires et disponibilités doivent être vérifiés le jour même."
-      ],
-      [
-        "Billets publics uniquement en ligne",
-        "Les billets des séances publiques sont vendus exclusivement en ligne jusqu’à épuisement des places. En 2026, les tarifs pleins vont approximativement de 10 à 50 € selon la salle et l’horaire, avec des réductions selon les conditions officielles. Disponibilités, prix et programme peuvent évoluer pendant le Festival."
-      ],
-      [
-        "Venice Immersive : 68 projets de 26 pays",
-        "La section officielle consacrée à la XR et aux arts immersifs réunit 68 projets issus de 26 pays sur l’Isola del Lazzaretto Vecchio, face au Lido. L’accès suit les règles d’accréditation de La Biennale et doit donc être vérifié séparément des billets de cinéma destinés au grand public."
-      ],
-      [
-        "Les distinctions de l’édition 2026",
-        "George Clooney a reçu un Lion d’or pour l’ensemble de sa carrière lors de l’ouverture du 2 septembre. Ellen Burstyn est la seconde lauréate 2026 de ce Lion d’or pour l’ensemble de sa carrière. Luca Guadagnino est le lauréat du Cartier Glory to the Filmmaker Award 2026. Les masterclasses de la première semaine ont déjà eu lieu : pour un visiteur arrivant maintenant, les projections encore programmées sont plus pertinentes."
-      ],
-      [
-        "Comment rejoindre le Lido depuis Marghera",
-        "Depuis Marghera Venice Apartments, rejoignez Venise en bus ou en train puis prenez le vaporetto vers Lido S.M.E. Pendant la Mostra, prévoyez une marge pour les correspondances et l’affluence. Pour passer davantage de temps sur l’île, consultez notre guide complet du Lido ci-dessous."
-      ]
+  fr: {
+    metaTitle: 'Mostra de Venise 2026 : palmarès et Lion d’or',
+    metaDescription: 'Palmarès de la Mostra de Venise 2026 : Lion d’or à Woman Unknown, Coupes Volpi, Lions d’argent, Orizzonti et autres prix de Venezia 83.',
+    category: 'Art & culture',
+    eventDate: '2–12 SEPTEMBRE 2026',
+    imageAlt: 'Mostra internationale d’art cinématographique de Venise au Lido',
+    breadcrumb: 'Mostra de Venise 2026',
+    heroTitle: 'Mostra de Venise 2026 : tous les gagnants',
+    heroSubtitle: 'Venezia 83 s’est achevée au Lido : Woman Unknown de May el-Toukhy remporte le Lion d’or. Voici les principaux prix, les Coupes Volpi et les autres lauréats de l’édition 2026.',
+    lead: 'La 83e Mostra internationale d’art cinématographique de Venise s’est terminée le 12 septembre 2026 après onze jours de premières, tapis rouges et cinéma international. Le jury de Venezia 83, présidé par Maggie Gyllenhaal, a attribué le Lion d’or du meilleur film à Woman Unknown de May el-Toukhy.',
+    awardsTitle: 'Venezia 83 : tous les lauréats de la compétition',
+    awardsIntro: 'Voici les huit prix officiels attribués par le jury international de Venezia 83.',
+    awards: [
+      ['Lion d’or – Meilleur film','Woman Unknown','de May el-Toukhy'],
+      ['Lion d’argent – Grand Prix du Jury','Possible Love','de Lee Chang-dong'],
+      ['Lion d’argent – Meilleure réalisation','Ilya Khrzhanovsky','pour DAU'],
+      ['Coupe Volpi – Meilleure actrice','Mathilde Arcel','pour Woman Unknown'],
+      ['Coupe Volpi – Meilleur acteur','John Malkovich','pour Wild Horse Nine'],
+      ['Meilleur scénario','Stéphane Brizé, Coralie Amédéo et Olivier Gorce','pour Un bon petit soldat (A Good Little Soldier)'],
+      ['Prix spécial du Jury','NAZA','de Yuval Abraham et Rachel Szor'],
+      ['Prix Marcello Mastroianni','Malou Khebizi','pour 15/18 (A Place to Heal)']
     ],
-    "tipLabel": "Le conseil de Marghera Venice Apartments",
-    "tip": "Commencez par choisir une séance publique avec des billets disponibles, puis construisez la journée autour de celle-ci. Gardez aussi du temps pour marcher au Lido plutôt que de courir après chaque événement.",
-    "officialBoxLabel": "Informations officielles",
-    "sourceNote": "Disponibilités, prix et programme peuvent évoluer pendant le Festival. Consultez le programme public et la billetterie officielle le jour de votre visite.",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026",
-        "https://www.labiennale.org/en/cinema/2026"
-      ],
-      [
-        "Programme public",
-        "https://www.labiennale.org/en/cinema/2026/program-cinema-2026-public"
-      ],
-      [
-        "Billets et tarifs",
-        "https://www.labiennale.org/en/cinema/2026/information"
-      ]
+    highlightsTitle: 'Orizzonti et les autres prix à retenir',
+    highlights: [
+      ['Orizzonti – Meilleur film','Un détour par Diane d’Ann Sirot et Raphaël Balboni.'],
+      ['Orizzonti – Meilleure réalisation','Jacqueline Lentzou pour A Day in the Life of Jo: Chapter Phaedra.'],
+      ['Lion du Futur – Prix « Luigi De Laurentiis » du premier film','La maison du vent (House of the Wind) d’Auguste Bernard Kouemo Yanghu.'],
+      ['Armani beauty Audience Award','I Matter (Eu contez) d’Alina Șerban, lauréat de la section Venice Spotlight.'],
+      ['Lions d’or pour l’ensemble de la carrière','George Clooney et Ellen Burstyn. Luca Guadagnino a également reçu le Cartier Glory to the Filmmaker Award 2026.']
     ],
-    "lidoCta": "Vous prévoyez plus de temps au Lido ? Consultez notre guide complet de l’île. →",
-    "lidoHref": "/fr/guide/lido-di-venezia",
-    "moreLabel": "À découvrir aussi",
-    "backLabel": "Retour au Journal",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/fr/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/fr/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Woman Unknown remporte le Lion d’or 2026','Le film de May el-Toukhy est le grand gagnant de Venezia 83. Situé dans le Danemark de l’après-guerre, Woman Unknown suit une femme dont le passé lié à un soldat allemand ressurgit avec de lourdes conséquences. Mathilde Arcel a également reçu la Coupe Volpi de la meilleure actrice pour le film, signant l’un des doublés marquants de l’édition 2026.'],
+      ['Un palmarès entre grands auteurs et cinéma politique','Lee Chang-dong a reçu le Grand Prix du Jury pour Possible Love, tandis qu’Ilya Khrzhanovsky a remporté le Lion d’argent de la mise en scène pour DAU. Le Prix spécial du Jury est allé à NAZA de Yuval Abraham et Rachel Szor. John Malkovich a remporté la Coupe Volpi pour Wild Horse Nine et Malou Khebizi le Prix Marcello Mastroianni du jeune talent.'],
+      ['Ce que laisse l’édition 2026','La Mostra 2026 a une nouvelle fois placé le Lido au cœur du cinéma mondial, réunissant auteurs confirmés, nouvelles voix et œuvres traitant de questions politiques et sociales contemporaines. L’édition s’est ouverte le 2 septembre avec Ink de Danny Boyle et s’est achevée le 12 septembre avec la cérémonie de remise des prix.'],
+      ['Et la Mostra de Venise 2027 ?','La sélection, les films en compétition, les invités et les informations destinées au public de la prochaine édition sont annoncés progressivement par La Biennale. Nous préférons ne pas publier de dates non confirmées et mettrons ce guide à jour dès que les informations officielles pour 2027 seront disponibles.'],
+      ['Le Lido au-delà du tapis rouge','Le Lido di Venezia mérite aussi une visite hors des dates du festival, pour ses plages, ses villas, son front de mer et son rythme plus calme. Depuis Marghera Venice Apartments, rejoignez Venise en bus ou en train puis continuez en vaporetto jusqu’à Lido S.M.E. ; notre guide complet vous aide à organiser la journée.']
+    ],
+    tipLabel: 'Le conseil de Marghera Venice Apartments',
+    tip: 'Pour une prochaine édition, choisissez d’abord les séances qui comptent vraiment pour vous et gardez du temps pour profiter du Lido. La Mostra est plus agréable quand la journée ne devient pas une course entre les salles.',
+    officialBoxLabel: 'Sources et informations officielles',
+    sourceNote: 'L’édition 2026 s’est achevée le 12 septembre. Pour les archives, le programme et les futures annonces, consultez toujours les canaux officiels de La Biennale di Venezia.',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
+      ['83rd Festival : jurys et prix','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
+      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
+    ],
+    lidoCta: 'Envie de découvrir le Lido au-delà de la Mostra ? Lisez notre guide complet. →',
+    lidoHref: '/fr/guide/lido-di-venezia',
+    moreLabel: 'À découvrir aussi',
+    backLabel: 'Retour au Journal',
+    related: [
+      ['Homo Faber 2026','/fr/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/fr/journal/venice-glass-week-2026']
     ]
   },
-  "es": {
-    "metaTitle": "Festival de Cine de Venecia 2026 | Entradas y programa",
-    "metaDescription": "83.º Festival de Cine de Venecia en el Lido, 2–12 de septiembre de 2026: proyecciones públicas, entradas online, Venice Immersive y consejos para los últimos días.",
-    "category": "Arte y cultura",
-    "eventDate": "2–12 DE SEPTIEMBRE DE 2026",
-    "imageAlt": "Festival de Cine de Venecia en el Lido",
-    "breadcrumb": "Festival de Cine de Venecia 2026",
-    "heroTitle": "Festival de Cine de Venecia 2026",
-    "heroSubtitle": "La 83.ª Mostra continúa en el Lido hasta el 12 de septiembre, con proyecciones públicas, entradas online y un programa diario que conviene revisar antes de salir.",
-    "lead": "La 83.ª Mostra Internazionale d’Arte Cinematografica está organizada por La Biennale di Venezia y dirigida por Alberto Barbera. En los últimos días, los visitantes todavía pueden vivir el ambiente del Lido y comprar online entradas para muchas proyecciones públicas, hasta agotar localidades.",
-    "sections": [
-      [
-        "La 83.ª Mostra continúa hasta el 12 de septiembre",
-        "El Festival de Cine de Venecia 2026 se celebra del 2 al 12 de septiembre en el Lido di Venezia. La competición Venezia 83 se completa con otras secciones oficiales y actividades del Festival. Ink, de Danny Boyle, inauguró la edición el 2 de septiembre con su estreno mundial."
-      ],
-      [
-        "Qué puede hacer todavía quien visite el Festival hasta el 12 de septiembre",
-        "Durante los días restantes, consulta el programa público, elige una proyección con entradas disponibles y disfruta del ambiente alrededor del Palazzo del Cinema y el paseo marítimo del Lido. La alfombra roja forma parte de la escena del Festival, pero una entrada de cine normal no garantiza el acceso a las zonas reservadas. Comprueba horarios y disponibilidad el mismo día."
-      ],
-      [
-        "Entradas públicas solo online",
-        "Las entradas para las proyecciones abiertas al público se venden exclusivamente online hasta agotar plazas. En 2026, los precios generales oscilan aproximadamente entre 10 y 50 € según la sala y el horario, con reducciones según las condiciones oficiales. La disponibilidad, los precios y el programa pueden cambiar durante el Festival."
-      ],
-      [
-        "Venice Immersive: 68 proyectos de 26 países",
-        "La sección oficial dedicada a XR y artes inmersivas presenta 68 proyectos de 26 países en la Isola del Lazzaretto Vecchio, frente al Lido. El acceso sigue las normas de acreditación de La Biennale y debe comprobarse por separado respecto a las entradas de cine para el público."
-      ],
-      [
-        "Reconocimientos de la edición 2026",
-        "George Clooney recibió el León de Oro a toda una carrera durante la apertura del 2 de septiembre. Ellen Burstyn es la segunda galardonada de 2026 con el León de Oro a toda una carrera. Luca Guadagnino es el destinatario del Cartier Glory to the Filmmaker Award 2026. Las masterclasses de la primera semana ya han pasado; para quien llega ahora, lo más útil es centrarse en las proyecciones que aún quedan."
-      ],
-      [
-        "Cómo llegar al Lido desde Marghera",
-        "Desde Marghera Venice Apartments, llega a Venecia en autobús o tren y continúa en vaporetto hasta Lido S.M.E. Durante la Mostra deja margen para conexiones y mayor afluencia. Si quieres dedicar más tiempo a la isla, consulta nuestra guía completa del Lido más abajo."
-      ]
+  es: {
+    metaTitle: 'Festival de Cine de Venecia 2026: ganadores y León de Oro',
+    metaDescription: 'Ganadores del Festival de Cine de Venecia 2026: León de Oro para Woman Unknown, Copas Volpi, Leones de Plata, Orizzonti y otros premios de Venezia 83.',
+    category: 'Arte y cultura',
+    eventDate: '2–12 DE SEPTIEMBRE DE 2026',
+    imageAlt: 'Festival Internacional de Cine de Venecia en el Lido',
+    breadcrumb: 'Festival de Cine de Venecia 2026',
+    heroTitle: 'Festival de Cine de Venecia 2026: todos los ganadores',
+    heroSubtitle: 'Venezia 83 ha terminado en el Lido: Woman Unknown, de May el-Toukhy, gana el León de Oro. Estos son los premios principales, las Copas Volpi y los demás galardonados de 2026.',
+    lead: 'La 83.ª Mostra Internazionale d’Arte Cinematografica de Venecia terminó el 12 de septiembre de 2026 tras once días de estrenos, alfombras rojas y cine internacional. El jurado de Venezia 83, presidido por Maggie Gyllenhaal, concedió el León de Oro a la mejor película a Woman Unknown, de May el-Toukhy.',
+    awardsTitle: 'Venezia 83: todos los ganadores de la competición',
+    awardsIntro: 'Estos son los ocho premios oficiales concedidos por el jurado internacional de Venezia 83.',
+    awards: [
+      ['León de Oro – Mejor película','Woman Unknown','de May el-Toukhy'],
+      ['León de Plata – Gran Premio del Jurado','Possible Love','de Lee Chang-dong'],
+      ['León de Plata – Mejor dirección','Ilya Khrzhanovsky','por DAU'],
+      ['Copa Volpi – Mejor actriz','Mathilde Arcel','por Woman Unknown'],
+      ['Copa Volpi – Mejor actor','John Malkovich','por Wild Horse Nine'],
+      ['Mejor guion','Stéphane Brizé, Coralie Amédéo y Olivier Gorce','por Un bon petit soldat (A Good Little Soldier)'],
+      ['Premio Especial del Jurado','NAZA','de Yuval Abraham y Rachel Szor'],
+      ['Premio Marcello Mastroianni','Malou Khebizi','por 15/18 (A Place to Heal)']
     ],
-    "tipLabel": "Consejo de Marghera Venice Apartments",
-    "tip": "Primero elige una proyección pública con entradas disponibles y organiza el resto del día alrededor de ella. Deja también tiempo para pasear por el Lido en lugar de intentar perseguir cada momento del Festival.",
-    "officialBoxLabel": "Información oficial",
-    "sourceNote": "La disponibilidad, los precios y el programa pueden cambiar durante el Festival. Comprueba el programa público y la venta oficial de entradas el mismo día de la visita.",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026",
-        "https://www.labiennale.org/en/cinema/2026"
-      ],
-      [
-        "Programa para el público",
-        "https://www.labiennale.org/en/cinema/2026/program-cinema-2026-public"
-      ],
-      [
-        "Entradas y precios",
-        "https://www.labiennale.org/en/cinema/2026/information"
-      ]
+    highlightsTitle: 'Orizzonti y otros premios destacados',
+    highlights: [
+      ['Orizzonti – Mejor película','Un détour par Diane, de Ann Sirot y Raphaël Balboni.'],
+      ['Orizzonti – Mejor dirección','Jacqueline Lentzou por A Day in the Life of Jo: Chapter Phaedra.'],
+      ['León del Futuro – Premio “Luigi De Laurentiis” a una ópera prima','La maison du vent (House of the Wind), de Auguste Bernard Kouemo Yanghu.'],
+      ['Armani beauty Audience Award','I Matter (Eu contez), de Alina Șerban, ganadora de la sección Venice Spotlight.'],
+      ['Leones de Oro a toda una carrera','George Clooney y Ellen Burstyn. Luca Guadagnino recibió además el Cartier Glory to the Filmmaker Award 2026.']
     ],
-    "lidoCta": "¿Quieres pasar más tiempo en el Lido? Lee nuestra guía completa de la isla. →",
-    "lidoHref": "/es/guide/lido-di-venezia",
-    "moreLabel": "También puede interesarte",
-    "backLabel": "Volver al Journal",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/es/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/es/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Woman Unknown gana el León de Oro 2026','La película de May el-Toukhy es la gran vencedora de Venezia 83. Ambientada en la Dinamarca de la posguerra, Woman Unknown sigue a una mujer cuyo pasado ligado a un soldado alemán vuelve a salir a la luz. Mathilde Arcel también obtuvo la Copa Volpi a la mejor actriz por la misma película, uno de los dobles reconocimientos más importantes de la edición 2026.'],
+      ['Un palmarés entre grandes autores y cine político','Lee Chang-dong ganó el Gran Premio del Jurado con Possible Love, mientras Ilya Khrzhanovsky recibió el León de Plata a la dirección por DAU. El Premio Especial del Jurado fue para NAZA, de Yuval Abraham y Rachel Szor. John Malkovich ganó la Copa Volpi por Wild Horse Nine y Malou Khebizi el Premio Marcello Mastroianni como joven intérprete emergente.'],
+      ['Lo que deja la edición 2026','La Mostra 2026 volvió a situar al Lido en el centro del cine mundial, reuniendo autores consolidados, nuevas voces y películas que afrontan cuestiones políticas y sociales contemporáneas. La edición se inauguró el 2 de septiembre con Ink, de Danny Boyle, y terminó el 12 de septiembre con la ceremonia de premios.'],
+      ['¿Y el Festival de Cine de Venecia 2027?','La selección, las películas a concurso, los invitados y la información para el público de la próxima edición son anunciados progresivamente por La Biennale. Para evitar fechas o detalles no confirmados, actualizaremos esta guía cuando se publiquen los datos oficiales de 2027.'],
+      ['El Lido más allá de la alfombra roja','El Lido di Venezia merece una visita también fuera de las fechas del festival: playas, villas, paseo marítimo y un ritmo más tranquilo. Desde Marghera Venice Apartments puedes llegar a Venecia en autobús o tren y seguir en vaporetto hasta Lido S.M.E.; nuestra guía completa te ayuda a organizar el día.']
+    ],
+    tipLabel: 'Consejo de Marghera Venice Apartments',
+    tip: 'Para una futura edición de la Mostra, elige primero las proyecciones que de verdad te interesan y deja tiempo para disfrutar del Lido. El festival se vive mejor cuando el día no se convierte en una carrera entre salas.',
+    officialBoxLabel: 'Fuentes e información oficial',
+    sourceNote: 'La edición 2026 terminó el 12 de septiembre. Para consultar el archivo, el programa y futuros anuncios, revisa siempre los canales oficiales de La Biennale di Venezia.',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
+      ['83rd Festival: jurados y premios','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
+      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
+    ],
+    lidoCta: '¿Quieres descubrir el Lido más allá del Festival? Lee nuestra guía completa. →',
+    lidoHref: '/es/guide/lido-di-venezia',
+    moreLabel: 'También puede interesarte',
+    backLabel: 'Volver al Journal',
+    related: [
+      ['Homo Faber 2026','/es/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/es/journal/venice-glass-week-2026']
     ]
   },
-  "zh": {
-    "metaTitle": "2026威尼斯电影节｜门票、节目与丽都岛指南",
-    "metaDescription": "2026威尼斯国际电影节（9月2–12日）丽都岛参观指南：公众放映、线上门票、Venice Immersive 及闭幕前几天的实用建议。",
-    "category": "艺术与文化",
-    "eventDate": "2026年9月2日–12日",
-    "imageAlt": "威尼斯丽都的威尼斯国际电影节",
-    "breadcrumb": "2026威尼斯电影节",
-    "heroTitle": "2026威尼斯电影节",
-    "heroSubtitle": "第83届威尼斯国际电影节将在丽都岛持续至9月12日；公众场次可在线购票，出发前建议再次查看当天节目与余票。",
-    "lead": "第83届威尼斯国际电影节由 La Biennale di Venezia 主办，Alberto Barbera 担任艺术总监。即使在电影节最后几天，普通游客仍然可以前往丽都岛感受现场氛围，并在有余票时在线购买许多公众放映场次。",
-    "sections": [
-      [
-        "第83届威尼斯电影节持续至9月12日",
-        "2026威尼斯电影节于9月2日至12日在丽都岛举行。Venezia 83 主竞赛之外，还有其他官方单元和电影节活动。Danny Boyle 执导的 Ink 已于9月2日以世界首映形式担任开幕影片。"
-      ],
-      [
-        "9月12日前，游客还能体验什么",
-        "在剩余几天里，可以先查看公众放映日程，选择仍有余票的场次，再安排 Palazzo del Cinema 周边和丽都海滨的行程。红毯是电影节氛围的一部分，但普通电影票并不保证进入红毯管制区域。当天的时间和余票最好在出发前再次确认。"
-      ],
-      [
-        "公众门票仅在线销售",
-        "公众放映门票仅通过线上销售，售完即止。2026年的普通票价根据影厅和时间不同，大致在10至50欧元之间，优惠票以官方条件为准。电影节期间，余票、价格和节目都可能发生变化。"
-      ],
-      [
-        "Venice Immersive：来自26个国家的68个项目",
-        "官方XR与沉浸式艺术单元共有68个项目，来自26个国家，地点在丽都岛对面的 Lazzaretto Vecchio 岛。该单元按照 La Biennale 的证件规则入场，因此不要把它与普通公众电影票视为同一种票务方式。"
-      ],
-      [
-        "2026年的主要荣誉",
-        "George Clooney 已在9月2日开幕式上获得终身成就金狮奖。Ellen Burstyn 是2026年第二位终身成就金狮奖获得者。Luca Guadagnino 是2026 Cartier Glory to the Filmmaker Award 获得者。第一周的大师课已经结束，因此现在到访更适合关注仍在进行的公众放映。"
-      ],
-      [
-        "从 Marghera 前往丽都岛",
-        "从 Marghera Venice Apartments 可先乘公交或火车到威尼斯，再换乘 vaporetto 前往 Lido S.M.E.。电影节期间建议为换乘和客流预留更多时间。如果想在岛上停留更久，可以继续阅读下方的丽都岛完整指南。"
-      ]
+  zh: {
+    metaTitle: '2026威尼斯电影节获奖名单｜金狮奖与主要奖项',
+    metaDescription: '2026威尼斯电影节获奖名单：Woman Unknown 获金狮奖，并汇总沃尔皮杯、银狮奖、地平线单元及 Venezia 83 其他重要奖项。',
+    category: '艺术与文化',
+    eventDate: '2026年9月2日–12日',
+    imageAlt: '威尼斯丽都岛上的威尼斯国际电影节',
+    breadcrumb: '2026威尼斯电影节',
+    heroTitle: '2026威尼斯电影节：完整主要获奖名单',
+    heroSubtitle: '第83届威尼斯国际电影节已在丽都岛落幕：May el-Toukhy 的 Woman Unknown 获得金狮奖。这里汇总主竞赛、沃尔皮杯及其他重要奖项。',
+    lead: '第83届威尼斯国际电影节于2026年9月12日闭幕，十一天的首映、红毯与国际电影活动告一段落。由 Maggie Gyllenhaal 担任主席的 Venezia 83 国际评审团，将最佳影片金狮奖授予 May el-Toukhy 执导的 Woman Unknown。',
+    awardsTitle: 'Venezia 83：主竞赛全部获奖者',
+    awardsIntro: '以下为 Venezia 83 国际评审团颁发的八项官方主竞赛奖项。',
+    awards: [
+      ['金狮奖 – 最佳影片','Woman Unknown','导演 May el-Toukhy'],
+      ['银狮奖 – 评审团大奖','Possible Love','导演 Lee Chang-dong'],
+      ['银狮奖 – 最佳导演','Ilya Khrzhanovsky','凭 DAU 获奖'],
+      ['沃尔皮杯 – 最佳女演员','Mathilde Arcel','凭 Woman Unknown 获奖'],
+      ['沃尔皮杯 – 最佳男演员','John Malkovich','凭 Wild Horse Nine 获奖'],
+      ['最佳剧本','Stéphane Brizé、Coralie Amédéo、Olivier Gorce','作品 Un bon petit soldat (A Good Little Soldier)'],
+      ['评审团特别奖','NAZA','导演 Yuval Abraham、Rachel Szor'],
+      ['Marcello Mastroianni 新人奖','Malou Khebizi','凭 15/18 (A Place to Heal) 获奖']
     ],
-    "tipLabel": "Marghera Venice Apartments 建议",
-    "tip": "先选一场还有余票的公众放映，再围绕它安排当天行程。不要把所有电影节瞬间都当成必须追赶的目标，留一点时间在丽都散步会更舒服。",
-    "officialBoxLabel": "官方信息",
-    "sourceNote": "电影节期间余票、价格与节目都可能调整。请在参观当天再次查看官方公众日程和售票页面。",
-    "officialLinks": [
-      [
-        "Biennale Cinema 2026 官方页面",
-        "https://www.labiennale.org/en/cinema/2026"
-      ],
-      [
-        "公众放映日程",
-        "https://www.labiennale.org/en/cinema/2026/program-cinema-2026-public"
-      ],
-      [
-        "门票与价格",
-        "https://www.labiennale.org/en/cinema/2026/information"
-      ]
+    highlightsTitle: '地平线单元与其他重要奖项',
+    highlights: [
+      ['Orizzonti 地平线 – 最佳影片','Un détour par Diane，导演 Ann Sirot、Raphaël Balboni。'],
+      ['Orizzonti 地平线 – 最佳导演','Jacqueline Lentzou，作品 A Day in the Life of Jo: Chapter Phaedra。'],
+      ['未来之狮 – “Luigi De Laurentiis” 最佳处女作奖','La maison du vent (House of the Wind)，导演 Auguste Bernard Kouemo Yanghu。'],
+      ['Armani beauty 观众选择奖','I Matter (Eu contez)，导演 Alina Șerban，获 Venice Spotlight 单元观众奖。'],
+      ['终身成就金狮奖','George Clooney 与 Ellen Burstyn。Luca Guadagnino 另获 2026 Cartier Glory to the Filmmaker Award。']
     ],
-    "lidoCta": "想在丽都岛多安排一些时间？阅读我们的丽都岛完整指南。→",
-    "lidoHref": "/zh/guide/lido-di-venezia",
-    "moreLabel": "你可能也感兴趣",
-    "backLabel": "返回旅行日志",
-    "related": [
-      [
-        "Homo Faber 2026",
-        "/zh/journal/homo-faber-2026"
-      ],
-      [
-        "The Venice Glass Week 2026",
-        "/zh/journal/venice-glass-week-2026"
-      ]
+    sections: [
+      ['Woman Unknown 获2026金狮奖','May el-Toukhy 的 Woman Unknown 成为 Venezia 83 最受瞩目的获奖影片。故事设定在二战后的丹麦，一名女性与德国士兵有关的往事重新浮现，并带来深远后果。Mathilde Arcel 同时凭本片获得最佳女演员沃尔皮杯，使影片成为2026年最具代表性的“双奖”作品之一。'],
+      ['名导、新声音与政治议题并存的获奖名单','Lee Chang-dong 凭 Possible Love 获评审团大奖，Ilya Khrzhanovsky 凭 DAU 获最佳导演银狮奖。Yuval Abraham 与 Rachel Szor 的纪录片 NAZA 获评审团特别奖。John Malkovich 凭 Wild Horse Nine 获最佳男演员沃尔皮杯，Malou Khebizi 则获得 Marcello Mastroianni 新人奖。'],
+      ['2026届留下了什么','2026年的电影节再次让丽都岛成为世界电影的重要交汇点，既有成熟作者，也有新导演和直面当代政治、社会议题的作品。本届于9月2日以 Danny Boyle 的 Ink 开幕，并于9月12日以颁奖典礼结束。'],
+      ['2027威尼斯电影节呢？','下一届的片单、主竞赛影片、嘉宾和公众信息会由 La Biennale 分阶段公布。为避免传播尚未确认的日期或细节，我们将在2027年官方信息发布后继续更新这篇指南。'],
+      ['红毯之外的丽都岛','即使不在电影节期间，丽都岛也值得一游：海滩、别墅、海滨步道，以及比威尼斯历史中心更舒缓的节奏。从 Marghera Venice Apartments 可先乘公交或火车到威尼斯，再换乘 vaporetto 前往 Lido S.M.E.；我们的完整丽都指南可帮助你规划行程。']
+    ],
+    tipLabel: 'Marghera Venice Apartments 建议',
+    tip: '如果未来专程来看电影节，先选出你真正想看的场次，再给丽都岛本身留一些时间。比起不停赶场，这样更容易感受到威尼斯电影节的氛围。',
+    officialBoxLabel: '官方来源与信息',
+    sourceNote: '2026届已于9月12日闭幕。查阅历史资料、节目与下一届官方消息时，请始终以 La Biennale di Venezia 官方渠道为准。',
+    officialLinks: [
+      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
+      ['第83届：评审团与奖项','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
+      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
+    ],
+    lidoCta: '想看看红毯之外的丽都岛？阅读我们的完整指南。→',
+    lidoHref: '/zh/guide/lido-di-venezia',
+    moreLabel: '你可能也感兴趣',
+    backLabel: '返回旅行日志',
+    related: [
+      ['Homo Faber 2026','/zh/journal/homo-faber-2026'],
+      ['The Venice Glass Week 2026','/zh/journal/venice-glass-week-2026']
     ]
   }
 } as const;
