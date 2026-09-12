@@ -22,7 +22,7 @@ type HeaderCopy={
 
 const prefix:Record<Lang,string>={it:'',en:'/en',de:'/de',fr:'/fr',es:'/es',zh:'/zh'};
 const home:Record<Lang,string>={it:'/',en:'/en',de:'/de',fr:'/fr',es:'/es',zh:'/zh'};
-const langLabel:Record<Lang,string>={it:'IT',en:'EN',de:'DE',fr:'FR',es:'ES',zh:'🇨🇳'};
+const langLabel:Record<Lang,string>={it:'IT',en:'EN',de:'DE',fr:'FR',es:'ES',zh:'CH'};
 const aria:Record<Lang,[string,string,string]>={
   zh:['主导航','打开菜单','关闭菜单'],it:['Navigazione principale','Apri il menu','Chiudi il menu'],en:['Main navigation','Open menu','Close menu'],de:['Hauptnavigation','Menü öffnen','Menü schließen'],fr:['Navigation principale','Ouvrir le menu','Fermer le menu'],es:['Navegación principal','Abrir el menú','Cerrar el menú']
 };
