@@ -19,7 +19,7 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
   };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'83rd Venice International Film Festival',description:data.metaDescription,
-    startDate:'2026-09-02',endDate:'2026-09-12',eventStatus:'https://schema.org/EventCompleted',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
+    startDate:'2026-09-02',endDate:'2026-09-12',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
     image,location:{'@type':'Place',name:'Palazzo del Cinema, Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
