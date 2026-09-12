@@ -102,13 +102,14 @@ export default function ScopriVenezia(){
           <div>
             <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Da Marghera a Venezia</p>
             <h2 className="mt-3 max-w-3xl font-serif text-5xl text-navy">Lascia l’auto. A Venezia entra senza pensieri.</h2>
-            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">Dagli appartamenti puoi raggiungere Piazzale Roma con le linee diurne 6 e 6L e rientrare anche di notte con la N2. In alternativa, Venezia Santa Lucia è raggiungibile in treno dalla stazione di Venezia Mestre.</p>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">Dagli appartamenti puoi raggiungere Piazzale Roma con le linee 6 e 6L di giorno, continuare con la linea 6 la sera e rientrare anche di notte con la N2. In alternativa, Venezia Santa Lucia è raggiungibile in treno dalla stazione di Venezia Mestre.</p>
             <div className="mt-7 flex flex-wrap gap-3"><Link href="/come-raggiungere-venezia" className="rounded-full bg-navy px-6 py-3.5 font-bold text-white">Trasporti, biglietti e aeroporti →</Link><a href="https://actv.avmspa.it/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy/25 px-6 py-3.5 font-bold text-navy">ACTV ufficiale ↗</a></div>
           </div>
           <div className="self-start border-y border-navy/15">
             {[
-              ['Di giorno','6 · 6L','Marghera → Piazzale Roma'],
-              ['Di notte','N2','Rientro da Venezia verso Marghera'],
+              ['Di giorno','6 · 6L','Ogni 10 minuti · Marghera → Piazzale Roma'],
+              ['Di sera','6','Ogni 20 minuti · Marghera → Piazzale Roma'],
+              ['Di notte','N2','Ogni 30 minuti · Rientro da Venezia verso Marghera'],
               ['In treno','Mestre → Santa Lucia','Corse regionali frequenti'],
             ].map(([a,b,c])=><div key={a} className="grid grid-cols-[88px_1fr] gap-4 border-b border-navy/10 py-5 last:border-b-0"><span className="text-xs font-black uppercase tracking-[.14em] text-gold">{a}</span><span><strong className="block text-navy">{b}</strong><span className="mt-1 block text-sm text-slate-600">{c}</span></span></div>)}
           </div>
