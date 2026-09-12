@@ -4,17 +4,17 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
+import GondolaExperienceCard from '@/components/GondolaExperienceCard';
 
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
-  description:'Esperienze selezionate per vivere Venezia e il Veneto in modo autentico: dalla voga alla veneta con Row Venice alla Wine Experience presso Azienda Agricola I Campi.',
+  description:'Esperienze selezionate per vivere Venezia e il Veneto in modo autentico: tour in gondola, voga alla veneta con Row Venice e Wine Experience presso Azienda Agricola I Campi.',
   alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},
 openGraph:{type:'website',images:['/images/experience-row-venice-cover.webp']},twitter:{card:'summary_large_image',images:['/images/experience-row-venice-cover.webp']}};
 
 const areas = [
   ['Transfer e NCC','Collegamenti con aeroporti, stazioni e destinazioni del Veneto.'],
   ['Guide turistiche','Visite private o di gruppo con professionisti abilitati.'],
-  ['Gondole e barche','Esperienze in laguna da proporre con condizioni trasparenti.'],
   ['Biciclette','Noleggio e itinerari verso Lido, Pellestrina e terraferma.'],
   ['Ristorazione','Locali selezionati a Marghera, Venezia e nelle destinazioni delle guide.'],
 ];
@@ -34,6 +34,7 @@ export default function Collaborazioni(){
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionTitle eyebrow="Categorie" title="Cosa vogliamo offrire agli ospiti" text="Pochi servizi selezionati, con informazioni chiare e collegamenti esterni aperti in una nuova scheda."/>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <GondolaExperienceCard lang="it"/>
           <article className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
             <Link href="/collaborazioni/row-venice" className="block">
               <div className="relative h-64 overflow-hidden"><Image src="/images/experience-row-venice-card.webp" alt="Lezione di voga alla veneta con Row Venice" fill sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" className="object-cover object-center transition duration-500 group-hover:scale-[1.03]"/></div>
