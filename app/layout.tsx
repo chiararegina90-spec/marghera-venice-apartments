@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
+import './typography-consistency.css';
 import {headers} from 'next/headers';
 import {Suspense} from 'react';
 import AnalyticsConsent from '@/components/AnalyticsConsent';

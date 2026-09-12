@@ -1,0 +1,33 @@
+/* Typography consistency layer — 2026-09-12
+   Keeps equivalent roles aligned across legacy, editorial and localized templates.
+   The homepage display headline, cards, notes, prices and UI microcopy intentionally keep their own hierarchy. */
+
+/* DE/FR/ES/ZH shared templates previously used a standalone H1 clamp that stayed
+   noticeably larger on phones than the equivalent IT/EN page titles. Match the
+   site-wide page-title scale already used by the primary-language templates. */
+main h1[class*="text-[clamp(2.55rem,6vw,4.6rem)]"] {
+  font-size: clamp(2.55rem, 5.5vw, 4.55rem) !important;
+  line-height: 1 !important;
+  letter-spacing: -.025em;
+}
+
+/* Hero subtitles use one shared reading size whether the page comes from the
+   editorial system or an older/direct template. */
+main > section:first-child p[class~="text-xl"],
+.editorial-page .editorial-hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem) !important;
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 767px) {
+  main h1[class*="text-[clamp(2.55rem,6vw,4.6rem)]"] {
+    font-size: clamp(2.05rem, 8.8vw, 2.75rem) !important;
+    line-height: 1.01 !important;
+  }
+
+  main > section:first-child p[class~="text-xl"],
+  .editorial-page .editorial-hero-subtitle {
+    font-size: 1.125rem !important;
+    line-height: 1.5 !important;
+  }
+}
