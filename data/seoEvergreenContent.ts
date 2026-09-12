@@ -1,9 +1,9 @@
 import type {SiteLang} from '@/lib/i18n';
 import type {JournalFilterItem} from '@/components/JournalFilterGrid';
 import type {GuideDirectoryItem} from '@/components/GuideDirectoryIndex';
-import {gondolaTourContent} from '@/data/gondolaTourContent';
 
 export const seoJournalSlugs=['contributo-accesso-venezia'] as const;
+// Keep the gondola URL in the sitemap for SEO continuity, but do not surface it in the Guide directory.
 export const seoGuideSlugs=['venezia-nascosta','gondola-tour-venezia'] as const;
 
 const accessFeeCard:Record<SiteLang,Omit<JournalFilterItem,'href'>>={
@@ -30,9 +30,5 @@ const hiddenGuideCard:Record<SiteLang,Omit<GuideDirectoryItem,'slug'>>={
 };
 
 export function seoGuideItems(lang:SiteLang):GuideDirectoryItem[]{
-  const g=gondolaTourContent[lang];
-  return [
-    {slug:'venezia-nascosta',...hiddenGuideCard[lang]},
-    {slug:'gondola-tour-venezia',title:g.card.title,subtitle:g.card.subtitle,text:g.card.text,image:'/images/gondola-tour-venezia-card.jpg',alt:g.card.alt}
-  ];
+  return [{slug:'venezia-nascosta',...hiddenGuideCard[lang]}];
 }
