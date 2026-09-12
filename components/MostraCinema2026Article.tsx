@@ -11,15 +11,16 @@ function homeLabel(lang:MostraCinema2026Lang){return lang==='de'?'Startseite':la
 export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema2026Lang;data:MostraCinema2026Data}){
   const path=`${base(lang)}/journal/mostra-del-cinema`;
   const url=`https://www.margheraveniceapartments.com${path}`;
+  const image='https://www.margheraveniceapartments.com/images/journal-mostra-cinema.webp';
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
-    author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
-    mainEntityOfPage:url,url
+    image,author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
+    dateModified:'2026-09-12',about:{'@type':'Event',name:'83rd Venice International Film Festival'},mainEntityOfPage:url,url
   };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'83rd Venice International Film Festival',description:data.metaDescription,
-    startDate:'2026-09-02',endDate:'2026-09-12',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
-    location:{'@type':'Place',name:'Palazzo del Cinema, Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
+    startDate:'2026-09-02',endDate:'2026-09-12',eventStatus:'https://schema.org/EventCompleted',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
+    image,location:{'@type':'Place',name:'Palazzo del Cinema, Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
@@ -34,9 +35,35 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
       strongShade
     />
 
-    <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
-      <p className="editorial-lead font-serif text-navy">{data.lead}</p>
-      <div className="mt-14 space-y-12">{data.sections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="editorial-number text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="editorial-h2 font-serif text-navy">{title}</h2><p className="editorial-body mt-3 text-slate-600">{text}</p></div></section>)}</div>
+    <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8">
+      <p className="editorial-lead mx-auto max-w-4xl font-serif text-navy">{data.lead}</p>
+
+      <section className="mt-14" aria-labelledby="venezia-83-winners">
+        <div className="max-w-3xl">
+          <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Venezia 83</p>
+          <h2 id="venezia-83-winners" className="editorial-h2 mt-3 font-serif text-navy">{data.awardsTitle}</h2>
+          <p className="editorial-body mt-3 text-slate-600">{data.awardsIntro}</p>
+        </div>
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {data.awards.map(([award,winner,work])=><div key={award} className="rounded-[1.4rem] border border-slate-200 bg-white p-6 shadow-soft">
+            <p className="text-xs font-black uppercase tracking-[.16em] text-gold">{award}</p>
+            <h3 className="mt-3 font-serif text-2xl text-navy">{winner}</h3>
+            <p className="mt-2 text-slate-600">{work}</p>
+          </div>)}
+        </div>
+      </section>
+
+      <section className="mt-16 rounded-[1.8rem] bg-cream p-7 sm:p-9" aria-labelledby="other-venice-awards">
+        <h2 id="other-venice-awards" className="editorial-h2 font-serif text-navy">{data.highlightsTitle}</h2>
+        <div className="mt-7 space-y-5">
+          {data.highlights.map(([label,text])=><div key={label} className="border-b border-navy/10 pb-5 last:border-0 last:pb-0">
+            <h3 className="font-bold text-navy">{label}</h3>
+            <p className="mt-1 text-slate-600">{text}</p>
+          </div>)}
+        </div>
+      </section>
+
+      <div className="mt-16 space-y-12">{data.sections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="editorial-number text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="editorial-h2 font-serif text-navy">{title}</h2><p className="editorial-body mt-3 text-slate-600">{text}</p></div></section>)}</div>
       <div className="mt-10"><Link href={data.lidoHref} className="inline-flex text-lg font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{data.lidoCta}</Link></div>
     </div></section>
 
@@ -46,6 +73,6 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
     </div></section>
 
     <EditorialStayCta lang={lang} context="journal"/>
-<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="editorial-h2 mt-3 font-serif text-navy">{data.moreLabel}</h2><div className="mt-6 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-9 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
+    <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="editorial-h2 mt-3 font-serif text-navy">{data.moreLabel}</h2><div className="mt-6 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-9 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
   </article></main><Footer lang={lang}/></>;
 }
