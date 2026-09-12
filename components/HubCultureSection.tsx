@@ -26,12 +26,12 @@ const hiddenCopy:Record<CultureLang,{title:string;text:string;cta:string}>={
  zh:{title:'想看看更安静的威尼斯？',text:'三条漫步路线连接卡纳雷吉欧、多尔索杜罗手工艺街区和城堡区东部，避开最拥挤的游客动线。',cta:'查看小众威尼斯路线'}
 };
 const gondolaCopy:Record<CultureLang,{title:string;text:string;cta:string}>={
- it:{title:'Venezia dalla gondola: quanto costa e quale percorso scegliere?',text:'Tariffe ufficiali 2026, durata, Canal Grande o piccoli rii e consigli per scegliere il momento giusto.',cta:'Apri la guida alla gondola'},
- en:{title:'Planning a gondola ride in Venice?',text:'Official 2026 fares, ride length, Grand Canal or smaller canals, plus practical timing and route advice.',cta:'Open the gondola guide'},
- de:{title:'Eine Gondelfahrt in Venedig planen?',text:'Offizielle Preise 2026, Dauer, Canal Grande oder kleine Kanäle und praktische Tipps zur Planung.',cta:'Gondel-Guide öffnen'},
- fr:{title:'Vous préparez une balade en gondole ?',text:'Tarifs officiels 2026, durée, Grand Canal ou petits canaux et conseils pratiques pour choisir votre moment.',cta:'Ouvrir le guide gondole'},
- es:{title:'¿Estás pensando en un paseo en góndola?',text:'Precios oficiales 2026, duración, Gran Canal o canales pequeños y consejos prácticos para organizarlo.',cta:'Abrir la guía de góndolas'},
- zh:{title:'准备体验威尼斯贡多拉？',text:'查看2026官方价格、乘坐时长、大运河与小水道的区别，以及实用安排建议。',cta:'打开贡多拉指南'}
+ it:{title:'Venezia dalla gondola: quanto costa e quale percorso scegliere?',text:'Tariffe ufficiali 2026, durata, Canal Grande o piccoli rii e consigli per scegliere il momento giusto.',cta:'Scopri l’esperienza'},
+ en:{title:'Planning a gondola ride in Venice?',text:'Official 2026 fares, ride length, Grand Canal or smaller canals, plus practical timing and route advice.',cta:'Explore the experience'},
+ de:{title:'Eine Gondelfahrt in Venedig planen?',text:'Offizielle Preise 2026, Dauer, Canal Grande oder kleine Kanäle und praktische Tipps zur Planung.',cta:'Erlebnis entdecken'},
+ fr:{title:'Vous préparez une balade en gondole ?',text:'Tarifs officiels 2026, durée, Grand Canal ou petits canaux et conseils pratiques pour choisir votre moment.',cta:'Découvrir l’expérience'},
+ es:{title:'¿Estás pensando en un paseo en góndola?',text:'Precios oficiales 2026, duración, Gran Canal o canales pequeños y consejos prácticos para organizarlo.',cta:'Descubrir la experiencia'},
+ zh:{title:'准备体验威尼斯贡多拉？',text:'查看2026官方价格、乘坐时长、大运河与小水道的区别，以及实用安排建议。',cta:'查看体验'}
 };
 export default function HubCultureSection({scope,lang='it'}:{scope:CultureScope;lang?:CultureLang}){
  const t=copy[lang][scope]; const selected=picks[scope].map(slug=>culturePlaces.find(p=>p.slug===slug)).filter(Boolean); const hidden=hiddenCopy[lang]; const gondola=gondolaCopy[lang];
