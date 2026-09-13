@@ -1,35 +1,27 @@
 'use client';
 
-import {useMemo,useState} from 'react';
+import {useEffect,useMemo,useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CommonsPhoto from '@/components/CommonsPhoto';
+import {eventCalendarDate} from '@/data/event-calendar';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type JournalFilterItem={
   title:string; category:string; text:string; image:string; alt:string; href:string;
   eventDate?:string; commonsQuery?:string; fallbackImage?:string; startDate?:string; endDate?:string;
 };
-const ui:Record<Lang,{all:string;filter:string;read:string;results:string}>={
-  it:{all:'Tutti',filter:'Filtra gli articoli',read:'Leggi l’articolo',results:'articoli'},
-  en:{all:'All',filter:'Filter articles',read:'Read article',results:'articles'},
-  de:{all:'Alle',filter:'Artikel filtern',read:'Artikel lesen',results:'Artikel'},
-  fr:{all:'Tous',filter:'Filtrer les articles',read:'Lire l’article',results:'articles'},
-  es:{all:'Todos',filter:'Filtrar artículos',read:'Leer artículo',results:'artículos'},
-  zh:{all:'全部',filter:'筛选文章',read:'阅读文章',results:'篇文章'}
+const ui:Record<Lang,{all:string;filter:string;hint:string;read:string;results:string}>={
+  it:{all:'Tutti gli articoli',filter:'Scegli il mese',hint:'Quando vuoi visitare Venezia?',read:'Leggi l’articolo',results:'articoli'},
+  en:{all:'All articles',filter:'Choose a month',hint:'When would you like to visit Venice?',read:'Read article',results:'articles'},
+  de:{all:'Alle Artikel',filter:'Monat auswählen',hint:'Wann möchten Sie Venedig besuchen?',read:'Artikel lesen',results:'Artikel'},
+  fr:{all:'Tous les articles',filter:'Choisir un mois',hint:'Quand souhaitez-vous visiter Venise ?',read:'Lire l’article',results:'articles'},
+  es:{all:'Todos los artículos',filter:'Elige un mes',hint:'¿Cuándo quieres visitar Venecia?',read:'Leer artículo',results:'artículos'},
+  zh:{all:'全部文章',filter:'选择月份',hint:'您计划什么时候来威尼斯？',read:'阅读文章',results:'篇文章'}
 };
-const legacyDates:Record<string,[string,string]>={
-  'amerigo-vespucci-venezia-2026':['2026-10-02','2026-10-08'],
-  'venice-glass-week-2026':['2026-09-12','2026-09-20'],
-  'regata-storica-2026':['2026-09-06','2026-09-06'],
-  'carnevale-di-venezia':['2027-01-23','2027-02-09'],
-  'festa-del-redentore':['2027-07-17','2027-07-17'],
-  'mostra-del-cinema':['2026-09-02','2026-09-12'],
-  'homo-faber-2026':['2026-09-01','2026-09-30'],
-  'biennale-di-venezia':['2026-05-09','2026-11-22']
-};
+const locale:Record<Lang,string>={it:'it-IT',en:'en-GB',de:'de-DE',fr:'fr-FR',es:'es-ES',zh:'zh-CN'};
 function slugOf(href:string){return href.split('?')[0].replace(/\/$/,'').split('/').pop()||'';}
-function withDates(item:JournalFilterItem){const d=legacyDates[slugOf(item.href)];return d&&!item.startDate?{...item,startDate:d[0],endDate:d[1]}:item;}
+function withDates(item:JournalFilterItem){const d=eventCalendarDate(slugOf(item.href));return d&&!item.startDate?{...item,...d}:item;}
 function rank(item:JournalFilterItem,today:string){
   if(item.startDate&&item.endDate){if(item.startDate<=today&&today<=item.endDate)return 0;if(item.startDate>today)return 1;return 3;} return 2;
 }
@@ -43,6 +35,30 @@ function sortJournal(items:JournalFilterItem[]){
     return a.i-b.i;
   }).map(v=>v.x);
 }
+function monthsBetween(startDate:string,endDate:string){
+  const out:string[]=[];
+  let y=Number(startDate.slice(0,4)),m=Number(startDate.slice(5,7));
+  const ey=Number(endDate.slice(0,4)),em=Number(endDate.slice(5,7));
+  while(y<ey||(y===ey&&m<=em)){
+    out.push(`${y}-${String(m).padStart(2,'0')}`);
+    m+=1;if(m===13){m=1;y+=1;}
+  }
+  return out;
+}
+function monthBounds(key:string){
+  const [year,month]=key.split('-').map(Number);
+  const last=new Date(Date.UTC(year,month,0)).getUTCDate();
+  return {start:`${key}-01`,end:`${key}-${String(last).padStart(2,'0')}`};
+}
+function overlapsMonth(item:JournalFilterItem,key:string){
+  if(!item.startDate||!item.endDate)return false;
+  const b=monthBounds(key);return item.startDate<=b.end&&item.endDate>=b.start;
+}
+function monthLabel(key:string,lang:Lang){
+  const [year,month]=key.split('-').map(Number);
+  const value=new Intl.DateTimeFormat(locale[lang],{month:'long',year:'numeric'}).format(new Date(Date.UTC(year,month-1,1)));
+  return value.charAt(0).toLocaleUpperCase(locale[lang])+value.slice(1);
+}
 
 export default function JournalFilterGrid({items,dynamicEvents=[],lang='it',readLabel}:{items:JournalFilterItem[];dynamicEvents?:JournalFilterItem[];lang?:Lang;readLabel?:string}){
   const t=ui[lang];
@@ -50,14 +66,37 @@ export default function JournalFilterGrid({items,dynamicEvents=[],lang='it',read
     const seen=new Set<string>();
     return sortJournal([...dynamicEvents,...items].filter(a=>{if(seen.has(a.href))return false;seen.add(a.href);return true;}));
   },[items,dynamicEvents]);
-  const categories=useMemo(()=>Array.from(new Set(merged.map(x=>x.category))),[merged]);
-  const [active,setActive]=useState(t.all);
-  const visible=active===t.all?merged:merged.filter(x=>x.category===active);
+  const monthOptions=useMemo(()=>{
+    const now=new Date();const current=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const months=new Set<string>();
+    merged.forEach(item=>{if(item.startDate&&item.endDate)monthsBetween(item.startDate,item.endDate).forEach(m=>{if(m>=current)months.add(m);});});
+    return Array.from(months).sort();
+  },[merged]);
+  const [activeMonth,setActiveMonth]=useState('all');
+  useEffect(()=>{
+    const syncFromUrl=()=>{
+      const requested=new URL(window.location.href).searchParams.get('mese');
+      setActiveMonth(requested&&monthOptions.includes(requested)?requested:'all');
+    };
+    syncFromUrl();window.addEventListener('popstate',syncFromUrl);return()=>window.removeEventListener('popstate',syncFromUrl);
+  },[monthOptions]);
+  const chooseMonth=(value:string)=>{
+    setActiveMonth(value);
+    const url=new URL(window.location.href);
+    if(value==='all')url.searchParams.delete('mese');else url.searchParams.set('mese',value);
+    window.history.replaceState({},'',`${url.pathname}${url.search}${url.hash}`);
+  };
+  const visible=activeMonth==='all'?merged:merged.filter(x=>overlapsMonth(x,activeMonth));
   return <>
     <section className="bg-cream py-10"><div className="mx-auto max-w-7xl px-5 lg:px-8">
-      <label htmlFor={`journal-filter-${lang}`} className="mb-2 block text-xs font-black uppercase tracking-[.18em] text-gold md:hidden">{t.filter}</label>
-      <select id={`journal-filter-${lang}`} value={active} onChange={e=>setActive(e.target.value)} className="w-full rounded-2xl border border-navy/15 bg-white px-4 py-3 font-bold text-navy shadow-sm md:hidden"><option value={t.all}>{t.all}</option>{categories.map(x=><option key={x} value={x}>{x}</option>)}</select>
-      <div className="hidden flex-wrap gap-3 md:flex">{[t.all,...categories].map(x=><button type="button" key={x} onClick={()=>setActive(x)} aria-pressed={active===x} className={`rounded-full border px-4 py-2 text-sm font-bold transition ${active===x?'border-navy bg-navy text-white':'border-navy/15 bg-white text-navy hover:border-gold hover:text-gold'}`}>{x}</button>)}</div>
+      <div className="max-w-xl">
+        <p className="mb-2 text-xs font-black uppercase tracking-[.18em] text-gold">{t.hint}</p>
+        <label htmlFor={`journal-month-${lang}`} className="sr-only">{t.filter}</label>
+        <select id={`journal-month-${lang}`} value={activeMonth} onChange={e=>chooseMonth(e.target.value)} className="w-full rounded-2xl border border-navy/15 bg-white px-4 py-3 font-bold text-navy shadow-sm">
+          <option value="all">{t.all}</option>
+          {monthOptions.map(m=><option key={m} value={m}>{monthLabel(m,lang)}</option>)}
+        </select>
+      </div>
       <p className="mt-4 text-sm text-slate-500">{visible.length} {t.results}</p>
     </div></section>
     <section className="bg-cream pb-24"><div className="mx-auto grid max-w-7xl gap-7 px-5 md:grid-cols-2 xl:grid-cols-3 lg:px-8">
