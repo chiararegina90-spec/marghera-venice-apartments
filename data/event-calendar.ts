@@ -1,0 +1,35 @@
+export type EventCalendarDate={startDate:string;endDate:string};
+
+// Confirmed dates shared by the public Journal month filter and the private
+// Welcome Book stay-date matcher. Undated or unconfirmed events stay out of
+// this registry until reliable dates are available.
+export const eventCalendarDates={
+  'biennale-di-venezia':{startDate:'2026-05-09',endDate:'2026-11-22'},
+  'regata-storica-2026':{startDate:'2026-09-06',endDate:'2026-09-06'},
+  'mostra-del-cinema':{startDate:'2026-09-02',endDate:'2026-09-12'},
+  'homo-faber-2026':{startDate:'2026-09-01',endDate:'2026-09-30'},
+  'venice-glass-week-2026':{startDate:'2026-09-12',endDate:'2026-09-20'},
+  'salone-alto-artigianato-italiano-2026':{startDate:'2026-10-01',endDate:'2026-10-04'},
+  'amerigo-vespucci-venezia-2026':{startDate:'2026-10-02',endDate:'2026-10-07'},
+  'venice-design-week-2026':{startDate:'2026-10-09',endDate:'2026-10-18'},
+  'veleziana-2026':{startDate:'2026-10-10',endDate:'2026-10-18'},
+  'biennale-musica-2026':{startDate:'2026-10-10',endDate:'2026-10-24'},
+  'venice-hospitality-challenge-2026':{startDate:'2026-10-17',endDate:'2026-10-17'},
+  'venice-fashion-week-2026':{startDate:'2026-10-19',endDate:'2026-10-24'},
+  'venice-cocktail-week-2026':{startDate:'2026-10-21',endDate:'2026-10-25'},
+  'venicemarathon-2026':{startDate:'2026-10-25',endDate:'2026-10-25'},
+  'venice-noir-2026':{startDate:'2026-11-12',endDate:'2026-11-15'},
+  'festa-madonna-salute-venezia':{startDate:'2026-11-21',endDate:'2026-11-21'},
+  'carnevale-di-venezia':{startDate:'2027-01-23',endDate:'2027-02-09'},
+  'festa-del-redentore':{startDate:'2027-07-17',endDate:'2027-07-17'}
+} as const satisfies Record<string,EventCalendarDate>;
+
+export type EventCalendarSlug=keyof typeof eventCalendarDates;
+
+export function eventCalendarDate(slug:string):EventCalendarDate|undefined{
+  return eventCalendarDates[slug as EventCalendarSlug];
+}
+
+export function eventOverlapsRange(event:EventCalendarDate,startDate:string,endDate:string){
+  return event.startDate<=endDate&&event.endDate>=startDate;
+}
