@@ -13,5 +13,8 @@ export const journalEventImages:Record<string,JournalEventImagePair>={
   'san-martino-venezia':{card:'/images/journal-events/san-martino-venezia-card.webp',cover:'/images/journal-events/san-martino-venezia-cover.webp'},
   'venezia-a-novembre':{card:'/images/journal-events/venezia-a-novembre-card.webp',cover:'/images/journal-events/venezia-a-novembre-cover.webp'},
   'cimitero-san-michele-venezia':{card:'/images/journal-events/cimitero-san-michele-venezia-card.webp',cover:'/images/journal-events/cimitero-san-michele-venezia-cover.webp'},
+  'biennale-architettura-2027':{card:'/images/journal-biennale.webp',cover:'/images/journal-biennale.webp'},
+  'regata-storica-2027':{card:'/images/journal-regata-storica-2026.webp',cover:'/images/journal-regata-storica-2026.webp'},
+  'venicemarathon-2027':{card:'/images/journal-events/venicemarathon-2026-card.webp',cover:'/images/journal-events/venicemarathon-2026-cover.webp'},
 };
 export function journalEventImagePair(slug:string){return journalEventImages[slug];}

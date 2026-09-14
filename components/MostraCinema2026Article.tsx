@@ -15,12 +15,12 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
     image,author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
-    dateModified:'2026-09-12',about:{'@type':'Event',name:'83rd Venice International Film Festival'},mainEntityOfPage:url,url
+    dateModified:'2026-09-14',about:{'@type':'Event',name:'84th Venice International Film Festival'},mainEntityOfPage:url,url
   };
   const eventJsonLd={
-    '@context':'https://schema.org','@type':'Event',name:'83rd Venice International Film Festival',description:data.metaDescription,
-    startDate:'2026-09-02',endDate:'2026-09-12',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
-    image,location:{'@type':'Place',name:'Palazzo del Cinema, Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
+    '@context':'https://schema.org','@type':'Event',name:'84th Venice International Film Festival',description:data.metaDescription,
+    startDate:'2027-09-01',endDate:'2027-09-11',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
+    image,location:{'@type':'Place',name:'Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
@@ -38,23 +38,23 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
     <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8">
       <p className="editorial-lead mx-auto max-w-4xl font-serif text-navy">{data.lead}</p>
 
-      <section className="mt-14" aria-labelledby="venezia-83-winners">
+      <section className="mt-14" aria-labelledby="venezia-84-known">
         <div className="max-w-3xl">
-          <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Venezia 83</p>
-          <h2 id="venezia-83-winners" className="editorial-h2 mt-3 font-serif text-navy">{data.awardsTitle}</h2>
+          <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Venezia 84</p>
+          <h2 id="venezia-84-known" className="editorial-h2 mt-3 font-serif text-navy">{data.awardsTitle}</h2>
           <p className="editorial-body mt-3 text-slate-600">{data.awardsIntro}</p>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
-          {data.awards.map(([award,winner,work])=><div key={award} className="rounded-[1.4rem] border border-slate-200 bg-white p-6 shadow-soft">
-            <p className="text-xs font-black uppercase tracking-[.16em] text-gold">{award}</p>
-            <h3 className="mt-3 font-serif text-2xl text-navy">{winner}</h3>
-            <p className="mt-2 text-slate-600">{work}</p>
+          {data.awards.map(([label,value,note])=><div key={label} className="rounded-[1.4rem] border border-slate-200 bg-white p-6 shadow-soft">
+            <p className="text-xs font-black uppercase tracking-[.16em] text-gold">{label}</p>
+            <h3 className="mt-3 font-serif text-2xl text-navy">{value}</h3>
+            <p className="mt-2 text-slate-600">{note}</p>
           </div>)}
         </div>
       </section>
 
-      <section className="mt-16 rounded-[1.8rem] bg-cream p-7 sm:p-9" aria-labelledby="other-venice-awards">
-        <h2 id="other-venice-awards" className="editorial-h2 font-serif text-navy">{data.highlightsTitle}</h2>
+      <section className="mt-16 rounded-[1.8rem] bg-cream p-7 sm:p-9" aria-labelledby="venezia-84-pending">
+        <h2 id="venezia-84-pending" className="editorial-h2 font-serif text-navy">{data.highlightsTitle}</h2>
         <div className="mt-7 space-y-5">
           {data.highlights.map(([label,text])=><div key={label} className="border-b border-navy/10 pb-5 last:border-0 last:pb-0">
             <h3 className="font-bold text-navy">{label}</h3>

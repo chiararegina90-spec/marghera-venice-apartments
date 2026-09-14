@@ -5,12 +5,22 @@ import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {BiennaleArte2026Data,BiennaleArte2026Lang} from '@/data/biennaleArte2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import {localePath} from '@/lib/i18n';
 
 function base(lang:BiennaleArte2026Lang){return lang==='it'?'':`/${lang}`;}
+const architecture2027:Record<BiennaleArte2026Lang,{eyebrow:string;title:string;text:string;cta:string}>={
+  it:{eyebrow:'Prossima grande edizione',title:'Biennale Architettura Venezia 2027',text:'Le date sono già ufficiali: 8 maggio–21 novembre 2027, con Wang Shu e Lu Wenyu come curatori. La nostra nuova guida è già online e verrà aggiornata progressivamente.',cta:'Scopri la Biennale Architettura 2027'},
+  en:{eyebrow:'Next major edition',title:'Venice Architecture Biennale 2027',text:'The dates are already official: 8 May–21 November 2027, curated by Wang Shu and Lu Wenyu. Our new guide is online and will be updated progressively.',cta:'Explore the 2027 Architecture Biennale'},
+  de:{eyebrow:'Nächste große Ausgabe',title:'Architekturbiennale Venedig 2027',text:'Die Termine stehen fest: 8. Mai–21. November 2027, kuratiert von Wang Shu und Lu Wenyu. Unser neuer Guide ist bereits online und wird laufend aktualisiert.',cta:'Architekturbiennale 2027 entdecken'},
+  fr:{eyebrow:'Prochaine grande édition',title:'Biennale d’Architecture de Venise 2027',text:'Les dates sont déjà officielles : 8 mai–21 novembre 2027, sous le commissariat de Wang Shu et Lu Wenyu. Notre nouveau guide est en ligne et sera enrichi progressivement.',cta:'Découvrir la Biennale Architecture 2027'},
+  es:{eyebrow:'Próxima gran edición',title:'Bienal de Arquitectura de Venecia 2027',text:'Las fechas ya son oficiales: 8 de mayo–21 de noviembre de 2027, con Wang Shu y Lu Wenyu como comisarios. La nueva guía ya está online y se actualizará progresivamente.',cta:'Descubrir la Bienal de Arquitectura 2027'},
+  zh:{eyebrow:'下一届重点展览',title:'2027 威尼斯建筑双年展',text:'日期已经正式公布：2027年5月8日至11月21日，策展人为王澍与陆文宇。新指南现已上线，并会持续更新。',cta:'查看2027建筑双年展指南'}
+};
 
 export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte2026Lang;data:BiennaleArte2026Data}){
   const path=`${base(lang)}/journal/biennale-di-venezia`;
   const url=`https://www.margheraveniceapartments.com${path}`;
+  const next=architecture2027[lang];
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
     author:{'@type':'Organization',name:'Marghera Venice Apartments'},
@@ -48,6 +58,8 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
       title={data.heroTitle}
       subtitle={data.heroSubtitle}
     />}
+
+    <section className="bg-cream py-8"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[1.6rem] border border-navy/10 bg-white p-6 shadow-soft sm:flex sm:items-center sm:justify-between sm:gap-8"><div><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{next.eyebrow}</p><h2 className="mt-2 font-serif text-3xl text-navy">{next.title}</h2><p className="mt-3 max-w-2xl text-slate-600">{next.text}</p></div><Link href={localePath('/journal/biennale-architettura-2027',lang)} className="mt-5 inline-flex shrink-0 rounded-full bg-navy px-6 py-3 font-bold text-white sm:mt-0">{next.cta} →</Link></div></div></section>
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
       <p className="font-serif text-3xl leading-relaxed text-navy">{data.lead}</p>
