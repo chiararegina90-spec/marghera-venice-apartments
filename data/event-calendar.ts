@@ -18,6 +18,7 @@ export const eventCalendarDates={
   'venice-fashion-week-2026':{startDate:'2026-10-19',endDate:'2026-10-24'},
   'venice-cocktail-week-2026':{startDate:'2026-10-21',endDate:'2026-10-25'},
   'venicemarathon-2026':{startDate:'2026-10-25',endDate:'2026-10-25'},
+  'san-martino-venezia':{startDate:'2026-11-11',endDate:'2026-11-11'},
   'venice-noir-2026':{startDate:'2026-11-12',endDate:'2026-11-15'},
   'festa-madonna-salute-venezia':{startDate:'2026-11-21',endDate:'2026-11-21'},
   'carnevale-di-venezia':{startDate:'2027-01-23',endDate:'2027-02-09'},
