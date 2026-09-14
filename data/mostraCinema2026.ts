@@ -1,336 +1,66 @@
 export type MostraCinema2026Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 
-export const mostraCinema2026 = {
-  it: {
-    metaTitle: 'Mostra del Cinema Venezia 2026: tutti i vincitori',
-    metaDescription: 'Vincitori della Mostra del Cinema di Venezia 2026: Leone d’Oro a Woman Unknown, Coppe Volpi, Leoni d’Argento, Orizzonti e altri premi di Venezia 83.',
-    category: 'Arte & Cultura',
-    eventDate: '2–12 SETTEMBRE 2026',
-    imageAlt: 'Mostra Internazionale d’Arte Cinematografica di Venezia al Lido',
-    breadcrumb: 'Mostra del Cinema 2026',
-    heroTitle: 'Mostra del Cinema di Venezia 2026: tutti i vincitori',
-    heroSubtitle: 'Venezia 83 si è conclusa al Lido: Woman Unknown di May el-Toukhy vince il Leone d’Oro. Ecco i premi principali, le Coppe Volpi e gli altri riconoscimenti dell’edizione 2026.',
-    lead: 'La 83ª Mostra Internazionale d’Arte Cinematografica di Venezia si è conclusa il 12 settembre 2026 dopo undici giorni di anteprime, red carpet e cinema internazionale. La Giuria di Venezia 83, presieduta da Maggie Gyllenhaal, ha assegnato il Leone d’Oro per il miglior film a Woman Unknown di May el-Toukhy.',
-    awardsTitle: 'Venezia 83: tutti i vincitori del Concorso',
-    awardsIntro: 'Questi sono gli otto premi ufficiali assegnati dalla Giuria internazionale di Venezia 83.',
-    awards: [
-      ['Leone d’Oro – Miglior film','Woman Unknown','di May el-Toukhy'],
-      ['Leone d’Argento – Gran Premio della Giuria','Possible Love','di Lee Chang-dong'],
-      ['Leone d’Argento – Migliore regia','Ilya Khrzhanovsky','per DAU'],
-      ['Coppa Volpi – Migliore attrice','Mathilde Arcel','per Woman Unknown'],
-      ['Coppa Volpi – Migliore attore','John Malkovich','per Wild Horse Nine'],
-      ['Migliore sceneggiatura','Stéphane Brizé, Coralie Amédéo e Olivier Gorce','per Un bon petit soldat (A Good Little Soldier)'],
-      ['Premio Speciale della Giuria','NAZA','di Yuval Abraham e Rachel Szor'],
-      ['Premio Marcello Mastroianni','Malou Khebizi','per 15/18 (A Place to Heal)']
+export const mostraCinema2026={
+  it:{
+    metaTitle:'Mostra del Cinema Venezia 2027: date, biglietti e guida',
+    metaDescription:'Mostra del Cinema di Venezia 2027: date 1–11 settembre, Venezia 84, Alberto Barbera, Lido, programma, biglietti, red carpet e aggiornamenti.',
+    category:'Arte & Cultura',eventDate:'1–11 SETTEMBRE 2027',imageAlt:'Mostra Internazionale d’Arte Cinematografica di Venezia al Lido',breadcrumb:'Mostra del Cinema 2027',
+    heroTitle:'Mostra del Cinema di Venezia 2027',
+    heroSubtitle:'La 84ª Mostra tornerà al Lido dall’1 all’11 settembre 2027. Le date sono state annunciate alla chiusura dell’edizione 2026; programma, film, ospiti e biglietti saranno aggiunti quando pubblicati ufficialmente.',
+    lead:'La Mostra Internazionale d’Arte Cinematografica di Venezia guarda già al 2027. L’84ª edizione si svolgerà dall’1 all’11 settembre e Alberto Barbera è confermato come Direttore Artistico anche per il 2027 e il 2028. Questa pagina resta volutamente evergreen: conserva ciò che è utile per organizzare il viaggio e distingue con chiarezza le informazioni già annunciate da quelle ancora in attesa del calendario ufficiale completo.',
+    awardsTitle:'Venezia 84: cosa sappiamo già',awardsIntro:'Questi sono i punti già utili per iniziare a programmare il viaggio senza anticipare informazioni non ancora pubblicate.',
+    awards:[
+      ['Date','1–11 settembre 2027','Annunciate dal Presidente della Biennale alla chiusura dell’edizione 2026.'],
+      ['Edizione','84ª Mostra Internazionale d’Arte Cinematografica','La prossima edizione della Mostra al Lido di Venezia.'],
+      ['Direttore artistico','Alberto Barbera','Confermato ufficialmente dalla Biennale anche per 2027 e 2028.'],
+      ['Sede','Lido di Venezia','Il cuore della manifestazione resta l’area del Palazzo del Cinema e del Lido.']
     ],
-    highlightsTitle: 'Orizzonti e gli altri premi da ricordare',
-    highlights: [
-      ['Orizzonti – Miglior film','Un détour par Diane di Ann Sirot e Raphaël Balboni.'],
-      ['Orizzonti – Migliore regia','Jacqueline Lentzou per A Day in the Life of Jo: Chapter Phaedra.'],
-      ['Leone del Futuro – Premio Venezia Opera Prima “Luigi De Laurentiis”','La maison du vent (House of the Wind) di Auguste Bernard Kouemo Yanghu.'],
-      ['Armani beauty Audience Award','I Matter (Eu contez) di Alina Șerban, vincitore della sezione Venice Spotlight.'],
-      ['Leoni d’Oro alla carriera','George Clooney ed Ellen Burstyn. Luca Guadagnino ha inoltre ricevuto il Cartier Glory to the Filmmaker Award 2026.']
+    highlightsTitle:'Cosa non è ancora pubblicato',
+    highlights:[
+      ['Programma 2027','Non ancora pubblicato: calendario delle proiezioni e sezioni saranno aggiunti quando disponibili.'],
+      ['Film e star','Titoli in concorso, ospiti e presenze sul red carpet non sono ancora stati annunciati.'],
+      ['Biglietti','Prezzi, apertura delle vendite e modalità di acquisto 2027 non sono ancora pubblicati.'],
+      ['Accessi e red carpet','Eventuali aree per il pubblico, regole di accesso e dettagli operativi saranno aggiornati con le informazioni ufficiali.']
     ],
-    sections: [
-      ['Il Leone d’Oro 2026 va a Woman Unknown','Il film di May el-Toukhy è il grande vincitore di Venezia 83. Ambientato nella Danimarca del secondo dopoguerra, Woman Unknown racconta una donna il cui passato legato a un soldato tedesco riemerge con conseguenze profonde. Il film ha ottenuto anche la Coppa Volpi per Mathilde Arcel: un doppio riconoscimento che lo colloca al centro del palmarès 2026.'],
-      ['Un palmarès tra grandi autori e cinema politico','Lee Chang-dong ha conquistato il Gran Premio della Giuria con Possible Love, mentre Ilya Khrzhanovsky ha ricevuto il Leone d’Argento per la regia di DAU. Il Premio Speciale della Giuria è andato a NAZA, documentario di Yuval Abraham e Rachel Szor. John Malkovich ha vinto la Coppa Volpi per Wild Horse Nine e Malou Khebizi il Premio Marcello Mastroianni come giovane interprete emergente.'],
-      ['Cosa resta dell’edizione 2026','La Mostra 2026 ha confermato il Lido come uno dei grandi punti d’incontro del cinema mondiale, mescolando autori affermati, nuove voci e opere capaci di affrontare temi politici e sociali contemporanei. L’edizione si era aperta il 2 settembre con Ink di Danny Boyle e si è chiusa il 12 settembre con la cerimonia di premiazione.'],
-      ['E la Mostra del Cinema 2027?','Programma, film in concorso, ospiti e informazioni per il pubblico della prossima edizione vengono comunicati progressivamente dalla Biennale. Per evitare date o dettagli non ancora ufficiali, aggiorneremo questa guida quando saranno pubblicate le informazioni confermate per il 2027.'],
-      ['Il Lido oltre il red carpet','Il Lido di Venezia merita una visita anche fuori dai giorni della Mostra: spiagge, ville, lungomare e un ritmo diverso rispetto al centro storico. Da Marghera Venice Apartments puoi raggiungere Venezia in autobus o treno e poi proseguire in vaporetto verso Lido S.M.E.; nella nostra guida trovi idee e indicazioni per organizzare la giornata.']
+    sections:[
+      ['Date 2027: 1–11 settembre','Le date 1–11 settembre 2027 sono state annunciate dal Presidente della Biennale di Venezia alla chiusura dell’edizione 2026. Aggiorneremo questa guida non appena la Biennale pubblicherà il calendario ufficiale completo della 84ª Mostra.'],
+      ['La 84ª Mostra Internazionale d’Arte Cinematografica','La Mostra di Venezia è il festival cinematografico della Biennale e ogni anno porta al Lido anteprime internazionali, concorsi, sezioni parallele, incontri e red carpet. Per Venezia 84 non trasferiamo automaticamente film, sezioni operative o orari del 2026: saranno inseriti quando confermati.'],
+      ['Alberto Barbera confermato','La Biennale ha confermato Alberto Barbera alla direzione artistica del Settore Cinema anche per il 2027 e il 2028. È quindi uno dei pochi elementi organizzativi della prossima edizione già ufficialmente definito.'],
+      ['Dove si svolge','Il centro della Mostra è il Lido di Venezia, con il Palazzo del Cinema e gli spazi festivalieri dell’area. Quando verrà pubblicata la mappa 2027 aggiorneremo sale, sedi e indicazioni specifiche per il pubblico.'],
+      ['Programma, film e star','NON ANCORA PUBBLICATO: film in concorso, giurie, ospiti, calendario delle proiezioni e presenze sul red carpet verranno comunicati progressivamente. Preferiamo lasciare questa sezione in aggiornamento piuttosto che riempirla con nomi dell’edizione precedente.'],
+      ['Biglietti e red carpet','NON ANCORA PUBBLICATO: prezzi, date di vendita, eventuali pass, modalità di accesso alle proiezioni e aree pubblico del red carpet saranno aggiunti soltanto quando disponibili sui canali della Biennale.'],
+      ['Come raggiungere il Lido','Da Venezia il Lido si raggiunge in vaporetto. Se soggiorni a Marghera, puoi arrivare a Venezia in autobus o treno e proseguire via acqua verso Lido S.M.E. A ridosso della Mostra conviene sempre ricontrollare orari e servizi straordinari.'],
+      ['Dove soggiornare se arrivi in auto','Per chi raggiunge il Veneto in auto, Marghera permette di lasciare il veicolo nel parcheggio privato gratuito dell’appartamento e muoversi verso Venezia con i mezzi pubblici. È una soluzione pratica soprattutto nei giorni in cui il Lido e gli accessi a Venezia sono più affollati.'],
+      ['Aggiornamenti 2027','IN AGGIORNAMENTO: questa guida verrà aggiornata con programma, film, giurie, ospiti, biglietti, proiezioni e informazioni per il pubblico man mano che saranno ufficializzati.']
     ],
-    tipLabel: 'Il consiglio di Marghera Venice Apartments',
-    tip: 'Se vuoi vivere una futura edizione della Mostra, scegli prima le proiezioni davvero importanti per te e lascia spazio anche al Lido. Il Festival è più bello quando non si trasforma in una corsa da una sala all’altra.',
-    officialBoxLabel: 'Fonti e informazioni ufficiali',
-    sourceNote: 'L’edizione 2026 si è conclusa il 12 settembre. Per archivio, programma e future comunicazioni sulla Mostra consulta sempre i canali ufficiali della Biennale di Venezia.',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/it/cinema/2026'],
-      ['83ª Mostra: giurie e premi','https://www.labiennale.org/it/cinema/2026/83-mostra'],
-      ['Orizzonti 2026','https://www.labiennale.org/it/cinema/2026/orizzonti']
-    ],
-    lidoCta: 'Vuoi scoprire il Lido oltre la Mostra? Leggi la nostra guida completa. →',
-    lidoHref: '/guide/lido-di-venezia',
-    moreLabel: 'Potrebbe interessarti anche',
-    backLabel: 'Torna al Journal',
-    related: [
-      ['Homo Faber 2026','/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/journal/venice-glass-week-2026']
-    ]
+    tipLabel:'Il consiglio di Marghera Venice Apartments',tip:'Se vuoi vivere la Mostra 2027, puoi già bloccare le date del viaggio. Per scegliere proiezioni, acquistare biglietti o organizzare il red carpet aspetta invece le comunicazioni ufficiali della Biennale.',
+    officialBoxLabel:'Fonti e informazioni ufficiali',sourceNote:'Le date 1–11 settembre 2027 sono state annunciate dal Presidente della Biennale di Venezia alla chiusura dell’edizione 2026. Aggiorneremo questa guida non appena la Biennale pubblicherà il calendario ufficiale completo della 84ª Mostra.',
+    officialLinks:[['Biennale Cinema – sito ufficiale','https://www.labiennale.org/it/cinema'],['Alberto Barbera confermato per 2027 e 2028','https://www.labiennale.org/it/news/alberto-barbera-direttore-artistico-della-biennale-cinema-il-2027-e-2028']],
+    lidoCta:'Arrivi a Venezia in auto? Scopri come soggiornare con parcheggio privato gratuito. →',lidoHref:'/appartamenti-venezia-parcheggio-gratuito',moreLabel:'Potrebbe interessarti anche',backLabel:'Torna al Journal',
+    related:[['Guida al Lido di Venezia','/guide/lido-di-venezia'],['Biennale Architettura 2027','/journal/biennale-architettura-2027'],['Come raggiungere Venezia','/come-raggiungere-venezia']]
   },
-  en: {
-    metaTitle: 'Venice Film Festival 2026: Winners & Golden Lion',
-    metaDescription: 'Venice Film Festival 2026 winners: Golden Lion for Woman Unknown, Volpi Cups, Silver Lions, Orizzonti and the key awards from Venezia 83.',
-    category: 'Art & Culture',
-    eventDate: '2–12 SEPTEMBER 2026',
-    imageAlt: 'Venice International Film Festival on the Lido',
-    breadcrumb: 'Venice Film Festival 2026',
-    heroTitle: 'Venice Film Festival 2026: all the winners',
-    heroSubtitle: 'Venezia 83 has ended on the Lido, with May el-Toukhy’s Woman Unknown winning the Golden Lion. Here are the main awards, Volpi Cups and other winners from the 2026 edition.',
-    lead: 'The 83rd Venice International Film Festival ended on 12 September 2026 after eleven days of premieres, red carpets and international cinema. The Venezia 83 jury, chaired by Maggie Gyllenhaal, awarded the Golden Lion for Best Film to Woman Unknown by May el-Toukhy.',
-    awardsTitle: 'Venezia 83: all Competition winners',
-    awardsIntro: 'These are the eight official awards presented by the Venezia 83 International Jury.',
-    awards: [
-      ['Golden Lion – Best Film','Woman Unknown','by May el-Toukhy'],
-      ['Silver Lion – Grand Jury Prize','Possible Love','by Lee Chang-dong'],
-      ['Silver Lion – Best Director','Ilya Khrzhanovsky','for DAU'],
-      ['Volpi Cup – Best Actress','Mathilde Arcel','for Woman Unknown'],
-      ['Volpi Cup – Best Actor','John Malkovich','for Wild Horse Nine'],
-      ['Best Screenplay','Stéphane Brizé, Coralie Amédéo and Olivier Gorce','for Un bon petit soldat (A Good Little Soldier)'],
-      ['Special Jury Prize','NAZA','by Yuval Abraham and Rachel Szor'],
-      ['Marcello Mastroianni Award','Malou Khebizi','for 15/18 (A Place to Heal)']
-    ],
-    highlightsTitle: 'Orizzonti and other awards to know',
-    highlights: [
-      ['Orizzonti – Best Film','Un détour par Diane by Ann Sirot and Raphaël Balboni.'],
-      ['Orizzonti – Best Director','Jacqueline Lentzou for A Day in the Life of Jo: Chapter Phaedra.'],
-      ['Lion of the Future – “Luigi De Laurentiis” Venice Award for a Debut Film','La maison du vent (House of the Wind) by Auguste Bernard Kouemo Yanghu.'],
-      ['Armani beauty Audience Award','I Matter (Eu contez) by Alina Șerban, winner of the Venice Spotlight section.'],
-      ['Golden Lions for Lifetime Achievement','George Clooney and Ellen Burstyn. Luca Guadagnino also received the 2026 Cartier Glory to the Filmmaker Award.']
-    ],
-    sections: [
-      ['Woman Unknown wins the 2026 Golden Lion','May el-Toukhy’s film is the headline winner of Venezia 83. Set in post-war Denmark, Woman Unknown follows a woman whose past relationship with a German soldier resurfaces with far-reaching consequences. The film also earned Mathilde Arcel the Volpi Cup for Best Actress, giving it one of the defining double wins of the 2026 festival.'],
-      ['A winners list spanning major auteurs and political cinema','Lee Chang-dong took the Grand Jury Prize for Possible Love, while Ilya Khrzhanovsky won the Silver Lion for directing DAU. The Special Jury Prize went to NAZA, the documentary by Yuval Abraham and Rachel Szor. John Malkovich won the Volpi Cup for Wild Horse Nine, while Malou Khebizi received the Marcello Mastroianni Award for emerging talent.'],
-      ['What the 2026 edition leaves behind','The 2026 festival again placed the Lido at the centre of world cinema, bringing together established filmmakers, new voices and films engaging with contemporary political and social questions. The edition opened on 2 September with Danny Boyle’s Ink and concluded on 12 September with the awards ceremony.'],
-      ['What about the 2027 Venice Film Festival?','The line-up, Competition films, guests and public information for the next edition are announced progressively by La Biennale. Rather than publish unconfirmed dates or details, we will update this guide when official information for 2027 is released.'],
-      ['The Lido beyond the red carpet','The Lido di Venezia is worth visiting outside festival dates too, for its beaches, villas, waterfront and slower pace. From Marghera Venice Apartments, travel to Venice by bus or train and continue by vaporetto to Lido S.M.E.; our complete Lido guide helps you plan the day.']
-    ],
-    tipLabel: 'Marghera Venice Apartments tip',
-    tip: 'For a future festival visit, choose the screenings that matter most to you first and leave time to enjoy the Lido itself. The Venice Film Festival is better when the day does not become a race between cinemas.',
-    officialBoxLabel: 'Official sources and information',
-    sourceNote: 'The 2026 edition ended on 12 September. For the archive, programme and future Festival announcements, always check the official La Biennale di Venezia channels.',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
-      ['83rd Festival: juries and awards','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
-      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
-    ],
-    lidoCta: 'Want to discover the Lido beyond the Festival? Read our complete guide. →',
-    lidoHref: '/en/guide/lido-di-venezia',
-    moreLabel: 'You may also like',
-    backLabel: 'Back to Journal',
-    related: [
-      ['Homo Faber 2026','/en/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/en/journal/venice-glass-week-2026']
-    ]
+  en:{
+    metaTitle:'Venice Film Festival 2027: dates, tickets & guide',metaDescription:'Venice Film Festival 2027: 1–11 September, Venezia 84, Alberto Barbera, Lido, programme, tickets, red carpet and confirmed updates.',category:'Art & Culture',eventDate:'1–11 SEPTEMBER 2027',imageAlt:'Venice International Film Festival on the Lido',breadcrumb:'Venice Film Festival 2027',
+    heroTitle:'Venice Film Festival 2027',heroSubtitle:'The 84th Venice International Film Festival returns to the Lido from 1 to 11 September 2027. The dates have been announced; the full programme, films, guests and tickets will be added as official information is released.',
+    lead:'Venice is already looking ahead to its 84th International Film Festival. The announced dates are 1–11 September 2027, and La Biennale has officially confirmed Alberto Barbera as Artistic Director for 2027 and 2028. This evergreen guide separates what is already known from what is still awaiting the complete official calendar.',
+    awardsTitle:'Venezia 84: what is already known',awardsIntro:'These are the confirmed or announced points that are useful for early travel planning.',
+    awards:[['Dates','1–11 September 2027','Announced at the close of the 2026 edition; the complete official calendar is still to follow.'],['Edition','84th Venice International Film Festival','The next edition of the world-famous festival on the Venice Lido.'],['Artistic Director','Alberto Barbera','Officially confirmed by La Biennale for both 2027 and 2028.'],['Venue','Venice Lido','The Festival remains centred on the Lido and Palazzo del Cinema area.']],
+    highlightsTitle:'What has not been published yet',highlights:[['2027 programme','Screening calendar and sections have not yet been published.'],['Films and stars','Competition films, guests and red-carpet appearances have not yet been announced.'],['Tickets','2027 prices, on-sale dates and booking methods are not yet published.'],['Access and red carpet','Public areas, access rules and operational details will be updated when official.']],
+    sections:[['2027 dates: 1–11 September','The 1–11 September 2027 dates were announced at the close of the 2026 edition. We will update this guide as soon as La Biennale publishes the complete official calendar for the 84th Festival.'],['The 84th Venice International Film Festival','The Festival is La Biennale’s international cinema event, bringing premieres, competitions, parallel sections, meetings and red carpets to the Lido. We will not carry 2026 films or schedules forward as 2027 facts.'],['Alberto Barbera confirmed','La Biennale has officially confirmed Alberto Barbera as Artistic Director of its Cinema Department for 2027 and 2028.'],['Where it takes place','The Festival is centred on the Venice Lido, around Palazzo del Cinema and nearby venues. The 2027 venue map will be added when published.'],['Programme, films and stars','NOT YET PUBLISHED: Competition titles, juries, guests, screening times and red-carpet appearances will be announced progressively.'],['Tickets and red carpet','NOT YET PUBLISHED: ticket prices, sales dates, passes and public access arrangements will be added only from official Festival information.'],['Getting to the Lido','Reach the Lido by vaporetto from Venice. From Marghera, travel into Venice by bus or train and continue by water to Lido S.M.E.; re-check services close to the Festival.'],['Where to stay if you drive','Marghera lets you leave your car at the apartment’s free private parking and use public transport into Venice, avoiding the need to park near the historic centre during a busy Festival period.'],['2027 updates','UPDATING: programme, films, juries, guests, tickets and public information will be added as they become official.']],
+    tipLabel:'Marghera Venice Apartments tip',tip:'You can already save the travel dates. Wait for official La Biennale information before choosing screenings, buying tickets or planning red-carpet access.',officialBoxLabel:'Official sources and information',sourceNote:'The 1–11 September 2027 dates were announced at the close of the 2026 edition. We will update this guide when La Biennale publishes the full official calendar for the 84th Festival.',officialLinks:[['La Biennale Cinema – official website','https://www.labiennale.org/en/cinema'],['Alberto Barbera confirmed for 2027 and 2028','https://www.labiennale.org/en/news/alberto-barbera-artistic-director-biennale-cinema-2027-and-2028']],lidoCta:'Driving to Venice? See how to stay with free private parking. →',lidoHref:'/en/apartments-near-venice-free-parking',moreLabel:'You may also like',backLabel:'Back to Journal',related:[['Venice Lido guide','/en/guide/lido-di-venezia'],['Architecture Biennale 2027','/en/journal/biennale-architettura-2027'],['Getting to Venice','/en/getting-to-venice']]
   },
-  de: {
-    metaTitle: 'Filmfestspiele Venedig 2026: Gewinner & Goldener Löwe',
-    metaDescription: 'Gewinner der Filmfestspiele Venedig 2026: Goldener Löwe für Woman Unknown, Coppa Volpi, Silberne Löwen, Orizzonti und weitere Preise von Venezia 83.',
-    category: 'Kunst & Kultur',
-    eventDate: '2.–12. SEPTEMBER 2026',
-    imageAlt: 'Internationale Filmfestspiele von Venedig am Lido',
-    breadcrumb: 'Filmfestspiele Venedig 2026',
-    heroTitle: 'Filmfestspiele Venedig 2026: alle Gewinner',
-    heroSubtitle: 'Venezia 83 ist am Lido zu Ende gegangen: Woman Unknown von May el-Toukhy gewinnt den Goldenen Löwen. Hier finden Sie die wichtigsten Preise, Coppa-Volpi-Auszeichnungen und weitere Gewinner von 2026.',
-    lead: 'Die 83. Internationalen Filmfestspiele von Venedig endeten am 12. September 2026 nach elf Tagen mit Premieren, roten Teppichen und internationalem Kino. Die von Maggie Gyllenhaal geleitete Jury von Venezia 83 verlieh den Goldenen Löwen für den besten Film an Woman Unknown von May el-Toukhy.',
-    awardsTitle: 'Venezia 83: alle Gewinner des Wettbewerbs',
-    awardsIntro: 'Dies sind die acht offiziellen Auszeichnungen der internationalen Jury von Venezia 83.',
-    awards: [
-      ['Goldener Löwe – Bester Film','Woman Unknown','von May el-Toukhy'],
-      ['Silberner Löwe – Großer Preis der Jury','Possible Love','von Lee Chang-dong'],
-      ['Silberner Löwe – Beste Regie','Ilya Khrzhanovsky','für DAU'],
-      ['Coppa Volpi – Beste Darstellerin','Mathilde Arcel','für Woman Unknown'],
-      ['Coppa Volpi – Bester Darsteller','John Malkovich','für Wild Horse Nine'],
-      ['Bestes Drehbuch','Stéphane Brizé, Coralie Amédéo und Olivier Gorce','für Un bon petit soldat (A Good Little Soldier)'],
-      ['Sonderpreis der Jury','NAZA','von Yuval Abraham und Rachel Szor'],
-      ['Marcello-Mastroianni-Preis','Malou Khebizi','für 15/18 (A Place to Heal)']
-    ],
-    highlightsTitle: 'Orizzonti und weitere wichtige Preise',
-    highlights: [
-      ['Orizzonti – Bester Film','Un détour par Diane von Ann Sirot und Raphaël Balboni.'],
-      ['Orizzonti – Beste Regie','Jacqueline Lentzou für A Day in the Life of Jo: Chapter Phaedra.'],
-      ['Löwe der Zukunft – „Luigi De Laurentiis“-Preis für einen Debütfilm','La maison du vent (House of the Wind) von Auguste Bernard Kouemo Yanghu.'],
-      ['Armani beauty Audience Award','I Matter (Eu contez) von Alina Șerban, Gewinner des Bereichs Venice Spotlight.'],
-      ['Goldene Löwen für das Lebenswerk','George Clooney und Ellen Burstyn. Luca Guadagnino erhielt außerdem den Cartier Glory to the Filmmaker Award 2026.']
-    ],
-    sections: [
-      ['Woman Unknown gewinnt den Goldenen Löwen 2026','May el-Toukhys Film ist der große Gewinner von Venezia 83. Woman Unknown spielt im Dänemark der Nachkriegszeit und erzählt von einer Frau, deren frühere Beziehung zu einem deutschen Soldaten wieder ans Licht kommt. Mathilde Arcel erhielt für denselben Film die Coppa Volpi als beste Darstellerin – ein prägendes Doppel des Festivals 2026.'],
-      ['Ein Palmarès zwischen großen Namen und politischem Kino','Lee Chang-dong gewann mit Possible Love den Großen Preis der Jury, Ilya Khrzhanovsky den Silbernen Löwen für die Regie von DAU. Der Sonderpreis der Jury ging an NAZA von Yuval Abraham und Rachel Szor. John Malkovich erhielt die Coppa Volpi für Wild Horse Nine, Malou Khebizi den Marcello-Mastroianni-Preis als Nachwuchstalent.'],
-      ['Was von der Ausgabe 2026 bleibt','Auch 2026 machte die Mostra den Lido zu einem Zentrum des Weltkinos und verband etablierte Filmschaffende, neue Stimmen sowie Werke zu aktuellen politischen und gesellschaftlichen Themen. Eröffnet wurde die Ausgabe am 2. September mit Danny Boyles Ink; am 12. September endete sie mit der Preisverleihung.'],
-      ['Und die Filmfestspiele Venedig 2027?','Programm, Wettbewerbsfilme, Gäste und Besucherinformationen für die nächste Ausgabe werden von La Biennale schrittweise bekannt gegeben. Wir veröffentlichen keine unbestätigten Daten und aktualisieren diesen Guide, sobald offizielle Informationen für 2027 vorliegen.'],
-      ['Der Lido jenseits des roten Teppichs','Der Lido di Venezia lohnt sich auch außerhalb der Filmfestspiele – mit Stränden, Villen, Promenade und einem ruhigeren Rhythmus. Von Marghera Venice Apartments fahren Sie per Bus oder Zug nach Venedig und weiter mit dem Vaporetto zum Lido S.M.E.; unser Lido-Guide hilft bei der Tagesplanung.']
-    ],
-    tipLabel: 'Tipp von Marghera Venice Apartments',
-    tip: 'Für eine künftige Festivalausgabe wählen Sie zuerst die Vorführungen, die Ihnen wirklich wichtig sind, und lassen Sie Zeit für den Lido selbst. Die Mostra macht mehr Spaß, wenn der Tag nicht zum Rennen zwischen den Kinos wird.',
-    officialBoxLabel: 'Offizielle Quellen und Informationen',
-    sourceNote: 'Die Ausgabe 2026 endete am 12. September. Für Archiv, Programm und künftige Ankündigungen sollten Sie immer die offiziellen Kanäle von La Biennale di Venezia prüfen.',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
-      ['83rd Festival: Jurys und Preise','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
-      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
-    ],
-    lidoCta: 'Mehr vom Lido als den roten Teppich sehen? Lesen Sie unseren vollständigen Guide. →',
-    lidoHref: '/de/guide/lido-di-venezia',
-    moreLabel: 'Das könnte Sie auch interessieren',
-    backLabel: 'Zurück zum Journal',
-    related: [
-      ['Homo Faber 2026','/de/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/de/journal/venice-glass-week-2026']
-    ]
+  de:{
+    metaTitle:'Filmfestspiele Venedig 2027: Termine, Tickets & Guide',metaDescription:'Filmfestspiele Venedig 2027: 1.–11. September, Venezia 84, Alberto Barbera, Lido, Programm, Tickets, Roter Teppich und Updates.',category:'Kunst & Kultur',eventDate:'1.–11. SEPTEMBER 2027',imageAlt:'Internationale Filmfestspiele von Venedig am Lido',breadcrumb:'Filmfestspiele Venedig 2027',heroTitle:'Filmfestspiele Venedig 2027',heroSubtitle:'Die 84. Internationalen Filmfestspiele finden vom 1. bis 11. September 2027 am Lido statt. Die Termine wurden angekündigt; Programm, Filme, Gäste und Tickets folgen mit den offiziellen Veröffentlichungen.',lead:'Venedig blickt bereits auf Venezia 84. Die angekündigten Termine sind 1.–11. September 2027, und Alberto Barbera ist von La Biennale offiziell auch für 2027 und 2028 als künstlerischer Leiter bestätigt. Dieser Guide trennt bereits bekannte Angaben von noch nicht veröffentlichten Details.',awardsTitle:'Venezia 84: Was bereits bekannt ist',awardsIntro:'Diese Punkte sind für die frühe Reiseplanung bereits nützlich.',awards:[['Termine','1.–11. September 2027','Am Ende der Ausgabe 2026 angekündigt; der vollständige offizielle Kalender folgt noch.'],['Ausgabe','84. Internationale Filmfestspiele von Venedig','Die nächste Festival-Ausgabe am Lido.'],['Künstlerische Leitung','Alberto Barbera','Von La Biennale offiziell für 2027 und 2028 bestätigt.'],['Ort','Lido di Venezia','Zentrum bleibt das Umfeld des Palazzo del Cinema.']],highlightsTitle:'Was noch nicht veröffentlicht ist',highlights:[['Programm 2027','Noch nicht veröffentlicht.'],['Filme und Stars','Wettbewerbsfilme, Gäste und Red-Carpet-Auftritte sind noch nicht bekannt.'],['Tickets','Preise, Verkaufsstart und Buchungsmodalitäten 2027 fehlen noch.'],['Zugang und Roter Teppich','Publikumsbereiche und Zugangsregeln werden nach offizieller Bekanntgabe ergänzt.']],sections:[['Termine 2027: 1.–11. September','Die Termine wurden zum Abschluss der Ausgabe 2026 angekündigt. Wir aktualisieren den Guide, sobald La Biennale den vollständigen offiziellen Kalender von Venezia 84 veröffentlicht.'],['Die 84. Internationalen Filmfestspiele','Die Filmfestspiele bringen Premieren, Wettbewerbe, Nebensektionen, Begegnungen und Rote Teppiche an den Lido. Inhalte von 2026 werden nicht automatisch als 2027-Angaben übernommen.'],['Alberto Barbera bestätigt','La Biennale hat Alberto Barbera offiziell auch für 2027 und 2028 als künstlerischen Leiter des Bereichs Cinema bestätigt.'],['Wo findet das Festival statt?','Zentrum ist der Lido di Venezia rund um den Palazzo del Cinema. Die aktuelle Karte der Spielstätten 2027 folgt nach Veröffentlichung.'],['Programm, Filme und Stars','NOCH NICHT VERÖFFENTLICHT: Wettbewerb, Jurys, Gäste und Vorführungszeiten werden schrittweise bekanntgegeben.'],['Tickets und Roter Teppich','NOCH NICHT VERÖFFENTLICHT: Ticketpreise, Verkaufsstart, Pässe und Publikumszugänge werden erst nach offizieller Bekanntgabe ergänzt.'],['Anreise zum Lido','Mit dem Vaporetto von Venedig zum Lido. Von Marghera zuerst mit Bus oder Bahn nach Venedig und dann weiter nach Lido S.M.E.'],['Unterkunft bei Anreise mit dem Auto','In Marghera kann das Auto kostenlos am Apartment bleiben; anschließend geht es mit öffentlichen Verkehrsmitteln nach Venedig.'],['Updates 2027','IN AKTUALISIERUNG: Programm, Filme, Jurys, Gäste, Tickets und Publikumsinformationen werden laufend ergänzt.']],tipLabel:'Tipp von Marghera Venice Apartments',tip:'Die Reisedaten können Sie schon vormerken. Für Vorstellungen, Tickets und Red-Carpet-Zugang warten Sie auf die offiziellen Hinweise.',officialBoxLabel:'Offizielle Quellen und Informationen',sourceNote:'Die Termine 1.–11. September 2027 wurden zum Abschluss der Ausgabe 2026 angekündigt. Wir aktualisieren diesen Guide, sobald La Biennale den vollständigen offiziellen Kalender der 84. Filmfestspiele veröffentlicht.',officialLinks:[['La Biennale Cinema – offizielle Website','https://www.labiennale.org/en/cinema'],['Alberto Barbera für 2027 und 2028 bestätigt','https://www.labiennale.org/en/news/alberto-barbera-artistic-director-biennale-cinema-2027-and-2028']],lidoCta:'Mit dem Auto nach Venedig? Unterkunft mit kostenlosem Privatparkplatz. →',lidoHref:'/de/apartments-near-venice-free-parking',moreLabel:'Das könnte Sie auch interessieren',backLabel:'Zurück zum Journal',related:[['Lido-di-Venezia-Guide','/de/guide/lido-di-venezia'],['Architekturbiennale 2027','/de/journal/biennale-architettura-2027'],['Anreise nach Venedig','/de/getting-to-venice']]
   },
-  fr: {
-    metaTitle: 'Mostra de Venise 2026 : palmarès et Lion d’or',
-    metaDescription: 'Palmarès de la Mostra de Venise 2026 : Lion d’or à Woman Unknown, Coupes Volpi, Lions d’argent, Orizzonti et autres prix de Venezia 83.',
-    category: 'Art & culture',
-    eventDate: '2–12 SEPTEMBRE 2026',
-    imageAlt: 'Mostra internationale d’art cinématographique de Venise au Lido',
-    breadcrumb: 'Mostra de Venise 2026',
-    heroTitle: 'Mostra de Venise 2026 : tous les gagnants',
-    heroSubtitle: 'Venezia 83 s’est achevée au Lido : Woman Unknown de May el-Toukhy remporte le Lion d’or. Voici les principaux prix, les Coupes Volpi et les autres lauréats de l’édition 2026.',
-    lead: 'La 83e Mostra internationale d’art cinématographique de Venise s’est terminée le 12 septembre 2026 après onze jours de premières, tapis rouges et cinéma international. Le jury de Venezia 83, présidé par Maggie Gyllenhaal, a attribué le Lion d’or du meilleur film à Woman Unknown de May el-Toukhy.',
-    awardsTitle: 'Venezia 83 : tous les lauréats de la compétition',
-    awardsIntro: 'Voici les huit prix officiels attribués par le jury international de Venezia 83.',
-    awards: [
-      ['Lion d’or – Meilleur film','Woman Unknown','de May el-Toukhy'],
-      ['Lion d’argent – Grand Prix du Jury','Possible Love','de Lee Chang-dong'],
-      ['Lion d’argent – Meilleure réalisation','Ilya Khrzhanovsky','pour DAU'],
-      ['Coupe Volpi – Meilleure actrice','Mathilde Arcel','pour Woman Unknown'],
-      ['Coupe Volpi – Meilleur acteur','John Malkovich','pour Wild Horse Nine'],
-      ['Meilleur scénario','Stéphane Brizé, Coralie Amédéo et Olivier Gorce','pour Un bon petit soldat (A Good Little Soldier)'],
-      ['Prix spécial du Jury','NAZA','de Yuval Abraham et Rachel Szor'],
-      ['Prix Marcello Mastroianni','Malou Khebizi','pour 15/18 (A Place to Heal)']
-    ],
-    highlightsTitle: 'Orizzonti et les autres prix à retenir',
-    highlights: [
-      ['Orizzonti – Meilleur film','Un détour par Diane d’Ann Sirot et Raphaël Balboni.'],
-      ['Orizzonti – Meilleure réalisation','Jacqueline Lentzou pour A Day in the Life of Jo: Chapter Phaedra.'],
-      ['Lion du Futur – Prix « Luigi De Laurentiis » du premier film','La maison du vent (House of the Wind) d’Auguste Bernard Kouemo Yanghu.'],
-      ['Armani beauty Audience Award','I Matter (Eu contez) d’Alina Șerban, lauréat de la section Venice Spotlight.'],
-      ['Lions d’or pour l’ensemble de la carrière','George Clooney et Ellen Burstyn. Luca Guadagnino a également reçu le Cartier Glory to the Filmmaker Award 2026.']
-    ],
-    sections: [
-      ['Woman Unknown remporte le Lion d’or 2026','Le film de May el-Toukhy est le grand gagnant de Venezia 83. Situé dans le Danemark de l’après-guerre, Woman Unknown suit une femme dont le passé lié à un soldat allemand ressurgit avec de lourdes conséquences. Mathilde Arcel a également reçu la Coupe Volpi de la meilleure actrice pour le film, signant l’un des doublés marquants de l’édition 2026.'],
-      ['Un palmarès entre grands auteurs et cinéma politique','Lee Chang-dong a reçu le Grand Prix du Jury pour Possible Love, tandis qu’Ilya Khrzhanovsky a remporté le Lion d’argent de la mise en scène pour DAU. Le Prix spécial du Jury est allé à NAZA de Yuval Abraham et Rachel Szor. John Malkovich a remporté la Coupe Volpi pour Wild Horse Nine et Malou Khebizi le Prix Marcello Mastroianni du jeune talent.'],
-      ['Ce que laisse l’édition 2026','La Mostra 2026 a une nouvelle fois placé le Lido au cœur du cinéma mondial, réunissant auteurs confirmés, nouvelles voix et œuvres traitant de questions politiques et sociales contemporaines. L’édition s’est ouverte le 2 septembre avec Ink de Danny Boyle et s’est achevée le 12 septembre avec la cérémonie de remise des prix.'],
-      ['Et la Mostra de Venise 2027 ?','La sélection, les films en compétition, les invités et les informations destinées au public de la prochaine édition sont annoncés progressivement par La Biennale. Nous préférons ne pas publier de dates non confirmées et mettrons ce guide à jour dès que les informations officielles pour 2027 seront disponibles.'],
-      ['Le Lido au-delà du tapis rouge','Le Lido di Venezia mérite aussi une visite hors des dates du festival, pour ses plages, ses villas, son front de mer et son rythme plus calme. Depuis Marghera Venice Apartments, rejoignez Venise en bus ou en train puis continuez en vaporetto jusqu’à Lido S.M.E. ; notre guide complet vous aide à organiser la journée.']
-    ],
-    tipLabel: 'Le conseil de Marghera Venice Apartments',
-    tip: 'Pour une prochaine édition, choisissez d’abord les séances qui comptent vraiment pour vous et gardez du temps pour profiter du Lido. La Mostra est plus agréable quand la journée ne devient pas une course entre les salles.',
-    officialBoxLabel: 'Sources et informations officielles',
-    sourceNote: 'L’édition 2026 s’est achevée le 12 septembre. Pour les archives, le programme et les futures annonces, consultez toujours les canaux officiels de La Biennale di Venezia.',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
-      ['83rd Festival : jurys et prix','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
-      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
-    ],
-    lidoCta: 'Envie de découvrir le Lido au-delà de la Mostra ? Lisez notre guide complet. →',
-    lidoHref: '/fr/guide/lido-di-venezia',
-    moreLabel: 'À découvrir aussi',
-    backLabel: 'Retour au Journal',
-    related: [
-      ['Homo Faber 2026','/fr/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/fr/journal/venice-glass-week-2026']
-    ]
+  fr:{
+    metaTitle:'Mostra de Venise 2027 : dates, billets et guide',metaDescription:'Mostra de Venise 2027 : 1–11 septembre, Venezia 84, Alberto Barbera, Lido, programme, billets, tapis rouge et mises à jour.',category:'Art & Culture',eventDate:'1–11 SEPTEMBRE 2027',imageAlt:'Mostra Internationale d’Art Cinématographique de Venise au Lido',breadcrumb:'Mostra de Venise 2027',heroTitle:'Mostra de Venise 2027',heroSubtitle:'La 84e Mostra se tiendra au Lido du 1er au 11 septembre 2027. Les dates ont été annoncées ; programme, films, invités et billets seront ajoutés avec les publications officielles.',lead:'Venise prépare déjà Venezia 84. Les dates annoncées sont du 1er au 11 septembre 2027 et Alberto Barbera est officiellement confirmé par La Biennale comme directeur artistique pour 2027 et 2028. Ce guide distingue les informations déjà connues de celles qui restent à publier.',awardsTitle:'Venezia 84 : ce que nous savons déjà',awardsIntro:'Les éléments déjà utiles pour commencer à planifier le séjour.',awards:[['Dates','1–11 septembre 2027','Annoncées à la clôture de l’édition 2026 ; le calendrier officiel complet reste à venir.'],['Édition','84e Mostra Internationale d’Art Cinématographique','La prochaine édition du festival au Lido.'],['Direction artistique','Alberto Barbera','Officiellement confirmé pour 2027 et 2028.'],['Lieu','Lido di Venezia','Le festival reste centré autour du Palazzo del Cinema et du Lido.']],highlightsTitle:'Ce qui n’est pas encore publié',highlights:[['Programme 2027','Pas encore publié.'],['Films et stars','Films en compétition, invités et présences au tapis rouge ne sont pas encore annoncés.'],['Billets','Tarifs, ouverture des ventes et modalités 2027 ne sont pas encore publiés.'],['Accès et tapis rouge','Les règles d’accès du public seront mises à jour avec les informations officielles.']],sections:[['Dates 2027 : 1–11 septembre','Les dates ont été annoncées à la clôture de l’édition 2026. Nous mettrons ce guide à jour dès que La Biennale publiera le calendrier officiel complet de Venezia 84.'],['La 84e Mostra Internationale d’Art Cinématographique','Le festival de La Biennale rassemble avant-premières, compétitions, sections parallèles, rencontres et tapis rouges au Lido. Nous ne réutilisons pas les films ou horaires de 2026 comme informations 2027.'],['Alberto Barbera confirmé','La Biennale a officiellement confirmé Alberto Barbera à la direction artistique du secteur Cinéma pour 2027 et 2028.'],['Où se déroule la Mostra','Le cœur du festival est le Lido di Venezia autour du Palazzo del Cinema. Les salles et sites 2027 seront ajoutés après publication.'],['Programme, films et stars','PAS ENCORE PUBLIÉ : compétition, jurys, invités, séances et tapis rouge seront annoncés progressivement.'],['Billets et tapis rouge','PAS ENCORE PUBLIÉ : tarifs, ventes, pass et accès du public seront ajoutés uniquement à partir des informations officielles.'],['Rejoindre le Lido','Depuis Venise, prenez le vaporetto. Depuis Marghera, rejoignez d’abord Venise en bus ou train puis continuez vers Lido S.M.E.'],['Où séjourner en arrivant en voiture','À Marghera, laissez la voiture au parking privé gratuit de l’appartement puis rejoignez Venise en transports publics.'],['Mises à jour 2027','EN MISE À JOUR : programme, films, jurys, invités, billets et informations pratiques seront ajoutés au fil des annonces officielles.']],tipLabel:'Le conseil de Marghera Venice Apartments',tip:'Vous pouvez déjà réserver les dates dans votre agenda. Pour les séances, billets et accès au tapis rouge, attendez les informations officielles.',officialBoxLabel:'Sources et informations officielles',sourceNote:'Les dates du 1er au 11 septembre 2027 ont été annoncées à la clôture de l’édition 2026. Nous mettrons ce guide à jour dès que La Biennale publiera le calendrier officiel complet de la 84e Mostra.',officialLinks:[['La Biennale Cinema – site officiel','https://www.labiennale.org/en/cinema'],['Alberto Barbera confirmé pour 2027 et 2028','https://www.labiennale.org/en/news/alberto-barbera-artistic-director-biennale-cinema-2027-and-2028']],lidoCta:'Vous arrivez en voiture ? Découvrez le séjour avec parking privé gratuit. →',lidoHref:'/fr/apartments-near-venice-free-parking',moreLabel:'À découvrir aussi',backLabel:'Retour au Journal',related:[['Guide du Lido de Venise','/fr/guide/lido-di-venezia'],['Biennale d’Architecture 2027','/fr/journal/biennale-architettura-2027'],['Comment rejoindre Venise','/fr/getting-to-venice']]
   },
-  es: {
-    metaTitle: 'Festival de Cine de Venecia 2026: ganadores y León de Oro',
-    metaDescription: 'Ganadores del Festival de Cine de Venecia 2026: León de Oro para Woman Unknown, Copas Volpi, Leones de Plata, Orizzonti y otros premios de Venezia 83.',
-    category: 'Arte y cultura',
-    eventDate: '2–12 DE SEPTIEMBRE DE 2026',
-    imageAlt: 'Festival Internacional de Cine de Venecia en el Lido',
-    breadcrumb: 'Festival de Cine de Venecia 2026',
-    heroTitle: 'Festival de Cine de Venecia 2026: todos los ganadores',
-    heroSubtitle: 'Venezia 83 ha terminado en el Lido: Woman Unknown, de May el-Toukhy, gana el León de Oro. Estos son los premios principales, las Copas Volpi y los demás galardonados de 2026.',
-    lead: 'La 83.ª Mostra Internazionale d’Arte Cinematografica de Venecia terminó el 12 de septiembre de 2026 tras once días de estrenos, alfombras rojas y cine internacional. El jurado de Venezia 83, presidido por Maggie Gyllenhaal, concedió el León de Oro a la mejor película a Woman Unknown, de May el-Toukhy.',
-    awardsTitle: 'Venezia 83: todos los ganadores de la competición',
-    awardsIntro: 'Estos son los ocho premios oficiales concedidos por el jurado internacional de Venezia 83.',
-    awards: [
-      ['León de Oro – Mejor película','Woman Unknown','de May el-Toukhy'],
-      ['León de Plata – Gran Premio del Jurado','Possible Love','de Lee Chang-dong'],
-      ['León de Plata – Mejor dirección','Ilya Khrzhanovsky','por DAU'],
-      ['Copa Volpi – Mejor actriz','Mathilde Arcel','por Woman Unknown'],
-      ['Copa Volpi – Mejor actor','John Malkovich','por Wild Horse Nine'],
-      ['Mejor guion','Stéphane Brizé, Coralie Amédéo y Olivier Gorce','por Un bon petit soldat (A Good Little Soldier)'],
-      ['Premio Especial del Jurado','NAZA','de Yuval Abraham y Rachel Szor'],
-      ['Premio Marcello Mastroianni','Malou Khebizi','por 15/18 (A Place to Heal)']
-    ],
-    highlightsTitle: 'Orizzonti y otros premios destacados',
-    highlights: [
-      ['Orizzonti – Mejor película','Un détour par Diane, de Ann Sirot y Raphaël Balboni.'],
-      ['Orizzonti – Mejor dirección','Jacqueline Lentzou por A Day in the Life of Jo: Chapter Phaedra.'],
-      ['León del Futuro – Premio “Luigi De Laurentiis” a una ópera prima','La maison du vent (House of the Wind), de Auguste Bernard Kouemo Yanghu.'],
-      ['Armani beauty Audience Award','I Matter (Eu contez), de Alina Șerban, ganadora de la sección Venice Spotlight.'],
-      ['Leones de Oro a toda una carrera','George Clooney y Ellen Burstyn. Luca Guadagnino recibió además el Cartier Glory to the Filmmaker Award 2026.']
-    ],
-    sections: [
-      ['Woman Unknown gana el León de Oro 2026','La película de May el-Toukhy es la gran vencedora de Venezia 83. Ambientada en la Dinamarca de la posguerra, Woman Unknown sigue a una mujer cuyo pasado ligado a un soldado alemán vuelve a salir a la luz. Mathilde Arcel también obtuvo la Copa Volpi a la mejor actriz por la misma película, uno de los dobles reconocimientos más importantes de la edición 2026.'],
-      ['Un palmarés entre grandes autores y cine político','Lee Chang-dong ganó el Gran Premio del Jurado con Possible Love, mientras Ilya Khrzhanovsky recibió el León de Plata a la dirección por DAU. El Premio Especial del Jurado fue para NAZA, de Yuval Abraham y Rachel Szor. John Malkovich ganó la Copa Volpi por Wild Horse Nine y Malou Khebizi el Premio Marcello Mastroianni como joven intérprete emergente.'],
-      ['Lo que deja la edición 2026','La Mostra 2026 volvió a situar al Lido en el centro del cine mundial, reuniendo autores consolidados, nuevas voces y películas que afrontan cuestiones políticas y sociales contemporáneas. La edición se inauguró el 2 de septiembre con Ink, de Danny Boyle, y terminó el 12 de septiembre con la ceremonia de premios.'],
-      ['¿Y el Festival de Cine de Venecia 2027?','La selección, las películas a concurso, los invitados y la información para el público de la próxima edición son anunciados progresivamente por La Biennale. Para evitar fechas o detalles no confirmados, actualizaremos esta guía cuando se publiquen los datos oficiales de 2027.'],
-      ['El Lido más allá de la alfombra roja','El Lido di Venezia merece una visita también fuera de las fechas del festival: playas, villas, paseo marítimo y un ritmo más tranquilo. Desde Marghera Venice Apartments puedes llegar a Venecia en autobús o tren y seguir en vaporetto hasta Lido S.M.E.; nuestra guía completa te ayuda a organizar el día.']
-    ],
-    tipLabel: 'Consejo de Marghera Venice Apartments',
-    tip: 'Para una futura edición de la Mostra, elige primero las proyecciones que de verdad te interesan y deja tiempo para disfrutar del Lido. El festival se vive mejor cuando el día no se convierte en una carrera entre salas.',
-    officialBoxLabel: 'Fuentes e información oficial',
-    sourceNote: 'La edición 2026 terminó el 12 de septiembre. Para consultar el archivo, el programa y futuros anuncios, revisa siempre los canales oficiales de La Biennale di Venezia.',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
-      ['83rd Festival: jurados y premios','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
-      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
-    ],
-    lidoCta: '¿Quieres descubrir el Lido más allá del Festival? Lee nuestra guía completa. →',
-    lidoHref: '/es/guide/lido-di-venezia',
-    moreLabel: 'También puede interesarte',
-    backLabel: 'Volver al Journal',
-    related: [
-      ['Homo Faber 2026','/es/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/es/journal/venice-glass-week-2026']
-    ]
+  es:{
+    metaTitle:'Festival de Cine Venecia 2027: fechas, entradas y guía',metaDescription:'Festival de Cine de Venecia 2027: 1–11 septiembre, Venezia 84, Alberto Barbera, Lido, programa, entradas, alfombra roja y novedades.',category:'Arte y Cultura',eventDate:'1–11 SEPTIEMBRE 2027',imageAlt:'Festival Internacional de Cine de Venecia en el Lido',breadcrumb:'Festival de Cine de Venecia 2027',heroTitle:'Festival de Cine de Venecia 2027',heroSubtitle:'La 84.ª Mostra volverá al Lido del 1 al 11 de septiembre de 2027. Las fechas ya fueron anunciadas; programa, películas, invitados y entradas se añadirán cuando sean oficiales.',lead:'Venecia ya mira hacia Venezia 84. Las fechas anunciadas son del 1 al 11 de septiembre de 2027 y La Biennale ha confirmado oficialmente a Alberto Barbera como director artístico también para 2027 y 2028. Esta guía separa lo ya conocido de lo que todavía no se ha publicado.',awardsTitle:'Venezia 84: lo que ya sabemos',awardsIntro:'Los datos que ya permiten empezar a organizar el viaje.',awards:[['Fechas','1–11 septiembre 2027','Anunciadas al cierre de la edición 2026; el calendario oficial completo aún está por publicarse.'],['Edición','84.ª Mostra Internacional de Arte Cinematográfico','La próxima edición del festival en el Lido.'],['Director artístico','Alberto Barbera','Confirmado oficialmente para 2027 y 2028.'],['Lugar','Lido di Venezia','El festival sigue centrado en el área del Palazzo del Cinema y el Lido.']],highlightsTitle:'Lo que todavía no se ha publicado',highlights:[['Programa 2027','Todavía no publicado.'],['Películas y estrellas','Competición, invitados y presencias en la alfombra roja aún no han sido anunciados.'],['Entradas','Precios, venta y modalidades 2027 aún no están publicados.'],['Accesos y alfombra roja','Las áreas para público y normas de acceso se actualizarán con información oficial.']],sections:[['Fechas 2027: 1–11 septiembre','Las fechas fueron anunciadas al cierre de la edición 2026. Actualizaremos esta guía cuando La Biennale publique el calendario oficial completo de Venezia 84.'],['La 84.ª Mostra Internacional de Arte Cinematográfico','El festival de La Biennale lleva al Lido estrenos, competiciones, secciones paralelas, encuentros y alfombras rojas. No trasladamos películas u horarios de 2026 como si fueran datos de 2027.'],['Alberto Barbera confirmado','La Biennale ha confirmado oficialmente a Alberto Barbera como director artístico del sector Cine para 2027 y 2028.'],['Dónde se celebra','El corazón del festival está en el Lido di Venezia, alrededor del Palazzo del Cinema. Las sedes 2027 se añadirán cuando se publiquen.'],['Programa, películas y estrellas','TODAVÍA NO PUBLICADO: competición, jurados, invitados, horarios y alfombra roja se comunicarán progresivamente.'],['Entradas y alfombra roja','TODAVÍA NO PUBLICADO: precios, ventas, pases y accesos del público se añadirán solo cuando sean oficiales.'],['Cómo llegar al Lido','Desde Venecia se llega en vaporetto. Desde Marghera, primero autobús o tren a Venecia y después vaporetto hacia Lido S.M.E.'],['Dónde alojarse si llegas en coche','En Marghera puedes dejar el coche en el aparcamiento privado gratuito del apartamento y continuar a Venecia en transporte público.'],['Actualizaciones 2027','EN ACTUALIZACIÓN: programa, películas, jurados, invitados, entradas e información práctica se añadirán con los anuncios oficiales.']],tipLabel:'Consejo de Marghera Venice Apartments',tip:'Ya puedes reservar las fechas en tu calendario. Para proyecciones, entradas y alfombra roja espera la información oficial.',officialBoxLabel:'Fuentes e información oficial',sourceNote:'Las fechas del 1 al 11 de septiembre de 2027 fueron anunciadas al cierre de la edición 2026. Actualizaremos esta guía cuando La Biennale publique el calendario oficial completo de la 84.ª Mostra.',officialLinks:[['La Biennale Cinema – web oficial','https://www.labiennale.org/en/cinema'],['Alberto Barbera confirmado para 2027 y 2028','https://www.labiennale.org/en/news/alberto-barbera-artistic-director-biennale-cinema-2027-and-2028']],lidoCta:'¿Llegas en coche? Descubre cómo alojarte con aparcamiento privado gratuito. →',lidoHref:'/es/apartments-near-venice-free-parking',moreLabel:'También puede interesarte',backLabel:'Volver al Journal',related:[['Guía del Lido de Venecia','/es/guide/lido-di-venezia'],['Bienal de Arquitectura 2027','/es/journal/biennale-architettura-2027'],['Cómo llegar a Venecia','/es/getting-to-venice']]
   },
-  zh: {
-    metaTitle: '2026威尼斯电影节获奖名单｜金狮奖与主要奖项',
-    metaDescription: '2026威尼斯电影节获奖名单：Woman Unknown 获金狮奖，并汇总沃尔皮杯、银狮奖、地平线单元及 Venezia 83 其他重要奖项。',
-    category: '艺术与文化',
-    eventDate: '2026年9月2日–12日',
-    imageAlt: '威尼斯丽都岛上的威尼斯国际电影节',
-    breadcrumb: '2026威尼斯电影节',
-    heroTitle: '2026威尼斯电影节：完整主要获奖名单',
-    heroSubtitle: '第83届威尼斯国际电影节已在丽都岛落幕：May el-Toukhy 的 Woman Unknown 获得金狮奖。这里汇总主竞赛、沃尔皮杯及其他重要奖项。',
-    lead: '第83届威尼斯国际电影节于2026年9月12日闭幕，十一天的首映、红毯与国际电影活动告一段落。由 Maggie Gyllenhaal 担任主席的 Venezia 83 国际评审团，将最佳影片金狮奖授予 May el-Toukhy 执导的 Woman Unknown。',
-    awardsTitle: 'Venezia 83：主竞赛全部获奖者',
-    awardsIntro: '以下为 Venezia 83 国际评审团颁发的八项官方主竞赛奖项。',
-    awards: [
-      ['金狮奖 – 最佳影片','Woman Unknown','导演 May el-Toukhy'],
-      ['银狮奖 – 评审团大奖','Possible Love','导演 Lee Chang-dong'],
-      ['银狮奖 – 最佳导演','Ilya Khrzhanovsky','凭 DAU 获奖'],
-      ['沃尔皮杯 – 最佳女演员','Mathilde Arcel','凭 Woman Unknown 获奖'],
-      ['沃尔皮杯 – 最佳男演员','John Malkovich','凭 Wild Horse Nine 获奖'],
-      ['最佳剧本','Stéphane Brizé、Coralie Amédéo、Olivier Gorce','作品 Un bon petit soldat (A Good Little Soldier)'],
-      ['评审团特别奖','NAZA','导演 Yuval Abraham、Rachel Szor'],
-      ['Marcello Mastroianni 新人奖','Malou Khebizi','凭 15/18 (A Place to Heal) 获奖']
-    ],
-    highlightsTitle: '地平线单元与其他重要奖项',
-    highlights: [
-      ['Orizzonti 地平线 – 最佳影片','Un détour par Diane，导演 Ann Sirot、Raphaël Balboni。'],
-      ['Orizzonti 地平线 – 最佳导演','Jacqueline Lentzou，作品 A Day in the Life of Jo: Chapter Phaedra。'],
-      ['未来之狮 – “Luigi De Laurentiis” 最佳处女作奖','La maison du vent (House of the Wind)，导演 Auguste Bernard Kouemo Yanghu。'],
-      ['Armani beauty 观众选择奖','I Matter (Eu contez)，导演 Alina Șerban，获 Venice Spotlight 单元观众奖。'],
-      ['终身成就金狮奖','George Clooney 与 Ellen Burstyn。Luca Guadagnino 另获 2026 Cartier Glory to the Filmmaker Award。']
-    ],
-    sections: [
-      ['Woman Unknown 获2026金狮奖','May el-Toukhy 的 Woman Unknown 成为 Venezia 83 最受瞩目的获奖影片。故事设定在二战后的丹麦，一名女性与德国士兵有关的往事重新浮现，并带来深远后果。Mathilde Arcel 同时凭本片获得最佳女演员沃尔皮杯，使影片成为2026年最具代表性的“双奖”作品之一。'],
-      ['名导、新声音与政治议题并存的获奖名单','Lee Chang-dong 凭 Possible Love 获评审团大奖，Ilya Khrzhanovsky 凭 DAU 获最佳导演银狮奖。Yuval Abraham 与 Rachel Szor 的纪录片 NAZA 获评审团特别奖。John Malkovich 凭 Wild Horse Nine 获最佳男演员沃尔皮杯，Malou Khebizi 则获得 Marcello Mastroianni 新人奖。'],
-      ['2026届留下了什么','2026年的电影节再次让丽都岛成为世界电影的重要交汇点，既有成熟作者，也有新导演和直面当代政治、社会议题的作品。本届于9月2日以 Danny Boyle 的 Ink 开幕，并于9月12日以颁奖典礼结束。'],
-      ['2027威尼斯电影节呢？','下一届的片单、主竞赛影片、嘉宾和公众信息会由 La Biennale 分阶段公布。为避免传播尚未确认的日期或细节，我们将在2027年官方信息发布后继续更新这篇指南。'],
-      ['红毯之外的丽都岛','即使不在电影节期间，丽都岛也值得一游：海滩、别墅、海滨步道，以及比威尼斯历史中心更舒缓的节奏。从 Marghera Venice Apartments 可先乘公交或火车到威尼斯，再换乘 vaporetto 前往 Lido S.M.E.；我们的完整丽都指南可帮助你规划行程。']
-    ],
-    tipLabel: 'Marghera Venice Apartments 建议',
-    tip: '如果未来专程来看电影节，先选出你真正想看的场次，再给丽都岛本身留一些时间。比起不停赶场，这样更容易感受到威尼斯电影节的氛围。',
-    officialBoxLabel: '官方来源与信息',
-    sourceNote: '2026届已于9月12日闭幕。查阅历史资料、节目与下一届官方消息时，请始终以 La Biennale di Venezia 官方渠道为准。',
-    officialLinks: [
-      ['Biennale Cinema 2026','https://www.labiennale.org/en/cinema/2026'],
-      ['第83届：评审团与奖项','https://www.labiennale.org/en/cinema/2026/83rd-festival'],
-      ['Orizzonti 2026','https://www.labiennale.org/en/cinema/2026/orizzonti']
-    ],
-    lidoCta: '想看看红毯之外的丽都岛？阅读我们的完整指南。→',
-    lidoHref: '/zh/guide/lido-di-venezia',
-    moreLabel: '你可能也感兴趣',
-    backLabel: '返回旅行日志',
-    related: [
-      ['Homo Faber 2026','/zh/journal/homo-faber-2026'],
-      ['The Venice Glass Week 2026','/zh/journal/venice-glass-week-2026']
-    ]
+  zh:{
+    metaTitle:'2027威尼斯电影节：日期、门票与参观指南',metaDescription:'2027威尼斯电影节：9月1日至11日，第84届、Alberto Barbera、丽都岛、节目、门票、红毯与最新确认信息。',category:'艺术与文化',eventDate:'2027年9月1–11日',imageAlt:'威尼斯丽都岛上的威尼斯国际电影节',breadcrumb:'2027威尼斯电影节',heroTitle:'2027威尼斯电影节',heroSubtitle:'第84届威尼斯国际电影节将于2027年9月1日至11日在丽都岛举行。日期已经公布，完整节目、影片、嘉宾和门票信息会在官方发布后加入。',lead:'威尼斯已经开始准备 Venezia 84。现已公布的日期为2027年9月1日至11日，La Biennale 也已正式确认 Alberto Barbera 将继续担任2027和2028年的电影部门艺术总监。本指南会明确区分已公布信息与尚未发布内容。',awardsTitle:'Venezia 84：目前已经知道什么',awardsIntro:'以下信息已经足以开始初步规划行程。',awards:[['日期','2027年9月1–11日','在2026届闭幕时公布；完整官方日程仍待发布。'],['届次','第84届威尼斯国际电影节','下一届丽都岛电影节。'],['艺术总监','Alberto Barbera','La Biennale 已正式确认其任期包括2027和2028年。'],['地点','威尼斯丽都岛','核心区域仍是 Palazzo del Cinema 及丽都岛电影节场地。']],highlightsTitle:'尚未发布的信息',highlights:[['2027节目','尚未发布。'],['影片与明星','主竞赛影片、嘉宾和红毯阵容尚未公布。'],['门票','2027票价、开售日期和购买方式尚未发布。'],['红毯与公众进入','公众区域和进入规则将在官方公布后更新。']],sections:[['2027日期：9月1–11日','日期在2026届闭幕时公布。La Biennale 发布第84届完整官方日程后，本指南会立即更新。'],['第84届威尼斯国际电影节','电影节每年在丽都岛带来国际首映、竞赛单元、平行单元、交流活动和红毯。我们不会把2026影片或时间表直接当成2027信息。'],['Alberto Barbera 确认继续担任艺术总监','La Biennale 已正式确认 Alberto Barbera 将在2027和2028年继续担任电影部门艺术总监。'],['在哪里举行','电影节核心在威尼斯丽都岛 Palazzo del Cinema 一带。2027完整场地和影厅信息将在官方发布后加入。'],['节目、影片与明星','尚未公布：主竞赛、评审团、嘉宾、放映时间和红毯阵容会陆续公布。'],['门票与红毯','尚未公布：票价、开售、通票和公众进入方式只会依据官方信息更新。'],['如何前往丽都岛','从威尼斯乘水上巴士前往丽都岛。从马尔盖拉先乘公交或火车到威尼斯，再换乘水上巴士前往 Lido S.M.E.。'],['自驾游客住在哪里','住在马尔盖拉可把车停在公寓免费私人停车位，再乘公共交通进入威尼斯。'],['2027持续更新','持续更新中：节目、影片、评审团、嘉宾、门票和公众实用信息都会随官方公告加入。']],tipLabel:'Marghera Venice Apartments 建议',tip:'旅行日期现在就可以记下；具体场次、门票和红毯安排请等待官方信息。',officialBoxLabel:'官方来源与信息',sourceNote:'2027年9月1日至11日的日期在2026届闭幕时公布。La Biennale 发布第84届完整官方日程后，我们会更新本指南。',officialLinks:[['La Biennale Cinema 官方网站','https://www.labiennale.org/en/cinema'],['Alberto Barbera 确认担任2027和2028艺术总监','https://www.labiennale.org/en/news/alberto-barbera-artistic-director-biennale-cinema-2027-and-2028']],lidoCta:'自驾来威尼斯？查看带免费私人停车的住宿方式。→',lidoHref:'/zh/apartments-near-venice-free-parking',moreLabel:'你可能也感兴趣',backLabel:'返回旅行日志',related:[['威尼斯丽都岛指南','/zh/guide/lido-di-venezia'],['2027威尼斯建筑双年展','/zh/journal/biennale-architettura-2027'],['如何前往威尼斯','/zh/getting-to-venice']]
   }
-} as const;
+};
 
-export type MostraCinema2026Data = (typeof mostraCinema2026)[MostraCinema2026Lang];
+export type MostraCinema2026Data=(typeof mostraCinema2026)[MostraCinema2026Lang];
