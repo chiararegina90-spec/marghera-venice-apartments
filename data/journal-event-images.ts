@@ -10,6 +10,8 @@ export const journalEventImages:Record<string,JournalEventImagePair>={
   'salone-alto-artigianato-italiano-2026':{card:'/images/journal-events/salone-alto-artigianato-italiano-2026-card.webp',cover:'/images/journal-events/salone-alto-artigianato-italiano-2026-cover.webp'},
   'venice-noir-2026':{card:'/images/journal-events/venice-noir-2026-card.webp',cover:'/images/journal-events/venice-noir-2026-cover.webp'},
   'festa-madonna-salute-venezia':{card:'/images/journal-events/festa-madonna-salute-venezia-card.avif',cover:'/images/journal-events/festa-madonna-salute-venezia-cover.avif'},
+  'san-martino-venezia':{card:'/images/journal-events/san-martino-venezia-card.webp',cover:'/images/journal-events/san-martino-venezia-cover.webp'},
+  'venezia-a-novembre':{card:'/images/journal-events/venezia-a-novembre-card.webp',cover:'/images/journal-events/venezia-a-novembre-cover.webp'},
   'cimitero-san-michele-venezia':{card:'/images/journal-events/cimitero-san-michele-venezia-card.webp',cover:'/images/journal-events/cimitero-san-michele-venezia-cover.webp'},
 };
 export function journalEventImagePair(slug:string){return journalEventImages[slug];}
