@@ -9,7 +9,11 @@ const copy:Record<SiteLang,{eyebrow:string;journalTitle:string;guideTitle:string
  es:{eyebrow:'Una base práctica para visitar Venecia',journalTitle:'¿Vienes a Venecia por este evento?',guideTitle:'¿Estás organizando tu viaje a Venecia?',text:'Alójate en Marghera con aparcamiento privado y conexiones con Venecia de día y de noche.'},
  zh:{eyebrow:'轻松游览威尼斯的住宿基地',journalTitle:'为这场活动来威尼斯？',guideTitle:'正在规划威尼斯行程？',text:'住在马尔盖拉，享受免费私人停车，并可日夜便捷往返威尼斯。'}
 };
-export default function EditorialStayCta({lang,context='journal'}:{lang:SiteLang;context?:'journal'|'guide'}){
+type CopyOverride={eyebrow?:string;title:string;text:string};
+export default function EditorialStayCta({lang,context='journal',copyOverride}:{lang:SiteLang;context?:'journal'|'guide';copyOverride?:CopyOverride}){
  const t=copy[lang];
- return <section className="py-12 sm:py-14"><div className="mx-auto max-w-5xl px-5 lg:px-8"><div className="rounded-[2rem] border border-slate-200 bg-cream p-7 text-center sm:p-9"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.eyebrow}</p><h2 className="mt-3 font-serif text-3xl text-navy sm:text-4xl">{context==='journal'?t.journalTitle:t.guideTitle}</h2><p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">{t.text}</p><div className="mt-6 flex flex-wrap justify-center gap-3"><Link href={localePath('/case/rossi-apartment',lang)} className="rounded-full bg-gold px-6 py-3 font-bold text-navy">Rossi Apartment</Link><Link href={localePath('/case/dimora-castelli',lang)} className="rounded-full border border-navy px-6 py-3 font-bold text-navy">Dimora Castelli</Link></div></div></div></section>;
+ const eyebrow=copyOverride?.eyebrow||t.eyebrow;
+ const title=copyOverride?.title||(context==='journal'?t.journalTitle:t.guideTitle);
+ const text=copyOverride?.text||t.text;
+ return <section className="py-12 sm:py-14"><div className="mx-auto max-w-5xl px-5 lg:px-8"><div className="rounded-[2rem] border border-slate-200 bg-cream p-7 text-center sm:p-9"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{eyebrow}</p><h2 className="mt-3 font-serif text-3xl text-navy sm:text-4xl">{title}</h2><p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">{text}</p><div className="mt-6 flex flex-wrap justify-center gap-3"><Link href={localePath('/case/rossi-apartment',lang)} className="rounded-full bg-gold px-6 py-3 font-bold text-navy">Rossi Apartment</Link><Link href={localePath('/case/dimora-castelli',lang)} className="rounded-full border border-navy px-6 py-3 font-bold text-navy">Dimora Castelli</Link></div></div></div></section>;
 }
