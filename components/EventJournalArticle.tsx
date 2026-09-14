@@ -51,7 +51,7 @@ export default function EventJournalArticle({lang,data}:{lang:EventLang;data:Eve
     '@context':'https://schema.org','@type':'Event',name:data.title,description:data.description,inLanguage:languageTag[lang],image:[imageUrl],
     startDate:data.startDate,endDate:data.endDate,eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
     ...(locations.length?{location:locations.map(place=>({'@type':'Place',name:place.name,address:{'@type':'PostalAddress',...(place.streetAddress?{streetAddress:place.streetAddress}:{}),addressLocality:place.addressLocality,addressCountry:place.addressCountry}}))}:{}),
-    organizer:organization,url:pageUrl
+    url:pageUrl
   }:null;
   const faqJsonLd=faq.length?{
     '@context':'https://schema.org','@type':'FAQPage',mainEntity:faq.map(item=>({'@type':'Question',name:item.question,acceptedAnswer:{'@type':'Answer',text:item.answer}}))
