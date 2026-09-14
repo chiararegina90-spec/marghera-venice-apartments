@@ -16,6 +16,14 @@ const architecture2027:Record<BiennaleArte2026Lang,{eyebrow:string;title:string;
   es:{eyebrow:'Próxima gran edición',title:'Bienal de Arquitectura de Venecia 2027',text:'Las fechas ya son oficiales: 8 de mayo–21 de noviembre de 2027, con Wang Shu y Lu Wenyu como comisarios. La nueva guía ya está online y se actualizará progresivamente.',cta:'Descubrir la Bienal de Arquitectura 2027'},
   zh:{eyebrow:'下一届重点展览',title:'2027 威尼斯建筑双年展',text:'日期已经正式公布：2027年5月8日至11月21日，策展人为王澍与陆文宇。新指南现已上线，并会持续更新。',cta:'查看2027建筑双年展指南'}
 };
+const filmFestival2027:Record<BiennaleArte2026Lang,string>={
+  it:'Mostra del Cinema di Venezia 2027',
+  en:'Venice Film Festival 2027',
+  de:'Filmfestspiele von Venedig 2027',
+  fr:'Mostra de Venise 2027',
+  es:'Festival de Cine de Venecia 2027',
+  zh:'2027 威尼斯电影节'
+};
 
 export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte2026Lang;data:BiennaleArte2026Data}){
   const path=`${base(lang)}/journal/biennale-di-venezia`;
@@ -72,6 +80,6 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
     </div></section>
 
     <EditorialStayCta lang={lang} context="journal"/>
-<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="mt-3 font-serif text-4xl text-navy">{data.moreLabel}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{title} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
+<section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="mt-3 font-serif text-4xl text-navy">{data.moreLabel}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{data.related.map(([title,href])=>{const displayTitle=href.endsWith('/mostra-del-cinema')?filmFestival2027[lang]:title;return <Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{displayTitle} <span className="text-gold">→</span></Link>})}</div><div className="mt-10 text-center"><Link href={`${base(lang)}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{data.backLabel}</Link></div></div></section>
   </article></main><Footer lang={lang}/></>;
 }
