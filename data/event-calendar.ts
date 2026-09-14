@@ -1,8 +1,8 @@
 export type EventCalendarDate={startDate:string;endDate:string};
 
-// Confirmed dates shared by the public Journal month filter and the private
-// Welcome Book stay-date matcher. Undated or unconfirmed events stay out of
-// this registry until reliable dates are available.
+// Confirmed event dates plus explicit seasonal planning windows shared by the
+// public Journal month filter and the private Welcome Book stay-date matcher.
+// Undated or unconfirmed events stay out until reliable dates are available.
 export const eventCalendarDates={
   'biennale-di-venezia':{startDate:'2026-05-09',endDate:'2026-11-22'},
   'regata-storica-2026':{startDate:'2026-09-06',endDate:'2026-09-06'},
@@ -18,6 +18,8 @@ export const eventCalendarDates={
   'venice-fashion-week-2026':{startDate:'2026-10-19',endDate:'2026-10-24'},
   'venice-cocktail-week-2026':{startDate:'2026-10-21',endDate:'2026-10-25'},
   'venicemarathon-2026':{startDate:'2026-10-25',endDate:'2026-10-25'},
+  'venezia-a-novembre':{startDate:'2026-11-01',endDate:'2026-11-30'},
+  'san-martino-venezia':{startDate:'2026-11-11',endDate:'2026-11-11'},
   'venice-noir-2026':{startDate:'2026-11-12',endDate:'2026-11-15'},
   'festa-madonna-salute-venezia':{startDate:'2026-11-21',endDate:'2026-11-21'},
   'carnevale-di-venezia':{startDate:'2027-01-23',endDate:'2027-02-09'},
