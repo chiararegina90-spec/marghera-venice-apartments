@@ -62,7 +62,7 @@ const castelliReviews = [
 ];
 
 export default function DimoraCastelli() {
-  return <><Header/><main>
+  return <><Header/><main data-build="dimora-parking-links-refresh-2026-09-14">
     <section className="relative min-h-[78vh] overflow-hidden pt-20">
       <Image src="/images/dimora-page-hero.webp" alt="Camera luminosa di Dimora Castelli a Marghera vicino a Venezia" fill priority sizes="100vw" className="object-cover"/>
       <div className="hero-overlay absolute inset-0"/>
@@ -133,8 +133,6 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    
-
     <section className="bg-navy py-24 text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8">
         <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[520px] overflow-hidden rounded-[2rem]">
@@ -148,10 +146,6 @@ export default function DimoraCastelli() {
         </div>
       </div>
     </section>
-
-    
-
-    
 
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -209,6 +203,5 @@ export default function DimoraCastelli() {
       </div>
     </section>
 
-    
   </main><Footer/></>
 }
