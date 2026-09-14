@@ -6,7 +6,7 @@ export type EventCalendarDate={startDate:string;endDate:string};
 export const eventCalendarDates={
   'biennale-di-venezia':{startDate:'2026-05-09',endDate:'2026-11-22'},
   'regata-storica-2026':{startDate:'2026-09-06',endDate:'2026-09-06'},
-  'mostra-del-cinema':{startDate:'2026-09-02',endDate:'2026-09-12'},
+  'mostra-del-cinema':{startDate:'2027-09-01',endDate:'2027-09-11'},
   'homo-faber-2026':{startDate:'2026-09-01',endDate:'2026-09-30'},
   'venice-glass-week-2026':{startDate:'2026-09-12',endDate:'2026-09-20'},
   'salone-alto-artigianato-italiano-2026':{startDate:'2026-10-01',endDate:'2026-10-04'},
@@ -23,7 +23,10 @@ export const eventCalendarDates={
   'venice-noir-2026':{startDate:'2026-11-12',endDate:'2026-11-15'},
   'festa-madonna-salute-venezia':{startDate:'2026-11-21',endDate:'2026-11-21'},
   'carnevale-di-venezia':{startDate:'2027-01-23',endDate:'2027-02-09'},
-  'festa-del-redentore':{startDate:'2027-07-17',endDate:'2027-07-17'}
+  'biennale-architettura-2027':{startDate:'2027-05-08',endDate:'2027-11-21'},
+  'festa-del-redentore':{startDate:'2027-07-17',endDate:'2027-07-17'},
+  'regata-storica-2027':{startDate:'2027-09-05',endDate:'2027-09-05'},
+  'venicemarathon-2027':{startDate:'2027-10-24',endDate:'2027-10-24'}
 } as const satisfies Record<string,EventCalendarDate>;
 
 export type EventCalendarSlug=keyof typeof eventCalendarDates;
