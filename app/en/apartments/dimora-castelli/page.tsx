@@ -183,6 +183,7 @@ export default function DimoraCastelli() {
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Strategic location</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Venice and Veneto without giving up peace and quiet</h2>
           <p className="mt-6 text-lg text-white/75">The Sant’Antonio Municipio bus stop is close to the apartment and offers day and night connections to Venice. Venezia Mestre railway station is within walking distance via the Via Ulloa exit.</p>
+          <Link href="/en/apartments-near-venice-free-parking" className="mt-6 inline-flex font-bold text-gold underline decoration-gold/50 underline-offset-4 transition hover:text-white">Venice by car with free parking →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-3xl bg-white/10 p-6"><p className="text-gold">Bus</p><h3 className="mt-2 font-serif text-3xl">Venice day & night</h3><p className="mt-2 text-white/70">Day services plus the N2 night bus.</p></div>

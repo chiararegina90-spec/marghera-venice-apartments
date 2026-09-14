@@ -43,6 +43,7 @@ function paths(lang:Lang){
     veneto:lang==='it'?'/scopri-il-veneto':`${b}/discover-veneto`,
     guide:lang==='it'?'/guide':`${b}/guide`,
     getting:lang==='it'?'/come-raggiungere-venezia':`${b}/getting-to-venice`,
+    driving:lang==='it'?'/appartamenti-venezia-parcheggio-gratuito':`${b}/apartments-near-venice-free-parking`,
     food:lang==='it'?'/dove-mangiare':`${b}/where-to-eat`,
     services:lang==='it'?'/servizi-in-zona':`${b}/services-nearby`,
     experiences:lang==='it'?'/collaborazioni':`${b}/experiences`,
@@ -56,37 +57,37 @@ const navCopy:Record<Lang,(p:ReturnType<typeof paths>)=>HeaderCopy>={
   it:p=>({
     apartments:'Le nostre case',
     discover:{label:'Scopri',items:[{label:'Scopri Venezia',href:p.venice},{label:'Scopri il Veneto',href:p.veneto}]},
-    plan:{label:'Organizza',items:[{label:'Guide',href:p.guide},{label:'Come arrivare',href:p.getting},{label:'Dove mangiare',href:p.food},{label:'Servizi in zona',href:p.services}]},
+    plan:{label:'Organizza',items:[{label:'Guide',href:p.guide},{label:'Come arrivare',href:p.getting},{label:'🚗 Venezia in auto',href:p.driving},{label:'Dove mangiare',href:p.food},{label:'Servizi in zona',href:p.services}]},
     experiences:'Esperienze',journal:'Journal',faq:'FAQ',contact:'Contatti'
   }),
   en:p=>({
     apartments:'Our apartments',
     discover:{label:'Discover',items:[{label:'Discover Venice',href:p.venice},{label:'Discover Veneto',href:p.veneto}]},
-    plan:{label:'Plan',items:[{label:'Guides',href:p.guide},{label:'Getting to Venice',href:p.getting},{label:'Where to eat',href:p.food},{label:'Services nearby',href:p.services}]},
+    plan:{label:'Plan',items:[{label:'Guides',href:p.guide},{label:'Getting to Venice',href:p.getting},{label:'🚗 Venice by car',href:p.driving},{label:'Where to eat',href:p.food},{label:'Services nearby',href:p.services}]},
     experiences:'Experiences',journal:'Journal',faq:'FAQ',contact:'Contact'
   }),
   de:p=>({
     apartments:'Unsere Apartments',
     discover:{label:'Entdecken',items:[{label:'Venedig entdecken',href:p.venice},{label:'Venetien entdecken',href:p.veneto}]},
-    plan:{label:'Planen',items:[{label:'Reiseführer',href:p.guide},{label:'Anreise',href:p.getting},{label:'Essen gehen',href:p.food},{label:'Services in der Nähe',href:p.services}]},
+    plan:{label:'Planen',items:[{label:'Reiseführer',href:p.guide},{label:'Anreise',href:p.getting},{label:'🚗 Mit dem Auto nach Venedig',href:p.driving},{label:'Essen gehen',href:p.food},{label:'Services in der Nähe',href:p.services}]},
     experiences:'Erlebnisse',journal:'Journal',faq:'FAQ',contact:'Kontakt'
   }),
   fr:p=>({
     apartments:'Nos appartements',
     discover:{label:'Découvrir',items:[{label:'Découvrir Venise',href:p.venice},{label:'Découvrir la Vénétie',href:p.veneto}]},
-    plan:{label:'Organiser',items:[{label:'Guides',href:p.guide},{label:'Comment arriver',href:p.getting},{label:'Où manger',href:p.food},{label:'Services à proximité',href:p.services}]},
+    plan:{label:'Organiser',items:[{label:'Guides',href:p.guide},{label:'Comment arriver',href:p.getting},{label:'🚗 Venise en voiture',href:p.driving},{label:'Où manger',href:p.food},{label:'Services à proximité',href:p.services}]},
     experiences:'Expériences',journal:'Journal',faq:'FAQ',contact:'Contact'
   }),
   es:p=>({
     apartments:'Nuestros apartamentos',
     discover:{label:'Descubrir',items:[{label:'Descubrir Venecia',href:p.venice},{label:'Descubrir Véneto',href:p.veneto}]},
-    plan:{label:'Organizar',items:[{label:'Guías',href:p.guide},{label:'Cómo llegar',href:p.getting},{label:'Dónde comer',href:p.food},{label:'Servicios cercanos',href:p.services}]},
+    plan:{label:'Organizar',items:[{label:'Guías',href:p.guide},{label:'Cómo llegar',href:p.getting},{label:'🚗 Venecia en coche',href:p.driving},{label:'Dónde comer',href:p.food},{label:'Servicios cercanos',href:p.services}]},
     experiences:'Experiencias',journal:'Journal',faq:'FAQ',contact:'Contacto'
   }),
   zh:p=>({
     apartments:'我们的公寓',
     discover:{label:'探索',items:[{label:'探索威尼斯',href:p.venice},{label:'探索威尼托',href:p.veneto}]},
-    plan:{label:'规划',items:[{label:'旅行指南',href:p.guide},{label:'如何前往',href:p.getting},{label:'餐饮推荐',href:p.food},{label:'附近服务',href:p.services}]},
+    plan:{label:'规划',items:[{label:'旅行指南',href:p.guide},{label:'如何前往',href:p.getting},{label:'🚗 自驾威尼斯',href:p.driving},{label:'餐饮推荐',href:p.food},{label:'附近服务',href:p.services}]},
     experiences:'精选体验',journal:'旅行日志',faq:'常见问题',contact:'联系我们'
   })
 };

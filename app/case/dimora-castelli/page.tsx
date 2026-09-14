@@ -183,6 +183,7 @@ export default function DimoraCastelli() {
           <p className="text-xs font-black uppercase tracking-[.22em] text-gold">Posizione strategica</p>
           <h2 className="mt-3 font-serif text-4xl sm:text-5xl">Venezia e il Veneto, senza rinunciare alla tranquillità</h2>
           <p className="mt-6 text-lg text-white/75">La fermata Sant'Antonio Municipio è vicina alla casa e offre collegamenti diurni e notturni con Venezia. La stazione di Venezia Mestre è raggiungibile a piedi dall'uscita Via Ulloa.</p>
+          <Link href="/appartamenti-venezia-parcheggio-gratuito" className="mt-6 inline-flex font-bold text-gold underline decoration-gold/50 underline-offset-4 transition hover:text-white">Scopri Venezia in auto con parcheggio gratuito →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-3xl bg-white/10 p-6"><p className="text-gold">Autobus</p><h3 className="mt-2 font-serif text-3xl">Venezia H24</h3><p className="mt-2 text-white/70">Linee diurne e servizio notturno N2.</p></div>

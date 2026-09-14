@@ -6,6 +6,7 @@ const localizedToIt:Record<string,string>={
  '/discover-venice':'/scopri-venezia',
  '/discover-veneto':'/scopri-il-veneto',
  '/getting-to-venice':'/come-raggiungere-venezia',
+ '/apartments-near-venice-free-parking':'/appartamenti-venezia-parcheggio-gratuito',
  '/experiences':'/collaborazioni',
  '/useful-links':'/link-utili',
  '/where-to-eat':'/dove-mangiare',
