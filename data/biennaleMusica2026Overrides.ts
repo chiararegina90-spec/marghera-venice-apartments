@@ -5,6 +5,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026: programma, biglietti e highlights",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Dal 10 al 24 ottobre 2026 la Biennale Musica porta a Venezia oltre 40 appuntamenti, 130 artisti e nuove opere tra Arsenale e altre sedi.",
+    "dateModified": "2026-09-22",
     "lead": "La 70ª Biennale Musica, diretta da Caterina Barbieri, si intitola A Child of Sound e mette in dialogo ascolto, sperimentazione e spazi veneziani. Il programma 2026 riunisce 130 artisti, oltre 40 appuntamenti e 23 nuove opere, di cui 18 in prima assoluta.",
     "sections": [
       [
@@ -24,12 +25,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi riceve il Leone d’Argento 2026 ed è presente nel programma con una nuova commissione. La compositrice propone inoltre un recital per organo da camera, confermando il carattere del festival: ascolto ravvicinato, ricerca timbrica e formati che non coincidono con il concerto tradizionale."
       ],
       [
+        "Musica Libera alla Giudecca: due nuovi appuntamenti",
+        "La Biennale ha aggiunto al programma due appuntamenti speciali di Musica Libera: 18 OTTOBRE 2026 — ORE 16:00 e 24 OTTOBRE 2026 — ORE 16:00, entrambi all’interno della Casa di reclusione femminile Venezia Giudecca. Il progetto nasce da un laboratorio che ha coinvolto le donne dell’istituto insieme ai giovani compositori, sound artist e performer di Biennale College Musica e ai loro mentor. Il risultato è un’installazione sonora attivata da una performance dal vivo, presentata come prova aperta e parte ufficiale del 70° Festival. Per partecipare è richiesta la registrazione online attraverso La Biennale di Venezia. Le modalità operative di registrazione saranno comunicate dalla Biennale."
+      ],
+      [
         "Biglietti: prezzi diversi in base all’evento",
         "I concerti hanno generalmente un prezzo intero di €25, con €16 per studenti e under 26. Biennale College costa €10; listening session, incontri e screening selezionati €5; le installazioni all’Arsenale prevedono un biglietto speciale da €15. Al Teatro Goldoni i prezzi variano indicativamente da €15 a €30. È disponibile anche la formula Art + Music da €40, che abbina un biglietto Biennale Arte a un concerto Biennale Musica."
       ],
       [
         "Sedi e organizzazione della serata",
-        "Il programma utilizza più spazi, tra cui Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi e Ca’ Giustinian. Controlla sempre il nome esatto della sede quando acquisti il biglietto: all’Arsenale le distanze interne contano e alcuni eventi hanno modalità di accesso specifiche."
+        "Il programma utilizza più spazi, tra cui Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi e Ca’ Giustinian. Per i soli appuntamenti Musica Libera del 18 e 24 ottobre si aggiunge la Casa di reclusione femminile Venezia Giudecca, con modalità di accesso specifiche: non va trattata come una normale sala del Festival e per partecipare è richiesta la registrazione online attraverso La Biennale di Venezia. Controlla sempre il nome esatto della sede e le istruzioni ufficiali prima di partire."
       ]
     ],
     "tip": "Quando prenoti un evento all’Arsenale, salva sul telefono anche il nome preciso della sala. Arrivare con anticipo evita di trasformare un concerto in una corsa tra Tese e Sale d’Armi.",
@@ -71,6 +76,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "name": "Ca’ Giustinian",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
       }
     ]
   },
@@ -78,6 +88,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venice | Programme, Tickets & Highlights",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 runs in Venice from 10 to 24 October with 130 artists, 40+ events and new works across the Arsenale and other venues.",
+    "dateModified": "2026-09-22",
     "lead": "The 70th Biennale Musica, directed by Caterina Barbieri, is titled A Child of Sound and explores listening, experimentation and the physical spaces of Venice. The 2026 programme brings together 130 artists, more than 40 events and 23 new works, including 18 world premieres.",
     "sections": [
       [
@@ -97,12 +108,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi receives the 2026 Silver Lion and appears in the programme with a new commission. She also performs a solo chamber-organ recital, a good example of the festival’s focus on close listening, timbre and formats that move beyond a conventional concert."
       ],
       [
+        "Musica Libera on Giudecca: two new events",
+        "La Biennale has added two special Musica Libera events to the official programme: 18 OCTOBER 2026 — 4:00 PM and 24 OCTOBER 2026 — 4:00 PM, both inside the Casa di reclusione femminile Venezia Giudecca. The project grew out of a workshop involving the women at the institution together with the young composers, sound artists and performers of Biennale College Musica and their mentors. The result is a sound installation activated by a live performance, presented as an open rehearsal and part of the 70th Festival. Attendance requires online registration through La Biennale di Venezia. The operational registration instructions will be announced by La Biennale."
+      ],
+      [
         "Tickets vary by type of event",
         "Standard concerts are generally €25, with €16 tickets for students and under-26s. Biennale College is €10; selected listening sessions, encounters and screenings are €5; Arsenale installations have a €15 special ticket. Teatro Goldoni prices range roughly from €15 to €30. An official €40 Art + Music formula combines one Biennale Arte ticket with one Biennale Musica concert."
       ],
       [
         "Venues and planning your evening",
-        "The programme uses several venues including Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi and Ca’ Giustinian. Check the exact venue name when booking: distances inside the Arsenale matter, and individual events can have different access arrangements."
+        "The programme uses several venues including Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi and Ca’ Giustinian. For the Musica Libera events on 18 and 24 October only, the Casa di reclusione femminile Venezia Giudecca is an additional venue with specific access arrangements: it should not be treated like a standard Festival theatre, and attendance requires online registration through La Biennale di Venezia. Always check the exact venue and official instructions before setting out."
       ]
     ],
     "tip": "When booking an Arsenale event, save the exact venue name on your phone as well as the ticket. Arriving early is much easier than trying to find the right Tesa at the last minute.",
@@ -144,6 +159,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "name": "Ca’ Giustinian",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
       }
     ]
   },
@@ -151,6 +171,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venedig | Programm & Tickets",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 in Venedig: 10.–24. Oktober, 130 Künstler, über 40 Veranstaltungen und neue Werke im Arsenale und weiteren Spielstätten.",
+    "dateModified": "2026-09-22",
     "lead": "Die 70. Biennale Musica unter der Leitung von Caterina Barbieri trägt den Titel A Child of Sound. 2026 treffen in Venedig experimentelle Musik, konzentriertes Hören und besondere Räume aufeinander: 130 Künstler gestalten über 40 Veranstaltungen mit 23 neuen Werken, darunter 18 Uraufführungen.",
     "sections": [
       [
@@ -170,12 +191,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi erhält 2026 den Silbernen Löwen und ist mit einer neuen Auftragsarbeit im Programm vertreten. Außerdem spielt sie ein Solorecital auf der Kammerorgel — passend zu einem Festival, das Klangfarbe, konzentriertes Hören und ungewöhnliche Konzertformen in den Mittelpunkt stellt."
       ],
       [
+        "Musica Libera auf der Giudecca: zwei neue Termine",
+        "La Biennale hat zwei besondere Musica Libera-Termine in das offizielle Programm aufgenommen: 18. OKTOBER 2026 — 16:00 UHR und 24. OKTOBER 2026 — 16:00 UHR, beide in der Casa di reclusione femminile Venezia Giudecca. Das Projekt entstand aus einem Workshop mit den Frauen der Einrichtung sowie den jungen Komponisten, Sound Artists und Performern von Biennale College Musica und ihren Mentoren. Das Ergebnis ist eine Klanginstallation, die durch eine Live-Performance aktiviert und als offene Probe im Rahmen des 70. Festivals präsentiert wird. Für die Teilnahme ist eine Online-Registrierung über La Biennale di Venezia erforderlich. Die genauen Registrierungsmodalitäten werden von La Biennale noch bekanntgegeben."
+      ],
+      [
         "Tickets je nach Veranstaltungsart",
         "Reguläre Konzerte kosten meist 25 €, für Studierende und Unter-26-Jährige 16 €. Biennale College kostet 10 €, ausgewählte Listening Sessions, Begegnungen und Screenings 5 €, Installationen im Arsenale 15 €. Im Teatro Goldoni liegen die Preise ungefähr zwischen 15 und 30 €. Die offizielle Art + Music-Formel für 40 € kombiniert Biennale Arte mit einem Konzert der Biennale Musica."
       ],
       [
         "Spielorte und Planung",
-        "Zu den Spielorten gehören Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi und Ca’ Giustinian. Prüfen Sie beim Ticketkauf immer den genauen Veranstaltungsort: Die Wege im Arsenale sind länger als sie auf der Karte wirken, und einzelne Termine haben unterschiedliche Zugangsregeln."
+        "Zu den Spielorten gehören Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi und Ca’ Giustinian. Ausschließlich für die Musica Libera-Termine am 18. und 24. Oktober kommt die Casa di reclusione femminile Venezia Giudecca als besonderer Spielort hinzu. Dort gelten eigene Zugangsregeln; der Termin ist nicht wie ein normaler Festivalbesuch zu behandeln und erfordert eine Online-Registrierung über La Biennale di Venezia. Prüfen Sie vor dem Besuch stets den genauen Ort und die offiziellen Hinweise."
       ]
     ],
     "tip": "Speichern Sie bei Veranstaltungen im Arsenale neben dem Ticket auch den genauen Saalnamen. Ein wenig Zeitreserve erspart die Suche zwischen Tese und Sale d’Armi kurz vor Beginn.",
@@ -217,6 +242,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "name": "Ca’ Giustinian",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
       }
     ]
   },
@@ -224,6 +254,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 à Venise | Programme et billets",
     "title": "Biennale Musica 2026 : A Child of Sound",
     "description": "Biennale Musica 2026 à Venise, du 10 au 24 octobre : 130 artistes, plus de 40 rendez-vous et de nouvelles œuvres à l’Arsenale et ailleurs.",
+    "dateModified": "2026-09-22",
     "lead": "La 70e Biennale Musica, dirigée par Caterina Barbieri, s’intitule A Child of Sound. À Venise, le programme 2026 relie écoute, expérimentation et lieux historiques : 130 artistes participent à plus de 40 rendez-vous, avec 23 nouvelles œuvres dont 18 créations mondiales.",
     "sections": [
       [
@@ -243,12 +274,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi reçoit le Lion d’argent 2026 et participe au programme avec une nouvelle commande. Elle propose également un récital pour orgue de chambre seul, dans l’esprit d’un festival attentif au timbre, à l’écoute rapprochée et aux formats non conventionnels."
       ],
       [
+        "Musica Libera à la Giudecca : deux nouveaux rendez-vous",
+        "La Biennale a ajouté au programme officiel deux rendez-vous spéciaux de Musica Libera : 18 OCTOBRE 2026 — 16:00 et 24 OCTOBRE 2026 — 16:00, tous deux à l’intérieur de la Casa di reclusione femminile Venezia Giudecca. Le projet est né d’un atelier réunissant les femmes de l’établissement, les jeunes compositeurs, sound artists et performers de Biennale College Musica ainsi que leurs mentors. Le résultat prend la forme d’une installation sonore activée par une performance en direct, présentée comme répétition ouverte et intégrée au 70e Festival. La participation nécessite une inscription en ligne via La Biennale di Venezia. Les modalités pratiques d’inscription seront communiquées par La Biennale."
+      ],
+      [
         "Des tarifs différents selon les événements",
         "Les concerts sont généralement proposés à 25 €, ou 16 € pour les étudiants et moins de 26 ans. Biennale College coûte 10 €, certaines listening sessions, rencontres et projections 5 €, et les installations à l’Arsenale 15 €. Au Teatro Goldoni, les tarifs vont approximativement de 15 à 30 €. Une formule officielle Art + Music à 40 € associe un billet Biennale Arte à un concert Biennale Musica."
       ],
       [
         "Lieux et organisation de la soirée",
-        "Le programme utilise notamment Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi et Ca’ Giustinian. Vérifiez toujours le nom exact du lieu lors de la réservation : les distances à l’intérieur de l’Arsenale comptent et les conditions d’accès varient selon les rendez-vous."
+        "Le programme utilise notamment Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi et Ca’ Giustinian. Uniquement pour les rendez-vous Musica Libera des 18 et 24 octobre, la Casa di reclusione femminile Venezia Giudecca s’ajoute comme lieu spécifique, avec des modalités d’accès particulières : il ne s’agit pas d’une salle de festival ordinaire et la participation nécessite une inscription en ligne via La Biennale di Venezia. Vérifiez toujours le lieu exact et les consignes officielles avant de vous déplacer."
       ]
     ],
     "tip": "Pour un événement à l’Arsenale, gardez sur votre téléphone le nom précis de la salle en plus du billet. Arriver un peu en avance évite de chercher la bonne Tesa au dernier moment.",
@@ -290,6 +325,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "name": "Ca’ Giustinian",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
       }
     ]
   },
@@ -297,6 +337,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venecia | Programa y entradas",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 en Venecia, del 10 al 24 de octubre: 130 artistas, más de 40 citas y nuevas obras en el Arsenale y otras sedes.",
+    "dateModified": "2026-09-22",
     "lead": "La 70.ª Biennale Musica, dirigida por Caterina Barbieri, lleva por título A Child of Sound. En 2026, Venecia acoge 130 artistas en más de 40 citas, con 23 nuevas obras —18 estrenos mundiales— entre conciertos, instalaciones, performances y proyectos site-specific.",
     "sections": [
       [
@@ -316,12 +357,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi recibe el León de Plata 2026 y participa con un nuevo encargo. También ofrece un recital de órgano de cámara en solitario, una propuesta que refleja la atención del festival por el timbre, la escucha cercana y los formatos que van más allá del concierto convencional."
       ],
       [
+        "Musica Libera en la Giudecca: dos nuevas citas",
+        "La Biennale ha incorporado al programa oficial dos citas especiales de Musica Libera: 18 DE OCTUBRE DE 2026 — 16:00 y 24 DE OCTUBRE DE 2026 — 16:00, ambas en la Casa di reclusione femminile Venezia Giudecca. El proyecto nace de un taller en el que participaron las mujeres del centro junto con jóvenes compositores, sound artists y performers de Biennale College Musica y sus mentores. El resultado será una instalación sonora activada por una performance en directo, presentada como ensayo abierto y parte del 70.º Festival. Para asistir es necesaria la inscripción online a través de La Biennale di Venezia. Las instrucciones operativas de inscripción serán comunicadas por La Biennale."
+      ],
+      [
         "Entradas según el tipo de evento",
         "Los conciertos cuestan generalmente 25 €, o 16 € para estudiantes y menores de 26 años. Biennale College cuesta 10 €, algunas listening sessions, encuentros y proyecciones 5 €, y las instalaciones del Arsenale 15 €. En el Teatro Goldoni los precios oscilan aproximadamente entre 15 y 30 €. La fórmula oficial Art + Music por 40 € combina una entrada de Biennale Arte con un concierto de Biennale Musica."
       ],
       [
         "Sedes y cómo organizar la noche",
-        "El programa utiliza espacios como Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi y Ca’ Giustinian. Comprueba el nombre exacto de la sede al comprar la entrada: las distancias dentro del Arsenale son importantes y cada cita puede tener condiciones de acceso diferentes."
+        "El programa utiliza espacios como Teatro Piccolo Arsenale, Teatro alle Tese, Tese dei Soppalchi, Sale d’Armi y Ca’ Giustinian. Solo para las citas de Musica Libera del 18 y 24 de octubre se añade la Casa di reclusione femminile Venezia Giudecca como sede específica, con condiciones de acceso particulares: no debe tratarse como una sala normal del Festival y para asistir es necesaria la inscripción online a través de La Biennale di Venezia. Comprueba siempre la sede exacta y las instrucciones oficiales antes de desplazarte."
       ]
     ],
     "tip": "Para un evento en el Arsenale, guarda en el móvil el nombre exacto de la sala además de la entrada. Llegar con algo de antelación evita buscar la Tesa correcta a última hora.",
@@ -363,6 +408,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "name": "Ca’ Giustinian",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
       }
     ]
   },
@@ -370,6 +420,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "2026威尼斯音乐双年展｜节目、门票与亮点",
     "title": "Biennale Musica 2026：A Child of Sound",
     "description": "2026威尼斯音乐双年展将于10月10–24日举行：130位艺术家、40多场活动与多部新作在 Arsenale 等威尼斯场地展开。",
+    "dateModified": "2026-09-22",
     "lead": "第70届 Biennale Musica 由 Caterina Barbieri 担任艺术总监，主题为 A Child of Sound。2026年节目汇集130位艺术家、40多场活动和23部新作，其中18部为世界首演，涵盖音乐会、装置、表演、场地特定项目与 Biennale College。",
     "sections": [
       [
@@ -389,12 +440,16 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Sarah Davachi 获得2026银狮奖，并以一部新的委约作品参与本届节目。她还将进行室内管风琴独奏，体现音乐节对音色、细致聆听和非传统音乐会形式的关注。"
       ],
       [
+        "Musica Libera 在 Giudecca：新增两场活动",
+        "La Biennale 已将两场 Musica Libera 特别活动加入第70届音乐节官方节目：2026年10月18日 — 16:00，以及2026年10月24日 — 16:00，两场均在 Casa di reclusione femminile Venezia Giudecca 举行。项目源自一系列工作坊，由该机构内的女性参与者与 Biennale College Musica 的年轻作曲家、声音艺术家、表演者及导师共同完成。最终成果将以由现场表演激活的声音装置形式呈现，并作为开放排练纳入音乐节正式节目。参加活动需要通过 La Biennale di Venezia 官网在线注册。具体注册方式将由 La Biennale 后续公布。"
+      ],
+      [
         "门票会根据活动类型变化",
         "普通音乐会全价通常为25欧元，学生和26岁以下为16欧元；Biennale College 为10欧元，部分聆听活动、交流与放映为5欧元，Arsenale 装置特别票为15欧元。Teatro Goldoni 票价大约在15至30欧元之间。另有40欧元的官方 Art + Music 组合票，将 Biennale Arte 门票与一场 Biennale Musica 音乐会组合。"
       ],
       [
         "场地与出发前的准备",
-        "主要场地包括 Teatro Piccolo Arsenale、Teatro alle Tese、Tese dei Soppalchi、Sale d’Armi 和 Ca’ Giustinian。购票时请确认准确场地名称；Arsenale 内部距离不短，而且不同活动的入场规则可能不同。"
+        "主要场地包括 Teatro Piccolo Arsenale、Teatro alle Tese、Tese dei Soppalchi、Sale d’Armi 和 Ca’ Giustinian。仅针对10月18日和24日的 Musica Libera，两场活动将在 Casa di reclusione femminile Venezia Giudecca 举行，并采用特殊入场安排：不能按照普通音乐节场馆的方式理解，参加者需要通过 La Biennale di Venezia 官网在线注册。出发前请再次确认具体场地和官方说明。"
       ]
     ],
     "tip": "如果活动在 Arsenale，建议除了电子票，也把具体场地名称保存在手机里。提前一点到达，比临近开场才在 Tese 之间寻找入口轻松得多。",
@@ -434,6 +489,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       },
       {
         "name": "Ca’ Giustinian",
+        "addressLocality": "Venezia",
+        "addressCountry": "IT"
+      },
+      {
+        "name": "Casa di reclusione femminile Venezia Giudecca",
         "addressLocality": "Venezia",
         "addressCountry": "IT"
       }
