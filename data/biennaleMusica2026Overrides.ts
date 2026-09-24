@@ -5,7 +5,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026: programma, biglietti e highlights",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Dal 10 al 24 ottobre 2026 la Biennale Musica porta a Venezia oltre 40 appuntamenti, 130 artisti e nuove opere tra Arsenale e altre sedi.",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "La 70ª Biennale Musica, diretta da Caterina Barbieri, si intitola A Child of Sound e mette in dialogo ascolto, sperimentazione e spazi veneziani. Il programma 2026 riunisce 130 artisti, oltre 40 appuntamenti e 23 nuove opere, di cui 18 in prima assoluta.",
     "sections": [
       [
@@ -26,11 +26,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera alla Giudecca: due nuovi appuntamenti",
-        "La Biennale ha aggiunto al programma due appuntamenti speciali di Musica Libera: 18 OTTOBRE 2026 — ORE 16:00 e 24 OTTOBRE 2026 — ORE 16:00, entrambi all’interno della Casa di reclusione femminile Venezia Giudecca. Il progetto nasce da un laboratorio che ha coinvolto le donne dell’istituto insieme ai giovani compositori, sound artist e performer di Biennale College Musica e ai loro mentor. Il risultato è un’installazione sonora attivata da una performance dal vivo, presentata come prova aperta e parte ufficiale del 70° Festival. Per partecipare è richiesta la registrazione online attraverso La Biennale di Venezia. Le modalità operative di registrazione saranno comunicate dalla Biennale."
+        "La Biennale ha aggiunto al programma due appuntamenti speciali di Musica Libera: 18 OTTOBRE 2026 — ORE 16:00 e 24 OTTOBRE 2026 — ORE 16:00, entrambi all’interno della Casa di reclusione femminile Venezia Giudecca. Il progetto nasce da un laboratorio che ha coinvolto le donne dell’istituto insieme ai giovani compositori, sound artist e performer di Biennale College Musica e ai loro mentor. Il risultato è un’installazione sonora attivata da una performance dal vivo, presentata come prova aperta e parte ufficiale del 70° Festival. Partecipazione su registrazione online; la pagina programma indica ingresso su prenotazione, ma al 24 settembre 2026 non risultano ancora pubblicate modalità operative o un modulo dedicato. Verifica il sito ufficiale della Biennale prima della visita."
       ],
       [
         "Biglietti: prezzi diversi in base all’evento",
-        "I concerti hanno generalmente un prezzo intero di €25, con €16 per studenti e under 26. Biennale College costa €10; listening session, incontri e screening selezionati €5; le installazioni all’Arsenale prevedono un biglietto speciale da €15. Al Teatro Goldoni i prezzi variano indicativamente da €15 a €30. È disponibile anche la formula Art + Music da €40, che abbina un biglietto Biennale Arte a un concerto Biennale Musica."
+        "La biglietteria online è ora aperta e biglietti e abbonamenti possono essere acquistati anticipatamente esclusivamente attraverso il sito ufficiale di La Biennale di Venezia. I concerti costano €25 intero e €16 per studenti e/o under 26; Biennale College (21 ottobre) €10; Origine, concerti dal vivo, sessioni di ascolto, proiezioni e incontri €5; le installazioni all’Arsenale prevedono il biglietto Speciale Musica da €15. Al Teatro Goldoni l’intero varia da €15 a €30 e studenti/under 26 da €12 a €20. L’abbonamento per 3 spettacoli costa €60 anziché €75, oppure €36 anziché €48 per studenti e under 26. La formula Arte + Musica costa €40 anziché €55 e comprende un biglietto Biennale Arte e un biglietto Biennale Musica."
       ],
       [
         "Sedi e organizzazione della serata",
@@ -50,6 +50,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Biennale Arte 2026",
         "/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "Biglietteria online aperta: ",
+        "label": "Acquista i biglietti sul sito ufficiale della Biennale",
+        "href": "https://www.labiennale.org/it/musica/2026/informazioni#biglietti",
+        "tail": "."
+      }
     ],
     "eventLocations": [
       {
@@ -88,7 +97,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venice | Programme, Tickets & Highlights",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 runs in Venice from 10 to 24 October with 130 artists, 40+ events and new works across the Arsenale and other venues.",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "The 70th Biennale Musica, directed by Caterina Barbieri, is titled A Child of Sound and explores listening, experimentation and the physical spaces of Venice. The 2026 programme brings together 130 artists, more than 40 events and 23 new works, including 18 world premieres.",
     "sections": [
       [
@@ -109,11 +118,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera on Giudecca: two new events",
-        "La Biennale has added two special Musica Libera events to the official programme: 18 OCTOBER 2026 — 4:00 PM and 24 OCTOBER 2026 — 4:00 PM, both inside the Casa di reclusione femminile Venezia Giudecca. The project grew out of a workshop involving the women at the institution together with the young composers, sound artists and performers of Biennale College Musica and their mentors. The result is a sound installation activated by a live performance, presented as an open rehearsal and part of the 70th Festival. Attendance requires online registration through La Biennale di Venezia. The operational registration instructions will be announced by La Biennale."
+        "La Biennale has added two special Musica Libera events to the official programme: 18 OCTOBER 2026 — 4:00 PM and 24 OCTOBER 2026 — 4:00 PM, both inside the Casa di reclusione femminile Venezia Giudecca. The project grew out of workshops involving the women at the institution together with the young composers, sound artists and performers of Biennale College Musica and their mentors. The result is a sound installation activated by a live performance, presented as an open rehearsal and part of the 70th Festival. Attendance requires online registration; the programme now states admission upon reservation, but as of 24 September 2026 no dedicated registration procedure or form has yet been published. Check the official La Biennale website before visiting."
       ],
       [
         "Tickets vary by type of event",
-        "Standard concerts are generally €25, with €16 tickets for students and under-26s. Biennale College is €10; selected listening sessions, encounters and screenings are €5; Arsenale installations have a €15 special ticket. Teatro Goldoni prices range roughly from €15 to €30. An official €40 Art + Music formula combines one Biennale Arte ticket with one Biennale Musica concert."
+        "Online ticket sales are now open, and tickets and subscriptions may be purchased in advance exclusively through the official La Biennale di Venezia website. Standard concerts are €25 full price and €16 for students and/or under-26s; Biennale College (21 October) is €10; Origine, live concerts, listening sessions, screenings and encounters are €5; Arsenale installations use the €15 Speciale Musica ticket. Teatro Goldoni full-price tickets range from €15 to €30, with student/under-26 tickets from €12 to €20. A 3-performance subscription costs €60 instead of €75, or €36 instead of €48 for students and under-26s. The Art + Music formula costs €40 instead of €55 and combines one Biennale Arte ticket with one Biennale Musica ticket."
       ],
       [
         "Venues and planning your evening",
@@ -133,6 +142,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Venice Biennale 2026",
         "/en/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "Online ticket sales are open: ",
+        "label": "Buy tickets on the official La Biennale website",
+        "href": "https://www.labiennale.org/en/music/2026/information#tickets",
+        "tail": "."
+      }
     ],
     "eventLocations": [
       {
@@ -171,7 +189,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venedig | Programm & Tickets",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 in Venedig: 10.–24. Oktober, 130 Künstler, über 40 Veranstaltungen und neue Werke im Arsenale und weiteren Spielstätten.",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "Die 70. Biennale Musica unter der Leitung von Caterina Barbieri trägt den Titel A Child of Sound. 2026 treffen in Venedig experimentelle Musik, konzentriertes Hören und besondere Räume aufeinander: 130 Künstler gestalten über 40 Veranstaltungen mit 23 neuen Werken, darunter 18 Uraufführungen.",
     "sections": [
       [
@@ -192,11 +210,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera auf der Giudecca: zwei neue Termine",
-        "La Biennale hat zwei besondere Musica Libera-Termine in das offizielle Programm aufgenommen: 18. OKTOBER 2026 — 16:00 UHR und 24. OKTOBER 2026 — 16:00 UHR, beide in der Casa di reclusione femminile Venezia Giudecca. Das Projekt entstand aus einem Workshop mit den Frauen der Einrichtung sowie den jungen Komponisten, Sound Artists und Performern von Biennale College Musica und ihren Mentoren. Das Ergebnis ist eine Klanginstallation, die durch eine Live-Performance aktiviert und als offene Probe im Rahmen des 70. Festivals präsentiert wird. Für die Teilnahme ist eine Online-Registrierung über La Biennale di Venezia erforderlich. Die genauen Registrierungsmodalitäten werden von La Biennale noch bekanntgegeben."
+        "La Biennale hat zwei besondere Musica Libera-Termine in das offizielle Programm aufgenommen: 18. OKTOBER 2026 — 16:00 UHR und 24. OKTOBER 2026 — 16:00 UHR, beide in der Casa di reclusione femminile Venezia Giudecca. Das Projekt entstand aus Workshops mit den Frauen der Einrichtung sowie den jungen Komponisten, Sound Artists und Performern von Biennale College Musica und ihren Mentoren. Das Ergebnis ist eine Klanginstallation, die durch eine Live-Performance aktiviert und als offene Probe im Rahmen des 70. Festivals präsentiert wird. Die Teilnahme erfordert eine Online-Registrierung; im Programm steht inzwischen „Eintritt nach Reservierung“, doch am 24. September 2026 sind noch keine konkreten Registrierungsmodalitäten oder ein eigenes Formular veröffentlicht. Prüfen Sie vor dem Besuch die offizielle Website von La Biennale."
       ],
       [
         "Tickets je nach Veranstaltungsart",
-        "Reguläre Konzerte kosten meist 25 €, für Studierende und Unter-26-Jährige 16 €. Biennale College kostet 10 €, ausgewählte Listening Sessions, Begegnungen und Screenings 5 €, Installationen im Arsenale 15 €. Im Teatro Goldoni liegen die Preise ungefähr zwischen 15 und 30 €. Die offizielle Art + Music-Formel für 40 € kombiniert Biennale Arte mit einem Konzert der Biennale Musica."
+        "Der Online-Ticketverkauf ist jetzt geöffnet; Tickets und Abonnements können im Vorverkauf ausschließlich über die offizielle Website von La Biennale di Venezia erworben werden. Reguläre Konzerte kosten 25 € regulär und 16 € für Studierende und/oder Unter-26-Jährige; Biennale College am 21. Oktober kostet 10 €; Origine, Live-Konzerte, Listening Sessions, Screenings und Begegnungen 5 €; Installationen im Arsenale nutzen das Speciale-Musica-Ticket für 15 €. Im Teatro Goldoni liegen Vollpreistickets zwischen 15 und 30 €, Studierenden-/U26-Tickets zwischen 12 und 20 €. Das Abonnement für 3 Vorstellungen kostet 60 € statt 75 €, für Studierende und Unter-26-Jährige 36 € statt 48 €. Die Formel Arte + Musica kostet 40 € statt 55 € und kombiniert ein Biennale-Arte-Ticket mit einem Biennale-Musica-Ticket."
       ],
       [
         "Spielorte und Planung",
@@ -216,6 +234,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Biennale Venedig 2026",
         "/de/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "Online-Ticketverkauf geöffnet: ",
+        "label": "Tickets auf der offiziellen Website von La Biennale kaufen",
+        "href": "https://www.labiennale.org/en/music/2026/information#tickets",
+        "tail": "."
+      }
     ],
     "eventLocations": [
       {
@@ -254,7 +281,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 à Venise | Programme et billets",
     "title": "Biennale Musica 2026 : A Child of Sound",
     "description": "Biennale Musica 2026 à Venise, du 10 au 24 octobre : 130 artistes, plus de 40 rendez-vous et de nouvelles œuvres à l’Arsenale et ailleurs.",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "La 70e Biennale Musica, dirigée par Caterina Barbieri, s’intitule A Child of Sound. À Venise, le programme 2026 relie écoute, expérimentation et lieux historiques : 130 artistes participent à plus de 40 rendez-vous, avec 23 nouvelles œuvres dont 18 créations mondiales.",
     "sections": [
       [
@@ -275,11 +302,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera à la Giudecca : deux nouveaux rendez-vous",
-        "La Biennale a ajouté au programme officiel deux rendez-vous spéciaux de Musica Libera : 18 OCTOBRE 2026 — 16:00 et 24 OCTOBRE 2026 — 16:00, tous deux à l’intérieur de la Casa di reclusione femminile Venezia Giudecca. Le projet est né d’un atelier réunissant les femmes de l’établissement, les jeunes compositeurs, sound artists et performers de Biennale College Musica ainsi que leurs mentors. Le résultat prend la forme d’une installation sonore activée par une performance en direct, présentée comme répétition ouverte et intégrée au 70e Festival. La participation nécessite une inscription en ligne via La Biennale di Venezia. Les modalités pratiques d’inscription seront communiquées par La Biennale."
+        "La Biennale a ajouté au programme officiel deux rendez-vous spéciaux de Musica Libera : 18 OCTOBRE 2026 — 16:00 et 24 OCTOBRE 2026 — 16:00, tous deux à la Casa di reclusione femminile Venezia Giudecca. Le projet est né d’ateliers réunissant les femmes de l’établissement, les jeunes compositeurs, sound artists et performers de Biennale College Musica ainsi que leurs mentors. Le résultat prend la forme d’une installation sonore activée par une performance en direct, présentée comme répétition ouverte et intégrée au 70e Festival. La participation nécessite une inscription en ligne ; le programme indique désormais un accès sur réservation, mais au 24 septembre 2026 aucune procédure détaillée ni formulaire dédié n’est encore publié. Vérifiez le site officiel de La Biennale avant la visite."
       ],
       [
         "Des tarifs différents selon les événements",
-        "Les concerts sont généralement proposés à 25 €, ou 16 € pour les étudiants et moins de 26 ans. Biennale College coûte 10 €, certaines listening sessions, rencontres et projections 5 €, et les installations à l’Arsenale 15 €. Au Teatro Goldoni, les tarifs vont approximativement de 15 à 30 €. Une formule officielle Art + Music à 40 € associe un billet Biennale Arte à un concert Biennale Musica."
+        "La billetterie en ligne est désormais ouverte et les billets comme les abonnements peuvent être achetés à l’avance exclusivement sur le site officiel de La Biennale di Venezia. Les concerts coûtent 25 € plein tarif et 16 € pour les étudiants et/ou moins de 26 ans ; Biennale College du 21 octobre coûte 10 € ; Origine, concerts live, sessions d’écoute, projections et rencontres 5 € ; les installations à l’Arsenale utilisent le billet Speciale Musica à 15 €. Au Teatro Goldoni, le plein tarif varie de 15 à 30 € et le tarif étudiants/moins de 26 ans de 12 à 20 €. L’abonnement pour 3 spectacles coûte 60 € au lieu de 75 €, ou 36 € au lieu de 48 € pour les étudiants et moins de 26 ans. La formule Arte + Musica coûte 40 € au lieu de 55 € et associe un billet Biennale Arte à un billet Biennale Musica."
       ],
       [
         "Lieux et organisation de la soirée",
@@ -299,6 +326,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Biennale de Venise 2026",
         "/fr/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "Billetterie en ligne ouverte : ",
+        "label": "Acheter les billets sur le site officiel de La Biennale",
+        "href": "https://www.labiennale.org/en/music/2026/information#tickets",
+        "tail": "."
+      }
     ],
     "eventLocations": [
       {
@@ -337,7 +373,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "Biennale Musica 2026 Venecia | Programa y entradas",
     "title": "Biennale Musica 2026: A Child of Sound",
     "description": "Biennale Musica 2026 en Venecia, del 10 al 24 de octubre: 130 artistas, más de 40 citas y nuevas obras en el Arsenale y otras sedes.",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "La 70.ª Biennale Musica, dirigida por Caterina Barbieri, lleva por título A Child of Sound. En 2026, Venecia acoge 130 artistas en más de 40 citas, con 23 nuevas obras —18 estrenos mundiales— entre conciertos, instalaciones, performances y proyectos site-specific.",
     "sections": [
       [
@@ -358,11 +394,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera en la Giudecca: dos nuevas citas",
-        "La Biennale ha incorporado al programa oficial dos citas especiales de Musica Libera: 18 DE OCTUBRE DE 2026 — 16:00 y 24 DE OCTUBRE DE 2026 — 16:00, ambas en la Casa di reclusione femminile Venezia Giudecca. El proyecto nace de un taller en el que participaron las mujeres del centro junto con jóvenes compositores, sound artists y performers de Biennale College Musica y sus mentores. El resultado será una instalación sonora activada por una performance en directo, presentada como ensayo abierto y parte del 70.º Festival. Para asistir es necesaria la inscripción online a través de La Biennale di Venezia. Las instrucciones operativas de inscripción serán comunicadas por La Biennale."
+        "La Biennale ha incorporado al programa oficial dos citas especiales de Musica Libera: 18 DE OCTUBRE DE 2026 — 16:00 y 24 DE OCTUBRE DE 2026 — 16:00, ambas en la Casa di reclusione femminile Venezia Giudecca. El proyecto nace de talleres en los que participaron las mujeres del centro junto con jóvenes compositores, sound artists y performers de Biennale College Musica y sus mentores. El resultado es una instalación sonora activada por una performance en directo, presentada como ensayo abierto y parte del 70.º Festival. Para asistir es necesaria la inscripción online; el programa ya indica acceso con reserva, pero a 24 de septiembre de 2026 todavía no se han publicado instrucciones operativas ni un formulario específico. Consulta la web oficial de La Biennale antes de la visita."
       ],
       [
         "Entradas según el tipo de evento",
-        "Los conciertos cuestan generalmente 25 €, o 16 € para estudiantes y menores de 26 años. Biennale College cuesta 10 €, algunas listening sessions, encuentros y proyecciones 5 €, y las instalaciones del Arsenale 15 €. En el Teatro Goldoni los precios oscilan aproximadamente entre 15 y 30 €. La fórmula oficial Art + Music por 40 € combina una entrada de Biennale Arte con un concierto de Biennale Musica."
+        "La venta online ya está abierta y las entradas y abonos pueden comprarse por adelantado exclusivamente a través de la web oficial de La Biennale di Venezia. Los conciertos cuestan 25 € tarifa completa y 16 € para estudiantes y/o menores de 26 años; Biennale College del 21 de octubre cuesta 10 €; Origine, conciertos en vivo, listening sessions, proyecciones y encuentros 5 €; las instalaciones del Arsenale utilizan la entrada Speciale Musica de 15 €. En Teatro Goldoni, la tarifa completa va de 15 a 30 € y la de estudiantes/menores de 26 años de 12 a 20 €. El abono de 3 espectáculos cuesta 60 € en lugar de 75 €, o 36 € en lugar de 48 € para estudiantes y menores de 26 años. La fórmula Arte + Musica cuesta 40 € en lugar de 55 € e incluye una entrada Biennale Arte y una entrada Biennale Musica."
       ],
       [
         "Sedes y cómo organizar la noche",
@@ -382,6 +418,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "Bienal de Venecia 2026",
         "/es/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "Venta online abierta: ",
+        "label": "Comprar entradas en la web oficial de La Biennale",
+        "href": "https://www.labiennale.org/en/music/2026/information#tickets",
+        "tail": "."
+      }
     ],
     "eventLocations": [
       {
@@ -420,7 +465,7 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
     "metaTitle": "2026威尼斯音乐双年展｜节目、门票与亮点",
     "title": "Biennale Musica 2026：A Child of Sound",
     "description": "2026威尼斯音乐双年展将于10月10–24日举行：130位艺术家、40多场活动与多部新作在 Arsenale 等威尼斯场地展开。",
-    "dateModified": "2026-09-22",
+    "dateModified": "2026-09-24",
     "lead": "第70届 Biennale Musica 由 Caterina Barbieri 担任艺术总监，主题为 A Child of Sound。2026年节目汇集130位艺术家、40多场活动和23部新作，其中18部为世界首演，涵盖音乐会、装置、表演、场地特定项目与 Biennale College。",
     "sections": [
       [
@@ -441,11 +486,11 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
       ],
       [
         "Musica Libera 在 Giudecca：新增两场活动",
-        "La Biennale 已将两场 Musica Libera 特别活动加入第70届音乐节官方节目：2026年10月18日 — 16:00，以及2026年10月24日 — 16:00，两场均在 Casa di reclusione femminile Venezia Giudecca 举行。项目源自一系列工作坊，由该机构内的女性参与者与 Biennale College Musica 的年轻作曲家、声音艺术家、表演者及导师共同完成。最终成果将以由现场表演激活的声音装置形式呈现，并作为开放排练纳入音乐节正式节目。参加活动需要通过 La Biennale di Venezia 官网在线注册。具体注册方式将由 La Biennale 后续公布。"
+        "La Biennale 已将两场 Musica Libera 特别活动加入第70届音乐节官方节目：2026年10月18日 — 16:00，以及2026年10月24日 — 16:00，两场均在 Casa di reclusione femminile Venezia Giudecca 举行。项目源自一系列工作坊，由该机构内的女性参与者与 Biennale College Musica 的年轻作曲家、声音艺术家、表演者及导师共同完成。最终成果将以由现场表演激活的声音装置形式呈现，并作为开放排练纳入音乐节正式节目。参加活动需要在线注册；官方节目目前已标注“需预约入场”，但截至2026年9月24日仍未公布具体注册流程或专用表单。参观前请再次查看 La Biennale 官方网站。"
       ],
       [
         "门票会根据活动类型变化",
-        "普通音乐会全价通常为25欧元，学生和26岁以下为16欧元；Biennale College 为10欧元，部分聆听活动、交流与放映为5欧元，Arsenale 装置特别票为15欧元。Teatro Goldoni 票价大约在15至30欧元之间。另有40欧元的官方 Art + Music 组合票，将 Biennale Arte 门票与一场 Biennale Musica 音乐会组合。"
+        "线上售票现已开放，门票和套票可提前购买，并且仅通过 La Biennale di Venezia 官方网站销售。普通音乐会全价25欧元，学生和/或26岁以下16欧元；10月21日 Biennale College 为10欧元；Origine、现场音乐会、聆听活动、放映及交流活动为5欧元；Arsenale 装置使用15欧元的 Speciale Musica 门票。Teatro Goldoni 全价票为15至30欧元，学生/26岁以下为12至20欧元。3场套票为60欧元（原价75欧元），学生和26岁以下为36欧元（原价48欧元）。Arte + Musica 组合票为40欧元（原价55欧元），包含一张 Biennale Arte 门票和一张 Biennale Musica 门票。"
       ],
       [
         "场地与出发前的准备",
@@ -465,6 +510,15 @@ export const biennaleMusica2026Overrides:Record<EventLang,Record<string,unknown>
         "2026威尼斯艺术双年展",
         "/zh/journal/biennale-di-venezia"
       ]
+    ],
+    "sectionLinks": [
+      {
+        "section": 5,
+        "text": "线上售票已开放：",
+        "label": "前往 La Biennale 官方网站购票",
+        "href": "https://www.labiennale.org/en/music/2026/information#tickets",
+        "tail": "。"
+      }
     ],
     "eventLocations": [
       {
