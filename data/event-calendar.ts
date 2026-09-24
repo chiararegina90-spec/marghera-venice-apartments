@@ -19,6 +19,7 @@ export const eventCalendarDates={
   'venice-cocktail-week-2026':{startDate:'2026-10-21',endDate:'2026-10-25'},
   'venicemarathon-2026':{startDate:'2026-10-25',endDate:'2026-10-25'},
   'venezia-a-novembre':{startDate:'2026-11-01',endDate:'2026-11-30'},
+  'arte-laguna-prize-2026':{startDate:'2026-11-06',endDate:'2026-11-29'},
   'san-martino-venezia':{startDate:'2026-11-11',endDate:'2026-11-11'},
   'venice-noir-2026':{startDate:'2026-11-12',endDate:'2026-11-15'},
   'festa-madonna-salute-venezia':{startDate:'2026-11-21',endDate:'2026-11-21'},
