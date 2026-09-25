@@ -26,7 +26,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Durante la tappa veneziana, l’Arsenale della Marina Militare ospita il XV Trans-Regional Seapower Symposium. È un appuntamento internazionale dedicato alla sicurezza e cooperazione marittima, distinto dalle visite pubbliche a bordo."
       ],
       [
-        "Prenotazioni aperte: come funziona la visita",
+        "Prenotazione obbligatoria: come funziona la visita",
         "La visita è gratuita ma richiede una prenotazione nominale sul portale ufficiale Tour Vespucci. Si sceglie data e slot disponibile, si inseriscono i dati personali e si possono registrare fino a 4 persone per singola prenotazione. La conferma arriva via e-mail con un QR code unico, inviato alla persona che prenota. Se la prenotazione comprende più partecipanti, tutti devono presentarsi insieme. Dopo la registrazione non è possibile modificare né l’orario né i nominativi. I posti sono limitati e la disponibilità degli slot varia in tempo reale."
       ],
       [
@@ -106,8 +106,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "La visita è gratuita, ma è necessario prenotare uno degli slot disponibili sul portale ufficiale."
       ],
       [
-        "Le prenotazioni sono aperte?",
-        "Sì. Le prenotazioni per Venezia sono aperte. I posti sono limitati e la disponibilità degli slot varia in tempo reale."
+        "Come verifico se ci sono posti disponibili?",
+        "La disponibilità degli slot cambia in tempo reale. Controlla direttamente il portale ufficiale Tour Vespucci, unico canale autorizzato per la prenotazione delle visite."
       ],
       [
         "Quante persone posso prenotare?",
@@ -122,7 +122,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Passeggini e carrozzine non sono consentiti a bordo e possono essere lasciati in banchina."
       ]
     ],
-    "tip": "Prenotazioni aperte — posti limitati. Verifica la disponibilità in tempo reale sul portale ufficiale Tour Vespucci e conserva il QR code ricevuto via e-mail.",
+    "tip": "Prenotazione obbligatoria — i posti sono limitati. Verifica la disponibilità degli slot in tempo reale sul portale ufficiale Tour Vespucci e conserva il QR code ricevuto via e-mail.",
     "bookingCta": {
       "label": "Verifica disponibilità e prenota sul sito ufficiale Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
@@ -142,7 +142,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "During the Venice stop, the Italian Navy Arsenal hosts the XV Trans-Regional Seapower Symposium, an international forum on maritime security and cooperation. It is separate from the public onboard visits."
       ],
       [
-        "Bookings are open: how the visit works",
+        "Booking is mandatory: how the visit works",
         "The visit is free but requires a named reservation through the official Tour Vespucci portal. Choose a date and available time slot, enter the visitors’ personal details and register up to 4 people in one booking. Confirmation arrives by e-mail with one QR code sent to the person making the reservation. If several people are included, everyone must arrive together. After registration, neither the visit time nor the registered names can be changed. Places are limited and slot availability changes in real time."
       ],
       [
@@ -222,8 +222,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "The visit is free, but you must reserve one of the available time slots on the official portal."
       ],
       [
-        "Are bookings open?",
-        "Yes. Venice bookings are open. Places are limited and slot availability changes in real time."
+        "How do I check whether slots are available?",
+        "Slot availability changes in real time. Check the official Tour Vespucci portal directly; it is the authorised channel for booking visits."
       ],
       [
         "How many people can I book for?",
@@ -238,7 +238,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Pushchairs and prams are not allowed on board and may be left on the quay."
       ]
     ],
-    "tip": "Bookings are open — places are limited. Check real-time availability on the official Tour Vespucci portal and keep the QR code sent by e-mail.",
+    "tip": "Booking is mandatory — places are limited. Check real-time slot availability on the official Tour Vespucci portal and keep the QR code sent by e-mail.",
     "bookingCta": {
       "label": "Check availability and book on the official Tour Vespucci website",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
@@ -258,7 +258,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Während der Venedig-Station findet im Arsenal der italienischen Marine das XV Trans-Regional Seapower Symposium statt. Dieses internationale Forum zu maritimer Sicherheit und Zusammenarbeit ist von den Publikumsbesuchen an Bord zu unterscheiden."
       ],
       [
-        "Reservierungen geöffnet: so funktioniert der Besuch",
+        "Reservierung erforderlich: so funktioniert der Besuch",
         "Der Besuch ist kostenlos, erfordert aber eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal. Wählen Sie Datum und verfügbares Zeitfenster, geben Sie die persönlichen Daten ein und registrieren Sie bis zu 4 Personen pro Buchung. Die Bestätigung kommt per E-Mail mit einem einzigen QR-Code an die buchende Person. Bei mehreren Teilnehmern müssen alle gemeinsam erscheinen. Nach der Registrierung können weder Uhrzeit noch Namen geändert werden. Die Plätze sind begrenzt und die Verfügbarkeit der Zeitfenster ändert sich in Echtzeit."
       ],
       [
@@ -338,8 +338,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Der Besuch ist kostenlos, aber ein verfügbares Zeitfenster muss im offiziellen Portal reserviert werden."
       ],
       [
-        "Sind die Reservierungen geöffnet?",
-        "Ja. Die Reservierungen für Venedig sind geöffnet. Die Plätze sind begrenzt und die Slot-Verfügbarkeit ändert sich in Echtzeit."
+        "Wie prüfe ich, ob Plätze verfügbar sind?",
+        "Die Verfügbarkeit der Zeitfenster ändert sich in Echtzeit. Prüfen Sie sie direkt im offiziellen Tour-Vespucci-Portal, dem autorisierten Kanal für die Reservierung der Besuche."
       ],
       [
         "Für wie viele Personen kann ich reservieren?",
@@ -354,7 +354,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Nein. Kinderwagen und Buggys sind an Bord nicht erlaubt und können am Kai abgestellt werden."
       ]
     ],
-    "tip": "Reservierungen geöffnet — begrenzte Plätze. Prüfen Sie die Verfügbarkeit in Echtzeit im offiziellen Tour-Vespucci-Portal und bewahren Sie den per E-Mail erhaltenen QR-Code auf.",
+    "tip": "Reservierung erforderlich — die Plätze sind begrenzt. Prüfen Sie die aktuelle Slot-Verfügbarkeit im offiziellen Tour-Vespucci-Portal und bewahren Sie den per E-Mail erhaltenen QR-Code auf.",
     "bookingCta": {
       "label": "Verfügbarkeit prüfen und auf der offiziellen Tour-Vespucci-Seite reservieren",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
@@ -374,7 +374,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Pendant l’escale vénitienne, l’Arsenal de la Marine italienne accueille le XV Trans-Regional Seapower Symposium. Ce forum international consacré à la sécurité et à la coopération maritimes est distinct des visites publiques à bord."
       ],
       [
-        "Réservations ouvertes : comment fonctionne la visite",
+        "Réservation obligatoire : comment fonctionne la visite",
         "La visite est gratuite mais nécessite une réservation nominative sur le portail officiel Tour Vespucci. Choisissez la date et un créneau disponible, saisissez les données personnelles et enregistrez jusqu’à 4 personnes par réservation. La confirmation arrive par e-mail avec un QR code unique envoyé à la personne qui réserve. Si plusieurs participants sont inclus, tous doivent se présenter ensemble. Après l’enregistrement, il n’est plus possible de modifier l’heure ni les noms. Les places sont limitées et la disponibilité des créneaux évolue en temps réel."
       ],
       [
@@ -454,8 +454,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "La visite est gratuite, mais il faut réserver l’un des créneaux disponibles sur le portail officiel."
       ],
       [
-        "Les réservations sont-elles ouvertes ?",
-        "Oui. Les réservations pour Venise sont ouvertes. Les places sont limitées et la disponibilité des créneaux varie en temps réel."
+        "Comment vérifier s’il reste des créneaux disponibles ?",
+        "La disponibilité des créneaux évolue en temps réel. Consultez directement le portail officiel Tour Vespucci, seul canal autorisé pour réserver les visites."
       ],
       [
         "Combien de personnes puis-je réserver ?",
@@ -470,7 +470,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Non. Les poussettes et landaus ne sont pas autorisés à bord et peuvent être laissés sur le quai."
       ]
     ],
-    "tip": "Réservations ouvertes — places limitées. Vérifiez la disponibilité en temps réel sur le portail officiel Tour Vespucci et conservez le QR code reçu par e-mail.",
+    "tip": "Réservation obligatoire — les places sont limitées. Vérifiez la disponibilité des créneaux en temps réel sur le portail officiel Tour Vespucci et conservez le QR code reçu par e-mail.",
     "bookingCta": {
       "label": "Vérifier les disponibilités et réserver sur le site officiel Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
@@ -490,7 +490,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Durante la escala veneciana, el Arsenal de la Marina italiana acoge el XV Trans-Regional Seapower Symposium. Este foro internacional sobre seguridad y cooperación marítimas es distinto de las visitas públicas a bordo."
       ],
       [
-        "Reservas abiertas: cómo funciona la visita",
+        "Reserva obligatoria: cómo funciona la visita",
         "La visita es gratuita, pero requiere una reserva nominal en el portal oficial Tour Vespucci. Elige la fecha y una franja disponible, introduce los datos personales y registra hasta 4 personas por reserva. La confirmación llega por correo electrónico con un único QR code enviado a la persona que realiza la reserva. Si hay varios participantes, todos deben presentarse juntos. Después del registro no se pueden modificar ni el horario ni los nombres. Las plazas son limitadas y la disponibilidad de franjas cambia en tiempo real."
       ],
       [
@@ -570,8 +570,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "La visita es gratuita, pero es necesario reservar una de las franjas disponibles en el portal oficial."
       ],
       [
-        "¿Las reservas están abiertas?",
-        "Sí. Las reservas para Venecia están abiertas. Las plazas son limitadas y la disponibilidad cambia en tiempo real."
+        "¿Cómo compruebo si hay plazas disponibles?",
+        "La disponibilidad de las franjas cambia en tiempo real. Compruébala directamente en el portal oficial Tour Vespucci, único canal autorizado para reservar las visitas."
       ],
       [
         "¿Para cuántas personas puedo reservar?",
@@ -586,7 +586,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Los cochecitos y sillas de paseo no están permitidos a bordo y pueden dejarse en el muelle."
       ]
     ],
-    "tip": "Reservas abiertas — plazas limitadas. Comprueba la disponibilidad en tiempo real en el portal oficial Tour Vespucci y conserva el QR code recibido por correo electrónico.",
+    "tip": "Reserva obligatoria — las plazas son limitadas. Comprueba la disponibilidad de las franjas en tiempo real en el portal oficial Tour Vespucci y conserva el QR code recibido por correo electrónico.",
     "bookingCta": {
       "label": "Comprobar disponibilidad y reservar en la web oficial Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
@@ -606,7 +606,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "威尼斯停靠期间，意大利海军兵工厂将举行 XV Trans-Regional Seapower Symposium。这是一项国际海事安全与合作论坛，与公众登船参观是不同活动。"
       ],
       [
-        "预约已开放：参观流程",
+        "必须预约：参观流程",
         "参观免费，但必须通过 Tour Vespucci 官方网站实名预约。选择日期和可用时段，填写个人资料，每次预约最多可登记4人。确认邮件会发送一个唯一 QR code 给预约人；多人预约时所有参与者必须一起到场。完成预约后不能修改参观时间或姓名。名额有限，时段余位会实时变化。"
       ],
       [
@@ -686,8 +686,8 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "参观免费，但必须在官网预约可用时段。"
       ],
       [
-        "预约已经开放了吗？",
-        "是的，威尼斯站预约已经开放。名额有限，可用时段会实时变化。"
+        "如何查看是否还有可预约时段？",
+        "可预约时段会实时变化。请直接查看 Tour Vespucci 官方网站；该网站是预约参观的官方授权渠道。"
       ],
       [
         "一次可以预约几个人？",
@@ -702,7 +702,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "不可以。婴儿车和推车不能带上船，但可留在码头。"
       ]
     ],
-    "tip": "预约已开放 — 名额有限。请在 Tour Vespucci 官方网站实时查看可用时段，并保存通过邮件收到的 QR code。",
+    "tip": "必须实名预约 — 名额有限。请在 Tour Vespucci 官方网站实时查看可用时段，并保存通过邮件收到的 QR code。",
     "bookingCta": {
       "label": "在 Tour Vespucci 官方网站查看余位并预约",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
