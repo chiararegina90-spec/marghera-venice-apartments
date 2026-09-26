@@ -207,7 +207,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "Venice Climate Week 2027",
       "metaTitle": "Venice Climate Week 2027: date, programma e guida per partecipare",
       "category": "Eventi",
-      "description": "Venice Climate Week 2027 a Venezia dal 3 all’8 giugno. Tema Aqua Age, informazioni per visitatori e partecipanti, programma, sedi e registrazioni in aggiornamento.",
+      "description": "Venice Climate Week 2027 a Venezia dal 3 all’8 giugno. Tema Aqua Age, Road to VCW27 già online e guida pratica per programma, sedi e registrazioni ufficiali.",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "Venezia e la laguna, scenario della Venice Climate Week",
@@ -216,35 +216,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "Venice Climate Week 2027 si svolgerà dal 3 all’8 giugno. Il nuovo ciclo viene presentato con il tema “Aqua Age”, un riferimento particolarmente legato a Venezia e al rapporto tra acqua, città, innovazione e adattamento. Per chi arriverà da fuori, questa pagina raccoglie soltanto ciò che è già pubblicato e separa con chiarezza le informazioni ancora in attesa.",
       "sections": [
         [
-          "Date 2027 e tema Aqua Age",
-          "CONFERMATO: 3–8 giugno 2027, Venezia. Il Comune di Venezia ha presentato il nuovo appuntamento con il titolo “Venezia chiama il mondo nell’era dell’acqua” e il lancio di Aqua Age, mentre il sito ufficiale riporta già VCW27 e le date complete."
+          "Date 2027, Aqua Age e Road to VCW27",
+          "CONFERMATO: Venice Climate Week 2027 si svolgerà a Venezia dal 3 all’8 giugno 2027. Il Comune di Venezia ha annunciato da New York il lancio di “Aqua Age”, mentre il sito ufficiale identifica già la nuova edizione come VCW27 e ha aperto la sezione “Road to VCW27”. L’acqua viene posta al centro del racconto come elemento di connessione, memoria e possibilità: un tema particolarmente legato al contesto veneziano."
         ],
         [
           "Cos’è Venice Climate Week",
-          "È una piattaforma internazionale di incontri e confronto dedicata a clima, sostenibilità e trasformazione. Il sito ufficiale indica il Future Food Institute come produttore dell’iniziativa sotto la guida di Sara Roversi e Riccardo Luna come creator e curator."
+          "Venice Climate Week è una piattaforma internazionale di confronto su clima, sostenibilità, innovazione e trasformazione. La pagina ufficiale “About” indica Riccardo Luna come creator e curator dell’iniziativa e conferma che Venice Climate Week è prodotta dal Future Food Institute sotto la guida della fondatrice e presidente Sara Roversi."
         ],
         [
           "Perché Venezia",
-          "Venezia rende immediatamente concreto il tema dell’acqua: è una città in cui ambiente, patrimonio, mobilità e adattamento convivono ogni giorno. Per un partecipante internazionale il valore dell’evento sta anche nel rapporto tra discussione globale e contesto urbano lagunare."
+          "Venezia rende concreto il tema Aqua Age: acqua, patrimonio, mobilità, attività economiche e adattamento convivono ogni giorno nello stesso territorio. Per chi arriva dall’estero, il valore della settimana sta quindi anche nel mettere il dibattito globale in relazione con una città-laboratorio particolarmente esposta alle trasformazioni ambientali."
         ],
         [
-          "Programma 2027",
-          "IN AGGIORNAMENTO: non utilizziamo il calendario 2026 come se fosse il programma 2027. Speaker, panel, laboratori e calendario giornaliero verranno inseriti quando saranno attribuiti chiaramente alla nuova edizione."
+          "Programma 2027: cosa è già online",
+          "Il sito ufficiale ha già aperto “Road to VCW27”, ma non risulta ancora pubblicato un calendario giornaliero completo attribuito all’edizione 2027. Le pagine dettagliate di programma attualmente indicizzate riportano ancora VCW26/2026: per questo non trasferiamo speaker, panel o appuntamenti della precedente edizione. Aggiorneremo questa sezione quando il programma VCW27 sarà pubblicato esplicitamente."
         ],
         [
           "Sedi 2027",
-          "IN AGGIORNAMENTO: il sito ufficiale conferma Venezia, ma l’elenco definitivo delle venue 2027 non è ancora pubblicato in modo sufficientemente univoco. Non riportiamo quindi le sedi della precedente edizione come già confermate."
+          "Venezia è la città ospitante confermata, ma non risulta ancora pubblicato un elenco definitivo di venue contrassegnato come programma 2027. Non riutilizziamo quindi automaticamente Procuratie, Ocean Space, Ca’ Foscari, IUAV, Arsenale o le altre sedi dell’edizione 2026 come se fossero già confermate per VCW27."
         ],
         [
           "Registrazione e accesso",
-          "IN ATTESA DELLE INFORMAZIONI UFFICIALI: modalità di registrazione, accesso ai singoli appuntamenti ed eventuali condizioni verranno aggiunti appena pubblicati per VCW27."
+          "Non risulta ancora pubblicata una procedura generale di registrazione specifica per VCW27. Eventuali moduli “Reserve your spot” presenti nelle pagine del programma 2026 non vengono trattati come registrazioni 2027. Quando saranno disponibili modalità ufficiali per partecipanti e visitatori, verranno aggiunte qui."
         ],
         [
           "Organizzare il soggiorno",
-          "Se partecipi a più giornate conviene scegliere una base collegata bene con Venezia e lasciare margine agli spostamenti tra eventuali sedi diverse. Da Marghera puoi raggiungere la città con autobus o treno; le venue specifiche verranno aggiunte quando confermate."
+          "Le date 3–8 giugno sono già sufficienti per impostare viaggio e pernottamento. Se parteciperai a più giornate, conviene scegliere una base ben collegata con Venezia e mantenere flessibili gli spostamenti finché non saranno pubblicate le venue 2027. Da Marghera puoi raggiungere Venezia con autobus o treno."
         ]
       ],
-      "tip": "Le date 3–8 giugno e il tema Aqua Age sono già utili per pianificare il viaggio; evita invece di prenotare attività sulla base del programma o delle sedi 2026.",
+      "tip": "Le date 3–8 giugno, Aqua Age e Road to VCW27 sono già ufficiali. Per programma giornaliero, sedi e registrazioni usa invece soltanto le pagine esplicitamente aggiornate al 2027: il sito conserva ancora contenuti operativi dell’edizione 2026.",
       "official": [
         "Venice Climate Week – sito ufficiale",
         "https://veniceclimateweek.org/"
@@ -268,19 +268,23 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
         },
         {
           "question": "Qual è il tema annunciato per il 2027?",
-          "answer": "Il nuovo ciclo è stato presentato con il titolo Aqua Age."
+          "answer": "Il nuovo ciclo è stato presentato come “Aqua Age”. Il sito ufficiale ha inoltre aperto la sezione Road to VCW27."
+        },
+        {
+          "question": "Chi produce Venice Climate Week?",
+          "answer": "Il sito ufficiale indica il Future Food Institute come produttore dell’iniziativa sotto la guida di Sara Roversi; Riccardo Luna è indicato come creator e curator."
         },
         {
           "question": "Il programma 2027 è già disponibile?",
-          "answer": "Non ancora in forma completa e univocamente riferita al 2027. Speaker e calendario saranno aggiunti quando pubblicati ufficialmente."
+          "answer": "Non ancora come calendario completo chiaramente attribuito a VCW27. Le pagine dettagliate attualmente online riportano ancora il programma 2026, che non viene riutilizzato come se fosse già valido per il 2027."
         },
         {
           "question": "Dove si svolgono gli eventi?",
-          "answer": "La città ospitante è Venezia. Le singole sedi 2027 saranno aggiunte quando confermate ufficialmente."
+          "answer": "Venezia è la città ospitante confermata. Le singole sedi 2027 saranno aggiunte quando il programma ufficiale VCW27 le attribuirà esplicitamente alla nuova edizione."
         },
         {
-          "question": "Le registrazioni sono aperte?",
-          "answer": "Le modalità operative di registrazione per il 2027 non risultano ancora pubblicate in modo definitivo. Verifica il sito ufficiale."
+          "question": "Le registrazioni 2027 sono già disponibili?",
+          "answer": "Non risulta ancora pubblicata una procedura generale di registrazione specifica per VCW27. Verifica il sito ufficiale per gli aggiornamenti."
         }
       ],
       "stayCta": {
@@ -628,7 +632,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "Venice Climate Week 2027",
       "metaTitle": "Venice Climate Week 2027: Dates, Programme & Visitor Guide",
       "category": "Events",
-      "description": "Venice Climate Week 2027 takes place 3–8 June. Aqua Age theme, travel planning for international participants, with programme, venues and registration updates.",
+      "description": "Venice Climate Week 2027 runs 3–8 June in Venice. Aqua Age, the Road to VCW27 and a practical guide to official programme, venues and registration updates.",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "Venice and its lagoon, setting for Venice Climate Week",
@@ -637,35 +641,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "Venice Climate Week 2027 is scheduled for 3–8 June. The new cycle has been presented around “Aqua Age”, a theme closely connected to Venice and the relationship between water, cities, innovation and adaptation. This guide separates what is already confirmed from information still awaiting a clear 2027 publication.",
       "sections": [
         [
-          "2027 dates and Aqua Age",
-          "CONFIRMED: 3–8 June 2027, Venice. The City of Venice has presented the new cycle around Aqua Age, while the official website already displays VCW27 and the full dates."
+          "2027 dates, Aqua Age and the Road to VCW27",
+          "CONFIRMED: Venice Climate Week 2027 will take place in Venice from 3 to 8 June 2027. The City of Venice announced the launch of “Aqua Age” from New York, while the official website already labels the new edition VCW27 and has opened a “Road to VCW27” section. Water is framed as a theme of connection, memory and possibility, making the concept especially relevant to Venice."
         ],
         [
           "What is Venice Climate Week?",
-          "It is an international platform for discussion around climate, sustainability and transformation. The official website identifies the Future Food Institute as producer under Sara Roversi’s leadership and Riccardo Luna as creator and curator."
+          "Venice Climate Week is an international platform for dialogue around climate, sustainability, innovation and transformation. Its official About page identifies Riccardo Luna as creator and curator, and confirms that Venice Climate Week is produced by the Future Food Institute under the leadership of its founder and president Sara Roversi."
         ],
         [
           "Why Venice matters",
-          "Venice makes the water theme tangible: environment, heritage, mobility and adaptation are part of everyday urban life. For an international participant, the city itself adds context to the global discussion."
+          "Venice makes the Aqua Age theme tangible: water, heritage, mobility, economic activity and adaptation coexist every day in the same territory. For international participants, the event therefore links a global conversation to a city that functions as a particularly visible laboratory for environmental change."
         ],
         [
-          "2027 programme",
-          "UPDATING: we do not reuse the 2026 schedule as a 2027 programme. Speakers, panels, labs and the daily calendar will be added when clearly attributed to VCW27."
+          "2027 programme: what is already online",
+          "The official site has opened the Road to VCW27, but a complete day-by-day programme clearly assigned to the 2027 edition has not yet been published. Detailed programme pages currently indexed on the site still refer to VCW26/2026, so we do not carry over their speakers, panels or sessions. This section will be updated when the VCW27 programme is explicitly released."
         ],
         [
           "2027 venues",
-          "UPDATING: Venice is confirmed as host city, but a definitive venue list clearly assigned to the 2027 edition is not yet published. We therefore do not list previous-edition venues as confirmed."
+          "Venice is the confirmed host city, but there is not yet a definitive venue list clearly labelled for VCW27. We therefore do not automatically treat Procuratie, Ocean Space, Ca’ Foscari, IUAV, the Arsenale or other 2026 venues as confirmed for 2027."
         ],
         [
           "Registration and access",
-          "AWAITING OFFICIAL INFORMATION: 2027 registration, access rules for individual sessions and any conditions will be added once published."
+          "No general registration procedure specifically for VCW27 appears to have been published yet. “Reserve your spot” forms attached to 2026 programme pages are not treated as 2027 registration. Official visitor and participant procedures will be added here when released."
         ],
         [
           "Planning your stay",
-          "If you attend several days, choose a base with easy links into Venice and allow time for travel between possible venues. From Marghera you can reach Venice by bus or train."
+          "The confirmed 3–8 June dates are already enough to plan travel and accommodation. If you expect to attend several days, choose a base with straightforward connections to Venice and keep daily transfers flexible until the 2027 venues are announced. From Marghera, Venice is reachable by bus or train."
         ]
       ],
-      "tip": "The 3–8 June dates and Aqua Age theme are useful for travel planning now; do not rely on the 2026 programme or venues for a 2027 itinerary.",
+      "tip": "The 3–8 June dates, Aqua Age and the Road to VCW27 are already official. For the daily programme, venues and registration, rely only on pages explicitly updated for 2027: the website still retains operational content from the 2026 edition.",
       "official": [
         "Venice Climate Week – official website",
         "https://veniceclimateweek.org/"
@@ -685,23 +689,27 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "faq": [
         {
           "question": "When is Venice Climate Week 2027?",
-          "answer": "3–8 June 2027 in Venice."
+          "answer": "From 3 to 8 June 2027 in Venice."
         },
         {
-          "question": "What theme has been announced?",
-          "answer": "The new cycle has been presented as Aqua Age."
+          "question": "What theme has been announced for 2027?",
+          "answer": "The new cycle has been presented as “Aqua Age”, and the official website has opened its Road to VCW27 section."
+        },
+        {
+          "question": "Who produces Venice Climate Week?",
+          "answer": "The official website identifies the Future Food Institute as producer under the leadership of Sara Roversi, and Riccardo Luna as creator and curator."
         },
         {
           "question": "Is the 2027 programme available?",
-          "answer": "Not yet in a complete, clearly 2027-specific form. Speakers and the schedule will be added when officially published."
+          "answer": "Not yet as a complete schedule clearly assigned to VCW27. Detailed programme pages currently online still refer to the 2026 edition and are not reused as 2027 information."
         },
         {
           "question": "Where will the events take place?",
-          "answer": "Venice is the confirmed host city. Individual 2027 venues will be added when officially confirmed."
+          "answer": "Venice is the confirmed host city. Individual 2027 venues will be added when the official VCW27 programme explicitly confirms them."
         },
         {
-          "question": "Is registration open?",
-          "answer": "Final 2027 registration procedures have not yet been published. Check the official site."
+          "question": "Is 2027 registration open?",
+          "answer": "No general registration process specifically for VCW27 appears to have been published yet. Check the official website for updates."
         }
       ],
       "stayCta": {
@@ -1017,7 +1025,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "Venice Climate Week 2027",
       "metaTitle": "Venice Climate Week 2027: Termine, Programm & Teilnahme",
       "category": "Veranstaltungen",
-      "description": "Venice Climate Week 2027 vom 3.–8. Juni in Venedig: Aqua Age, Reiseplanung für internationale Teilnehmer sowie Updates zu Programm, Orten und Registrierung.",
+      "description": "Venice Climate Week 2027 vom 3.–8. Juni in Venedig: Aqua Age, Road to VCW27 sowie praktische Hinweise zu Programm, Orten und Registrierung.",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "Venice and its lagoon",
@@ -1026,35 +1034,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "Die Venice Climate Week 2027 findet vom 3. bis 8. Juni statt. Der neue Zyklus wurde unter dem Thema „Aqua Age“ vorgestellt. Diese Seite trennt bereits bestätigte Informationen klar von Programm, Veranstaltungsorten und Registrierung, die noch für 2027 veröffentlicht werden müssen.",
       "sections": [
         [
-          "Termin 2027 und Aqua Age",
-          "BESTÄTIGT: 3.–8. Juni 2027 in Venedig. Die Stadt Venedig kündigt den neuen Zyklus unter dem Titel Aqua Age an; die offizielle Website zeigt bereits VCW27 und die Termine."
+          "Termin 2027, Aqua Age und Road to VCW27",
+          "BESTÄTIGT: Venice Climate Week 2027 findet vom 3. bis 8. Juni 2027 in Venedig statt. Die Stadt Venedig kündigte den Start von „Aqua Age“ aus New York an; die offizielle Website bezeichnet die neue Ausgabe bereits als VCW27 und zeigt eine eigene Rubrik „Road to VCW27“. Wasser wird dort als Verbindung, Erinnerung und Möglichkeit thematisiert – ein Ansatz mit besonderem Bezug zu Venedig."
         ],
         [
           "Was ist Venice Climate Week?",
-          "Eine internationale Plattform für Klima, Nachhaltigkeit und Transformation. Die offizielle Seite nennt das Future Food Institute als Produzenten unter Sara Roversi sowie Riccardo Luna als Creator und Curator."
+          "Venice Climate Week ist eine internationale Plattform für Klima, Nachhaltigkeit, Innovation und Transformation. Auf der offiziellen About-Seite wird Riccardo Luna als Creator und Curator genannt; produziert wird Venice Climate Week vom Future Food Institute unter der Leitung seiner Gründerin und Präsidentin Sara Roversi."
         ],
         [
           "Warum Venedig?",
-          "In Venedig wird das Thema Wasser unmittelbar sichtbar: Umwelt, Kulturerbe, Mobilität und Anpassung sind Teil des Stadtalltags."
+          "In Venedig wird Aqua Age unmittelbar erfahrbar: Wasser, Kulturerbe, Mobilität, Wirtschaft und Anpassung treffen täglich aufeinander. Für internationale Teilnehmer verbindet die Veranstaltung damit eine globale Debatte mit einer Stadt, in der Umweltveränderungen besonders sichtbar sind."
         ],
         [
-          "Programm 2027",
-          "IN AKTUALISIERUNG: Das Programm 2026 wird nicht als 2027-Programm wiederverwendet. Speaker, Panels und Tagesplan folgen erst nach klarer offizieller Veröffentlichung."
+          "Programm 2027: was bereits online ist",
+          "Die offizielle Website hat Road to VCW27 bereits freigeschaltet, ein vollständiges Tagesprogramm, das eindeutig der Ausgabe 2027 zugeordnet ist, wurde jedoch noch nicht veröffentlicht. Die derzeit indexierten Detailseiten zum Programm beziehen sich weiterhin auf VCW26/2026; deren Speaker, Panels und Termine werden deshalb nicht als 2027-Daten übernommen."
         ],
         [
           "Veranstaltungsorte 2027",
-          "IN AKTUALISIERUNG: Venedig ist bestätigt, eine eindeutige vollständige Venue-Liste für 2027 jedoch noch nicht."
+          "Venedig ist als Gastgeberstadt bestätigt. Eine endgültige, ausdrücklich VCW27 zugeordnete Liste der Veranstaltungsorte ist jedoch noch nicht veröffentlicht. Orte der Ausgabe 2026 werden daher nicht automatisch für 2027 übernommen."
         ],
         [
           "Registrierung",
-          "NOCH NICHT VERÖFFENTLICHT: Registrierungsverfahren und Zugangsregeln für VCW27 werden ergänzt, sobald sie offiziell vorliegen."
+          "Eine allgemeine, ausdrücklich für VCW27 veröffentlichte Registrierung ist derzeit nicht erkennbar. Reservierungsformulare auf Programmseiten von 2026 werden nicht als Anmeldung für 2027 behandelt. Offizielle Zugangs- und Registrierungsinformationen werden ergänzt, sobald sie veröffentlicht sind."
         ],
         [
           "Aufenthalt planen",
-          "Bei mehreren Veranstaltungstagen ist eine gut angebundene Basis sinnvoll. Von Marghera erreichen Sie Venedig mit Bus oder Zug."
+          "Mit dem bestätigten Zeitraum 3.–8. Juni lassen sich Anreise und Unterkunft bereits planen. Für mehrere Veranstaltungstage ist eine gut angebundene Basis sinnvoll; die täglichen Wege sollten bis zur Veröffentlichung der 2027-Orte flexibel bleiben. Von Marghera gelangt man per Bus oder Bahn nach Venedig."
         ]
       ],
-      "tip": "3.–8. Juni und Aqua Age sind bestätigt; Programm, Orte und Registrierung erst nach offizieller 2027-Veröffentlichung planen.",
+      "tip": "3.–8. Juni, Aqua Age und Road to VCW27 sind bereits offiziell. Für Tagesprogramm, Veranstaltungsorte und Registrierung sollten nur Seiten verwendet werden, die ausdrücklich auf 2027 aktualisiert wurden; die Website enthält weiterhin operative Inhalte von 2026.",
       "official": [
         "Venice Climate Week – official website",
         "https://veniceclimateweek.org/"
@@ -1073,12 +1081,28 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       ],
       "faq": [
         {
-          "question": "Wann ist die Venice Climate Week 2027?",
-          "answer": "3.–8. Juni 2027 in Venedig."
+          "question": "Wann findet die Venice Climate Week 2027 statt?",
+          "answer": "Vom 3. bis 8. Juni 2027 in Venedig."
         },
         {
-          "question": "Ist das Programm 2027 veröffentlicht?",
-          "answer": "Noch nicht vollständig und eindeutig für 2027."
+          "question": "Welches Thema wurde für 2027 angekündigt?",
+          "answer": "Der neue Zyklus wurde als „Aqua Age“ vorgestellt; auf der offiziellen Website gibt es bereits die Rubrik Road to VCW27."
+        },
+        {
+          "question": "Wer produziert Venice Climate Week?",
+          "answer": "Laut offizieller Website wird die Veranstaltung vom Future Food Institute unter Leitung von Sara Roversi produziert; Riccardo Luna ist Creator und Curator."
+        },
+        {
+          "question": "Ist das Programm 2027 bereits verfügbar?",
+          "answer": "Noch nicht als vollständiges und eindeutig VCW27 zugeordnetes Programm. Die aktuell detaillierten Programmseiten betreffen weiterhin 2026 und werden nicht als 2027-Daten übernommen."
+        },
+        {
+          "question": "Wo finden die Veranstaltungen statt?",
+          "answer": "Venedig ist als Gastgeberstadt bestätigt. Einzelne Veranstaltungsorte werden ergänzt, sobald sie im offiziellen VCW27-Programm ausdrücklich bestätigt sind."
+        },
+        {
+          "question": "Ist die Registrierung für 2027 geöffnet?",
+          "answer": "Eine allgemeine, ausdrücklich VCW27 zugeordnete Registrierung ist noch nicht veröffentlicht. Bitte die offizielle Website prüfen."
         }
       ],
       "stayCta": {
@@ -1363,7 +1387,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "Venice Climate Week 2027",
       "metaTitle": "Venice Climate Week 2027 : dates, programme et guide",
       "category": "Événements",
-      "description": "Venice Climate Week 2027 du 3 au 8 juin à Venise : thème Aqua Age, préparation du séjour et mises à jour programme, lieux et inscriptions.",
+      "description": "Venice Climate Week 2027 à Venise du 3 au 8 juin : Aqua Age, Road to VCW27 et guide pratique pour le programme, les lieux et les inscriptions.",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "Venice and its lagoon",
@@ -1372,35 +1396,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "Venice Climate Week 2027 se déroulera du 3 au 8 juin. Le nouveau cycle a été présenté sous le thème « Aqua Age ». Cette page distingue les éléments déjà confirmés du programme, des lieux et des inscriptions encore en attente pour 2027.",
       "sections": [
         [
-          "Dates 2027 et Aqua Age",
-          "CONFIRMÉ : du 3 au 8 juin 2027 à Venise. La Ville de Venise présente le nouveau cycle sous le titre Aqua Age et le site officiel affiche déjà VCW27 avec les dates."
+          "Dates 2027, Aqua Age et Road to VCW27",
+          "CONFIRMÉ : Venice Climate Week 2027 aura lieu à Venise du 3 au 8 juin 2027. La Ville de Venise a annoncé depuis New York le lancement d’« Aqua Age », tandis que le site officiel identifie déjà la nouvelle édition comme VCW27 et propose une rubrique « Road to VCW27 ». L’eau y est présentée comme un élément de connexion, de mémoire et de possibilité, un thème particulièrement lié à Venise."
         ],
         [
           "Qu’est-ce que Venice Climate Week ?",
-          "Une plateforme internationale autour du climat, de la durabilité et de la transformation. Le site officiel indique le Future Food Institute comme producteur sous la direction de Sara Roversi et Riccardo Luna comme creator et curator."
+          "Venice Climate Week est une plateforme internationale consacrée au climat, à la durabilité, à l’innovation et aux transformations. La page officielle About présente Riccardo Luna comme creator et curator et confirme que Venice Climate Week est produite par Future Food Institute sous la direction de sa fondatrice et présidente Sara Roversi."
         ],
         [
           "Pourquoi Venise ?",
-          "À Venise, la question de l’eau est concrète : environnement, patrimoine, mobilité et adaptation font partie de la vie urbaine."
+          "Venise rend le thème Aqua Age très concret : eau, patrimoine, mobilité, activités économiques et adaptation coexistent quotidiennement sur le même territoire. Pour les participants internationaux, l’événement relie ainsi le débat mondial à une ville particulièrement exposée aux transformations environnementales."
         ],
         [
-          "Programme 2027",
-          "EN MISE À JOUR : le programme 2026 n’est pas réutilisé comme programme 2027. Intervenants, panels et calendrier seront ajoutés après publication officielle claire."
+          "Programme 2027 : ce qui est déjà en ligne",
+          "Le site officiel a ouvert Road to VCW27, mais aucun programme quotidien complet clairement attribué à l’édition 2027 n’est encore publié. Les pages détaillées actuellement indexées concernent toujours VCW26/2026 : leurs intervenants, panels et horaires ne sont donc pas repris comme informations 2027."
         ],
         [
           "Lieux 2027",
-          "EN MISE À JOUR : Venise est confirmée, mais la liste définitive des lieux 2027 n’est pas encore clairement publiée."
+          "Venise est la ville hôte confirmée, mais aucune liste définitive de lieux explicitement identifiée comme VCW27 n’est encore publiée. Nous ne reprenons donc pas automatiquement les lieux utilisés en 2026."
         ],
         [
           "Inscription",
-          "EN ATTENTE : les modalités d’inscription et d’accès VCW27 seront ajoutées après publication officielle."
+          "Aucune procédure générale d’inscription spécifiquement publiée pour VCW27 n’apparaît encore. Les formulaires de réservation associés aux pages du programme 2026 ne sont pas présentés comme inscriptions 2027. Les modalités officielles seront ajoutées dès leur publication."
         ],
         [
           "Organiser le séjour",
-          "Pour plusieurs journées, une base bien reliée est pratique. Depuis Marghera, rejoignez Venise en bus ou en train."
+          "Les dates confirmées du 3 au 8 juin permettent déjà de planifier transport et hébergement. Pour participer plusieurs jours, une base bien reliée à Venise est pratique, tout en gardant les déplacements quotidiens flexibles jusqu’à la publication des lieux 2027. Depuis Marghera, Venise est accessible en bus ou en train."
         ]
       ],
-      "tip": "Les dates 3–8 juin et Aqua Age sont confirmés ; attendez les informations 2027 pour programme, lieux et inscription.",
+      "tip": "Les dates du 3 au 8 juin, Aqua Age et Road to VCW27 sont déjà officiels. Pour le programme quotidien, les lieux et les inscriptions, utilisez uniquement les pages explicitement mises à jour pour 2027 : le site conserve encore des contenus opérationnels de 2026.",
       "official": [
         "Venice Climate Week – official website",
         "https://veniceclimateweek.org/"
@@ -1419,12 +1443,28 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       ],
       "faq": [
         {
-          "question": "Quand a lieu Venice Climate Week 2027 ?",
+          "question": "Quand se déroule Venice Climate Week 2027 ?",
           "answer": "Du 3 au 8 juin 2027 à Venise."
         },
         {
-          "question": "Le programme 2027 est-il publié ?",
-          "answer": "Pas encore de façon complète et clairement attribuée à 2027."
+          "question": "Quel thème est annoncé pour 2027 ?",
+          "answer": "Le nouveau cycle est présenté sous le titre « Aqua Age » et le site officiel a déjà ouvert sa rubrique Road to VCW27."
+        },
+        {
+          "question": "Qui produit Venice Climate Week ?",
+          "answer": "Le site officiel indique Future Food Institute comme producteur sous la direction de Sara Roversi et présente Riccardo Luna comme creator et curator."
+        },
+        {
+          "question": "Le programme 2027 est-il disponible ?",
+          "answer": "Pas encore sous la forme d’un calendrier complet clairement attribué à VCW27. Les pages détaillées actuellement en ligne se rapportent encore à 2026 et ne sont pas reprises comme informations 2027."
+        },
+        {
+          "question": "Où auront lieu les événements ?",
+          "answer": "Venise est la ville hôte confirmée. Les lieux 2027 seront ajoutés lorsqu’ils seront explicitement confirmés dans le programme officiel VCW27."
+        },
+        {
+          "question": "Les inscriptions 2027 sont-elles ouvertes ?",
+          "answer": "Aucune procédure générale d’inscription spécifiquement attribuée à VCW27 n’est encore publiée. Consultez le site officiel pour les mises à jour."
         }
       ],
       "stayCta": {
@@ -1709,7 +1749,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "Venice Climate Week 2027",
       "metaTitle": "Venice Climate Week 2027: fechas, programa y guía",
       "category": "Eventos",
-      "description": "Venice Climate Week 2027 del 3 al 8 de junio: tema Aqua Age, planificación para participantes y actualizaciones de programa, sedes y registro.",
+      "description": "Venice Climate Week 2027 en Venecia del 3 al 8 de junio: Aqua Age, Road to VCW27 y guía práctica de programa, sedes y registro oficiales.",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "Venice and its lagoon",
@@ -1718,35 +1758,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "Venice Climate Week 2027 se celebrará del 3 al 8 de junio. El nuevo ciclo se ha presentado bajo el tema «Aqua Age». Esta guía separa la información ya confirmada del programa, sedes y registro todavía pendientes para 2027.",
       "sections": [
         [
-          "Fechas 2027 y Aqua Age",
-          "CONFIRMADO: 3–8 de junio de 2027 en Venecia. El Ayuntamiento presenta el nuevo ciclo bajo el título Aqua Age y la web oficial ya muestra VCW27 y las fechas."
+          "Fechas 2027, Aqua Age y Road to VCW27",
+          "CONFIRMADO: Venice Climate Week 2027 se celebrará en Venecia del 3 al 8 de junio de 2027. El Ayuntamiento de Venecia anunció desde Nueva York el lanzamiento de «Aqua Age», mientras la web oficial ya identifica la nueva edición como VCW27 y ha abierto la sección «Road to VCW27». El agua se presenta como elemento de conexión, memoria y posibilidad, un enfoque especialmente vinculado con Venecia."
         ],
         [
           "Qué es Venice Climate Week",
-          "Una plataforma internacional sobre clima, sostenibilidad y transformación. La web oficial identifica Future Food Institute como productor bajo la dirección de Sara Roversi y a Riccardo Luna como creator y curator."
+          "Venice Climate Week es una plataforma internacional de diálogo sobre clima, sostenibilidad, innovación y transformación. La página oficial About identifica a Riccardo Luna como creator y curator y confirma que Venice Climate Week está producida por Future Food Institute bajo la dirección de su fundadora y presidenta Sara Roversi."
         ],
         [
           "Por qué Venecia",
-          "En Venecia el tema del agua es tangible: medio ambiente, patrimonio, movilidad y adaptación forman parte de la vida urbana."
+          "Venecia convierte Aqua Age en un tema tangible: agua, patrimonio, movilidad, actividades económicas y adaptación conviven cada día en el mismo territorio. Para participantes internacionales, la semana conecta así el debate global con una ciudad donde las transformaciones ambientales son especialmente visibles."
         ],
         [
-          "Programa 2027",
-          "EN ACTUALIZACIÓN: no reutilizamos el programa 2026 como si fuera 2027. Ponentes, paneles y calendario se añadirán tras una publicación oficial clara."
+          "Programa 2027: qué está ya online",
+          "La web oficial ya ha abierto Road to VCW27, pero todavía no publica un programa diario completo claramente atribuido a la edición 2027. Las páginas detalladas de programa actualmente indexadas siguen correspondiendo a VCW26/2026, por lo que no trasladamos sus ponentes, paneles u horarios al 2027."
         ],
         [
           "Sedes 2027",
-          "EN ACTUALIZACIÓN: Venecia está confirmada, pero aún no hay una lista definitiva de sedes claramente atribuida a 2027."
+          "Venecia es la ciudad anfitriona confirmada, pero todavía no hay una lista definitiva de sedes identificada expresamente como VCW27. Por eso no reutilizamos automáticamente las sedes de 2026."
         ],
         [
           "Registro",
-          "PENDIENTE: el registro y las condiciones de acceso de VCW27 se añadirán cuando se publiquen oficialmente."
+          "Todavía no aparece publicada una modalidad general de registro específica para VCW27. Los formularios de reserva vinculados a páginas del programa 2026 no se presentan como registros 2027. Añadiremos las modalidades oficiales cuando se publiquen."
         ],
         [
           "Organizar la estancia",
-          "Para varios días conviene una base bien comunicada. Desde Marghera se llega a Venecia en autobús o tren."
+          "Las fechas confirmadas del 3 al 8 de junio ya permiten organizar viaje y alojamiento. Para participar varios días conviene escoger una base bien conectada con Venecia y mantener flexibles los desplazamientos hasta conocer las sedes 2027. Desde Marghera se puede llegar a Venecia en autobús o tren."
         ]
       ],
-      "tip": "Las fechas 3–8 de junio y Aqua Age están confirmadas; espera la publicación 2027 para programa, sedes y registro.",
+      "tip": "Las fechas 3–8 de junio, Aqua Age y Road to VCW27 ya son oficiales. Para programa diario, sedes y registro, utiliza solo páginas actualizadas expresamente para 2027: la web todavía conserva contenidos operativos de 2026.",
       "official": [
         "Venice Climate Week – official website",
         "https://veniceclimateweek.org/"
@@ -1769,8 +1809,24 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
           "answer": "Del 3 al 8 de junio de 2027 en Venecia."
         },
         {
-          "question": "¿Está publicado el programa 2027?",
-          "answer": "Todavía no de forma completa y claramente atribuida a 2027."
+          "question": "¿Qué tema se ha anunciado para 2027?",
+          "answer": "El nuevo ciclo se ha presentado como «Aqua Age» y la web oficial ya ha abierto la sección Road to VCW27."
+        },
+        {
+          "question": "¿Quién produce Venice Climate Week?",
+          "answer": "La web oficial identifica a Future Food Institute como productor bajo la dirección de Sara Roversi y a Riccardo Luna como creator y curator."
+        },
+        {
+          "question": "¿Ya está disponible el programa 2027?",
+          "answer": "Todavía no como calendario completo claramente atribuido a VCW27. Las páginas detalladas actualmente online siguen correspondiendo a 2026 y no se reutilizan como información 2027."
+        },
+        {
+          "question": "¿Dónde se celebrarán los eventos?",
+          "answer": "Venecia es la ciudad anfitriona confirmada. Las sedes 2027 se añadirán cuando el programa oficial VCW27 las confirme expresamente."
+        },
+        {
+          "question": "¿Ya está abierto el registro 2027?",
+          "answer": "Todavía no se ha publicado una modalidad general de registro específica para VCW27. Consulta la web oficial para las actualizaciones."
         }
       ],
       "stayCta": {
@@ -2055,7 +2111,7 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "title": "2027 Venice Climate Week",
       "metaTitle": "2027 Venice Climate Week：日期、节目与参加指南",
       "category": "活动",
-      "description": "2027 Venice Climate Week 将于6月3日至8日举行，主题 Aqua Age；提供国际参与者行程建议，并持续更新节目、场地与注册信息。",
+      "description": "2027 Venice Climate Week 将于6月3日至8日在威尼斯举行：Aqua Age、Road to VCW27，以及节目、场地和注册的官方更新指南。",
       "image": "/images/scopri-venezia-michael-heise.webp",
       "fallbackImage": "/images/venezia.webp",
       "imageAlt": "威尼斯与泻湖",
@@ -2064,35 +2120,35 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "lead": "2027 Venice Climate Week 将于6月3日至8日在威尼斯举行。新一届活动以“Aqua Age”为主题。本指南会把已经确认的信息与仍待官方公布的节目、场地和注册安排明确区分。",
       "sections": [
         [
-          "2027日期与 Aqua Age",
-          "已确认：2027年6月3日至8日，威尼斯。威尼斯市政府以 Aqua Age 介绍新一届活动，官网也已显示 VCW27 和完整日期。"
+          "2027日期、Aqua Age 与 Road to VCW27",
+          "已确认：2027 Venice Climate Week 将于2027年6月3日至8日在威尼斯举行。威尼斯市政府宣布 Aqua Age 从纽约启动；官方网站也已经将新一届标记为 VCW27，并上线 Road to VCW27 专区。官方叙事把水作为连接、记忆与可能性的象征，这一主题与威尼斯尤其契合。"
         ],
         [
           "Venice Climate Week 是什么？",
-          "这是一个围绕气候、可持续发展与转型的国际交流平台。官网注明 Future Food Institute 为活动制作方，由 Sara Roversi 领导，Riccardo Luna 为 creator 和 curator。"
+          "Venice Climate Week 是围绕气候、可持续发展、创新与转型展开的国际交流平台。官方 About 页面将 Riccardo Luna 列为 creator 和 curator，并确认活动由 Sara Roversi 创立并担任主席的 Future Food Institute 负责制作。"
         ],
         [
           "为什么是威尼斯",
-          "在威尼斯，水并非抽象议题：环境、文化遗产、交通和适应都与城市日常紧密相连。"
+          "在威尼斯，Aqua Age 并不是抽象概念：水、文化遗产、交通、经济活动和适应能力每天都在同一片城市环境中交织。对国际参与者而言，这使全球气候讨论与一座直接面对环境变化的城市产生联系。"
         ],
         [
-          "2027节目",
-          "更新中：不会把2026节目直接当作2027内容。演讲嘉宾、讨论和日程将在明确官方发布后更新。"
+          "2027节目：目前已经上线什么",
+          "官网已经上线 Road to VCW27，但尚未发布明确归属于2027届的完整逐日节目。当前可检索到的详细节目页面仍标注 VCW26/2026，因此其中的嘉宾、论坛和时间不会被直接当作2027信息使用。"
         ],
         [
           "2027场地",
-          "更新中：威尼斯已确认，但目前尚未看到清晰归属于2027届的完整场地清单。"
+          "威尼斯作为举办城市已经确认，但尚未看到明确标注为 VCW27 的最终场地清单。因此不会自动把2026年的 Procuratie、Ocean Space、Ca’ Foscari、IUAV、Arsenale 等场地视为2027已确认场地。"
         ],
         [
           "注册与入场",
-          "待官方公布：VCW27 注册方式与单场活动入场条件将在官方发布后补充。"
+          "目前尚未看到专门针对 VCW27 发布的统一注册流程。2026节目页面中的 Reserve your spot 表单不会被视为2027报名入口。待官方发布2027参与和入场方式后再更新。"
         ],
         [
           "住宿与交通",
-          "如果参加多日活动，选择交通便利的住宿更实用。从 Marghera 可乘公交或火车进入威尼斯。"
+          "6月3日至8日的日期已经足以提前安排交通和住宿。如果计划参加多天活动，建议选择与威尼斯交通方便的住宿地点，并在2027场地正式公布前保留每天行程的灵活性。从 Marghera 可乘公交或火车进入威尼斯。"
         ]
       ],
-      "tip": "6月3–8日和 Aqua Age 已确认；节目、场地和注册请等待2027官方发布。",
+      "tip": "6月3日至8日、Aqua Age 和 Road to VCW27 已经是官方信息。逐日节目、具体场地和注册方式则只会采用明确更新到2027的页面；官网目前仍保留2026届的操作信息。",
       "official": [
         "Venice Climate Week – official website",
         "https://veniceclimateweek.org/"
@@ -2112,11 +2168,27 @@ export const journal2027Expansion:Record<EventLang,Record<Journal2027ExpansionSl
       "faq": [
         {
           "question": "2027 Venice Climate Week 什么时候举行？",
-          "answer": "2027年6月3日至8日，威尼斯。"
+          "answer": "2027年6月3日至8日在威尼斯举行。"
         },
         {
-          "question": "2027节目公布了吗？",
-          "answer": "尚未有完整且明确属于2027届的官方日程。"
+          "question": "2027年的主题是什么？",
+          "answer": "新一届以 Aqua Age 为主题，官网也已上线 Road to VCW27 专区。"
+        },
+        {
+          "question": "谁负责制作 Venice Climate Week？",
+          "answer": "官网说明活动由 Future Food Institute 制作，并由 Sara Roversi 领导；Riccardo Luna 为 creator 和 curator。"
+        },
+        {
+          "question": "2027完整节目已经公布了吗？",
+          "answer": "尚未看到明确归属于 VCW27 的完整日程。官网当前的详细节目页面仍属于2026届，因此不会作为2027信息使用。"
+        },
+        {
+          "question": "2027活动在哪里举行？",
+          "answer": "威尼斯作为举办城市已经确认。具体场地会在 VCW27 官方节目明确发布后补充。"
+        },
+        {
+          "question": "2027注册已经开放了吗？",
+          "answer": "目前尚未看到专门针对 VCW27 发布的统一注册流程，请关注官网更新。"
         }
       ],
       "stayCta": {
