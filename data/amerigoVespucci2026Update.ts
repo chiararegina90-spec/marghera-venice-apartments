@@ -110,6 +110,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Le disponibilità pubblicate per le visite del 2, 3 e 4 ottobre risultano attualmente esaurite. Controlla esclusivamente il portale ufficiale Tour Vespucci per eventuali nuovi slot o comunicazioni."
       ],
       [
+        "Posso vedere Amerigo Vespucci anche senza prenotazione?",
+        "Sì. La prenotazione serve per salire a bordo. Durante la tappa la nave è ormeggiata a Riva di San Biasio, davanti al Museo Storico Navale, e può essere ammirata dall’esterno nel rispetto di eventuali limitazioni operative o di sicurezza dell’area."
+      ],
+      [
         "Quante persone posso prenotare?",
         "È possibile registrare fino a un massimo di 4 persone per singola prenotazione. Se siete più persone nella stessa prenotazione, dovete presentarvi insieme all’ingresso."
       ],
@@ -224,6 +228,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       [
         "How do I check whether slots are available?",
         "The published slots for the 2, 3 and 4 October visits are currently fully booked. Check only the official Tour Vespucci portal for any new slots or organiser announcements."
+      ],
+      [
+        "Can I see Amerigo Vespucci without a reservation?",
+        "Yes. A reservation is required to board the ship. During the Venice stop it is berthed at Riva di San Biasio, in front of the Naval History Museum, and can be viewed from shore subject to any operational or security restrictions in the area."
       ],
       [
         "How many people can I book for?",
@@ -342,6 +350,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Die veröffentlichten Besuchstermine am 2., 3. und 4. Oktober sind derzeit ausgebucht. Prüfen Sie ausschließlich das offizielle Tour-Vespucci-Portal auf mögliche neue Plätze oder Mitteilungen."
       ],
       [
+        "Kann ich die Amerigo Vespucci auch ohne Reservierung sehen?",
+        "Ja. Eine Reservierung ist nur für das Boarding erforderlich. Während des Venedig-Aufenthalts liegt das Schiff an der Riva di San Biasio vor dem Museo Storico Navale und kann von Land aus gesehen werden, vorbehaltlich möglicher Betriebs- oder Sicherheitsbeschränkungen."
+      ],
+      [
         "Für wie viele Personen kann ich reservieren?",
         "Pro Reservierung können maximal 4 Personen registriert werden. Alle Teilnehmer einer gemeinsamen Reservierung müssen zusammen erscheinen."
       ],
@@ -456,6 +468,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       [
         "Comment vérifier s’il reste des créneaux disponibles ?",
         "Les créneaux publiés pour les visites des 2, 3 et 4 octobre sont actuellement complets. Consultez uniquement le portail officiel Tour Vespucci pour d’éventuels nouveaux créneaux ou communications."
+      ],
+      [
+        "Puis-je voir l’Amerigo Vespucci sans réservation ?",
+        "Oui. La réservation est nécessaire pour monter à bord. Pendant l’escale, le navire est amarré à Riva di San Biasio, devant le Museo Storico Navale, et peut être admiré depuis la terre sous réserve d’éventuelles restrictions opérationnelles ou de sécurité."
       ],
       [
         "Combien de personnes puis-je réserver ?",
@@ -574,6 +590,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Las disponibilidades publicadas para las visitas de los días 2, 3 y 4 de octubre están actualmente agotadas. Consulta exclusivamente el portal oficial Tour Vespucci para posibles nuevos cupos o comunicaciones."
       ],
       [
+        "¿Puedo ver el Amerigo Vespucci sin reserva?",
+        "Sí. La reserva es necesaria para subir a bordo. Durante la escala el barco está atracado en Riva di San Biasio, frente al Museo Storico Navale, y puede verse desde tierra respetando posibles limitaciones operativas o de seguridad."
+      ],
+      [
         "¿Para cuántas personas puedo reservar?",
         "Se pueden registrar hasta 4 personas en una sola reserva. Todos los participantes de una reserva múltiple deben presentarse juntos."
       ],
@@ -688,6 +708,10 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       [
         "如何查看是否还有可预约时段？",
         "10月2、3、4日已公布的参观名额目前已经约满。如有新增时段或主办方公告，请仅查看 Tour Vespucci 官方网站。"
+      ],
+      [
+        "没有预约也能看到 Amerigo Vespucci 吗？",
+        "可以。预约仅用于登船。威尼斯停靠期间，舰船停泊在 Riva di San Biasio、Museo Storico Navale 前方，可从岸边观赏，但请遵守现场可能实施的运营或安全限制。"
       ],
       [
         "一次可以预约几个人？",
