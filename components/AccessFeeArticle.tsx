@@ -34,7 +34,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
   };
   const articleSchema={
     '@context':'https://schema.org','@type':'Article',headline:c.h1,description:c.metaDescription,
-    datePublished:'2026-09-10',dateModified:'2026-09-10',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
+    datePublished:'2026-09-10',dateModified:'2026-09-28',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},
     image:`${BASE}/images/access-fee-cover.png`
@@ -73,6 +73,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
 
       <section className="py-16 sm:py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
         <div className="space-y-5">{c.intro.map((p,i)=><p key={p} className={i===0?'font-serif text-3xl leading-relaxed text-navy':'text-lg leading-8 text-slate-700'}>{p}</p>)}</div>
+        <div className="mt-10 rounded-[2rem] border-2 border-gold bg-white p-7 shadow-soft sm:p-9"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{c.newsUpdate.title}</p><p className="mt-4 text-lg leading-8 text-slate-700">{c.newsUpdate.body}</p><a href={c.newsUpdate.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex font-bold text-navy underline decoration-gold underline-offset-4">{c.newsUpdate.sourceLabel} ↗</a></div>
         <div className="mt-10 rounded-[2rem] border border-gold/30 bg-cream p-7 sm:p-9"><h2 className="font-serif text-3xl text-navy">{c.currentTitle}</h2><div className="mt-5 grid gap-3">{c.currentItems.map((item,i)=><div key={item} className="flex gap-3 text-base leading-7 text-slate-700"><span aria-hidden="true">{i<3?'✅':'⏳'}</span><span>{item}</span></div>)}</div></div>
       </div></section>
 

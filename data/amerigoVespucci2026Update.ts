@@ -13,9 +13,9 @@ type VespucciUpdate={
 
 export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>={
   "it": {
-    "description": "Amerigo Vespucci a Venezia dal 2 al 7 ottobre 2026. Visite gratuite il 2, 3 e 4 ottobre: orari, prenotazioni nominali e informazioni utili.",
-    "subtitle": "Amerigo Vespucci sarà a Venezia dal 2 al 7 ottobre 2026. Le visite pubbliche sono previste il 2, 3 e 4 ottobre dalle 14:00 alle 19:00, con prenotazione nominale obbligatoria sul portale ufficiale Tour Vespucci.",
-    "lead": "La tappa veneziana dell’Amerigo Vespucci resta confermata dal 2 al 7 ottobre 2026, ma le visite pubbliche attualmente previste si concentrano nei primi tre giorni: 2, 3 e 4 ottobre. L’accesso è gratuito, con posti limitati e prenotazione nominale obbligatoria attraverso il portale ufficiale Tour Vespucci.",
+    "description": "Amerigo Vespucci a Venezia dal 2 al 7 ottobre 2026. Visite pubbliche 2–4 ottobre: prenotazioni attualmente esaurite, orari, ormeggio e informazioni aggiornate.",
+    "subtitle": "Amerigo Vespucci sarà a Venezia dal 2 al 7 ottobre 2026. Le visite pubbliche del 2, 3 e 4 ottobre, dalle 14:00 alle 19:00, risultano attualmente esaurite; eventuali nuove disponibilità vanno verificate solo sul portale ufficiale Tour Vespucci.",
+    "lead": "La tappa veneziana dell’Amerigo Vespucci resta confermata dal 2 al 7 ottobre 2026. Le visite pubbliche previste il 2, 3 e 4 ottobre sono gratuite ma le prenotazioni risultano attualmente esaurite. La nave resterà comunque ormeggiata a Riva di San Biasio durante la tappa e può essere ammirata dall’esterno.",
     "sections": [
       [
         "Tappa a Venezia e visite pubbliche: due date da non confondere",
@@ -27,7 +27,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Prenotazione obbligatoria: come funziona la visita",
-        "La visita è gratuita ma richiede una prenotazione nominale sul portale ufficiale Tour Vespucci. Si sceglie data e slot disponibile, si inseriscono i dati personali e si possono registrare fino a 4 persone per singola prenotazione. La conferma arriva via e-mail con un QR code unico, inviato alla persona che prenota. Se la prenotazione comprende più partecipanti, tutti devono presentarsi insieme. Dopo la registrazione non è possibile modificare né l’orario né i nominativi. I posti sono limitati e la disponibilità degli slot varia in tempo reale."
+        "La visita è gratuita ma accessibile esclusivamente con prenotazione nominale tramite il portale ufficiale Tour Vespucci. Le disponibilità pubblicate per Venezia risultano attualmente esaurite. Chi possiede già una prenotazione deve conservare il QR code ricevuto via e-mail e rispettare lo slot assegnato. Ogni prenotazione può includere fino a 4 persone e, in caso di più partecipanti, tutti devono presentarsi insieme. Dopo la registrazione non è possibile modificare orario o nominativi."
       ],
       [
         "Dove si trova la nave e come si accede",
@@ -43,7 +43,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Come organizzarsi da Marghera",
-        "Lasciare l’auto al parcheggio dell’appartamento e raggiungere Venezia in autobus o treno resta una soluzione pratica. Ora che sede e modalità di accesso sono definite, conviene comunque controllare il portale Tour Vespucci poco prima di partire per verificare disponibilità dello slot ed eventuali aggiornamenti operativi."
+        "Lasciare l’auto al parcheggio dell’appartamento e raggiungere Venezia in autobus o treno resta una soluzione pratica. Le visite a bordo risultano attualmente esaurite: prima di partire controlla comunque il portale Tour Vespucci per eventuali nuove disponibilità, variazioni operative o comunicazioni dell’organizzazione."
       ],
       [
         "Una nave scuola ancora operativa",
@@ -81,7 +81,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Disponibilità",
-        "Posti limitati — verifica la disponibilità degli slot in tempo reale sul portale ufficiale"
+        "Prenotazioni attualmente esaurite — controlla il portale ufficiale per eventuali nuove disponibilità"
       ],
       [
         "Evento collegato",
@@ -99,15 +99,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Serve prenotare?",
-        "Sì. La prenotazione nominale è obbligatoria e deve essere effettuata tramite il portale ufficiale Tour Vespucci."
+        "Sì. L’accesso a bordo richiede una prenotazione nominale tramite il portale ufficiale Tour Vespucci; le disponibilità pubblicate per Venezia risultano attualmente esaurite."
       ],
       [
         "Quanto costa visitare Amerigo Vespucci?",
-        "La visita è gratuita, ma è necessario prenotare uno degli slot disponibili sul portale ufficiale."
+        "La visita è gratuita, ma l’accesso a bordo richiede una prenotazione nominale. Le disponibilità pubblicate per Venezia risultano attualmente esaurite."
       ],
       [
         "Come verifico se ci sono posti disponibili?",
-        "La disponibilità degli slot cambia in tempo reale. Controlla direttamente il portale ufficiale Tour Vespucci, unico canale autorizzato per la prenotazione delle visite."
+        "Le disponibilità pubblicate per le visite del 2, 3 e 4 ottobre risultano attualmente esaurite. Controlla esclusivamente il portale ufficiale Tour Vespucci per eventuali nuovi slot o comunicazioni."
+      ],
+      [
+        "Posso vedere Amerigo Vespucci anche senza prenotazione?",
+        "Sì. La prenotazione serve per salire a bordo. Durante la tappa la nave è ormeggiata a Riva di San Biasio, davanti al Museo Storico Navale, e può essere ammirata dall’esterno nel rispetto di eventuali limitazioni operative o di sicurezza dell’area."
       ],
       [
         "Quante persone posso prenotare?",
@@ -122,16 +126,16 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Passeggini e carrozzine non sono consentiti a bordo e possono essere lasciati in banchina."
       ]
     ],
-    "tip": "Prenotazione obbligatoria — i posti sono limitati. Verifica la disponibilità degli slot in tempo reale sul portale ufficiale Tour Vespucci e conserva il QR code ricevuto via e-mail.",
+    "tip": "Le visite a bordo per Venezia risultano attualmente esaurite. Se hai già una prenotazione conserva il QR code e rispetta lo slot assegnato; per eventuali nuove disponibilità o comunicazioni consulta solo il portale ufficiale Tour Vespucci.",
     "bookingCta": {
-      "label": "Verifica disponibilità e prenota sul sito ufficiale Tour Vespucci",
+      "label": "Controlla eventuali aggiornamenti sul sito ufficiale Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   },
   "en": {
-    "description": "Amerigo Vespucci in Venice 2–7 October 2026. Free public visits on 2, 3 and 4 October: times, named booking and practical visitor information.",
-    "subtitle": "Amerigo Vespucci will be in Venice from 2 to 7 October 2026. Public visits are scheduled for 2, 3 and 4 October from 2:00 PM to 7:00 PM, with mandatory named booking through the official Tour Vespucci portal.",
-    "lead": "Amerigo Vespucci’s Venice stop remains confirmed for 2–7 October 2026, while the currently announced public visits take place on the first three days: 2, 3 and 4 October. Entry is free, places are limited and prior named booking through the official Tour Vespucci portal is mandatory.",
+    "description": "Amerigo Vespucci in Venice 2–7 October 2026. Public visits 2–4 October are currently fully booked: times, berth and updated visitor information.",
+    "subtitle": "Amerigo Vespucci will be in Venice from 2 to 7 October 2026. Public visits on 2, 3 and 4 October, 2:00–7:00 PM, are currently fully booked; check only the official Tour Vespucci portal for any new availability.",
+    "lead": "Amerigo Vespucci’s Venice stop remains confirmed for 2–7 October 2026. Public visits on 2, 3 and 4 October are free, but the published booking availability is currently fully booked. The ship will still be berthed at Riva di San Biasio during the Venice stop and can be seen from shore.",
     "sections": [
       [
         "Venice stop and public visits: two date ranges to keep separate",
@@ -143,7 +147,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Booking is mandatory: how the visit works",
-        "The visit is free but requires a named reservation through the official Tour Vespucci portal. Choose a date and available time slot, enter the visitors’ personal details and register up to 4 people in one booking. Confirmation arrives by e-mail with one QR code sent to the person making the reservation. If several people are included, everyone must arrive together. After registration, neither the visit time nor the registered names can be changed. Places are limited and slot availability changes in real time."
+        "The visit is free but access on board is only possible with a named reservation through the official Tour Vespucci portal. The published Venice availability is currently fully booked. If you already have a booking, keep the QR code sent by e-mail and follow your assigned time slot. Up to 4 people may be included in one reservation and all participants must arrive together. Booking time and registered names cannot be changed after registration."
       ],
       [
         "Where the ship is and how to enter",
@@ -159,7 +163,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Planning from Marghera",
-        "Leaving the car at the apartment and travelling to Venice by bus or train remains a practical option. Now that the venue and access arrangements are published, check the Tour Vespucci portal shortly before leaving for real-time slot availability and any operational updates."
+        "Leaving the car at the apartment and travelling to Venice by bus or train remains a practical option. Onboard visits are currently fully booked, so check the official Tour Vespucci portal before leaving only for newly released availability, operational changes or organiser updates."
       ],
       [
         "A working training ship at 95",
@@ -197,7 +201,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Availability",
-        "Limited places — check real-time slot availability on the official portal"
+        "Bookings currently fully booked — check the official portal for any new availability"
       ],
       [
         "Related event",
@@ -215,15 +219,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Do I need to book?",
-        "Yes. A named reservation is mandatory and must be made through the official Tour Vespucci portal."
+        "Yes. Boarding requires a named reservation through the official Tour Vespucci portal; the published Venice availability is currently fully booked."
       ],
       [
         "How much does it cost to visit Amerigo Vespucci?",
-        "The visit is free, but you must reserve one of the available time slots on the official portal."
+        "The visit is free, but boarding requires a named reservation. The published Venice availability is currently fully booked."
       ],
       [
         "How do I check whether slots are available?",
-        "Slot availability changes in real time. Check the official Tour Vespucci portal directly; it is the authorised channel for booking visits."
+        "The published slots for the 2, 3 and 4 October visits are currently fully booked. Check only the official Tour Vespucci portal for any new slots or organiser announcements."
+      ],
+      [
+        "Can I see Amerigo Vespucci without a reservation?",
+        "Yes. A reservation is required to board the ship. During the Venice stop it is berthed at Riva di San Biasio, in front of the Naval History Museum, and can be viewed from shore subject to any operational or security restrictions in the area."
       ],
       [
         "How many people can I book for?",
@@ -238,16 +246,16 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Pushchairs and prams are not allowed on board and may be left on the quay."
       ]
     ],
-    "tip": "Booking is mandatory — places are limited. Check real-time slot availability on the official Tour Vespucci portal and keep the QR code sent by e-mail.",
+    "tip": "Onboard visits in Venice are currently fully booked. If you already have a reservation, keep your QR code and follow the assigned slot; check only the official Tour Vespucci portal for any new availability or announcements.",
     "bookingCta": {
-      "label": "Check availability and book on the official Tour Vespucci website",
+      "label": "Check official Tour Vespucci updates",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   },
   "de": {
-    "description": "Amerigo Vespucci in Venedig 2.–7. Oktober 2026. Kostenlose Besuche am 2., 3. und 4. Oktober: Zeiten, namentliche Reservierung und praktische Hinweise.",
-    "subtitle": "Amerigo Vespucci liegt vom 2. bis 7. Oktober 2026 in Venedig. Publikumsbesuche sind am 2., 3. und 4. Oktober von 14:00 bis 19:00 Uhr möglich; eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal ist Pflicht.",
-    "lead": "Der Aufenthalt der Amerigo Vespucci in Venedig bleibt für 2.–7. Oktober 2026 bestätigt. Die derzeit angekündigten Publikumsbesuche finden jedoch nur am 2., 3. und 4. Oktober statt. Der Eintritt ist kostenlos, die Plätze sind begrenzt und eine vorherige namentliche Reservierung über das offizielle Tour-Vespucci-Portal ist verpflichtend.",
+    "description": "Amerigo Vespucci in Venedig 2.–7. Oktober 2026. Besuche 2.–4. Oktober sind derzeit ausgebucht: Zeiten, Liegeplatz und aktuelle Besucherinfos.",
+    "subtitle": "Amerigo Vespucci liegt vom 2. bis 7. Oktober 2026 in Venedig. Die Publikumsbesuche am 2., 3. und 4. Oktober von 14:00 bis 19:00 Uhr sind derzeit ausgebucht; mögliche neue Verfügbarkeiten nur im offiziellen Tour-Vespucci-Portal prüfen.",
+    "lead": "Der Aufenthalt der Amerigo Vespucci in Venedig bleibt für den 2.–7. Oktober 2026 bestätigt. Die kostenlosen Publikumsbesuche am 2., 3. und 4. Oktober sind derzeit ausgebucht. Das Schiff bleibt während des Venedig-Aufenthalts an der Riva di San Biasio und kann von Land aus gesehen werden.",
     "sections": [
       [
         "Venedig-Aufenthalt und Publikumsbesuche: zwei Zeiträume",
@@ -259,7 +267,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Reservierung erforderlich: so funktioniert der Besuch",
-        "Der Besuch ist kostenlos, erfordert aber eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal. Wählen Sie Datum und verfügbares Zeitfenster, geben Sie die persönlichen Daten ein und registrieren Sie bis zu 4 Personen pro Buchung. Die Bestätigung kommt per E-Mail mit einem einzigen QR-Code an die buchende Person. Bei mehreren Teilnehmern müssen alle gemeinsam erscheinen. Nach der Registrierung können weder Uhrzeit noch Namen geändert werden. Die Plätze sind begrenzt und die Verfügbarkeit der Zeitfenster ändert sich in Echtzeit."
+        "Der Besuch ist kostenlos, der Zugang an Bord ist jedoch ausschließlich mit namentlicher Reservierung über das offizielle Tour-Vespucci-Portal möglich. Die veröffentlichten Termine für Venedig sind derzeit ausgebucht. Wer bereits reserviert hat, muss den per E-Mail erhaltenen QR-Code aufbewahren und das zugewiesene Zeitfenster einhalten. Pro Reservierung können bis zu 4 Personen registriert werden; alle Teilnehmer müssen gemeinsam erscheinen. Nach der Registrierung können Uhrzeit und Namen nicht geändert werden."
       ],
       [
         "Liegeplatz und Zugang",
@@ -275,7 +283,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Planung ab Marghera",
-        "Das Auto am Apartment zu lassen und mit Bus oder Zug nach Venedig zu fahren bleibt praktisch. Da Ort und Zugangsregeln nun veröffentlicht sind, sollten Sie kurz vor der Abfahrt im Tour-Vespucci-Portal die aktuelle Slot-Verfügbarkeit und mögliche operative Änderungen prüfen."
+        "Das Auto am Apartment zu lassen und mit Bus oder Zug nach Venedig zu fahren bleibt praktisch. Die Besuche an Bord sind derzeit ausgebucht; prüfen Sie vor der Abfahrt das offizielle Tour-Vespucci-Portal nur auf mögliche neue Verfügbarkeiten, operative Änderungen oder Mitteilungen."
       ],
       [
         "95 Jahre und weiterhin im Dienst",
@@ -313,7 +321,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Verfügbarkeit",
-        "Begrenzte Plätze — aktuelle Slot-Verfügbarkeit im offiziellen Portal prüfen"
+        "Reservierungen derzeit ausgebucht — mögliche neue Verfügbarkeiten im offiziellen Portal prüfen"
       ],
       [
         "Begleitveranstaltung",
@@ -331,15 +339,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Muss ich reservieren?",
-        "Ja. Eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal ist verpflichtend."
+        "Ja. Für den Zugang an Bord ist eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal erforderlich; die veröffentlichten Termine für Venedig sind derzeit ausgebucht."
       ],
       [
         "Was kostet der Besuch der Amerigo Vespucci?",
-        "Der Besuch ist kostenlos, aber ein verfügbares Zeitfenster muss im offiziellen Portal reserviert werden."
+        "Der Besuch ist kostenlos, für den Zugang an Bord ist jedoch eine namentliche Reservierung erforderlich. Die veröffentlichten Termine für Venedig sind derzeit ausgebucht."
       ],
       [
         "Wie prüfe ich, ob Plätze verfügbar sind?",
-        "Die Verfügbarkeit der Zeitfenster ändert sich in Echtzeit. Prüfen Sie sie direkt im offiziellen Tour-Vespucci-Portal, dem autorisierten Kanal für die Reservierung der Besuche."
+        "Die veröffentlichten Besuchstermine am 2., 3. und 4. Oktober sind derzeit ausgebucht. Prüfen Sie ausschließlich das offizielle Tour-Vespucci-Portal auf mögliche neue Plätze oder Mitteilungen."
+      ],
+      [
+        "Kann ich die Amerigo Vespucci auch ohne Reservierung sehen?",
+        "Ja. Eine Reservierung ist nur für das Boarding erforderlich. Während des Venedig-Aufenthalts liegt das Schiff an der Riva di San Biasio vor dem Museo Storico Navale und kann von Land aus gesehen werden, vorbehaltlich möglicher Betriebs- oder Sicherheitsbeschränkungen."
       ],
       [
         "Für wie viele Personen kann ich reservieren?",
@@ -354,16 +366,16 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Nein. Kinderwagen und Buggys sind an Bord nicht erlaubt und können am Kai abgestellt werden."
       ]
     ],
-    "tip": "Reservierung erforderlich — die Plätze sind begrenzt. Prüfen Sie die aktuelle Slot-Verfügbarkeit im offiziellen Tour-Vespucci-Portal und bewahren Sie den per E-Mail erhaltenen QR-Code auf.",
+    "tip": "Die Besuche an Bord in Venedig sind derzeit ausgebucht. Wenn Sie bereits reserviert haben, bewahren Sie den QR-Code auf und halten Sie Ihr Zeitfenster ein; mögliche neue Verfügbarkeiten oder Mitteilungen nur im offiziellen Tour-Vespucci-Portal prüfen.",
     "bookingCta": {
-      "label": "Verfügbarkeit prüfen und auf der offiziellen Tour-Vespucci-Seite reservieren",
+      "label": "Offizielle Tour-Vespucci-Updates prüfen",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   },
   "fr": {
-    "description": "Amerigo Vespucci à Venise du 2 au 7 octobre 2026. Visites gratuites les 2, 3 et 4 octobre : horaires, réservation nominative et informations pratiques.",
-    "subtitle": "Amerigo Vespucci sera à Venise du 2 au 7 octobre 2026. Les visites publiques sont prévues les 2, 3 et 4 octobre de 14:00 à 19:00, avec réservation nominative obligatoire sur le portail officiel Tour Vespucci.",
-    "lead": "L’escale vénitienne de l’Amerigo Vespucci reste confirmée du 2 au 7 octobre 2026, tandis que les visites publiques actuellement annoncées se concentrent sur les 2, 3 et 4 octobre. L’accès est gratuit, les places sont limitées et une réservation nominative préalable via le portail officiel Tour Vespucci est obligatoire.",
+    "description": "Amerigo Vespucci à Venise du 2 au 7 octobre 2026. Visites 2–4 octobre actuellement complètes : horaires, amarrage et informations à jour.",
+    "subtitle": "Amerigo Vespucci sera à Venise du 2 au 7 octobre 2026. Les visites publiques des 2, 3 et 4 octobre, de 14:00 à 19:00, sont actuellement complètes ; consultez uniquement le portail officiel Tour Vespucci pour toute nouvelle disponibilité.",
+    "lead": "L’escale vénitienne de l’Amerigo Vespucci reste confirmée du 2 au 7 octobre 2026. Les visites publiques gratuites des 2, 3 et 4 octobre sont actuellement complètes. Le navire restera amarré à Riva di San Biasio pendant l’escale et pourra être admiré depuis la terre.",
     "sections": [
       [
         "Escale à Venise et visites publiques : deux périodes à distinguer",
@@ -375,7 +387,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Réservation obligatoire : comment fonctionne la visite",
-        "La visite est gratuite mais nécessite une réservation nominative sur le portail officiel Tour Vespucci. Choisissez la date et un créneau disponible, saisissez les données personnelles et enregistrez jusqu’à 4 personnes par réservation. La confirmation arrive par e-mail avec un QR code unique envoyé à la personne qui réserve. Si plusieurs participants sont inclus, tous doivent se présenter ensemble. Après l’enregistrement, il n’est plus possible de modifier l’heure ni les noms. Les places sont limitées et la disponibilité des créneaux évolue en temps réel."
+        "La visite est gratuite, mais l’accès à bord est possible uniquement avec une réservation nominative via le portail officiel Tour Vespucci. Les disponibilités publiées pour Venise sont actuellement complètes. Si vous avez déjà réservé, conservez le QR code reçu par e-mail et respectez le créneau attribué. Une réservation peut comprendre jusqu’à 4 personnes et tous les participants doivent se présenter ensemble. Après l’enregistrement, l’heure et les noms ne peuvent plus être modifiés."
       ],
       [
         "Où se trouve le navire et comment accéder",
@@ -391,7 +403,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Venir depuis Marghera",
-        "Laisser la voiture à l’appartement et rejoindre Venise en bus ou en train reste pratique. Maintenant que le lieu et les modalités d’accès sont publiés, consultez le portail Tour Vespucci peu avant le départ pour vérifier la disponibilité en temps réel et d’éventuelles mises à jour opérationnelles."
+        "Laisser la voiture à l’appartement et rejoindre Venise en bus ou en train reste pratique. Les visites à bord sont actuellement complètes ; avant de partir, consultez le portail officiel Tour Vespucci uniquement pour d’éventuelles nouvelles disponibilités, modifications opérationnelles ou communications."
       ],
       [
         "Un navire-école toujours en service à 95 ans",
@@ -429,7 +441,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Disponibilité",
-        "Places limitées — vérifiez la disponibilité des créneaux en temps réel sur le portail officiel"
+        "Réservations actuellement complètes — vérifiez le portail officiel pour toute nouvelle disponibilité"
       ],
       [
         "Événement associé",
@@ -447,15 +459,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Faut-il réserver ?",
-        "Oui. La réservation nominative est obligatoire et doit être effectuée via le portail officiel Tour Vespucci."
+        "Oui. L’accès à bord nécessite une réservation nominative via le portail officiel Tour Vespucci ; les disponibilités publiées pour Venise sont actuellement complètes."
       ],
       [
         "Combien coûte la visite de l’Amerigo Vespucci ?",
-        "La visite est gratuite, mais il faut réserver l’un des créneaux disponibles sur le portail officiel."
+        "La visite est gratuite, mais l’accès à bord nécessite une réservation nominative. Les disponibilités publiées pour Venise sont actuellement complètes."
       ],
       [
         "Comment vérifier s’il reste des créneaux disponibles ?",
-        "La disponibilité des créneaux évolue en temps réel. Consultez directement le portail officiel Tour Vespucci, seul canal autorisé pour réserver les visites."
+        "Les créneaux publiés pour les visites des 2, 3 et 4 octobre sont actuellement complets. Consultez uniquement le portail officiel Tour Vespucci pour d’éventuels nouveaux créneaux ou communications."
+      ],
+      [
+        "Puis-je voir l’Amerigo Vespucci sans réservation ?",
+        "Oui. La réservation est nécessaire pour monter à bord. Pendant l’escale, le navire est amarré à Riva di San Biasio, devant le Museo Storico Navale, et peut être admiré depuis la terre sous réserve d’éventuelles restrictions opérationnelles ou de sécurité."
       ],
       [
         "Combien de personnes puis-je réserver ?",
@@ -470,16 +486,16 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Non. Les poussettes et landaus ne sont pas autorisés à bord et peuvent être laissés sur le quai."
       ]
     ],
-    "tip": "Réservation obligatoire — les places sont limitées. Vérifiez la disponibilité des créneaux en temps réel sur le portail officiel Tour Vespucci et conservez le QR code reçu par e-mail.",
+    "tip": "Les visites à bord à Venise sont actuellement complètes. Si vous avez déjà réservé, conservez votre QR code et respectez le créneau attribué ; consultez uniquement le portail officiel Tour Vespucci pour toute nouvelle disponibilité ou communication.",
     "bookingCta": {
-      "label": "Vérifier les disponibilités et réserver sur le site officiel Tour Vespucci",
+      "label": "Consulter les mises à jour officielles Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   },
   "es": {
-    "description": "Amerigo Vespucci en Venecia del 2 al 7 de octubre de 2026. Visitas gratuitas los días 2, 3 y 4: horarios, reserva nominal e información práctica.",
-    "subtitle": "Amerigo Vespucci estará en Venecia del 2 al 7 de octubre de 2026. Las visitas públicas están previstas los días 2, 3 y 4 de octubre de 14:00 a 19:00, con reserva nominal obligatoria en el portal oficial Tour Vespucci.",
-    "lead": "La escala veneciana del Amerigo Vespucci sigue confirmada del 2 al 7 de octubre de 2026, mientras que las visitas públicas actualmente anunciadas se concentran en los días 2, 3 y 4. El acceso es gratuito, las plazas son limitadas y es obligatoria la reserva nominal previa a través del portal oficial Tour Vespucci.",
+    "description": "Amerigo Vespucci en Venecia del 2 al 7 de octubre de 2026. Visitas 2–4 de octubre actualmente agotadas: horarios, atraque e información actualizada.",
+    "subtitle": "Amerigo Vespucci estará en Venecia del 2 al 7 de octubre de 2026. Las visitas públicas de los días 2, 3 y 4 de octubre, de 14:00 a 19:00, están actualmente agotadas; consulta solo el portal oficial Tour Vespucci para posibles nuevas disponibilidades.",
+    "lead": "La escala veneciana del Amerigo Vespucci sigue confirmada del 2 al 7 de octubre de 2026. Las visitas públicas gratuitas de los días 2, 3 y 4 están actualmente agotadas. El barco seguirá atracado en Riva di San Biasio durante la escala y podrá verse desde tierra.",
     "sections": [
       [
         "Escala en Venecia y visitas públicas: dos periodos distintos",
@@ -491,7 +507,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Reserva obligatoria: cómo funciona la visita",
-        "La visita es gratuita, pero requiere una reserva nominal en el portal oficial Tour Vespucci. Elige la fecha y una franja disponible, introduce los datos personales y registra hasta 4 personas por reserva. La confirmación llega por correo electrónico con un único QR code enviado a la persona que realiza la reserva. Si hay varios participantes, todos deben presentarse juntos. Después del registro no se pueden modificar ni el horario ni los nombres. Las plazas son limitadas y la disponibilidad de franjas cambia en tiempo real."
+        "La visita es gratuita, pero el acceso a bordo solo es posible con reserva nominal a través del portal oficial Tour Vespucci. Las disponibilidades publicadas para Venecia están actualmente agotadas. Si ya tienes una reserva, conserva el QR code recibido por correo electrónico y respeta la franja asignada. Cada reserva puede incluir hasta 4 personas y todos los participantes deben presentarse juntos. Después del registro no se pueden modificar ni la hora ni los nombres."
       ],
       [
         "Dónde está el barco y cómo acceder",
@@ -507,7 +523,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Cómo organizarse desde Marghera",
-        "Dejar el coche en el apartamento y llegar a Venecia en autobús o tren sigue siendo una opción práctica. Ahora que se conocen la ubicación y las normas de acceso, consulta el portal Tour Vespucci poco antes de salir para comprobar la disponibilidad en tiempo real y posibles actualizaciones operativas."
+        "Dejar el coche en el apartamento y llegar a Venecia en autobús o tren sigue siendo una opción práctica. Las visitas a bordo están actualmente agotadas; antes de salir consulta el portal oficial Tour Vespucci solo para posibles nuevas disponibilidades, cambios operativos o comunicaciones."
       ],
       [
         "Un buque escuela todavía operativo",
@@ -545,7 +561,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "Disponibilidad",
-        "Plazas limitadas — comprueba la disponibilidad de franjas en tiempo real en el portal oficial"
+        "Reservas actualmente agotadas — consulta el portal oficial para posibles nuevas disponibilidades"
       ],
       [
         "Evento relacionado",
@@ -563,15 +579,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "¿Hay que reservar?",
-        "Sí. La reserva nominal es obligatoria y debe realizarse a través del portal oficial Tour Vespucci."
+        "Sí. Para subir a bordo es obligatoria una reserva nominal a través del portal oficial Tour Vespucci; las disponibilidades publicadas para Venecia están actualmente agotadas."
       ],
       [
         "¿Cuánto cuesta visitar Amerigo Vespucci?",
-        "La visita es gratuita, pero es necesario reservar una de las franjas disponibles en el portal oficial."
+        "La visita es gratuita, pero para subir a bordo hace falta una reserva nominal. Las disponibilidades publicadas para Venecia están actualmente agotadas."
       ],
       [
         "¿Cómo compruebo si hay plazas disponibles?",
-        "La disponibilidad de las franjas cambia en tiempo real. Compruébala directamente en el portal oficial Tour Vespucci, único canal autorizado para reservar las visitas."
+        "Las disponibilidades publicadas para las visitas de los días 2, 3 y 4 de octubre están actualmente agotadas. Consulta exclusivamente el portal oficial Tour Vespucci para posibles nuevos cupos o comunicaciones."
+      ],
+      [
+        "¿Puedo ver el Amerigo Vespucci sin reserva?",
+        "Sí. La reserva es necesaria para subir a bordo. Durante la escala el barco está atracado en Riva di San Biasio, frente al Museo Storico Navale, y puede verse desde tierra respetando posibles limitaciones operativas o de seguridad."
       ],
       [
         "¿Para cuántas personas puedo reservar?",
@@ -586,16 +606,16 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "No. Los cochecitos y sillas de paseo no están permitidos a bordo y pueden dejarse en el muelle."
       ]
     ],
-    "tip": "Reserva obligatoria — las plazas son limitadas. Comprueba la disponibilidad de las franjas en tiempo real en el portal oficial Tour Vespucci y conserva el QR code recibido por correo electrónico.",
+    "tip": "Las visitas a bordo en Venecia están actualmente agotadas. Si ya tienes reserva, conserva el QR code y respeta la franja asignada; consulta solo el portal oficial Tour Vespucci para posibles nuevas disponibilidades o comunicaciones.",
     "bookingCta": {
-      "label": "Comprobar disponibilidad y reservar en la web oficial Tour Vespucci",
+      "label": "Consultar actualizaciones oficiales de Tour Vespucci",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   },
   "zh": {
-    "description": "Amerigo Vespucci 2026年10月2日至7日停靠威尼斯；公众参观为10月2、3、4日，免费但需实名预约，并附开放时间与实用信息。",
-    "subtitle": "Amerigo Vespucci 将于2026年10月2日至7日停靠威尼斯。公众登船参观安排在10月2、3、4日14:00–19:00，必须通过 Tour Vespucci 官方网站实名预约。",
-    "lead": "Amerigo Vespucci 威尼斯站仍为2026年10月2日至7日，但目前公布的公众登船参观集中在10月2、3、4日。参观免费、名额有限，并且必须提前通过 Tour Vespucci 官方网站实名预约。",
+    "description": "Amerigo Vespucci 2026年10月2日至7日停靠威尼斯；10月2、3、4日公众登船参观目前已约满，并附开放时间、停泊地点与最新信息。",
+    "subtitle": "Amerigo Vespucci 将于2026年10月2日至7日停靠威尼斯。10月2、3、4日14:00–19:00的公众登船参观目前已约满；如有新增名额，请仅以 Tour Vespucci 官方网站信息为准。",
+    "lead": "Amerigo Vespucci 威尼斯站仍确认为2026年10月2日至7日。10月2、3、4日的免费公众登船参观目前已约满。停靠期间，舰船仍将停泊在 Riva di San Biasio，未预约登船的游客也可从岸边观赏。",
     "sections": [
       [
         "威尼斯停靠时间与公众参观日期需要区分",
@@ -607,7 +627,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "必须预约：参观流程",
-        "参观免费，但必须通过 Tour Vespucci 官方网站实名预约。选择日期和可用时段，填写个人资料，每次预约最多可登记4人。确认邮件会发送一个唯一 QR code 给预约人；多人预约时所有参与者必须一起到场。完成预约后不能修改参观时间或姓名。名额有限，时段余位会实时变化。"
+        "参观免费，但登船必须通过 Tour Vespucci 官方网站进行实名预约。目前威尼斯站已公布的预约名额已经约满。已经预约的游客应保存电子邮件中的 QR code，并按已分配的时间段到场。每次预约最多4人，多人预约时所有参与者必须一起到场。完成预约后不能修改参观时间或姓名。"
       ],
       [
         "停泊地点与入场方式",
@@ -623,7 +643,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "从 Marghera 如何安排",
-        "把车停在公寓，再乘公交或火车进入威尼斯仍是实用方式。现在停泊地点和入场规则已经公布，出发前仍建议查看 Tour Vespucci 官方网站，确认实时余位和任何临时运营调整。"
+        "把车停在公寓，再乘公交或火车进入威尼斯仍是实用方式。目前登船参观已经约满；出发前可查看 Tour Vespucci 官方网站，仅确认是否新增名额、临时运营变化或主办方公告。"
       ],
       [
         "95岁仍在服役的训练舰",
@@ -661,7 +681,7 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "名额",
-        "名额有限 — 请在官网实时查看可用时段"
+        "目前预约已满 — 如有新增名额请查看官方网站"
       ],
       [
         "相关活动",
@@ -679,15 +699,19 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
       ],
       [
         "需要预约吗？",
-        "需要。必须通过 Tour Vespucci 官方网站进行实名预约。"
+        "需要。登船必须通过 Tour Vespucci 官方网站进行实名预约；目前威尼斯站已公布的名额已经约满。"
       ],
       [
         "参观 Amerigo Vespucci 多少钱？",
-        "参观免费，但必须在官网预约可用时段。"
+        "参观免费，但登船必须实名预约。目前威尼斯站已公布的预约名额已经约满。"
       ],
       [
         "如何查看是否还有可预约时段？",
-        "可预约时段会实时变化。请直接查看 Tour Vespucci 官方网站；该网站是预约参观的官方授权渠道。"
+        "10月2、3、4日已公布的参观名额目前已经约满。如有新增时段或主办方公告，请仅查看 Tour Vespucci 官方网站。"
+      ],
+      [
+        "没有预约也能看到 Amerigo Vespucci 吗？",
+        "可以。预约仅用于登船。威尼斯停靠期间，舰船停泊在 Riva di San Biasio、Museo Storico Navale 前方，可从岸边观赏，但请遵守现场可能实施的运营或安全限制。"
       ],
       [
         "一次可以预约几个人？",
@@ -702,9 +726,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "不可以。婴儿车和推车不能带上船，但可留在码头。"
       ]
     ],
-    "tip": "必须实名预约 — 名额有限。请在 Tour Vespucci 官方网站实时查看可用时段，并保存通过邮件收到的 QR code。",
+    "tip": "威尼斯站登船参观目前已约满。已经预约的游客请保存 QR code 并按指定时段到场；如有新增名额或公告，请仅查看 Tour Vespucci 官方网站。",
     "bookingCta": {
-      "label": "在 Tour Vespucci 官方网站查看余位并预约",
+      "label": "查看 Tour Vespucci 官方最新信息",
       "href": "https://tourvespucci.it/venezia-2-7-ottobre-2026/"
     }
   }
