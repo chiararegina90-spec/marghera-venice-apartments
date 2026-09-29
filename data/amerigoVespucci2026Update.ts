@@ -13,9 +13,9 @@ type VespucciUpdate={
 
 export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>={
   "it": {
-    "description": "Amerigo Vespucci a Venezia dal 2 al 7 ottobre 2026. Visite pubbliche 2–4 ottobre: prenotazioni attualmente esaurite, orari, ormeggio e informazioni aggiornate.",
-    "subtitle": "Amerigo Vespucci sarà a Venezia dal 2 al 7 ottobre 2026. Le visite pubbliche del 2, 3 e 4 ottobre, dalle 14:00 alle 19:00, risultano attualmente esaurite; eventuali nuove disponibilità vanno verificate solo sul portale ufficiale Tour Vespucci.",
-    "lead": "La tappa veneziana dell’Amerigo Vespucci resta confermata dal 2 al 7 ottobre 2026. Le visite pubbliche previste il 2, 3 e 4 ottobre sono gratuite ma le prenotazioni risultano attualmente esaurite. La nave resterà comunque ormeggiata a Riva di San Biasio durante la tappa e può essere ammirata dall’esterno.",
+    "description": "Amerigo Vespucci a Venezia dal 2 al 7 ottobre 2026: visite 2–4 ottobre 14:00–19:00, Riva di San Biasio e prenotazioni attualmente esaurite.",
+    "subtitle": "Amerigo Vespucci torna a Venezia dal 2 al 7 ottobre 2026, ormeggiata a Riva di San Biasio davanti al Museo Storico Navale. Le visite pubbliche del 2, 3 e 4 ottobre si svolgono dalle 14:00 alle 19:00, con ultimo accesso alle 18:30: l’ingresso è gratuito, con prenotazione nominale obbligatoria, e le disponibilità risultano attualmente esaurite.",
+    "lead": "Per chi ha già una prenotazione restano valide le modalità indicate dal portale ufficiale Tour Vespucci, compreso il QR code ricevuto dopo la registrazione. Chi non ha trovato posto può comunque seguire la presenza della nave nell’area di Riva di San Biasio, nel rispetto di eventuali limitazioni operative e di sicurezza.",
     "sections": [
       [
         "Tappa a Venezia e visite pubbliche: due date da non confondere",
@@ -98,28 +98,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Le visite pubbliche sono previste il 2, 3 e 4 ottobre 2026, dalle 14:00 alle 19:00, con ultimo accesso alle 18:30. La nave resta a Venezia fino al 7 ottobre."
       ],
       [
-        "Serve prenotare?",
-        "Sì. L’accesso a bordo richiede una prenotazione nominale tramite il portale ufficiale Tour Vespucci; le disponibilità pubblicate per Venezia risultano attualmente esaurite."
+        "Serve prenotare la visita a bordo?",
+        "Sì. L’accesso alle visite pubbliche di Venezia è gratuito ma richiede prenotazione nominale tramite il portale ufficiale Tour Vespucci. Le disponibilità pubblicate per il 2, 3 e 4 ottobre risultano attualmente esaurite."
       ],
       [
         "Quanto costa visitare Amerigo Vespucci?",
         "La visita è gratuita, ma l’accesso a bordo richiede una prenotazione nominale. Le disponibilità pubblicate per Venezia risultano attualmente esaurite."
       ],
       [
-        "Come verifico se ci sono posti disponibili?",
-        "Le disponibilità pubblicate per le visite del 2, 3 e 4 ottobre risultano attualmente esaurite. Controlla esclusivamente il portale ufficiale Tour Vespucci per eventuali nuovi slot o comunicazioni."
+        "Ci sono ancora posti disponibili?",
+        "Le disponibilità pubblicate risultano attualmente esaurite. Controlla esclusivamente il portale ufficiale Tour Vespucci per eventuali nuove disponibilità o comunicazioni."
       ],
       [
         "Posso vedere Amerigo Vespucci anche senza prenotazione?",
         "Sì. La prenotazione serve per salire a bordo. Durante la tappa la nave è ormeggiata a Riva di San Biasio, davanti al Museo Storico Navale, e può essere ammirata dall’esterno nel rispetto di eventuali limitazioni operative o di sicurezza dell’area."
       ],
       [
-        "Quante persone posso prenotare?",
-        "È possibile registrare fino a un massimo di 4 persone per singola prenotazione. Se siete più persone nella stessa prenotazione, dovete presentarvi insieme all’ingresso."
+        "Come funziona la prenotazione?",
+        "La registrazione è nominale e può comprendere fino a 4 persone. Dopo la conferma viene inviato il QR code necessario per l’accesso; se la prenotazione comprende più partecipanti, tutti devono presentarsi insieme all’ingresso."
       ],
       [
         "Dove sarà ormeggiata Amerigo Vespucci?",
-        "A Riva di San Biasio, davanti al Museo Storico Navale di Venezia. L’accredito per la visita avviene presso il Villaggio IN Italia."
+        "A Riva di San Biasio, davanti al Museo Storico Navale, nell’area di Castello vicina all’Arsenale."
       ],
       [
         "Posso portare un passeggino?",
@@ -133,9 +133,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
     }
   },
   "en": {
-    "description": "Amerigo Vespucci in Venice 2–7 October 2026. Public visits 2–4 October are currently fully booked: times, berth and updated visitor information.",
-    "subtitle": "Amerigo Vespucci will be in Venice from 2 to 7 October 2026. Public visits on 2, 3 and 4 October, 2:00–7:00 PM, are currently fully booked; check only the official Tour Vespucci portal for any new availability.",
-    "lead": "Amerigo Vespucci’s Venice stop remains confirmed for 2–7 October 2026. Public visits on 2, 3 and 4 October are free, but the published booking availability is currently fully booked. The ship will still be berthed at Riva di San Biasio during the Venice stop and can be seen from shore.",
+    "description": "Amerigo Vespucci in Venice 2–7 October 2026: public visits 2–4 October, 2:00–7:00 PM, Riva di San Biasio and currently fully booked.",
+    "subtitle": "Amerigo Vespucci returns to Venice from 2 to 7 October 2026, berthed at Riva di San Biasio in front of the Naval History Museum. Public visits on 2, 3 and 4 October run from 2:00 PM to 7:00 PM, with last admission at 6:30 PM: entry is free, named booking is mandatory, and visits are currently fully booked.",
+    "lead": "If you already have a booking, follow the arrangements shown on the official Tour Vespucci portal and keep the QR code received after registration. If you were unable to book, you can still follow the ship’s presence in the Riva di San Biasio area, subject to any operational or security restrictions.",
     "sections": [
       [
         "Venice stop and public visits: two date ranges to keep separate",
@@ -218,28 +218,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Public visits are scheduled for 2, 3 and 4 October 2026 from 2:00 PM to 7:00 PM, with last admission at 6:30 PM. The ship remains in Venice until 7 October."
       ],
       [
-        "Do I need to book?",
-        "Yes. Boarding requires a named reservation through the official Tour Vespucci portal; the published Venice availability is currently fully booked."
+        "Do I need to book an onboard visit?",
+        "Yes. Public visits in Venice are free, but boarding requires a named reservation through the official Tour Vespucci portal. The published availability for 2, 3 and 4 October is currently fully booked."
       ],
       [
         "How much does it cost to visit Amerigo Vespucci?",
         "The visit is free, but boarding requires a named reservation. The published Venice availability is currently fully booked."
       ],
       [
-        "How do I check whether slots are available?",
-        "The published slots for the 2, 3 and 4 October visits are currently fully booked. Check only the official Tour Vespucci portal for any new slots or organiser announcements."
+        "Are there any places still available?",
+        "The published availability is currently fully booked. Check only the official Tour Vespucci portal for any newly released availability or organiser announcements."
       ],
       [
         "Can I see Amerigo Vespucci without a reservation?",
         "Yes. A reservation is required to board the ship. During the Venice stop it is berthed at Riva di San Biasio, in front of the Naval History Museum, and can be viewed from shore subject to any operational or security restrictions in the area."
       ],
       [
-        "How many people can I book for?",
-        "Up to 4 people can be registered in a single booking. Everyone included in the booking must arrive together."
+        "How does the booking work?",
+        "Registration is named and may include up to 4 people. After confirmation, the QR code required for entry is sent by e-mail; if several participants are included, everyone must arrive together at the entrance."
       ],
       [
         "Where will Amerigo Vespucci be moored?",
-        "At Riva di San Biasio, in front of the Naval History Museum of Venice. Visitor check-in is at Villaggio IN Italia."
+        "At Riva di San Biasio, in front of the Naval History Museum, in the Castello area near the Arsenal."
       ],
       [
         "Can I bring a pushchair?",
@@ -253,9 +253,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
     }
   },
   "de": {
-    "description": "Amerigo Vespucci in Venedig 2.–7. Oktober 2026. Besuche 2.–4. Oktober sind derzeit ausgebucht: Zeiten, Liegeplatz und aktuelle Besucherinfos.",
-    "subtitle": "Amerigo Vespucci liegt vom 2. bis 7. Oktober 2026 in Venedig. Die Publikumsbesuche am 2., 3. und 4. Oktober von 14:00 bis 19:00 Uhr sind derzeit ausgebucht; mögliche neue Verfügbarkeiten nur im offiziellen Tour-Vespucci-Portal prüfen.",
-    "lead": "Der Aufenthalt der Amerigo Vespucci in Venedig bleibt für den 2.–7. Oktober 2026 bestätigt. Die kostenlosen Publikumsbesuche am 2., 3. und 4. Oktober sind derzeit ausgebucht. Das Schiff bleibt während des Venedig-Aufenthalts an der Riva di San Biasio und kann von Land aus gesehen werden.",
+    "description": "Amerigo Vespucci in Venedig 2.–7. Oktober 2026: Besuche 2.–4. Oktober 14:00–19:00 Uhr, Riva di San Biasio und derzeit ausgebucht.",
+    "subtitle": "Amerigo Vespucci kehrt vom 2. bis 7. Oktober 2026 nach Venedig zurück und liegt an der Riva di San Biasio vor dem Museo Storico Navale. Die Publikumsbesuche am 2., 3. und 4. Oktober finden von 14:00 bis 19:00 Uhr statt, letzter Einlass ist um 18:30 Uhr: Der Eintritt ist kostenlos, eine namentliche Reservierung ist Pflicht und die Termine sind derzeit ausgebucht.",
+    "lead": "Wer bereits reserviert hat, folgt den Angaben im offiziellen Tour-Vespucci-Portal und bewahrt den nach der Registrierung erhaltenen QR-Code auf. Wer keinen Platz bekommen hat, kann die Präsenz des Schiffes im Bereich Riva di San Biasio verfolgen, vorbehaltlich möglicher Betriebs- oder Sicherheitsbeschränkungen.",
     "sections": [
       [
         "Venedig-Aufenthalt und Publikumsbesuche: zwei Zeiträume",
@@ -338,28 +338,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Publikumsbesuche sind am 2., 3. und 4. Oktober 2026 von 14:00 bis 19:00 Uhr möglich; letzter Einlass ist um 18:30 Uhr. Das Schiff bleibt bis 7. Oktober in Venedig."
       ],
       [
-        "Muss ich reservieren?",
-        "Ja. Für den Zugang an Bord ist eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal erforderlich; die veröffentlichten Termine für Venedig sind derzeit ausgebucht."
+        "Muss ich den Besuch an Bord reservieren?",
+        "Ja. Die Publikumsbesuche in Venedig sind kostenlos, für den Zugang an Bord ist jedoch eine namentliche Reservierung über das offizielle Tour-Vespucci-Portal erforderlich. Die veröffentlichten Termine am 2., 3. und 4. Oktober sind derzeit ausgebucht."
       ],
       [
         "Was kostet der Besuch der Amerigo Vespucci?",
         "Der Besuch ist kostenlos, für den Zugang an Bord ist jedoch eine namentliche Reservierung erforderlich. Die veröffentlichten Termine für Venedig sind derzeit ausgebucht."
       ],
       [
-        "Wie prüfe ich, ob Plätze verfügbar sind?",
-        "Die veröffentlichten Besuchstermine am 2., 3. und 4. Oktober sind derzeit ausgebucht. Prüfen Sie ausschließlich das offizielle Tour-Vespucci-Portal auf mögliche neue Plätze oder Mitteilungen."
+        "Sind noch Plätze verfügbar?",
+        "Die veröffentlichten Termine sind derzeit ausgebucht. Prüfen Sie ausschließlich das offizielle Tour-Vespucci-Portal auf mögliche neue Verfügbarkeiten oder Mitteilungen des Veranstalters."
       ],
       [
         "Kann ich die Amerigo Vespucci auch ohne Reservierung sehen?",
         "Ja. Eine Reservierung ist nur für das Boarding erforderlich. Während des Venedig-Aufenthalts liegt das Schiff an der Riva di San Biasio vor dem Museo Storico Navale und kann von Land aus gesehen werden, vorbehaltlich möglicher Betriebs- oder Sicherheitsbeschränkungen."
       ],
       [
-        "Für wie viele Personen kann ich reservieren?",
-        "Pro Reservierung können maximal 4 Personen registriert werden. Alle Teilnehmer einer gemeinsamen Reservierung müssen zusammen erscheinen."
+        "Wie funktioniert die Reservierung?",
+        "Die Registrierung erfolgt namentlich und kann bis zu 4 Personen umfassen. Nach der Bestätigung wird der für den Zugang benötigte QR-Code per E-Mail gesendet; bei mehreren Teilnehmern müssen alle gemeinsam am Eingang erscheinen."
       ],
       [
         "Wo liegt die Amerigo Vespucci in Venedig?",
-        "An der Riva di San Biasio vor dem Museo Storico Navale di Venezia. Der Check-in für Besucher erfolgt beim Villaggio IN Italia."
+        "An der Riva di San Biasio vor dem Museo Storico Navale, im Stadtteil Castello nahe dem Arsenal."
       ],
       [
         "Darf ich einen Kinderwagen mitnehmen?",
@@ -373,9 +373,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
     }
   },
   "fr": {
-    "description": "Amerigo Vespucci à Venise du 2 au 7 octobre 2026. Visites 2–4 octobre actuellement complètes : horaires, amarrage et informations à jour.",
-    "subtitle": "Amerigo Vespucci sera à Venise du 2 au 7 octobre 2026. Les visites publiques des 2, 3 et 4 octobre, de 14:00 à 19:00, sont actuellement complètes ; consultez uniquement le portail officiel Tour Vespucci pour toute nouvelle disponibilité.",
-    "lead": "L’escale vénitienne de l’Amerigo Vespucci reste confirmée du 2 au 7 octobre 2026. Les visites publiques gratuites des 2, 3 et 4 octobre sont actuellement complètes. Le navire restera amarré à Riva di San Biasio pendant l’escale et pourra être admiré depuis la terre.",
+    "description": "Amerigo Vespucci à Venise du 2 au 7 octobre 2026 : visites 2–4 octobre 14:00–19:00, Riva di San Biasio et créneaux actuellement complets.",
+    "subtitle": "Amerigo Vespucci revient à Venise du 2 au 7 octobre 2026, amarré à Riva di San Biasio devant le Museo Storico Navale. Les visites publiques des 2, 3 et 4 octobre ont lieu de 14:00 à 19:00, avec dernier accès à 18:30 : l’entrée est gratuite, la réservation nominative est obligatoire et les créneaux sont actuellement complets.",
+    "lead": "Si vous avez déjà réservé, suivez les modalités indiquées sur le portail officiel Tour Vespucci et conservez le QR code reçu après l’inscription. Si vous n’avez pas obtenu de place, vous pouvez suivre la présence du navire dans la zone de Riva di San Biasio, sous réserve d’éventuelles restrictions opérationnelles ou de sécurité.",
     "sections": [
       [
         "Escale à Venise et visites publiques : deux périodes à distinguer",
@@ -458,28 +458,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Les visites publiques sont prévues les 2, 3 et 4 octobre 2026 de 14:00 à 19:00, avec dernier accès à 18:30. Le navire reste à Venise jusqu’au 7 octobre."
       ],
       [
-        "Faut-il réserver ?",
-        "Oui. L’accès à bord nécessite une réservation nominative via le portail officiel Tour Vespucci ; les disponibilités publiées pour Venise sont actuellement complètes."
+        "Faut-il réserver la visite à bord ?",
+        "Oui. Les visites publiques à Venise sont gratuites, mais l’accès à bord nécessite une réservation nominative via le portail officiel Tour Vespucci. Les créneaux publiés pour les 2, 3 et 4 octobre sont actuellement complets."
       ],
       [
         "Combien coûte la visite de l’Amerigo Vespucci ?",
         "La visite est gratuite, mais l’accès à bord nécessite une réservation nominative. Les disponibilités publiées pour Venise sont actuellement complètes."
       ],
       [
-        "Comment vérifier s’il reste des créneaux disponibles ?",
-        "Les créneaux publiés pour les visites des 2, 3 et 4 octobre sont actuellement complets. Consultez uniquement le portail officiel Tour Vespucci pour d’éventuels nouveaux créneaux ou communications."
+        "Reste-t-il des places disponibles ?",
+        "Les créneaux publiés sont actuellement complets. Consultez uniquement le portail officiel Tour Vespucci pour d’éventuelles nouvelles disponibilités ou communications de l’organisation."
       ],
       [
         "Puis-je voir l’Amerigo Vespucci sans réservation ?",
         "Oui. La réservation est nécessaire pour monter à bord. Pendant l’escale, le navire est amarré à Riva di San Biasio, devant le Museo Storico Navale, et peut être admiré depuis la terre sous réserve d’éventuelles restrictions opérationnelles ou de sécurité."
       ],
       [
-        "Combien de personnes puis-je réserver ?",
-        "Jusqu’à 4 personnes peuvent être enregistrées sur une même réservation. Tous les participants d’une réservation multiple doivent se présenter ensemble."
+        "Comment fonctionne la réservation ?",
+        "L’inscription est nominative et peut comprendre jusqu’à 4 personnes. Après confirmation, le QR code nécessaire à l’accès est envoyé par e-mail ; si plusieurs participants sont inclus, tous doivent se présenter ensemble à l’entrée."
       ],
       [
         "Où sera amarré l’Amerigo Vespucci ?",
-        "À Riva di San Biasio, devant le Museo Storico Navale di Venezia. L’accréditation des visiteurs se fait au Villaggio IN Italia."
+        "À Riva di San Biasio, devant le Museo Storico Navale, dans le quartier de Castello près de l’Arsenal."
       ],
       [
         "Puis-je apporter une poussette ?",
@@ -493,9 +493,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
     }
   },
   "es": {
-    "description": "Amerigo Vespucci en Venecia del 2 al 7 de octubre de 2026. Visitas 2–4 de octubre actualmente agotadas: horarios, atraque e información actualizada.",
-    "subtitle": "Amerigo Vespucci estará en Venecia del 2 al 7 de octubre de 2026. Las visitas públicas de los días 2, 3 y 4 de octubre, de 14:00 a 19:00, están actualmente agotadas; consulta solo el portal oficial Tour Vespucci para posibles nuevas disponibilidades.",
-    "lead": "La escala veneciana del Amerigo Vespucci sigue confirmada del 2 al 7 de octubre de 2026. Las visitas públicas gratuitas de los días 2, 3 y 4 están actualmente agotadas. El barco seguirá atracado en Riva di San Biasio durante la escala y podrá verse desde tierra.",
+    "description": "Amerigo Vespucci en Venecia del 2 al 7 de octubre de 2026: visitas 2–4 de octubre 14:00–19:00, Riva di San Biasio y plazas actualmente agotadas.",
+    "subtitle": "Amerigo Vespucci vuelve a Venecia del 2 al 7 de octubre de 2026, atracado en Riva di San Biasio frente al Museo Storico Navale. Las visitas públicas de los días 2, 3 y 4 de octubre se realizan de 14:00 a 19:00, con último acceso a las 18:30: la entrada es gratuita, la reserva nominal es obligatoria y las plazas están actualmente agotadas.",
+    "lead": "Si ya tienes una reserva, sigue las indicaciones del portal oficial Tour Vespucci y conserva el QR code recibido tras el registro. Si no has conseguido plaza, puedes seguir la presencia del barco en la zona de Riva di San Biasio, respetando posibles limitaciones operativas o de seguridad.",
     "sections": [
       [
         "Escala en Venecia y visitas públicas: dos periodos distintos",
@@ -578,28 +578,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "Las visitas públicas están previstas los días 2, 3 y 4 de octubre de 2026 de 14:00 a 19:00, con último acceso a las 18:30. El barco permanece en Venecia hasta el 7 de octubre."
       ],
       [
-        "¿Hay que reservar?",
-        "Sí. Para subir a bordo es obligatoria una reserva nominal a través del portal oficial Tour Vespucci; las disponibilidades publicadas para Venecia están actualmente agotadas."
+        "¿Hay que reservar la visita a bordo?",
+        "Sí. Las visitas públicas en Venecia son gratuitas, pero el acceso a bordo requiere reserva nominal a través del portal oficial Tour Vespucci. Las plazas publicadas para los días 2, 3 y 4 de octubre están actualmente agotadas."
       ],
       [
         "¿Cuánto cuesta visitar Amerigo Vespucci?",
         "La visita es gratuita, pero para subir a bordo hace falta una reserva nominal. Las disponibilidades publicadas para Venecia están actualmente agotadas."
       ],
       [
-        "¿Cómo compruebo si hay plazas disponibles?",
-        "Las disponibilidades publicadas para las visitas de los días 2, 3 y 4 de octubre están actualmente agotadas. Consulta exclusivamente el portal oficial Tour Vespucci para posibles nuevos cupos o comunicaciones."
+        "¿Quedan plazas disponibles?",
+        "Las plazas publicadas están actualmente agotadas. Consulta exclusivamente el portal oficial Tour Vespucci para posibles nuevas disponibilidades o comunicaciones de la organización."
       ],
       [
         "¿Puedo ver el Amerigo Vespucci sin reserva?",
         "Sí. La reserva es necesaria para subir a bordo. Durante la escala el barco está atracado en Riva di San Biasio, frente al Museo Storico Navale, y puede verse desde tierra respetando posibles limitaciones operativas o de seguridad."
       ],
       [
-        "¿Para cuántas personas puedo reservar?",
-        "Se pueden registrar hasta 4 personas en una sola reserva. Todos los participantes de una reserva múltiple deben presentarse juntos."
+        "¿Cómo funciona la reserva?",
+        "La inscripción es nominal y puede incluir hasta 4 personas. Tras la confirmación se envía por correo electrónico el QR code necesario para el acceso; si la reserva incluye a varias personas, todas deben presentarse juntas en la entrada."
       ],
       [
         "¿Dónde estará atracado Amerigo Vespucci?",
-        "En Riva di San Biasio, frente al Museo Storico Navale di Venezia. La acreditación de visitantes se realiza en Villaggio IN Italia."
+        "En Riva di San Biasio, frente al Museo Storico Navale, en la zona de Castello cerca del Arsenal."
       ],
       [
         "¿Puedo llevar un cochecito?",
@@ -613,9 +613,9 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
     }
   },
   "zh": {
-    "description": "Amerigo Vespucci 2026年10月2日至7日停靠威尼斯；10月2、3、4日公众登船参观目前已约满，并附开放时间、停泊地点与最新信息。",
-    "subtitle": "Amerigo Vespucci 将于2026年10月2日至7日停靠威尼斯。10月2、3、4日14:00–19:00的公众登船参观目前已约满；如有新增名额，请仅以 Tour Vespucci 官方网站信息为准。",
-    "lead": "Amerigo Vespucci 威尼斯站仍确认为2026年10月2日至7日。10月2、3、4日的免费公众登船参观目前已约满。停靠期间，舰船仍将停泊在 Riva di San Biasio，未预约登船的游客也可从岸边观赏。",
+    "description": "Amerigo Vespucci 2026年10月2日至7日停靠威尼斯：10月2、3、4日14:00–19:00开放参观，停靠Riva di San Biasio，目前预约已满。",
+    "subtitle": "Amerigo Vespucci 将于2026年10月2日至7日停靠威尼斯，停泊在 Riva di San Biasio、Museo Storico Navale 前方。公众登船参观安排在10月2、3、4日14:00–19:00，最后入场18:30；参观免费，但必须实名预约，目前已公布名额均已约满。",
+    "lead": "已经预约的游客应按照 Tour Vespucci 官方网站的说明参加，并保存注册后收到的 QR code。未能预约的游客仍可关注舰船在 Riva di San Biasio 一带的停靠情况，但须遵守现场可能实施的运营或安全限制。",
     "sections": [
       [
         "威尼斯停靠时间与公众参观日期需要区分",
@@ -698,28 +698,28 @@ export const amerigoVespucci2026Update:Record<VespucciAuditLang,VespucciUpdate>=
         "公众参观安排在2026年10月2、3、4日14:00–19:00，最后入场18:30。舰船本身将在威尼斯停靠至10月7日。"
       ],
       [
-        "需要预约吗？",
-        "需要。登船必须通过 Tour Vespucci 官方网站进行实名预约；目前威尼斯站已公布的名额已经约满。"
+        "登船参观需要预约吗？",
+        "需要。威尼斯公众参观免费，但登船必须通过 Tour Vespucci 官方网站进行实名预约。10月2、3、4日已公布的预约名额目前已经约满。"
       ],
       [
         "参观 Amerigo Vespucci 多少钱？",
         "参观免费，但登船必须实名预约。目前威尼斯站已公布的预约名额已经约满。"
       ],
       [
-        "如何查看是否还有可预约时段？",
-        "10月2、3、4日已公布的参观名额目前已经约满。如有新增时段或主办方公告，请仅查看 Tour Vespucci 官方网站。"
+        "现在还有可预约名额吗？",
+        "目前已公布的预约名额已经约满。如有新增名额或主办方公告，请仅查看 Tour Vespucci 官方网站。"
       ],
       [
         "没有预约也能看到 Amerigo Vespucci 吗？",
         "可以。预约仅用于登船。威尼斯停靠期间，舰船停泊在 Riva di San Biasio、Museo Storico Navale 前方，可从岸边观赏，但请遵守现场可能实施的运营或安全限制。"
       ],
       [
-        "一次可以预约几个人？",
-        "每次预约最多可登记4人。多人预约时，所有参与者必须一起到场。"
+        "预约流程是怎样的？",
+        "预约实行实名制，每次最多可登记4人。确认后会通过电子邮件发送登船所需的 QR code；如同一预约包含多人，所有参与者必须一起到达入口。"
       ],
       [
         "Amerigo Vespucci 在威尼斯停在哪里？",
-        "停泊在 Riva di San Biasio，位于 Museo Storico Navale di Venezia 前方；访客在 Villaggio IN Italia 报到。"
+        "停泊在 Riva di San Biasio、Museo Storico Navale 前方，位于 Castello 区、Arsenale 附近。"
       ],
       [
         "可以带婴儿车吗？",
