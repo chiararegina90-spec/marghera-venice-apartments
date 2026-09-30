@@ -18,6 +18,7 @@ import {journalEvents2027} from './journal2027Events';
 import {arteLagunaPrize2026} from './arteLagunaPrize2026';
 import {journal2027Expansion} from './journal2027Expansion';
 import {veniceDesignWeek2026Overrides} from './veniceDesignWeek2026Overrides';
+import {veleziana2026Overrides} from './veleziana2026Overrides';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type EventLocation={name:string;streetAddress?:string;addressLocality:string;addressCountry:string};
@@ -66,6 +67,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item)Object.assign(item,eventTechnicalData[slug]);
     if(item&&local){item.image=local.card;item.fallbackImage=local.cover;item.commonsQuery='';}
     if(item&&slug==='venice-design-week-2026')Object.assign(item,veniceDesignWeek2026Overrides[lang]);
+    if(item&&slug==='veleziana-2026')Object.assign(item,veleziana2026Overrides[lang]);
     if(item&&slug==='venicemarathon-2026'){
       Object.assign(item,venicemarathon2026Overrides[lang]);
       item.relatedSlugs=['venicemarathon-2027',...(item.relatedSlugs||[]).filter(x=>x!=='venicemarathon-2027')];
