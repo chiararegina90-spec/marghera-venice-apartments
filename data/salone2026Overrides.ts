@@ -60,7 +60,7 @@ export const salone2026Overrides={
     internalLink:{text:'Wenn Sie schon Ende September in Venedig sind, bietet ',label:'Homo Faber 2026',href:'/de/journal/homo-faber-2026',tail:' einen weiteren großen Einblick in zeitgenössische Handwerkskunst und endet am 30. September – direkt vor Beginn des Salone.'},
     sectionLinks:[
       {section:4,text:'Für den Weg von Marghera nach Piazzale Roma lesen Sie auch ',label:'Anreise nach Venedig von Marghera',href:'/come-raggiungere-venezia',tail:'.'},
-      {section:5,text:'Zur Planung des Biennale-Besuchs vor dem Shuttle lesen Sie unsere Guide zur ',label:'Biennale Arte 2026',href:'/journal/biennale-di-venezia',tail:'.'}
+      {section:5,text:'Zur Planung des Biennale-Besuchs vor dem Shuttle lesen Sie unseren Guide zur ',label:'Biennale Arte 2026',href:'/journal/biennale-di-venezia',tail:'.'}
     ],
     dateModified:'2026-10-01',
     eventLocation:{name:'Arsenale di Venezia',streetAddress:'Arsenale Nord',addressLocality:'Venezia',addressCountry:'IT'}
