@@ -13,6 +13,7 @@ export const journalEventImages:Record<string,JournalEventImagePair>={
   'san-martino-venezia':{card:'/images/journal-events/san-martino-venezia-card.webp',cover:'/images/journal-events/san-martino-venezia-cover.webp'},
   'venezia-a-novembre':{card:'/images/journal-events/venezia-a-novembre-card.webp',cover:'/images/journal-events/venezia-a-novembre-cover.webp'},
   'arte-laguna-prize-2026':{card:'/images/culture/biennale-arsenale-card.webp',cover:'/images/culture/biennale-arsenale-cover.webp'},
+  'halloween-venezia-2026':{card:'/images/journal-events/halloween-venezia-2026-card.webp',cover:'/images/journal-events/halloween-venezia-2026-cover.webp'},
   'cimitero-san-michele-venezia':{card:'/images/journal-events/cimitero-san-michele-venezia-card.webp',cover:'/images/journal-events/cimitero-san-michele-venezia-cover.webp'},
   'su-e-zo-per-i-ponti-2027':{card:'/images/bambini-campo-venezia-v2.webp',cover:'/images/bambini-campo-venezia-v2.webp'},
   'salone-nautico-venezia-2027':{card:'/images/culture/biennale-arsenale-card.webp',cover:'/images/culture/biennale-arsenale-cover.webp'},
