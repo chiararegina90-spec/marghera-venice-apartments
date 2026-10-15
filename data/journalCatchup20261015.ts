@@ -33,7 +33,7 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
     item.sections=(item.sections||[]).map(([a,b])=>/programma 2026|2026 programme|programm 2026|programme 2026|programa 2026|日程/.test(a)?[title,text] as const:[a,b]);
     if(!item.sections.some(([a])=>a===title))item.sections=[...(item.sections||[]),[title,text]];
     item.faq=(item.faq||[]).map(f=>/programma|programme|program|programm|节目/.test(f.question)?{...f,answer:m(lang,{it:'Sì. Il Comune di Venezia ha pubblicato il programma principale; per orari, accessi e prenotazioni dei singoli appuntamenti va comunque verificata la relativa scheda ufficiale.',en:'Yes. The City of Venice has published the main programme; check each official event listing for exact times, access and booking.',de:'Ja. Die Stadt Venedig hat das Hauptprogramm veröffentlicht; genaue Zeiten, Zugang und Reservierungen bitte beim jeweiligen offiziellen Termin prüfen.',fr:'Oui. La Ville de Venise a publié le programme principal ; vérifiez toutefois chaque fiche officielle pour les horaires, l’accès et les réservations.',es:'Sí. El Ayuntamiento de Venecia ha publicado el programa principal; comprueba cada ficha oficial para horarios, acceso y reservas.',zh:'是的。威尼斯市政府已经公布主要日程；具体时间、入场和预约仍应查看各活动官方页面。'})}:f);
-    item.relatedSlugs=[...new Set([...(item.relatedSlugs||[]),'venice-design-week-2026','venice-cocktail-week-2026'])];
+    item.relatedSlugs=Array.from(new Set([...(item.relatedSlugs||[]),'venice-design-week-2026','venice-cocktail-week-2026']));
     item.dateModified='2026-10-15';
   }
 
