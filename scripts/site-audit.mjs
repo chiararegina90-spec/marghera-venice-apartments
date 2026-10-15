@@ -133,7 +133,8 @@ for(const f of publicPages){
   for(const m of chunk.matchAll(/\bdescription\s*:\s*['"`]([^'"`]+)['"`]/g)){
     const d=m[1].trim();
     if(d.length>170){longDescriptions++;warnings.push(`${r}: meta description is ${d.length} chars`);}
-    if(d.length>0&&d.length<50) warnings.push(`${r}: meta description is very short (${d.length} chars)`);
+    const minDescriptionLength=r.startsWith('app/zh/')?20:50;
+    if(d.length>0&&d.length<minDescriptionLength) warnings.push(`${r}: meta description is very short (${d.length} chars)`);
   }
 }
 
