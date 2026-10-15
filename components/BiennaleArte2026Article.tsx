@@ -80,7 +80,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">
       <p className="font-serif text-3xl leading-relaxed text-navy">{data.lead}</p>
-      <div className="mt-14 space-y-12">{[...data.sections,[autumnUpdate[lang].title,autumnUpdate[lang].text] as const,[autumnUpdate[lang].finalTitle,autumnUpdate[lang].finalText] as const].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div>
+      <div className="mt-14 space-y-12">{[...data.sections.map(([title,text])=>/orari|opening hours|öffnungszeiten|horaires|horarios|开放时间/i.test(title)?[autumnUpdate[lang].title,autumnUpdate[lang].text] as const:[title,text] as const),[autumnUpdate[lang].finalTitle,autumnUpdate[lang].finalText] as const].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div>
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">
