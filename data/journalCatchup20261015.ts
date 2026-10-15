@@ -32,7 +32,7 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
     });
     const stale=/non.{0,35}(pubblic|disponib)|not.{0,35}(publish|available)|noch.{0,35}(veröffentlicht|vollständig)|pas encore.{0,35}(publi|disponible)|no.{0,35}(publicad|disponible)|尚未.{0,20}(公布|发布)|attend.{0,25}(programma|programme)|wait.{0,25}(programme|schedule)/i;
     const programTitle=/programma|programme|programm|programa|日程/i;
-    item.sections=(item.sections||[]).filter(([a,b])=>!stale.test(a+' '+b)&&!(programTitle.test(a)&&/Radar Venezia 2026/i.test(a)));
+    item.sections=(item.sections||[]).filter(([a,b])=>!stale.test(a+' '+b)&&!programTitle.test(a));
     item.sections=[...(item.sections||[]),[title,text]];
     item.tip=m(lang,{
       it:'Radar Venezia è diffuso in più sedi: scegli gli appuntamenti che ti interessano e controlla sulle singole schede ufficiali orario, accesso ed eventuale prenotazione prima di partire.',
@@ -102,7 +102,7 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
     const arrival=/come arrivare|getting there|anreise|comment arriver|cómo llegar|如何.*到|前往/i;
     const stale=/in aggiornamento|updating|aktualisierung|mise à jour|actualizando|尚未|non pubblic|not yet|noch nicht|pas encore|no .*public/i;
     item.sections=(item.sections||[])
-      .filter(([a,b])=>!(stale.test(a+' '+b)&&(/orari|hours|öffnungs|horaires|horarios|时间|access|zugang|accès|acceso|入场/i.test(a+' '+b))))
+      .filter(([a,b])=>arrival.test(a)||!(stale.test(a+' '+b)&&(/orari|hours|öffnungs|horaires|horarios|时间|access|zugang|accès|acceso|入场/i.test(a+' '+b))))
       .map(([a,b])=>arrival.test(a)?[a,arrivalText] as const:[a,b]);
     item.sections=item.sections.filter(([a])=>a!==practical);
     const practicalIndex=item.sections.length;
