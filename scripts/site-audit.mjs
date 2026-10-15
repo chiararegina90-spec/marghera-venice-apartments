@@ -108,9 +108,41 @@ for(const section of ['guide','journal']){
 }
 
 const publicPages=pages.filter(f=>!/[\\/]app[\\/](?:[a-z]{2}[\\/])?guest(?:[\\/]|$)/.test(f) && !/[\\/]guest-content[\\/]/.test(f));
+// SEO metadata quality checks. These are warnings so legacy editorial pages can be
+// reviewed without blocking deploys; obvious duplicate branding is a hard failure.
+let metadataPages=0, longTitles=0, longDescriptions=0, missingMetadata=0;
+for(const f of publicPages){
+  const t=read(f);
+  const r=rel(f);
+  const hasStatic=/export\s+const\s+metadata\s*[:=]/.test(t);
+  const hasGenerated=/generateMetadata\s*\(/.test(t);
+  if(!hasStatic&&!hasGenerated){
+    missingMetadata++;
+    warnings.push(`${r}: no page-level metadata export/generator found`);
+    continue;
+  }
+  metadataPages++;
+  const idx=Math.max(t.search(/export\s+const\s+metadata\s*[:=]/),t.search(/generateMetadata\s*\(/));
+  const chunk=idx>=0?t.slice(idx,idx+4500):'';
+  for(const m of chunk.matchAll(/\btitle\s*:\s*['"`]([^'"`]+)['"`]/g)){
+    const title=m[1].trim();
+    const renderedTitle=title;
+    const brandCount=(renderedTitle.match(/Marghera Venice Apartments/g)||[]).length;
+    if(brandCount>1) failures.push(`${r}: duplicate brand in rendered SEO title: ${JSON.stringify(renderedTitle)}`);
+    if(renderedTitle.length>65){longTitles++;warnings.push(`${r}: rendered SEO title is ${renderedTitle.length} chars: ${JSON.stringify(renderedTitle)}`);}
+  }
+  for(const m of chunk.matchAll(/\bdescription\s*:\s*['"`]([^'"`]+)['"`]/g)){
+    const d=m[1].trim();
+    if(d.length>170){longDescriptions++;warnings.push(`${r}: meta description is ${d.length} chars`);}
+    const minDescriptionLength=r.startsWith('app/zh/')?20:50;
+    if(d.length>0&&d.length<minDescriptionLength) warnings.push(`${r}: meta description is very short (${d.length} chars)`);
+  }
+}
+
 const privatePages=pages.length-publicPages.length;
 console.log(`Site audit: ${pages.length} page routes (${publicPages.length} public, ${privatePages} private/guest)`);
 console.log(`Checked ${literalHrefs} literal hrefs, ${blankTargets} target=_blank links, ${localImages} local image references, ${guestHtml.length} Welcome Book HTML files.`);
+console.log(`SEO metadata audit: ${metadataPages} pages with metadata, ${missingMetadata} without page-level metadata, ${longTitles} long titles, ${longDescriptions} long descriptions.`);
 if(warnings.length){
   console.log(`Warnings (${warnings.length}):`);
   for(const w of warnings.slice(0,40)) console.log(`  - ${w}`);

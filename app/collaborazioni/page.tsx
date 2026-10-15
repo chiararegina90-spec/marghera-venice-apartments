@@ -8,7 +8,7 @@ import GondolaExperienceCard from '@/components/GondolaExperienceCard';
 
 export const metadata:Metadata = {
   title:'Esperienze e collaborazioni | Marghera Venice Apartments',
-  description:'Esperienze selezionate per vivere Venezia e il Veneto in modo autentico: tour in gondola, voga alla veneta con Row Venice e Wine Experience presso Azienda Agricola I Campi.',
+  description:'Esperienze selezionate a Venezia e in Veneto: gondola, voga alla veneta con Row Venice e Wine Experience presso Azienda Agricola I Campi.',
   alternates:{canonical:'/collaborazioni',languages:{'it-IT':'/collaborazioni','en-GB':'/en/experiences','de-DE':'/de/experiences','fr-FR':'/fr/experiences','es-ES':'/es/experiences','zh-CN':'/zh/experiences','x-default':'/collaborazioni'}},
 openGraph:{type:'website',images:['/images/experience-row-venice-cover.webp']},twitter:{card:'summary_large_image',images:['/images/experience-row-venice-cover.webp']}};
 

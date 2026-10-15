@@ -9,7 +9,7 @@ import {CarIcon, MoonIcon, PawIcon, BabyIcon} from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Dimora Castelli | 5 Guests & Free Parking Near Venice',
-  description: 'Dimora Castelli in Marghera near Venice: approx. 60 m² for up to 5 guests, free private parking, access to a shared garden and convenient day-and-night connections to Venice.',
+  description: 'Dimora Castelli in Marghera near Venice: up to 5 guests, free private parking, shared garden access and convenient day-and-night transport to Venice.',
   openGraph:{
     title:'Dimora Castelli | Up to 5 guests near Venice',
     description:'A welcoming apartment in Marghera with free private parking, access to a shared garden and convenient connections to Venice.',
