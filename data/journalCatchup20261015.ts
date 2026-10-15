@@ -80,4 +80,34 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
     item.sections=[...(item.sections||[]),[practical,text]];
     item.dateModified='2026-10-15';
   }
+  if(slug==='venice-cocktail-week-2026'){
+    const title=m(lang,{it:'Il programma 2026 è online',en:'The 2026 programme is online',de:'Das Programm 2026 ist online',fr:'Le programme 2026 est en ligne',es:'El programa 2026 ya está online',zh:'2026年活动日程已上线'});
+    const text=m(lang,{
+      it:'Venice Cocktail Week si svolge dal 21 al 25 ottobre 2026. L’organizzazione indica 31 cocktail bar selezionati — 21 hotel bar e 10 cocktail bar — oltre a 12 Event Partner, con un calendario diffuso di guest shift, masterclass, degustazioni e appuntamenti speciali. Orari, prezzi e prenotazioni cambiano da evento a evento: per scegliere dove andare conviene usare il calendario ufficiale aggiornato invece di una lista statica.',
+      en:'Venice Cocktail Week runs from 21 to 25 October 2026. The organisers list 31 selected cocktail bars — 21 hotel bars and 10 cocktail bars — plus 12 Event Partners, with a city-wide calendar of guest shifts, masterclasses, tastings and special events. Times, prices and booking rules vary by event, so use the current official calendar rather than a static list.',
+      de:'Die Venice Cocktail Week findet vom 21. bis 25. Oktober 2026 statt. Die Veranstalter nennen 31 ausgewählte Cocktailbars — 21 Hotelbars und 10 Cocktailbars — sowie 12 Event Partner. Das dezentrale Programm umfasst Guest Shifts, Masterclasses, Tastings und Sonderveranstaltungen. Zeiten, Preise und Reservierungen unterscheiden sich je nach Termin; deshalb ist der aktuelle offizielle Kalender maßgeblich.',
+      fr:'Venice Cocktail Week se tient du 21 au 25 octobre 2026. L’organisation annonce 31 bars sélectionnés — 21 bars d’hôtel et 10 cocktail bars — ainsi que 12 Event Partners, avec guest shifts, masterclasses, dégustations et rendez-vous spéciaux. Horaires, tarifs et réservations varient selon l’événement : consultez le calendrier officiel actualisé.',
+      es:'Venice Cocktail Week se celebra del 21 al 25 de octubre de 2026. La organización anuncia 31 bares seleccionados — 21 bares de hotel y 10 cocktail bars — además de 12 Event Partners, con guest shifts, masterclasses, catas y eventos especiales. Horarios, precios y reservas cambian según la cita: consulta el calendario oficial actualizado.',
+      zh:'Venice Cocktail Week 将于2026年10月21日至25日举行。主办方公布31家精选鸡尾酒吧，其中21家为酒店酒吧、10家为专业鸡尾酒吧，另有12个 Event Partner；活动包括客座调酒、masterclass、品鉴与特别活动。不同活动的时间、价格和预约规则不同，应以最新官方日历为准。'
+    });
+    item.sections=(item.sections||[]).filter(([a,b])=>!/programma.*non|programme.*not|programm.*noch|programme.*pas|programa.*no|日程.*未/.test(a+' '+b));
+    item.sections=[...(item.sections||[]),[title,text]];
+    item.dateModified='2026-10-15';
+  }
+
+  if(slug==='venezia-a-novembre'){
+    const title=m(lang,{it:'Tre appuntamenti da tenere d’occhio a novembre',en:'Three November dates worth noting',de:'Drei wichtige November-Termine',fr:'Trois rendez-vous à retenir en novembre',es:'Tres citas de noviembre para tener en cuenta',zh:'11月值得留意的三个重点'});
+    const text=m(lang,{
+      it:'Novembre 2026 riunisce tre appuntamenti internazionali molto diversi. Arte Laguna Prize porta la mostra dei finalisti all’Arsenale Nord dal 6 al 29 novembre, ogni giorno 10:00–18:00. Venice Noir anima la città dal 12 al 15 novembre con il suo programma internazionale dedicato al crime e al noir. Dal 13 al 22 novembre, infine, Biennale Arte affianca agli ultimi giorni di In Minor Keys un programma conclusivo di performance, conferenze e incontri. Per orari e accessi fa sempre fede la pagina ufficiale del singolo evento.',
+      en:'November 2026 brings together three very different international events. Arte Laguna Prize presents its finalists at Arsenale Nord from 6 to 29 November, daily 10am–6pm. Venice Noir runs from 12 to 15 November with its international crime and noir programme. From 13 to 22 November, the final days of Biennale Arte are accompanied by a closing programme of performances, talks and discussions. Check each event’s official page for access and exact times.',
+      de:'Im November 2026 treffen drei sehr unterschiedliche internationale Veranstaltungen zusammen. Arte Laguna Prize zeigt seine Finalisten vom 6. bis 29. November täglich 10:00–18:00 Uhr im Arsenale Nord. Venice Noir findet vom 12. bis 15. November mit internationalem Krimi- und Noir-Programm statt. Vom 13. bis 22. November ergänzt die Biennale Arte ihre letzten Ausstellungstage mit Performances, Gesprächen und Konferenzen. Für Zeiten und Zugang gilt jeweils die offizielle Veranstaltungsseite.',
+      fr:'Novembre 2026 réunit trois rendez-vous internationaux très différents. Arte Laguna Prize présente les finalistes à l’Arsenale Nord du 6 au 29 novembre, tous les jours de 10 h à 18 h. Venice Noir se déroule du 12 au 15 novembre avec son programme international consacré au polar et au noir. Du 13 au 22 novembre, les derniers jours de Biennale Arte s’accompagnent d’un programme de clôture de performances, rencontres et conférences. Vérifiez chaque source officielle pour les accès et horaires.',
+      es:'Noviembre de 2026 reúne tres citas internacionales muy distintas. Arte Laguna Prize presenta a sus finalistas en Arsenale Nord del 6 al 29 de noviembre, todos los días de 10:00 a 18:00. Venice Noir se celebra del 12 al 15 de noviembre con su programa internacional de novela negra. Del 13 al 22 de noviembre, los últimos días de Biennale Arte incluyen un programa final de performances, encuentros y conferencias. Consulta cada fuente oficial para horarios y acceso.',
+      zh:'2026年11月有三个值得关注的国际活动。Arte Laguna Prize 入围作品展于11月6日至29日在 Arsenale Nord 举行，每天10:00–18:00；Venice Noir 于11月12日至15日带来国际犯罪与 noir 文学活动；11月13日至22日，Biennale Arte 在 In Minor Keys 最后阶段加入表演、讲座与讨论等闭幕特别节目。具体入场与时间请查看各活动官方页面。'
+    });
+    item.sections=[...(item.sections||[]),[title,text]];
+    item.relatedSlugs=Array.from(new Set([...(item.relatedSlugs||[]),'arte-laguna-prize-2026','venice-noir-2026']));
+    item.dateModified='2026-10-15';
+  }
+
 }
