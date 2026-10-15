@@ -26,8 +26,8 @@ export default function JournalDynamicGrid({items,lang='it',readLabel}:{items:Jo
   const dynamicEvents:JournalFilterItem[]=eventArticles(lang).map(a=>{
     const local=journalEventImagePair(a.slug);
     return {
-      title:a.title,category:a.category,text:a.description,image:local?.card||a.image,alt:a.imageAlt,
-      href:`${prefix}/journal/${a.slug}`,eventDate:a.eventDate,commonsQuery:a.commonsQuery||undefined,
+      title:a.cardTitle||a.title,category:a.category,text:a.cardDescription||a.description,image:local?.card||a.image,alt:a.cardImageAlt||a.imageAlt,
+      href:`${prefix}/journal/${a.slug}`,eventDate:a.cardEventDate||a.eventDate,commonsQuery:a.commonsQuery||undefined,
       fallbackImage:local?.cover||a.fallbackImage,startDate:a.startDate,endDate:a.endDate
     };
   });
