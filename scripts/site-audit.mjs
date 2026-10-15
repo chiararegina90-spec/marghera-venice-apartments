@@ -126,9 +126,7 @@ for(const f of publicPages){
   const chunk=idx>=0?t.slice(idx,idx+4500):'';
   for(const m of chunk.matchAll(/\btitle\s*:\s*['"`]([^'"`]+)['"`]/g)){
     const title=m[1].trim();
-    const isLocalized=/^app\/(en|de|fr|es|zh)\//.test(r);
-    const templateSuffix=' | Marghera Venice Apartments';
-    const renderedTitle=isLocalized?`${title}${templateSuffix}`:title;
+    const renderedTitle=title;
     const brandCount=(renderedTitle.match(/Marghera Venice Apartments/g)||[]).length;
     if(brandCount>1) failures.push(`${r}: duplicate brand in rendered SEO title: ${JSON.stringify(renderedTitle)}`);
     if(renderedTitle.length>65){longTitles++;warnings.push(`${r}: rendered SEO title is ${renderedTitle.length} chars: ${JSON.stringify(renderedTitle)}`);}
