@@ -31,7 +31,7 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
       zh:'主要日程已经公布。10月19日包括与 Venice Design Week 合作的琥珀文化活动、Marina Spadafora 新书活动和 Always in Venice；20日为 CreativeMornings、PerindossArti 和 The Very Last Layer；21日为 Casa Flora；22日包括 Venezia Produce Futuro、IUAV Fashion、Designskolen Kolding 与 Venice Cocktail Week 相关工作坊；23日包括 Antonio Marras 对谈和 Quadreria Futura Venezia。Atelier Aperti 为10月22–24日，24日举行 Radar Night。具体时间、入场和预约请查看各官方活动页面。'
     });
     const stale=/non.{0,35}(pubblic|disponib)|not.{0,35}(publish|available)|noch.{0,35}(veröffentlicht|vollständig)|pas encore.{0,35}(publi|disponible)|no.{0,35}(publicad|disponible)|尚未.{0,20}(公布|发布)|attend.{0,25}(programma|programme)|wait.{0,25}(programme|schedule)/i;
-    const programTitle=/programma|programme|programm|programa|日程/i;
+    const programTitle=/programma|programme|programm|programa|日程|节目/i;
     item.sections=(item.sections||[]).filter(([a,b])=>!stale.test(a+' '+b)&&!programTitle.test(a));
     item.sections=[...(item.sections||[]),[title,text]];
     item.tip=m(lang,{
