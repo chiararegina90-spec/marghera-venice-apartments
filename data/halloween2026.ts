@@ -179,7 +179,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
   fr:{
     slug:'halloween-venezia-2026',title:'Halloween à Venise 2026 : événements, légendes et idées',metaTitle:'Halloween Venise 2026 : événements et idées le 31 octobre',cardTitle:'Halloween à Venise 2026',cardDescription:'Événements confirmés, activités en famille et lieux mystérieux à découvrir à Venise pour Halloween.',cardEventDate:'31 OCTOBRE 2026',cardImageAlt:'Enfants déguisés pour Halloween avec des citrouilles illuminées au bord d’un canal vénitien',category:'Événements',
     description:'Halloween à Venise 2026 : événements confirmés, activités en famille, soirée à Mestre et idées pour découvrir une Venise mystérieuse le 31 octobre.',
-    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',undefined,commonsQuery:'',eventDate:'28–31 OCTOBRE 2026',
+    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',imageAlt:'Famille déguisée pour Halloween au bord d’un canal de Venise au coucher du soleil',commonsQuery:'',eventDate:'28–31 OCTOBRE 2026',
     lead:'Venise n’a pas besoin de se transformer pour Halloween. À la tombée de la nuit, les calli deviennent plus calmes, les lumières se reflètent sur les canaux et l’architecture ancienne crée naturellement une atmosphère particulière. En 2026, les rendez-vous confirmés vont des lectures pour enfants à une escape room, une nuit au musée et une soirée privée.',
     sections:[
       ['Halloween à Venise : plusieurs rendez-vous, pas un festival unique','Aucun grand “Halloween Festival” officiel unique n’est annoncé pour toute la ville. Le programme 2026 est réparti entre bibliothèques, BiblioLudoteche municipales, musée et initiatives privées. On peut donc combiner une activité familiale sur la terre ferme avec une soirée dans Venise historique.'],
@@ -217,7 +217,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
   es:{
     slug:'halloween-venezia-2026',title:'Halloween en Venecia 2026: eventos, leyendas y qué hacer',metaTitle:'Halloween Venecia 2026: eventos y qué hacer el 31 de octubre',cardTitle:'Halloween en Venecia 2026',cardDescription:'Eventos confirmados, actividades familiares y lugares misteriosos para descubrir en Venecia durante Halloween.',cardEventDate:'31 DE OCTUBRE DE 2026',cardImageAlt:'Niños disfrazados de Halloween con calabazas iluminadas junto a un canal veneciano',category:'Eventos',
     description:'Halloween en Venecia 2026: eventos confirmados, actividades familiares, fiesta en Mestre e ideas para descubrir la Venecia más misteriosa.',
-    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',undefined,commonsQuery:'',eventDate:'28–31 DE OCTUBRE DE 2026',
+    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',imageAlt:'Familia disfrazada de Halloween junto a un canal de Venecia al atardecer',commonsQuery:'',eventDate:'28–31 DE OCTUBRE DE 2026',
     lead:'Venecia no necesita transformarse para Halloween. Al anochecer, algunas calles se vacían, las luces se reflejan en los canales y la arquitectura histórica crea por sí sola la atmósfera. En 2026 hay lecturas y talleres familiares, una escape room, una noche en el museo y una fiesta nocturna, además de la posibilidad de descubrir el centro histórico con más calma.',
     sections:[
       ['Halloween en Venecia: varias experiencias, no un único festival','No consta un gran “Halloween Festival” oficial único para toda la ciudad. El programa confirmado se reparte entre bibliotecas, BiblioLudoteche municipales, un museo y eventos privados. Así es posible combinar actividades familiares en tierra firme con una tarde o noche en Venecia.'],
@@ -255,7 +255,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
   zh:{
     slug:'halloween-venezia-2026',title:'2026威尼斯万圣夜：活动、传说与10月31日玩法',metaTitle:'2026威尼斯万圣夜：活动与10月31日游玩指南',cardTitle:'2026威尼斯万圣夜',cardDescription:'已确认活动、亲子体验与万圣夜期间值得探索的神秘威尼斯地点。',cardEventDate:'2026年10月31日',cardImageAlt:'孩子们穿着万圣夜服装，身旁是发光南瓜和威尼斯运河',category:'活动',
     description:'2026威尼斯万圣夜指南：已确认活动、亲子项目、Mestre夜间派对，以及10月31日探索神秘威尼斯的实用建议。',
-    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',undefined,commonsQuery:'',eventDate:'2026年10月28–31日',
+    image:'/images/journal-events/halloween-venezia-2026-card.webp',fallbackImage:'/images/journal-events/halloween-venezia-2026-cover.webp',imageAlt:'万圣夜装扮的一家人在威尼斯运河边欣赏日落',commonsQuery:'',eventDate:'2026年10月28–31日',
     lead:'威尼斯几乎不需要为万圣夜额外“变装”。入夜后，部分小巷安静下来，灯光映在水面上，古老建筑本身就带来独特气氛。2026年已经确认的活动包括亲子阅读与手工、密室逃脱、博物馆过夜体验和夜间派对；如果不想参加活动，也可以在日落后感受更安静的威尼斯。',
     sections:[
       ['威尼斯万圣夜：不是一个大型官方节庆','目前没有一个覆盖全城的官方“大型万圣夜节”。2026年的项目分散在市立图书馆、BiblioLudoteche、博物馆和私人场所。游客可以把陆地亲子活动与威尼斯历史城区的傍晚散步组合起来，也不要把万圣夜与威尼斯狂欢节混为一谈。'],
