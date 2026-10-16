@@ -163,8 +163,8 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'Private Familienalternative: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Vormittag: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Nachmittag: ',label:'Halloween Escape Room',href:sources.escape,tail:'.'},
       {section:4,text:'Verfügbarkeit: ',label:'M9 Museumsnacht',href:sources.m9,tail:'.'},{section:5,text:'Tickets: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Mehr Ideen: ',label:'Venedig mit Kindern',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Für Bus, Bahn und die Rückfahrt empfehlen wir unseren Ratgeber ",label:"Von Marghera nach Venedig",href:"/come-raggiungere-venezia",tail:" mit praktischen Hinweisen zur Reiseplanung."},
-      {section:8,text:"Wenn Sie mit dem Auto anreisen, lesen Sie auch ",label:"Parken für Venedig",href:"/journal/dove-parcheggiare-venezia",tail:" und planen Sie die Strecke ohne unnötige Parkplatzsuche."},{section:8,text:"Entdecken Sie ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" mit bis zu 7 Schlafplätzen, privatem Parkplatz und Möglichkeiten für Familien und Gruppen."},{section:8,text:"Oder entdecken Sie ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" als weitere Unterkunft in Marghera mit privatem Parkplatz."}
+      {section:7,text:'Mehr Ideen: ',label:'Venedig mit Kindern',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Für Bus und Bahn lesen Sie ",label:"Von Marghera nach Venedig",href:"/come-raggiungere-venezia",tail:"."},
+      {section:8,text:"Wenn Sie mit dem Auto anreisen, lesen Sie auch ",label:"Parken für Venedig",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Entdecken Sie ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" und die Schlafmöglichkeiten für Familien und Gruppen."},{section:8,text:"Oder besuchen Sie ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" als weitere Unterkunft in Marghera."}
     ],
     faq:[
       {question:'Wann ist Halloween 2026 in Venedig?',answer:'Halloween ist Samstag, 31. Oktober 2026. Einige Familienangebote beginnen bereits am 28. und 30. Oktober.'},
@@ -201,8 +201,8 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'Alternative privée pour les familles : ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Matin : ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Après-midi : ',label:'Escape Room de Halloween',href:sources.escape,tail:'.'},
       {section:4,text:'Disponibilité : ',label:'M9 – nuit au musée',href:sources.m9,tail:'.'},{section:5,text:'Billets : ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Autres idées : ',label:'Venise avec des enfants',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Pour organiser les trajets et le retour, consultez notre guide ",label:"rejoindre Venise depuis Marghera",href:"/come-raggiungere-venezia",tail:" et vérifiez les horaires actualisés."},
-      {section:8,text:"Si vous voyagez en voiture, découvrez aussi ",label:"où se garer pour Venise",href:"/journal/dove-parcheggiare-venezia",tail:" et évitez de chercher une place à chaque étape."},{section:8,text:"Découvrez ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" : jusqu’à 7 personnes, différentes configurations de couchage et parking privé."},{section:8,text:"Vous pouvez également découvrir ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" pour un séjour à Marghera avec parking privé."}
+      {section:7,text:'Autres idées : ',label:'Venise avec des enfants',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Pour organiser bus et trains, consultez ",label:"rejoindre Venise depuis Marghera",href:"/come-raggiungere-venezia",tail:"."},
+      {section:8,text:"Si vous arrivez en voiture, consultez aussi ",label:"où se garer pour Venise",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Découvrez ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" et ses configurations pour les familles et les groupes."},{section:8,text:"Ou découvrez ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" pour une autre option à Marghera."}
     ],
     faq:[
       {question:'Quand fête-t-on Halloween à Venise en 2026 ?',answer:'Halloween tombe le samedi 31 octobre 2026. Certaines activités familiales commencent dès les 28 et 30 octobre.'},
@@ -239,8 +239,8 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'Alternativa privada para familias: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Por la mañana: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Por la tarde: ',label:'Escape Room de Halloween',href:sources.escape,tail:'.'},
       {section:4,text:'Disponibilidad: ',label:'M9 – noche en el museo',href:sources.m9,tail:'.'},{section:5,text:'Entradas: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Más ideas: ',label:'Venecia con niños',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Para organizar los trayectos y el regreso, consulta ",label:"cómo llegar a Venecia desde Marghera",href:"/come-raggiungere-venezia",tail:" y revisa los horarios actualizados."},
-      {section:8,text:"Si viajas en coche, descubre también ",label:"dónde aparcar para Venecia",href:"/journal/dove-parcheggiare-venezia",tail:" para organizar mejor los desplazamientos."},{section:8,text:"Descubre ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:": capacidad de hasta 7 huéspedes, diferentes configuraciones de camas y aparcamiento privado."},{section:8,text:"También puedes conocer ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:", otro alojamiento en Marghera con aparcamiento privado."}
+      {section:7,text:'Más ideas: ',label:'Venecia con niños',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Para organizar autobuses y trenes, consulta ",label:"cómo llegar a Venecia desde Marghera",href:"/come-raggiungere-venezia",tail:"."},
+      {section:8,text:"Si llegas en coche, mira también ",label:"dónde aparcar para Venecia",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Descubre ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" y sus opciones para familias y grupos."},{section:8,text:"O visita ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" como otra opción en Marghera."}
     ],
     faq:[
       {question:'¿Cuándo es Halloween en Venecia en 2026?',answer:'Halloween cae el sábado 31 de octubre de 2026. Algunas actividades familiares empiezan los días 28 y 30.'},
@@ -277,8 +277,8 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'家庭私人活动选择：',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'。'},
       {section:3,text:'上午活动：',label:'Che Storie! Marghera',href:sources.marghera,tail:'。'},{section:3,text:'下午场次：',label:'Halloween Escape Room',href:sources.escape,tail:'。'},
       {section:4,text:'余位与候补：',label:'M9 博物馆过夜',href:sources.m9,tail:'。'},{section:5,text:'票务：',label:'Molo5 Halloween Party',href:sources.molo5,tail:'。'},
-      {section:7,text:'更多亲子建议：',label:'带孩子游威尼斯',href:'/journal/venezia-con-bambini',tail:'。'},{section:8,text:"规划公交、火车和晚间返程时，可参阅 ",label:"从 Marghera 前往威尼斯",href:"/come-raggiungere-venezia",tail:"，并在出行前核对最新班次。"},
-      {section:8,text:"如果准备自驾游览，也可以阅读 ",label:"威尼斯停车指南",href:"/journal/dove-parcheggiare-venezia",tail:"，提前安排停车与游览线路。"},{section:8,text:"了解 ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:"：最多可接待 7 位住客，提供私人停车位和灵活床位，适合家庭与团体。"},{section:8,text:"也可以查看 ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:"，了解位于 Marghera、带私人停车位的另一套公寓。"}
+      {section:7,text:'更多亲子建议：',label:'带孩子游威尼斯',href:'/journal/venezia-con-bambini',tail:'。'},{section:8,text:"规划公交与火车出行，请查看 ",label:"从 Marghera 前往威尼斯",href:"/come-raggiungere-venezia",tail:"。"},
+      {section:8,text:"自驾出行还可以阅读 ",label:"威尼斯停车指南",href:"/journal/dove-parcheggiare-venezia",tail:"。"},{section:8,text:"了解 ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:"，查看适合家庭与团体的床位安排。"},{section:8,text:"或看看 ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:"，作为 Marghera 的另一处住宿选择。"}
     ],
     faq:[
       {question:'2026年威尼斯万圣夜是哪一天？',answer:'2026年万圣夜是10月31日星期六，部分亲子活动从10月28日和30日已经开始。'},
