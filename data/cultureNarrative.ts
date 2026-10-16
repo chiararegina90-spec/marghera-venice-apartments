@@ -1,5 +1,6 @@
 import type {CultureLang,CulturePlace} from '@/data/culturePlaces';
 import {bookingLabel,cityLabel,hoursLabel,priceLabel} from '@/data/cultureTranslations';
+import {culturePilot20261015} from '@/data/culturePilot20261015';
 
 type Narrative={lead:string;why:string;curiosity:string;getting:string;tip:string};
 
@@ -165,11 +166,12 @@ function tip(place:CulturePlace,lang:CultureLang){
 
 export function cultureNarrative(place:CulturePlace,lang:CultureLang):Narrative{
  const sp=special[place.slug]?.[lang];
+ const pilot=culturePilot20261015[place.slug as keyof typeof culturePilot20261015]?.[lang];
  return {
   lead:sp?.lead||kindLead[lang][place.kind](place),
   why:sp?.why||fallbackWhy(place,lang),
   curiosity:goodToKnow(place,lang),
   getting:getting(place,lang),
-  tip:tip(place,lang)
+  tip:pilot?.tip||tip(place,lang)
  };
 }

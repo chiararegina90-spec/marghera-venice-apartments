@@ -1,4 +1,5 @@
 import type {BookingMode,CultureKind,CultureLang,CulturePlace,CultureScope} from './culturePlaces';
+import {culturePilot20261015} from './culturePilot20261015';
 
 export const cultureUi={
   it:{
@@ -118,6 +119,8 @@ export function planningText(place:CulturePlace,lang:CultureLang){
  return `参观${place.name}建议预留约 ${duration}。预约：${booking}。门票：${price}。开放时间：${hours}。${family?'通常适合家庭带孩子参观。':'如带低龄儿童，建议先结合参观时长和孩子兴趣再决定是否加入行程。'}`;
 }
 export function localizedHighlights(place:CulturePlace,lang:CultureLang){
+ const pilot=culturePilot20261015[place.slug as keyof typeof culturePilot20261015]?.[lang];
+ if(pilot) return [...pilot.highlights];
  if(lang==='it') return place.highlights;
  const generic={
   en:{museum:['main collection','architecture and exhibition spaces','historical context'],monument:['architecture','history of the site','details of the building'],church:['artworks','architecture','sacred interior'],panorama:['panoramic view','historic setting','photography viewpoints']},

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
-import EditorialStayCta from '@/components/EditorialStayCta';
+import EditorialStayCta,{editorialStayContext} from '@/components/EditorialStayCta';
 import type {JournalArticleData} from '@/components/LocalizedRich';
 import {localePath} from '@/lib/i18n';
 
@@ -28,7 +28,7 @@ export default function AuditedPrimaryJournalArticle({lang,data}:{lang:Lang;data
   <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">{data.lead}</p><div className="mt-14 space-y-12">{data.sections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div></div></section>
   <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] bg-gold p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.22em]">{t.tip}</p><p className="mt-4 font-serif text-3xl">{data.tip}</p></div>{data.official&&<div className="mt-8 rounded-[2rem] bg-white p-8 shadow-soft"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{t.official}</p><p className="mt-3 text-slate-600">{t.sourceNote}</p><a href={data.official[1]} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{data.official[0]} ↗</a></div>}</div></section>
   {data.slug==='dove-parcheggiare-venezia'&&<section className="py-14"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] border border-navy/10 bg-white p-7 shadow-soft sm:p-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.parkingStayLabel}</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.parkingStayTitle}</h2><p className="mt-4 leading-7 text-slate-600">{t.parkingStayText}</p><Link href={localePath('/appartamenti-venezia-parcheggio-gratuito',lang)} className="mt-6 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{t.parkingStayLabel} →</Link></div></div></section>}
-  <EditorialStayCta lang={lang} context="journal"/>
+  <EditorialStayCta lang={lang} context={editorialStayContext(data.slug)}/>
   <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">Journal</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.more}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{data.related?.map(([label,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{label} <span className="text-gold">→</span></Link>)}</div><div className="mt-10 text-center"><Link href={p(lang,'/journal')} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{t.back}</Link></div></div></section>
  </article></main><Footer lang={lang}/></>;
 }
