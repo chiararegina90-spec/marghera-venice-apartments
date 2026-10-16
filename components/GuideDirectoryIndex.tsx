@@ -20,12 +20,12 @@ const copy:Record<CultureLang,{sections:SectionDef[];open:string;practical:[stri
  zh:{sections:[{key:'practical',title:'实用指南',text:'入住前和旅行中真正需要的信息。',icon:'🧭'},{key:'lagoon',title:'威尼斯与潟湖',text:'用更多背景与更从容的节奏认识岛屿。',icon:'🌊'},{key:'veneto',title:'探索威尼托',text:'从Marghera出发前往艺术城市、别墅、丘陵、海岸与山区。',icon:'🌿'},{key:'culture',title:'艺术与文化',text:'博物馆、古迹、教堂、别墅与城堡的完整目录。',icon:'🏛️'}],open:'打开指南',practical:[['前往威尼斯','公交、火车、车票与实用交通信息。','/zh/getting-to-venice','🚍'],['去哪里吃','精选餐厅、bacaro与实用地址。','/zh/where-to-eat','🍝'],['附近服务','超市、药房与公寓周边服务。','/zh/services-nearby','📍'],['实用链接','官方来源与旅行规划工具。','/zh/useful-links','🔗']],culture:[['威尼斯博物馆、古迹与教堂','80个地点，包含时长、票价、入场与官方链接。','venice'],['威尼托文化景点','覆盖七个省份的博物馆、别墅、城堡与文化地点。','veneto']]}
 };
 const accessPractical:Record<CultureLang,[string,string,string,string]>={
- it:['Contributo di accesso Venezia','Stato attuale 2026/2027: quando si paga e cosa verificare.','/journal/contributo-accesso-venezia','🎟️'],
- en:['Venice Access Fee','Current 2026/2027 status, payment rules and official updates.','/en/journal/contributo-accesso-venezia','🎟️'],
- de:['Venedig Zugangsbeitrag','Aktueller Stand 2026/2027, Zahlung und offizielle Updates.','/de/journal/contributo-accesso-venezia','🎟️'],
- fr:["Contribution d’Accès à Venise",'Situation 2026/2027, paiement et mises à jour officielles.','/fr/journal/contributo-accesso-venezia','🎟️'],
- es:['Tarifa de Acceso a Venecia','Estado 2026/2027, pagos y novedades oficiales.','/es/journal/contributo-accesso-venezia','🎟️'],
- zh:['威尼斯入城费','2026/2027当前状态、是否付费以及官方更新。','/zh/journal/contributo-accesso-venezia','🎟️']
+ it:['Contributo di accesso Venezia','Quando si paga, costi, esenzioni e aggiornamenti ufficiali.','/journal/contributo-accesso-venezia','🎟️'],
+ en:['Venice Access Fee','When it applies, costs, exemptions and official updates.','/en/journal/contributo-accesso-venezia','🎟️'],
+ de:['Venedig Zugangsbeitrag','Anwendungstage, Kosten, Befreiungen und offizielle Updates.','/de/journal/contributo-accesso-venezia','🎟️'],
+ fr:["Contribution d’Accès à Venise",'Dates d’application, tarifs, exonérations et mises à jour officielles.','/fr/journal/contributo-accesso-venezia','🎟️'],
+ es:['Tarifa de Acceso a Venecia','Días de aplicación, precios, exenciones y novedades oficiales.','/es/journal/contributo-accesso-venezia','🎟️'],
+ zh:['威尼斯入城费','实施日期、费用、豁免及官方更新。','/zh/journal/contributo-accesso-venezia','🎟️']
 };
 const lagoon=new Set(['murano','burano','lido-di-venezia','pellestrina','certosa','sant-erasmo','venezia-nascosta','gondola-tour-venezia']);
 const veneto=new Set(['chioggia','riviera-del-brenta','padova','treviso','verona','colline-del-prosecco','dolomiti','jesolo','veneto-in-bicicletta']);
