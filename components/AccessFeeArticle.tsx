@@ -34,7 +34,7 @@ export default function AccessFeeArticle({lang}:{lang:SiteLang}){
   };
   const articleSchema={
     '@context':'https://schema.org','@type':'Article',headline:c.h1,description:c.metaDescription,
-    datePublished:'2026-09-10',dateModified:'2026-10-15',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
+    datePublished:'2026-09-10',dateModified:'2026-10-16',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},
     image:`${BASE}/images/access-fee-cover.png`
