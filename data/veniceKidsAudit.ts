@@ -1,7 +1,7 @@
 import type {JournalArticleData} from '@/components/LocalizedRich';
 import type {SiteLang} from '@/lib/i18n';
 
-type KidsArticle=Pick<JournalArticleData,'slug'|'title'|'description'|'image'|'imageAlt'|'category'|'lead'|'sections'|'tip'|'official'|'related'>;
+type KidsArticle=Pick<JournalArticleData,'slug'|'title'|'description'|'image'|'imageAlt'|'category'|'lead'|'sections'|'tip'|'official'|'related'|'inlineLinks'>;
 
 export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
  it:{
@@ -27,6 +27,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'Con i bambini non cercare di “finire Venezia”. Scegli una o due esperienze davvero adatte alla loro età, considera i ponti come parte del tempo di viaggio e lascia sempre un margine per cambiare programma: è spesso la differenza tra una giornata faticosa e una bella giornata in famiglia.',
   official:['Museo di Storia Naturale – sito ufficiale MUVE','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"Halloween","/journal/halloween-venezia-2026"],[7,"San Martino","/journal/san-martino-venezia"],[7,"Carnevale","/journal/carnevale-di-venezia"]],
   related:[
    ['Museo di Storia Naturale','/guide/musei-venezia/museo-storia-naturale'],
    ['Halloween a Venezia 2026','/journal/halloween-venezia-2026'],
@@ -64,6 +65,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'Do not try to “finish Venice” with children. Pick one or two experiences that really suit their age, count bridges as part of the travel time and keep enough margin to change your plan. That flexibility is often what turns a tiring day into a good family day.',
   official:['Natural History Museum – official MUVE website','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"Halloween","/en/journal/halloween-venezia-2026"],[7,"San Martino","/en/journal/san-martino-venezia"],[7,"Carnival","/en/journal/carnevale-di-venezia"]],
   related:[
    ['Natural History Museum','/en/guide/venice-museums/museo-storia-naturale'],
    ['Halloween in Venice 2026','/en/journal/halloween-venezia-2026'],
@@ -101,6 +103,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'Versuchen Sie mit Kindern nicht, Venedig „abzuarbeiten“. Wählen Sie ein oder zwei wirklich passende Erlebnisse, rechnen Sie Brücken als Reisezeit mit ein und lassen Sie genug Spielraum für Planänderungen.',
   official:['Naturkundemuseum – offizielle MUVE-Website','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"Halloween","/de/journal/halloween-venezia-2026"],[7,"San Martino","/de/journal/san-martino-venezia"],[7,"Karneval","/de/journal/carnevale-di-venezia"]],
   related:[
    ['Naturkundemuseum','/de/guide/museen-venedig/museo-storia-naturale'],
    ['Halloween in Venedig 2026','/de/journal/halloween-venezia-2026'],
@@ -138,6 +141,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'Avec des enfants, n’essayez pas de « finir Venise ». Choisissez une ou deux expériences vraiment adaptées à leur âge, comptez les ponts dans le temps de trajet et gardez assez de marge pour changer de programme.',
   official:['Musée d’Histoire naturelle – site officiel MUVE','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"Halloween","/fr/journal/halloween-venezia-2026"],[7,"San Martino","/fr/journal/san-martino-venezia"],[7,"Carnaval","/fr/journal/carnevale-di-venezia"]],
   related:[
    ['Musée d’Histoire naturelle','/fr/guide/musees-venise/museo-storia-naturale'],
    ['Halloween à Venise 2026','/fr/journal/halloween-venezia-2026'],
@@ -175,6 +179,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'No intentes “terminar Venecia” con niños. Elige una o dos experiencias que encajen de verdad con su edad, cuenta los puentes dentro del tiempo de desplazamiento y deja margen suficiente para cambiar el plan.',
   official:['Museo de Historia Natural – web oficial MUVE','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"Halloween","/es/journal/halloween-venezia-2026"],[7,"San Martino","/es/journal/san-martino-venezia"],[7,"Carnaval","/es/journal/carnevale-di-venezia"]],
   related:[
    ['Museo de Historia Natural','/es/guide/museos-venecia/museo-storia-naturale'],
    ['Halloween en Venecia 2026','/es/journal/halloween-venezia-2026'],
@@ -212,6 +217,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   ],
   tip:'带孩子时不要试图一天“打卡完威尼斯”。选一两个真正适合他们年龄的体验，把过桥时间也算进行程，并给临时改变计划留出余地，通常会比排满景点更成功。',
   official:['威尼斯自然历史博物馆 MUVE 官网','https://msn.visitmuve.it/'],
+  inlineLinks:[[7,"万圣节","/zh/journal/halloween-venezia-2026"],[7,"圣马丁节","/zh/journal/san-martino-venezia"],[7,"威尼斯狂欢节","/zh/journal/carnevale-di-venezia"]],
   related:[
    ['威尼斯自然历史博物馆','/zh/guide/venice-museums/museo-storia-naturale'],
    ['2026 威尼斯万圣节','/zh/journal/halloween-venezia-2026'],

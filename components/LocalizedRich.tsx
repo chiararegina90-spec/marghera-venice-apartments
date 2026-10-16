@@ -79,7 +79,8 @@ export function LocalizedJournalIndex({lang,title,subtitle,items,readLabel,guide
  <section className="py-20"><div className="mx-auto max-w-5xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{ui.keep}</p><h2 className="mt-3 font-serif text-5xl text-navy">{ui.more}</h2><p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">{ui.text}</p><Link href={`/${lang}/guide`} className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">{guideLabel}</Link></div></section>
  </main><Footer lang={lang}/></>;
 }
-export type JournalArticleData=JournalItem&{lead:string;sections:[string,string][];tip:string;official?:[string,string];posterHero?:boolean;related?:[string,string][]};
+export type JournalInlineLink=[section:number,label:string,href:string];
+export type JournalArticleData=JournalItem&{lead:string;sections:[string,string][];tip:string;official?:[string,string];posterHero?:boolean;related?:[string,string][];inlineLinks?:JournalInlineLink[]};
 const journalHome:Record<Lang,string>={de:'Startseite',fr:'Accueil',es:'Inicio',zh:'首页'};
 const journalMore:Record<Lang,{journal:string;official:string;sourceNote:string;more:string;moreTitle:string;venice:string;transport:string;back:string}>={
  de:{journal:'Journal',official:'Offizielle Informationen',sourceNote:'Termine, Preise und Bedingungen können sich ändern. Prüfen Sie variable Informationen bitte immer kurz vor dem Besuch bei der offiziellen Quelle.',more:'Mehr entdecken',moreTitle:'Weitere Tipps für Ihren Aufenthalt',venice:'Venedig entdecken',transport:'Nach Venedig',back:'Zurück zum Journal'},
