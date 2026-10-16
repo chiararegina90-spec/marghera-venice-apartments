@@ -9,12 +9,17 @@ import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureIndexPath,cultureUi,highlightsLabel,kindLabel,localizedHighlights,planningText,planningTitle} from '@/data/cultureTranslations';
 import {cultureNarrative} from '@/data/cultureNarrative';
 import {cultureImagePair} from '@/data/cultureImages';
+import {culturePilot20261015} from '@/data/culturePilot20261015';
 
 const kindIcons={museum:'🏛️',monument:'🏰',church:'⛪',panorama:'👀'} as const;
 
 export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:CulturePlace;lang:CultureLang;scope:CultureScope;allPlaces:CulturePlace[]}){
  const ui=cultureUi[lang]; const city=cityLabel(place.city,lang); const index=cultureIndexPath(scope,lang); const home=lang==='it'?'/':`/${lang}`; const guide=lang==='it'?'/guide':`/${lang}/guide`; const narrative=cultureNarrative(place,lang); const local=cultureImagePair(place.slug);
- const related=allPlaces.filter(p=>p.slug!==place.slug && (p.city===place.city||p.kind===place.kind)).slice(0,3);
+ const pilotRelated=culturePilot20261015[place.slug as keyof typeof culturePilot20261015]?.[lang]?.relatedSlugs;
+ const related=(pilotRelated
+  ? pilotRelated.flatMap(slug=>{const found=allPlaces.find(p=>p.slug===slug);return found?[found]:[];})
+  : allPlaces.filter(p=>p.slug!==place.slug && (p.city===place.city||p.kind===place.kind))
+ ).slice(0,3);
  const faq=[
    [ui.faqDurationQ(place.name),ui.faqDurationA(place.name,place.duration)],
    [ui.faqBookingQ(place.name),ui.faqBookingA],

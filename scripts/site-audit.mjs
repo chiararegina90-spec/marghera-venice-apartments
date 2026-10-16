@@ -107,6 +107,67 @@ for(const section of ['guide','journal']){
   }
 }
 
+// Culture-detail SEO generator and 2026-10-15 editorial-pilot checks.
+const cultureSeoSource=read(path.join(root,'lib','cultureSeo.ts'));
+if(/\.slice\s*\(\s*0\s*,\s*\d+\s*\)/.test(cultureSeoSource)) failures.push('lib/cultureSeo.ts: mechanical character slicing is still used for culture metadata');
+if(!cultureSeoSource.includes('detailDescription(place,lang,city)')) failures.push('lib/cultureSeo.ts: culture-detail description is not generated through the semantic description helper');
+const detailFn=cultureSeoSource.match(/export function cultureDetailMetadata[\s\S]*?\n\}/)?.[0]||'';
+if(/title\s*:\s*`[^`]*Marghera Venice Apartments/.test(detailFn)) failures.push('lib/cultureSeo.ts: culture-detail title still hardcodes the brand suffix');
+
+const culturePlacesSource=read(path.join(root,'data','culturePlaces.ts'));
+const placesMarker='export const culturePlaces:CulturePlace[] = [';
+const placesStart=culturePlacesSource.indexOf(placesMarker);
+const placesEnd=culturePlacesSource.indexOf('\n];',placesStart);
+let culturePlaces=[];
+if(placesStart<0||placesEnd<0){
+  failures.push('data/culturePlaces.ts: unable to locate culturePlaces literal for dynamic SEO audit');
+}else{
+  try{culturePlaces=JSON.parse(culturePlacesSource.slice(placesStart+placesMarker.length-1,placesEnd+2));}
+  catch(error){failures.push(`data/culturePlaces.ts: culturePlaces literal cannot be parsed by audit (${error instanceof Error?error.message:String(error)})`);}
+}
+
+const pilotSource=read(path.join(root,'data','culturePilot20261015.ts'));
+const pilotSlugs=[...pilotSource.matchAll(/^ '([^']+)':\{$/gm)].map(m=>m[1]);
+const expectedPilotCount=12;
+if(pilotSlugs.length!==expectedPilotCount) failures.push(`Culture pilot: expected ${expectedPilotCount} updated places, found ${pilotSlugs.length}`);
+const uniquePilot=new Set(pilotSlugs);
+if(uniquePilot.size!==pilotSlugs.length) failures.push('Culture pilot: duplicate place slug found');
+const placeSlugSet=new Set(culturePlaces.map(p=>p.slug));
+for(const slug of pilotSlugs) if(!placeSlugSet.has(slug)) failures.push(`Culture pilot: unknown place slug ${slug}`);
+for(const slug of pilotSlugs){
+  const start=pilotSource.indexOf(` '${slug}':{`);
+  const nextCandidates=pilotSlugs.map(s=>pilotSource.indexOf(` '${s}':{`,start+1)).filter(i=>i>start);
+  const end=nextCandidates.length?Math.min(...nextCandidates):pilotSource.indexOf('\n};',start);
+  const block=pilotSource.slice(start,end);
+  for(const lang of langs) if(!new RegExp(`\\n  ${lang}:\\{`).test(block)) failures.push(`Culture pilot ${slug}: missing ${lang} localization`);
+}
+const controlMatch=pilotSource.match(/export const cultureControlSlugs=\[([\s\S]*?)\]\s+as const;/);
+const controlSlugs=controlMatch?[...controlMatch[1].matchAll(/'([^']+)'/g)].map(m=>m[1]):[];
+if(controlSlugs.length!==12) failures.push(`Culture control group: expected 12 places, found ${controlSlugs.length}`);
+for(const slug of controlSlugs){
+  if(!placeSlugSet.has(slug)) failures.push(`Culture control group: unknown place slug ${slug}`);
+  if(uniquePilot.has(slug)) failures.push(`Culture control group: ${slug} also belongs to the updated pilot`);
+}
+
+const kindName={
+ it:{museum:'Museo',monument:'Monumento',church:'Chiesa',panorama:'Panorama'},
+ en:{museum:'Museum',monument:'Monument',church:'Church',panorama:'Viewpoint'},
+ de:{museum:'Museum',monument:'Monument',church:'Kirche',panorama:'Aussichtspunkt'},
+ fr:{museum:'Musée',monument:'Monument',church:'Église',panorama:'Panorama'},
+ es:{museum:'Museo',monument:'Monumento',church:'Iglesia',panorama:'Mirador'},
+ zh:{museum:'博物馆',monument:'历史建筑',church:'教堂',panorama:'观景点'}
+};
+let dynamicCultureSamples=0;
+for(const slug of pilotSlugs.slice(0,2)){
+  const place=culturePlaces.find(p=>p.slug===slug); if(!place) continue;
+  for(const lang of langs){
+    const renderedTitle=`${place.name}: ${kindName[lang][place.kind]}, ${place.city}`;
+    dynamicCultureSamples++;
+    if(/Marghera Venice Apartments/.test(renderedTitle)) failures.push(`Culture metadata sample ${lang}/${slug}: brand suffix leaked into title`);
+    if(renderedTitle.length>80) warnings.push(`Culture metadata sample ${lang}/${slug}: title is ${renderedTitle.length} chars`);
+  }
+}
+
 const publicPages=pages.filter(f=>!/[\\/]app[\\/](?:[a-z]{2}[\\/])?guest(?:[\\/]|$)/.test(f) && !/[\\/]guest-content[\\/]/.test(f));
 // SEO metadata quality checks. These are warnings so legacy editorial pages can be
 // reviewed without blocking deploys; obvious duplicate branding is a hard failure.
@@ -143,6 +204,7 @@ const privatePages=pages.length-publicPages.length;
 console.log(`Site audit: ${pages.length} page routes (${publicPages.length} public, ${privatePages} private/guest)`);
 console.log(`Checked ${literalHrefs} literal hrefs, ${blankTargets} target=_blank links, ${localImages} local image references, ${guestHtml.length} Welcome Book HTML files.`);
 console.log(`SEO metadata audit: ${metadataPages} pages with metadata, ${missingMetadata} without page-level metadata, ${longTitles} long titles, ${longDescriptions} long descriptions.`);
+console.log(`Culture SEO audit: ${dynamicCultureSamples} dynamic title samples; ${pilotSlugs.length} pilot places and ${controlSlugs.length} control places checked.`);
 if(warnings.length){
   console.log(`Warnings (${warnings.length}):`);
   for(const w of warnings.slice(0,40)) console.log(`  - ${w}`);

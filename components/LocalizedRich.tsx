@@ -8,7 +8,7 @@ import WeChatCard from '@/components/WeChatCard';
 import GuideDirectoryIndex from '@/components/GuideDirectoryIndex';
 import JournalDynamicGrid from '@/components/JournalDynamicGrid';
 import EditorialHero from '@/components/EditorialHero';
-import EditorialStayCta from '@/components/EditorialStayCta';
+import EditorialStayCta,{editorialStayContext} from '@/components/EditorialStayCta';
 import {apartmentReviewsLocalized} from '@/data/apartment-reviews-localized';
 import {localePath} from '@/lib/i18n';
 
@@ -79,7 +79,8 @@ export function LocalizedJournalIndex({lang,title,subtitle,items,readLabel,guide
  <section className="py-20"><div className="mx-auto max-w-5xl px-5 text-center lg:px-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{ui.keep}</p><h2 className="mt-3 font-serif text-5xl text-navy">{ui.more}</h2><p className="mx-auto mt-5 max-w-2xl text-lg text-slate-600">{ui.text}</p><Link href={`/${lang}/guide`} className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">{guideLabel}</Link></div></section>
  </main><Footer lang={lang}/></>;
 }
-export type JournalArticleData=JournalItem&{lead:string;sections:[string,string][];tip:string;official?:[string,string];posterHero?:boolean;related?:[string,string][]};
+export type JournalInlineLink=[section:number,label:string,href:string];
+export type JournalArticleData=JournalItem&{lead:string;sections:[string,string][];tip:string;official?:[string,string];posterHero?:boolean;related?:[string,string][];inlineLinks?:JournalInlineLink[]};
 const journalHome:Record<Lang,string>={de:'Startseite',fr:'Accueil',es:'Inicio',zh:'首页'};
 const journalMore:Record<Lang,{journal:string;official:string;sourceNote:string;more:string;moreTitle:string;venice:string;transport:string;back:string}>={
  de:{journal:'Journal',official:'Offizielle Informationen',sourceNote:'Termine, Preise und Bedingungen können sich ändern. Prüfen Sie variable Informationen bitte immer kurz vor dem Besuch bei der offiziellen Quelle.',more:'Mehr entdecken',moreTitle:'Weitere Tipps für Ihren Aufenthalt',venice:'Venedig entdecken',transport:'Nach Venedig',back:'Zurück zum Journal'},
@@ -162,7 +163,7 @@ export function LocalizedJournalArticle({lang,data,tipLabel,officialLabel,backLa
   />
  <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="font-serif text-3xl leading-relaxed text-navy">{data.lead}</p><div className="mt-14 space-y-12">{articleSections.map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div></section>)}</div></div></section>
  <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[2rem] bg-gold p-8 text-navy"><p className="text-xs font-black uppercase tracking-[.22em]">{tipLabel}</p><p className="mt-4 font-serif text-3xl">{data.tip}</p></div>{(official||extras.length>0)&&<div className="mt-8 rounded-[2rem] bg-white p-8 shadow-soft"><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{officialLabel||t.official}</p><p className="mt-3 text-slate-600">{t.sourceNote}</p><div className="mt-5 flex flex-wrap gap-3">{official&&<a href={official[1]} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{official[0]} ↗</a>}{extras.map(([label,url])=><a key={url} href={url} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-navy px-6 py-3 font-bold text-navy">{label} ↗</a>)}</div></div>}</div></section>
- <EditorialStayCta lang={lang} context="journal"/>
+ <EditorialStayCta lang={lang} context={editorialStayContext(data.slug)}/>
  <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.more}</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.moreTitle}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{customRelated?customRelated.map(([label,href])=><Link key={href} href={href} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{label} <span className="text-gold">→</span></Link>):specialRelated?specialRelated.map(([label,slug])=><Link key={slug} href={`/${lang}/journal/${slug}`} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{label} <span className="text-gold">→</span></Link>):<><Link href={`/${lang}/discover-venice`} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{t.venice} <span className="text-gold">→</span></Link><Link href={`/${lang}/getting-to-venice`} className="rounded-3xl border border-slate-200 p-6 font-serif text-2xl text-navy transition hover:-translate-y-1 hover:shadow-soft">{t.transport} <span className="text-gold">→</span></Link></>}</div><div className="mt-10 text-center"><Link href={`/${lang}/journal`} className="inline-flex rounded-full bg-gold px-7 py-4 font-bold text-navy">{backLabel||t.back}</Link></div></div></section>
  </article></main><Footer lang={lang}/></>;
 }
