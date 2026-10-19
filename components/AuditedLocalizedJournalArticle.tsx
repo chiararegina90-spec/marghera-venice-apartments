@@ -6,6 +6,7 @@ import EditorialStayCta,{editorialStayContext} from '@/components/EditorialStayC
 import JournalInlineText from '@/components/JournalInlineText';
 import type {JournalArticleData} from '@/components/LocalizedRich';
 import {hreflang,localePath,type SiteLang} from '@/lib/i18n';
+import {applyJournalTranslationParity20261019} from '@/data/journalTranslationParity20261019';
 
 const BASE='https://www.margheraveniceapartments.com';
 type Lang=Extract<SiteLang,'de'|'fr'|'es'|'zh'>;
@@ -16,14 +17,15 @@ const ui:Record<Lang,{home:string;journal:string;more:string;sourceNote:string;b
  zh:{home:'首页',journal:'旅行日志',more:'更多住宿期间的实用内容',sourceNote:'日期、票价和条件可能变化。涉及实时信息时，请在出行前通过官方来源再次确认。',breadcrumb:'面包屑导航',parkingStayTitle:'还在寻找自驾住宿吗？',parkingStayText:'了解我们位于威尼斯附近、提供免费私人停车的公寓：自驾抵达后把车停在住宿处，再乘公共交通前往威尼斯。',parkingStayLabel:'自驾威尼斯',nextRegataTitle:'正在寻找2027威尼斯历史赛船节？',nextRegataText:'下一届活动将于2027年9月5日星期日举行。新指南已上线，后续会补充节目、时间与观众信息。',nextRegataLabel:'查看2027历史赛船节'}
 };
 
-export default function AuditedLocalizedJournalArticle({lang,data,tipLabel,officialLabel,backLabel}:{lang:Lang;data:JournalArticleData;tipLabel:string;officialLabel:string;backLabel:string}){
+export default function AuditedLocalizedJournalArticle({lang,data:sourceData,tipLabel,officialLabel,backLabel}:{lang:Lang;data:JournalArticleData;tipLabel:string;officialLabel:string;backLabel:string}){
+ const data=applyJournalTranslationParity20261019(sourceData,lang);
  const t=ui[lang];
  const logicalPath=`/journal/${data.slug}`;
  const pagePath=localePath(logicalPath,lang);
  const pageUrl=`${BASE}${pagePath}`;
  const imageUrl=data.image.startsWith('http')?data.image:`${BASE}${data.image}`;
  const schemas:any[]=[
-  {'@context':'https://schema.org','@type':'Article',headline:data.title,description:data.description,inLanguage:hreflang[lang],image:imageUrl,dateModified:data.slug==='carnevale-di-venezia'?'2026-10-15':'2026-09-14',mainEntityOfPage:{'@type':'WebPage','@id':pageUrl},author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE}},
+  {'@context':'https://schema.org','@type':'Article',headline:data.title,description:data.description,inLanguage:hreflang[lang],image:imageUrl,dateModified:(data.slug==='carnevale-di-venezia'||data.slug==='festa-del-redentore'||data.slug==='buone-maniere-a-venezia')?'2026-10-19':'2026-09-14',mainEntityOfPage:{'@type':'WebPage','@id':pageUrl},author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE}},
   {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:`${BASE}${localePath('/',lang)}`},{'@type':'ListItem',position:2,name:t.journal,item:`${BASE}${localePath('/journal',lang)}`},{'@type':'ListItem',position:3,name:data.title,item:pageUrl}]}
  ];
  if(data.slug==='carnevale-di-venezia') schemas.push({'@context':'https://schema.org','@type':'Event',name:data.title,description:data.description,startDate:'2027-01-23',endDate:'2027-02-09',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',inLanguage:hreflang[lang],image:imageUrl,url:pageUrl,location:{'@type':'City',name:'Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}}});
