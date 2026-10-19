@@ -70,27 +70,23 @@ export default function KlimtMuvecArticle({lang}:{lang:SiteLang}){
  return <>
   <Header lang={lang}/>
   <main>
-   <section className="bg-navy px-5 pb-14 pt-32 text-white sm:pb-16 lg:px-8">
-    <div className="mx-auto max-w-7xl">
-     <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white/65">
-      <Link href={localePath('/',lang)} className="hover:text-gold">{t.home}</Link><span>›</span>
-      <Link href={localePath('/journal',lang)} className="hover:text-gold">{t.journal}</Link><span>›</span>
-      <span className="text-gold">{c.category}</span>
-     </nav>
-     <div className="mt-8 grid items-end gap-8 lg:grid-cols-[1.1fr_.9fr]">
-      <div>
-       <p className="text-xs font-black uppercase tracking-[.22em] text-gold">{c.eyebrow}</p>
-       <h1 className="mt-4 max-w-5xl text-balance font-serif text-[clamp(2.7rem,6vw,5.25rem)] leading-[.96]">{c.title}</h1>
-       <p className="mt-5 max-w-3xl text-sm font-black uppercase tracking-[.16em] text-white/65">{c.eventDate}</p>
-      </div>
-      <p className="max-w-xl text-lg leading-8 text-white/70 lg:justify-self-end">{c.officialTitle}</p>
-     </div>
+   <section className="relative min-h-[72vh] overflow-hidden pt-20">
+    <div className="absolute inset-0">
+     <Image src={KLIMT_MUVEC_COVER} alt={c.imageAlt} fill priority sizes="100vw" className="object-cover"/>
     </div>
-   </section>
-
-   <section className="bg-cream px-5 py-8 lg:px-8">
-    <div className="relative mx-auto aspect-[3/2] max-w-7xl overflow-hidden rounded-[2rem] bg-white shadow-soft">
-     <Image src={KLIMT_MUVEC_COVER} alt={c.imageAlt} fill priority sizes="(min-width:1280px) 1216px, 100vw" className="object-cover"/>
+    <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/60 to-navy/15"/>
+    <div className="relative mx-auto flex min-h-[calc(72vh-5rem)] max-w-7xl items-end px-5 pb-14 pt-24 lg:px-8">
+     <div className="max-w-5xl text-white">
+      <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-white/70">
+       <Link href={localePath('/',lang)} className="hover:text-gold">{t.home}</Link><span>›</span>
+       <Link href={localePath('/journal',lang)} className="hover:text-gold">{t.journal}</Link><span>›</span>
+       <span className="text-gold">{c.category}</span>
+      </nav>
+      <p className="mt-6 text-xs font-black uppercase tracking-[.22em] text-gold">{c.eyebrow}</p>
+      <h1 className="mt-4 max-w-5xl text-balance font-serif text-[clamp(2.7rem,7vw,5.25rem)] leading-[.96]">{c.title}</h1>
+      <p className="mt-5 max-w-3xl text-sm font-black uppercase tracking-[.16em] text-white/75">{c.eventDate}</p>
+      <p className="mt-5 max-w-3xl text-lg leading-8 text-white/85 sm:text-xl">{c.officialTitle}</p>
+     </div>
     </div>
    </section>
 
