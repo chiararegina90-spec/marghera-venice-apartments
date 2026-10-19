@@ -21,6 +21,7 @@ import {veniceDesignWeek2026Overrides} from './veniceDesignWeek2026Overrides';
 import {veleziana2026Overrides} from './veleziana2026Overrides';
 import {radarVenezia2026Overrides} from './radarVenezia2026Overrides';
 import {applyJournalCatchup20261015} from './journalCatchup20261015';
+import {applyJournalCatchup20261019} from './journalCatchup20261019';
 import {halloween2026} from './halloween2026';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
@@ -81,7 +82,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='salone-alto-artigianato-italiano-2026')Object.assign(item,salone2026Overrides[lang]);
     if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
-    if(item)applyJournalCatchup20261015(item,lang,slug);
+    if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;
