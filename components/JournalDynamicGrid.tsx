@@ -2,6 +2,7 @@ import JournalFilterGrid,{type JournalFilterItem} from '@/components/JournalFilt
 import {eventArticles,type EventLang} from '@/data/journal-events-2026';
 import {journalEventImagePair} from '@/data/journal-event-images';
 import {seoJournalItems} from '@/data/seoEvergreenContent';
+import {klimtMuvecCard} from '@/data/klimtMuvec2026';
 
 const film2027:Record<EventLang,{title:string;eventDate:string;text:string}>={
   it:{title:'Mostra del Cinema di Venezia 2027',eventDate:'1–11 SETTEMBRE 2027',text:'Le date della 84ª Mostra sono già state annunciate: guida in aggiornamento su programma, biglietti, red carpet e Lido.'},
@@ -23,14 +24,14 @@ const vespucci2026:Record<EventLang,{title:string;eventDate:string}>={
 
 export default function JournalDynamicGrid({items,lang='it',readLabel}:{items:JournalFilterItem[];lang?:EventLang;readLabel?:string}){
   const prefix=lang==='it'?'':`/${lang}`;
-  const dynamicEvents:JournalFilterItem[]=eventArticles(lang).map(a=>{
+  const dynamicEvents:JournalFilterItem[]=[klimtMuvecCard(lang),...eventArticles(lang).map(a=>{
     const local=journalEventImagePair(a.slug);
     return {
       title:a.cardTitle||a.title,category:a.category,text:a.cardDescription||a.description,image:local?.card||a.image,alt:a.cardImageAlt||a.imageAlt,
       href:`${prefix}/journal/${a.slug}`,eventDate:a.cardEventDate||a.eventDate,commonsQuery:a.commonsQuery||undefined,
       fallbackImage:local?.cover||a.fallbackImage,startDate:a.startDate,endDate:a.endDate
     };
-  });
+  })];
   const sharedEvergreen=seoJournalItems(lang);
   const currentItems=items.map(item=>{
     const href=item.href.replace(/\/$/,'');
