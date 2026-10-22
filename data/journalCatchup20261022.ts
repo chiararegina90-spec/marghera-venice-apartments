@@ -8,7 +8,39 @@ function insertSection(item:EventArticle,index:number,title:string,text:string){
 }
 
 export function applyJournalCatchup20261022(item:EventArticle,lang:EventLang,slug:string){
-  if(!item||slug!=='venicemarathon-2026')return;
+  if(!item)return;
+
+  if(slug==='venezia-a-novembre'){
+    const title=m(lang,{
+      it:'Biennale Arte e giornate al coperto',
+      en:'Biennale Arte and indoor days',
+      de:'Biennale Arte und Schlechtwettertage',
+      fr:'Biennale Arte et journées à l’intérieur',
+      es:'Bienal de Arte y planes bajo techo',
+      zh:'双年展与室内安排'
+    });
+    const extra=m(lang,{
+      it:' Per chi visita Venezia nella seconda metà del mese, la Biennale Arte 2026 offre alcune date speciali: apertura straordinaria lunedì 16 novembre, programma conclusivo di performance e incontri dal 13 al 22 novembre e, nell’ultima giornata, la premiazione dei Leoni dei Visitatori. Sempre domenica 22 novembre, alle 16:00, alle Tese dei Soppalchi dell’Arsenale è prevista In This World di Laurie Anderson.',
+      en:' For visitors in the second half of the month, Biennale Arte 2026 has several special dates: an exceptional opening on Monday 16 November, a closing programme of performances and talks from 13 to 22 November and, on the final day, the Visitors’ Lions awards. Also on Sunday 22 November at 4pm, Laurie Anderson presents In This World at the Tese dei Soppalchi in the Arsenale.',
+      de:' Für Besuche in der zweiten Monatshälfte bietet die Biennale Arte 2026 einige besondere Termine: Sonderöffnung am Montag, 16. November, Abschlussprogramm mit Performances und Gesprächen vom 13. bis 22. November und am letzten Tag die Verleihung der Besucher-Löwen. Ebenfalls am Sonntag, 22. November, um 16:00 Uhr findet in den Tese dei Soppalchi im Arsenale Laurie Andersons In This World statt.',
+      fr:' Pour une visite dans la seconde moitié du mois, la Biennale Arte 2026 propose plusieurs dates particulières : ouverture exceptionnelle le lundi 16 novembre, programme final de performances et rencontres du 13 au 22 novembre et, le dernier jour, remise des Lions des Visiteurs. Toujours le dimanche 22 novembre à 16:00, Laurie Anderson présente In This World aux Tese dei Soppalchi de l’Arsenale.',
+      es:' Para quienes visitan Venecia en la segunda mitad del mes, la Biennale Arte 2026 ofrece algunas fechas especiales: apertura extraordinaria el lunes 16 de noviembre, programa final de performances y encuentros del 13 al 22 de noviembre y, en la última jornada, la entrega de los Leones de los Visitantes. También el domingo 22 de noviembre, a las 16:00, Laurie Anderson presenta In This World en las Tese dei Soppalchi del Arsenale.',
+      zh:' 如果在11月下半月到访威尼斯，Biennale Arte 2026 有几个值得留意的特别日期：11月16日星期一特别开放，11月13日至22日举行收官表演与交流活动，并在最后一天颁发 Leoni dei Visitatori。11月22日星期日16:00，Laurie Anderson 还将在 Arsenale 的 Tese dei Soppalchi 呈现 In This World。'
+    });
+    const index=(item.sections||[]).findIndex(([sectionTitle])=>sectionTitle===title);
+    if(index>=0&&!item.sections[index][1].includes('Laurie Anderson')){
+      item.sections=item.sections.map(([sectionTitle,text],i)=>i===index?[sectionTitle,text+extra] as const:[sectionTitle,text] as const);
+      const href='/journal/biennale-di-venezia';
+      item.sectionLinks=[
+        ...(item.sectionLinks||[]).filter(link=>!(link.section===index&&link.href===href)),
+        {section:index,text:m(lang,{it:'Approfondisci nella nostra ',en:'Read our ',de:'Mehr dazu in unserem ',fr:'Pour approfondir, consultez notre ',es:'Más información en nuestra ',zh:'更多信息请查看我们的 '}),label:m(lang,{it:'guida alla Biennale Arte 2026',en:'Biennale Arte 2026 guide',de:'Guide zur Biennale Arte 2026',fr:'guide de la Biennale Arte 2026',es:'guía de la Biennale Arte 2026',zh:'Biennale Arte 2026 指南'}),href,tail:'.'}
+      ];
+    }
+    item.dateModified='2026-10-22';
+    return;
+  }
+
+  if(slug!=='venicemarathon-2026')return;
 
   const programme=m(lang,{
     it:'La 40ª edizione porta al via 24.000 runner da 124 Paesi, con tutte e tre le distanze sold out. Gli iscritti alla 42K sono 10.200. Domenica 25 ottobre la VM10K parte alle 08:00 dal Parco San Giuliano, la 21K alle 08:45 da Piazza Ferretto a Mestre e la 42K alle 09:40 circa da Villa Pisani a Stra. Tutte le gare arrivano a Riva Sette Martiri, a Venezia; la maratona attraversa anche il ponte galleggiante provvisorio di 166 metri sul Canal Grande. Exposport Venicemarathon Village apre venerdì 23 ottobre al Parco San Giuliano, dove nello stesso giorno è in programma anche la Family Run Mestre.',
