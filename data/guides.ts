@@ -1044,175 +1044,58 @@ export const guideData = {
   },
   "dolomiti": {
     "slug": "dolomiti",
-    "title": "Dolomiti",
-    "kicker": "Una giornata in montagna",
-    "subtitle": "Laghi, passi e panorami alpini partendo dalla pianura.",
-    "description": "Un’escursione più lunga, ideale per chi viaggia in auto e vuole dedicare un’intera giornata alla montagna.",
+    "title": "Dolomiti da Venezia",
+    "kicker": "Venezia e montagna nello stesso viaggio",
+    "subtitle": "Cortina in autobus da Venezia Mestre, oppure laghi e passi in auto.",
+    "description": "Come raggiungere le Dolomiti da Venezia e Marghera: Cortina d’Ampezzo in autobus da Venezia Mestre, itinerari in auto, tempi, consigli e link ufficiali.",
     "image": "/images/guide-dolomiti-final.webp",
     "imageAlt": "Panorama delle Dolomiti con cime rocciose, prati e case alpine",
-    "badges": [
-      [
-        "Visita consigliata",
-        "Giornata molto lunga"
-      ],
-      [
-        "Come arrivare",
-        "Auto indispensabile"
-      ],
-      [
-        "Ideale per",
-        "Natura e panorami"
-      ],
-      [
-        "Stile",
-        "Itinerario da pianificare"
-      ]
-    ],
-    "introTitle": "La montagna richiede tempo e rispetto",
+    "badges": [["Visita consigliata","Giornata intera"],["Senza auto","Mestre → Cortina"],["Viaggio in bus","circa 2 h 30"],["Tariffe bus","da € 12,50"]],
+    "introTitle": "Dalla laguna alle Dolomiti, anche senza auto",
     "intro": [
-      "Le Dolomiti non sono una singola destinazione. Cortina, Cadore, Alleghe, Misurina e le Dolomiti Bellunesi richiedono itinerari diversi e condizioni diverse.",
-      "Da Marghera è possibile organizzare una giornata, ma occorre partire presto, scegliere una sola area e verificare meteo, viabilità e parcheggi."
+      "Le Dolomiti non sono una singola destinazione: Cortina, Cadore, laghi e passi richiedono programmi diversi. In una giornata conviene scegliere una sola area e lasciare spazio a meteo e stagionalità.",
+      "Per Cortina d’Ampezzo esistono collegamenti dalla stazione di Venezia Mestre. Cortina Express indica circa 2 ore e 30 minuti e tariffe a partire da €12,50; il quadro orario attuale comprende corse Cortina Express e Dolomiti Bus, quindi verifica sempre operatore e orario del giorno."
     ],
     "highlights": [
-      [
-        "Cortina d’Ampezzo",
-        "Una base nota per panorami e servizi."
-      ],
-      [
-        "Misurina",
-        "Lago e paesaggio alpino."
-      ],
-      [
-        "Cadore",
-        "Borghi, cultura e montagne."
-      ],
-      [
-        "Alleghe",
-        "Lago e pareti dolomitiche."
-      ],
-      [
-        "Dolomiti Bellunesi",
-        "Itinerari più selvaggi e meno mondani."
-      ],
-      [
-        "Passi panoramici",
-        "Solo con meteo e viabilità favorevoli."
-      ]
+      ["Cortina d’Ampezzo","La scelta più semplice per aggiungere una giornata dolomitica senza auto a un soggiorno veneziano."],
+      ["San Vito di Cadore","Una delle località servite lungo la direttrice Mestre–Cortina, circondata dalle montagne del Cadore."],
+      ["Cadore","Borghi e paesaggi alpini lungo la stessa direttrice, utili anche per costruire un viaggio più lungo."],
+      ["Misurina e Tre Cime","Mete iconiche, ma i collegamenti locali cambiano con la stagione: verifica sempre i servizi prima di inserirle nella giornata."],
+      ["Laghi e passi","Per itinerari panoramici più liberi e località remote, l’auto resta spesso la soluzione più flessibile."],
+      ["Una sola area","In giornata non provare a vedere “tutte le Dolomiti”: scegli Cortina oppure un settore preciso."]
     ],
     "experiences": [
-      [
-        "Passeggiata facile",
-        "Scegli un percorso adatto alla preparazione."
-      ],
-      [
-        "Lago alpino",
-        "Una meta accessibile e panoramica."
-      ],
-      [
-        "Pranzo in rifugio",
-        "Controlla aperture e accessi."
-      ],
-      [
-        "Fotografia",
-        "Luce e meteo cambiano rapidamente."
-      ],
-      [
-        "Borgo di montagna",
-        "Un’alternativa alle mete più affollate."
-      ],
-      [
-        "Itinerario panoramico in auto",
-        "Da costruire senza troppe tappe."
-      ]
+      ["Passeggiata a Cortina","Centro, scorci sulle cime e una giornata semplice senza automobile."],
+      ["Impianti di risalita","Controlla apertura stagionale, meteo e ultimo rientro prima di salire."],
+      ["Pranzo in montagna","Lascia tempo per una vera pausa invece di accumulare tappe."],
+      ["Cadore","Valuta una fermata solo se compatibile con gli orari del tuo servizio."],
+      ["Fotografia","La luce e il meteo possono cambiare molto rapidamente."],
+      ["Itinerario in auto","Per laghi e passi scegli un percorso separato e ben pianificato."]
     ],
     "itinerary": [
-      [
-        "06:30",
-        "Partenza da Marghera",
-        "La giornata richiede un avvio precoce."
-      ],
-      [
-        "09:00",
-        "Arrivo nell’area scelta",
-        "Cortina, Cadore o Bellunese."
-      ],
-      [
-        "10:00",
-        "Passeggiata",
-        "Adatta a meteo e capacità."
-      ],
-      [
-        "13:00",
-        "Pranzo",
-        "Rifugio o paese."
-      ],
-      [
-        "15:00",
-        "Seconda tappa breve",
-        "Lago, borgo o punto panoramico."
-      ],
-      [
-        "17:00",
-        "Rientro",
-        "Evita di partire troppo tardi."
-      ]
+      ["Prima mattina","Partenza da Venezia Mestre","Scegli una corsa mattutina che lasci abbastanza ore a Cortina e controlla eventuali variazioni o spostamenti di fermata."],
+      ["Mattina","Arrivo a Cortina","Inizia dal centro e orientati con calma prima di aggiungere passeggiate o impianti."],
+      ["Tarda mattina","Passeggiata o quota","Se meteo e stagione lo permettono, scegli una sola esperienza principale."],
+      ["13:00","Pranzo","Fermati senza fretta: la montagna funziona meglio con un programma semplice."],
+      ["Pomeriggio","Ultime ore in montagna","Resta vicino al punto di rientro e non aggiungere trasferimenti rischiosi."],
+      ["Tardo pomeriggio","Rientro verso Mestre","Il quadro orario attuale consente di costruire una vera gita in giornata; conferma sempre la corsa scelta prima di partire."]
     ],
-    "adviceTitle": "Scegli una sola valle o un solo lago",
-    "advice": "Le distanze montane e il traffico possono essere imprevedibili. Un itinerario semplice è più sicuro e piacevole di una lista troppo lunga.",
-    "heartTitle": "Le Dolomiti Bellunesi meno conosciute",
-    "heartText": "Oltre alle mete celebri esistono borghi, sentieri natura e paesaggi più tranquilli.",
-    "historyTitle": "Patrimonio Mondiale UNESCO",
-    "historyText": "Le Dolomiti sono riconosciute dall’UNESCO per il valore geologico e paesaggistico. La visita richiede attenzione all’ambiente e alle condizioni della montagna.",
+    "adviceTitle": "Per Cortina puoi lasciare l’auto a Marghera",
+    "advice": "Una giornata a Cortina e un road trip tra laghi e passi sono due esperienze diverse. Per Cortina il bus da Venezia Mestre è una soluzione concreta; per mete disperse e strade panoramiche l’auto offre più libertà. In entrambi i casi controlla meteo e condizioni aggiornate.",
+    "heartTitle": "Due paesaggi completamente diversi nello stesso soggiorno",
+    "heartText": "La posizione di Marghera permette di alternare Venezia e una giornata alpina senza cambiare alloggio: un giorno calli e laguna, il giorno dopo Cortina e le Dolomiti.",
+    "historyTitle": "Le Dolomiti sono un territorio, non una singola meta",
+    "historyText": "Cortina è una porta d’accesso molto conosciuta, ma il paesaggio dolomitico comprende valli, borghi e gruppi montuosi diversi. Per questo una giornata ben riuscita nasce dalla scelta di una zona, non dal numero di luoghi segnati sulla mappa.",
     "faq": [
-      [
-        "Si possono visitare in giornata?",
-        "Sì, scegliendo una sola zona e partendo presto."
-      ],
-      [
-        "Serve l’auto?",
-        "Per un’escursione da Marghera è la soluzione più pratica."
-      ],
-      [
-        "Sono adatte ai bambini?",
-        "Sì, con percorsi facili e condizioni sicure."
-      ],
-      [
-        "Serve attrezzatura da montagna?",
-        "Dipende dal percorso e dalla stagione."
-      ],
-      [
-        "Quando andare?",
-        "Estate e inizio autunno per escursioni; inverno solo con preparazione adeguata."
-      ],
-      [
-        "Cosa controllare?",
-        "Meteo, viabilità, parcheggi, impianti e aperture."
-      ]
+      ["Posso andare a Cortina senza auto?","Sì. Dalla stazione di Venezia Mestre sono pubblicati collegamenti in autobus verso Cortina d’Ampezzo. Verifica sempre il servizio della data scelta."],
+      ["Quanto dura Mestre–Cortina?","Cortina Express indica circa 2 ore e 30 minuti per il collegamento tra Mestre e Cortina."],
+      ["Quanto costa?","Le tariffe pubblicizzate per Mestre–Cortina partono da €12,50. Il prezzo effettivo dipende dalla data e dalla corsa disponibile."],
+      ["È davvero fattibile in giornata?","Sì, scegliendo una partenza mattutina e un rientro nel tardo pomeriggio o in serata. Gli orari cambiano, quindi la fattibilità va ricontrollata per il giorno scelto."],
+      ["Il bus porta in tutte le Dolomiti?","No. Il collegamento Mestre–Cortina serve una direttrice precisa. Per altre località possono servire coincidenze, servizi stagionali o l’auto."],
+      ["Meglio bus o auto?","Per una giornata concentrata su Cortina il bus evita guida e parcheggio. Per laghi, passi e località più remote l’auto resta generalmente più flessibile."]
     ],
-    "related": [
-      [
-        "Colline del Prosecco",
-        "/guide/colline-del-prosecco"
-      ],
-      [
-        "Verona",
-        "/guide/verona"
-      ],
-      [
-        "Treviso",
-        "/guide/treviso"
-      ]
-    ],
-    "officialLinks": [
-      [
-        "Dolomiti Bellunesi",
-        "https://www.visitdolomitibellunesi.com/"
-      ],
-      [
-        "Meteo Veneto",
-        "https://www.arpa.veneto.it/"
-      ]
-    ]
+    "related": [["Scopri il Veneto","/scopri-il-veneto"],["Colline del Prosecco","/guide/colline-del-prosecco"],["Treviso","/guide/treviso"]],
+    "officialLinks": [["Cortina Express — Mestre / Cortina","https://www.cortinaexpress.it/it/autobus-cortina-dampezzo-mestre/"],["Orari Cortina Express","https://www.cortinaexpress.it/it/orari-autobus/"]]
   },
   "certosa": {
     "slug": "certosa",
