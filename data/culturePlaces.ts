@@ -2730,7 +2730,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "Verifica tariffa ufficiale",
-    "hours": "Verifica orari stagionali",
+    "hours": "Fino a fine ottobre 2026: sabato e domenica 10:00–12:30 e 15:00–18:30; feriali su prenotazione per gruppi e scuole",
     "booking": "recommended",
     "officialUrl": "https://www.museoselvadicadore.it/",
     "mapsQuery": "Museo Vittorino Cazzetta, Selva di Cadore, Italia"
