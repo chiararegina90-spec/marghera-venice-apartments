@@ -5,16 +5,19 @@ import Footer from '@/components/Footer';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import CulturePracticalCard from '@/components/CulturePracticalCard';
 import CultureCard from '@/components/CultureCard';
+import CultureTemporaryEvents from '@/components/CultureTemporaryEvents';
 import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureIndexPath,cultureUi,highlightsLabel,kindLabel,localizedHighlights,planningText,planningTitle} from '@/data/cultureTranslations';
 import {cultureNarrative} from '@/data/cultureNarrative';
 import {cultureImagePair} from '@/data/cultureImages';
 import {culturePilot20261015} from '@/data/culturePilot20261015';
+import {cultureTemporaryEventsFor,cultureTemporarySummary} from '@/data/cultureTemporaryEvents';
 
 const kindIcons={museum:'🏛️',monument:'🏰',church:'⛪',panorama:'👀'} as const;
 
 export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:CulturePlace;lang:CultureLang;scope:CultureScope;allPlaces:CulturePlace[]}){
  const ui=cultureUi[lang]; const city=cityLabel(place.city,lang); const index=cultureIndexPath(scope,lang); const home=lang==='it'?'/':`/${lang}`; const guide=lang==='it'?'/guide':`/${lang}/guide`; const narrative=cultureNarrative(place,lang); const local=cultureImagePair(place.slug);
+ const temporaryEvents=cultureTemporaryEventsFor(place.slug);
  const pilotRelated=culturePilot20261015[place.slug as keyof typeof culturePilot20261015]?.[lang]?.relatedSlugs;
  const related=(pilotRelated
   ? pilotRelated.flatMap(slug=>{const found=allPlaces.find(p=>p.slug===slug);return found?[found]:[];})
@@ -33,7 +36,19 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      {'@type':'ListItem',position:3,name:scope==='venice'?ui.veniceTitle:ui.venetoTitle,item:`https://www.margheraveniceapartments.com${index}`},
      {'@type':'ListItem',position:4,name:place.name,item:`https://www.margheraveniceapartments.com${cultureDetailPath(scope,lang,place.slug)}`},
    ]},
-   {'@context':'https://schema.org','@type':'FAQPage',mainEntity:faq.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
+   {'@context':'https://schema.org','@type':'FAQPage',mainEntity:faq.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))},
+   ...temporaryEvents.map(event=>({
+     '@context':'https://schema.org',
+     '@type':'Event',
+     name:event.title,
+     startDate:event.start,
+     endDate:event.end,
+     eventStatus:'https://schema.org/EventScheduled',
+     eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
+     location:{'@type':'Place',name:place.name,address:{'@type':'PostalAddress',addressLocality:place.city,addressRegion:'Veneto',addressCountry:'IT'}},
+     url:event.officialUrl,
+     description:cultureTemporarySummary(event,lang)
+   }))
  ];
  return <><Header lang={lang}/><main className="culture-detail editorial-page">
    {jsonLd.map((x,i)=><script key={i} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(x)}}/>)}
@@ -63,6 +78,7 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      <article className="min-w-0">
        <section><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">01</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.why}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{narrative.why}</p></section>
        <section className="mt-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">02</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.miss}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{ui.missText(highlightsLabel(place,lang))}</p><div className="mt-5 flex flex-wrap gap-2">{localizedHighlights(place,lang).map(h=><span key={h} className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">✦ {h}</span>)}</div></section>
+       <CultureTemporaryEvents placeSlug={place.slug} lang={lang}/>
        <section className="mt-8 rounded-[1.75rem] border border-[#e5dccd] bg-white p-6 sm:p-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">03</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{planningTitle(lang)}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{planningText(place,lang)}</p></section>
        <section className="mt-8 rounded-[1.75rem] bg-cream p-6 sm:p-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">04</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.curiosity}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{narrative.curiosity}</p></section>
        <section className="mt-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">05</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.getting}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{narrative.getting}</p><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.mapsQuery)}`} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-full bg-navy px-6 py-3 font-bold text-white">{ui.maps} ↗</a></section>
