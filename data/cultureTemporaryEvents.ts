@@ -91,5 +91,9 @@ export function cultureTemporaryEventStatus(event:CultureTemporaryEvent,referenc
 
 export function cultureTemporarySummary(event:CultureTemporaryEvent,lang:CultureLang){
   if(lang==='it') return event.summaryIt;
-  return labelByLang[lang].generic;
+  return lang==='en'? `${event.title} is part of the venue’s current or upcoming temporary programme; dates and details are based on the official source.`
+   :lang==='de'? `${event.title} gehört zum aktuellen oder kommenden Sonderprogramm; Termine und Angaben basieren auf der offiziellen Quelle.`
+   :lang==='fr'? `${event.title} fait partie de la programmation temporaire actuelle ou à venir ; dates et détails proviennent de la source officielle.`
+   :lang==='es'? `${event.title} forma parte de la programación temporal actual o próxima; fechas y detalles proceden de la fuente oficial.`
+   : `${event.title} 属于场馆当前或即将推出的临时项目；日期与信息依据官方来源核查。`;
 }
