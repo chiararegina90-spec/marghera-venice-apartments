@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import type {CultureLang,CultureKind,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cultureDetailPath,cultureIndexPath,cultureUi,cityLabel,localizedHighlights} from '@/data/cultureTranslations';
 import {siteLangs,hreflang} from '@/lib/i18n';
+import {cultureTemporaryEventsFor} from '@/data/cultureTemporaryEvents';
 
 function alternates(scope:CultureScope,slug?:string){
  const languages=Object.fromEntries(siteLangs.map(lang=>[hreflang[lang],slug?cultureDetailPath(scope,lang,slug):cultureIndexPath(scope,lang)]));
@@ -20,12 +21,22 @@ const seoKindLabel:Record<CultureLang,Record<CultureKind,string>>={
 function detailDescription(place:CulturePlace,lang:CultureLang,city:string){
  const highlights=localizedHighlights(place,lang);
  const first=highlights[0]; const second=highlights[1];
+ const temporary=cultureTemporaryEventsFor(place.slug)[0];
+ const temporarySuffix=temporary
+  ? lang==='it'? ` Mostra/evento: ${temporary.title}.`
+  : lang==='en'? ` Current/next exhibition: ${temporary.title}.`
+  : lang==='de'? ` Aktuelle/nächste Ausstellung: ${temporary.title}.`
+  : lang==='fr'? ` Exposition actuelle/à venir : ${temporary.title}.`
+  : lang==='es'? ` Exposición actual/próxima: ${temporary.title}.`
+  : ` 当前/即将展出：${temporary.title}。`
+  : '';
  const full=lang==='it'?`${place.name} a ${city}: ${first} e ${second}. Info pratiche su visita, biglietti, orari e prenotazione.`
   :lang==='en'?`${place.name} in ${city}: ${first} and ${second}. Practical info on visiting, tickets, opening hours and booking.`
   :lang==='de'?`${place.name} in ${city}: ${first} und ${second}. Praktische Infos zu Besuch, Tickets, Öffnungszeiten und Reservierung.`
   :lang==='fr'?`${place.name} à ${city} : ${first} et ${second}. Infos pratiques sur la visite, les billets, les horaires et la réservation.`
   :lang==='es'?`${place.name} en ${city}: ${first} y ${second}. Información práctica sobre visita, entradas, horarios y reserva.`
   :`${place.name}（${city}）：了解${first}和${second}，并查看参观时长、门票、开放时间与预约等实用信息。`;
+ if((full+temporarySuffix).length<=190)return full+temporarySuffix;
  if(full.length<=190)return full;
  const compact=lang==='it'?`${place.name} a ${city}: ${first}. Info su biglietti, orari e prenotazione.`
   :lang==='en'?`${place.name} in ${city}: ${first}. Tickets, opening hours and booking info.`
