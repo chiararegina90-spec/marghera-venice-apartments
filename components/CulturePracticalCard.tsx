@@ -1,8 +1,10 @@
 import type {CultureLang,CulturePlace} from '@/data/culturePlaces';
 import {bookingLabel,cultureUi,hoursLabel,priceLabel} from '@/data/cultureTranslations';
+import {cultureTemporaryEventsFor,cultureTemporaryLabels} from '@/data/cultureTemporaryEvents';
 
 export default function CulturePracticalCard({place,lang,className=''}:{place:CulturePlace;lang:CultureLang;className?:string}){
  const ui=cultureUi[lang];
+ const temporaryEvents=cultureTemporaryEventsFor(place.slug); const temporaryLabels=cultureTemporaryLabels(lang);
  return <aside className={`rounded-[2rem] bg-navy p-6 text-white shadow-soft sm:p-7 ${className}`}>
    <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{ui.practical}</p>
    <h2 className="mt-2 font-serif text-3xl">{ui.practicalSub}</h2>
@@ -11,6 +13,7 @@ export default function CulturePracticalCard({place,lang,className=''}:{place:Cu
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🎟️ {ui.price}</dt><dd className="text-right font-semibold">{priceLabel(place,lang)}</dd></div>
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🕒 {ui.hours}</dt><dd className="text-right font-semibold">{hoursLabel(place,lang)}</dd></div>
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">📅 {ui.booking}</dt><dd className="text-right font-semibold">{bookingLabel(place.booking,lang)}</dd></div>
+     {temporaryEvents.length>0&&<div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🎨</dt><dd className="text-right font-semibold"><a href="#mostre-eventi-temporanei" className="text-gold underline decoration-gold/40 underline-offset-4">{temporaryEvents.length} · {temporaryLabels.section}</a></dd></div>}
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🧒 {ui.families}</dt><dd className="text-right font-semibold">{place.family?ui.familyYes:ui.familyNo}</dd></div>
      {place.panorama&&<div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">👀</dt><dd className="text-right font-semibold">{ui.panoramaYes}</dd></div>}
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">♿ {ui.access}</dt><dd className="text-right text-white/80">{ui.accessCheck}</dd></div>
