@@ -7,10 +7,11 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import HubCultureSection from '@/components/HubCultureSection';
 import VenetoProvinceNavigator from '@/components/VenetoProvinceNavigator';
+import DolomitesWithoutCarSection from '@/components/DolomitesWithoutCarSection';
 
 export const metadata: Metadata = {
   title: 'Scopri il Veneto | Marghera Venice Apartments',
-  description: 'Itinerari dal parcheggio privato di Marghera verso Riviera del Brenta, Padova, Treviso, Valdobbiadene, Verona, Chioggia, Jesolo e il Veneto.',
+  description: 'Escursioni da Marghera verso Riviera del Brenta, città d’arte, Prosecco e Dolomiti: in auto, treno e autobus da Venezia Mestre.',
   openGraph: {
     title: 'Scopri il Veneto | Marghera Venice Apartments',
     description: 'Una guida per esplorare il Veneto partendo da Marghera.',
@@ -65,15 +66,15 @@ const destinations = [
   {
     title:'Dolomiti',href:'/guide/dolomiti',
     eyebrow:'Una giornata in montagna',
-    text:'Laghi, passi e panorami alpini per chi viaggia in auto e vuole dedicare un’intera giornata alla montagna. Scegli una sola area, parti presto e controlla sempre meteo e viabilità.',
+    text:'Laghi, passi e panorami alpini da vivere in auto oppure, per una giornata senza guidare, raggiungendo Cortina d’Ampezzo in autobus da Venezia Mestre.',
     image:'/images/guide-dolomiti-final.webp',
-    note:'È l’escursione più lunga: consigliata come giornata intera ben pianificata.'
+    note:'Per Cortina considera una giornata intera; per passi e laghi più remoti l’auto resta spesso la soluzione più flessibile.'
   },
 ];
 
 const reasons = [
   ['Parcheggio privato','Parti direttamente dalle nostre case senza cercare un posto auto ogni giorno.'],
-  ['Libertà di itinerario','Puoi alternare Venezia, città d’arte, colline, spiagge e laguna.'],
+  ['Treno e autobus','Da Venezia Mestre raggiungi città d’arte e, con collegamenti dedicati, anche Cortina d’Ampezzo.'],
   ['Rientro comodo','Dopo l’escursione torni in una casa tranquilla, con cucina e tutti i comfort.'],
   ['Viaggio su misura','Scegli ogni giorno in base al meteo, alla stagione e ai tuoi ritmi.'],
 ];
@@ -119,9 +120,9 @@ export default function ScopriIlVeneto(){
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-white/75">
             <Link href="/" className="hover:text-gold">Home</Link><span>›</span><span className="text-gold">Scopri il Veneto</span>
           </nav>
-          <p className="text-xs font-black uppercase tracking-[.25em] text-gold">La tua auto, il nostro punto di partenza</p>
+          <p className="text-xs font-black uppercase tracking-[.25em] text-gold">Marghera, base per esplorare</p>
           <h1 className="mt-4 font-serif text-6xl leading-none md:text-8xl">Il Veneto ti aspetta.</h1>
-          <p className="mt-6 max-w-3xl text-xl text-white/85">Dalle ville della Riviera del Brenta alle colline del Prosecco, dalle città d’arte alla laguna: il parcheggio privato rende ogni giornata più libera.</p>
+          <p className="mt-6 max-w-3xl text-xl text-white/85">Dalle ville della Riviera del Brenta alle città d’arte e alle Dolomiti: in auto quando vuoi libertà, in treno o autobus quando preferisci lasciare le chiavi a casa.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#destinazioni" className="rounded-full bg-gold px-7 py-4 font-bold text-navy">Esplora le destinazioni</a>
             <a href="#mappa-veneto" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white">Guarda la mappa</a>
@@ -161,6 +162,8 @@ export default function ScopriIlVeneto(){
         <p className="mt-5 text-sm text-slate-500">I tempi sono indicativi e cambiano in base al servizio scelto. Controlla sempre l’orario del giorno prima di partire.</p>
       </div>
     </section>
+
+    <DolomitesWithoutCarSection lang="it"/>
 
     <section id="mappa-veneto" className="py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
