@@ -36,7 +36,7 @@ export function applyJournalCatchup20261022(item:EventArticle,lang:EventLang,slu
         {section:index,text:m(lang,{it:'Approfondisci nella nostra ',en:'Read our ',de:'Mehr dazu in unserem ',fr:'Pour approfondir, consultez notre ',es:'Más información en nuestra ',zh:'更多信息请查看我们的 '}),label:m(lang,{it:'guida alla Biennale Arte 2026',en:'Biennale Arte 2026 guide',de:'Guide zur Biennale Arte 2026',fr:'guide de la Biennale Arte 2026',es:'guía de la Biennale Arte 2026',zh:'Biennale Arte 2026 指南'}),href,tail:'.'}
       ];
     }
-    item.dateModified='2026-10-22';
+    if(!item.dateModified||item.dateModified<'2026-10-22')item.dateModified='2026-10-22';
     return;
   }
 
