@@ -8,6 +8,7 @@ import SectionTitle from '@/components/SectionTitle';
 import HubCultureSection from '@/components/HubCultureSection';
 import VenetoProvinceNavigator from '@/components/VenetoProvinceNavigator';
 import DolomitesWithoutCarSection from '@/components/DolomitesWithoutCarSection';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata: Metadata = {
   title: 'Scopri il Veneto | Marghera Venice Apartments',
@@ -207,17 +208,7 @@ export default function ScopriIlVeneto(){
       </div>
     </section>
 
-    <section className="py-24">
-      <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
-        <p className="text-xs font-black uppercase tracking-[.22em] text-gold">La base per il tuo viaggio</p>
-        <h2 className="mt-3 font-serif text-5xl text-navy">Venezia è la destinazione. Il Veneto è il viaggio.</h2>
-        <p className="mx-auto mt-5 max-w-3xl text-lg text-slate-600">Scegli la casa più adatta a te e usa Marghera come punto di partenza per scoprire ogni giorno qualcosa di diverso.</p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Link href="/case/rossi-apartment" className="rounded-full bg-gold px-8 py-4 font-bold text-navy">Rossi Apartment</Link>
-          <Link href="/case/dimora-castelli" className="rounded-full border border-navy px-8 py-4 font-bold text-navy">Dimora Castelli</Link>
-        </div>
-      </div>
-    </section>
+    <EditorialStayCta lang="it" context="discover-veneto"/>
   </main><Footer/>
   <Script id="veneto-destination-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({
     '@context':'https://schema.org','@type':'TouristDestination',name:'Veneto',description:'Guida alle destinazioni del Veneto partendo da Marghera.',containedInPlace:{'@type':'Country',name:'Italia'}
