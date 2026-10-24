@@ -24,7 +24,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "€35",
-    "hours": "10:00–18:00; ven/sab fino alle 23:00 in estate 2026",
+    "hours": "Aprile–ottobre: 09:00–19:00. Novembre–marzo: 09:00–18:00. Ultimo ingresso un'ora prima della chiusura.",
     "booking": "recommended",
     "officialUrl": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Palazzo Ducale, Venezia, Italia"
@@ -200,7 +200,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "€15",
-    "hours": "10:00–18:00; chiuso martedì",
+    "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso martedì.",
     "booking": "recommended",
     "officialUrl": "https://carezzonico.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Ca’ Rezzonico – Museo del Settecento Veneziano, Venezia, Italia"
@@ -222,7 +222,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "€15",
-    "hours": "10:00–18:00; chiuso lunedì",
+    "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso lunedì.",
     "booking": "recommended",
     "officialUrl": "https://capesaro.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Ca’ Pesaro – Galleria Internazionale d’Arte Moderna, Venezia, Italia"
@@ -266,7 +266,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "€15",
-    "hours": "10:00–18:00; chiuso martedì",
+    "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso martedì.",
     "booking": "recommended",
     "officialUrl": "https://fortuny.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo Fortuny, Venezia, Italia"
@@ -398,9 +398,9 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "Verifica tariffa ufficiale",
-    "hours": "Orari stagionali MUVE",
+    "hours": "Aprile–ottobre: 11:00–17:30. Novembre–marzo: 11:00–17:00. Chiuso lunedì.",
     "booking": "check",
-    "officialUrl": "https://museotorcello.visitmuve.it/",
+    "officialUrl": "https://torcello.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo di Torcello, Torcello, Italia"
   },
   {
