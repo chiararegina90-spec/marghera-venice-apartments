@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import HubCultureSection from '@/components/HubCultureSection';
+import EditorialStayCta from '@/components/EditorialStayCta';
 
 export const metadata: Metadata = {
   title: 'Scopri Venezia | Marghera Venice Apartments',
@@ -163,11 +164,12 @@ export default function ScopriVenezia(){
       </section>
 
       <section className="bg-gold py-16 text-navy sm:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:px-8">
-          <div><p className="text-xs font-black uppercase tracking-[.22em]">Se hai più tempo</p><h2 className="mt-3 font-serif text-5xl">Venezia è solo l’inizio.</h2><p className="mt-5 max-w-xl text-lg leading-8 text-navy/75">Con il parcheggio privato puoi dedicare una giornata alla Riviera del Brenta, alle Colline del Prosecco o a una città d’arte del Veneto.</p><Link href="/scopri-il-veneto" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Scopri il Veneto →</Link></div>
-          <div className="border-t border-navy/20 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0"><p className="text-xs font-black uppercase tracking-[.22em]">Scegli la tua casa</p><h2 className="mt-3 font-serif text-4xl">Dove vuoi rientrare la sera?</h2><p className="mt-4 leading-7 text-navy/75">Rossi Apartment per famiglie e gruppi fino a 7 ospiti; Dimora Castelli per coppie, piccole famiglie e chi cerca tranquillità.</p><div className="mt-7 flex flex-wrap gap-3"><Link href="/case/rossi-apartment" className="rounded-full bg-white px-6 py-3 font-bold text-navy">Rossi Apartment</Link><Link href="/case/dimora-castelli" className="rounded-full border border-navy px-6 py-3 font-bold text-navy">Dimora Castelli</Link></div></div>
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="max-w-3xl"><p className="text-xs font-black uppercase tracking-[.22em]">Se hai più tempo</p><h2 className="mt-3 font-serif text-5xl">Venezia è solo l’inizio.</h2><p className="mt-5 max-w-xl text-lg leading-8 text-navy/75">Con il parcheggio privato puoi dedicare una giornata alla Riviera del Brenta, alle Colline del Prosecco o a una città d’arte del Veneto.</p><Link href="/scopri-il-veneto" className="mt-7 inline-flex rounded-full bg-navy px-7 py-4 font-bold text-white">Scopri il Veneto →</Link></div>
         </div>
       </section>
+
+      <EditorialStayCta lang="it" context="discover-venice"/>
     </main>
     <Footer/>
     <Script id="tourist-attraction-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'TouristDestination',name:'Venezia',description:'Guida pratica a Venezia e alla laguna a cura di Marghera Venice Apartments.',touristType:['Famiglie','Coppie','Viaggiatori con animali domestici'],containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}})}}/>
