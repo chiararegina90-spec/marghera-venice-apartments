@@ -6,6 +6,7 @@ import CommonsPhoto from '@/components/CommonsPhoto';
 import CulturePracticalCard from '@/components/CulturePracticalCard';
 import CultureCard from '@/components/CultureCard';
 import CultureTemporaryEvents from '@/components/CultureTemporaryEvents';
+import EditorialStayCta from '@/components/EditorialStayCta';
 import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureIndexPath,cultureUi,highlightsLabel,kindLabel,localizedHighlights,planningText,planningTitle} from '@/data/cultureTranslations';
 import {cultureNarrative} from '@/data/cultureNarrative';
@@ -87,6 +88,12 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      </article>
      <div className="hidden lg:block"><CulturePracticalCard place={place} lang={lang} className="sticky top-28"/></div>
    </div></section>
+
+   <EditorialStayCta
+     lang={lang}
+     context={scope==='venice'?'culture-venice':'culture-veneto'}
+     subject={place.name}
+   />
 
    <section className="bg-cream py-12 sm:py-14"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="flex flex-wrap items-end justify-between gap-5"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{ui.related}</p><h2 className="mt-2 font-serif text-3xl text-navy sm:text-4xl">{scope==='venice'?ui.veniceTitle:ui.venetoTitle}</h2></div><Link href={index} className="rounded-full border border-navy px-5 py-3 font-bold text-navy">{scope==='venice'?ui.backVenice:ui.backVeneto}</Link></div><div className="mt-7 grid gap-7 md:grid-cols-3">{related.map(p=><CultureCard key={p.slug} place={p} lang={lang} scope={scope}/>)}</div></div></section>
  </main><Footer lang={lang}/></>;
