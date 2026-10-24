@@ -263,7 +263,7 @@ export function applyJournalCatchup20261015(item:EventArticle,lang:EventLang,slu
     });
     item.sections=[...(item.sections||[]),[title,text]];
     item.relatedSlugs=Array.from(new Set([...(item.relatedSlugs||[]),'arte-laguna-prize-2026','venice-noir-2026']));
-    item.dateModified='2026-10-15';
+    if(!item.dateModified||item.dateModified<'2026-10-15')item.dateModified='2026-10-15';
   }
 
 }
