@@ -9,6 +9,7 @@ import GuideDirectoryIndex from '@/components/GuideDirectoryIndex';
 import JournalDynamicGrid from '@/components/JournalDynamicGrid';
 import EditorialHero from '@/components/EditorialHero';
 import EditorialStayCta,{editorialStayContext} from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 import {apartmentReviewsLocalized} from '@/data/apartment-reviews-localized';
 import {localePath} from '@/lib/i18n';
 
@@ -152,6 +153,7 @@ export function LocalizedJournalArticle({lang,data,tipLabel,officialLabel,backLa
  const targetCount=targetJournalSections[data.slug]||data.sections.length;
  const articleSections=data.sections.length>=targetCount?data.sections.slice(0,targetCount):[...data.sections,...(journalSectionExtras[lang][data.slug]||[])].slice(0,targetCount);
  return <><Header lang={lang}/><main><article className="editorial-page">
+ <JournalStructuredData lang={lang} slug={data.slug} title={data.title} description={data.description}/>
  <EditorialHero
    image={data.image}
    imageAlt={data.imageAlt}
