@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 
 export const metadata:Metadata = {
   title:"Lo Spritz veneziano | Journal | Marghera Venice Apartments",
@@ -28,6 +29,7 @@ const related = [
 export default function Article(){
   return <><Header/><main>
     <article className="editorial-page">
+      <JournalStructuredData lang="it" slug="spritz-veneziano" title={String(metadata.title)} description={metadata.description||''} dateModified="2026-10-25"/>
       <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
         <Image src="/images/journal-spritz.webp" alt="Lo Spritz veneziano" fill priority sizes="100vw" className="object-cover"/>
         <div className="absolute inset-0 editorial-cover-shade"/>
