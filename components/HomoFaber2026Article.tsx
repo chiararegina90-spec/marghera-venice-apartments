@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {HomoFaberContent} from '@/data/homoFaber2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 
 const heroImage='/images/journal-homo-faber-2026-cover.webp';
 const archiveCopy:Record<string,{lead:string;tip:string}>={
@@ -42,6 +43,7 @@ export default function HomoFaber2026Article({data}:{data:HomoFaberContent}){
   return <>
     <Header lang={data.lang}/>
     <main><article className="editorial-page">
+      <JournalStructuredData lang={data.lang} slug="homo-faber-2026" title={data.h1} description={data.metaDescription} article={false}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
       <EditorialHero image={heroImage} imageAlt={data.imageAlt} crumbs={[{label:data.homeLabel,href:data.homeHref},{label:data.journalLabel,href:data.journalHref},{label:'Homo Faber 2026'}]} eyebrow={<>{data.category} • {data.eventDate}</>} title={data.h1} subtitle={data.heroSubtitle} strongShade/>
