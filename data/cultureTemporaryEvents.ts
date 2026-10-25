@@ -1,4 +1,5 @@
 import type {CultureLang} from '@/data/culturePlaces';
+import {romeToday} from '@/lib/romeDate';
 
 export type CultureTemporaryEventType='exhibition'|'installation'|'special-event'|'special-opening';
 
@@ -79,10 +80,6 @@ const labelByLang:Record<CultureLang,{section:string;current:string;upcoming:str
 };
 
 export function cultureTemporaryLabels(lang:CultureLang){return labelByLang[lang];}
-
-function romeToday(){
-  return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Rome',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-}
 
 export function cultureTemporaryEventsFor(placeSlug:string,referenceDate=romeToday()){
   return cultureTemporaryEvents
