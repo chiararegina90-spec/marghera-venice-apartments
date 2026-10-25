@@ -83,6 +83,7 @@ const pricePhraseTranslations:Record<Exclude<CultureLang,'it'>,Record<string,str
 
 export function priceLabel(place:CulturePlace,lang:CultureLang){
  const p=place.price;
+ if(p==='€15 intero · €7,50 ridotto') return lang==='it'?'€15 intero · €7,50 ridotto':lang==='en'?'€15 full · €7.50 reduced':lang==='de'?'15 € regulär · 7,50 € ermäßigt':lang==='fr'?'15 € plein tarif · 7,50 € réduit':lang==='es'?'15 € general · 7,50 € reducida':'全价 15 € · 优惠 7.50 €';
  if(lang==='it'){
   const editorialPrice:Record<string,string>={
    'Verifica tariffa ufficiale':'Tariffe e riduzioni sul sito ufficiale',
