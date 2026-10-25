@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {MostraCinema2026Data,MostraCinema2026Lang} from '@/data/mostraCinema2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 
 function base(lang:MostraCinema2026Lang){return lang==='it'?'':`/${lang}`;}
 function homeLabel(lang:MostraCinema2026Lang){return lang==='de'?'Startseite':lang==='fr'?'Accueil':lang==='es'?'Inicio':lang==='zh'?'首页':'Home';}
@@ -23,6 +24,7 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
     image,location:{'@type':'Place',name:'Lido di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},url
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
+    <JournalStructuredData lang={lang} slug="mostra-del-cinema" title={data.heroTitle} description={data.metaDescription} article={false}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
     <EditorialHero
