@@ -287,10 +287,10 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Palazzo Mocenigo Venice museum",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa ufficiale",
-    "hours": "Orari stagionali MUVE",
+    "price": "€15",
+    "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso lunedì.",
     "booking": "recommended",
-    "officialUrl": "https://mocenigo.visitmuve.it/",
+    "officialUrl": "https://mocenigo.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo di Palazzo Mocenigo, Venezia, Italia"
   },
   {
