@@ -12,6 +12,15 @@ import {hreflang,localePath,type SiteLang} from '@/lib/i18n';
 
 const BASE='https://www.margheraveniceapartments.com';
 
+const caPesaroUi:Record<SiteLang,{eyebrow:string;title:string;text:string;label:string}>={
+ it:{eyebrow:'GIUDITTA II · PRESTITO TEMPORANEO',title:'Cerchi Giuditta II a Ca’ Pesaro?',text:'Il capolavoro di Gustav Klimt, normalmente conservato a Ca’ Pesaro, è temporaneamente esposto qui al MUVEC fino al 14 febbraio 2027.',label:'Apri la scheda di Ca’ Pesaro'},
+ en:{eyebrow:'JUDITH II · TEMPORARY LOAN',title:'Looking for Judith II at Ca’ Pesaro?',text:'Gustav Klimt’s masterpiece, normally held at Ca’ Pesaro, is temporarily on display here at MUVEC until 14 February 2027.',label:'Open the Ca’ Pesaro guide'},
+ de:{eyebrow:'JUDITH II · VORÜBERGEHENDE LEIHGABE',title:'Suchen Sie Judith II in Ca’ Pesaro?',text:'Gustav Klimts Meisterwerk, normalerweise in Ca’ Pesaro, ist bis 14. Februar 2027 vorübergehend hier im MUVEC zu sehen.',label:'Ca’ Pesaro Guide öffnen'},
+ fr:{eyebrow:'JUDITH II · PRÊT TEMPORAIRE',title:'Vous cherchez Judith II à Ca’ Pesaro ?',text:'Le chef-d’œuvre de Gustav Klimt, habituellement conservé à Ca’ Pesaro, est temporairement exposé ici au MUVEC jusqu’au 14 février 2027.',label:'Ouvrir le guide de Ca’ Pesaro'},
+ es:{eyebrow:'JUDITH II · PRÉSTAMO TEMPORAL',title:'¿Buscas Judith II en Ca’ Pesaro?',text:'La obra maestra de Gustav Klimt, normalmente conservada en Ca’ Pesaro, está expuesta temporalmente aquí en MUVEC hasta el 14 de febrero de 2027.',label:'Abrir la guía de Ca’ Pesaro'},
+ zh:{eyebrow:'JUDITH II · 临时外借',title:'在 Ca’ Pesaro 找 Judith II？',text:'Gustav Klimt 的这件名作通常收藏于 Ca’ Pesaro，目前临时在 MUVEC 展出至2027年2月14日。',label:'打开 Ca’ Pesaro 指南'}
+};
+
 const ui:Record<SiteLang,{home:string;journal:string;official:string;guide:string;back:string}>={
  it:{home:'Home',journal:'Journal',official:'Apri il sito ufficiale',guide:'Apri la guida MUVEC',back:'Torna al Journal'},
  en:{home:'Home',journal:'Journal',official:'Open official website',guide:'Open the MUVEC guide',back:'Back to Journal'},
@@ -103,6 +112,15 @@ export default function KlimtMuvecArticle({lang}:{lang:SiteLang}){
         <div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p></div>
        </section>)}
       </div>
+
+      <section className="mt-14 rounded-[2rem] border border-gold/30 bg-[#fffaf0] p-7 sm:p-8">
+       <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{caPesaroUi[lang].eyebrow}</p>
+       <h2 className="mt-2 font-serif text-3xl text-navy">{caPesaroUi[lang].title}</h2>
+       <p className="mt-4 max-w-3xl leading-7 text-slate-600">{caPesaroUi[lang].text}</p>
+       <Link href={localePath('/guide/musei-venezia/ca-pesaro',lang)} className="mt-6 inline-flex rounded-full border border-navy px-6 py-3 text-sm font-black text-navy transition hover:bg-navy hover:text-white">
+        {caPesaroUi[lang].label} →
+       </Link>
+      </section>
 
       <section className="mt-14 rounded-[2rem] border border-navy/10 bg-cream p-7 sm:p-8">
        <p className="text-xs font-black uppercase tracking-[.2em] text-gold">MUVEC</p>

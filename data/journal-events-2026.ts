@@ -25,14 +25,18 @@ import {applyJournalCatchup20261019} from './journalCatchup20261019';
 import {applyJournalCatchup20261020} from './journalCatchup20261020';
 import {applyJournalCatchup20261022} from './journalCatchup20261022';
 import {applyJournalCatchup20261023} from './journalCatchup20261023';
+import {applyJournalCatchup20261025} from './journalCatchup20261025';
+import {applyJournalFaqParity20261025} from './journalFaqParity20261025';
 import {halloween2026} from './halloween2026';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type EventLocation={name:string;streetAddress?:string;addressLocality:string;addressCountry:string};
 export type EventSectionLink={section:number;text:string;label:string;href:string;tail?:string};
 export type EventFaq={question:string;answer:string};
+export type EventDetailBlock={title:string;lines:readonly string[]};
+export type EventDetailBlockSection={eyebrow?:string;title:string;intro?:string;blocks:readonly EventDetailBlock[];note?:string;visibleUntil?:string};
 export type EventStayCta={eyebrow?:string;title:string;text:string};
-export type EventArticle={slug:string;title:string;metaTitle?:string;cardTitle?:string;cardDescription?:string;cardEventDate?:string;cardImageAlt?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];relatedLinks?:readonly (readonly [string,string])[];internalLink?:{text:string;label:string;href:string;tail:string};sectionLinks?:readonly EventSectionLink[];faq?:readonly EventFaq[];stayCta?:EventStayCta;startDate?:string;endDate?:string;datePublished?:string;dateModified?:string;eventLocation?:EventLocation;eventLocations?:readonly EventLocation[]};
+export type EventArticle={slug:string;title:string;metaTitle?:string;cardTitle?:string;cardDescription?:string;cardEventDate?:string;cardImageAlt?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];relatedLinks?:readonly (readonly [string,string])[];internalLink?:{text:string;label:string;href:string;tail:string};sectionLinks?:readonly EventSectionLink[];faq?:readonly EventFaq[];detailBlockSection?:EventDetailBlockSection;stayCta?:EventStayCta;startDate?:string;endDate?:string;datePublished?:string;dateModified?:string;eventLocation?:EventLocation;eventLocations?:readonly EventLocation[]};
 export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026','festa-madonna-salute-venezia','san-martino-venezia','venezia-a-novembre','arte-laguna-prize-2026','halloween-venezia-2026','cimitero-san-michele-venezia','su-e-zo-per-i-ponti-2027','salone-nautico-venezia-2027','venice-climate-week-2027','concerti-piazza-san-marco-2027','biennale-architettura-2027','regata-storica-2027','venicemarathon-2027'] as const;
 const eventTechnicalData:Record<(typeof eventSlugs)[number],{startDate?:string;endDate?:string;eventLocation?:EventLocation}>={
   'venicemarathon-2026':{...eventCalendarDates['venicemarathon-2026'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
@@ -85,7 +89,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='salone-alto-artigianato-italiano-2026')Object.assign(item,salone2026Overrides[lang]);
     if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
-    if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);}
+    if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;
