@@ -78,5 +78,5 @@ export function cultureDetailMetadata(scope:CultureScope,lang:CultureLang,place:
  const city=cityLabel(place.city,lang); const kind=seoKindLabel[lang][place.kind]; const path=cultureDetailPath(scope,lang,place.slug);
  const title=`${place.name}: ${kind}, ${city}`;
  const description=detailDescription(place,lang,city);
- return {title,description,alternates:{canonical:path,languages:alternates(scope,place.slug)},openGraph:{type:'article',title,description,url:path,images:['/images/home-rialto-vincenzo-landino.webp']},twitter:{card:'summary_large_image',title,description,images:['/images/home-rialto-vincenzo-landino.webp']}};
+ return {title,description,alternates:{canonical:path,languages:alternates(scope,place.slug)},openGraph:{type:'article',title,description,url:path,images:['/images/home-rialto-vincenzo-landino.webp'],...(place.lastVerified?{modifiedTime:place.lastVerified}:{})},twitter:{card:'summary_large_image',title,description,images:['/images/home-rialto-vincenzo-landino.webp']}};
 }
