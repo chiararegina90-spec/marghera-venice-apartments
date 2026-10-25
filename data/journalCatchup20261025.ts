@@ -214,4 +214,50 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
   item.dateModified='2026-10-25';
  }
 
+
+ if(slug==='natale-capodanno-venezia'){
+  item.lead=m(lang,{
+   it:'Venezia tra Natale e Capodanno cambia ritmo, ma al 25 ottobre 2026 non è ancora pubblicato un programma comunale completo per le festività 2026–27. Questa guida separa ciò che puoi già pianificare da ciò che va ricontrollato quando arriveranno le comunicazioni ufficiali, senza riutilizzare automaticamente eventi, fuochi o orari dell’edizione precedente.',
+   en:'Venice changes pace between Christmas and New Year, but as of 25 October 2026 a complete City programme for the 2026–27 holidays has not yet been published. This guide separates what you can already plan from details that need to be checked when official announcements arrive, without automatically reusing events, fireworks or times from the previous edition.',
+   de:'Zwischen Weihnachten und Neujahr verändert Venedig seinen Rhythmus, doch mit Stand vom 25. Oktober 2026 ist noch kein vollständiges städtisches Programm für die Feiertage 2026–27 veröffentlicht. Dieser Guide trennt bereits planbare Punkte von Angaben, die nach den offiziellen Mitteilungen erneut geprüft werden müssen, ohne Veranstaltungen, Feuerwerk oder Zeiten der Vorjahresausgabe zu übernehmen.',
+   fr:'Entre Noël et le Nouvel An, Venise change de rythme, mais au 25 octobre 2026 aucun programme municipal complet des fêtes 2026–27 n’est encore publié. Ce guide distingue ce qui peut déjà être planifié de ce qui devra être revérifié après les annonces officielles, sans reprendre automatiquement événements, feux d’artifice ou horaires de l’édition précédente.',
+   es:'Entre Navidad y Año Nuevo, Venecia cambia de ritmo, pero a 25 de octubre de 2026 todavía no se ha publicado un programa municipal completo para las fiestas 2026–27. Esta guía separa lo que ya puede planificarse de lo que habrá que comprobar cuando lleguen los anuncios oficiales, sin reutilizar automáticamente eventos, fuegos artificiales u horarios de la edición anterior.',
+   zh:'圣诞至新年期间，威尼斯的节奏会发生变化，但截至2026年10月25日，市政府尚未公布2026–27节日期间的完整官方计划。本指南只保留目前可以提前规划的信息，烟花、活动和特殊交通等内容将在官方发布后再更新，不会直接沿用上一届安排。'
+  });
+  if(item.sections?.length){
+   const title=item.sections[0][0];
+   const text=m(lang,{
+    it:'Al 25 ottobre 2026 non risulta ancora pubblicato un calendario comunale completo per Natale 2026 e la notte del 31 dicembre 2026. Le pagine ufficiali facilmente reperibili sul Capodanno descrivono ancora l’edizione precedente: per questo non consideriamo automaticamente confermati fuochi, concerti, aree di visione o orari finché il Comune e Vela non pubblicheranno il nuovo programma.',
+    en:'As of 25 October 2026, a complete City calendar for Christmas 2026 and New Year’s Eve on 31 December has not yet been published. The readily available official New Year pages still describe the previous edition, so fireworks, concerts, viewing areas and special times are not treated as confirmed until the City and Vela publish the new programme.',
+    de:'Mit Stand vom 25. Oktober 2026 ist noch kein vollständiger städtischer Kalender für Weihnachten 2026 und Silvester am 31. Dezember veröffentlicht. Die leicht auffindbaren offiziellen Silvesterseiten beschreiben weiterhin die vorherige Ausgabe; Feuerwerk, Konzerte, Zuschauerbereiche und Sonderzeiten gelten daher erst nach Veröffentlichung des neuen Programms durch Stadt und Vela als bestätigt.',
+    fr:'Au 25 octobre 2026, aucun calendrier municipal complet pour Noël 2026 et la nuit du 31 décembre n’est encore publié. Les pages officielles du Nouvel An facilement accessibles décrivent toujours l’édition précédente : feux d’artifice, concerts, zones d’observation et horaires spéciaux ne sont donc pas considérés comme confirmés avant publication du nouveau programme par la Ville et Vela.',
+    es:'A 25 de octubre de 2026 todavía no se ha publicado un calendario municipal completo para Navidad 2026 y la noche del 31 de diciembre. Las páginas oficiales de Año Nuevo fácilmente accesibles siguen describiendo la edición anterior, por lo que fuegos artificiales, conciertos, zonas de observación y horarios especiales no se consideran confirmados hasta que el Ayuntamiento y Vela publiquen el nuevo programa.',
+    zh:'截至2026年10月25日，圣诞节以及12月31日晚的完整市政活动日历尚未发布。目前容易查到的官方跨年页面仍介绍上一届活动，因此在威尼斯市政府与 Vela 发布新计划前，不把烟花、音乐会、观赏区域或特殊时间表视为2026–27已确认安排。'
+   });
+   item.sections=[[title,text],...item.sections.slice(1)];
+  }
+  item.dateModified='2026-10-25';
+ }
+
+ if(slug==='festa-madonna-salute-venezia'){
+  const title=m(lang,{
+   it:'2026: ponte votivo e piano operativo ancora da confermare',
+   en:'2026: votive bridge and operational plan still to be confirmed',
+   de:'2026: Votivbrücke und Einsatzplan noch zu bestätigen',
+   fr:'2026 : pont votif et dispositif pratique encore à confirmer',
+   es:'2026: puente votivo y plan operativo todavía por confirmar',
+   zh:'2026年：还需确认临时还愿桥与实际通行安排'
+  });
+  const text=m(lang,{
+   it:'La Festa della Salute ricorre il 21 novembre e il ponte votivo è una tradizione consolidata della ricorrenza. Al controllo del 25 ottobre 2026, però, non abbiamo individuato una comunicazione comunale con date e orari operativi del ponte per l’edizione 2026. Per organizzare la visita non utilizzare automaticamente orari o modalità degli anni precedenti: aggiorneremo questa sezione quando saranno pubblicate le disposizioni ufficiali.',
+   en:'The Festa della Salute is celebrated on 21 November and the votive bridge is a well-established part of the tradition. However, as of our 25 October 2026 check, we have not found a City notice with the operational dates and opening times for the 2026 bridge. Do not automatically use timings or arrangements from previous years when planning your visit; this section will be updated when official instructions are published.',
+   de:'Die Festa della Salute findet jedes Jahr am 21. November statt, und die Votivbrücke gehört traditionell zur Feier. Bei der Prüfung am 25. Oktober 2026 haben wir jedoch noch keine städtische Mitteilung mit den konkreten Betriebszeiten der Brücke 2026 gefunden. Für die Besuchsplanung dürfen daher Zeiten und Regeln früherer Jahre nicht automatisch übernommen werden; dieser Abschnitt wird nach Veröffentlichung der offiziellen Vorgaben aktualisiert.',
+   fr:'La Festa della Salute a lieu le 21 novembre et le pont votif fait traditionnellement partie de la célébration. Toutefois, lors de notre contrôle du 25 octobre 2026, nous n’avons pas trouvé de communication municipale précisant les dates et horaires opérationnels du pont pour 2026. N’utilisez donc pas automatiquement les horaires ou modalités des années précédentes ; cette section sera mise à jour après publication des dispositions officielles.',
+   es:'La Festa della Salute se celebra el 21 de noviembre y el puente votivo forma parte consolidada de la tradición. Sin embargo, en la revisión del 25 de octubre de 2026 no hemos encontrado una comunicación municipal con fechas y horarios operativos del puente para 2026. No utilices automáticamente horarios o condiciones de años anteriores al organizar la visita; esta sección se actualizará cuando se publiquen las disposiciones oficiales.',
+   zh:'Madonna della Salute 节固定在11月21日举行，临时还愿桥也是这一传统的重要组成部分。但截至2026年10月25日的核查，我们尚未找到市政府公布2026年桥梁具体开放日期和时间的通知。规划参观时请不要直接沿用往年时刻与通行方式；官方安排发布后，本段将继续更新。'
+  });
+  addSectionIfMissing(item,title,text);
+  item.dateModified='2026-10-25';
+ }
+
 }
