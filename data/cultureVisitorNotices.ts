@@ -98,6 +98,56 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   lastVerified:'2026-10-25'
  },
  {
+  key:'palazzo-mocenigo-tarbouche-disassembly',
+  placeSlug:'palazzo-mocenigo',
+  kind:'closure',
+  start:'2026-11-09',
+  end:'2026-11-11',
+  title:{
+   it:'9–11 novembre: disallestimento Le Tarbouche',
+   en:'9–11 November: Le Tarbouche dismantling',
+   de:'9.–11. November: Abbau von Le Tarbouche',
+   fr:'9–11 novembre : démontage de Le Tarbouche',
+   es:'9–11 de noviembre: desmontaje de Le Tarbouche',
+   zh:'11月9–11日：Le Tarbouche 撤展'
+  },
+  summary:{
+   it:'Durante il disallestimento della mostra Le Tarbouche sono temporaneamente interessati il portego e le sale 6, 7, 8, 9, 11, 12, 13 e 18 del primo piano nobile. Prima della visita verifica l’avviso MUVE aggiornato.',
+   en:'During the dismantling of Le Tarbouche, the portego and rooms 6, 7, 8, 9, 11, 12, 13 and 18 on the first piano nobile are temporarily affected. Check the latest MUVE notice before visiting.',
+   de:'Während des Abbaus von Le Tarbouche sind der Portego sowie die Räume 6, 7, 8, 9, 11, 12, 13 und 18 im ersten Piano Nobile vorübergehend betroffen. Prüfen Sie vor dem Besuch die aktuelle MUVE-Mitteilung.',
+   fr:'Pendant le démontage de Le Tarbouche, le portego et les salles 6, 7, 8, 9, 11, 12, 13 et 18 du premier piano nobile sont temporairement concernés. Vérifiez l’avis MUVE actualisé avant la visite.',
+   es:'Durante el desmontaje de Le Tarbouche, el portego y las salas 6, 7, 8, 9, 11, 12, 13 y 18 de la primera planta noble se ven temporalmente afectados. Consulta el aviso MUVE actualizado antes de la visita.',
+   zh:'Le Tarbouche 撤展期间，一层主楼层的 portego 以及6、7、8、9、11、12、13和18号展厅会暂时受到影响。参观前请再次查看 MUVE 最新公告。'
+  },
+  officialUrl:'https://mocenigo.visitmuve.it/informazioni-pratiche/',
+  lastVerified:'2026-10-25'
+ },
+ {
+  key:'palazzo-mocenigo-portego-restoration',
+  placeSlug:'palazzo-mocenigo',
+  kind:'restoration',
+  start:'2026-11-16',
+  end:'2026-12-31',
+  title:{
+   it:'Dal 16 novembre: restauro di due dipinti nel portego',
+   en:'From 16 November: two paintings restored in the portego',
+   de:'Ab 16. November: Restaurierung zweier Gemälde im Portego',
+   fr:'À partir du 16 novembre : restauration de deux tableaux dans le portego',
+   es:'Desde el 16 de noviembre: restauración de dos pinturas en el portego',
+   zh:'11月16日起：portego 内两幅画作修复'
+  },
+  summary:{
+   it:'MUVE prevede il restauro in situ di due dipinti del portego. I lavori non modificano il percorso di visita e la conclusione è prevista entro la fine del 2026.',
+   en:'MUVE plans in-situ restoration of two paintings in the portego. The work does not alter the visitor route and is expected to finish by the end of 2026.',
+   de:'MUVE plant die Restaurierung zweier Gemälde direkt im Portego. Die Arbeiten verändern den Besucherweg nicht und sollen bis Ende 2026 abgeschlossen sein.',
+   fr:'MUVE prévoit la restauration sur place de deux tableaux du portego. Les travaux ne modifient pas le parcours de visite et devraient s’achever d’ici la fin de 2026.',
+   es:'MUVE prevé restaurar in situ dos pinturas del portego. Los trabajos no modifican el recorrido de visita y se espera que terminen antes de finalizar 2026.',
+   zh:'MUVE 将在 portego 现场修复两幅画作。施工不会改变参观路线，预计于2026年底前完成。'
+  },
+  officialUrl:'https://mocenigo.visitmuve.it/informazioni-pratiche/',
+  lastVerified:'2026-10-25'
+ },
+ {
   key:'palazzo-roverella-pinacoteca-free',
   placeSlug:'palazzo-roverella',
   kind:'visitor-info',
