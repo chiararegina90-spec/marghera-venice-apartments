@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import EditorialHero from '@/components/EditorialHero';
 import type {BiennaleArte2026Data,BiennaleArte2026Lang} from '@/data/biennaleArte2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 import {localePath} from '@/lib/i18n';
 
 function base(lang:BiennaleArte2026Lang){return lang==='it'?'':`/${lang}`;}
@@ -116,6 +117,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
     ],url
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
+    <JournalStructuredData lang={lang} slug="biennale-di-venezia" title={data.title} description={data.metaDescription} article={false}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
     {(lang==='it'||lang==='en')?<section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
