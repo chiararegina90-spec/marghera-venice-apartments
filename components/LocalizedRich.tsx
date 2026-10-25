@@ -9,6 +9,7 @@ import GuideDirectoryIndex from '@/components/GuideDirectoryIndex';
 import JournalDynamicGrid from '@/components/JournalDynamicGrid';
 import EditorialHero from '@/components/EditorialHero';
 import EditorialStayCta,{editorialStayContext} from '@/components/EditorialStayCta';
+import JournalSchemaBundle from '@/components/JournalSchemaBundle';
 import {apartmentReviewsLocalized} from '@/data/apartment-reviews-localized';
 import {localePath} from '@/lib/i18n';
 
@@ -151,7 +152,9 @@ export function LocalizedJournalArticle({lang,data,tipLabel,officialLabel,backLa
  const t=journalMore[lang]; const official=data.official||fallbackOfficial[data.slug]; const extras=extraOfficial[data.slug]||[]; const specialRelated=journalSpecialRelated[lang][data.slug]; const customRelated=data.related;
  const targetCount=targetJournalSections[data.slug]||data.sections.length;
  const articleSections=data.sections.length>=targetCount?data.sections.slice(0,targetCount):[...data.sections,...(journalSectionExtras[lang][data.slug]||[])].slice(0,targetCount);
+ const needsLegacySchema=['spritz-veneziano','cicchetti-veneziani','vogalonga-2027'].includes(data.slug);
  return <><Header lang={lang}/><main><article className="editorial-page">
+ {needsLegacySchema&&<JournalSchemaBundle lang={lang} logicalPath={'/journal/'+data.slug} title={data.title} description={data.description} image={data.image}/>} 
  <EditorialHero
    image={data.image}
    imageAlt={data.imageAlt}
