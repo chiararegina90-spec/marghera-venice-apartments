@@ -185,4 +185,33 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
   addSectionIfMissing(item,title,text);
   item.dateModified='2026-10-25';
  }
+
+ if(slug==='halloween-venezia-2026'){
+  const title=m(lang,{
+   it:'31 ottobre: due nuove feste per famiglie a Burano e Favaro',
+   en:'31 October: two new family events in Burano and Favaro',
+   de:'31. Oktober: zwei neue Familienfeste in Burano und Favaro',
+   fr:'31 octobre : deux nouvelles fêtes familiales à Burano et Favaro',
+   es:'31 de octubre: dos nuevas fiestas familiares en Burano y Favaro',
+   zh:'10月31日：Burano 与 Favaro 新增两场亲子活动'
+  });
+  const text=m(lang,{
+   it:'Il calendario comunale si è arricchito di due appuntamenti per sabato 31 ottobre. A Burano BuranEventi organizza una festa dalle 16:00 davanti al Ristorante Da Romano, con iniziative per i più piccoli, cioccolata calda e dolcetti. A Favaro Veneto “Halloween in Piazza”, al centro commerciale La Piazza, propone giochi e attività a tema per bambini e famiglie. Sono eventi distinti dalle attività già segnalate nelle biblioteche e ludoteche.',
+   en:'The City calendar now includes two more events for Saturday 31 October. In Burano, BuranEventi is organising a party from 16:00 in front of Ristorante Da Romano, with children’s activities, hot chocolate and sweets. In Favaro Veneto, “Halloween in Piazza” at La Piazza shopping centre offers themed games and activities for children and families. These are separate from the library and play-centre activities already listed in this guide.',
+   de:'Der städtische Kalender enthält nun zwei weitere Termine für Samstag, den 31. Oktober. In Burano organisiert BuranEventi ab 16:00 Uhr vor dem Ristorante Da Romano ein Fest mit Angeboten für Kinder, heißer Schokolade und Süßigkeiten. In Favaro Veneto bietet „Halloween in Piazza“ im Einkaufszentrum La Piazza Spiele und Themenaktivitäten für Kinder und Familien. Diese Termine ergänzen die bereits im Guide genannten Bibliotheks- und Spielangebote.',
+   fr:'Le calendrier municipal comprend désormais deux rendez-vous supplémentaires pour le samedi 31 octobre. À Burano, BuranEventi organise une fête dès 16:00 devant le Ristorante Da Romano, avec animations pour les enfants, chocolat chaud et friandises. À Favaro Veneto, « Halloween in Piazza », au centre commercial La Piazza, propose jeux et activités thématiques pour enfants et familles. Ces rendez-vous s’ajoutent aux activités déjà signalées dans les bibliothèques et ludothèques.',
+   es:'El calendario municipal incorpora dos citas más para el sábado 31 de octubre. En Burano, BuranEventi organiza una fiesta desde las 16:00 frente al Ristorante Da Romano, con actividades infantiles, chocolate caliente y dulces. En Favaro Veneto, “Halloween in Piazza”, en el centro comercial La Piazza, ofrece juegos y actividades temáticas para niños y familias. Son eventos distintos de las actividades de bibliotecas y ludotecas ya incluidas en esta guía.',
+   zh:'市政府活动日历又增加了两项10月31日星期六的活动。Burano 的 BuranEventi 将于16:00起在 Ristorante Da Romano 前举办儿童活动，并提供热巧克力和甜点；Favaro Veneto 的 La Piazza 商业中心则举办“Halloween in Piazza”，为儿童和家庭安排主题游戏与活动。这两项活动与本文已经列出的图书馆和儿童活动中心项目不同。'
+  });
+  addSectionIfMissing(item,title,text);
+  const idx=(item.sections||[]).findIndex(([t])=>t===title);
+  addLinkIfMissing(item,idx,'https://www.comune.venezia.it/content/festa-halloween-burano',
+   m(lang,{it:'Dettagli ufficiali Burano: ',en:'Official Burano details: ',de:'Offizielle Details zu Burano: ',fr:'Détails officiels Burano : ',es:'Detalles oficiales de Burano: ',zh:'Burano 官方信息：'}),
+   m(lang,{it:'Comune di Venezia',en:'City of Venice',de:'Stadt Venedig',fr:'Ville de Venise',es:'Ayuntamiento de Venecia',zh:'威尼斯市政府'}));
+  addLinkIfMissing(item,idx,'https://www.comune.venezia.it/it/categorie-eventi/feste',
+   m(lang,{it:'Calendario comunale delle feste: ',en:'City festival calendar: ',de:'Städtischer Festkalender: ',fr:'Calendrier municipal des fêtes : ',es:'Calendario municipal de fiestas: ',zh:'市政府节庆日历：'}),
+   m(lang,{it:'Le Città in Festa',en:'Le Città in Festa',de:'Le Città in Festa',fr:'Le Città in Festa',es:'Le Città in Festa',zh:'Le Città in Festa'}));
+  item.dateModified='2026-10-25';
+ }
+
 }
