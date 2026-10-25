@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalStructuredData from '@/components/JournalStructuredData';
 import {
  KLIMT_MUVEC_COVER,KLIMT_MUVEC_END,KLIMT_MUVEC_INFO,KLIMT_MUVEC_MODIFIED,
  KLIMT_MUVEC_OFFICIAL,KLIMT_MUVEC_PUBLISHED,KLIMT_MUVEC_SLUG,KLIMT_MUVEC_START,
@@ -78,6 +79,7 @@ export default function KlimtMuvecArticle({lang}:{lang:SiteLang}){
 
  return <>
   <Header lang={lang}/>
+  <JournalStructuredData lang={lang} slug="klimt-schiele-kokoschka-muvec-mestre" title={c.title} description={c.description} article={false}/>
   <main>
    <section className="relative min-h-[72vh] overflow-hidden pt-20">
     <div className="absolute inset-0">
