@@ -2,6 +2,15 @@ import type {CultureLang,CulturePlace} from '@/data/culturePlaces';
 import {bookingLabel,cultureUi,hoursLabel,priceLabel} from '@/data/cultureTranslations';
 import {cultureTemporaryEventsFor,cultureTemporaryLabels} from '@/data/cultureTemporaryEvents';
 
+const verifiedPrefix:Record<CultureLang,string>={it:'Ultimo controllo editoriale',en:'Last editorial check',de:'Letzte redaktionelle Prüfung',fr:'Dernière vérification éditoriale',es:'Última revisión editorial',zh:'最后编辑核查'};
+const locale:Record<CultureLang,string>={it:'it-IT',en:'en-GB',de:'de-DE',fr:'fr-FR',es:'es-ES',zh:'zh-CN'};
+function verifiedLabel(place:CulturePlace,lang:CultureLang){
+ if(!place.lastVerified)return cultureUi[lang].updated;
+ const [y,m,d]=place.lastVerified.split('-').map(Number);
+ const date=new Intl.DateTimeFormat(locale[lang],{day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Rome'}).format(new Date(Date.UTC(y,m-1,d,12)));
+ return `${verifiedPrefix[lang]}: ${date}`;
+}
+
 export default function CulturePracticalCard({place,lang,className=''}:{place:CulturePlace;lang:CultureLang;className?:string}){
  const ui=cultureUi[lang];
  const temporaryEvents=cultureTemporaryEventsFor(place.slug); const temporaryLabels=cultureTemporaryLabels(lang);
@@ -23,6 +32,6 @@ export default function CulturePracticalCard({place,lang,className=''}:{place:Cu
      <a href={place.officialUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-5 py-3 text-center font-bold text-navy">{ui.official} ↗</a>
      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.mapsQuery)}`} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/40 px-5 py-3 text-center font-bold text-white">{ui.maps} ↗</a>
    </div>
-   <p className="mt-5 text-xs leading-5 text-white/55">{ui.updated}</p>
+   <p className="mt-5 text-xs leading-5 text-white/55">{verifiedLabel(place,lang)}</p>
  </aside>
 }
