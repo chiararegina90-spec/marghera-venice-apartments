@@ -3,7 +3,7 @@ export type CultureScope='venice'|'veneto';
 export type CultureKind='museum'|'monument'|'church'|'panorama';
 export type BookingMode='required'|'recommended'|'not_required'|'check';
 export type CulturePlace={
- slug:string; name:string; scope:CultureScope; kind:CultureKind; city:string; province:string; duration:string; highlights:string[]; commonsQuery:string; family:boolean; panorama:boolean; price:string; hours:string; booking:BookingMode; officialUrl:string; mapsQuery:string;
+ slug:string; name:string; scope:CultureScope; kind:CultureKind; city:string; province:string; duration:string; highlights:string[]; commonsQuery:string; family:boolean; panorama:boolean; price:string; hours:string; booking:BookingMode; officialUrl:string; mapsQuery:string; lastVerified?:string;
 };
 
 export const culturePlaces:CulturePlace[] = [
@@ -27,7 +27,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 09:00–19:00. Novembre–marzo: 09:00–18:00. Ultimo ingresso un'ora prima della chiusura.",
     "booking": "recommended",
     "officialUrl": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Palazzo Ducale, Venezia, Italia"
+    "mapsQuery": "Palazzo Ducale, Venezia, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "museo-correr",
@@ -203,7 +203,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso martedì.",
     "booking": "recommended",
     "officialUrl": "https://carezzonico.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Ca’ Rezzonico – Museo del Settecento Veneziano, Venezia, Italia"
+    "mapsQuery": "Ca’ Rezzonico – Museo del Settecento Veneziano, Venezia, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "ca-pesaro",
@@ -225,7 +225,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso lunedì.",
     "booking": "recommended",
     "officialUrl": "https://capesaro.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Ca’ Pesaro – Galleria Internazionale d’Arte Moderna, Venezia, Italia"
+    "mapsQuery": "Ca’ Pesaro – Galleria Internazionale d’Arte Moderna, Venezia, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "museo-arte-orientale",
@@ -269,7 +269,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso martedì.",
     "booking": "recommended",
     "officialUrl": "https://fortuny.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Museo Fortuny, Venezia, Italia"
+    "mapsQuery": "Museo Fortuny, Venezia, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "palazzo-mocenigo",
@@ -291,7 +291,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso lunedì.",
     "booking": "recommended",
     "officialUrl": "https://mocenigo.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Museo di Palazzo Mocenigo, Venezia, Italia"
+    "mapsQuery": "Museo di Palazzo Mocenigo, Venezia, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "casa-carlo-goldoni",
@@ -357,7 +357,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "10:00–18:00 in estate; orari stagionali",
     "booking": "recommended",
     "officialUrl": "https://museovetro.visitmuve.it/it/pianifica-la-tua-visita/biglietti/",
-    "mapsQuery": "Museo del Vetro di Murano, Murano, Italia"
+    "mapsQuery": "Museo del Vetro di Murano, Murano, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "museo-del-merletto-burano",
@@ -401,7 +401,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Aprile–ottobre: 11:00–17:30. Novembre–marzo: 11:00–17:00. Chiuso lunedì.",
     "booking": "check",
     "officialUrl": "https://torcello.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Museo di Torcello, Torcello, Italia"
+    "mapsQuery": "Museo di Torcello, Torcello, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "muvec-mestre",
@@ -2755,7 +2755,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Orari legati alle mostre",
     "booking": "recommended",
     "officialUrl": "https://www.palazzoroverella.com/",
-    "mapsQuery": "Palazzo Roverella, Rovigo, Italia"
+    "mapsQuery": "Palazzo Roverella, Rovigo, Italia",\n    "lastVerified": "2026-10-25"
   },
   {
     "slug": "museo-grandi-fiumi",
