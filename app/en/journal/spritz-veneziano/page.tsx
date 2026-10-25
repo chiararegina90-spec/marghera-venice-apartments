@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalSchemaBundle from '@/components/JournalSchemaBundle';
 
 export const metadata:Metadata = {
   title:'The Venetian Spritz | Venice Travel Journal',
@@ -28,6 +29,7 @@ const related = [
 
 export default function Article(){
   return <><Header lang="en"/><main><article className="editorial-page">
+<JournalSchemaBundle lang="en" logicalPath="/journal/spritz-veneziano" title="The Venetian Spritz" description="For much of the world it is a cocktail. For Venetians, it is simply aperitivo." image="/images/journal-spritz.webp"/>
     <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
       <Image src="/images/journal-spritz.webp" alt="The Venetian Spritz in Venice" fill priority sizes="100vw" className="object-cover"/>
       <div className="absolute inset-0 editorial-cover-shade"/>
