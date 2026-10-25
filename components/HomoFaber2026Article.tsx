@@ -16,13 +16,23 @@ const archiveCopy:Record<string,{lead:string;tip:string}>={
 };
 
 
+const resultCopy:Record<string,{title:string;text:string}>={
+  it:{title:'Bilancio 2026: 65.000 visitatori',text:'L’organizzazione ha chiuso An Island of Light ringraziando 65.000 visitatori. Homo Faber 2026 ha riunito oltre 500 artigiani provenienti da più di 70 Paesi e più di 700 oggetti alla Fondazione Giorgio Cini.'},
+  en:{title:'2026 recap: 65,000 visitors',text:'The organisers closed An Island of Light by thanking 65,000 visitors. Homo Faber 2026 brought together more than 500 artisans from over 70 countries and more than 700 objects at Fondazione Giorgio Cini.'},
+  de:{title:'Bilanz 2026: 65.000 Besucher',text:'Zum Abschluss von An Island of Light dankten die Veranstalter 65.000 Besuchern. Homo Faber 2026 vereinte in der Fondazione Giorgio Cini mehr als 500 Kunsthandwerker aus über 70 Ländern und mehr als 700 Objekte.'},
+  fr:{title:'Bilan 2026 : 65 000 visiteurs',text:'À la clôture d’An Island of Light, les organisateurs ont remercié 65 000 visiteurs. Homo Faber 2026 a réuni à la Fondazione Giorgio Cini plus de 500 artisans venus de plus de 70 pays et plus de 700 objets.'},
+  es:{title:'Balance 2026: 65.000 visitantes',text:'Al cierre de An Island of Light, la organización agradeció a 65.000 visitantes. Homo Faber 2026 reunió en la Fondazione Giorgio Cini a más de 500 artesanos de más de 70 países y más de 700 objetos.'},
+  zh:{title:'2026回顾：65,000名访客',text:'An Island of Light 结束后，主办方感谢了65,000名访客。Homo Faber 2026 在 Fondazione Giorgio Cini 汇集了来自70多个国家的500多位工艺师和700多件作品。'}
+};
+
+
 export default function HomoFaber2026Article({data}:{data:HomoFaberContent}){
   const baseUrl='https://www.margheraveniceapartments.com';
   const pageUrl=`${baseUrl}${data.journalHref}/homo-faber-2026`;
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.h1,description:data.metaDescription,
     author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
-    dateModified:'2026-10-15',mainEntityOfPage:{'@type':'WebPage','@id':pageUrl},url:pageUrl
+    dateModified:'2026-10-25',mainEntityOfPage:{'@type':'WebPage','@id':pageUrl},url:pageUrl
   };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'Homo Faber 2026: An Island of Light',description:data.metaDescription,
@@ -43,6 +53,11 @@ export default function HomoFaber2026Article({data}:{data:HomoFaberContent}){
           <div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div>
           <div><h2 className="font-serif text-4xl text-navy">{section.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{section.text}</p>{section.items&&<ul className="mt-5 grid gap-3 sm:grid-cols-2">{section.items.map(item=><li key={item} className="rounded-2xl bg-cream px-5 py-4 font-semibold text-navy">{item}</li>)}</ul>}{i===3&&<Link href={data.discoverHref} className="mt-6 inline-flex rounded-full border border-navy px-6 py-3 font-bold text-navy transition hover:bg-navy hover:text-white">{data.discoverCta}</Link>}</div>
         </section>)}</div>
+        <section className="mt-12 rounded-[2rem] border border-slate-200 bg-cream p-7 sm:p-8">
+          <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Homo Faber 2026</p>
+          <h2 className="mt-3 font-serif text-3xl text-navy sm:text-4xl">{resultCopy[data.lang].title}</h2>
+          <p className="mt-4 text-lg leading-8 text-slate-600">{resultCopy[data.lang].text}</p>
+        </section>
       </div></section>
 
       <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">
