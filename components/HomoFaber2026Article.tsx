@@ -34,6 +34,13 @@ export default function HomoFaber2026Article({data}:{data:HomoFaberContent}){
     author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
     dateModified:'2026-10-25',mainEntityOfPage:{'@type':'WebPage','@id':pageUrl},url:pageUrl
   };
+  const breadcrumbJsonLd={
+    '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:data.homeLabel,item:`${baseUrl}${data.homeHref}`},
+      {'@type':'ListItem',position:2,name:data.journalLabel,item:`${baseUrl}${data.journalHref}`},
+      {'@type':'ListItem',position:3,name:data.h1,item:pageUrl}
+    ]
+  };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'Homo Faber 2026: An Island of Light',description:data.metaDescription,
     startDate:'2026-09-01',endDate:'2026-09-30',eventStatus:'https://schema.org/EventCompleted',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
@@ -43,6 +50,7 @@ export default function HomoFaber2026Article({data}:{data:HomoFaberContent}){
     <Header lang={data.lang}/>
     <main><article className="editorial-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
       <EditorialHero image={heroImage} imageAlt={data.imageAlt} crumbs={[{label:data.homeLabel,href:data.homeHref},{label:data.journalLabel,href:data.journalHref},{label:'Homo Faber 2026'}]} eyebrow={<>{data.category} • {data.eventDate}</>} title={data.h1} subtitle={data.heroSubtitle} strongShade/>
 
