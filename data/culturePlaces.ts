@@ -199,7 +199,7 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Ca Rezzonico Venice facade",
     "family": true,
     "panorama": false,
-    "price": "€15",
+    "price": "€15 intero · €7,50 ridotto",
     "hours": "Aprile–ottobre: 10:00–18:00. Novembre–marzo: 10:00–17:00. Ultimo ingresso un'ora prima della chiusura. Chiuso martedì.",
     "booking": "recommended",
     "officialUrl": "https://carezzonico.visitmuve.it/informazioni-pratiche/",
