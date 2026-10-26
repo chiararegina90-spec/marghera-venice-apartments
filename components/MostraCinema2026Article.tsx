@@ -17,6 +17,13 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
     image,author:{'@type':'Organization',name:'Marghera Venice Apartments'},publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},
     dateModified:'2026-09-14',about:{'@type':'Event',name:'84th Venice International Film Festival'},mainEntityOfPage:url,url
   };
+  const breadcrumbJsonLd={
+    '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:homeLabel(lang),item:`https://www.margheraveniceapartments.com${base(lang)||''}`},
+      {'@type':'ListItem',position:2,name:lang==='zh'?'旅行日志':'Journal',item:`https://www.margheraveniceapartments.com${base(lang)}/journal`},
+      {'@type':'ListItem',position:3,name:data.breadcrumb,item:url}
+    ]
+  };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'84th Venice International Film Festival',description:data.metaDescription,
     startDate:'2027-09-01',endDate:'2027-09-11',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
@@ -24,6 +31,7 @@ export default function MostraCinema2026Article({lang,data}:{lang:MostraCinema20
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
     <EditorialHero
       image="/images/journal-mostra-cinema.webp"
