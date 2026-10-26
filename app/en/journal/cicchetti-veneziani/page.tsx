@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import EditorialStayCta from '@/components/EditorialStayCta';
+import JournalSchemaBundle from '@/components/JournalSchemaBundle';
 
 export const metadata:Metadata = {
   title:'Venetian cicchetti | Venice Travel Journal',
@@ -28,6 +29,7 @@ const related = [
 
 export default function Article(){
   return <><Header lang="en"/><main><article className="editorial-page">
+<JournalSchemaBundle lang="en" logicalPath="/journal/cicchetti-veneziani" title="Venetian cicchetti" description="They are not tapas, not a starter and not a miniature meal. They are simply… cicchetti." image="/images/journal-cicchetti.webp"/>
     <section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
       <Image src="/images/journal-cicchetti.webp" alt="Venetian cicchetti in Venice" fill priority sizes="100vw" className="object-cover"/>
       <div className="absolute inset-0 editorial-cover-shade"/>
