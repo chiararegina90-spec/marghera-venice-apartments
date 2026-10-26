@@ -74,6 +74,31 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   lastVerified:'2026-10-25'
  },
  {
+  key:'ca-pesaro-bonnard-nudo-specchio',
+  placeSlug:'ca-pesaro',
+  kind:'artwork-loan',
+  start:'2026-06-27',
+  end:'2026-10-31',
+  title:{
+   it:'Nudo allo specchio di Pierre Bonnard è in prestito',
+   en:'Pierre Bonnard’s Nudo allo specchio is on loan',
+   de:'Pierre Bonnards Nudo allo specchio ist ausgeliehen',
+   fr:'Nudo allo specchio de Pierre Bonnard est en prêt',
+   es:'Nudo allo specchio de Pierre Bonnard está en préstamo',
+   zh:'Pierre Bonnard 的 Nudo allo specchio 正在外借'
+  },
+  summary:{
+   it:'Il dipinto Nudo allo specchio (1931) di Pierre Bonnard è temporaneamente in prestito al Musée Bonnard di Le Cannet, in Francia, per la mostra BONNARD INTIME – LES TOILETTES DE MARTHE, in programma fino al 31 ottobre 2026. La fine della mostra ospitante non implica automaticamente il ritorno immediato dell’opera in esposizione a Venezia.',
+   en:'Pierre Bonnard’s Nudo allo specchio (1931) is temporarily on loan to the Musée Bonnard in Le Cannet, France, for BONNARD INTIME – LES TOILETTES DE MARTHE, running until 31 October 2026. The end of the host exhibition does not automatically mean the painting will immediately return to display in Venice.',
+   de:'Pierre Bonnards Nudo allo specchio (1931) ist vorübergehend an das Musée Bonnard in Le Cannet, Frankreich, für die Ausstellung BONNARD INTIME – LES TOILETTES DE MARTHE ausgeliehen, die bis 31. Oktober 2026 läuft. Das Ende der Gastausstellung bedeutet nicht automatisch, dass das Gemälde sofort wieder in Venedig ausgestellt wird.',
+   fr:'Nudo allo specchio (1931) de Pierre Bonnard est temporairement prêté au Musée Bonnard du Cannet, en France, pour l’exposition BONNARD INTIME – LES TOILETTES DE MARTHE, jusqu’au 31 octobre 2026. La fin de l’exposition d’accueil ne signifie pas automatiquement que l’œuvre sera immédiatement de nouveau visible à Venise.',
+   es:'Nudo allo specchio (1931), de Pierre Bonnard, está temporalmente prestado al Musée Bonnard de Le Cannet, Francia, para la exposición BONNARD INTIME – LES TOILETTES DE MARTHE, hasta el 31 de octubre de 2026. El final de la exposición anfitriona no implica automáticamente que la obra vuelva a exponerse de inmediato en Venecia.',
+   zh:'Pierre Bonnard 的 Nudo allo specchio（1931）目前外借至法国 Le Cannet 的 Musée Bonnard，参加 BONNARD INTIME – LES TOILETTES DE MARTHE 展览，展期至2026年10月31日。客展结束并不表示作品会在次日自动重新回到威尼斯展出。'
+  },
+  officialUrl:'https://capesaro.visitmuve.it/informazioni-pratiche/',
+  lastVerified:'2026-10-26'
+ },
+ {
   key:'ca-rezzonico-ballroom-restoration',
   placeSlug:'ca-rezzonico',
   kind:'restoration',
@@ -137,15 +162,39 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
    zh:'11月16日起：portego 内两幅画作修复'
   },
   summary:{
-   it:'MUVE prevede il restauro in situ di due dipinti del portego. I lavori non modificano il percorso di visita e la conclusione è prevista entro la fine del 2026.',
-   en:'MUVE plans in-situ restoration of two paintings in the portego. The work does not alter the visitor route and is expected to finish by the end of 2026.',
-   de:'MUVE plant die Restaurierung zweier Gemälde direkt im Portego. Die Arbeiten verändern den Besucherweg nicht und sollen bis Ende 2026 abgeschlossen sein.',
-   fr:'MUVE prévoit la restauration sur place de deux tableaux du portego. Les travaux ne modifient pas le parcours de visite et devraient s’achever d’ici la fin de 2026.',
-   es:'MUVE prevé restaurar in situ dos pinturas del portego. Los trabajos no modifican el recorrido de visita y se espera que terminen antes de finalizar 2026.',
-   zh:'MUVE 将在 portego 现场修复两幅画作。施工不会改变参观路线，预计于2026年底前完成。'
+   it:'Dal 16 novembre 2026 MUVE prevede il restauro in situ, nel portego, del Ritratto di papa Clemente X e del Ritratto dell’imperatore Leopoldo I d’Asburgo, entrambi di ambito veneziano. I lavori non modificano il percorso di visita e la conclusione è prevista entro la fine del 2026.',
+   en:'From 16 November 2026, MUVE plans in-situ restoration in the portego of the Portrait of Pope Clement X and the Portrait of Emperor Leopold I of Habsburg, both from the Venetian school. The work does not alter the visitor route and is expected to finish by the end of 2026.',
+   de:'Ab 16. November 2026 lässt MUVE im Portego das Porträt von Papst Clemens X. und das Porträt von Kaiser Leopold I. von Habsburg, beide aus venezianischem Umfeld, vor Ort restaurieren. Die Arbeiten verändern den Besucherweg nicht und sollen bis Ende 2026 abgeschlossen sein.',
+   fr:'À partir du 16 novembre 2026, MUVE prévoit la restauration sur place, dans le portego, du Portrait du pape Clément X et du Portrait de l’empereur Léopold Ier de Habsbourg, tous deux de milieu vénitien. Les travaux ne modifient pas le parcours de visite et devraient s’achever d’ici la fin de 2026.',
+   es:'Desde el 16 de noviembre de 2026, MUVE prevé restaurar in situ, en el portego, el Retrato del papa Clemente X y el Retrato del emperador Leopoldo I de Habsburgo, ambos de ámbito veneciano. Los trabajos no modifican el recorrido de visita y se espera que terminen antes de finalizar 2026.',
+   zh:'自2026年11月16日起，MUVE 将在 portego 现场修复《教皇克莱孟十世肖像》和《哈布斯堡皇帝利奥波德一世肖像》，两件作品均属威尼斯艺术语境。施工不会改变参观路线，预计于2026年底前完成。'
   },
   officialUrl:'https://mocenigo.visitmuve.it/informazioni-pratiche/',
-  lastVerified:'2026-10-25'
+  lastVerified:'2026-10-26'
+ },
+ {
+  key:'palazzo-mocenigo-accessibility',
+  placeSlug:'palazzo-mocenigo',
+  kind:'visitor-info',
+  status:'current',
+  title:{
+   it:'Accessibilità: verifica prima della visita',
+   en:'Accessibility: check before visiting',
+   de:'Barrierefreiheit: vor dem Besuch prüfen',
+   fr:'Accessibilité : vérifier avant la visite',
+   es:'Accesibilidad: comprobar antes de la visita',
+   zh:'无障碍信息：参观前请确认'
+  },
+  summary:{
+   it:'Il museo si trova in un edificio storico. MUVE segnala una scala per raggiungere il piano nobile e servizi igienici non a norma. Per esigenze di mobilità specifiche è consigliato contattare il museo prima della visita al +39 041 721798.',
+   en:'The museum is housed in a historic building. MUVE notes a staircase to reach the piano nobile and toilets that are not fully accessible. Visitors with specific mobility needs are advised to contact the museum before visiting on +39 041 721798.',
+   de:'Das Museum befindet sich in einem historischen Gebäude. MUVE weist auf eine Treppe zum Piano Nobile und nicht vollständig barrierefreie Toiletten hin. Bei besonderen Mobilitätsbedürfnissen empfiehlt sich vor dem Besuch eine Kontaktaufnahme unter +39 041 721798.',
+   fr:'Le musée occupe un bâtiment historique. MUVE signale un escalier pour accéder au piano nobile et des toilettes non entièrement accessibles. Pour des besoins de mobilité spécifiques, il est conseillé de contacter le musée avant la visite au +39 041 721798.',
+   es:'El museo se encuentra en un edificio histórico. MUVE señala una escalera para acceder al piano nobile y aseos que no son totalmente accesibles. Para necesidades específicas de movilidad se aconseja contactar con el museo antes de la visita en el +39 041 721798.',
+   zh:'博物馆位于历史建筑内。MUVE 提醒，前往 piano nobile 需走楼梯，卫生间也并非完全无障碍。如有特定行动需求，建议参观前致电 +39 041 721798 咨询。'
+  },
+  officialUrl:'https://mocenigo.visitmuve.it/informazioni-pratiche/servizi-e-accessibilita/',
+  lastVerified:'2026-10-26'
  },
  {
   key:'palazzo-roverella-pinacoteca-free',
