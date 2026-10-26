@@ -24,12 +24,12 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
    zh:'2026年 San Michele 临时步行桥：目前已确认的信息'
   });
   const bridgeText=m(lang,{
-   it:'Al 25 ottobre 2026 non risulta ancora una conferma ufficiale dell’allestimento del collegamento pedonale temporaneo dalle Fondamente Nove al Cimitero di San Michele. Il ponte è stato riproposto nel 2025, ma date, orari e modalità di accesso di quell’edizione non possono essere considerati validi per il 2026. Sono invece confermati i collegamenti speciali ACTV per la Commemorazione dei Defunti dal 31 ottobre al 2 novembre 2026.',
-   en:'As of 25 October 2026, there is still no official confirmation that the temporary pedestrian bridge from Fondamente Nove to San Michele Cemetery will be installed this year. The bridge returned in 2025, but its dates, opening times and access rules cannot be carried over to 2026. What is confirmed are ACTV’s special services for the Commemoration of the Dead from 31 October to 2 November 2026.',
-   de:'Mit Stand vom 25. Oktober 2026 gibt es noch keine offizielle Bestätigung, dass die temporäre Fußgängerbrücke von den Fondamente Nove zum Friedhof San Michele 2026 aufgebaut wird. Die Brücke wurde 2025 erneut eingerichtet, doch Termine, Öffnungszeiten und Zugangsregeln dieser Ausgabe dürfen nicht auf 2026 übertragen werden. Bestätigt sind dagegen die ACTV-Sonderverbindungen zum Totengedenken vom 31. Oktober bis 2. November 2026.',
-   fr:'Au 25 octobre 2026, aucune confirmation officielle ne signale encore l’installation du pont piéton temporaire entre Fondamente Nove et le cimetière de San Michele. Le pont a été réinstallé en 2025, mais les dates, horaires et conditions d’accès de cette édition ne peuvent pas être transposés à 2026. En revanche, les liaisons spéciales ACTV pour la Commémoration des Défunts sont confirmées du 31 octobre au 2 novembre 2026.',
-   es:'A 25 de octubre de 2026 todavía no existe una confirmación oficial de la instalación del puente peatonal temporal entre Fondamente Nove y el Cementerio de San Michele. El puente volvió en 2025, pero las fechas, horarios y condiciones de acceso de aquella edición no pueden trasladarse a 2026. Sí están confirmados los servicios especiales de ACTV para la Conmemoración de los Difuntos del 31 de octubre al 2 de noviembre de 2026.',
-   zh:'截至2026年10月25日，官方尚未确认今年会搭设从 Fondamente Nove 通往 San Michele 公墓的临时步行浮桥。该桥曾在2025年恢复，但2025年的日期、开放时间和通行规则不能直接沿用到2026年。目前已经确认的是 ACTV 将于2026年10月31日至11月2日为亡者纪念日提供特别交通服务。'
+   it:'Al 26 ottobre 2026 non risulta ancora una conferma ufficiale dell’allestimento del collegamento pedonale temporaneo dalle Fondamente Nove al Cimitero di San Michele. Il ponte è stato riproposto nel 2025, ma date, orari e modalità di accesso di quell’edizione non possono essere considerati validi per il 2026. Sono invece confermati i collegamenti speciali ACTV per la Commemorazione dei Defunti dal 31 ottobre al 2 novembre 2026.',
+   en:'As of 26 October 2026, there is still no official confirmation that the temporary pedestrian bridge from Fondamente Nove to San Michele Cemetery will be installed this year. The bridge returned in 2025, but its dates, opening times and access rules cannot be carried over to 2026. What is confirmed are ACTV’s special services for the Commemoration of the Dead from 31 October to 2 November 2026.',
+   de:'Mit Stand vom 26. Oktober 2026 gibt es noch keine offizielle Bestätigung, dass die temporäre Fußgängerbrücke von den Fondamente Nove zum Friedhof San Michele 2026 aufgebaut wird. Die Brücke wurde 2025 erneut eingerichtet, doch Termine, Öffnungszeiten und Zugangsregeln dieser Ausgabe dürfen nicht auf 2026 übertragen werden. Bestätigt sind dagegen die ACTV-Sonderverbindungen zum Totengedenken vom 31. Oktober bis 2. November 2026.',
+   fr:'Au 26 octobre 2026, aucune confirmation officielle ne signale encore l’installation du pont piéton temporaire entre Fondamente Nove et le cimetière de San Michele. Le pont a été réinstallé en 2025, mais les dates, horaires et conditions d’accès de cette édition ne peuvent pas être transposés à 2026. En revanche, les liaisons spéciales ACTV pour la Commémoration des Défunts sont confirmées du 31 octobre au 2 novembre 2026.',
+   es:'A 26 de octubre de 2026 todavía no existe una confirmación oficial de la instalación del puente peatonal temporal entre Fondamente Nove y el Cementerio de San Michele. El puente volvió en 2025, pero las fechas, horarios y condiciones de acceso de aquella edición no pueden trasladarse a 2026. Sí están confirmados los servicios especiales de ACTV para la Conmemoración de los Difuntos del 31 de octubre al 2 de noviembre de 2026.',
+   zh:'截至2026年10月26日，官方尚未确认今年会搭设从 Fondamente Nove 通往 San Michele 公墓的临时步行浮桥。该桥曾在2025年恢复，但2025年的日期、开放时间和通行规则不能直接沿用到2026年。目前已经确认的是 ACTV 将于2026年10月31日至11月2日为亡者纪念日提供特别交通服务。'
   });
   item.sections=(item.sections||[]).map(([title,text])=>/ponte di san michele nel 2026|San Michele bridge in 2026|San Michele 2026:|Pont de San Michele 2026|Puente de San Michele 2026|2026年 San Michele/i.test(title)?[bridgeTitle,bridgeText] as const:[title,text] as const);
 
@@ -86,15 +86,15 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
   };
   item.eventDate=m(lang,{it:'SERVIZI ACTV · 31 OTTOBRE–2 NOVEMBRE 2026',en:'ACTV SERVICES · 31 OCTOBER–2 NOVEMBER 2026',de:'ACTV-VERKEHR · 31. OKTOBER–2. NOVEMBER 2026',fr:'SERVICES ACTV · 31 OCTOBRE–2 NOVEMBRE 2026',es:'SERVICIOS ACTV · 31 OCTUBRE–2 NOVIEMBRE 2026',zh:'ACTV 特别服务 · 2026年10月31日–11月2日'});
   item.description=m(lang,{
-   it:'Cimitero di San Michele a Venezia: ponte 2026 non ancora confermato al 25 ottobre, servizi ACTV gratuiti 31 ottobre–2 novembre, storia e informazioni di visita.',
-   en:'San Michele Cemetery in Venice: 2026 bridge not yet officially confirmed as of 25 October, free ACTV services 31 October–2 November, history and visitor information.',
-   de:'Friedhof San Michele in Venedig: Brücke 2026 am 25. Oktober noch nicht offiziell bestätigt, kostenlose ACTV-Verbindungen 31. Oktober–2. November und Besuchsinfos.',
-   fr:'Cimetière San Michele à Venise : pont 2026 non encore confirmé officiellement au 25 octobre, services ACTV gratuits du 31 octobre au 2 novembre et infos visite.',
-   es:'Cementerio de San Michele en Venecia: puente 2026 aún no confirmado oficialmente a 25 de octubre, servicios ACTV gratuitos del 31 de octubre al 2 de noviembre e información de visita.',
-   zh:'威尼斯 San Michele 公墓：截至10月25日，2026年临时步行桥尚未获官方确认；ACTV 于10月31日至11月2日提供免费特别交通，并附参观信息。'
+   it:'Cimitero di San Michele a Venezia: ponte 2026 non ancora confermato al 26 ottobre, servizi ACTV gratuiti 31 ottobre–2 novembre, storia e informazioni di visita.',
+   en:'San Michele Cemetery in Venice: 2026 bridge not yet officially confirmed as of 26 October, free ACTV services 31 October–2 November, history and visitor information.',
+   de:'Friedhof San Michele in Venedig: Brücke 2026 am 26. Oktober noch nicht offiziell bestätigt, kostenlose ACTV-Verbindungen 31. Oktober–2. November und Besuchsinfos.',
+   fr:'Cimetière San Michele à Venise : pont 2026 non encore confirmé officiellement au 26 octobre, services ACTV gratuits du 31 octobre au 2 novembre et infos visite.',
+   es:'Cementerio de San Michele en Venecia: puente 2026 aún no confirmado oficialmente a 26 de octubre, servicios ACTV gratuitos del 31 de octubre al 2 de noviembre e información de visita.',
+   zh:'威尼斯 San Michele 公墓：截至10月26日，2026年临时步行桥尚未获官方确认；ACTV 于10月31日至11月2日提供免费特别交通，并附参观信息。'
   });
   item.relatedSlugs=Array.from(new Set([...(item.relatedSlugs||[]),'venezia-a-novembre']));
-  item.dateModified='2026-10-25';
+  item.dateModified='2026-10-26';
  }
 
  if(slug==='venezia-a-novembre'){
@@ -107,19 +107,19 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
    zh:'10月31日–11月2日：San Michele 与亡者纪念日'
   });
   const text=m(lang,{
-   it:'Dal 31 ottobre al 2 novembre ACTV prevede collegamenti acquei speciali gratuiti per il Cimitero di San Michele dalle Fondamente Nove, da Piazzale Roma/Ferrovia e dal Lido. Al 25 ottobre il Comune non ha invece ancora confermato l’eventuale ponte pedonale temporaneo dalle Fondamente Nove: le informazioni sul ponte vanno quindi verificate separatamente e non vanno ricavate dall’edizione 2025.',
-   en:'From 31 October to 2 November, ACTV is operating special free waterbus services to San Michele Cemetery from Fondamente Nove, Piazzale Roma/railway station and the Lido. As of 25 October, the City has not yet confirmed whether the temporary pedestrian bridge from Fondamente Nove will return, so bridge information must be checked separately and must not be copied from the 2025 edition.',
-   de:'Vom 31. Oktober bis 2. November bietet ACTV kostenlose Sonderverbindungen zum Friedhof San Michele von den Fondamente Nove, von Piazzale Roma/Bahnhof und vom Lido an. Mit Stand vom 25. Oktober hat die Stadt dagegen noch nicht bestätigt, ob die temporäre Fußgängerbrücke von den Fondamente Nove aufgebaut wird; Angaben zur Brücke müssen daher separat geprüft werden und dürfen nicht aus 2025 übernommen werden.',
-   fr:'Du 31 octobre au 2 novembre, ACTV assure des liaisons spéciales gratuites vers le cimetière de San Michele depuis Fondamente Nove, Piazzale Roma/gare et le Lido. Au 25 octobre, la Ville n’a en revanche pas encore confirmé le retour du pont piéton temporaire depuis Fondamente Nove : les informations sur le pont doivent donc être vérifiées séparément et non reprises de l’édition 2025.',
-   es:'Del 31 de octubre al 2 de noviembre, ACTV ofrece servicios acuáticos especiales gratuitos hacia el Cementerio de San Michele desde Fondamente Nove, Piazzale Roma/estación y el Lido. A 25 de octubre, el Ayuntamiento aún no ha confirmado el posible puente peatonal temporal desde Fondamente Nove; la información sobre el puente debe verificarse por separado y no copiarse de la edición 2025.',
-   zh:'10月31日至11月2日，ACTV 将从 Fondamente Nove、Piazzale Roma/火车站以及 Lido 提供前往 San Michele 公墓的免费特别水上交通。截至10月25日，市政府尚未确认是否会恢复从 Fondamente Nove 出发的临时步行桥，因此关于桥的信息必须单独核实，不能沿用2025年的安排。'
+   it:'Dal 31 ottobre al 2 novembre ACTV prevede collegamenti acquei speciali gratuiti per il Cimitero di San Michele dalle Fondamente Nove, da Piazzale Roma/Ferrovia e dal Lido. Al 26 ottobre il Comune non ha invece ancora confermato l’eventuale ponte pedonale temporaneo dalle Fondamente Nove: le informazioni sul ponte vanno quindi verificate separatamente e non vanno ricavate dall’edizione 2025.',
+   en:'From 31 October to 2 November, ACTV is operating special free waterbus services to San Michele Cemetery from Fondamente Nove, Piazzale Roma/railway station and the Lido. As of 26 October, the City has not yet confirmed whether the temporary pedestrian bridge from Fondamente Nove will return, so bridge information must be checked separately and must not be copied from the 2025 edition.',
+   de:'Vom 31. Oktober bis 2. November bietet ACTV kostenlose Sonderverbindungen zum Friedhof San Michele von den Fondamente Nove, von Piazzale Roma/Bahnhof und vom Lido an. Mit Stand vom 26. Oktober hat die Stadt dagegen noch nicht bestätigt, ob die temporäre Fußgängerbrücke von den Fondamente Nove aufgebaut wird; Angaben zur Brücke müssen daher separat geprüft werden und dürfen nicht aus 2025 übernommen werden.',
+   fr:'Du 31 octobre au 2 novembre, ACTV assure des liaisons spéciales gratuites vers le cimetière de San Michele depuis Fondamente Nove, Piazzale Roma/gare et le Lido. Au 26 octobre, la Ville n’a en revanche pas encore confirmé le retour du pont piéton temporaire depuis Fondamente Nove : les informations sur le pont doivent donc être vérifiées séparément et non reprises de l’édition 2025.',
+   es:'Del 31 de octubre al 2 de noviembre, ACTV ofrece servicios acuáticos especiales gratuitos hacia el Cementerio de San Michele desde Fondamente Nove, Piazzale Roma/estación y el Lido. A 26 de octubre, el Ayuntamiento aún no ha confirmado el posible puente peatonal temporal desde Fondamente Nove; la información sobre el puente debe verificarse por separado y no copiarse de la edición 2025.',
+   zh:'10月31日至11月2日，ACTV 将从 Fondamente Nove、Piazzale Roma/火车站以及 Lido 提供前往 San Michele 公墓的免费特别水上交通。截至10月26日，市政府尚未确认是否会恢复从 Fondamente Nove 出发的临时步行桥，因此关于桥的信息必须单独核实，不能沿用2025年的安排。'
   });
   addSectionIfMissing(item,title,text);
   const idx=(item.sections||[]).findIndex(([t])=>t===title);
   addLinkIfMissing(item,idx,'/journal/cimitero-san-michele-venezia',
     m(lang,{it:'Guida MVA: ',en:'MVA guide: ',de:'MVA-Guide: ',fr:'Guide MVA : ',es:'Guía MVA: ',zh:'MVA 指南：'}),
     m(lang,{it:'Cimitero di San Michele',en:'San Michele Cemetery',de:'Friedhof San Michele',fr:'Cimetière San Michele',es:'Cementerio de San Michele',zh:'San Michele 公墓'}));
-  item.dateModified='2026-10-25';
+  item.dateModified='2026-10-26';
  }
 
  if(slug==='biennale-musica-2026'){
@@ -227,7 +227,7 @@ export function applyJournalCatchup20261025(item:EventArticle,lang:EventLang,slu
   if(item.sections?.length){
    const title=item.sections[0][0];
    const text=m(lang,{
-    it:'Al 25 ottobre 2026 non risulta ancora pubblicato un calendario comunale completo per Natale 2026 e la notte del 31 dicembre 2026. Le pagine ufficiali facilmente reperibili sul Capodanno descrivono ancora l’edizione precedente: per questo non consideriamo automaticamente confermati fuochi, concerti, aree di visione o orari finché il Comune e Vela non pubblicheranno il nuovo programma.',
+    it:'Al 26 ottobre 2026 non risulta ancora pubblicato un calendario comunale completo per Natale 2026 e la notte del 31 dicembre 2026. Le pagine ufficiali facilmente reperibili sul Capodanno descrivono ancora l’edizione precedente: per questo non consideriamo automaticamente confermati fuochi, concerti, aree di visione o orari finché il Comune e Vela non pubblicheranno il nuovo programma.',
     en:'As of 25 October 2026, a complete City calendar for Christmas 2026 and New Year’s Eve on 31 December has not yet been published. The readily available official New Year pages still describe the previous edition, so fireworks, concerts, viewing areas and special times are not treated as confirmed until the City and Vela publish the new programme.',
     de:'Mit Stand vom 25. Oktober 2026 ist noch kein vollständiger städtischer Kalender für Weihnachten 2026 und Silvester am 31. Dezember veröffentlicht. Die leicht auffindbaren offiziellen Silvesterseiten beschreiben weiterhin die vorherige Ausgabe; Feuerwerk, Konzerte, Zuschauerbereiche und Sonderzeiten gelten daher erst nach Veröffentlichung des neuen Programms durch Stadt und Vela als bestätigt.',
     fr:'Au 25 octobre 2026, aucun calendrier municipal complet pour Noël 2026 et la nuit du 31 décembre n’est encore publié. Les pages officielles du Nouvel An facilement accessibles décrivent toujours l’édition précédente : feux d’artifice, concerts, zones d’observation et horaires spéciaux ne sont donc pas considérés comme confirmés avant publication du nouveau programme par la Ville et Vela.',
