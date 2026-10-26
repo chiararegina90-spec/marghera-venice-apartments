@@ -64,6 +64,13 @@ export default function KlimtMuvecArticle({lang}:{lang:SiteLang}){
   author:{'@type':'Organization',name:'Marghera Venice Apartments'},
   publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE}
  };
+ const breadcrumbLd={
+  '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+   {'@type':'ListItem',position:1,name:t.home,item:BASE+localePath('/',lang)},
+   {'@type':'ListItem',position:2,name:t.journal,item:BASE+localePath('/journal',lang)},
+   {'@type':'ListItem',position:3,name:c.title,item:BASE+canonical}
+  ]
+ };
  const eventLd={
   '@context':'https://schema.org','@type':'ExhibitionEvent',
   name:c.officialTitle,description:c.description,image:BASE+KLIMT_MUVEC_COVER,
@@ -162,6 +169,7 @@ export default function KlimtMuvecArticle({lang}:{lang:SiteLang}){
   </main>
   <Footer lang={lang}/>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleLd)}}/>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbLd)}}/>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventLd)}}/>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqLd)}}/>
  </>;
