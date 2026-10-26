@@ -106,6 +106,13 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},dateModified:'2026-10-22',
     mainEntityOfPage:url,url
   };
+  const breadcrumbJsonLd={
+    '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:lang==='de'?'Startseite':lang==='fr'?'Accueil':lang==='es'?'Inicio':lang==='zh'?'首页':'Home',item:`https://www.margheraveniceapartments.com${base(lang)||''}`},
+      {'@type':'ListItem',position:2,name:lang==='zh'?'旅行日志':'Journal',item:`https://www.margheraveniceapartments.com${base(lang)}/journal`},
+      {'@type':'ListItem',position:3,name:data.breadcrumb,item:url}
+    ]
+  };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'Biennale Arte 2026 – In Minor Keys',description:data.metaDescription,
     startDate:'2026-05-09',endDate:'2026-11-22',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
@@ -117,6 +124,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
   };
   return <><Header lang={lang}/><main><article className="editorial-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleJsonLd)}}/>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(eventJsonLd)}}/>
     {(lang==='it'||lang==='en')?<section className="relative min-h-[64svh] overflow-hidden pt-20 sm:min-h-[72vh]">
       <Image src="/images/journal-biennale.webp" alt={data.imageAlt} fill priority sizes="100vw" className="object-cover"/>
