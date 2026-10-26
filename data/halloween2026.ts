@@ -1,6 +1,7 @@
 import type {EventArticle,EventLang} from './journal-events-2026';
 
 const published='2026-10-15';
+const modified='2026-10-26';
 const sources={
   city:'https://www.comune.venezia.it/it/eventi-venezia',
   favaro:'https://www.comune.venezia.it/it/content/i-leggi-libri-streghe-mostri-e-fantasmi',
@@ -9,7 +10,9 @@ const sources={
   escape:'https://www.comune.venezia.it/en/node/76997',
   m9:'https://www.m9museum.it/famiglia/una-notte-da-brivido-al-museo/',
   molo5:'https://ticket.discoteche.it/molo5/evento/14352-halloween-party-31-ottobre-molo5',
-  lista:'https://www.lalistaristoranti.it/halloween-2026/'
+  lista:'https://www.lalistaristoranti.it/halloween-2026/',
+  pumpkinCity:'https://www.comune.venezia.it/it/content/pumpkin-village',
+  pumpkinCaMestre:'https://www.camestre.it/news/il-villaggio-delle-zucche/'
 };
 
 export const halloween2026:Record<EventLang,EventArticle>={
@@ -34,6 +37,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['28 ottobre: Streghe, mostri e fantasmi a Favaro Veneto','Mercoledì 28 ottobre alle 17:00 la Biblioteca di Favaro Veneto “Bruno Bruni” propone I leggi libri: Streghe, mostri e fantasmi, letture per bambine e bambini dai 3 ai 6 anni. L’ingresso è libero, ma la prenotazione è obbligatoria fino a esaurimento posti tramite la biblioteca. È un’attività semplice da considerare per chi arriva a Venezia con bambini piccoli già nei giorni precedenti Halloween.'],
       ['30 ottobre: Questo è Halloween nelle BiblioLudoteche','Venerdì 30 ottobre alle 17:00 le BiblioLudoteche comunali organizzano Questo è Halloween, con lettura animata e laboratorio creativo per bambini dai 5 ai 10 anni. Le sedi annunciate sono Sucabaruca a Marghera, Terra-Ferma a Mestre, L’albero dei desideri a Campalto e La cicala e la formica a Cannaregio. L’ingresso è gratuito fino a esaurimento posti; il Comune indica di contattare la BiblioLudoteca scelta a partire da una settimana prima. Come alternativa privata per famiglie, La Lista Mestre ha pubblicato per il 30 ottobre 2026 una serata Halloween con menù a tema, attività per bambini e un prestigiatore; la pagina ufficiale non pubblica nella scheda verificata un orario o un prezzo unico, quindi questi dettagli non vengono inventati e vanno controllati al momento della prenotazione.'],
       ['31 ottobre: letture a Marghera ed Escape Room a Mestre','La mattina del 31 ottobre, alle 10:30, la Biblioteca di Marghera ospita Che Storie! Special Edition Halloween; per l’iscrizione sono indicati e-mail e telefono della biblioteca. Nel pomeriggio la Biblioteca di Carpenedo Bissuola diventa invece una escape room a tema licantropia: quattro turni alle 15:00, 16:00, 17:00 e 18:00, circa 30 minuti ciascuno, gruppi fino a 6 persone e prenotazione obbligatoria. Non viene promessa disponibilità: i posti vanno verificati direttamente con la biblioteca.'],
+      ['31 ottobre: Pumpkin Village in Piazza Ferretto e il Villaggio delle Zucche di Ca’ Mestre','Tra le novità da non perdere, il calendario ufficiale del Comune di Venezia segnala Pumpkin Village in Piazza Ferretto, nel cuore di Mestre, tra gli appuntamenti di Città in festa. Ca’ Mestre pubblica inoltre una propria pagina dedicata al Villaggio delle Zucche. Sono proposte particolarmente interessanti per chi viaggia con bambini e rendono Mestre una tappa molto più ricca per il weekend di Halloween, anche senza entrare subito nel centro storico di Venezia. Per orari, attività previste e condizioni di accesso, controlla sempre le pagine ufficiali prima di partire: il programma può essere aggiornato.'],
       ['M9: Una notte da brivido al Museo','Tra il 31 ottobre e il 1° novembre M9 – Museo del ’900 a Mestre propone Una notte da brivido al Museo, dalle 18:30 alle 09:00 del mattino seguente, per bambini dagli 8 agli 11 anni. La quota pubblicata è 45 € con colazione inclusa e il numero massimo indicato è 35 partecipanti. Al controllo del 15 ottobre la biglietteria mostra 0 posti disponibili e “Sold Out”; M9 suggerisce di scrivere per l’eventuale lista d’attesa. Il costume è gradito ma non obbligatorio.'],
       ['Halloween per adulti: il party del Molo5','Per chi cerca una serata in discoteca, Molo5 ha pubblicato Halloween Party per sabato 31 ottobre dalle 23:00, in Via dell’Elettricità 8. La pagina di vendita indica ingresso consentito dai 16 anni compiuti e, al controllo del 15 ottobre, un Early Bird da 6 € ancora disponibile; i biglietti sono indicati come non rimborsabili. È un evento privato, non una manifestazione del Comune, quindi prezzi e disponibilità vanno ricontrollati sulla biglietteria ufficiale.'],
       ['La Venezia misteriosa: cosa fare senza andare a una festa','Il centro storico offre un’alternativa più veneziana a una festa a tema. Dopo cena, Cannaregio e alcune zone di Castello permettono di attraversare calli, ponti e piccoli campi con un’atmosfera molto diversa da quella delle ore centrali. Palazzi gotici, rii stretti e passaggi poco illuminati fanno il resto. Venezia ha un ricco patrimonio di racconti popolari e leggende: sono suggestioni della tradizione orale, non prove storiche di fantasmi o fenomeni soprannaturali. Per questo vale la pena viverle come parte del folklore cittadino, senza presentarle come fatti documentati.'],
@@ -54,13 +58,15 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'Alternativa privata per famiglie: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'}, 
       {section:3,text:'Per la lettura del mattino: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},
       {section:3,text:'Per i turni pomeridiani: ',label:'Escape Room di Halloween',href:sources.escape,tail:'.'},
-      {section:4,text:'Disponibilità e lista d’attesa: ',label:'M9 – Una notte da brivido al Museo',href:sources.m9,tail:'.'},
-      {section:5,text:'Biglietti e condizioni aggiornate: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Per altre idee con i più piccoli, leggi ',label:'Venezia con bambini',href:'/journal/venezia-con-bambini',tail:'.'},
-      {section:8,text:'Per organizzare bus e treni consulta ',label:'come raggiungere Venezia da Marghera',href:'/come-raggiungere-venezia',tail:'.'},
-      {section:8,text:'Se arrivi in auto, guarda anche ',label:'dove parcheggiare per visitare Venezia',href:'/journal/dove-parcheggiare-venezia',tail:'.'},
-      {section:8,text:'Scopri ',label:'Rossi Apartment',href:'/case/rossi-apartment',tail:' e la sua configurazione per famiglie e gruppi.'},
-      {section:8,text:'Oppure visita ',label:'Dimora Castelli',href:'/case/dimora-castelli',tail:' per una seconda soluzione a Marghera.'}
+      {section:4,text:'Evento in Piazza Ferretto: ',label:'Pumpkin Village – Comune di Venezia',href:sources.pumpkinCity,tail:'.'},
+      {section:4,text:'Approfondisci anche: ',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'.'},
+      {section:5,text:'Disponibilità e lista d’attesa: ',label:'M9 – Una notte da brivido al Museo',href:sources.m9,tail:'.'},
+      {section:6,text:'Biglietti e condizioni aggiornate: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
+      {section:8,text:'Per altre idee con i più piccoli, leggi ',label:'Venezia con bambini',href:'/journal/venezia-con-bambini',tail:'.'},
+      {section:9,text:'Per organizzare bus e treni consulta ',label:'come raggiungere Venezia da Marghera',href:'/come-raggiungere-venezia',tail:'.'},
+      {section:9,text:'Se arrivi in auto, guarda anche ',label:'dove parcheggiare per visitare Venezia',href:'/journal/dove-parcheggiare-venezia',tail:'.'},
+      {section:9,text:'Scopri ',label:'Rossi Apartment',href:'/case/rossi-apartment',tail:' e la sua configurazione per famiglie e gruppi.'},
+      {section:9,text:'Oppure visita ',label:'Dimora Castelli',href:'/case/dimora-castelli',tail:' per una seconda soluzione a Marghera.'}
     ],
     faq:[
       {question:'Quando si festeggia Halloween a Venezia nel 2026?',answer:'Halloween cade sabato 31 ottobre 2026. Alcune attività collegate iniziano già mercoledì 28 e venerdì 30 ottobre.'},
@@ -71,7 +77,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'Cosa fare ad Halloween a Venezia senza partecipare a una festa?',answer:'Una passeggiata serale a Cannaregio o Castello permette di vivere calli, ponti e canali in un’atmosfera più quieta, accompagnando la visita con racconti e leggende trattati come folklore, non come fatti storici.'}
     ],
     stayCta:{eyebrow:'Halloween tra Venezia e terraferma',title:'Una base comoda per il weekend di Halloween',text:'Soggiorna a Marghera con parcheggio privato e collegamenti verso Venezia, mantenendo comode anche le attività di Mestre e Marghera.'},
-    datePublished:published,dateModified:published
+    datePublished:published,dateModified:modified
   },
   en:{
     slug:'halloween-venezia-2026',
@@ -94,6 +100,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['28 October: Witches, monsters and ghosts in Favaro Veneto','On Wednesday 28 October at 5 pm, the Bruno Bruni Library in Favaro Veneto hosts I leggi libri: Streghe, mostri e fantasmi, a reading session for children aged 3–6. Admission is free, but advance booking is compulsory until all places are filled. It is a useful option for families arriving a few days before Halloween.'],
       ['30 October: Questo è Halloween in the municipal BiblioLudoteche','On Friday 30 October at 5 pm, municipal BiblioLudoteche host an animated reading and creative workshop for children aged 5–10. Confirmed venues are Sucabaruca in Marghera, Terra-Ferma in Mestre, L’albero dei desideri in Campalto and La cicala e la formica in Cannaregio. Admission is free while places last; the City advises contacting the chosen venue starting one week beforehand. As a private family alternative, La Lista Mestre has published a Halloween evening for 30 October 2026 with a themed menu, children’s activities and a magician; the verified page does not publish one fixed time or price, so those details are not invented here and should be checked when booking.'],
       ['31 October: Marghera stories and a Mestre escape room','At 10:30 am, Marghera Library hosts Che Storie! Special Edition Halloween, with registration through the library. In the afternoon, Carpenedo Bissuola Library turns into a lycanthropy-themed escape room: four approximately 30-minute slots at 3, 4, 5 and 6 pm, with groups of up to six people and compulsory booking. Availability is not guaranteed and should be checked directly.'],
+      ['31 October: Pumpkin Village in Piazza Ferretto and Ca’ Mestre’s pumpkin village','One of the most useful additions for families is right in Mestre. The City of Venice’s official calendar lists Pumpkin Village in Piazza Ferretto as part of the Città in festa programme, while Ca’ Mestre has also published a dedicated page for its Villaggio delle Zucche. Together they make Mestre a much stronger Halloween stop for families, especially if you want a child-friendly activity before heading into historic Venice. Check the official pages before you go for the latest opening times, activities and access conditions, as details may be updated.'],
       ['M9: A spooky night at the museum','From 31 October to 1 November, M9 – Museo del ’900 in Mestre runs Una notte da brivido al Museo from 6:30 pm to 9:00 am for children aged 8–11. The published fee is €45 including breakfast, with a maximum of 35 participants. On 15 October the ticket page shows 0 available and Sold Out; M9 suggests contacting the museum for the waiting list. Halloween costume is welcome but not compulsory.'],
       ['Halloween for older visitors: Molo5','For a club night, Molo5 lists a Halloween Party for Saturday 31 October from 11 pm at Via dell’Elettricità 8. The ticket page currently states admission from age 16 and an available €6 Early Bird fare as of 15 October; tickets are non-refundable. This is a private event, not an official City of Venice programme, so price and availability should be rechecked.'],
       ['Mysterious Venice: Halloween without a party','Historic Venice is a strong alternative to a themed party. After dinner, parts of Cannaregio and Castello offer quieter calli, bridges and small campi where Gothic façades and narrow canals create their own atmosphere. Venice also has a long tradition of folk stories and legends. These should be enjoyed as oral tradition and folklore, not presented as historical proof of ghosts or supernatural events.'],
@@ -111,13 +118,15 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:2,text:'Private family alternative: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Morning event: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},
       {section:3,text:'Afternoon slots: ',label:'Halloween Escape Room',href:sources.escape,tail:'.'},
-      {section:4,text:'Availability and waiting list: ',label:'M9 – Una notte da brivido al Museo',href:sources.m9,tail:'.'},
-      {section:5,text:'Current tickets and conditions: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'For more family ideas, read ',label:'Venice with children',href:'/journal/venezia-con-bambini',tail:'.'},
-      {section:8,text:'Plan buses and trains with ',label:'getting to Venice from Marghera',href:'/come-raggiungere-venezia',tail:'.'},
-      {section:8,text:'If you are driving, see ',label:'where to park for Venice',href:'/journal/dove-parcheggiare-venezia',tail:'.'},
-      {section:8,text:'See ',label:'Rossi Apartment',href:'/case/rossi-apartment',tail:' for families and groups.'},
-      {section:8,text:'Or explore ',label:'Dimora Castelli',href:'/case/dimora-castelli',tail:' as another Marghera base.'}
+      {section:4,text:'Piazza Ferretto event: ',label:'Pumpkin Village – City of Venice',href:sources.pumpkinCity,tail:'.'},
+      {section:4,text:'See also: ',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'.'},
+      {section:5,text:'Availability and waiting list: ',label:'M9 – Una notte da brivido al Museo',href:sources.m9,tail:'.'},
+      {section:6,text:'Current tickets and conditions: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
+      {section:8,text:'For more family ideas, read ',label:'Venice with children',href:'/journal/venezia-con-bambini',tail:'.'},
+      {section:9,text:'Plan buses and trains with ',label:'getting to Venice from Marghera',href:'/come-raggiungere-venezia',tail:'.'},
+      {section:9,text:'If you are driving, see ',label:'where to park for Venice',href:'/journal/dove-parcheggiare-venezia',tail:'.'},
+      {section:9,text:'See ',label:'Rossi Apartment',href:'/case/rossi-apartment',tail:' for families and groups.'},
+      {section:9,text:'Or explore ',label:'Dimora Castelli',href:'/case/dimora-castelli',tail:' as another Marghera base.'}
     ],
     faq:[
       {question:'When is Halloween in Venice in 2026?',answer:'Halloween falls on Saturday 31 October 2026. Some related family activities begin on Wednesday 28 and Friday 30 October.'},
@@ -128,7 +137,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'What can I do in Venice on Halloween without going to a party?',answer:'An evening walk through quieter parts of Cannaregio or Castello offers atmosphere without a themed event. Treat local ghost stories as folklore rather than verified history.'}
     ],
     stayCta:{eyebrow:'Halloween between Venice and the mainland',title:'A practical base for Halloween weekend',text:'Stay in Marghera with private parking and easy access to Venice while keeping Mestre and Marghera activities convenient too.'},
-    datePublished:published,dateModified:published
+    datePublished:published,dateModified:modified
   },
   de:{
     slug:'halloween-venezia-2026',
@@ -148,6 +157,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['28. Oktober: Hexen, Monster und Geister in Favaro Veneto','Am Mittwoch, 28. Oktober um 17:00 Uhr veranstaltet die Bibliothek Bruno Bruni in Favaro Veneto I leggi libri: Streghe, mostri e fantasmi für Kinder von 3 bis 6 Jahren. Der Eintritt ist frei, eine Reservierung ist jedoch bis zur Ausschöpfung der Plätze Pflicht.'],
       ['30. Oktober: Questo è Halloween in den BiblioLudoteche','Am Freitag, 30. Oktober um 17:00 Uhr gibt es eine animierte Lesung und einen Kreativworkshop für Kinder von 5 bis 10 Jahren. Bestätigte Orte sind Sucabaruca in Marghera, Terra-Ferma in Mestre, L’albero dei desideri in Campalto und La cicala e la formica in Cannaregio. Der Eintritt ist kostenlos, solange Plätze verfügbar sind; Kontakt ist ab einer Woche vorher vorgesehen. Als private Familienalternative hat La Lista Mestre für den 30. Oktober 2026 einen Halloween-Abend mit Themenmenü, Kinderaktivitäten und Zauberer veröffentlicht. Auf der geprüften Seite stehen kein einheitlicher Beginn und kein Pauschalpreis; diese Angaben werden daher nicht erfunden und sollten bei der Reservierung geprüft werden.'],
       ['31. Oktober: Geschichten in Marghera und Escape Room in Mestre','Um 10:30 Uhr beginnt in der Bibliothek Marghera Che Storie! Special Edition Halloween. Am Nachmittag folgt in der Bibliothek Carpenedo Bissuola ein Escape Room zum Thema Werwolf: vier ungefähr 30-minütige Termine um 15:00, 16:00, 17:00 und 18:00 Uhr, Gruppen bis 6 Personen, Reservierung Pflicht. Verfügbarkeit bitte direkt prüfen.'],
+      ['31. Oktober: Pumpkin Village auf der Piazza Ferretto und das Kürbisdorf von Ca’ Mestre','Eine besonders interessante Ergänzung für Familien findet sich direkt in Mestre. Im offiziellen Veranstaltungskalender der Stadt Venedig ist das Pumpkin Village auf der Piazza Ferretto als Teil von Città in festa aufgeführt; außerdem hat Ca’ Mestre eine eigene Seite zum Villaggio delle Zucche veröffentlicht. Damit wird Mestre zu einer guten Halloween-Station für Familien, besonders wenn ihr vor einem Besuch im historischen Zentrum noch eine kinderfreundliche Aktivität einplanen möchtet. Prüft vor dem Besuch die offiziellen Seiten für aktuelle Uhrzeiten, Programmpunkte und Zugangsbedingungen, da sich Details ändern können.'],
       ['M9: Eine Nacht mit Gänsehaut im Museum','M9 – Museo del ’900 in Mestre bietet vom 31. Oktober bis 1. November eine Übernachtung von 18:30 bis 09:00 Uhr für Kinder von 8 bis 11 Jahren an. Veröffentlicht sind 45 € inklusive Frühstück und maximal 35 Teilnehmer. Am 15. Oktober zeigt die Ticketseite 0 verfügbare Plätze und Sold Out; M9 verweist auf eine mögliche Warteliste. Kostüm ist willkommen, aber nicht Pflicht.'],
       ['Halloween für Ältere: Molo5','Molo5 kündigt für Samstag, 31. Oktober ab 23:00 Uhr eine Halloween Party in Via dell’Elettricità 8 an. Laut Ticketseite ist der Eintritt ab 16 Jahren möglich; am 15. Oktober wird ein noch verfügbarer Early-Bird-Tarif von 6 € angezeigt. Tickets sind nicht erstattbar. Es handelt sich um eine private Veranstaltung, daher Preise und Verfügbarkeit erneut prüfen.'],
       ['Mystisches Venedig ohne Party','Wer keine Themenparty möchte, kann nach dem Abendessen ruhigere Bereiche von Cannaregio oder Castello erkunden. Enge Kanäle, kleine Brücken und gotische Fassaden sorgen schon allein für Atmosphäre. Venedig besitzt viele Volksgeschichten und Legenden; sie gehören zur mündlichen Tradition und sollten nicht als historischer Beweis für Geister oder Übernatürliches dargestellt werden.'],
@@ -162,9 +172,11 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:1,text:'Offizielle Seite: ',label:'Streghe, mostri e fantasmi',href:sources.favaro,tail:'.'},{section:2,text:'Offizielle Details: ',label:'Questo è Halloween',href:sources.ludoteche,tail:'.'},
       {section:2,text:'Private Familienalternative: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Vormittag: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Nachmittag: ',label:'Halloween Escape Room',href:sources.escape,tail:'.'},
-      {section:4,text:'Verfügbarkeit: ',label:'M9 Museumsnacht',href:sources.m9,tail:'.'},{section:5,text:'Tickets: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Mehr Ideen: ',label:'Venedig mit Kindern',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Für Bus und Bahn lesen Sie ",label:"Von Marghera nach Venedig",href:"/come-raggiungere-venezia",tail:"."},
-      {section:8,text:"Wenn Sie mit dem Auto anreisen, lesen Sie auch ",label:"Parken für Venedig",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Entdecken Sie ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" und die Schlafmöglichkeiten für Familien und Gruppen."},{section:8,text:"Oder besuchen Sie ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" als weitere Unterkunft in Marghera."}
+      {section:4,text:'Veranstaltung auf der Piazza Ferretto: ',label:'Pumpkin Village – Stadt Venedig',href:sources.pumpkinCity,tail:'.'},
+      {section:4,text:'Weitere Informationen: ',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'.'},
+      {section:5,text:'Verfügbarkeit: ',label:'M9 Museumsnacht',href:sources.m9,tail:'.'},{section:6,text:'Tickets: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
+      {section:8,text:'Mehr Ideen: ',label:'Venedig mit Kindern',href:'/journal/venezia-con-bambini',tail:'.'},{section:9,text:"Für Bus und Bahn lesen Sie ",label:"Von Marghera nach Venedig",href:"/come-raggiungere-venezia",tail:"."},
+      {section:9,text:"Wenn Sie mit dem Auto anreisen, lesen Sie auch ",label:"Parken für Venedig",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:9,text:"Entdecken Sie ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" und die Schlafmöglichkeiten für Familien und Gruppen."},{section:9,text:"Oder besuchen Sie ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" als weitere Unterkunft in Marghera."}
     ],
     faq:[
       {question:'Wann ist Halloween 2026 in Venedig?',answer:'Halloween ist Samstag, 31. Oktober 2026. Einige Familienangebote beginnen bereits am 28. und 30. Oktober.'},
@@ -174,7 +186,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'Muss man reservieren?',answer:'Das hängt vom Termin ab. Favaro und der Escape Room verlangen Reservierung; für BiblioLudoteche und private Events gelten jeweils eigene Bedingungen.'},
       {question:'Was kann man ohne Party machen?',answer:'Ein ruhiger Abendspaziergang durch Cannaregio oder Castello verbindet venezianische Atmosphäre mit lokalen Legenden, die als Folklore und nicht als historische Fakten verstanden werden sollten.'}
     ],
-    stayCta:{eyebrow:'Halloween zwischen Venedig und Festland',title:'Praktische Basis für das Halloween-Wochenende',text:'Marghera verbindet Privatparkplatz mit guter Erreichbarkeit von Venedig und den Veranstaltungen auf dem Festland.'},datePublished:published,dateModified:published
+    stayCta:{eyebrow:'Halloween zwischen Venedig und Festland',title:'Praktische Basis für das Halloween-Wochenende',text:'Marghera verbindet Privatparkplatz mit guter Erreichbarkeit von Venedig und den Veranstaltungen auf dem Festland.'},datePublished:published,dateModified:modified
   },
   fr:{
     slug:'halloween-venezia-2026',title:'Halloween à Venise 2026 : événements, légendes et idées',metaTitle:'Halloween Venise 2026 : événements et idées le 31 octobre',cardTitle:'Halloween à Venise 2026',cardDescription:'Événements confirmés, activités en famille et lieux mystérieux à découvrir à Venise pour Halloween.',cardEventDate:'31 OCTOBRE 2026',cardImageAlt:'Enfants déguisés pour Halloween avec des citrouilles illuminées au bord d’un canal vénitien',category:'Événements',
@@ -186,6 +198,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['28 octobre : sorcières, monstres et fantômes à Favaro Veneto','Mercredi 28 octobre à 17 h, la bibliothèque Bruno Bruni de Favaro Veneto propose I leggi libri: Streghe, mostri e fantasmi pour les enfants de 3 à 6 ans. L’entrée est libre mais la réservation est obligatoire dans la limite des places disponibles.'],
       ['30 octobre : Questo è Halloween dans les BiblioLudoteche','Vendredi 30 octobre à 17 h, lecture animée et atelier créatif pour les 5–10 ans à Sucabaruca à Marghera, Terra-Ferma à Mestre, L’albero dei desideri à Campalto et La cicala e la formica à Cannaregio. L’entrée est gratuite jusqu’à épuisement des places ; la Ville indique de contacter la structure choisie à partir d’une semaine avant. Comme alternative privée pour les familles, La Lista Mestre a publié une soirée Halloween le 30 octobre 2026 avec menu thématique, animations pour enfants et magicien ; la page vérifiée ne publie ni horaire unique ni tarif forfaitaire, ces informations doivent donc être contrôlées au moment de réserver.'],
       ['31 octobre : lectures à Marghera et escape room à Mestre','À 10 h 30, la bibliothèque de Marghera accueille Che Storie! Special Edition Halloween. L’après-midi, la bibliothèque de Carpenedo Bissuola organise une escape room sur le thème de la lycanthropie : quatre créneaux d’environ 30 minutes à 15 h, 16 h, 17 h et 18 h, groupes de 6 personnes maximum et réservation obligatoire.'],
+      ['31 octobre : Pumpkin Village sur la Piazza Ferretto et village des citrouilles de Ca’ Mestre','Une nouveauté particulièrement intéressante pour les familles se trouve directement à Mestre. Le calendrier officiel de la Ville de Venise mentionne le Pumpkin Village sur la Piazza Ferretto parmi les rendez-vous de Città in festa, tandis que Ca’ Mestre a également publié une page dédiée à son Villaggio delle Zucche. Mestre devient ainsi une étape très intéressante pour Halloween en famille, notamment avant de rejoindre le centre historique de Venise. Avant de partir, vérifiez les pages officielles pour les horaires, les activités et les modalités d’accès les plus récentes, car le programme peut évoluer.'],
       ['M9 : une nuit frissonnante au musée','Du 31 octobre au 1er novembre, M9 – Museo del ’900 à Mestre propose une nuit de 18 h 30 à 9 h pour les enfants de 8 à 11 ans. Tarif publié : 45 € avec petit-déjeuner, maximum 35 participants. Au contrôle du 15 octobre, la billetterie affiche 0 place disponible et Sold Out ; M9 conseille de contacter le musée pour la liste d’attente. Costume apprécié mais non obligatoire.'],
       ['Halloween pour les plus grands : Molo5','Molo5 annonce une Halloween Party samedi 31 octobre à partir de 23 h, Via dell’Elettricità 8. La billetterie indique un accès à partir de 16 ans et, au 15 octobre, un tarif Early Bird à 6 € encore disponible. Les billets sont non remboursables. Il s’agit d’un événement privé : tarifs et disponibilités doivent être revérifiés.'],
       ['La Venise mystérieuse sans participer à une fête','Après dîner, certains secteurs de Cannaregio et Castello offrent des calli, petits ponts et canaux bien plus calmes. Les façades gothiques et les passages étroits suffisent à créer l’ambiance. Venise possède aussi de nombreux récits populaires et légendes : ils relèvent du folklore et de la tradition orale, pas d’une preuve historique du surnaturel.'],
@@ -200,9 +213,11 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:1,text:'Page officielle : ',label:'Streghe, mostri e fantasmi',href:sources.favaro,tail:'.'},{section:2,text:'Détails officiels : ',label:'Questo è Halloween',href:sources.ludoteche,tail:'.'},
       {section:2,text:'Alternative privée pour les familles : ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Matin : ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Après-midi : ',label:'Escape Room de Halloween',href:sources.escape,tail:'.'},
-      {section:4,text:'Disponibilité : ',label:'M9 – nuit au musée',href:sources.m9,tail:'.'},{section:5,text:'Billets : ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Autres idées : ',label:'Venise avec des enfants',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Pour organiser bus et trains, consultez ",label:"rejoindre Venise depuis Marghera",href:"/come-raggiungere-venezia",tail:"."},
-      {section:8,text:"Si vous arrivez en voiture, consultez aussi ",label:"où se garer pour Venise",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Découvrez ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" et ses configurations pour les familles et les groupes."},{section:8,text:"Ou découvrez ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" pour une autre option à Marghera."}
+      {section:4,text:'Événement sur la Piazza Ferretto : ',label:'Pumpkin Village – Ville de Venise',href:sources.pumpkinCity,tail:'.'},
+      {section:4,text:'Voir aussi : ',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'.'},
+      {section:5,text:'Disponibilité : ',label:'M9 – nuit au musée',href:sources.m9,tail:'.'},{section:6,text:'Billets : ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
+      {section:8,text:'Autres idées : ',label:'Venise avec des enfants',href:'/journal/venezia-con-bambini',tail:'.'},{section:9,text:"Pour organiser bus et trains, consultez ",label:"rejoindre Venise depuis Marghera",href:"/come-raggiungere-venezia",tail:"."},
+      {section:9,text:"Si vous arrivez en voiture, consultez aussi ",label:"où se garer pour Venise",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:9,text:"Découvrez ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" et ses configurations pour les familles et les groupes."},{section:9,text:"Ou découvrez ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" pour une autre option à Marghera."}
     ],
     faq:[
       {question:'Quand fête-t-on Halloween à Venise en 2026 ?',answer:'Halloween tombe le samedi 31 octobre 2026. Certaines activités familiales commencent dès les 28 et 30 octobre.'},
@@ -212,7 +227,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'Faut-il réserver ?',answer:'Selon l’activité. Favaro et l’escape room exigent une réservation ; les autres lieux appliquent leurs propres conditions et limites de places.'},
       {question:'Que faire à Venise sans aller à une fête ?',answer:'Une promenade du soir à Cannaregio ou Castello offre une ambiance naturelle, avec les légendes locales présentées comme folklore et non comme faits historiques.'}
     ],
-    stayCta:{eyebrow:'Halloween entre Venise et la terre ferme',title:'Une base pratique pour le week-end',text:'Marghera permet de garder la voiture au parking privé tout en restant pratique pour Venise, Mestre et Marghera.'},datePublished:published,dateModified:published
+    stayCta:{eyebrow:'Halloween entre Venise et la terre ferme',title:'Une base pratique pour le week-end',text:'Marghera permet de garder la voiture au parking privé tout en restant pratique pour Venise, Mestre et Marghera.'},datePublished:published,dateModified:modified
   },
   es:{
     slug:'halloween-venezia-2026',title:'Halloween en Venecia 2026: eventos, leyendas y qué hacer',metaTitle:'Halloween Venecia 2026: eventos y qué hacer el 31 de octubre',cardTitle:'Halloween en Venecia 2026',cardDescription:'Eventos confirmados, actividades familiares y lugares misteriosos para descubrir en Venecia durante Halloween.',cardEventDate:'31 DE OCTUBRE DE 2026',cardImageAlt:'Niños disfrazados de Halloween con calabazas iluminadas junto a un canal veneciano',category:'Eventos',
@@ -224,6 +239,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['28 de octubre: brujas, monstruos y fantasmas en Favaro Veneto','El miércoles 28 de octubre a las 17:00, la Biblioteca Bruno Bruni de Favaro Veneto organiza I leggi libri: Streghe, mostri e fantasmi para niños de 3 a 6 años. La entrada es libre, pero la reserva es obligatoria hasta completar aforo.'],
       ['30 de octubre: Questo è Halloween en las BiblioLudoteche','El viernes 30 de octubre a las 17:00 habrá lectura animada y taller creativo para niños de 5 a 10 años en Sucabaruca (Marghera), Terra-Ferma (Mestre), L’albero dei desideri (Campalto) y La cicala e la formica (Cannaregio). Entrada gratuita hasta completar plazas; el Ayuntamiento indica contactar con el centro elegido a partir de una semana antes. Como alternativa privada para familias, La Lista Mestre ha publicado una velada de Halloween para el 30 de octubre de 2026 con menú temático, actividades infantiles y un mago; la página verificada no publica un horario único ni un precio cerrado, así que esos datos deben comprobarse al reservar.'],
       ['31 de octubre: cuentos en Marghera y escape room en Mestre','A las 10:30 la Biblioteca de Marghera celebra Che Storie! Special Edition Halloween. Por la tarde, la Biblioteca de Carpenedo Bissuola organiza una escape room sobre licantropía: cuatro turnos de unos 30 minutos a las 15:00, 16:00, 17:00 y 18:00, grupos de hasta 6 personas y reserva obligatoria.'],
+      ['31 de octubre: Pumpkin Village en Piazza Ferretto y el Villaggio delle Zucche de Ca’ Mestre','Una de las novedades más interesantes para familias está en pleno Mestre. El calendario oficial del Ayuntamiento de Venecia incluye Pumpkin Village en Piazza Ferretto dentro de Città in festa, y Ca’ Mestre también ha publicado una página dedicada a su Villaggio delle Zucche. Esto convierte Mestre en una parada especialmente atractiva para vivir Halloween con niños, incluso antes de ir al centro histórico de Venecia. Consulta siempre las páginas oficiales antes de salir para confirmar horarios, actividades y condiciones de acceso, ya que el programa puede actualizarse.'],
       ['M9: una noche de miedo en el museo','Entre el 31 de octubre y el 1 de noviembre, M9 – Museo del ’900 de Mestre propone una experiencia de 18:30 a 09:00 para niños de 8 a 11 años. Precio publicado: 45 € con desayuno, máximo 35 participantes. El 15 de octubre la ticketera muestra 0 plazas y Sold Out; M9 sugiere contactar para lista de espera. Disfraz recomendado, no obligatorio.'],
       ['Halloween para mayores: Molo5','Molo5 publica Halloween Party para el sábado 31 de octubre desde las 23:00 en Via dell’Elettricità 8. La página de venta indica acceso desde los 16 años y, al 15 de octubre, Early Bird de 6 € todavía disponible. Los billetes no son reembolsables. Es un evento privado: vuelve a comprobar precio y disponibilidad.'],
       ['La Venecia misteriosa sin ir a una fiesta','Después de cenar, zonas más tranquilas de Cannaregio y Castello ofrecen callejones, puentes y pequeños canales con una atmósfera especial. Las fachadas góticas hacen el resto. Venecia tiene muchas leyendas y relatos populares, pero deben contarse como tradición oral y folklore, no como pruebas históricas de fantasmas o sucesos sobrenaturales.'],
@@ -238,9 +254,11 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:1,text:'Página oficial: ',label:'Streghe, mostri e fantasmi',href:sources.favaro,tail:'.'},{section:2,text:'Detalles oficiales: ',label:'Questo è Halloween',href:sources.ludoteche,tail:'.'},
       {section:2,text:'Alternativa privada para familias: ',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'.'},
       {section:3,text:'Por la mañana: ',label:'Che Storie! Marghera',href:sources.marghera,tail:'.'},{section:3,text:'Por la tarde: ',label:'Escape Room de Halloween',href:sources.escape,tail:'.'},
-      {section:4,text:'Disponibilidad: ',label:'M9 – noche en el museo',href:sources.m9,tail:'.'},{section:5,text:'Entradas: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
-      {section:7,text:'Más ideas: ',label:'Venecia con niños',href:'/journal/venezia-con-bambini',tail:'.'},{section:8,text:"Para organizar autobuses y trenes, consulta ",label:"cómo llegar a Venecia desde Marghera",href:"/come-raggiungere-venezia",tail:"."},
-      {section:8,text:"Si llegas en coche, mira también ",label:"dónde aparcar para Venecia",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:8,text:"Descubre ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" y sus opciones para familias y grupos."},{section:8,text:"O visita ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" como otra opción en Marghera."}
+      {section:4,text:'Evento en Piazza Ferretto: ',label:'Pumpkin Village – Ayuntamiento de Venecia',href:sources.pumpkinCity,tail:'.'},
+      {section:4,text:'Consulta también: ',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'.'},
+      {section:5,text:'Disponibilidad: ',label:'M9 – noche en el museo',href:sources.m9,tail:'.'},{section:6,text:'Entradas: ',label:'Molo5 Halloween Party',href:sources.molo5,tail:'.'},
+      {section:8,text:'Más ideas: ',label:'Venecia con niños',href:'/journal/venezia-con-bambini',tail:'.'},{section:9,text:"Para organizar autobuses y trenes, consulta ",label:"cómo llegar a Venecia desde Marghera",href:"/come-raggiungere-venezia",tail:"."},
+      {section:9,text:"Si llegas en coche, mira también ",label:"dónde aparcar para Venecia",href:"/journal/dove-parcheggiare-venezia",tail:"."},{section:9,text:"Descubre ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:" y sus opciones para familias y grupos."},{section:9,text:"O visita ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:" como otra opción en Marghera."}
     ],
     faq:[
       {question:'¿Cuándo es Halloween en Venecia en 2026?',answer:'Halloween cae el sábado 31 de octubre de 2026. Algunas actividades familiares empiezan los días 28 y 30.'},
@@ -250,7 +268,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'¿Hay que reservar?',answer:'Depende del evento. Favaro y la escape room exigen reserva; cada BiblioLudoteca, M9 y Molo5 aplican sus propias condiciones.'},
       {question:'¿Qué hacer sin ir a una fiesta?',answer:'Un paseo nocturno por Cannaregio o Castello ofrece ambiente sin evento temático, tratando las leyendas venecianas como folklore y no como hechos históricos.'}
     ],
-    stayCta:{eyebrow:'Halloween entre Venecia y tierra firme',title:'Una base práctica para el fin de semana',text:'Marghera permite dejar el coche en parking privado y seguir teniendo cómodas Venecia, Mestre y las actividades de Marghera.'},datePublished:published,dateModified:published
+    stayCta:{eyebrow:'Halloween entre Venecia y tierra firme',title:'Una base práctica para el fin de semana',text:'Marghera permite dejar el coche en parking privado y seguir teniendo cómodas Venecia, Mestre y las actividades de Marghera.'},datePublished:published,dateModified:modified
   },
   zh:{
     slug:'halloween-venezia-2026',title:'2026威尼斯万圣夜：活动、传说与10月31日玩法',metaTitle:'2026威尼斯万圣夜：活动与10月31日游玩指南',cardTitle:'2026威尼斯万圣夜',cardDescription:'已确认活动、亲子体验与万圣夜期间值得探索的神秘威尼斯地点。',cardEventDate:'2026年10月31日',cardImageAlt:'孩子们穿着万圣夜服装，身旁是发光南瓜和威尼斯运河',category:'活动',
@@ -262,6 +280,7 @@ export const halloween2026:Record<EventLang,EventArticle>={
       ['10月28日：Favaro Veneto 的女巫、怪物与幽灵故事','10月28日星期三17:00，Favaro Veneto 的 Bruno Bruni 图书馆举行 I leggi libri: Streghe, mostri e fantasmi，面向3–6岁儿童。免费入场，但必须提前预约，名额满即止。'],
       ['10月30日：市立 BiblioLudoteche 的 Questo è Halloween','10月30日星期五17:00，面向5–10岁儿童的动画阅读与创意手工将在四处举行：Marghera 的 Sucabaruca、Mestre 的 Terra-Ferma、Campalto 的 L’albero dei desideri，以及 Cannaregio 的 La cicala e la formica。免费，名额有限；市政府建议从活动前一周开始联系所选场地。作为家庭私人活动的另一选择，La Lista Mestre 已发布2026年10月30日万圣夜晚间活动，包括主题菜单、儿童活动和魔术师；已核对的页面没有公布统一开始时间或固定价格，因此本文不自行补充这些信息，预约时请再次确认。'],
       ['10月31日：Marghera 阅读活动与 Mestre 密室逃脱','上午10:30，Marghera 图书馆举行 Che Storie! Special Edition Halloween。下午，Carpenedo Bissuola 图书馆变成狼人主题密室逃脱，共四个约30分钟场次：15:00、16:00、17:00、18:00，每组最多6人，必须预约。名额需直接向图书馆确认。'],
+      ['10月31日：Piazza Ferretto 的 Pumpkin Village 与 Ca’ Mestre 南瓜村','对亲子游客来说，Mestre 今年新增了很值得关注的万圣夜选择。威尼斯市政府官方活动日历已将 Piazza Ferretto 的 Pumpkin Village 列入 Città in festa 活动；Ca’ Mestre 也发布了自己的 Villaggio delle Zucche（南瓜村）专题页面。这样一来，即使还没有进入威尼斯历史中心，也能先在 Mestre 安排一段适合孩子的万圣夜行程。出发前请务必查看官方页面，确认最新开放时间、活动内容和入场方式，因为节目安排可能会更新。'],
       ['M9：在博物馆过一个“惊悚之夜”','10月31日18:30至11月1日09:00，Mestre 的 M9 – Museo del ’900 为8–11岁儿童安排过夜体验。公布价格为45欧元，含早餐，最多35人。10月15日查看时票务页面显示0个名额并标注 Sold Out；M9 建议有需要者联系加入候补名单。万圣夜服装欢迎但不强制。'],
       ['成年人和青少年：Molo5 夜间派对','Molo5 已发布10月31日星期六23:00开始的 Halloween Party，地点为 Via dell’Elettricità 8。票务页注明16岁及以上可入场；10月15日查看时 Early Bird 为6欧元且仍可购买，门票不退款。它属于私人活动，不是市政府官方节庆，因此价格和余票应再次核对。'],
       ['不参加派对，也可以体验“神秘威尼斯”','晚餐后可以选择 Cannaregio 或 Castello 较安静的区域散步。狭窄水道、小桥、古老立面和低调灯光已经足够营造气氛。威尼斯也有许多民间故事和传说，但应把它们作为口述传统与民俗来理解，而不是当作幽灵或超自然现象的历史证据。'],
@@ -276,9 +295,11 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {section:1,text:'官方页面：',label:'Streghe, mostri e fantasmi',href:sources.favaro,tail:'。'},{section:2,text:'官方详情：',label:'Questo è Halloween',href:sources.ludoteche,tail:'。'},
       {section:2,text:'家庭私人活动选择：',label:'Halloween 2026 – La Lista Mestre',href:sources.lista,tail:'。'},
       {section:3,text:'上午活动：',label:'Che Storie! Marghera',href:sources.marghera,tail:'。'},{section:3,text:'下午场次：',label:'Halloween Escape Room',href:sources.escape,tail:'。'},
-      {section:4,text:'余位与候补：',label:'M9 博物馆过夜',href:sources.m9,tail:'。'},{section:5,text:'票务：',label:'Molo5 Halloween Party',href:sources.molo5,tail:'。'},
-      {section:7,text:'更多亲子建议：',label:'带孩子游威尼斯',href:'/journal/venezia-con-bambini',tail:'。'},{section:8,text:"规划公交与火车出行，请查看 ",label:"从 Marghera 前往威尼斯",href:"/come-raggiungere-venezia",tail:"。"},
-      {section:8,text:"自驾出行还可以阅读 ",label:"威尼斯停车指南",href:"/journal/dove-parcheggiare-venezia",tail:"。"},{section:8,text:"了解 ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:"，查看适合家庭与团体的床位安排。"},{section:8,text:"或看看 ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:"，作为 Marghera 的另一处住宿选择。"}
+      {section:4,text:'Piazza Ferretto 活动：',label:'Pumpkin Village – 威尼斯市政府',href:sources.pumpkinCity,tail:'。'},
+      {section:4,text:'另请参阅：',label:'Il Villaggio delle Zucche – Ca’ Mestre',href:sources.pumpkinCaMestre,tail:'。'},
+      {section:5,text:'余位与候补：',label:'M9 博物馆过夜',href:sources.m9,tail:'。'},{section:6,text:'票务：',label:'Molo5 Halloween Party',href:sources.molo5,tail:'。'},
+      {section:8,text:'更多亲子建议：',label:'带孩子游威尼斯',href:'/journal/venezia-con-bambini',tail:'。'},{section:9,text:"规划公交与火车出行，请查看 ",label:"从 Marghera 前往威尼斯",href:"/come-raggiungere-venezia",tail:"。"},
+      {section:9,text:"自驾出行还可以阅读 ",label:"威尼斯停车指南",href:"/journal/dove-parcheggiare-venezia",tail:"。"},{section:9,text:"了解 ",label:"Rossi Apartment",href:"/case/rossi-apartment",tail:"，查看适合家庭与团体的床位安排。"},{section:9,text:"或看看 ",label:"Dimora Castelli",href:"/case/dimora-castelli",tail:"，作为 Marghera 的另一处住宿选择。"}
     ],
     faq:[
       {question:'2026年威尼斯万圣夜是哪一天？',answer:'2026年万圣夜是10月31日星期六，部分亲子活动从10月28日和30日已经开始。'},
@@ -288,6 +309,6 @@ export const halloween2026:Record<EventLang,EventArticle>={
       {question:'活动需要预约吗？',answer:'视项目而定。Favaro 阅读和密室逃脱明确要求预约；BiblioLudoteche、M9 与 Molo5 各有自己的名额和票务规则。'},
       {question:'不参加派对，在威尼斯还能做什么？',answer:'可以在傍晚散步 Cannaregio 或 Castello 较安静区域，并把当地传说当作民俗文化来了解，而不是当作历史事实。'}
     ],
-    stayCta:{eyebrow:'威尼斯与陆地的万圣夜',title:'万圣夜周末的实用住宿据点',text:'住在 Marghera，可使用私人停车位，同时兼顾威尼斯、Mestre 与 Marghera 的活动。'},datePublished:published,dateModified:published
+    stayCta:{eyebrow:'威尼斯与陆地的万圣夜',title:'万圣夜周末的实用住宿据点',text:'住在 Marghera，可使用私人停车位，同时兼顾威尼斯、Mestre 与 Marghera 的活动。'},datePublished:published,dateModified:modified
   }
 };
