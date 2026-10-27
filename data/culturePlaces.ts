@@ -492,11 +492,12 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Fondazione Querini Stampalia Venice",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa ufficiale",
-    "hours": "Verifica orari e mostre",
-    "booking": "check",
+    "price": "€15 intero · €12 ridotto · €10 studenti under 26 · €24 family · gratuito under 18",
+    "hours": "Collezioni e mostre: mar–dom 10:00–18:00, biglietteria fino alle 17:30; biblioteca: mar–ven 10:00–20:00, sab–dom e festivi 10:00–19:00; lunedì chiuso",
+    "booking": "recommended",
     "officialUrl": "https://www.querinistampalia.org/",
-    "mapsQuery": "Fondazione Querini Stampalia, Venezia, Italia"
+    "mapsQuery": "Fondazione Querini Stampalia, Venezia, Italia",
+    "lastVerified": "2026-10-27"
   },
   {
     "slug": "palazzo-grassi",
@@ -514,11 +515,12 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Palazzo Grassi Venice facade",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa mostra",
-    "hours": "Calendario legato alle mostre",
+    "price": "€20 intero · €15 ridotto · €7 20–26 anni · gratuito fino a 19 anni",
+    "hours": "10:00–18:00; ultimo ingresso 17:00; chiuso martedì e 25 dicembre",
     "booking": "recommended",
     "officialUrl": "https://www.pinaultcollection.com/palazzograssi/it",
-    "mapsQuery": "Palazzo Grassi, Venezia, Italia"
+    "mapsQuery": "Palazzo Grassi, Venezia, Italia",
+    "lastVerified": "2026-10-27"
   },
   {
     "slug": "punta-della-dogana",
@@ -536,11 +538,12 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Punta della Dogana Venice exterior",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa mostra",
-    "hours": "Calendario legato alle mostre",
+    "price": "€20 intero · €15 ridotto · €7 20–26 anni · gratuito fino a 19 anni",
+    "hours": "10:00–18:00; ultimo ingresso 17:00; chiuso martedì e 25 dicembre",
     "booking": "recommended",
     "officialUrl": "https://www.pinaultcollection.com/palazzograssi/it/punta-della-dogana",
-    "mapsQuery": "Punta della Dogana, Venezia, Italia"
+    "mapsQuery": "Punta della Dogana, Venezia, Italia",
+    "lastVerified": "2026-10-27"
   },
   {
     "slug": "fondazione-giorgio-cini",
