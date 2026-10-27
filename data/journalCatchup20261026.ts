@@ -161,5 +161,5 @@ export function applyJournalCatchup20261026(item:EventArticle,lang:EventLang,slu
   'Exposport Venicemarathon Village'
  );
 
- item.dateModified='2026-10-26';
+ item.dateModified='2026-10-27';
 }
