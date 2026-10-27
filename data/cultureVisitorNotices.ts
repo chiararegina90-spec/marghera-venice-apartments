@@ -247,6 +247,31 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   },
   officialUrl:'https://www.palazzoroverella.com/man-ray-cubismo-miro-palazzo-roverella-grandi-mostre-2/',
   lastVerified:'2026-10-25'
+ },
+ {
+  key:'palazzo-grassi-permanent-collection-2027',
+  placeSlug:'palazzo-grassi',
+  kind:'programme',
+  start:'2027-03-21',
+  status:'upcoming',
+  title:{
+   it:'Palazzo Grassi dal 2027: esposizione permanente della Collezione Pinault',
+   en:'Palazzo Grassi from 2027: permanent Pinault Collection display',
+   de:'Palazzo Grassi ab 2027: permanente Präsentation der Pinault Collection',
+   fr:'Palazzo Grassi dès 2027 : présentation permanente de la Collection Pinault',
+   es:'Palazzo Grassi desde 2027: exposición permanente de la Colección Pinault',
+   zh:'Palazzo Grassi 2027年起：Pinault Collection 常设展'
+  },
+  summary:{
+   it:'Dal 21 marzo 2027 Palazzo Grassi inaugura una nuova fase: gli spazi veneziani ospiteranno un’esposizione permanente della Collezione Pinault. Il nuovo percorso riunirà oltre cento opere significative dell’arte contemporanea e segna un cambiamento importante rispetto alla programmazione tradizionale basata sulle mostre temporanee.',
+   en:'From 21 March 2027, Palazzo Grassi begins a new chapter as the Venice venue hosts a permanent exhibition of the Pinault Collection. The new itinerary will bring together more than one hundred major works of contemporary art, marking an important shift from the venue’s traditional programme of temporary exhibitions.',
+   de:'Ab 21. März 2027 beginnt für Palazzo Grassi eine neue Phase: Die venezianischen Räume beherbergen eine permanente Präsentation der Pinault Collection. Der neue Rundgang vereint mehr als hundert bedeutende Werke zeitgenössischer Kunst und markiert einen wichtigen Wandel gegenüber dem bisherigen Schwerpunkt auf Wechselausstellungen.',
+   fr:'À partir du 21 mars 2027, Palazzo Grassi ouvre une nouvelle étape de son histoire en accueillant une présentation permanente de la Collection Pinault. Le nouveau parcours réunira plus de cent œuvres majeures de l’art contemporain et marque un changement important par rapport à la programmation traditionnellement fondée sur des expositions temporaires.',
+   es:'A partir del 21 de marzo de 2027, Palazzo Grassi inicia una nueva etapa con una exposición permanente de la Colección Pinault. El nuevo recorrido reunirá más de cien obras relevantes de arte contemporáneo y supone un cambio importante respecto a la programación tradicional basada en exposiciones temporales.',
+   zh:'自2027年3月21日起，Palazzo Grassi 将进入新的阶段，长期展示 Pinault Collection。新的参观路线将汇集一百余件重要当代艺术作品，这标志着该馆从以临时展览为主的传统模式迈向新的常设展示方式。'
+  },
+  officialUrl:'https://www.pinaultcollection.com/en/pinault-collection-permanent-exhibition',
+  lastVerified:'2026-10-27'
  }
 ];
 
