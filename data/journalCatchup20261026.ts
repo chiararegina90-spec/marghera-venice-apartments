@@ -49,12 +49,12 @@ export function applyJournalCatchup20261026(item:EventArticle,lang:EventLang,slu
  if(!item||slug!=='venicemarathon-2026')return;
 
  item.lead=m(lang,{
-  it:'La 40ª Venicemarathon si è disputata domenica 25 ottobre 2026 con 24.000 iscritti nelle tre distanze 42K, 21K e 10K. L’edizione del quarantennale si è chiusa con un nuovo record della manifestazione nella maratona maschile: il keniano Peter Kwemoi Ndorobo ha vinto in 2h07\'31\". Questa pagina conserva anche percorso, Expo, trasporti e logistica dell’edizione 2026 come documentazione utile.',
-  en:'The 40th Venicemarathon took place on Sunday 25 October 2026 with 24,000 registered runners across the 42K, 21K and 10K. The anniversary edition ended with a new men’s marathon event record: Kenya’s Peter Kwemoi Ndorobo won in 2h07\'31\". This page also keeps the 2026 route, Expo, transport and race logistics as useful documentation.',
-  de:'Die 40. Venicemarathon fand am Sonntag, 25. Oktober 2026, mit 24.000 gemeldeten Läuferinnen und Läufern über 42K, 21K und 10K statt. Die Jubiläumsausgabe endete mit einem neuen Veranstaltungsrekord im Männer-Marathon: Der Kenianer Peter Kwemoi Ndorobo gewann in 2h07\'31\". Diese Seite dokumentiert außerdem Strecke, Expo, Verkehr und Logistik der Ausgabe 2026.',
-  fr:'La 40e Venicemarathon s’est disputée le dimanche 25 octobre 2026 avec 24 000 inscrits sur les formats 42K, 21K et 10K. L’édition anniversaire s’est conclue par un nouveau record de l’épreuve masculine : le Kényan Peter Kwemoi Ndorobo s’est imposé en 2h07\'31\". Cette page conserve également le parcours, l’Expo, les transports et la logistique de l’édition 2026 à titre documentaire.',
-  es:'La 40.ª Venicemarathon se disputó el domingo 25 de octubre de 2026 con 24.000 inscritos entre las pruebas 42K, 21K y 10K. La edición del aniversario terminó con un nuevo récord de la prueba masculina: el keniano Peter Kwemoi Ndorobo ganó en 2h07\'31\". Esta página conserva además el recorrido, la Expo, los transportes y la logística de la edición 2026 como documentación útil.',
-  zh:'第40届 Venicemarathon 已于2026年10月25日星期日举行，42K、21K和10K三项赛事共有24,000名报名者。周年赛事诞生了新的男子全程赛事纪录：肯尼亚选手 Peter Kwemoi Ndorobo 以2h07\'31\"夺冠。本页同时保留2026年赛道、Expo、交通与赛事组织信息，作为该届赛事的实用记录。'
+  it:'La 40ª Venicemarathon si è disputata domenica 25 ottobre 2026 con oltre 24.000 iscritti nelle tre distanze 42K, 21K e 10K. L’edizione del quarantennale si è chiusa con un nuovo record della manifestazione nella maratona maschile: il keniano Peter Kwemoi Ndorobo ha vinto in 2h07\'31\". Il dato degli oltre 24.000 riguarda gli iscritti alle tre gare; il comunicato del 26 ottobre distingue questo numero dagli oltre 40.000 partecipanti complessivi alle iniziative del mese, che includono anche le Family Run. Questa pagina conserva anche percorso, Expo, trasporti e logistica dell’edizione 2026 come documentazione utile.',
+  en:'The 40th Venicemarathon took place on Sunday 25 October 2026 with more than 24,000 registered runners across the 42K, 21K and 10K. The anniversary edition ended with a new men’s marathon event record: Kenya’s Peter Kwemoi Ndorobo won in 2h07\'31\". The 24,000-plus figure refers to registered runners in the three races; the 26 October release distinguishes it from the more than 40,000 people involved across the month-long programme, including the Family Runs. This page also keeps the 2026 route, Expo, transport and race logistics as useful documentation.',
+  de:'Die 40. Venicemarathon fand am Sonntag, 25. Oktober 2026, mit mehr als 24.000 gemeldeten Läuferinnen und Läufern über 42K, 21K und 10K statt. Die Jubiläumsausgabe endete mit einem neuen Veranstaltungsrekord im Männer-Marathon: Der Kenianer Peter Kwemoi Ndorobo gewann in 2h07\'31\". Die Zahl von über 24.000 bezieht sich auf die Meldungen für die drei Rennen; die Mitteilung vom 26. Oktober unterscheidet sie von den mehr als 40.000 Teilnehmenden am gesamten Veranstaltungsmonat einschließlich der Family Runs. Diese Seite dokumentiert außerdem Strecke, Expo, Verkehr und Logistik der Ausgabe 2026.',
+  fr:'La 40e Venicemarathon s’est disputée le dimanche 25 octobre 2026 avec plus de 24 000 inscrits sur les formats 42K, 21K et 10K. L’édition anniversaire s’est conclue par un nouveau record de l’épreuve masculine : le Kényan Peter Kwemoi Ndorobo s’est imposé en 2h07\'31\". Le chiffre de plus de 24 000 correspond aux inscrits des trois courses ; le communiqué du 26 octobre le distingue des plus de 40 000 participants à l’ensemble du programme du mois, Family Run comprises. Cette page conserve également le parcours, l’Expo, les transports et la logistique de l’édition 2026 à titre documentaire.',
+  es:'La 40.ª Venicemarathon se disputó el domingo 25 de octubre de 2026 con más de 24.000 inscritos entre las pruebas 42K, 21K y 10K. La edición del aniversario terminó con un nuevo récord de la prueba masculina: el keniano Peter Kwemoi Ndorobo ganó en 2h07\'31\". La cifra de más de 24.000 corresponde a las inscripciones de las tres carreras; el comunicado del 26 de octubre la distingue de las más de 40.000 personas participantes en el programa completo del mes, incluidas las Family Run. Esta página conserva además el recorrido, la Expo, los transportes y la logística de la edición 2026 como documentación útil.',
+  zh:'第40届 Venicemarathon 已于2026年10月25日星期日举行，42K、21K和10K三项赛事共有超过24,000名报名者。周年赛事诞生了新的男子全程赛事纪录：肯尼亚选手 Peter Kwemoi Ndorobo 以2h07\'31\"夺冠。超过24,000人的数据指三项正式比赛的报名人数；10月26日的官方通报将其与整个月活动中超过40,000人的参与规模明确区分，后者还包括 Family Run 系列。本页同时保留2026年赛道、Expo、交通与赛事组织信息，作为该届赛事的实用记录。'
  });
 
  item.description=m(lang,{
@@ -67,12 +67,12 @@ export function applyJournalCatchup20261026(item:EventArticle,lang:EventLang,slu
  });
 
  item.cardDescription=m(lang,{
-  it:'40ª Venicemarathon conclusa: 24.000 iscritti, Peter Kwemoi record in 2h07\'31\" e risultati ufficiali di 42K, 21K e 10K.',
-  en:'40th Venice Marathon completed: 24,000 entrants, Peter Kwemoi’s 2h07\'31\" event record and official 42K, 21K and 10K results.',
-  de:'40. Venicemarathon beendet: 24.000 Gemeldete, Peter Kwemois Veranstaltungsrekord von 2h07\'31\" sowie offizielle 42K-, 21K- und 10K-Ergebnisse.',
-  fr:'40e Marathon de Venise terminé : 24 000 inscrits, record de Peter Kwemoi en 2h07\'31\" et résultats officiels des 42K, 21K et 10K.',
-  es:'40.ª Venicemarathon finalizada: 24.000 inscritos, récord de Peter Kwemoi en 2h07\'31\" y resultados oficiales de 42K, 21K y 10K.',
-  zh:'第40届威尼斯马拉松已结束：24,000人报名，Peter Kwemoi 以2h07\'31\"创赛事纪录，并公布42K、21K、10K官方成绩。'
+  it:'40ª Venicemarathon conclusa: oltre 24.000 iscritti, Peter Kwemoi record in 2h07\'31\" e risultati ufficiali di 42K, 21K e 10K.',
+  en:'40th Venice Marathon completed: 24,000+ entrants, Peter Kwemoi’s 2h07\'31\" event record and official 42K, 21K and 10K results.',
+  de:'40. Venicemarathon beendet: über 24.000 Gemeldete, Peter Kwemois Veranstaltungsrekord von 2h07\'31\" sowie offizielle 42K-, 21K- und 10K-Ergebnisse.',
+  fr:'40e Marathon de Venise terminé : plus de 24 000 inscrits, record de Peter Kwemoi en 2h07\'31\" et résultats officiels des 42K, 21K et 10K.',
+  es:'40.ª Venicemarathon finalizada: más de 24.000 inscritos, récord de Peter Kwemoi en 2h07\'31\" y resultados oficiales de 42K, 21K y 10K.',
+  zh:'第40届威尼斯马拉松已结束：超过24,000人报名，Peter Kwemoi 以2h07\'31\"创赛事纪录，并公布42K、21K、10K官方成绩。'
  });
 
  const resultTitle=m(lang,{
