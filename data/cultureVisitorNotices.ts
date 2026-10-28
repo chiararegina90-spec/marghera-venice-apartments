@@ -309,7 +309,6 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   kind:'visitor-info',
   start:'2026-11-18',
   end:'2026-11-22',
-  status:'upcoming',
   title:{
    it:'18–22 novembre 2026: Settimana gratuita dei veneziani',
    en:'18–22 November 2026: Free Week for Venetians',
