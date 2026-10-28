@@ -9,7 +9,12 @@ function addLink(item:EventArticle,section:number,href:string,text:string,label:
 }
 
 export function applyJournalCatchup20261028(item:EventArticle,lang:EventLang,slug:string){
- if(!item||slug!=='venezia-a-novembre')return;
+ if(!item)return;
+ if(slug==='halloween-venezia-2026'){
+  item.dateModified='2026-10-28';
+  return;
+ }
+ if(slug!=='venezia-a-novembre')return;
 
  const peggyTitle=m(lang,{
   it:'Dal 14 novembre: Fucina degli Angeli alla Peggy Guggenheim',
