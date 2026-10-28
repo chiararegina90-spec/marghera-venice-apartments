@@ -27,6 +27,7 @@ import {applyJournalCatchup20261022} from './journalCatchup20261022';
 import {applyJournalCatchup20261023} from './journalCatchup20261023';
 import {applyJournalCatchup20261025} from './journalCatchup20261025';
 import {applyJournalCatchup20261026} from './journalCatchup20261026';
+import {applyJournalCatchup20261028} from './journalCatchup20261028';
 import {applyJournalFaqParity20261025} from './journalFaqParity20261025';
 import {halloween2026} from './halloween2026';
 
@@ -90,7 +91,8 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='salone-alto-artigianato-italiano-2026')Object.assign(item,salone2026Overrides[lang]);
     if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
-    if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);}
+    if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);
+    applyJournalCatchup20261028(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;
