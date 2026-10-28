@@ -302,6 +302,90 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   summary:{it:'Collezioni e mostre sono visitabili da martedì a domenica 10:00–18:00, con biglietteria fino alle 17:30; lunedì chiuso. Il biglietto intero costa €15, ridotto €12, universitari under 26 €10 e family €24; gli under 18 entrano gratuitamente secondo le condizioni ufficiali. Un unico biglietto comprende collezioni, Area Scarpa con il giardino e mostre in corso. L’acquisto online è consigliato, ma è possibile comprare il biglietto anche in sede; per i gruppi valgono condizioni specifiche.',en:'Collections and exhibitions are open Tuesday–Sunday 10:00–18:00, with the ticket office open until 17:30; closed Monday. Tickets are €15 full, €12 reduced, €10 for university students under 26 and €24 family; under-18s enter free under the official conditions. One ticket includes the collections, the Scarpa Area and garden, and current exhibitions. Online purchase is recommended, but tickets can also be bought on site; groups have specific booking conditions.',de:'Sammlungen und Ausstellungen sind Dienstag–Sonntag 10:00–18:00 Uhr geöffnet, die Kasse bis 17:30 Uhr; Montag geschlossen. Tickets kosten 15 € regulär, 12 € ermäßigt, 10 € für Studierende unter 26 und 24 € als Familienticket; unter 18 Jahren ist der Eintritt nach den offiziellen Bedingungen frei. Ein Ticket umfasst Sammlungen, Scarpa-Bereich mit Garten und laufende Ausstellungen. Online-Kauf wird empfohlen, ist aber nicht verpflichtend; Tickets sind auch vor Ort erhältlich, für Gruppen gelten besondere Bedingungen.',fr:'Les collections et expositions sont ouvertes du mardi au dimanche de 10:00 à 18:00, billetterie jusqu’à 17:30 ; fermé le lundi. Billets : 15 € plein tarif, 12 € réduit, 10 € pour les étudiants de moins de 26 ans et 24 € famille ; gratuit pour les moins de 18 ans selon les conditions officielles. Un seul billet comprend les collections, l’Area Scarpa avec le jardin et les expositions en cours. L’achat en ligne est conseillé mais les billets peuvent aussi être achetés sur place ; des conditions spécifiques s’appliquent aux groupes.',es:'Las colecciones y exposiciones abren de martes a domingo de 10:00 a 18:00, con taquilla hasta las 17:30; cerrado los lunes. Entradas: 15 € general, 12 € reducida, 10 € para universitarios menores de 26 y 24 € familiar; menores de 18 gratis según las condiciones oficiales. Una sola entrada incluye las colecciones, el Área Scarpa con el jardín y las exposiciones en curso. Se recomienda comprar online, pero también es posible comprar en taquilla; los grupos tienen condiciones específicas.',zh:'馆藏与展览周二至周日10:00–18:00开放，售票处至17:30；周一闭馆。全价15欧元、优惠票12欧元、26岁以下大学生10欧元、家庭票24欧元；18岁以下按官方条件免费。一张门票包含馆藏、Scarpa 区域及花园和当前展览。官方建议线上购票，但也可现场购买；团体参观适用专门预约条件。'},
   officialUrl:'https://www.querinistampalia.org/it/acquista-biglietto/',
   lastVerified:'2026-10-27'
+ },
+ {
+  key:'peggy-free-week-venetians-2026',
+  placeSlug:'peggy-guggenheim',
+  kind:'visitor-info',
+  start:'2026-11-18',
+  end:'2026-11-22',
+  status:'upcoming',
+  title:{
+   it:'18–22 novembre 2026: Settimana gratuita dei veneziani',
+   en:'18–22 November 2026: Free Week for Venetians',
+   de:'18.–22. November 2026: Kostenfreie Woche für Venezianer',
+   fr:'18–22 novembre 2026 : semaine gratuite pour les Vénitiens',
+   es:'18–22 de noviembre de 2026: semana gratuita para venecianos',
+   zh:'2026年11月18–22日：威尼斯居民免费周'
+  },
+  summary:{
+   it:'In occasione della Festa della Madonna della Salute, la Collezione Peggy Guggenheim offre cinque giornate di ingresso gratuito ai residenti del Comune di Venezia e dei 44 comuni della Città Metropolitana, alle persone nate a Venezia e agli studenti degli atenei veneziani ammessi. La prenotazione è obbligatoria e soggetta a disponibilità; occorre presentare un documento valido o una tessera universitaria. Durante la settimana è visitabile anche Fucina degli Angeli. Il 21 e 22 novembre alle 15:00 sono inoltre previsti laboratori creativi gratuiti per bambini di 4–10 anni, con prenotazione dedicata disponibile dall’8 novembre alle 10:00.',
+   en:'For the Festa della Madonna della Salute, the Peggy Guggenheim Collection offers five days of free admission to residents of the City of Venice and the 44 municipalities of the Metropolitan City, people born in Venice, and eligible students at Venetian universities. Booking is required and subject to availability; visitors must show valid ID or a student card. Fucina degli Angeli can also be visited during the week. Free creative workshops for children aged 4–10 are scheduled at 3 pm on 21 and 22 November, with dedicated booking opening on 8 November at 10 am.',
+   de:'Anlässlich der Festa della Madonna della Salute bietet die Peggy Guggenheim Collection fünf Tage freien Eintritt für Einwohner der Stadt Venedig und der 44 Gemeinden der Metropolitanstadt, in Venedig Geborene sowie berechtigte Studierende venezianischer Hochschulen. Eine Reservierung ist verpflichtend und nur nach Verfügbarkeit möglich; ein gültiger Ausweis oder Studierendenausweis ist erforderlich. Auch Fucina degli Angeli kann in dieser Woche besucht werden. Am 21. und 22. November um 15:00 Uhr finden außerdem kostenlose Kreativworkshops für Kinder von 4–10 Jahren statt; die separate Reservierung öffnet am 8. November um 10:00 Uhr.',
+   fr:'À l’occasion de la Festa della Madonna della Salute, la Collection Peggy Guggenheim propose cinq jours d’entrée gratuite aux résidents de la commune de Venise et des 44 communes de la Ville métropolitaine, aux personnes nées à Venise et aux étudiants éligibles des universités vénitiennes. La réservation est obligatoire et soumise aux disponibilités ; une pièce d’identité valide ou une carte d’étudiant est requise. Fucina degli Angeli reste également accessible pendant cette semaine. Des ateliers créatifs gratuits pour les enfants de 4 à 10 ans sont prévus les 21 et 22 novembre à 15 h, avec réservation dédiée à partir du 8 novembre à 10 h.',
+   es:'Con motivo de la Festa della Madonna della Salute, la Colección Peggy Guggenheim ofrece cinco días de entrada gratuita a residentes del municipio de Venecia y de los 44 municipios de la Ciudad Metropolitana, personas nacidas en Venecia y estudiantes admitidos de universidades venecianas. La reserva es obligatoria y está sujeta a disponibilidad; hay que presentar un documento válido o carné universitario. Durante esos días también puede visitarse Fucina degli Angeli. Los días 21 y 22 de noviembre a las 15:00 habrá además talleres creativos gratuitos para niños de 4 a 10 años, con reserva específica disponible desde el 8 de noviembre a las 10:00.',
+   zh:'值 Festa della Madonna della Salute 期间，Peggy Guggenheim Collection 连续五天向威尼斯市居民、威尼斯都会城44个市镇居民、出生于威尼斯者及符合条件的威尼斯高校学生提供免费入场。必须提前预约且名额有限，入场时需出示有效身份证件或学生证。活动期间也可参观 Fucina degli Angeli。11月21日和22日15:00还安排面向4–10岁儿童的免费创意工作坊，专门预约自11月8日10:00开放。'
+  },
+  officialUrl:'https://www.guggenheim-venice.it/en/whats-on/events/free-week-for-venetians-2026/',
+  lastVerified:'2026-10-28'
+ },
+ {
+  key:'querini-sunday-free-venice-residents',
+  placeSlug:'querini-stampalia',
+  kind:'visitor-info',
+  status:'current',
+  title:{
+   it:'Domenica gratuita per i residenti nel Comune di Venezia',
+   en:'Free Sundays for City of Venice residents',
+   de:'Sonntags freier Eintritt für Einwohner der Stadt Venedig',
+   fr:'Entrée gratuite le dimanche pour les résidents de la commune de Venise',
+   es:'Domingos gratuitos para residentes del municipio de Venecia',
+   zh:'威尼斯市居民周日免费入场'
+  },
+  summary:{
+   it:'La domenica l’ingresso alla Fondazione è gratuito per i residenti nel Comune di Venezia. Restano inoltre valide le gratuità per i minori di 18 anni, le persone con disabilità e accompagnatore e le altre categorie previste dalle condizioni ufficiali. La gratuità domenicale non si estende automaticamente a tutti i residenti della Città Metropolitana: porta un documento idoneo a dimostrare il requisito.',
+   en:'On Sundays, admission to the Foundation is free for residents of the City of Venice. Free admission also applies to under-18s, visitors with disabilities and one companion, and the other categories listed in the official conditions. The Sunday concession does not automatically extend to all residents of the Metropolitan City: bring suitable proof of eligibility.',
+   de:'Sonntags ist der Eintritt in die Fondazione für Einwohner der Stadt Venedig kostenlos. Freier Eintritt gilt außerdem für unter 18-Jährige, Menschen mit Behinderung und eine Begleitperson sowie weitere in den offiziellen Bedingungen genannte Kategorien. Die Sonntagsregelung gilt nicht automatisch für alle Einwohner der Metropolitanstadt; ein geeigneter Nachweis ist mitzubringen.',
+   fr:'Le dimanche, l’entrée à la Fondation est gratuite pour les résidents de la commune de Venise. La gratuité s’applique également aux moins de 18 ans, aux personnes en situation de handicap avec un accompagnateur et aux autres catégories prévues par les conditions officielles. Cette gratuité dominicale ne s’étend pas automatiquement à tous les résidents de la Ville métropolitaine : prévoyez un justificatif adapté.',
+   es:'Los domingos, la entrada a la Fundación es gratuita para los residentes del municipio de Venecia. También se mantienen las gratuidades para menores de 18 años, personas con discapacidad y un acompañante, y las demás categorías previstas oficialmente. La gratuidad dominical no se extiende automáticamente a todos los residentes de la Ciudad Metropolitana: conviene llevar un documento que acredite el requisito.',
+   zh:'每逢周日，威尼斯市居民可免费进入 Fondazione Querini Stampalia。18岁以下人士、残障人士及一名陪同者，以及官方规定的其他类别同样享有免费入场。周日优惠不会自动扩大到整个威尼斯都会城的所有居民，入场时请携带可证明资格的有效证件。'
+  },
+  officialUrl:'https://www.querinistampalia.org/it/acquista-biglietto/',
+  lastVerified:'2026-10-28'
+ },
+ {
+  key:'palazzo-grassi-accessibility-20261028',
+  placeSlug:'palazzo-grassi',
+  kind:'visitor-info',
+  status:'current',
+  title:{it:'Accessibilità a Palazzo Grassi',en:'Accessibility at Palazzo Grassi',de:'Barrierefreiheit im Palazzo Grassi',fr:'Accessibilité à Palazzo Grassi',es:'Accesibilidad en Palazzo Grassi',zh:'Palazzo Grassi 无障碍信息'},
+  summary:{
+   it:'Palazzo Grassi è accessibile alle persone con difficoltà motorie, con ascensori, rampe mobili e sedie a rotelle disponibili su richiesta. L’accesso dall’imbarcadero San Samuele è privo di barriere architettoniche. Le biglietterie dispongono di amplificazione della voce e hearing loop; per visite guidate e attività didattiche è possibile richiedere gratuitamente una guida o un interprete LIS con almeno una settimana di preavviso.',
+   en:'Palazzo Grassi is accessible to visitors with mobility difficulties, with lifts, mobile ramps and wheelchairs available on request. The route from the San Samuele vaporetto stop is barrier-free. Ticket offices have voice amplification and hearing loops; a LIS guide or interpreter can be requested free of charge for guided tours and educational activities with at least one week’s notice.',
+   de:'Palazzo Grassi ist für Menschen mit eingeschränkter Mobilität zugänglich und verfügt über Aufzüge, mobile Rampen und Rollstühle auf Anfrage. Der Weg von der Vaporetto-Haltestelle San Samuele ist barrierefrei. Die Kassen sind mit Sprachverstärkung und Hörschleifen ausgestattet; für Führungen und Bildungsangebote kann mit mindestens einer Woche Vorlauf kostenlos eine LIS-Führung oder ein LIS-Dolmetscher angefragt werden.',
+   fr:'Palazzo Grassi est accessible aux personnes à mobilité réduite grâce aux ascenseurs, rampes mobiles et fauteuils roulants disponibles sur demande. L’accès depuis l’arrêt de vaporetto San Samuele est sans barrières architecturales. Les billetteries disposent d’un système d’amplification vocale et de boucles auditives ; une guide ou un interprète LIS peut être demandé gratuitement pour les visites guidées et activités pédagogiques avec au moins une semaine de préavis.',
+   es:'Palazzo Grassi es accesible para personas con movilidad reducida, con ascensores, rampas móviles y sillas de ruedas disponibles bajo petición. El acceso desde la parada de vaporetto San Samuele no presenta barreras arquitectónicas. Las taquillas cuentan con amplificación de voz y bucle de inducción; para visitas guiadas y actividades educativas puede solicitarse gratuitamente guía o intérprete LIS con al menos una semana de antelación.',
+   zh:'Palazzo Grassi 对行动不便人士开放，馆内配有电梯、移动坡道，并可按需提供轮椅。从 San Samuele 水上巴士站前往场馆的路线无建筑障碍。售票处配有语音放大设备和助听环；参加导览或教育活动时，可至少提前一周免费申请 LIS 意大利手语导览或口译支持。'
+  },
+  officialUrl:'https://www.pinaultcollection.com/palazzograssi/it/informazioni-pratiche',
+  lastVerified:'2026-10-28'
+ },
+ {
+  key:'punta-dogana-accessibility-20261028',
+  placeSlug:'punta-della-dogana',
+  kind:'visitor-info',
+  status:'current',
+  title:{it:'Accessibilità a Punta della Dogana',en:'Accessibility at Punta della Dogana',de:'Barrierefreiheit in Punta della Dogana',fr:'Accessibilité à Punta della Dogana',es:'Accesibilidad en Punta della Dogana',zh:'Punta della Dogana 无障碍信息'},
+  summary:{
+   it:'Punta della Dogana è accessibile alle persone con difficoltà motorie. L’accesso dall’imbarcadero Salute è privo di barriere e gli spazi interni dispongono di ascensori, rampe mobili e sedie a rotelle su richiesta. Le biglietterie sono dotate di hearing loop e amplificazione della voce; per visite guidate e attività didattiche è possibile richiedere gratuitamente supporto LIS con una settimana di preavviso.',
+   en:'Punta della Dogana is accessible to visitors with mobility difficulties. The route from the Salute vaporetto stop is barrier-free, and the interior has lifts, mobile ramps and wheelchairs available on request. Ticket offices have hearing loops and voice amplification; free LIS support can be requested for guided tours and educational activities with one week’s notice.',
+   de:'Punta della Dogana ist für Menschen mit eingeschränkter Mobilität zugänglich. Der Weg von der Vaporetto-Haltestelle Salute ist barrierefrei; im Inneren gibt es Aufzüge, mobile Rampen und Rollstühle auf Anfrage. Die Kassen verfügen über Hörschleifen und Sprachverstärkung; für Führungen und Bildungsangebote kann mit einer Woche Vorlauf kostenlos LIS-Unterstützung angefragt werden.',
+   fr:'Punta della Dogana est accessible aux personnes à mobilité réduite. L’accès depuis l’arrêt de vaporetto Salute est sans barrières ; les espaces intérieurs disposent d’ascenseurs, de rampes mobiles et de fauteuils roulants sur demande. Les billetteries sont équipées de boucles auditives et d’un système d’amplification vocale ; un accompagnement LIS gratuit peut être demandé une semaine à l’avance pour les visites guidées et activités pédagogiques.',
+   es:'Punta della Dogana es accesible para personas con movilidad reducida. El acceso desde la parada de vaporetto Salute no presenta barreras y los espacios interiores cuentan con ascensores, rampas móviles y sillas de ruedas bajo petición. Las taquillas disponen de bucle de inducción y amplificación de voz; para visitas guiadas y actividades educativas puede solicitarse gratuitamente apoyo LIS con una semana de antelación.',
+   zh:'Punta della Dogana 对行动不便人士开放。从 Salute 水上巴士站前往场馆的路线无障碍，馆内设有电梯、移动坡道，并可按需提供轮椅。售票处配有助听环和语音放大设备；导览及教育活动可至少提前一周免费申请 LIS 意大利手语支持。'
+  },
+  officialUrl:'https://www.pinaultcollection.com/palazzograssi/it/informazioni-pratiche',
+  lastVerified:'2026-10-28'
  }
 ];
 
