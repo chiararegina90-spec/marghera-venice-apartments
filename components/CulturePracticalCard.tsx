@@ -1,5 +1,5 @@
 import type {CultureLang,CulturePlace} from '@/data/culturePlaces';
-import {bookingLabel,cultureUi,hoursLabel,priceLabel} from '@/data/cultureTranslations';
+import {bookingLabel,cultureAccessLabel,culturePetsLabel,cultureUi,hoursLabel,priceLabel} from '@/data/cultureTranslations';
 import {cultureTemporaryEventsFor,cultureTemporaryLabels} from '@/data/cultureTemporaryEvents';
 
 const verifiedPrefix:Record<CultureLang,string>={it:'Ultimo controllo editoriale',en:'Last editorial check',de:'Letzte redaktionelle Prüfung',fr:'Dernière vérification éditoriale',es:'Última revisión editorial',zh:'最后编辑核查'};
@@ -25,8 +25,8 @@ export default function CulturePracticalCard({place,lang,className=''}:{place:Cu
      {temporaryEvents.length>0&&<div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🎨</dt><dd className="text-right font-semibold"><a href="#mostre-eventi-temporanei" className="text-gold underline decoration-gold/40 underline-offset-4">{temporaryEvents.length} · {temporaryLabels.section}</a></dd></div>}
      <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🧒 {ui.families}</dt><dd className="text-right font-semibold">{place.family?ui.familyYes:ui.familyNo}</dd></div>
      {place.panorama&&<div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">👀</dt><dd className="text-right font-semibold">{ui.panoramaYes}</dd></div>}
-     <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">♿ {ui.access}</dt><dd className="text-right text-white/80">{ui.accessCheck}</dd></div>
-     <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🐾 {ui.pets}</dt><dd className="text-right text-white/80">{ui.petsCheck}</dd></div>
+     <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">♿ {ui.access}</dt><dd className="text-right text-white/80">{cultureAccessLabel(place,lang)}</dd></div>
+     <div className="grid grid-cols-[1fr_1.35fr] gap-4 py-4"><dt className="font-bold text-white/70">🐾 {ui.pets}</dt><dd className="text-right text-white/80">{culturePetsLabel(place,lang)}</dd></div>
    </dl>
    <div className="mt-6 grid gap-3">
      <a href={place.officialUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-gold px-5 py-3 text-center font-bold text-navy">{ui.official} ↗</a>
