@@ -392,8 +392,8 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   key:'peggy-thursday-venetians-2026',
   placeSlug:'peggy-guggenheim',
   kind:'visitor-info',
-  start:'2026-01-01',
   end:'2026-12-31',
+  status:'current',
   period:{
    it:'Ogni giovedì · 14:00–18:00 · fino al 31 dicembre 2026',
    en:'Every Thursday · 14:00–18:00 · until 31 December 2026',
