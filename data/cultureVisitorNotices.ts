@@ -1,5 +1,5 @@
 import type {CultureLang} from '@/data/culturePlaces';
-import {romeToday} from '@/lib/romeDate';
+import {romeNowMinute,romeToday} from '@/lib/romeDate';
 
 export type CultureVisitorNoticeKind='closure'|'artwork-loan'|'restoration'|'visitor-info'|'programme';
 export type CultureVisitorNoticeStatus='current'|'upcoming';
@@ -16,6 +16,8 @@ export type CultureVisitorNotice={
  internalHref?:string;
  start?:string;
  end?:string;
+ startDateTime?:string;
+ endDateTime?:string;
  status?:CultureVisitorNoticeStatus;
  period?:Localized;
  lastVerified:string;
@@ -385,19 +387,120 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   },
   officialUrl:'https://www.pinaultcollection.com/palazzograssi/it/informazioni-pratiche',
   lastVerified:'2026-10-28'
+ },
+ {
+  key:'peggy-thursday-venetians-2026',
+  placeSlug:'peggy-guggenheim',
+  kind:'visitor-info',
+  start:'2026-01-01',
+  end:'2026-12-31',
+  period:{
+   it:'Ogni giovedì · 14:00–18:00 · fino al 31 dicembre 2026',
+   en:'Every Thursday · 14:00–18:00 · until 31 December 2026',
+   de:'Jeden Donnerstag · 14:00–18:00 · bis 31. Dezember 2026',
+   fr:'Chaque jeudi · 14:00–18:00 · jusqu’au 31 décembre 2026',
+   es:'Todos los jueves · 14:00–18:00 · hasta el 31 de diciembre de 2026',
+   zh:'每周四 · 14:00–18:00 · 至2026年12月31日'
+  },
+  title:{
+   it:'Giovedì dei veneziani',
+   en:'Thursdays for Venetians',
+   de:'Donnerstag für Venezianer',
+   fr:'Jeudis des Vénitiens',
+   es:'Jueves de los venecianos',
+   zh:'威尼斯居民周四免费时段'
+  },
+  summary:{
+   it:'Ogni giovedì, dalle 14:00 alle 18:00, la Collezione Peggy Guggenheim offre l’ingresso gratuito ai residenti o nati nel Comune di Venezia e agli studenti delle istituzioni formative ammesse. I posti sono limitati, è consigliata la prenotazione ed è necessario presentare un documento o una tessera valida. Non sono consentite visite di gruppo durante la fascia gratuita. L’iniziativa è pubblicata per il 2026 e non va estesa automaticamente al 2027.',
+   en:'Every Thursday from 2 pm to 6 pm, eligible City of Venice residents, people born in Venice and students of approved local institutions can visit free of charge. Places are limited, advance booking is recommended and proof of eligibility is required. Group visits are not permitted during these hours. The initiative is published for 2026 and should not automatically be extended into 2027.',
+   de:'Jeden Donnerstag von 14 bis 18 Uhr erhalten berechtigte Einwohner und in der Stadt Venedig geborene Personen sowie Studierende zugelassener Einrichtungen freien Eintritt. Die Plätze sind begrenzt; eine Reservierung wird empfohlen und ein entsprechender Nachweis ist erforderlich. Gruppenbesuche sind in diesem Zeitraum nicht gestattet. Die Regelung ist für 2026 veröffentlicht und darf nicht automatisch auf 2027 übertragen werden.',
+   fr:'Chaque jeudi de 14 h à 18 h, l’entrée est gratuite pour les personnes résidant ou nées dans la commune de Venise et pour les étudiants des établissements admis. Les places sont limitées, la réservation est conseillée et un justificatif est nécessaire. Les visites de groupe ne sont pas autorisées durant ce créneau. L’initiative est publiée pour 2026 et ne doit pas être automatiquement prolongée en 2027.',
+   es:'Todos los jueves, de 14:00 a 18:00, la entrada es gratuita para residentes o nacidos en el municipio de Venecia y estudiantes de los centros admitidos. Las plazas son limitadas, se recomienda reservar y es necesario presentar un justificante. No se permiten visitas de grupo durante ese horario. La iniciativa está publicada para 2026 y no debe prolongarse automáticamente en 2027.',
+   zh:'每周四14:00至18:00，符合条件的威尼斯市居民、出生于威尼斯市的人士，以及指定院校的学生可免费参观。名额有限，建议提前预约，并须出示有效证明。该时段不接待团体参观。此优惠目前仅发布至2026年，不应自动延续到2027年。'
+  },
+  officialUrl:'https://www.guggenheim-venice.it/it/mostre-eventi/eventi/giovedi-dei-veneziani/',
+  lastVerified:'2026-10-29'
+ },
+ {
+  key:'peggy-accessibility-20261029',
+  placeSlug:'peggy-guggenheim',
+  kind:'visitor-info',
+  status:'current',
+  title:{
+   it:'Accessibilità alla Collezione Peggy Guggenheim',
+   en:'Accessibility at the Peggy Guggenheim Collection',
+   de:'Barrierefreiheit in der Peggy Guggenheim Collection',
+   fr:'Accessibilité à la Collection Peggy Guggenheim',
+   es:'Accesibilidad en la Colección Peggy Guggenheim',
+   zh:'Peggy Guggenheim Collection 无障碍参观'
+  },
+  summary:{
+   it:'La Collezione Peggy Guggenheim dispone di piattaforme elevatrici e mette gratuitamente a disposizione sedie a rotelle. L’ingresso è gratuito per le persone con ridotta mobilità e per chi le accompagna. Le piattaforme consentono di raggiungere giardino, collezione permanente, bistrot e gran parte delle sale temporanee, ma le ultime due sale delle mostre temporanee non sono raggiungibili tramite la piattaforma indicata; non è inoltre possibile accedere direttamente dal Canal Grande. Sono disponibili percorsi tattili, riproduzioni tattili e visite tattili gratuite su prenotazione per persone cieche o ipovedenti.',
+   en:'The Peggy Guggenheim Collection has platform lifts and provides wheelchairs free of charge. Admission is free for visitors with limited mobility and their companions. The lifts provide access to the garden, permanent collection, bistrot and most temporary-exhibition rooms, but the last two temporary galleries cannot be reached by the relevant lift; direct access from the Grand Canal is not possible. Tactile routes, tactile reproductions and free pre-booked tactile tours are available for blind and visually impaired visitors.',
+   de:'Die Peggy Guggenheim Collection verfügt über Plattformlifte und stellt Rollstühle kostenlos zur Verfügung. Menschen mit eingeschränkter Mobilität und ihre Begleitperson haben freien Eintritt. Mit den Liften sind Garten, Dauersammlung, Bistro und der größte Teil der Wechselausstellungen erreichbar; die letzten zwei Räume der Wechselausstellungen sind über den betreffenden Lift jedoch nicht zugänglich. Ein direkter Zugang vom Canal Grande ist ebenfalls nicht möglich. Für blinde und sehbehinderte Besucher gibt es taktile Rundgänge, Tast-Reproduktionen und kostenlose taktile Führungen nach Reservierung.',
+   fr:'La Collection Peggy Guggenheim dispose de plateformes élévatrices et met gratuitement des fauteuils roulants à disposition. L’entrée est gratuite pour les personnes à mobilité réduite et leur accompagnateur. Les plateformes permettent d’accéder au jardin, à la collection permanente, au bistrot et à la plupart des salles temporaires, mais les deux dernières salles des expositions temporaires ne sont pas accessibles par la plateforme concernée ; l’accès direct depuis le Grand Canal n’est pas possible. Des parcours tactiles, reproductions tactiles et visites tactiles gratuites sur réservation sont proposés aux personnes aveugles ou malvoyantes.',
+   es:'La Colección Peggy Guggenheim dispone de plataformas elevadoras y ofrece sillas de ruedas gratuitamente. La entrada es gratuita para personas con movilidad reducida y su acompañante. Las plataformas permiten acceder al jardín, la colección permanente, el bistrot y la mayor parte de las salas temporales, pero las dos últimas salas de exposiciones temporales no son accesibles mediante la plataforma correspondiente; tampoco es posible entrar directamente desde el Gran Canal. Hay recorridos táctiles, reproducciones táctiles y visitas táctiles gratuitas con reserva para personas ciegas o con baja visión.',
+   zh:'Peggy Guggenheim Collection 配有升降平台，并免费提供轮椅。行动不便人士及一名陪同者可免费入场。升降平台可通往花园、常设收藏、餐厅以及大部分临时展厅，但临时展览最后两间展厅无法通过相应升降平台到达；也不能从大运河直接进入博物馆。馆方还为盲人和低视力访客提供触觉参观路线、触摸复制品以及需预约的免费触觉导览。'
+  },
+  officialUrl:'https://www.guggenheim-venice.it/it/visita/accessibilita/',
+  lastVerified:'2026-10-29'
+ },
+ {
+  key:'peggy-awaiting-fucina-20261030',
+  placeSlug:'peggy-guggenheim',
+  kind:'programme',
+  start:'2026-10-30',
+  end:'2026-10-30',
+  startDateTime:'2026-10-30T17:30',
+  endDateTime:'2026-10-30T18:30',
+  period:{it:'30 ottobre 2026 · 17:30–18:30 · online su Zoom',en:'30 October 2026 · 17:30–18:30 · online on Zoom',de:'30. Oktober 2026 · 17:30–18:30 · online über Zoom',fr:'30 octobre 2026 · 17:30–18:30 · en ligne sur Zoom',es:'30 de octubre de 2026 · 17:30–18:30 · online en Zoom',zh:'2026年10月30日 · 17:30–18:30 · Zoom线上活动'},
+  title:{it:'Aspettando Fucina degli Angeli',en:'Awaiting Fucina degli Angeli',de:'Warten auf Fucina degli Angeli',fr:'En attendant Fucina degli Angeli',es:'Esperando Fucina degli Angeli',zh:'“Aspettando Fucina degli Angeli”线上预告'},
+  summary:{
+   it:'Il 30 ottobre 2026, dalle 17:30 alle 18:30, la curatrice Cristina Beltrami presenterà online la prossima mostra Fucina degli Angeli. L’incontro si svolge su Zoom, è gratuito, in italiano e richiede iscrizione tramite il sito ufficiale. Non è una visita fisica al museo.',
+   en:'On 30 October 2026 from 5:30 pm to 6:30 pm, curator Cristina Beltrami will introduce the upcoming exhibition Fucina degli Angeli in an online Zoom session. The event is free, held in Italian and requires registration through the official website. It is not an in-person museum visit.',
+   de:'Am 30. Oktober 2026 von 17:30 bis 18:30 Uhr stellt Kuratorin Cristina Beltrami die kommende Ausstellung Fucina degli Angeli in einem Online-Termin über Zoom vor. Die Teilnahme ist kostenlos, die Veranstaltung findet auf Italienisch statt und erfordert eine Anmeldung über die offizielle Website. Es handelt sich nicht um einen Museumsbesuch vor Ort.',
+   fr:'Le 30 octobre 2026 de 17 h 30 à 18 h 30, la commissaire Cristina Beltrami présentera en ligne la prochaine exposition Fucina degli Angeli lors d’une rencontre sur Zoom. L’événement est gratuit, en italien et nécessite une inscription via le site officiel. Il ne s’agit pas d’une visite physique du musée.',
+   es:'El 30 de octubre de 2026, de 17:30 a 18:30, la comisaria Cristina Beltrami presentará online la próxima exposición Fucina degli Angeli mediante Zoom. La actividad es gratuita, en italiano y requiere inscripción a través de la web oficial. No es una visita presencial al museo.',
+   zh:'2026年10月30日17:30–18:30，策展人 Cristina Beltrami 将通过 Zoom 在线介绍即将开幕的 Fucina degli Angeli 展览。活动免费，以意大利语进行，并须通过官网报名；这不是博物馆现场参观活动。'
+  },
+  officialUrl:'https://www.guggenheim-venice.it/it/mostre-eventi/eventi/aspettando-fucina-degli-angeli-peggy-guggenheim-e-il-vetro-artistico-del-novecento/',
+  lastVerified:'2026-10-29'
+ },
+ {
+  key:'peggy-kids-day-20261101',
+  placeSlug:'peggy-guggenheim',
+  kind:'programme',
+  start:'2026-11-01',
+  end:'2026-11-01',
+  startDateTime:'2026-11-01T15:00',
+  endDateTime:'2026-11-01T16:30',
+  period:{it:'1 novembre 2026 · 15:00–16:30',en:'1 November 2026 · 15:00–16:30',de:'1. November 2026 · 15:00–16:30',fr:'1er novembre 2026 · 15:00–16:30',es:'1 de noviembre de 2026 · 15:00–16:30',zh:'2026年11月1日 · 15:00–16:30'},
+  title:{it:'Kids Day: Composizioni in movimento',en:'Kids Day: Composizioni in movimento',de:'Kids Day: Composizioni in movimento',fr:'Kids Day: Composizioni in movimento',es:'Kids Day: Composizioni in movimento',zh:'Kids Day: Composizioni in movimento'},
+  summary:{
+   it:'Domenica 1 novembre, dalle 15:00 alle 16:30, la Collezione Peggy Guggenheim propone Kids Day: Composizioni in movimento, un laboratorio gratuito per bambini dai 4 ai 10 anni. La prenotazione online è obbligatoria. L’attività si svolge in italiano; eventuale mediazione linguistica può essere richiesta secondo disponibilità. I genitori che desiderano visitare il museo durante il laboratorio devono acquistare il proprio biglietto.',
+   en:'On Sunday 1 November from 3 pm to 4:30 pm, the Peggy Guggenheim Collection hosts Kids Day: Composizioni in movimento, a free workshop for children aged 4–10. Online booking is required. The activity is held in Italian; language mediation can be requested subject to availability. Parents wishing to visit the museum during the workshop must purchase their own admission ticket.',
+   de:'Am Sonntag, 1. November, von 15:00 bis 16:30 Uhr bietet die Peggy Guggenheim Collection Kids Day: Composizioni in movimento an, einen kostenlosen Workshop für Kinder von 4 bis 10 Jahren. Eine Online-Reservierung ist verpflichtend. Die Aktivität findet auf Italienisch statt; Sprachmittlung kann je nach Verfügbarkeit angefragt werden. Eltern, die während des Workshops das Museum besuchen möchten, benötigen ein eigenes Eintrittsticket.',
+   fr:'Le dimanche 1er novembre, de 15 h à 16 h 30, la Collection Peggy Guggenheim propose Kids Day: Composizioni in movimento, un atelier gratuit pour les enfants de 4 à 10 ans. La réservation en ligne est obligatoire. L’activité se déroule en italien ; une médiation linguistique peut être demandée selon les disponibilités. Les parents souhaitant visiter le musée pendant l’atelier doivent acheter leur propre billet.',
+   es:'El domingo 1 de noviembre, de 15:00 a 16:30, la Colección Peggy Guggenheim organiza Kids Day: Composizioni in movimento, un taller gratuito para niños de 4 a 10 años. La reserva online es obligatoria. La actividad se desarrolla en italiano; puede solicitarse mediación lingüística según disponibilidad. Los padres que quieran visitar el museo durante el taller deben comprar su propia entrada.',
+   zh:'11月1日星期日15:00–16:30，Peggy Guggenheim Collection 举办 Kids Day: Composizioni in movimento，为4–10岁儿童提供免费工作坊。必须在线预约。活动以意大利语进行，可根据教育人员安排申请语言协助。家长若希望在工作坊期间参观博物馆，需要另行购买自己的门票。'
+  },
+  officialUrl:'https://www.guggenheim-venice.it/it/mostre-eventi/eventi/kids-day-01-11-2026/',
+  lastVerified:'2026-10-29'
  }
 ];
 
-export function cultureVisitorNoticesFor(placeSlug:string,referenceDate=romeToday()){
+export function cultureVisitorNoticesFor(placeSlug:string,referenceDate=romeToday(),referenceDateTime=romeNowMinute()){
  return cultureVisitorNotices.filter(n=>{
   if(n.placeSlug!==placeSlug)return false;
-  if(n.end&&n.end<referenceDate)return false;
+  if(n.endDateTime&&n.endDateTime<referenceDateTime)return false;
+  if(!n.endDateTime&&n.end&&n.end<referenceDate)return false;
   return true;
  });
 }
 
-export function cultureVisitorNoticeStatus(notice:CultureVisitorNotice,referenceDate=romeToday()):CultureVisitorNoticeStatus{
+export function cultureVisitorNoticeStatus(notice:CultureVisitorNotice,referenceDate=romeToday(),referenceDateTime=romeNowMinute()):CultureVisitorNoticeStatus{
  if(notice.status)return notice.status;
+ if(notice.startDateTime)return notice.startDateTime>referenceDateTime?'upcoming':'current';
  return notice.start&&notice.start>referenceDate?'upcoming':'current';
 }
 
