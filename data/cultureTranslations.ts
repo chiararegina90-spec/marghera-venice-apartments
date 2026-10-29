@@ -163,3 +163,28 @@ export function highlightsLabel(place:CulturePlace,lang:CultureLang){
  const joiner=lang==='zh'?'、':', ';
  return localizedHighlights(place,lang).join(joiner);
 }
+
+
+export function cultureAccessLabel(place:CulturePlace,lang:CultureLang){
+ if(place.slug!=='peggy-guggenheim') return cultureUi[lang].accessCheck;
+ return {
+  it:'Ingresso gratuito per persone con ridotta mobilità e accompagnatore; sedie a rotelle e piattaforme elevatrici disponibili. Le ultime due sale delle mostre temporanee non sono raggiungibili con la piattaforma; accesso diretto dal Canal Grande non disponibile.',
+  en:'Free admission for visitors with limited mobility and a companion; wheelchairs and platform lifts are available. The last two temporary-exhibition rooms cannot be reached by the platform lift; there is no direct access from the Grand Canal.',
+  de:'Freier Eintritt für Menschen mit eingeschränkter Mobilität und Begleitperson; Rollstühle und Plattformlifte sind verfügbar. Die letzten zwei Räume der Wechselausstellungen sind mit dem Plattformlift nicht erreichbar; kein direkter Zugang vom Canal Grande.',
+  fr:'Entrée gratuite pour les personnes à mobilité réduite et leur accompagnateur ; fauteuils roulants et plateformes élévatrices disponibles. Les deux dernières salles des expositions temporaires ne sont pas accessibles par la plateforme ; pas d’accès direct depuis le Grand Canal.',
+  es:'Entrada gratuita para personas con movilidad reducida y acompañante; hay sillas de ruedas y plataformas elevadoras. Las dos últimas salas de exposiciones temporales no son accesibles mediante la plataforma; no hay acceso directo desde el Gran Canal.',
+  zh:'行动不便人士及一名陪同者可免费入场；馆内可免费使用轮椅和升降平台。临时展览最后两间展厅无法通过升降平台到达，且不能从大运河直接进入博物馆。'
+ }[lang];
+}
+
+export function culturePetsLabel(place:CulturePlace,lang:CultureLang){
+ if(place.slug!=='peggy-guggenheim') return cultureUi[lang].petsCheck;
+ return {
+  it:'Gli animali domestici non sono ammessi. Sono consentiti i cani guida e gli animali terapeutici certificati.',
+  en:'Pets are not allowed. Guide dogs and certified therapy animals are permitted.',
+  de:'Haustiere sind nicht erlaubt. Blindenführhunde und zertifizierte Therapietiere sind zugelassen.',
+  fr:'Les animaux de compagnie ne sont pas admis. Les chiens guides et les animaux de thérapie certifiés sont autorisés.',
+  es:'No se admiten mascotas. Se permiten perros guía y animales de terapia certificados.',
+  zh:'博物馆不允许携带宠物入内，但允许导盲犬和经过认证的治疗辅助动物进入。'
+ }[lang];
+}
