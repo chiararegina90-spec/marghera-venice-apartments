@@ -182,7 +182,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "10:00–18:00; chiuso martedì",
     "booking": "recommended",
     "officialUrl": "https://www.guggenheim-venice.it/it/visita/",
-    "mapsQuery": "Collezione Peggy Guggenheim, Venezia, Italia"
+    "mapsQuery": "Collezione Peggy Guggenheim, Venezia, Italia",
+    "lastVerified": "2026-10-29"
   },
   {
     "slug": "ca-rezzonico",
