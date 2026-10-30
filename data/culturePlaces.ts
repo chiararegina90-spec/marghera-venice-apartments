@@ -427,11 +427,12 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "MUVEC Casa delle Contemporaneita Mestre",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa ufficiale",
-    "hours": "Verifica calendario mostre",
+    "price": "€7 intero · €3,50 ridotto",
+    "hours": "15 settembre 2026–14 febbraio 2027: 10:00–19:00, ultimo ingresso 18:00; sabato dal 31 ottobre fino alle 22:00, ultimo ingresso 21:00. 15 febbraio–31 marzo 2027: 10:00–17:00, ultimo ingresso 16:00. 1 aprile–14 settembre 2027: 10:00–18:00, ultimo ingresso 17:00. Chiuso lunedì.",
     "booking": "check",
-    "officialUrl": "https://muvec.visitmuve.it/",
-    "mapsQuery": "MUVEC – Casa delle Contemporaneità, Mestre, Italia"
+    "officialUrl": "https://muvemestre.visitmuve.it/muvec/",
+    "mapsQuery": "MUVEC – Casa delle Contemporaneità, Mestre, Italia",
+    "lastVerified": "2026-10-30"
   },
   {
     "slug": "museo-storico-navale",
@@ -465,17 +466,18 @@ export const culturePlaces:CulturePlace[] = [
     "duration": "1h 15m–2h",
     "highlights": [
       "Ghetto Nuovo",
-      "sinagoghe",
+      "Scola Tedesca, Scola Italiana e Scola Canton",
       "storia ebraica veneziana"
     ],
     "commonsQuery": "Jewish Museum Venice Ghetto",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa e tour",
-    "hours": "Visite spesso su turni guidati",
-    "booking": "required",
-    "officialUrl": "https://www.museoebraico.it/",
-    "mapsQuery": "Museo Ebraico di Venezia e Ghetto, Venezia, Italia"
+    "price": "€18 intero · €14 ridotto · €11 residenti aventi diritto · €2 prevendita online",
+    "hours": "1–15 novembre 2026: dom–gio 10:00–17:30, ultimo ingresso 16:45; ven 09:00–15:00, ultimo ingresso 13:45. Sabato non indicato tra i giorni di apertura. Verificare festività ebraiche e nuovo calendario dal 16 novembre.",
+    "booking": "recommended",
+    "officialUrl": "https://www.museoebraicovenezia.it/",
+    "mapsQuery": "Museo Ebraico di Venezia e Ghetto, Venezia, Italia",
+    "lastVerified": "2026-10-30"
   },
   {
     "slug": "querini-stampalia",
