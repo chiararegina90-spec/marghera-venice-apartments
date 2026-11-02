@@ -184,14 +184,17 @@ export default function CorporatePage(){
               </div>
 
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {['Oltre 100 m²','2 camere + soggiorno','Cucina abitabile completa','Lavatrice','Lavastoviglie','Forno e microonde','Macchina Nespresso','Piano cottura a induzione','Aria condizionata / pompa di calore','Terrazza con area fumatori','Smart TV','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
+                {['Oltre 100 m²','2 camere + soggiorno','Cucina abitabile completa','Lavatrice','Lavastoviglie','Forno e microonde','Macchina Nespresso','Piano cottura a gas','Aria condizionata / pompa di calore','Terrazza con area fumatori','Smart TV','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
               </div>
 
               <div className="mt-7 rounded-2xl bg-cream p-5">
                 <p className="font-bold text-navy">Parcheggio privato incluso</p>
                 <p className="mt-1 text-sm leading-6 text-slate-600">1 posto riservato, adatto a un’auto oppure a un furgoncino.</p>
               </div>
-              <Link href="/case/rossi-apartment" className="mt-6 inline-flex font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">Vedi Rossi Apartment →</Link>
+              <div className="mt-6 flex flex-wrap gap-3">
+  <Link href="/case/rossi-apartment" className="inline-flex rounded-full border border-navy px-5 py-3 text-sm font-bold text-navy transition hover:bg-navy hover:text-white">Vedi Rossi Apartment →</Link>
+  <a href="https://www.google.com/maps/search/?api=1&query=Via%20Cesare%20Rossarol%2032%2C%2030175%20Marghera%20VE" target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full bg-navy px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5">Apri su Google Maps ↗</a>
+</div>
             </div>
           </article>
 
@@ -217,14 +220,17 @@ export default function CorporatePage(){
               </div>
 
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {['Oltre 50 m²','2 camere configurabili','Cucina abitabile completa','Lavatrice','Aria condizionata canalizzata','Balconcino / area fumatori','Smart TV in soggiorno','TV nelle camere','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
+                {['Oltre 50 m²','2 camere configurabili','Cucina abitabile completa','Piano cottura a induzione','Lavasciuga','Aria condizionata canalizzata','Smart TV in soggiorno','TV nelle camere','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
               </div>
 
               <div className="mt-7 rounded-2xl bg-cream p-5">
                 <p className="font-bold text-navy">Parcheggio privato incluso</p>
                 <p className="mt-1 text-sm leading-6 text-slate-600">Adatto a 1 auto oppure, in base alle dimensioni, a 2 auto piccole. L’accesso interno non è adatto ai furgoni. In alternativa è disponibile parcheggio gratuito su strada proprio davanti all’appartamento.</p>
               </div>
-              <Link href="/case/dimora-castelli" className="mt-6 inline-flex font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">Vedi Dimora Castelli →</Link>
+              <div className="mt-6 flex flex-wrap gap-3">
+  <Link href="/case/dimora-castelli" className="inline-flex rounded-full border border-navy px-5 py-3 text-sm font-bold text-navy transition hover:bg-navy hover:text-white">Vedi Dimora Castelli →</Link>
+  <a href="https://www.google.com/maps/search/?api=1&query=Via%20Jacopo%20Castelli%2022%2C%2030175%20Marghera%20VE" target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full bg-navy px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5">Apri su Google Maps ↗</a>
+</div>
             </div>
           </article>
         </div>
