@@ -1,0 +1,61 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import {corporateCopy,type CorporateApartment} from '@/data/corporateContent';
+import {localePath,type SiteLang} from '@/lib/i18n';
+
+const maps={rossi:'https://www.google.com/maps/search/?api=1&query=Via%20Cesare%20Rossarol%2032%2C%2030175%20Marghera%20VE',castelli:'https://www.google.com/maps/search/?api=1&query=Via%20Jacopo%20Castelli%2022%2C%2030175%20Marghera%20VE'};
+const emailHref='mailto:info@margheraveniceapartments.com?subject=Corporate%20accommodation%20quote%20-%20MVA&body=Hello%2C%0A%0AI%20would%20like%20a%20corporate%20accommodation%20quote.%0A%0ADates%3A%20%0ANumber%20of%20people%3A%20%0AVehicle%3A%20%0ABed%20configuration%3A%20';
+const whatsappHref='https://wa.me/393514462261?text=Buongiorno%2C%20vorrei%20ricevere%20un%20preventivo%20aziendale.%0APeriodo%3A%20%0ANumero%20di%20persone%3A%20%0AVeicolo%3A%20%0AConfigurazione%20letti%3A%20';
+
+function CheckIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 shrink-0 fill-none stroke-current stroke-[2.2]"><path d="m5 12 4 4L19 6" strokeLinecap="round" strokeLinejoin="round"/></svg>;}
+
+function ApartmentCard({lang,name,image,price,data,mapsHref,slug}:{lang:SiteLang;name:string;image:string;price:string;data:CorporateApartment;mapsHref:string;slug:'/case/rossi-apartment'|'/case/dimora-castelli'}){
+ return <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
+  <div className="relative aspect-[16/10]"><Image src={image} alt={name+' corporate apartment in Marghera'} fill sizes="(min-width:1024px) 50vw, 100vw" className="object-cover"/><div className="absolute left-5 top-5 rounded-full bg-navy px-4 py-2 text-sm font-black text-white">{name.toUpperCase()}</div></div>
+  <div className="p-7 sm:p-8">
+   <div className="flex flex-wrap items-end justify-between gap-4"><div><p className="text-sm font-bold uppercase tracking-[.16em] text-slate-500">{data.monthly}</p><p className="mt-2 font-serif text-5xl text-navy">{price}</p></div><div className="flex flex-wrap gap-2"><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">{data.size}</p><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">{data.people}</p></div></div>
+   <p className="mt-6 leading-7 text-slate-600">{data.utilities}</p>
+   <div className="mt-7 border-t border-slate-200 pt-7"><h3 className="font-serif text-2xl text-navy">{data.bedsTitle}</h3><ul className="mt-4 space-y-3 text-slate-600">{data.beds.map(x=><li key={x} className="flex gap-3"><span className="text-gold">●</span><span>{x}</span></li>)}</ul></div>
+   <div className="mt-7 grid gap-3 sm:grid-cols-2">{data.amenities.map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}</div>
+   <div className="mt-7 rounded-2xl bg-cream p-5"><p className="font-bold text-navy">{data.parkingTitle}</p><p className="mt-1 text-sm leading-6 text-slate-600">{data.parking}</p><p className="mt-3 text-xs font-semibold text-slate-500">{data.address}</p></div>
+   <div className="mt-6 flex flex-wrap gap-3"><Link href={localePath(slug,lang)} className="inline-flex rounded-full border border-navy px-5 py-3 text-sm font-bold text-navy transition hover:bg-navy hover:text-white">{data.view}</Link><a href={mapsHref} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full bg-navy px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5">{data.maps}</a></div>
+  </div>
+ </article>;
+}
+
+export default function CorporateLanding({lang}:{lang:SiteLang}){
+ const c=corporateCopy[lang];
+ const canonical='https://www.margheraveniceapartments.com'+localePath('/corporate',lang);
+ const serviceJsonLd={
+  '@context':'https://schema.org','@type':'Service',name:c.metadata.ogTitle,serviceType:'Corporate housing and temporary employee accommodation',
+  provider:{'@type':'Organization',name:'Marghera Venice Apartments',url:'https://www.margheraveniceapartments.com',email:'info@margheraveniceapartments.com',telephone:'+393514462261'},
+  areaServed:[{'@type':'Place',name:'Marghera'},{'@type':'Place',name:'Mestre'},{'@type':'Place',name:'Porto Marghera'},{'@type':'Place',name:'Venice'}],
+  url:canonical,
+  offers:[
+   {'@type':'Offer',price:'1650',priceCurrency:'EUR',unitText:'MONTH',itemOffered:{'@type':'Apartment',name:'Rossi Apartment',address:{'@type':'PostalAddress',streetAddress:'Via Cesare Rossarol 32',postalCode:'30175',addressLocality:'Marghera',addressRegion:'VE',addressCountry:'IT'},floorSize:{'@type':'QuantitativeValue',minValue:100,unitCode:'MTK'},occupancy:{'@type':'QuantitativeValue',maxValue:4}}},
+   {'@type':'Offer',price:'1450',priceCurrency:'EUR',unitText:'MONTH',itemOffered:{'@type':'Apartment',name:'Dimora Castelli',address:{'@type':'PostalAddress',streetAddress:'Via Jacopo Castelli 22',postalCode:'30175',addressLocality:'Marghera',addressRegion:'VE',addressCountry:'IT'},floorSize:{'@type':'QuantitativeValue',minValue:50,unitCode:'MTK'},occupancy:{'@type':'QuantitativeValue',maxValue:4}}}
+  ]
+ };
+ const faqJsonLd={'@context':'https://schema.org','@type':'FAQPage',mainEntity:c.faq.map(x=>({'@type':'Question',name:x.q,acceptedAnswer:{'@type':'Answer',text:x.a}}))};
+ const breadcrumbJsonLd={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.margheraveniceapartments.com'+localePath('/',lang)},{'@type':'ListItem',position:2,name:c.metadata.ogTitle,item:canonical}]};
+
+ return <><Header lang={lang}/><main className="overflow-hidden">
+  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(serviceJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
+  <section className="relative min-h-[82vh] overflow-hidden pt-20"><Image src="/images/rossi-page-hero.webp" alt={c.metadata.ogTitle} fill priority sizes="100vw" className="object-cover object-center"/><div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/35"/><div className="relative mx-auto flex min-h-[calc(82vh-5rem)] max-w-7xl items-center px-5 py-16 lg:px-8"><div className="max-w-4xl text-white"><p className="text-xs font-black uppercase tracking-[.24em] text-gold">{c.eyebrow}</p><h1 className="mt-5 max-w-4xl font-serif text-[clamp(2.8rem,6vw,5.4rem)] leading-[.98]">{c.h1}</h1><p className="mt-7 max-w-3xl text-lg leading-8 text-white/85 sm:text-xl">{c.intro}</p><div className="mt-8 flex flex-wrap gap-2.5 text-sm font-bold">{c.badges.map(x=><span key={x} className="rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur">{x}</span>)}</div><div className="mt-9 flex flex-wrap gap-3"><a href="#preventivo" className="rounded-full bg-gold px-7 py-4 font-bold text-navy transition hover:-translate-y-1">{c.quote}</a><a href="#appartamenti" className="rounded-full border border-white/60 px-7 py-4 font-bold text-white transition hover:bg-white hover:text-navy">{c.compare}</a></div></div></div></section>
+
+  <section className="bg-cream py-20 sm:py-24"><div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.readyEyebrow}</p><h2 className="mt-4 font-serif text-[clamp(2.3rem,4vw,4rem)] leading-tight text-navy">{c.readyTitle}</h2><p className="mt-6 text-lg leading-8 text-slate-600">{c.readyP1}</p><p className="mt-4 text-lg leading-8 text-slate-600">{c.readyP2}</p></div><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">{c.included.map(x=><div key={x} className="flex items-start gap-3 rounded-2xl bg-white p-4 font-semibold text-navy shadow-sm"><span className="mt-0.5 text-gold"><CheckIcon/></span><span>{x}</span></div>)}</div></div></section>
+
+  <section id="appartamenti" className="py-20 sm:py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="max-w-4xl"><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.apartmentsEyebrow}</p><h2 className="mt-4 font-serif text-[clamp(2.3rem,4vw,4rem)] leading-tight text-navy">{c.apartmentsTitle}</h2><p className="mt-5 text-lg leading-8 text-slate-600">{c.apartmentsIntro}</p></div><div className="mt-12 grid gap-8 lg:grid-cols-2"><ApartmentCard lang={lang} name="Rossi Apartment" image="/images/rossi-card.webp" price="€1.650" data={c.rossi} mapsHref={maps.rossi} slug="/case/rossi-apartment"/><ApartmentCard lang={lang} name="Dimora Castelli" image="/images/castelli-card.webp" price="€1.450" data={c.castelli} mapsHref={maps.castelli} slug="/case/dimora-castelli"/></div></div></section>
+
+  <section className="bg-navy py-20 text-white sm:py-24"><div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-2 lg:items-center lg:px-8"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.locationEyebrow}</p><h2 className="mt-4 font-serif text-[clamp(2.3rem,4vw,4rem)] leading-tight">{c.locationTitle}</h2></div><div className="space-y-5 text-lg leading-8 text-white/75"><p>{c.locationP1}</p><p>{c.locationP2}</p><p className="text-base text-white/60">{c.locationP3}</p></div></div></section>
+
+  <section className="py-20 sm:py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr]"><div><p className="text-xs font-black uppercase tracking-[.2em] text-gold">{c.benefitsEyebrow}</p><h2 className="mt-4 font-serif text-[clamp(2.3rem,4vw,3.7rem)] leading-tight text-navy">{c.benefitsTitle}</h2></div><div className="grid gap-5 sm:grid-cols-2">{c.benefits.map(x=><div key={x.title} className="rounded-[1.6rem] border border-slate-200 p-6"><h3 className="font-serif text-2xl text-navy">{x.title}</h3><p className="mt-3 leading-7 text-slate-600">{x.text}</p></div>)}</div></div></div></section>
+
+  <section className="bg-cream py-20 sm:py-24"><div className="mx-auto max-w-4xl px-5 lg:px-8"><p className="text-center text-xs font-black uppercase tracking-[.2em] text-gold">{c.faqEyebrow}</p><h2 className="mt-4 text-center font-serif text-[clamp(2.3rem,4vw,3.8rem)] text-navy">{c.faqTitle}</h2><div className="mt-10 space-y-4">{c.faq.map(item=><details key={item.q} className="group rounded-2xl bg-white p-6 shadow-sm"><summary className="cursor-pointer list-none font-bold text-navy">{item.q}<span className="float-right text-gold transition group-open:rotate-45">+</span></summary><p className="mt-4 leading-7 text-slate-600">{item.a}</p></details>)}</div></div></section>
+
+  <section id="preventivo" className="py-20 sm:py-24"><div className="mx-auto max-w-5xl px-5 lg:px-8"><div className="overflow-hidden rounded-[2.2rem] bg-gold p-8 text-navy sm:p-12"><p className="text-xs font-black uppercase tracking-[.2em]">{c.ctaEyebrow}</p><h2 className="mt-4 max-w-3xl font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-tight">{c.ctaTitle}</h2><p className="mt-5 max-w-3xl text-lg leading-8 text-navy/80">{c.ctaText}</p><div className="mt-8 flex flex-wrap gap-3"><a href={emailHref} className="rounded-full bg-navy px-7 py-4 font-bold text-white transition hover:-translate-y-1">{c.ctaButton}</a>{lang!=='zh'&&<a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy/40 px-7 py-4 font-bold text-navy transition hover:bg-white">{c.whatsapp}</a>}</div><p className="mt-6 text-sm font-semibold text-navy/65">{c.ctaNote}</p></div></div></section>
+  <div className="fixed inset-x-4 bottom-4 z-50 md:hidden"><a href="#preventivo" className="block rounded-full bg-navy px-5 py-4 text-center text-sm font-black text-white shadow-2xl ring-1 ring-white/20">{c.ctaButton}</a></div>
+ </main><Footer lang={lang}/></>;
+}
