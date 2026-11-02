@@ -73,7 +73,7 @@ const faq=[
   },
   {
     q:'È disponibile il parcheggio?',
-    a:'Sì. Rossi Apartment dispone di un posto privato adatto a un’auto o a un furgoncino. Dimora Castelli dispone di parcheggio privato adatto a un’auto oppure, in base alle dimensioni, a due auto piccole; l’accesso non è adatto ai furgoni.'
+    a:'Sì. Rossi Apartment dispone di un posto privato adatto a un’auto o a un furgoncino. Dimora Castelli dispone di parcheggio privato adatto a un’auto oppure, in base alle dimensioni, a due auto piccole; l’accesso interno non è adatto ai furgoni. In alternativa è possibile parcheggiare gratuitamente su strada proprio davanti all’appartamento.'
   },
   {
     q:'Come si richiede un preventivo?',
@@ -158,7 +158,7 @@ export default function CorporatePage(){
         <div className="max-w-3xl">
           <p className="text-xs font-black uppercase tracking-[.2em] text-gold">Due soluzioni corporate</p>
           <h2 className="mt-4 font-serif text-[clamp(2.3rem,4vw,4rem)] leading-tight text-navy">Appartamenti per aziende a Mestre e Marghera</h2>
-          <p className="mt-5 text-lg leading-8 text-slate-600">Entrambe le soluzioni sono proposte per un massimo di 4 persone nei soggiorni aziendali prolungati, privilegiando comfort, privacy e una gestione semplice per l’azienda.</p>
+          <p className="mt-5 text-lg leading-8 text-slate-600">Entrambe le soluzioni sono proposte per un massimo di 4 persone nei soggiorni aziendali prolungati, privilegiando comfort, privacy e una gestione semplice per l’azienda. Rossi Apartment supera i 100 m²; Dimora Castelli supera i 50 m², così l’azienda può valutare fin da subito gli spazi disponibili senza sorprese.</p>
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -170,7 +170,7 @@ export default function CorporatePage(){
             <div className="p-7 sm:p-8">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div><p className="text-sm font-bold uppercase tracking-[.16em] text-slate-500">Canone corporate mensile</p><p className="mt-2 font-serif text-5xl text-navy">€1.650</p></div>
-                <p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">fino a 4 persone</p>
+                <div className="flex flex-wrap gap-2"><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">oltre 100 m²</p><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">fino a 4 persone</p></div>
               </div>
               <p className="mt-6 leading-7 text-slate-600">Utenze di energia elettrica, acqua e riscaldamento comprese fino a una soglia di consumo prestabilita. Eventuali consumi eccedenti vengono conteggiati separatamente sulla base dei costi effettivi.</p>
 
@@ -184,7 +184,7 @@ export default function CorporatePage(){
               </div>
 
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {['2 camere + soggiorno','Cucina abitabile','Lavatrice e lavastoviglie','Aria condizionata / pompa di calore','Terrazza con area fumatori','Smart TV e Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
+                {['Oltre 100 m²','2 camere + soggiorno','Cucina abitabile completa','Lavatrice','Lavastoviglie','Forno e microonde','Macchina Nespresso','Piano cottura a induzione','Aria condizionata / pompa di calore','Terrazza con area fumatori','Smart TV','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
               </div>
 
               <div className="mt-7 rounded-2xl bg-cream p-5">
@@ -203,7 +203,7 @@ export default function CorporatePage(){
             <div className="p-7 sm:p-8">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div><p className="text-sm font-bold uppercase tracking-[.16em] text-slate-500">Canone corporate mensile</p><p className="mt-2 font-serif text-5xl text-navy">€1.450</p></div>
-                <p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">massimo 4 persone</p>
+                <div className="flex flex-wrap gap-2"><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">oltre 50 m²</p><p className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">massimo 4 persone</p></div>
               </div>
               <p className="mt-6 leading-7 text-slate-600">Utenze di energia elettrica, acqua e riscaldamento comprese fino a una soglia di consumo prestabilita. Eventuali consumi eccedenti vengono conteggiati separatamente sulla base dei costi effettivi.</p>
 
@@ -217,12 +217,12 @@ export default function CorporatePage(){
               </div>
 
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                {['2 camere configurabili','Cucina abitabile','Lavatrice','Aria condizionata canalizzata','Balconcino / area fumatori','Smart TV e Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
+                {['Oltre 50 m²','2 camere configurabili','Cucina abitabile completa','Lavatrice','Aria condizionata canalizzata','Balconcino / area fumatori','Smart TV in soggiorno','TV nelle camere','Wi-Fi'].map(x=><div key={x} className="flex gap-2 text-sm font-semibold text-navy"><span className="text-gold"><CheckIcon/></span>{x}</div>)}
               </div>
 
               <div className="mt-7 rounded-2xl bg-cream p-5">
                 <p className="font-bold text-navy">Parcheggio privato incluso</p>
-                <p className="mt-1 text-sm leading-6 text-slate-600">Adatto a 1 auto oppure, in base alle dimensioni, a 2 auto piccole. L’accesso non è adatto ai furgoni.</p>
+                <p className="mt-1 text-sm leading-6 text-slate-600">Adatto a 1 auto oppure, in base alle dimensioni, a 2 auto piccole. L’accesso interno non è adatto ai furgoni. In alternativa è disponibile parcheggio gratuito su strada proprio davanti all’appartamento.</p>
               </div>
               <Link href="/case/dimora-castelli" className="mt-6 inline-flex font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">Vedi Dimora Castelli →</Link>
             </div>
