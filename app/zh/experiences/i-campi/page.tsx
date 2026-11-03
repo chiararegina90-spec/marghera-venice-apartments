@@ -1,7 +1,2 @@
-import ICampiExperiencePageZh from '@/components/ICampiExperiencePageZh';
-import {editorialMetadata} from '@/lib/seoContentMetadata';
-
-const title='I Campi 酒庄品鉴：Valpolicella 葡萄酒体验';
-const description='从威尼斯出发探索维罗纳附近的 Azienda Agricola I Campi：酒庄品鉴、Valpolicella、Soave、Ripasso 与 Amarone，并可通过微信咨询。';
-export const metadata=editorialMetadata({lang:'zh',logicalPath:'/experiences/i-campi',title,description,image:'/images/experience-i-campi-cover.webp',alt:'Val d’Illasi 葡萄园中的 Azienda Agricola I Campi 酒庄'});
-export default function Page(){return <ICampiExperiencePageZh/>;}
+import type {Metadata} from 'next'; import ICampiExperiencePage from '@/components/ICampiExperiencePage';
+export const metadata:Metadata={title:'I Campi 酒庄品鉴｜Verona 附近 Val d’Illasi 葡萄酒体验',description:'了解 Flavio Prà 的 I Campi 酒庄：Val d’Illasi 风土、需再次确认的品鉴路线、已核实奖项，以及从 Marghera 安排维罗纳一日游的方法。',alternates:{canonical:'/zh/experiences/i-campi',languages:{'it-IT':'/collaborazioni/i-campi','en-GB':'/en/experiences/i-campi','de-DE':'/de/experiences/i-campi','fr-FR':'/fr/experiences/i-campi','es-ES':'/es/experiences/i-campi','zh-CN':'/zh/experiences/i-campi','x-default':'/collaborazioni/i-campi'}},openGraph:{type:'article',images:['/images/experience-i-campi-cover.webp']},twitter:{card:'summary_large_image',images:['/images/experience-i-campi-cover.webp']}}; export default function Page(){return <ICampiExperiencePage lang="zh"/>;}
