@@ -1822,7 +1822,7 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "€11 intero · €8 ridotto convenzionati · €2 giovani 18–25 · gratuito under 18 e categorie previste",
-    "hours": "1 novembre–29 marzo: mar–gio 10:00–16:00; ven–dom e festivi 10:00–18:00. Ultimo ingresso al piano nobile un’ora prima. Chiuso lunedì salvo eccezioni festive.",
+    "hours": "1 novembre 2026–29 marzo 2027: mar–gio 10:00–16:00; ven–dom e festivi 10:00–18:00. Ultimo ingresso al piano nobile un’ora prima. Chiuso lunedì salvo eccezioni festive.",
     "booking": "recommended",
     "officialUrl": "https://villapisani.cultura.gov.it/visita/orari-biglietti/",
     "lastVerified": "2026-11-03",
