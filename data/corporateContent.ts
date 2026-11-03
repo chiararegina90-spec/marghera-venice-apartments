@@ -148,7 +148,7 @@ export function corporateMetadata(lang:SiteLang):Metadata{
   title:c.metadata.title,
   description:c.metadata.description,
   alternates:languageAlternates(path),
-  openGraph:{title:c.metadata.ogTitle,description:c.metadata.ogDescription,url:path,images:[{url:'/images/rossi-page-hero.webp',alt:c.metadata.ogTitle}],type:'website'},
-  twitter:{card:'summary_large_image',title:c.metadata.ogTitle,description:c.metadata.ogDescription,images:['/images/rossi-page-hero.webp']}
+  openGraph:{title:c.metadata.ogTitle,description:c.metadata.ogDescription,url:path,images:[{url:`/corporate/share-image?lang=${lang}`,width:1200,height:630,alt:c.metadata.ogTitle}],type:'website'},
+  twitter:{card:'summary_large_image',title:c.metadata.ogTitle,description:c.metadata.ogDescription,images:[`/corporate/share-image?lang=${lang}`]}
  };
 }
