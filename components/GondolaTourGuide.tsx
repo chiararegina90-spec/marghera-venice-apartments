@@ -20,6 +20,15 @@ const BREADCRUMB_ARIA:Record<SiteLang,string>={
   zh:'面包屑导航'
 };
 
+const ROW_VENICE_LABEL:Record<SiteLang,string>={
+  it:'Voga alla veneta con Row Venice',
+  en:'Venetian rowing with Row Venice',
+  de:'Voga alla veneta mit Row Venice',
+  fr:'Rame vénitienne avec Row Venice',
+  es:'Voga alla veneta con Row Venice',
+  zh:'Row Venice 威尼斯传统划船'
+};
+
 export default function GondolaTourGuide({lang}:{lang:SiteLang}){
   const c=gondolaTourContent[lang];
   const path=localePath(LOGICAL,lang);
@@ -43,6 +52,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
     mainEntity:c.faq.map(item=>({'@type':'Question',name:item.q,acceptedAnswer:{'@type':'Answer',text:item.a}}))
   };
   const related=[
+    [ROW_VENICE_LABEL[lang],localePath('/collaborazioni/row-venice',lang)],
     [c.labels.hidden,localePath('/guide/venezia-nascosta',lang)],
     [c.labels.children,localePath('/journal/venezia-con-bambini',lang)],
     [c.labels.getting,localePath('/come-raggiungere-venezia',lang)],
