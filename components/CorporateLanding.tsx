@@ -10,6 +10,7 @@ const emailHref='mailto:info@margheraveniceapartments.com?subject=Corporate%20ac
 const whatsappHref='https://wa.me/393514462261?text=Buongiorno%2C%20vorrei%20ricevere%20un%20preventivo%20aziendale.%0APeriodo%3A%20%0ANumero%20di%20persone%3A%20%0AVeicolo%3A%20%0AConfigurazione%20letti%3A%20';
 const ratePeriods:Record<SiteLang,string>={it:'Da novembre a marzo',en:'November to March',de:'November bis März',fr:'De novembre à mars',es:'De noviembre a marzo',zh:'11月至3月'};
 const otherPeriodsNotes:Record<SiteLang,string>={it:'Per soggiorni in altri periodi dell’anno, contattaci per un preventivo personalizzato.',en:'For stays at other times of the year, contact us for a personalised quote.',de:'Für Aufenthalte in anderen Zeiträumen des Jahres kontaktieren Sie uns bitte für ein individuelles Angebot.',fr:'Pour tout séjour à une autre période de l’année, contactez-nous pour un devis personnalisé.',es:'Para estancias en otros periodos del año, contáctanos para solicitar un presupuesto personalizado.',zh:'如需其他时段入住，请联系我们获取专属报价。'};
+const whatsappLabels:Record<SiteLang,string>={it:'Contattaci su WhatsApp',en:'Contact us on WhatsApp',de:'Per WhatsApp kontaktieren',fr:'Contactez-nous sur WhatsApp',es:'Contáctanos por WhatsApp',zh:'WhatsApp'};
 
 function CheckIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 shrink-0 fill-none stroke-current stroke-[2.2]"><path d="m5 12 4 4L19 6" strokeLinecap="round" strokeLinejoin="round"/></svg>;}
 
@@ -47,7 +48,7 @@ export default function CorporateLanding({lang}:{lang:SiteLang}){
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(serviceJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
   <section className="bg-[#cbd8e2] pt-20">
    <h1 className="sr-only">{c.h1}</h1>
-   <div className="mx-auto w-full max-w-[1600px] overflow-hidden">
+   <div className="mx-auto w-full max-w-[1480px] overflow-hidden">
     <img
      src={lang==='it'?'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ia7TE795r4E98rNluIMvLdRMGE/bb938551-6a17-4e0a-b079-f5d7743355ad.png':`/corporate/share-image?lang=${lang}&format=hero`}
      alt={c.metadata.ogTitle}
@@ -65,9 +66,9 @@ export default function CorporateLanding({lang}:{lang:SiteLang}){
       <p className="mt-2 text-base leading-7 text-slate-600 sm:text-lg">{c.intro}</p>
       <div className="mt-4 flex flex-wrap gap-2 text-sm font-bold text-navy">{c.badges.map(x=><span key={x} className="rounded-full bg-cream px-4 py-2">{x}</span>)}</div>
      </div>
-     <div className="flex shrink-0 flex-wrap gap-3">
-      <a href="#preventivo" className="rounded-full bg-gold px-7 py-4 font-bold text-navy transition hover:-translate-y-1">{c.quote}</a>
-      <a href="#appartamenti" className="rounded-full border border-navy/30 px-7 py-4 font-bold text-navy transition hover:bg-navy hover:text-white">{c.compare}</a>
+     <div className="flex shrink-0 flex-wrap gap-3 rounded-[1.4rem] bg-slate-50 p-2 shadow-sm ring-1 ring-navy/10">
+      <a href="#preventivo" className="inline-flex items-center justify-center rounded-full bg-navy px-8 py-4 text-base font-black text-white shadow-lg shadow-navy/15 transition hover:-translate-y-1 hover:shadow-xl">{c.quote}</a>
+      {lang!=='zh'?<a href={whatsappHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-black text-navy shadow-lg shadow-gold/20 transition hover:-translate-y-1 hover:shadow-xl">{whatsappLabels[lang]}</a>:<a href="#appartamenti" className="inline-flex items-center justify-center rounded-full bg-gold px-8 py-4 text-base font-black text-navy shadow-lg transition hover:-translate-y-1">{c.compare}</a>}
      </div>
     </div>
    </div>
