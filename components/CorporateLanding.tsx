@@ -47,16 +47,17 @@ export default function CorporateLanding({lang}:{lang:SiteLang}){
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(serviceJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
   <section className="bg-[#cbd8e2] pt-20">
    <h1 className="sr-only">{c.h1}</h1>
-   <picture className="block w-full overflow-hidden">
-    <source media="(max-width: 639px)" srcSet={`/corporate/share-image?lang=${lang}&format=hero-mobile`}/>
+   <div className="mx-auto w-full max-w-[1600px] overflow-hidden">
     <img
-     src={`/corporate/share-image?lang=${lang}&format=hero`}
+     src={lang==='it'?'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ia7TE795r4E98rNluIMvLdRMGE/bb938551-6a17-4e0a-b079-f5d7743355ad.png':`/corporate/share-image?lang=${lang}&format=hero`}
      alt={c.metadata.ogTitle}
-     width="1600"
-     height="600"
-     className="block h-[280px] w-full object-cover sm:h-[330px] lg:h-[400px] xl:h-[420px]"
+     width={lang==='it'?2048:1600}
+     height={lang==='it'?768:600}
+     loading="eager"
+     fetchPriority="high"
+     className="block h-auto w-full"
     />
-   </picture>
+   </div>
    <div className="border-y border-navy/10 bg-white/95">
     <div className="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-7 lg:flex-row lg:items-center lg:justify-between lg:px-8">
      <div className="max-w-3xl">
