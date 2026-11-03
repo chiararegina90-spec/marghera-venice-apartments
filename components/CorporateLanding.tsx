@@ -48,7 +48,7 @@ export default function CorporateLanding({lang}:{lang:SiteLang}){
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(serviceJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqJsonLd)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbJsonLd)}}/>
   <section className="bg-[#cbd8e2] pt-20">
    <h1 className="sr-only">{c.h1}</h1>
-   <div className="mx-auto w-full max-w-[1480px] overflow-hidden">
+   <div className="w-full overflow-hidden aspect-[8/3] sm:aspect-[3/1]">
     <img
      src={lang==='it'?'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ia7TE795r4E98rNluIMvLdRMGE/bb938551-6a17-4e0a-b079-f5d7743355ad.png':`/corporate/share-image?lang=${lang}&format=hero`}
      alt={c.metadata.ogTitle}
@@ -56,7 +56,7 @@ export default function CorporateLanding({lang}:{lang:SiteLang}){
      height={lang==='it'?768:600}
      loading="eager"
      fetchPriority="high"
-     className="block h-auto w-full"
+     className="block h-full w-full object-cover object-center"
     />
    </div>
    <div className="border-y border-navy/10 bg-white/95">
