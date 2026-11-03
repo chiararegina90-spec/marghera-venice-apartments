@@ -247,10 +247,11 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Museo Arte Orientale Ca Pesaro Venice",
     "family": true,
     "panorama": false,
-    "price": "Incluso nel biglietto Ca’ Pesaro",
-    "hours": "Segue gli orari di Ca’ Pesaro",
-    "booking": "recommended",
-    "officialUrl": "https://orientalevenezia.cultura.gov.it/",
+    "price": "Incluso nel biglietto di accesso a Ca’ Pesaro / Museo d’Arte Orientale",
+    "hours": "Novembre–marzo: mar–dom 10:00–17:00 (ultimo ingresso 16:00). Aprile–ottobre: mar–dom 10:00–18:00 (ultimo ingresso 17:00). Chiuso lunedì.",
+    "booking": "not_required",
+    "officialUrl": "https://orientalevenezia.cultura.gov.it/orari-biglietti-visite-guidate/",
+    "lastVerified": "2026-11-03",
     "mapsQuery": "Museo d’Arte Orientale, Venezia, Italia"
   },
   {
@@ -653,9 +654,10 @@ export const culturePlaces:CulturePlace[] = [
     "family": true,
     "panorama": false,
     "price": "Verifica tariffa ufficiale",
-    "hours": "Verifica orari e mostre",
+    "hours": "Mer–ven 10:00–18:00. Sab–dom 10:00–19:00. Chiuso lunedì e martedì.",
     "booking": "recommended",
     "officialUrl": "https://www.m9museum.it/",
+    "lastVerified": "2026-11-03",
     "mapsQuery": "M9 – Museo del ’900, Mestre, Italia"
   },
   {
@@ -1818,10 +1820,11 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Villa Pisani Stra Veneto",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa ufficiale",
-    "hours": "Orari stagionali",
+    "price": "€11 intero · €8 ridotto convenzionati · €2 giovani 18–25 · gratuito under 18 e categorie previste",
+    "hours": "1 novembre–29 marzo: mar–gio 10:00–16:00; ven–dom e festivi 10:00–18:00. Ultimo ingresso al piano nobile un’ora prima. Chiuso lunedì salvo eccezioni festive.",
     "booking": "recommended",
-    "officialUrl": "https://museiveneto.cultura.gov.it/musei/museo-nazionale-di-villa-pisani",
+    "officialUrl": "https://villapisani.cultura.gov.it/visita/orari-biglietti/",
+    "lastVerified": "2026-11-03",
     "mapsQuery": "Museo Nazionale di Villa Pisani, Stra, Italia"
   },
   {
