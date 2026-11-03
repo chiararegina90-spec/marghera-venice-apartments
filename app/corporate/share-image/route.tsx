@@ -1,7 +1,6 @@
 import {ImageResponse} from 'next/og';
 import type {NextRequest} from 'next/server';
 
-export const runtime='edge';
 
 const copy={
   it:{subtitle:'Alloggi per aziende e trasfertisti',places:'Marghera • Mestre • Venezia'},
