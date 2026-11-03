@@ -25,6 +25,71 @@ export type CultureVisitorNotice={
 
 export const cultureVisitorNotices:CultureVisitorNotice[]=[
  {
+  key:'villa-pisani-park-restoration-2025',
+  placeSlug:'villa-pisani-stra',
+  kind:'closure',
+  start:'2025-09-22',
+  title:{
+   it:'Parco monumentale temporaneamente chiuso',
+   en:'Monumental park temporarily closed',
+   de:'Monumentalpark vorübergehend geschlossen',
+   fr:'Parc monumental temporairement fermé',
+   es:'Parque monumental cerrado temporalmente',
+   zh:'纪念性公园暂时关闭'
+  },
+  summary:{
+   it:'Il Parco monumentale di Villa Pisani è temporaneamente chiuso per lavori di restauro e riqualificazione. Gli ambienti interni della Villa, compreso il Salone affrescato da Tiepolo, rimangono visitabili. L’accesso al parco è limitato alle aree eventualmente autorizzate dal museo.',
+   en:'Villa Pisani’s monumental park is temporarily closed for restoration and redevelopment works. The Villa’s interiors, including the hall frescoed by Tiepolo, remain open to visitors. Access to the park is limited to any areas specifically authorised by the museum.',
+   de:'Der Monumentalpark der Villa Pisani ist wegen Restaurierungs- und Aufwertungsarbeiten vorübergehend geschlossen. Die Innenräume der Villa, einschließlich des von Tiepolo freskierten Saals, bleiben zugänglich. Der Zugang zum Park ist auf Bereiche beschränkt, die gegebenenfalls vom Museum freigegeben werden.',
+   fr:'Le parc monumental de Villa Pisani est temporairement fermé pour des travaux de restauration et de requalification. Les intérieurs de la Villa, dont le salon décoré de fresques par Tiepolo, restent accessibles. L’accès au parc est limité aux zones éventuellement autorisées par le musée.',
+   es:'El parque monumental de Villa Pisani está cerrado temporalmente por obras de restauración y recualificación. Los interiores de la Villa, incluido el salón decorado al fresco por Tiepolo, siguen siendo visitables. El acceso al parque se limita a las zonas que el museo pueda autorizar.',
+   zh:'Villa Pisani 的纪念性公园因修复与整治工程暂时关闭。别墅内部空间仍可参观，包括由 Tiepolo 绘制壁画的大厅。公园仅开放博物馆明确授权进入的区域。'
+  },
+  officialUrl:'https://villapisani.cultura.gov.it/avvisi/chiusura-temporanea-del-parco-di-villa-pisani/',
+  period:{
+   it:'Dal 22 settembre 2025 · fino a nuova comunicazione',
+   en:'From 22 September 2025 · until further notice',
+   de:'Seit 22. September 2025 · bis auf Weiteres',
+   fr:'Depuis le 22 septembre 2025 · jusqu’à nouvel avis',
+   es:'Desde el 22 de septiembre de 2025 · hasta nuevo aviso',
+   zh:'自2025年9月22日起 · 直至另行通知'
+  },
+  lastVerified:'2026-11-03'
+ },
+ {
+  key:'palazzo-grimani-evening-2026-11-20',
+  placeSlug:'palazzo-grimani',
+  kind:'visitor-info',
+  startDateTime:'2026-11-20T19:00',
+  endDateTime:'2026-11-20T22:00',
+  title:{
+   it:'Apertura serale straordinaria · 20 novembre',
+   en:'Extraordinary evening opening · 20 November',
+   de:'Sonderöffnung am Abend · 20. November',
+   fr:'Ouverture exceptionnelle en soirée · 20 novembre',
+   es:'Apertura nocturna extraordinaria · 20 de noviembre',
+   zh:'11月20日特别夜间开放'
+  },
+  summary:{
+   it:'Venerdì 20 novembre Palazzo Grimani sarà eccezionalmente aperto dalle 19:00 alle 22:00, con ultimo ingresso alle 21:00. Durante l’apertura serale sarà possibile visitare anche la mostra di Amoako Boafo. Si applica la tariffa ordinaria e non è richiesta prenotazione.',
+   en:'On Friday 20 November, Palazzo Grimani will exceptionally open from 19:00 to 22:00, with last admission at 21:00. The Amoako Boafo exhibition can also be visited during the evening opening. Regular admission applies and no booking is required.',
+   de:'Am Freitag, 20. November, ist Palazzo Grimani ausnahmsweise von 19:00 bis 22:00 Uhr geöffnet; letzter Einlass ist um 21:00 Uhr. Während der Abendöffnung kann auch die Ausstellung von Amoako Boafo besucht werden. Es gilt der reguläre Eintrittspreis, eine Reservierung ist nicht erforderlich.',
+   fr:'Le vendredi 20 novembre, Palazzo Grimani sera exceptionnellement ouvert de 19:00 à 22:00, avec dernière entrée à 21:00. L’exposition d’Amoako Boafo sera également accessible pendant cette ouverture en soirée. Le tarif ordinaire s’applique et aucune réservation n’est nécessaire.',
+   es:'El viernes 20 de noviembre, Palazzo Grimani abrirá excepcionalmente de 19:00 a 22:00, con última entrada a las 21:00. Durante la apertura nocturna también podrá visitarse la exposición de Amoako Boafo. Se aplica la tarifa ordinaria y no es necesario reservar.',
+   zh:'11月20日星期五，Palazzo Grimani 将于19:00–22:00特别开放，最后入场时间为21:00。夜间开放期间也可参观 Amoako Boafo 展览。适用普通票价，无需预约。'
+  },
+  officialUrl:'https://museiveneto.cultura.gov.it/eventi-e-mostre/museo-di-palazzo-grimani-aperture-serali-straordinarie-il%C2%A0terzo-venerd%C3%AC-del-mese-da',
+  period:{
+   it:'20 novembre 2026 · 19:00–22:00',
+   en:'20 November 2026 · 19:00–22:00',
+   de:'20. November 2026 · 19:00–22:00',
+   fr:'20 novembre 2026 · 19:00–22:00',
+   es:'20 de noviembre de 2026 · 19:00–22:00',
+   zh:'2026年11月20日 · 19:00–22:00'
+  },
+  lastVerified:'2026-11-03'
+ },
+ {
   key:'ca-pesaro-rooms-6-7',
   placeSlug:'ca-pesaro',
   kind:'closure',
