@@ -160,7 +160,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Verifica gli orari del giorno di visita",
     "booking": "recommended",
     "officialUrl": "https://museiveneto.cultura.gov.it/musei/museo-di-palazzo-grimani",
-    "mapsQuery": "Museo di Palazzo Grimani, Venezia, Italia"
+    "mapsQuery": "Museo di Palazzo Grimani, Venezia, Italia",
+    "lastVerified": "2026-11-03"
   },
   {
     "slug": "peggy-guggenheim",
@@ -1815,7 +1816,7 @@ export const culturePlaces:CulturePlace[] = [
     "highlights": [
       "Tiepolo",
       "sale napoleoniche",
-      "parco monumentale"
+      "ambienti storici della Villa"
     ],
     "commonsQuery": "Villa Pisani Stra Veneto",
     "family": true,
