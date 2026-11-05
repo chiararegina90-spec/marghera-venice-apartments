@@ -7,6 +7,7 @@ import SocialLinks from '@/components/SocialLinks';
 import WeChatCard from '@/components/WeChatCard';
 import {gondolaTourContent} from '@/data/gondolaTourContent';
 import {localePath,type SiteLang} from '@/lib/i18n';
+import {GondolaParadaBookNote} from '@/components/BookManuscriptEnhancements';
 
 const BASE='https://www.margheraveniceapartments.com';
 const LOGICAL='/guide/gondola-tour-venezia';
@@ -26,7 +27,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
   const articleUrl=`${BASE}${path}`;
   const articleSchema={
     '@context':'https://schema.org','@type':'Article',headline:c.h1,description:c.metaDescription,
-    datePublished:'2026-09-10',dateModified:'2026-09-11',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
+    datePublished:'2026-09-10',dateModified:'2026-11-05',mainEntityOfPage:{'@type':'WebPage','@id':articleUrl},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE,logo:{'@type':'ImageObject',url:`${BASE}/images/logo.png`}},
     image:`${BASE}/images/gondola-tour-venezia-cover.jpg`
@@ -97,7 +98,7 @@ export default function GondolaTourGuide({lang}:{lang:SiteLang}){
 
       <section className="py-20"><div className="mx-auto max-w-5xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy sm:text-5xl">{c.curiositiesTitle}</h2><div className="mt-9 grid gap-6 md:grid-cols-2">{c.curiosities.map((item,i)=><article key={item.title} className="rounded-[2rem] bg-cream p-7"><p className="text-xs font-black tracking-[.15em] text-gold">0{i+1}</p><h3 className="mt-3 font-serif text-3xl text-navy">{item.title}</h3><div className="mt-4 space-y-3">{item.paragraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div>{i===3&&<Link href={localePath('/guide/venezia-nascosta',lang)} className="mt-5 inline-flex font-bold text-gold">{c.labels.hidden} →</Link>}</article>)}</div></div></section>
 
-      <section className="bg-cream py-20"><div className="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-2 lg:px-8"><article className="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9"><h2 className="font-serif text-4xl text-navy">{c.kidsTitle}</h2><div className="mt-5 space-y-4">{c.kidsParagraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div><Link href={localePath('/journal/venezia-con-bambini',lang)} className="mt-6 inline-flex font-bold text-gold">{c.labels.children} →</Link></article><article className="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9"><h2 className="font-serif text-4xl text-navy">{c.worthTitle}</h2><div className="mt-5 space-y-4">{c.worthParagraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div></article></div></section>
+      <GondolaParadaBookNote lang={lang}/>\n\n      <section className="bg-cream py-20"><div className="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-2 lg:px-8"><article className="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9"><h2 className="font-serif text-4xl text-navy">{c.kidsTitle}</h2><div className="mt-5 space-y-4">{c.kidsParagraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div><Link href={localePath('/journal/venezia-con-bambini',lang)} className="mt-6 inline-flex font-bold text-gold">{c.labels.children} →</Link></article><article className="rounded-[2rem] bg-white p-7 shadow-soft sm:p-9"><h2 className="font-serif text-4xl text-navy">{c.worthTitle}</h2><div className="mt-5 space-y-4">{c.worthParagraphs.map(p=><p key={p} className="leading-7 text-slate-600">{p}</p>)}</div></article></div></section>
 
       <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8"><h2 className="font-serif text-4xl text-navy sm:text-5xl">{c.faqTitle}</h2><div className="mt-8 divide-y divide-slate-200 rounded-[2rem] bg-cream px-6 sm:px-8">{c.faq.map(item=><details key={item.q} className="py-5"><summary className="cursor-pointer list-none pr-6 font-serif text-2xl text-navy">{item.q}</summary><p className="mt-3 max-w-3xl leading-7 text-slate-600">{item.a}</p></details>)}</div></div></section>
 

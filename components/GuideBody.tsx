@@ -4,6 +4,7 @@ import GuideEditorialEnhancement from '@/components/GuideEditorialEnhancement';
 import GuideItineraryIntro from '@/components/GuideItineraryIntro';
 import type {GuideData} from '@/data/guideTypes';
 import type {CultureLang} from '@/data/culturePlaces';
+import {LagoonBikeBookNote} from '@/components/BookManuscriptEnhancements';
 
 const prefix:Record<CultureLang,string>={it:'',en:'/en',de:'/de',fr:'/fr',es:'/es',zh:'/zh'};
 const ui:Record<CultureLang,{
@@ -87,7 +88,7 @@ export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang})
     </div>
    </section>
 
-   <section className="py-14 sm:py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="grid gap-5 lg:grid-cols-2">
+   {(data.slug==='lido-di-venezia'||data.slug==='pellestrina')&&<LagoonBikeBookNote lang={lang}/>}\n\n   <section className="py-14 sm:py-16"><div className="mx-auto max-w-6xl px-5 lg:px-8"><div className="grid gap-5 lg:grid-cols-2">
     <div className="rounded-[1.65rem] bg-navy p-7 text-white sm:p-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.tip}</p><h2 className="mt-3 font-serif text-3xl sm:text-4xl">{data.adviceTitle}</h2><p className="mt-4 text-base leading-7 text-white/76 sm:text-lg sm:leading-8">{data.advice}</p></div>
     {data.heartText?<div className="rounded-[1.65rem] border-l-4 border-aqua bg-cream p-7 sm:p-8"><p className="text-xs font-black uppercase tracking-[.22em] text-gold">{t.detail}</p><h2 className="mt-3 font-serif text-3xl text-navy">❤️ {data.heartTitle||t.detailFallback}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{data.heartText}</p></div>:<div className="rounded-[1.65rem] bg-cream p-7 sm:p-8"><h2 className="font-serif text-3xl text-navy">{t.unexpected}</h2><p className="mt-4 leading-7 text-slate-600 sm:text-lg sm:leading-8">{t.unexpectedText}</p></div>}
    </div></div></section>
