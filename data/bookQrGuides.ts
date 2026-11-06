@@ -70,7 +70,7 @@ const bcGuides=Object.fromEntries([...itineraryBookSlugs,...culturalBookSlugs].m
    related:data.related.map(([label,href]):[string,string]=>[relatedNames[lang][href]||label,href])
   }];
  }))
-])) as Record<(typeof bookQrGuideSlugs)[number],Record<SiteLang,GuideData>>;
+])) as unknown as Record<(typeof itineraryBookSlugs)[number]|(typeof culturalBookSlugs)[number],Record<SiteLang,GuideData>>;
 
 export const bookQrGuides:Record<BookQrGuideSlug,Record<SiteLang,GuideData>>={
  'venezia-accessibile':Object.fromEntries((['it','en','de','fr','es','zh'] as SiteLang[]).map(l=>[l,asGuide('venezia-accessibile',access[l])])) as Record<SiteLang,GuideData>,
