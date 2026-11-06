@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import {localePath} from '@/lib/i18n';
 import SectionTitle from '@/components/SectionTitle';
 import GuideEditorialEnhancement from '@/components/GuideEditorialEnhancement';
 import GuideItineraryIntro from '@/components/GuideItineraryIntro';
@@ -36,9 +37,7 @@ function isGeneric(data:GuideData,lang:CultureLang){
 }
 function localizedRelatedHref(href:string,lang:CultureLang){
  if(/^https?:/.test(href)) return href;
- if(lang==='it') return href;
- if(href.startsWith(`/${lang}/`)) return href;
- return `/${lang}${href.startsWith('/')?href:`/${href}`}`;
+ return localePath(href,lang);
 }
 
 export default function GuideBody({data,lang}:{data:GuideData;lang:CultureLang}){

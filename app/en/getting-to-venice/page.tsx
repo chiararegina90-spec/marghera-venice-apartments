@@ -48,6 +48,7 @@ const passes = [
   ['24 hours','€25.00'],
   ['2 days','€35.00'],
   ['3 days','€45.00'],
+  ['7 days (168 hours)','€65.00'],
   ['Young 3 days','€33.00 – Rolling Venice + ACTV 72h, for ages 6–29 subject to current conditions'],
 ];
 

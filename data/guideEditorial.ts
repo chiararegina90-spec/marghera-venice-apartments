@@ -109,7 +109,14 @@ const zh:Record<string,GuideEditorial>={};
 
 function cloneBase(lang:'de'|'fr'|'es'|'zh',slug:string,translations:{eyebrow:string;title:string;intro:string;blocks:EditorialBlock[];cultureTitle?:string;cultureText?:string;itineraryNote:string;extraTitle?:string;extraText?:string}):GuideEditorial{
  const base=en[slug]||it[slug];
- return {...base,...translations};
+ return {
+  ...base,
+  ...translations,
+  // Never expose English descriptive labels or optional callouts in other languages.
+  imageAlt:translations.imageAlt||({de:'Ansicht und Architektur: ',fr:'Vue et architecture : ',es:'Vista y arquitectura: ',zh:'景观与建筑：'} as const)[lang]+translations.title,
+  extraTitle:translations.extraTitle,
+  extraText:translations.extraText,
+ };
 }
 
 // German

@@ -12,13 +12,9 @@ export function guideStructuredData(lang:SiteLang,data:GuideData){
   const image=data.image.startsWith('http')?data.image:`${BASE}${data.image}`;
   const article={
     '@context':'https://schema.org','@type':'Article',headline:data.title,description:data.description,
-    inLanguage:hreflang[lang],dateModified:'2026-09-11',mainEntityOfPage:{'@type':'WebPage','@id':url},
+    inLanguage:hreflang[lang],mainEntityOfPage:{'@type':'WebPage','@id':url},
     author:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},
     publisher:{'@type':'Organization',name:'Marghera Venice Apartments',url:BASE},image
-  };
-  const destination={
-    '@context':'https://schema.org','@type':'TouristDestination',name:data.title,description:data.description,
-    url,inLanguage:hreflang[lang],image,containedInPlace:{'@type':'AdministrativeArea',name:'Veneto'}
   };
   const breadcrumb={
     '@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
@@ -31,5 +27,5 @@ export function guideStructuredData(lang:SiteLang,data:GuideData){
     '@context':'https://schema.org','@type':'FAQPage',inLanguage:hreflang[lang],
     mainEntity:data.faq.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))
   }:null;
-  return faq?[article,destination,breadcrumb,faq]:[article,destination,breadcrumb];
+  return faq?[article,breadcrumb,faq]:[article,breadcrumb];
 }
