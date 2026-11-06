@@ -1,7 +1,8 @@
 import type {GuideData} from '@/data/guideTypes';
 import type {SiteLang} from '@/lib/i18n';
+import {packageASlugs,packageAGuides} from '@/data/bookQrPackageA';
 
-export const bookQrGuideSlugs=['venezia-accessibile','venezia-con-qualsiasi-tempo','acquisti-autentici-venezia'] as const;
+export const bookQrGuideSlugs=['venezia-accessibile','venezia-con-qualsiasi-tempo','acquisti-autentici-venezia',...packageASlugs] as const;
 export type BookQrGuideSlug=(typeof bookQrGuideSlugs)[number];
 export function isBookQrGuideSlug(x:string):x is BookQrGuideSlug{return (bookQrGuideSlugs as readonly string[]).includes(x);}
 
@@ -58,6 +59,7 @@ const shopping:Record<SiteLang,Mini>={
 export const bookQrGuides:Record<BookQrGuideSlug,Record<SiteLang,GuideData>>={
  'venezia-accessibile':Object.fromEntries((['it','en','de','fr','es','zh'] as SiteLang[]).map(l=>[l,asGuide('venezia-accessibile',access[l])])) as Record<SiteLang,GuideData>,
  'venezia-con-qualsiasi-tempo':Object.fromEntries((['it','en','de','fr','es','zh'] as SiteLang[]).map(l=>[l,asGuide('venezia-con-qualsiasi-tempo',weather[l])])) as Record<SiteLang,GuideData>,
- 'acquisti-autentici-venezia':Object.fromEntries((['it','en','de','fr','es','zh'] as SiteLang[]).map(l=>[l,asGuide('acquisti-autentici-venezia',shopping[l])])) as Record<SiteLang,GuideData>
+ 'acquisti-autentici-venezia':Object.fromEntries((['it','en','de','fr','es','zh'] as SiteLang[]).map(l=>[l,asGuide('acquisti-autentici-venezia',shopping[l])])) as Record<SiteLang,GuideData>,
+ ...packageAGuides
 };
 export function bookQrGuide(slug:BookQrGuideSlug,lang:SiteLang){return bookQrGuides[slug][lang];}

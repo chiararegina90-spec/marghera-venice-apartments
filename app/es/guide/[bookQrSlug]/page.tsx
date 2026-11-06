@@ -7,7 +7,7 @@ export function generateStaticParams(){return bookQrGuideSlugs.map(bookQrSlug=>(
 export async function generateMetadata({params}:{params:Promise<{bookQrSlug:string}>}){
  const {bookQrSlug}=await params;if(!isBookQrGuideSlug(bookQrSlug))return {};
  const data=bookQrGuide(bookQrSlug,'es');
- return editorialMetadata({lang:'es',logicalPath:`/guide/${bookQrSlug}`,title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:'2026-11-05'});
+ return editorialMetadata({lang:'es',logicalPath:`/guide/${bookQrSlug}`,title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:(bookQrSlug==='torcello'||bookQrSlug==='museum-pass-venezia')?'2026-11-06':'2026-11-05'});
 }
 export default async function Page({params}:{params:Promise<{bookQrSlug:string}>}){
  const {bookQrSlug}=await params;if(!isBookQrGuideSlug(bookQrSlug))notFound();
