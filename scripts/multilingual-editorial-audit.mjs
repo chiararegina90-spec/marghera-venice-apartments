@@ -70,7 +70,7 @@ for(const filename of ['data/bookQrPackageBCItineraries.ts','data/bookQrPackageB
  }
 }
 const guide=read('components/GuideDirectoryIndex.tsx'),body=read('components/GuideBody.tsx');
-ok(guide.includes('...packageASlugs,...itineraryBookSlugs,...culturalBookSlugs'),'Book A-C missing in guide directory');
+ok(guide.includes("...packageASlugs.filter(slug=>slug!=='torcello'),...itineraryBookSlugs,...culturalBookSlugs")&&guide.includes("bookQrGuide('torcello',lang)"),'Book A-C or Torcello lagoon discovery missing in guide directory');
 ok(body.includes('return localePath(href,lang);'),'Localized links regressed');
 const transport=read('data/parity-pages.ts');
 for(const label of ['7 Tage (168 Stunden)','7 jours (168 heures)','7 días (168 horas)','7 天（168 小时）'])ok(transport.includes(label),'Missing ACTV fare in locale: '+label);
