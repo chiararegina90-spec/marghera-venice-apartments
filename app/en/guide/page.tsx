@@ -15,6 +15,8 @@ twitter:{card:'summary_large_image',images:['/images/home-rialto-vincenzo-landin
 const guides = [
   ['Murano','Where glass becomes art','Furnaces, workshops and centuries of glassmaking tradition.','/images/murano-glass.webp','Artistic coloured Murano glass details','murano'],
   ['Burano','Colourful houses and lace','Bright façades, small canals and an island tradition that is instantly recognisable.','/images/burano-canale.webp','Burano canal with colourful houses and boats','burano'],
+  ['Torcello','Byzantine mosaics and early Venice','How to reach Torcello from Burano, what to see and how to choose Basilica and museum tickets.','/images/venezia.webp','The Venetian lagoon: departure point for Torcello','torcello'],
+  ['Venice Museum Pass','Included venues and tickets','Compare the MUVE Museum Pass, St Mark’s museums and Island Museums passes.','/images/culture/museo-del-vetro-murano-cover.webp','Murano Glass Museum included in the MUVE circuit','museum-pass-venezia'],
   ['Venice Lido','Beaches, bicycles and the Murazzi','Venice by the sea, with beaches, cycling, the Murazzi and international events.','/images/lido-venezia-spiaggia.webp','Beach on Venice Lido overlooking the Adriatic Sea','lido-di-venezia'],
   ['Cycling in Veneto','Lagoon, hills and mountains by bike','Routes through rivers, vineyards, villages, the Dolomites and Veneto cycleways.','/images/guide-veneto-bicicletta.webp','Cyclists riding through vineyards and landscapes in Veneto','veneto-in-bicicletta'],
   ['Jesolo','Beach, sea and summer life','A day on the Adriatic coast, reachable by car or public transport from Mestre.','/images/guide-jesolo.webp','Jesolo beach on the Adriatic coast','jesolo'],
