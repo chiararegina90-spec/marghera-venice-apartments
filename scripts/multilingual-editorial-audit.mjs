@@ -13,6 +13,17 @@ for(const lang of langs){
  ok(exists(p+'journal/[eventSlug]/page.tsx'),lang+' missing events');
  ok(exists(p+'corporate/page.tsx'),lang+' missing corporate');
 }
+const itGuides=new Set([...read('data/guides.ts').matchAll(/"slug":\s*"([^"]+)"/g)].map(x=>x[1]));
+ok(itGuides.size===15,'Unexpected base travel guide count');
+for(const lang of langs.slice(1)){
+ const localized=read('data/guides-'+lang+'.ts');
+ // Distinct guide titles and internal editorial plans must be present in each language.
+ for(const slug of itGuides)ok(localized.includes("slug:'"+slug+"'"),lang+' missing travel guide '+slug);
+}
+const italianJournalDirs=fs.readdirSync('app/journal',{withFileTypes:true}).filter(e=>e.isDirectory()&&!e.name.startsWith('[')).map(e=>e.name);
+for(const lang of langs.slice(1))for(const slug of italianJournalDirs){
+ ok(exists('app/'+lang+'/journal/'+slug+'/page.tsx'),lang+' missing Journal editorial page '+slug);
+}
 const culture=read('data/culturePlaces.ts');
 const nVenice=(culture.match(/"scope": "venice"/g)||[]).length;
 const nVeneto=(culture.match(/"scope": "veneto"/g)||[]).length;
