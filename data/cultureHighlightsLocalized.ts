@@ -1,7 +1,7 @@
 // Curated, place-specific cultural highlights. A proper name or artwork title retains its original name on site signage.
 import type {CultureLang,CulturePlace} from '@/data/culturePlaces';
 const languageOrder=['en','de','fr','es','zh'] as const;
-const raw={
+const raw:Record<string,string[]> = {
   "Ponte dei Sospiri": [
     "Bridge of Sighs",
     "Seufzerbrücke",
@@ -1458,7 +1458,7 @@ const raw={
     "campanario y vistas de la laguna norte",
     "钟楼与潟湖北部景观"
   ]
-} satisfies Record<string,string[]>;
+} ;
 export function cultureFactHighlight(value:string,lang:CultureLang):string{
  if(lang==='it')return value;
  const translated=raw[value]?.[languageOrder.indexOf(lang)];
