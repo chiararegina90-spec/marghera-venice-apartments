@@ -107,7 +107,7 @@ const fr:Record<string,GuideEditorial>={};
 const es:Record<string,GuideEditorial>={};
 const zh:Record<string,GuideEditorial>={};
 
-function cloneBase(lang:'de'|'fr'|'es'|'zh',slug:string,translations:{eyebrow:string;title:string;intro:string;blocks:EditorialBlock[];cultureTitle?:string;cultureText?:string;itineraryNote:string;extraTitle?:string;extraText?:string}):GuideEditorial{
+function cloneBase(lang:'de'|'fr'|'es'|'zh',slug:string,translations:{eyebrow:string;title:string;intro:string;blocks:EditorialBlock[];imageAlt?:string;cultureTitle?:string;cultureText?:string;itineraryNote:string;extraTitle?:string;extraText?:string}):GuideEditorial{
  const base=en[slug]||it[slug];
  return {
   ...base,

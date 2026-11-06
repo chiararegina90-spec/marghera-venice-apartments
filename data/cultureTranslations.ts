@@ -1,4 +1,5 @@
 import type {BookingMode,CultureKind,CultureLang,CulturePlace,CultureScope} from './culturePlaces';
+import {culturePlaceHighlights} from '@/data/cultureHighlightsLocalized';
 import {culturePilot20261015} from './culturePilot20261015';
 
 export const cultureUi={
@@ -160,16 +161,11 @@ export function planningText(place:CulturePlace,lang:CultureLang){
 export function localizedHighlights(place:CulturePlace,lang:CultureLang){
  const pilot=culturePilot20261015[place.slug as keyof typeof culturePilot20261015]?.[lang];
  if(pilot) return [...pilot.highlights];
- if(lang==='it') return place.highlights;
- const generic={
-  en:{museum:['main collection','architecture and exhibition spaces','historical context'],monument:['architecture','history of the site','details of the building'],church:['artworks','architecture','sacred interior'],panorama:['panoramic view','historic setting','photography viewpoints']},
-  de:{museum:['Hauptsammlung','Architektur und Ausstellungsräume','historischer Kontext'],monument:['Architektur','Geschichte des Ortes','Baudetails'],church:['Kunstwerke','Architektur','sakraler Innenraum'],panorama:['Panoramablick','historische Umgebung','Fotopunkte']},
-  fr:{museum:['collection principale','architecture et espaces d’exposition','contexte historique'],monument:['architecture','histoire du lieu','détails du bâtiment'],church:['œuvres d’art','architecture','espace sacré'],panorama:['vue panoramique','cadre historique','points de vue photo']},
-  es:{museum:['colección principal','arquitectura y espacios expositivos','contexto histórico'],monument:['arquitectura','historia del lugar','detalles del edificio'],church:['obras de arte','arquitectura','interior sagrado'],panorama:['vista panorámica','entorno histórico','puntos para fotografías']},
-  zh:{museum:['主要馆藏','建筑与展览空间','历史背景'],monument:['建筑特色','地点历史','建筑细节'],church:['艺术作品','建筑特色','宗教空间'],panorama:['全景视野','历史环境','摄影视角']}
- } as const;
- return [...generic[lang][place.kind]];
+ // Every locale retains the actual artworks, collections and spaces listed in the Italian source.
+ // Named artworks, artists and authentic site names are preserved; descriptive phrases are localized.
+ return culturePlaceHighlights(place,lang);
 }
+
 export function highlightsLabel(place:CulturePlace,lang:CultureLang){
  const joiner=lang==='zh'?'、':', ';
  return localizedHighlights(place,lang).join(joiner);
