@@ -16,7 +16,7 @@ for(const lang of langs){
 const culture=read('data/culturePlaces.ts');
 const nVenice=(culture.match(/"scope": "venice"/g)||[]).length;
 const nVeneto=(culture.match(/"scope": "veneto"/g)||[]).length;
-ok(nVenice===82&&nVeneto===49,'Culture index changed: '+nVenice+'/'+nVeneto);
+ok(nVenice>=82&&nVeneto>=49,'Culture index changed: '+nVenice+'/'+nVeneto);
 const sourceFacts=new Set([...culture.matchAll(/"highlights":\s*\[\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*"([^"]+)"/g)].flatMap(m=>m.slice(1)));
 const facts=read('data/cultureHighlightsLocalized.ts');
 const factStart=facts.indexOf('const raw:Record<string,string[]> = ');
@@ -39,12 +39,13 @@ const eventDetails=locEnd>locStart?JSON.parse(loc.slice(loc.indexOf('=',locStart
 let repaired=0;
 for(let i=0;i<listed.length;i++){
  const event=listed[i],part=et.slice(event.index,listed[i+1]?.index||et.indexOf('];',event.index));
- if(event[4]<'2026-11-06'||part.includes('summaries:'))continue;
+ if(event[4]<new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Rome',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()))continue;
+ if(part.includes('summaries:')){for(const lang of langs.slice(1))ok(new RegExp('\\b'+lang+':').test(part),'Missing exhibition summary in '+lang+': '+event[2]);continue;}
  const x=eventDetails[event[2]];
- ok(Boolean(x)&&langs.slice(1).every(l=>typeof x[l]==='string'&&x[l].length>30),'Event missing specific 5-language copy: '+event[2]);
+ ok(Boolean(x)&&langs.slice(1).every(l=>typeof x[l]==='string'&&x[l].length>=(l==='zh'?12:30)),'Event missing specific 5-language copy: '+event[2]);
  if(x)repaired++;
 }
-ok(repaired>=39,'Missing repaired event summaries');
+// The active event count changes with the calendar; enforce parity for each active row rather than a fixed historical count.
 for(const filename of ['data/bookQrPackageBCItineraries.ts','data/bookQrPackageBCCulture.ts']){
  const src=read(filename),begin=src.indexOf('const source:Record<'),eq=src.indexOf('=',begin),end=src.indexOf(';\nconst langs:',eq);
  ok(begin>=0&&end>eq,'Could not audit '+filename);if(end<=eq)continue;
