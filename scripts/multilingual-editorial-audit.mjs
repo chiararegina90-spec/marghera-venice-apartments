@@ -79,5 +79,20 @@ ok(read('app/come-raggiungere-venezia/page.tsx').includes('7 giorni'),'IT weekly
 const editorial=read('data/guideEditorial.ts');
 ok(editorial.includes('extraTitle:translations.extraTitle')&&editorial.includes('extraText:translations.extraText'),'English editorial callouts could leak');
 console.log('Multilingual SEO audit: 6 languages; '+nVenice+' Venice + '+nVeneto+' Veneto places; '+Object.keys(dictionary).length+' curated fact translations; '+repaired+' current event listings repaired.');
+
+// Book cross-reference invariants: preserve the 17 printed URLs and prohibit old Frari claims.
+const bookMap=read('docs/book-qr-17-capitoli.md');
+for(let i=1;i<=17;i++){
+ const num=String(i).padStart(2,'0');
+ ok(bookMap.includes('| '+num+' |'),'Missing chapter QR mapping '+num);
+}
+const places=read('data/culturePlaces.ts');
+const frari=places.split('"slug": "basilica-frari"')[1]?.split('\n  },')[0]||'';
+ok(frari.includes('€8 intero')&&!frari.includes('Ingresso libero secondo nuovo sistema'),'Frari tourist ticket reverted to incorrect free admission');
+const directory=read('components/GuideDirectoryIndex.tsx');
+ok(directory.includes("bookQrGuide('torcello',lang)")&&directory.includes("slug!=='torcello'"),'Torcello must appear once in the lagoon directory');
+const museum=places.split('"slug": "muvec-mestre"')[1]?.split('\n  },')[0]||'';
+ok(museum.includes('Centro Culturale Candiani')&&!museum.includes('"Forte Marghera"'),'MUVEC location regressed');
+
 if(problems.length){problems.forEach(p=>console.error('FAIL '+p));process.exit(1)}
 console.log('PASS six-language content parity and regression checks');
