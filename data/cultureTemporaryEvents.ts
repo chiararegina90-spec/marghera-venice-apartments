@@ -1,3 +1,4 @@
+import {localizedTemporaryEventDetail} from '@/data/cultureTemporaryDetailsLocalized';
 import type {CultureLang} from '@/data/culturePlaces';
 import {romeToday} from '@/lib/romeDate';
 
@@ -103,6 +104,8 @@ export function cultureTemporaryEventStatus(event:CultureTemporaryEvent,referenc
 export function cultureTemporarySummary(event:CultureTemporaryEvent,lang:CultureLang){
   if(event.summaries?.[lang]) return event.summaries[lang]!;
   if(lang==='it') return event.summaryIt;
+  const specific=localizedTemporaryEventDetail(event.title,lang);
+  if(specific) return specific;
   return lang==='en'? `${event.title} is part of the venue’s current or upcoming temporary programme; dates and details are based on the official source.`
    :lang==='de'? `${event.title} gehört zum aktuellen oder kommenden Sonderprogramm; Termine und Angaben basieren auf der offiziellen Quelle.`
    :lang==='fr'? `${event.title} fait partie de la programmation temporaire actuelle ou à venir ; dates et détails proviennent de la source officielle.`
