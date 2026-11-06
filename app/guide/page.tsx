@@ -29,6 +29,22 @@ const guides = [
     "href": "/guide/burano"
   },
   {
+    "title": "Torcello",
+    "subtitle": "Mosaici, storia e laguna",
+    "text": "Come arrivare da Burano, cosa visitare e quali biglietti servono per Basilica e Museo.",
+    "image": "/images/venezia.webp",
+    "alt": "Venezia e la sua laguna: escursione a Torcello",
+    "href": "/guide/torcello"
+  },
+  {
+    "title": "Museum Pass Venezia",
+    "subtitle": "Musei inclusi e biglietti",
+    "text": "Confronta Museum Pass, Musei di Piazza San Marco e Musei delle Isole prima di acquistare.",
+    "image": "/images/culture/museo-del-vetro-murano-cover.webp",
+    "alt": "Museo del Vetro di Murano compreso nel circuito MUVE",
+    "href": "/guide/museum-pass-venezia"
+  },
+  {
     "title": "Lido di Venezia",
     "subtitle": "Spiagge, bici e Murazzi",
     "text": "Il lato balneare di Venezia, tra spiagge, biciclette, Murazzi ed eventi internazionali.",
