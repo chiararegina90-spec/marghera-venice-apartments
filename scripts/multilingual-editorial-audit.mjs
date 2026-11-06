@@ -89,6 +89,7 @@ for(let i=1;i<=17;i++){
 const places=read('data/culturePlaces.ts');
 const frari=places.split('"slug": "basilica-frari"')[1]?.split('\n  },')[0]||'';
 ok(frari.includes('€8 intero')&&!frari.includes('Ingresso libero secondo nuovo sistema'),'Frari tourist ticket reverted to incorrect free admission');
+ok(!read('data/cultureTranslations.ts').includes('Ingresso libero secondo nuovo sistema ecclesiastico 2026'),'Stale false free-access translation still in dictionary');
 const directory=read('components/GuideDirectoryIndex.tsx');
 ok(directory.includes("bookQrGuide('torcello',lang)")&&directory.includes("slug!=='torcello'"),'Torcello must appear once in the lagoon directory');
 const museum=places.split('"slug": "muvec-mestre"')[1]?.split('\n  },')[0]||'';
