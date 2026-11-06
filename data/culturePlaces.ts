@@ -424,7 +424,7 @@ export const culturePlaces:CulturePlace[] = [
     "highlights": [
       "arte dal 1948",
       "mostre contemporanee",
-      "Forte Marghera"
+      "Centro Culturale Candiani"
     ],
     "commonsQuery": "MUVEC Casa delle Contemporaneita Mestre",
     "family": true,
@@ -434,7 +434,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "check",
     "officialUrl": "https://muvemestre.visitmuve.it/muvec/",
     "mapsQuery": "MUVEC – Casa delle Contemporaneità, Mestre, Italia",
-    "lastVerified": "2026-10-30"
+    "lastVerified": "2026-11-06"
   },
   {
     "slug": "museo-storico-navale",
@@ -654,11 +654,11 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "M9 Museum Mestre Venice",
     "family": true,
     "panorama": false,
-    "price": "Verifica tariffa ufficiale",
+    "price": "Mostra permanente: €12 intero · €8 ridotto",
     "hours": "Mer–ven 10:00–18:00. Sab–dom 10:00–19:00. Chiuso lunedì e martedì.",
     "booking": "recommended",
-    "officialUrl": "https://www.m9museum.it/",
-    "lastVerified": "2026-11-03",
+    "officialUrl": "https://www.m9museum.it/visita-m9/",
+    "lastVerified": "2026-11-06",
     "mapsQuery": "M9 – Museo del ’900, Mestre, Italia"
   },
   {
@@ -1139,10 +1139,11 @@ export const culturePlaces:CulturePlace[] = [
     "commonsQuery": "Frari Basilica Venice interior",
     "family": true,
     "panorama": false,
-    "price": "Ingresso libero secondo nuovo sistema ecclesiastico 2026",
-    "hours": "Lun–sab secondo apertura; culto prioritario",
+    "price": "€8 intero · €5 over 65 · €3 studenti 12–29 · esenzioni previste",
+    "hours": "Orari turistici da verificare: celebrazioni e culto possono modificare le visite",
     "booking": "not_required",
-    "officialUrl": "https://www.basilicadeifrari.it/",
+    "lastVerified": "2026-11-06",
+    "officialUrl": "https://www.basilicadeifrari.it/biglietto-di-ingresso/",
     "mapsQuery": "Basilica di Santa Maria Gloriosa dei Frari, Venezia, Italia"
   },
   {

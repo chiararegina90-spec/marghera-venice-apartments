@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import CulturePracticalCard from '@/components/CulturePracticalCard';
+import CultureBookVisitNote from '@/components/CultureBookVisitNote';
 import CultureCard from '@/components/CultureCard';
 import CultureTemporaryEvents from '@/components/CultureTemporaryEvents';
 import CultureVisitorNotices from '@/components/CultureVisitorNotices';
@@ -72,6 +73,7 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      </div>
    </section>
 
+   <CultureBookVisitNote slug={place.slug} lang={lang}/>
    <section className="bg-white py-7 sm:py-9"><div className="mx-auto max-w-7xl px-5 lg:px-8">
      <CulturePracticalCard place={place} lang={lang} className="lg:hidden"/>
    </div></section>
