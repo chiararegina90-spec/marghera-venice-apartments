@@ -41,13 +41,15 @@ const paradaCrossings:[string,string][]=[
  ['Carbon','lun–ven 09:00–12:00 · chiuso sab/festivi']
 ];
 
+const bikeBookExtras:Record<SiteLang,[string,string]>={"it":["Lido in bici: dal terminal Santa Maria Elisabetta puoi esplorare Malamocco, i Murazzi e gli Alberoni, modulando la distanza secondo il tempo e le energie.","Pellestrina: San Pietro in Volta, i borghi dei pescatori, i Murazzi legati all'Acqua Granda del 1966 e l'oasi di Ca' Roman. Nell'area naturale segui i sentieri segnalati e non disturbare la fauna."],"en":["Lido by bike: start near Santa Maria Elisabetta and explore Malamocco, the Murazzi and Alberoni at your own pace.","Pellestrina: San Pietro in Volta, fishing villages, the 1966 Acqua Granda history of the Murazzi and the Ca' Roman nature area. Stay on marked paths and protect wildlife."],"de":["Lido per Rad: ab Santa Maria Elisabetta nach Malamocco, zu den Murazzi und Alberoni, je nach Zeit und Kraft.","Pellestrina: San Pietro in Volta, Fischerdörfer, Murazzi und die Acqua Granda von 1966 sowie das Naturschutzgebiet Ca' Roman. Markierte Wege nutzen und Tiere nicht stören."],"fr":["Lido à vélo : depuis Santa Maria Elisabetta, découvrez Malamocco, les Murazzi et Alberoni selon votre rythme.","Pellestrina : San Pietro in Volta, villages de pêcheurs, Murazzi liés à la grande crue de 1966 et réserve de Ca' Roman. Suivez les sentiers et respectez la faune."],"es":["Lido en bici: desde Santa Maria Elisabetta recorre Malamocco, los Murazzi y Alberoni según tu ritmo.","Pellestrina: San Pietro in Volta, pueblos de pescadores, Murazzi relacionados con la Acqua Granda de 1966 y la reserva Ca' Roman. Sigue los senderos y respeta la fauna."],"zh":["Lido 骑行：从 Santa Maria Elisabetta 附近出发，经 Malamocco、Murazzi 到 Alberoni，按时间与体力调整距离。","Pellestrina：San Pietro in Volta、渔村、与1966年大洪水有关的 Murazzi，以及 Ca' Roman 保护区。请走标识步道并保护野生动物。"]};
+
 export function LagoonBikeBookNote({lang}:{lang:SiteLang}){
  const t=bike[lang];
  return <section className="border-y border-gold/30 bg-[#fffaf0] py-14 sm:py-16"><div className="mx-auto max-w-5xl px-5 lg:px-8">
   <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{t.eyebrow}</p><h2 className="mt-3 font-serif text-4xl text-navy">{t.title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{t.intro}</p>
-  <div className="mt-7 grid gap-3 sm:grid-cols-2">{t.items.map(x=><p key={x} className="rounded-2xl bg-white p-5 leading-7 text-slate-700 shadow-sm">✓ {x}</p>)}</div>
+  <div className="mt-7 grid gap-3 sm:grid-cols-2">{[...t.items,...bikeBookExtras[lang]].map(x=><p key={x} className="rounded-2xl bg-white p-5 leading-7 text-slate-700 shadow-sm">✓ {x}</p>)}</div>
   <div className="mt-6 rounded-2xl border border-gold/35 bg-white p-5"><strong className="text-navy">{ferryFare[lang].title} · </strong><span className="text-slate-600">{ferryFare[lang].text}</span></div>
-  <div className="mt-7 flex flex-wrap gap-3"><a href="https://actv.avmspa.it/it/node/5151" target="_blank" rel="noopener noreferrer" className="rounded-full bg-navy px-5 py-3 font-bold text-white">{t.official} ↗</a>{t.booking&&<a href="https://prenotazionebici.actv.it/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-5 py-3 font-bold text-navy">{t.booking} ↗</a>}<Link href={localePath('/guide/venezia-con-qualsiasi-tempo',lang)} className="rounded-full bg-gold px-5 py-3 font-bold text-navy">{t.cta} →</Link></div>
+  <div className="mt-7 flex flex-wrap gap-3"><a href="https://actv.avmspa.it/it/node/5151" target="_blank" rel="noopener noreferrer" className="rounded-full bg-navy px-5 py-3 font-bold text-white">{t.official} ↗</a>{t.booking&&<a href="https://prenotazionebici.actv.it/" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-5 py-3 font-bold text-navy">{t.booking} ↗</a>}<a href="https://www.comune.venezia.it/it/content/oasi-caroman" target="_blank" rel="noopener noreferrer" className="rounded-full border border-navy px-5 py-3 font-bold text-navy">Ca' Roman ↗</a><Link href={localePath('/guide/venezia-con-qualsiasi-tempo',lang)} className="rounded-full bg-gold px-5 py-3 font-bold text-navy">{t.cta} →</Link></div>
  </div></section>;
 }
 
@@ -63,11 +65,14 @@ export function GondolaParadaBookNote({lang}:{lang:SiteLang}){
  </div></section>;
 }
 
+const foodBCLinks:Record<SiteLang,[string,string]>={"it":["Cosa mangiare a Venezia","Ristoranti: prezzi e consigli"],"en":["What to eat in Venice","Restaurants: prices and tips"],"de":["Was essen in Venedig","Restaurantpreise und Tipps"],"fr":["Que manger à Venise","Restaurants : prix et conseils"],"es":["Qué comer en Venecia","Restaurantes: precios y consejos"],"zh":["威尼斯传统美食","威尼斯餐厅消费指南"]};
+
 export function FoodBookPractical({lang}:{lang:SiteLang}){
  const t=food[lang];
  return <section className="border-y border-[#e1d5c1] bg-white"><div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-16">
   <p className="text-xs font-bold uppercase tracking-[.2em] text-[#a47b34]">{t.eyebrow}</p><h2 className="mt-3 max-w-4xl font-serif text-3xl font-semibold text-[#17324a] md:text-4xl">{t.title}</h2><p className="mt-4 max-w-4xl leading-7 text-[#59646d]">{t.intro}</p>
   <div className="mt-8 grid gap-4 md:grid-cols-2">{t.cards.map(([title,text])=><article key={title} className="rounded-[24px] border border-[#e2dbcf] bg-[#fbfaf7] p-6"><h3 className="font-serif text-2xl text-[#17324a]">{title}</h3><p className="mt-3 leading-7 text-[#657078]">{text}</p></article>)}</div>
   <p className="mt-6 text-sm leading-6 text-[#766c60]">{t.note}</p>
+  <div className="mt-7 flex flex-wrap gap-3"><Link href={localePath('/guide/cosa-mangiare-a-venezia',lang)} className="rounded-full bg-navy px-5 py-3 font-bold text-white">{foodBCLinks[lang][0]} →</Link><Link href={localePath('/guide/mangiare-a-venezia-senza-sorprese',lang)} className="rounded-full border border-navy px-5 py-3 font-bold text-navy">{foodBCLinks[lang][1]} →</Link></div>
  </div></section>;
 }
