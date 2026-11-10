@@ -1,8 +1,8 @@
 // Event-specific descriptions translated into each supported language.
 // Titles use the exhibition's published name; descriptions preserve the curatorial topic.
 import type {CultureLang} from '@/data/culturePlaces';
-const details:Record<string,Partial<Record<CultureLang,string>>> =
-{
+const details:Record<string,Partial<Record<CultureLang,string>>> = {
+
   "SPIRAL ECONOMY. Charrière and Canova": {
     "en": "Julian Charrière's contemporary work enters into dialogue with Antonio Canova throughout Museo Correr.",
     "de": "Julian Charrières Gegenwartskunst tritt im Museo Correr in Dialog mit Antonio Canova.",
