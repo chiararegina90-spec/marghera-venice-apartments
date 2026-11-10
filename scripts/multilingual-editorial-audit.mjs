@@ -95,5 +95,26 @@ ok(directory.includes("bookQrGuide('torcello',lang)")&&directory.includes("slug!
 const museum=places.split('"slug": "muvec-mestre"')[1]?.split('\n  },')[0]||'';
 ok(museum.includes('Centro Culturale Candiani')&&!museum.includes('"Forte Marghera"'),'MUVEC location regressed');
 
+
+// International events added on 10 November 2026 must retain six complete editorial editions.
+const official=read('data/journalNovember2026Official.ts');
+const officialStart=official.indexOf('export const officialNovemberEvents:');
+const officialEq=official.indexOf('=',officialStart);
+const officialEnd=official.lastIndexOf(';');
+const officialData=JSON.parse(official.slice(officialEq+1,officialEnd));
+for(const lang of langs){
+ for(const slug of ['players-m9-mestre-2026','festa-della-sensa-2027']){
+  const entry=officialData[lang]?.[slug];
+  ok(Boolean(entry),lang+' missing new 2026/27 journal article: '+slug);
+  if(entry){
+   ok(entry.sections.length>=5,lang+' missing sections: '+slug);
+   ok(entry.faq.length>=3,lang+' missing FAQ: '+slug);
+   ok(entry.startDate&&entry.endDate,lang+' missing confirmed event dates: '+slug);
+  }
+ }
+}
+ok(read('data/event-calendar.ts').includes("'festa-della-sensa-2027'"),'Sensa absent from calendar');
+ok(read('data/cultureTemporaryEvents.ts').includes("title:'Omaggio a Guido Sartorelli'"),'New verified MUVE exhibition missing');
+
 if(problems.length){problems.forEach(p=>console.error('FAIL '+p));process.exit(1)}
 console.log('PASS six-language content parity and regression checks');
