@@ -7,7 +7,7 @@
     "build": "npm run typecheck && npm run audit:site && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "audit:site": "node scripts/site-audit.mjs && node scripts/multilingual-editorial-audit.mjs"
+    "audit:site": "node scripts/site-audit.mjs && node scripts/multilingual-editorial-audit.mjs && node scripts/journal-language-audit.mjs"
   },
   "dependencies": {
     "next": "^16.2.12",
