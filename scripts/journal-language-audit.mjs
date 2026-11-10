@@ -117,6 +117,12 @@ for(const [label,rawSource] of allSources){
 }
 for(const x of identical)errors.push('VERBATIM_SOURCE_LOCALE '+x);
 for(const x of wrongScript)errors.push('CHINESE_SCRIPT '+x);
+// Protect the language of Journal related links across the shared templates.
+for(const filename of ['components/AuditedPrimaryJournalArticle.tsx','components/AuditedLocalizedJournalArticle.tsx','components/LocalizedRich.tsx']){
+ const code=read(filename);
+ check(code.includes('href:localePath(href,lang)')||code.includes('href:localePath(href,lang)')||code.includes('href.startsWith("http")?href:localePath(href,lang)'), 'Journal related links not localized: '+filename);
+}
+check(read('components/EventJournalArticle.tsx').includes('localePath(data.internalLink.href,lang)'), 'Dynamic article inline link not localized');
 const localizedRoutes=langs.map(l=>l==='it'?'app/journal/':'app/'+l+'/journal/');
 const routeDirs=fs.readdirSync(localizedRoutes[0],{withFileTypes:true}).filter(f=>f.isDirectory()&&!f.name.startsWith('[')).map(f=>f.name);
 for(const l of langs.slice(1))for(const slug of routeDirs)check(fs.existsSync('app/'+l+'/journal/'+slug+'/page.tsx'),'Missing local Journal route '+l+'/'+slug);
