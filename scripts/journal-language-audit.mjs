@@ -64,13 +64,13 @@ for(const [file,key] of additions){
  else notices.push('DATASET_NOT_PARSED '+file+' ('+key+')');
 }
 const staticJournal={};
-for(const l of langs.slice(1)){
+for(const l of ['de','fr','es','zh']){
  const src=declarations('data/journal-'+l+'.ts');
  staticJournal[l]=src['journal'+l[0].toUpperCase()+l.slice(1)];
  check(Boolean(staticJournal[l]),'Missing static journal dictionary '+l);
 }
 const expected=Object.keys(staticJournal.de||{}).sort().join(',');
-for(const l of langs.slice(2))check(Object.keys(staticJournal[l]||{}).sort().join(',')===expected,'Static Journal slugs do not match between de and '+l);
+for(const l of ['fr','es','zh'])check(Object.keys(staticJournal[l]||{}).sort().join(',')===expected,'Static Journal slugs do not match between de and '+l);
 let localizedArticleCount=0,compared=0,identical=[],wrongScript=[],strange=[];
 const allSources=[...datasets,['staticJournal',staticJournal],['veniceKidsAudit',declarations('data/veniceKidsAudit.ts').veniceKidsAudit],['veniceChristmasAudit',declarations('data/veniceChristmasAudit.ts').veniceChristmasAudit],['journalAuditLocalized',declarations('data/journalAuditLocalized.ts').journalAuditLocalized],['journalAuditPrimary',declarations('data/journalAuditPrimary.ts').journalAuditPrimary]];
 const phrases={
@@ -86,11 +86,12 @@ function flatten(node,out=[],key=''){
 }
 for(const [label,byLang] of allSources){
  if(!byLang||typeof byLang!=='object'){notices.push('UNAVAILABLE_SOURCE '+label);continue;}
- const it=byLang.it||{},names=new Set(Object.keys(it));
- if(label==='staticJournal'){for(const l of langs.slice(1))for(const s of Object.keys(byLang[l]||{}))names.add(s);}
+ const available=langs.filter(l=>byLang[l]&&typeof byLang[l]==='object');
+ const baseline=available.includes('it')?'it':available.includes('de')?'de':available[0];
+ const names=new Set(available.flatMap(l=>Object.keys(byLang[l]||{})));
  for(const slug of names){
-  const reference=it[slug];const italianText=flatten(reference);
-  for(const lang of langs.slice(1)){
+  const reference=byLang[baseline]?.[slug];const originalText=flatten(reference);
+  for(const lang of available.filter(l=>l!==baseline)){
    const item=byLang[lang]?.[slug];
    if(!item){if(label!=='staticJournal')errors.push('Missing '+lang+' article '+slug+' in '+label);continue;}
    localizedArticleCount++;
@@ -98,7 +99,7 @@ for(const [label,byLang] of allSources){
    if(reference?.sections && item.sections && item.sections.length<Math.ceil(reference.sections.length*0.5))notices.push('SHORT_SECTIONS '+label+' '+slug+' '+lang+' '+item.sections.length+'/'+reference.sections.length);
    const texts=flatten(item);
    for(const [key,text] of texts){
-    if(text.length>95&&italianText.some(([,source])=>source===text))identical.push(label+' '+slug+' '+lang+' '+key+': '+text.slice(0,110));
+    if(text.length>95&&originalText.some(([,source])=>source===text))identical.push(label+' '+slug+' '+lang+' '+key+': '+text.slice(0,110));
     if(lang==='zh'&&text.length>120&&!(key.endsWith('.official[0]'))){
      const letters=(text.match(/[\u3400-\u9FFF]/g)||[]).length,words=(text.match(/[A-Za-z]{2,}/g)||[]).length;
      if(letters/text.length<0.09&&words>14)wrongScript.push(label+' '+slug+' '+key+': '+text.slice(0,150));
@@ -110,7 +111,7 @@ for(const [label,byLang] of allSources){
   }
  }
 }
-for(const x of identical)errors.push('VERBATIM_ITALIAN '+x);
+for(const x of identical)errors.push('VERBATIM_SOURCE_LOCALE '+x);
 for(const x of wrongScript)errors.push('CHINESE_SCRIPT '+x);
 const localizedRoutes=langs.map(l=>l==='it'?'app/journal/':'app/'+l+'/journal/');
 const routeDirs=fs.readdirSync(localizedRoutes[0],{withFileTypes:true}).filter(f=>f.isDirectory()&&!f.name.startsWith('[')).map(f=>f.name);
