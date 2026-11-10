@@ -1,7 +1,8 @@
+import Vogalonga2027EventSchema from '@/components/Vogalonga2027EventSchema';
 import type {Metadata} from 'next';
 import {languageAlternates} from '@/lib/i18n';
 import {LocalizedJournalArticle} from '@/components/LocalizedRich';
 import {journalDe} from '@/data/journal-de';
 const data=journalDe['vogalonga-2027'];
 export const metadata:Metadata={title:data.title,description:data.description,alternates:languageAlternates('/de/journal/vogalonga-2027'),openGraph:{type:'article',images:[data.image]},twitter:{card:'summary_large_image',images:[data.image]}};
-export default function Page(){return <LocalizedJournalArticle lang="de" data={data} tipLabel="Tipp von Marghera Venice Apartments" officialLabel="Offizielle Informationen" backLabel="Zurück zum Journal"/>}
+export default function Page(){return <><Vogalonga2027EventSchema lang="de"/><LocalizedJournalArticle lang="de" data={data} tipLabel="Tipp von Marghera Venice Apartments" officialLabel="Offizielle Informationen" backLabel="Zurück zum Journal"/>}</>
