@@ -7,8 +7,8 @@ import EditorialStayCta from '@/components/EditorialStayCta';
 import JournalSchemaBundle from '@/components/JournalSchemaBundle';
 
 export const metadata:Metadata={
-  title:'Vogalonga Venezia 2027: la grande festa della voga in laguna',
-  description:'Scopri la Vogalonga di Venezia: 30 km non competitivi tra laguna, isole e Canal Grande, migliaia di vogatori e informazioni utili per l’edizione 2027.',
+  title:'Vogalonga Venezia 2027: 16 maggio, partenza alle 9:00',
+  description:'Vogalonga Venezia 2027: domenica 16 maggio, partenza prevista alle ore 9:00 e percorso non competitivo di circa 30 km in laguna.',
   alternates:{canonical:'/journal/vogalonga-2027',languages:{'it-IT':'/journal/vogalonga-2027','en-GB':'/en/journal/vogalonga-2027','de-DE':'/de/journal/vogalonga-2027','fr-FR':'/fr/journal/vogalonga-2027','es-ES':'/es/journal/vogalonga-2027','zh-CN':'/zh/journal/vogalonga-2027','x-default':'/journal/vogalonga-2027'}},
   openGraph:{type:'article',images:['/images/journal-vogalonga-2027-cover.webp']},twitter:{card:'summary_large_image',images:['/images/journal-vogalonga-2027-cover.webp']}
 };
@@ -18,7 +18,7 @@ const sections=[
  ['Migliaia di vogatori e imbarcazioni','Il sito ufficiale racconta numeri impressionanti: circa 8.000 vogatori e 2.000 imbarcazioni. Possono partecipare barche a remi di pesi, dimensioni e numero di vogatori differenti, creando una grande flotta internazionale e coloratissima.'],
  ['Una festa che parla anche di sostenibilità','La Vogalonga rende omaggio alle tecniche di navigazione del passato e promuove l’utilizzo delle imbarcazioni a remi come forma di mobilità rispettosa della laguna. È anche un richiamo alla salvaguardia di Venezia dagli effetti del moto ondoso.'],
  ['Dove vederla se non partecipi','Anche da spettatori è uno spettacolo magnifico. Diversi punti della laguna permettono di intercettare il passaggio delle barche, ma l’ingresso della grande flotta nel Canal Grande è uno dei momenti più suggestivi. Il giorno dell’evento controlla sempre eventuali modifiche alla navigazione e al trasporto pubblico.'],
- ['Edizione 2027','La prossima edizione è prevista nel mese di maggio 2027. La data esatta, le iscrizioni, il percorso definitivo e le disposizioni organizzative vanno verificati sul sito ufficiale della Vogalonga, che al momento riporta ancora le informazioni della 50ª edizione del 24 maggio 2026.']
+ ['Edizione 2027','La 51ª Vogalonga è confermata per domenica 16 maggio 2027, con partenza prevista alle ore 9:00. Venezia Unica descrive un percorso di circa 30 chilometri tra il bacino di San Marco, i canali di Murano, il Rio di Cannaregio e il Canal Grande. Per iscrizioni, eventuali limitazioni alla navigazione e modifiche ACTV controlla gli avvisi aggiornati dell'organizzazione e dei trasporti.']
 ];
 export default function Article(){return <><Header/><main><article className="editorial-page">
 <JournalSchemaBundle lang="it" logicalPath="/journal/vogalonga-2027" title="Vogalonga a Venezia: la grande festa della voga in laguna" description="Scopri la Vogalonga di Venezia: 30 km non competitivi tra laguna, isole e Canal Grande, migliaia di vogatori e informazioni utili per l’edizione 2027." image="/images/journal-vogalonga-2027-cover.webp"/>
