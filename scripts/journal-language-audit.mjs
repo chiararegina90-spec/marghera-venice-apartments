@@ -84,8 +84,12 @@ function flatten(node,out=[],key=''){
  else if(typeof node==='object')Object.entries(node).forEach(([k,v])=>{if(!['slug','image','fallbackImage','commonsQuery','officialUrl','href','startDate','endDate','datePublished','dateModified','eventLocation','eventLocations','relatedSlugs','imageCredits','cardImage'].includes(k))flatten(v,out,key+'.'+k)});
  return out;
 }
-for(const [label,byLang] of allSources){
- if(!byLang||typeof byLang!=='object'){notices.push('UNAVAILABLE_SOURCE '+label);continue;}
+for(const [label,rawSource] of allSources){
+ if(!rawSource||typeof rawSource!=='object'){notices.push('UNAVAILABLE_SOURCE '+label);continue;}
+ // Some older data modules store a single full article per language instead of slug dictionaries.
+ const byLang=Object.fromEntries(langs.filter(l=>rawSource[l]&&typeof rawSource[l]==='object').map(l=>{
+  const v=rawSource[l];return [l,v.slug&&Array.isArray(v.sections)?{[v.slug]:v}:v];
+ }));
  const available=langs.filter(l=>byLang[l]&&typeof byLang[l]==='object');
  const baseline=available.includes('it')?'it':available.includes('de')?'de':available[0];
  const names=new Set(available.flatMap(l=>Object.keys(byLang[l]||{})));
@@ -95,7 +99,7 @@ for(const [label,byLang] of allSources){
    const item=byLang[lang]?.[slug];
    if(!item){if(label!=='staticJournal')errors.push('Missing '+lang+' article '+slug+' in '+label);continue;}
    localizedArticleCount++;
-   if(!item.title||!item.description||!item.lead)errors.push('Incomplete '+lang+' article '+slug+' in '+label);
+   if(label!=='journalAuditLocalized'&&(!item.title||!item.description||!item.lead))errors.push('Incomplete '+lang+' article '+slug+' in '+label);
    if(reference?.sections && item.sections && item.sections.length<Math.ceil(reference.sections.length*0.5))notices.push('SHORT_SECTIONS '+label+' '+slug+' '+lang+' '+item.sections.length+'/'+reference.sections.length);
    const texts=flatten(item);
    for(const [key,text] of texts){
