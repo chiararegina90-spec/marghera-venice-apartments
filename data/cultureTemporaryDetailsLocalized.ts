@@ -2,6 +2,7 @@
 // Titles use the exhibition's published name; descriptions preserve the curatorial topic.
 import type {CultureLang} from '@/data/culturePlaces';
 const details:Record<string,Partial<Record<CultureLang,string>>> = {
+
   "SPIRAL ECONOMY. Charrière and Canova": {
     "en": "Julian Charrière's contemporary work enters into dialogue with Antonio Canova throughout Museo Correr.",
     "de": "Julian Charrières Gegenwartskunst tritt im Museo Correr in Dialog mit Antonio Canova.",
@@ -52,11 +53,11 @@ const details:Record<string,Partial<Record<CultureLang,string>>> = {
     "zh": "佩萨罗宫通过青铜、马赛克、绘画及未曾展出的作品展现詹马里亚·波滕扎与威尼斯的联系。"
   },
   "Livio Ceschin. Nel solco del tempo": {
-    "en": "Ca' Pesaro presents the graphic art and printmaking research of Livio Ceschin.",
-    "de": "Ca' Pesaro widmet Livio Ceschins Grafik und Druckkunst eine eigene Ausstellung.",
-    "fr": "Ca' Pesaro présente le travail graphique et la gravure de Livio Ceschin.",
-    "es": "Ca' Pesaro presenta la investigación gráfica y el grabado de Livio Ceschin.",
-    "zh": "佩萨罗宫展示利维奥·切斯钦在绘画图形与版画方面的创作研究。"
+    "en": "At Ca’ Pesaro until 9 February 2027, 15 etchings and drypoints in Room 1 on the first floor explore Livio Ceschin's 35 years of printmaking; admission follows the museum's normal ticket.",
+    "de": "In Saal 1 im ersten Stock von Ca’ Pesaro sind bis 9. Februar 2027 fünfzehn Radierungen und Kaltnadelarbeiten von Livio Ceschin zu sehen, die 35 Jahre Druckgrafik zeigen. Eintritt mit dem Museumsticket.",
+    "fr": "Jusqu'au 9 février 2027 à Ca’ Pesaro (salle 1, premier étage), quinze eaux-fortes et pointes sèches retracent trente-cinq ans de gravure de Livio Ceschin ; billet ordinaire du musée.",
+    "es": "En la sala 1 del primer piso de Ca’ Pesaro, hasta el 9 de febrero de 2027, quince aguafuertes y puntas secas resumen 35 años de trabajo gráfico de Livio Ceschin. Se visita con la entrada del museo.",
+    "zh": "佩萨罗宫一层第1展厅展出利维奥·切斯钦15件蚀刻画与干刻版画，回顾35年的版画实践，持续至2027年2月9日；使用博物馆普通门票参观。"
   },
   "Erwin Wurm. Dreamers": {
     "en": "Museo Fortuny hosts Italy's first major retrospective dedicated to Austrian sculptor Erwin Wurm.",
@@ -101,11 +102,11 @@ const details:Record<string,Partial<Record<CultureLang,string>>> = {
     "zh": "安东·朱利奥·奥诺弗里的摄影捕捉佩莱斯特里纳在潟湖、光线与宁静之间的狭长岛屿景观。"
   },
   "Luca Rento. Prima che tutto svanisca": {
-    "en": "Luca Rento's solo exhibition spans 25 years of video work about time, change and disappearance.",
-    "de": "Luca Rentos Einzelausstellung umfasst 25 Jahre Videoarbeiten über Zeit, Wandel und Verschwinden.",
-    "fr": "L'exposition personnelle de Luca Rento parcourt vingt-cinq ans de vidéo sur le temps, le changement et la disparition.",
-    "es": "La exposición individual de Luca Rento recorre 25 años de vídeo sobre tiempo, cambio y desaparición.",
-    "zh": "卢卡·伦托的个展回顾25年关于时间、变化与消逝的视频创作。"
+    "en": "At Fondazione Querini Stampalia until 17 January 2027, Alfredo Cramerotti curates Luca Rento's solo exhibition of video works exploring time, change and disappearance across 25 years.",
+    "de": "Bis 17. Januar 2027 zeigt die Fondazione Querini Stampalia eine von Alfredo Cramerotti kuratierte Einzelausstellung mit Videoarbeiten von Luca Rento über Zeit, Wandel und Verschwinden aus 25 Jahren.",
+    "fr": "Jusqu'au 17 janvier 2027, la Fondazione Querini Stampalia présente l'exposition personnelle de Luca Rento, conçue par Alfredo Cramerotti : vingt-cinq années de vidéo sur le temps et la disparition.",
+    "es": "Hasta el 17 de enero de 2027, la Fondazione Querini Stampalia presenta la exposición de vídeo de Luca Rento, comisariada por Alfredo Cramerotti, sobre tiempo, cambio y desaparición durante 25 años.",
+    "zh": "奎里尼·斯坦帕利亚基金会展出由 Alfredo Cramerotti 策展的卢卡·伦托个展，涵盖25年以时间、变化与消逝为主题的视频作品，至2027年1月17日。"
   },
   "Cosmotechnics: Ding Yi as a Planetary Code": {
     "en": "Ding Yi's abstract artworks transform the Scarpa area with imagery, signs and stone stelae.",
@@ -122,18 +123,18 @@ const details:Record<string,Partial<Record<CultureLang,string>>> = {
     "zh": "奈杰尔·库克的当代绘画与奎里尼·斯坦帕利亚基金会的历史空间对话。"
   },
   "Michael Armitage. The Promise of Change": {
-    "en": "Michael Armitage's recent works explore memory, political realities and dreamlike imagery.",
-    "de": "Aktuelle Werke von Michael Armitage erkunden Erinnerung, politische Realität und traumhafte Bildwelten.",
-    "fr": "Les œuvres récentes de Michael Armitage abordent mémoire, réalité politique et images oniriques.",
-    "es": "Las obras recientes de Michael Armitage exploran memoria, realidad política e imágenes oníricas.",
-    "zh": "迈克尔·阿米蒂奇近期作品探讨记忆、政治现实与梦境般的意象。"
+    "en": "At Palazzo Grassi until 10 January 2027, Michael Armitage's paintings connect memory, social tensions and migration. Curated by Jean-Marie Gallais with Hans-Ulrich Obrist and collaborators.",
+    "de": "Im Palazzo Grassi sind bis 10. Januar 2027 Gemälde von Michael Armitage über Erinnerung, soziale Konflikte und Migration zu sehen. Kuratiert von Jean-Marie Gallais mit Hans-Ulrich Obrist und weiteren Mitwirkenden.",
+    "fr": "Au Palazzo Grassi jusqu'au 10 janvier 2027, les peintures de Michael Armitage interrogent mémoire, tensions sociales et migrations. Commissariat de Jean-Marie Gallais avec Hans-Ulrich Obrist et collaborateurs.",
+    "es": "Hasta el 10 de enero de 2027 en Palazzo Grassi, la pintura de Michael Armitage aborda memoria, tensiones sociales y migración. Comisariada por Jean-Marie Gallais con Hans-Ulrich Obrist y colaboradores.",
+    "zh": "《The Promise of Change》在 Palazzo Grassi 展至2027年1月10日，迈克尔·阿米蒂奇以绘画探索记忆、社会冲突与迁徙；策展由 Jean-Marie Gallais 与 Hans-Ulrich Obrist 等人参与。"
   },
   "Amar Kanwar. Co-travellers": {
-    "en": "Two multimedia installations by Amar Kanwar connect art, documentary, memory and resistance.",
-    "de": "Zwei multimediale Installationen von Amar Kanwar verbinden Kunst, Dokumentation, Erinnerung und Widerstand.",
-    "fr": "Deux installations multimédias d'Amar Kanwar relient art, documentaire, mémoire et résistance.",
-    "es": "Dos instalaciones multimedia de Amar Kanwar conectan arte, documental, memoria y resistencia.",
-    "zh": "阿马尔·坎瓦尔的两件多媒体装置连接艺术、纪实、记忆与抵抗。"
+    "en": "At Palazzo Grassi until 10 January 2027, two multimedia installations by Amar Kanwar on the upper floor link cinema, documentary testimony and reflections on resistance; curated by Jean-Marie Gallais.",
+    "de": "Bis 10. Januar 2027 zeigt der Palazzo Grassi im Obergeschoss zwei multimediale Installationen von Amar Kanwar, die Film, Zeugnisse und Widerstand verknüpfen; Kurator Jean-Marie Gallais.",
+    "fr": "Au Palazzo Grassi jusqu'au 10 janvier 2027, deux installations multimédias d'Amar Kanwar à l'étage mêlent cinéma, témoignage et résistance ; commissariat de Jean-Marie Gallais.",
+    "es": "Hasta el 10 de enero de 2027, Palazzo Grassi presenta en la planta superior dos instalaciones multimedia de Amar Kanwar sobre cine, testimonio y resistencia, con comisariado de Jean-Marie Gallais.",
+    "zh": "Amar Kanwar 的两件多媒体装置在 Palazzo Grassi 上层展至2027年1月10日，结合电影、纪实见证与抵抗主题，策展人为 Jean-Marie Gallais。"
   },
   "Lorna Simpson. Third Person": {
     "en": "A major exhibition of Lorna Simpson explores more than a decade of painting and photography.",
@@ -171,11 +172,11 @@ const details:Record<string,Partial<Record<CultureLang,string>>> = {
     "zh": "通过20世纪意大利玩具了解国家历史、风俗与社会。"
   },
   "PLAYERS. Giochi, Videogiochi, Cultura e Società": {
-    "en": "The exhibition explores how games and video games relate to culture and changing society.",
-    "de": "Die Ausstellung untersucht Spiele und Videospiele als Teil von Kultur und gesellschaftlichem Wandel.",
-    "fr": "L'exposition explore les liens entre jeux, jeux vidéo, culture et transformations sociales.",
-    "es": "La exposición explora juegos, videojuegos, cultura y transformaciones sociales.",
-    "zh": "展览探讨游戏、电子游戏、文化与社会变迁之间的联系。"
+    "en": "PLAYERS at M9 in Mestre (14 October 2026–14 February 2027) explores video games through PLAY, WATCH and CREATE, with playable arcade and console stations. Separate family activities require date-specific booking.",
+    "de": "PLAYERS im M9 in Mestre (14. Oktober 2026 bis 14. Februar 2027) zeigt Spielgeschichte in den Bereichen PLAY, WATCH und CREATE mit spielbaren Arcade- und Konsolenstationen. Familienworkshops erfordern eigene Termine und Buchungen.",
+    "fr": "PLAYERS au M9 de Mestre (14 octobre 2026–14 février 2027) explore le jeu vidéo dans les espaces PLAY, WATCH et CREATE avec bornes et consoles jouables. Les activités familiales ont leurs propres dates et réservations.",
+    "es": "PLAYERS en el M9 de Mestre (14 de octubre de 2026–14 de febrero de 2027) recorre PLAY, WATCH y CREATE con arcades y consolas jugables. Las actividades familiares tienen fechas y reservas específicas.",
+    "zh": "梅斯特雷 M9 的 PLAYERS 展览（2026年10月14日至2027年2月14日）设有 PLAY、WATCH、CREATE 三个主题区，包含可操作的街机与主机。亲子活动另有日期及预约规定。"
   },
   "Noir time. Pietro Finelli": {
     "en": "Pietro Finelli's paintings at Sala Orizzonti draw on the visual world of film noir.",

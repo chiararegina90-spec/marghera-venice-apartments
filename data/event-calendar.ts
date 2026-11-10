@@ -32,7 +32,9 @@ export const eventCalendarDates={
   'biennale-architettura-2027':{startDate:'2027-05-08',endDate:'2027-11-21'},
   'festa-del-redentore':{startDate:'2027-07-17',endDate:'2027-07-17'},
   'regata-storica-2027':{startDate:'2027-09-05',endDate:'2027-09-05'},
-  'venicemarathon-2027':{startDate:'2027-10-24',endDate:'2027-10-24'}
+  'venicemarathon-2027':{startDate:'2027-10-24',endDate:'2027-10-24'},
+  'players-m9-mestre-2026':{startDate:'2026-10-14',endDate:'2027-02-14'},
+  'festa-della-sensa-2027':{startDate:'2027-05-09',endDate:'2027-05-09'}
 } as const satisfies Record<string,EventCalendarDate>;
 
 export type EventCalendarSlug=keyof typeof eventCalendarDates;
