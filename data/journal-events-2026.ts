@@ -17,6 +17,7 @@ import {venicemarathon2026Overrides} from './venicemarathon2026Overrides';
 import {journalEvents2027} from './journal2027Events';
 import {arteLagunaPrize2026} from './arteLagunaPrize2026';
 import {journal2027Expansion} from './journal2027Expansion';
+import {officialNovemberEvents} from './journalNovember2026Official';
 import {veniceDesignWeek2026Overrides} from './veniceDesignWeek2026Overrides';
 import {veleziana2026Overrides} from './veleziana2026Overrides';
 import {radarVenezia2026Overrides} from './radarVenezia2026Overrides';
@@ -43,7 +44,7 @@ export type EventDetailBlock={title:string;lines:readonly string[]};
 export type EventDetailBlockSection={eyebrow?:string;title:string;intro?:string;blocks:readonly EventDetailBlock[];note?:string;visibleUntil?:string};
 export type EventStayCta={eyebrow?:string;title:string;text:string};
 export type EventArticle={slug:string;title:string;metaTitle?:string;cardTitle?:string;cardDescription?:string;cardEventDate?:string;cardImageAlt?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];relatedLinks?:readonly (readonly [string,string])[];internalLink?:{text:string;label:string;href:string;tail:string};sectionLinks?:readonly EventSectionLink[];faq?:readonly EventFaq[];detailBlockSection?:EventDetailBlockSection;stayCta?:EventStayCta;startDate?:string;endDate?:string;datePublished?:string;dateModified?:string;eventLocation?:EventLocation;eventLocations?:readonly EventLocation[]};
-export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026','festa-madonna-salute-venezia','san-martino-venezia','venezia-a-novembre','arte-laguna-prize-2026','halloween-venezia-2026','cimitero-san-michele-venezia','su-e-zo-per-i-ponti-2027','salone-nautico-venezia-2027','venice-climate-week-2027','concerti-piazza-san-marco-2027','biennale-architettura-2027','regata-storica-2027','venicemarathon-2027'] as const;
+export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026','festa-madonna-salute-venezia','san-martino-venezia','venezia-a-novembre','arte-laguna-prize-2026','halloween-venezia-2026','cimitero-san-michele-venezia','su-e-zo-per-i-ponti-2027','salone-nautico-venezia-2027','venice-climate-week-2027','concerti-piazza-san-marco-2027','biennale-architettura-2027','regata-storica-2027','venicemarathon-2027','players-m9-mestre-2026','festa-della-sensa-2027'] as const;
 const eventTechnicalData:Record<(typeof eventSlugs)[number],{startDate?:string;endDate?:string;eventLocation?:EventLocation}>={
   'venicemarathon-2026':{...eventCalendarDates['venicemarathon-2026'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
   'veleziana-2026':{...eventCalendarDates['veleziana-2026'],eventLocation:{name:'Bacino di San Marco',addressLocality:'Venezia',addressCountry:'IT'}},
@@ -66,7 +67,9 @@ const eventTechnicalData:Record<(typeof eventSlugs)[number],{startDate?:string;e
   'concerti-piazza-san-marco-2027':{},
   'biennale-architettura-2027':{...eventCalendarDates['biennale-architettura-2027']},
   'regata-storica-2027':{...eventCalendarDates['regata-storica-2027'],eventLocation:{name:'Canal Grande',addressLocality:'Venezia',addressCountry:'IT'}},
-  'venicemarathon-2027':{...eventCalendarDates['venicemarathon-2027'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}}
+  'venicemarathon-2027':{...eventCalendarDates['venicemarathon-2027'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
+  'players-m9-mestre-2026':{...eventCalendarDates['players-m9-mestre-2026'],eventLocation:{name:"M9 – Museo del '900",streetAddress:'Via Giovanni Pascoli 11',addressLocality:'Mestre',addressCountry:'IT'}},
+  'festa-della-sensa-2027':{...eventCalendarDates['festa-della-sensa-2027'],eventLocation:{name:'Venezia e Lido di Venezia',addressLocality:'Venezia',addressCountry:'IT'}}
 };
 const decoded=JSON.parse(gunzipSync(Buffer.from(p0+p1+p2+p3+p4,'base64')).toString('utf8')) as Record<EventLang,Record<string,EventArticle>>;
 const early2027Slugs=['biennale-architettura-2027','regata-storica-2027','venicemarathon-2027'] as const;
@@ -80,6 +83,8 @@ for(const lang of Object.keys(decoded) as EventLang[]){
   decoded[lang]['cimitero-san-michele-venezia']=sanMicheleJournal[lang] as EventArticle;
   for(const slug of early2027Slugs)decoded[lang][slug]=journalEvents2027[lang][slug];
   for(const slug of expansion2027Slugs)decoded[lang][slug]=journal2027Expansion[lang][slug];
+  decoded[lang]['players-m9-mestre-2026']=officialNovemberEvents[lang]['players-m9-mestre-2026'];
+  decoded[lang]['festa-della-sensa-2027']=officialNovemberEvents[lang]['festa-della-sensa-2027'];
   for(const slug of eventSlugs){
     const item=decoded[lang]?.[slug];
     const local=journalEventImagePair(slug);
