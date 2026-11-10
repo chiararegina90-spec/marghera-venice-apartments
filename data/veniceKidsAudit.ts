@@ -28,7 +28,7 @@ export const veniceKidsAudit:Record<SiteLang,KidsArticle>={
   tip:'Con i bambini non cercare di “finire Venezia”. Scegli una o due esperienze davvero adatte alla loro età, considera i ponti come parte del tempo di viaggio e lascia sempre un margine per cambiare programma: è spesso la differenza tra una giornata faticosa e una bella giornata in famiglia.',
   official:['Museo di Storia Naturale – sito ufficiale MUVE','https://msn.visitmuve.it/'],
   inlineLinks:[[7,"Halloween","/journal/halloween-venezia-2026"],[7,"San Martino","/journal/san-martino-venezia"],[7,"Carnevale","/journal/carnevale-di-venezia"]],
-  related:[['PLAYERS: videogiochi al M9','/journal/players-m9-mestre-2026'],['M9 – Museo del '900','/guide/musei-venezia/m9-museo-del-900'],
+  related:[['PLAYERS: videogiochi al M9','/journal/players-m9-mestre-2026'],['M9 – Museo del Novecento','/guide/musei-venezia/m9-museo-del-900'],
    ['Museo di Storia Naturale','/guide/musei-venezia/museo-storia-naturale'],
    ['Halloween a Venezia 2026','/journal/halloween-venezia-2026'],
    ['San Martino a Venezia','/journal/san-martino-venezia'],
