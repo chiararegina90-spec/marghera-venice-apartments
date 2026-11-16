@@ -7,6 +7,7 @@ type StoredCredit={page:string;artist?:string;license?:string;title?:string;quer
 const STORAGE_KEY='mva-commons-image-credits-v1';
 
 const overrides:[RegExp,string][]=[
+  [/forte marghera/i,'File:Entrada al Forte Marghera 03.jpg'],
   [/gallerie dell[’']accademia|accademia.*venez/i,"File:Gallerie dell'Accademia di Venezia (facciata).jpg"],
   [/peggy guggenheim|palazzo venier dei leoni/i,'File:Palazzo Venier dei Leoni (Peggy Guggenheim Collection), Venice (37100733803).jpg'],
   [/querini stampalia/i,'File:Facciataquerinistampalia.jpg'],
