@@ -3,6 +3,8 @@ import type {Metadata} from 'next';
 import CultureDetailPage from '@/components/CultureDetailPage';
 import {veniceCulturePlaces,getCulturePlace} from '@/data/culturePlaces';
 import {cultureDetailMetadata} from '@/lib/cultureSeo';
+// Refresh dated museum notices so expired notices disappear without a new deploy.
+export const revalidate=900;
 export function generateStaticParams(){return veniceCulturePlaces.map(place=>({slug:place.slug}));}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const place=getCulturePlace('venice',slug);if(!place)return {};return cultureDetailMetadata('venice','fr',place);}
 export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const place=getCulturePlace('venice',slug);if(!place)notFound();return <CultureDetailPage place={place} lang="fr" scope="venice" allPlaces={veniceCulturePlaces}/>;}

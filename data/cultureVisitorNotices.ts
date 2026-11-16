@@ -25,6 +25,90 @@ export type CultureVisitorNotice={
 
 export const cultureVisitorNotices:CultureVisitorNotice[]=[
  {
+  key:"ca-pesaro-strike-2026-11-20",
+  placeSlug:"ca-pesaro",
+  kind:"visitor-info",
+  start:"2026-11-16",
+  end:"2026-11-20",
+  title:{it:"Sciopero del 20 novembre: apertura non garantita",en:"20 November strike: opening not guaranteed",de:"Streik am 20. November: Öffnung nicht garantiert",fr:"Grève du 20 novembre : ouverture non garantie",es:"Huelga del 20 de noviembre: apertura no garantizada",zh:"11月20日罢工：不保证正常开放"},
+  summary:{it:"Venerdì 20 novembre 2026, a causa dello sciopero generale, Ca’ Pesaro potrebbe non rispettare gli orari di apertura previsti. Anche l’apertura serale programmata fino alle 20:00 non è garantita. Prima di recarti al museo, verifica gli avvisi ufficiali MUVE.",en:"On Friday 20 November 2026, a general strike may affect Ca’ Pesaro’s scheduled opening hours. The planned evening opening until 20:00 is not guaranteed either. Check the official MUVE notices before visiting.",de:"Am Freitag, dem 20. November 2026, kann Ca’ Pesaro wegen eines Generalstreiks möglicherweise nicht zu den geplanten Zeiten öffnen. Auch die vorgesehene Abendöffnung bis 20:00 Uhr ist nicht garantiert. Prüfen Sie vor Ihrem Besuch die offiziellen MUVE-Hinweise.",fr:"Vendredi 20 novembre 2026, une grève générale pourrait empêcher Ca’ Pesaro de respecter les horaires prévus. L’ouverture en soirée annoncée jusqu’à 20 h n’est pas non plus garantie. Consultez les avis officiels MUVE avant votre visite.",es:"El viernes 20 de noviembre de 2026, debido a una huelga general, Ca’ Pesaro podría no respetar el horario previsto. Tampoco está garantizada la apertura nocturna programada hasta las 20:00. Consulta los avisos oficiales de MUVE antes de acudir.",zh:"由于2026年11月20日星期五举行总罢工，Ca’ Pesaro 可能无法按原定时间开放，计划延长至20:00的晚间开放也无法保证。参观前请查看 MUVE 官方公告。"},
+  period:{it:"20 novembre 2026",en:"20 November 2026",de:"20. November 2026",fr:"20 novembre 2026",es:"20 de noviembre de 2026",zh:"2026年11月20日"},
+  officialUrl:"https://capesaro.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"ca-pesaro-holiday-opening-2026-27",
+  placeSlug:"ca-pesaro",
+  kind:"visitor-info",
+  start:"2026-12-07",
+  end:"2027-01-06",
+  title:{it:"Aperture straordinarie festività 2026/27",en:"Special holiday openings 2026/27",de:"Sonderöffnungen an den Feiertagen 2026/27",fr:"Ouvertures exceptionnelles des fêtes 2026/27",es:"Aperturas extraordinarias de Navidad 2026/27",zh:"2026/27年节假日特别开放"},
+  summary:{it:"Ca’ Pesaro sarà aperta eccezionalmente lunedì 7 dicembre 2026 e ogni giorno dal 25 dicembre 2026 al 6 gennaio 2027, inclusi i lunedì 28 dicembre e 4 gennaio, normalmente di chiusura. Verifica gli orari aggiornati sul sito MUVE prima della visita.",en:"Ca’ Pesaro will exceptionally open on Monday 7 December 2026 and every day from 25 December 2026 to 6 January 2027, including the normally closed Mondays 28 December and 4 January. Check current opening hours with MUVE before visiting.",de:"Ca’ Pesaro öffnet ausnahmsweise am Montag, 7. Dezember 2026, sowie täglich vom 25. Dezember 2026 bis 6. Januar 2027, einschließlich der sonst geschlossenen Montage am 28. Dezember und 4. Januar. Prüfen Sie die aktuellen Öffnungszeiten bei MUVE.",fr:"Ca’ Pesaro ouvrira exceptionnellement le lundi 7 décembre 2026 et tous les jours du 25 décembre 2026 au 6 janvier 2027, y compris les lundis 28 décembre et 4 janvier, habituellement fermés. Vérifiez les horaires actualisés auprès de MUVE.",es:"Ca’ Pesaro abrirá excepcionalmente el lunes 7 de diciembre de 2026 y todos los días del 25 de diciembre de 2026 al 6 de enero de 2027, incluidos los lunes 28 de diciembre y 4 de enero, normalmente cerrados. Consulta los horarios actualizados en MUVE.",zh:"Ca’ Pesaro 将于2026年12月7日星期一特别开放，并于2026年12月25日至2027年1月6日期间每天开放，包括通常闭馆的12月28日和1月4日（星期一）。参观前请向 MUVE 核实最新开放时间。"},
+  period:{it:"7 dicembre; 25 dicembre–6 gennaio",en:"7 December; 25 December–6 January",de:"7. Dezember; 25. Dezember–6. Januar",fr:"7 décembre ; 25 décembre–6 janvier",es:"7 de diciembre; 25 de diciembre–6 de enero",zh:"12月7日；12月25日–1月6日"},
+  officialUrl:"https://capesaro.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"fortuny-holiday-opening-2026-27",
+  placeSlug:"museo-fortuny",
+  kind:"visitor-info",
+  start:"2026-12-08",
+  end:"2027-01-06",
+  title:{it:"Aperture straordinarie per le festività 2026/27",en:"Special openings for the 2026/27 holidays",de:"Sonderöffnungen zu den Feiertagen 2026/27",fr:"Ouvertures exceptionnelles pour les fêtes 2026/27",es:"Aperturas extraordinarias durante las fiestas 2026/27",zh:"2026/27年节日期间特别开放"},
+  summary:{it:"Il Museo Fortuny sarà eccezionalmente aperto martedì 8 dicembre 2026 e tutti i giorni dal 25 dicembre 2026 al 6 gennaio 2027, compresi martedì 29 dicembre e martedì 5 gennaio, normalmente giorni di chiusura. Verifica gli orari e gli eventuali nuovi avvisi sul sito ufficiale prima della visita.",en:"Museo Fortuny will exceptionally open on Tuesday 8 December 2026 and every day from 25 December 2026 to 6 January 2027, including Tuesday 29 December and Tuesday 5 January, normally closing days. Check opening hours and any further official notices before visiting.",de:"Das Museo Fortuny öffnet ausnahmsweise am Dienstag, 8. Dezember 2026, und täglich vom 25. Dezember 2026 bis zum 6. Januar 2027, einschließlich Dienstag, 29. Dezember, und Dienstag, 5. Januar, an denen es normalerweise geschlossen ist. Prüfen Sie vor dem Besuch die aktuellen offiziellen Hinweise und Öffnungszeiten.",fr:"Le Museo Fortuny ouvrira exceptionnellement le mardi 8 décembre 2026 et tous les jours du 25 décembre 2026 au 6 janvier 2027, y compris les mardis 29 décembre et 5 janvier, jours de fermeture habituels. Consultez les horaires et les nouveaux avis officiels avant votre visite.",es:"El Museo Fortuny abrirá excepcionalmente el martes 8 de diciembre de 2026 y todos los días del 25 de diciembre de 2026 al 6 de enero de 2027, incluidos los martes 29 de diciembre y 5 de enero, días de cierre habitual. Consulta los horarios y posibles nuevos avisos oficiales antes de la visita.",zh:"Museo Fortuny 将于2026年12月8日星期二特别开放，并于2026年12月25日至2027年1月6日期间每天开放，包括通常闭馆的12月29日和1月5日（星期二）。参观前请查看官方网站的最新时间与公告。"},
+  period:{it:"8 dicembre; 25 dicembre–6 gennaio",en:"8 December; 25 December–6 January",de:"8. Dezember; 25. Dezember–6. Januar",fr:"8 décembre ; 25 décembre–6 janvier",es:"8 de diciembre; 25 de diciembre–6 de enero",zh:"12月8日；12月25日–1月6日"},
+  officialUrl:"https://fortuny.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"oriental-art-holiday-closures-2026-27",
+  placeSlug:"museo-arte-orientale",
+  kind:"closure",
+  start:"2026-12-09",
+  end:"2027-01-01",
+  title:{it:"Chiusure straordinarie di dicembre e Capodanno",en:"Special closures in December and on New Year's Day",de:"Sonderschließungen im Dezember und an Neujahr",fr:"Fermetures exceptionnelles en décembre et au Nouvel An",es:"Cierres excepcionales en diciembre y Año Nuevo",zh:"12月及元旦特别闭馆"},
+  summary:{it:"Il Museo d’Arte Orientale resterà chiuso il 9 dicembre e il 25 dicembre 2026, oltre al 1° gennaio 2027. Le chiusure riguardano il Museo d’Arte Orientale anche quando Ca’ Pesaro è aperta: non presumere che le due sedi seguano gli stessi orari.",en:"The Museum of Oriental Art will be closed on 9 and 25 December 2026 and on 1 January 2027. These closures apply to the Museum of Oriental Art even when Ca’ Pesaro is open: the two museums do not necessarily share the same opening schedule.",de:"Das Museo d’Arte Orientale bleibt am 9. und 25. Dezember 2026 sowie am 1. Januar 2027 geschlossen. Diese Schließungen gelten auch dann, wenn Ca’ Pesaro geöffnet ist: Die beiden Museen haben nicht immer dieselben Öffnungszeiten.",fr:"Le Musée d’Art oriental sera fermé les 9 et 25 décembre 2026 ainsi que le 1er janvier 2027. Ces fermetures s’appliquent même si Ca’ Pesaro est ouvert : leurs horaires ne coïncident pas nécessairement.",es:"El Museo de Arte Oriental permanecerá cerrado el 9 y el 25 de diciembre de 2026 y el 1 de enero de 2027. Los cierres se mantienen aunque Ca’ Pesaro esté abierto: los dos museos no siempre comparten horario.",zh:"Museo d’Arte Orientale（东方艺术博物馆）将于2026年12月9日、12月25日及2027年1月1日闭馆。即使 Ca’ Pesaro 开放，这座博物馆仍按上述日期关闭，两馆并不总是采用相同时间。"},
+  period:{it:"9 e 25 dicembre; 1° gennaio",en:"9 and 25 December; 1 January",de:"9. und 25. Dezember; 1. Januar",fr:"9 et 25 décembre ; 1er janvier",es:"9 y 25 de diciembre; 1 de enero",zh:"12月9日及25日；1月1日"},
+  officialUrl:"https://capesaro.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"ca-rezzonico-holiday-opening-2026-27",
+  placeSlug:"ca-rezzonico",
+  kind:"visitor-info",
+  start:"2026-12-08",
+  end:"2027-01-06",
+  title:{it:"Aperture straordinarie per le festività 2026/27",en:"Special holiday openings 2026/27",de:"Sonderöffnungen zu den Feiertagen 2026/27",fr:"Ouvertures exceptionnelles des fêtes 2026/27",es:"Aperturas extraordinarias durante las fiestas 2026/27",zh:"2026/27年节假日特别开放"},
+  summary:{it:"Ca’ Rezzonico sarà aperto martedì 8 dicembre 2026 e tutti i giorni dal 25 dicembre 2026 al 6 gennaio 2027, compresi i martedì 29 dicembre e 5 gennaio, normalmente di chiusura. Restano distinti gli eventuali avvisi sui lavori di restauro.",en:"Ca’ Rezzonico will open on Tuesday 8 December 2026 and every day from 25 December 2026 to 6 January 2027, including the normally closed Tuesdays 29 December and 5 January. Existing restoration notices remain separate.",de:"Ca’ Rezzonico öffnet am Dienstag, 8. Dezember 2026, sowie täglich vom 25. Dezember 2026 bis 6. Januar 2027, einschließlich der sonst geschlossenen Dienstage am 29. Dezember und 5. Januar. Hinweise zu Restaurierungen bleiben davon getrennt.",fr:"Ca’ Rezzonico sera ouvert le mardi 8 décembre 2026 et tous les jours du 25 décembre 2026 au 6 janvier 2027, y compris les mardis 29 décembre et 5 janvier, habituellement fermés. Les avis sur les restaurations restent distincts.",es:"Ca’ Rezzonico abrirá el martes 8 de diciembre de 2026 y todos los días del 25 de diciembre de 2026 al 6 de enero de 2027, incluidos los martes 29 de diciembre y 5 de enero, normalmente cerrados. Los avisos de restauración se mantienen separados.",zh:"Ca’ Rezzonico 将于2026年12月8日星期二及2026年12月25日至2027年1月6日期间每天开放，包括通常闭馆的12月29日和1月5日（星期二）。有关修复工程的公告仍单独列示。"},
+  period:{it:"8 dicembre; 25 dicembre–6 gennaio",en:"8 December; 25 December–6 January",de:"8. Dezember; 25. Dezember–6. Januar",fr:"8 décembre ; 25 décembre–6 janvier",es:"8 de diciembre; 25 de diciembre–6 de enero",zh:"12月8日；12月25日–1月6日"},
+  officialUrl:"https://carezzonico.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"palazzo-ducale-evening-holidays-2026-27",
+  placeSlug:"palazzo-ducale",
+  kind:"visitor-info",
+  start:"2026-12-25",
+  end:"2027-01-02",
+  title:{it:"Aperture serali straordinarie a Natale e Capodanno",en:"Special evening openings at Christmas and New Year",de:"Sonderöffnungen am Abend zu Weihnachten und Neujahr",fr:"Ouvertures nocturnes exceptionnelles à Noël et au Nouvel An",es:"Aperturas nocturnas especiales en Navidad y Año Nuevo",zh:"圣诞和新年特别晚间开放"},
+  summary:{it:"Palazzo Ducale sarà aperto fino alle 21:00 (ultimo ingresso alle 20:00) il 25 e 26 dicembre 2026 e il 1° e 2 gennaio 2027. Il 25 dicembre e il 1° gennaio l’apertura inizierà alle 10:00. Verifica eventuali variazioni MUVE.",en:"The Doge's Palace will remain open until 21:00 (last entry 20:00) on 25 and 26 December 2026 and 1 and 2 January 2027. On 25 December and 1 January, opening starts at 10:00. Check MUVE for changes.",de:"Der Dogenpalast ist am 25. und 26. Dezember 2026 sowie am 1. und 2. Januar 2027 bis 21:00 Uhr geöffnet (letzter Einlass 20:00 Uhr). Am 25. Dezember und 1. Januar beginnt die Öffnung um 10:00 Uhr. Mögliche Änderungen bei MUVE prüfen.",fr:"Le Palais des Doges ouvrira jusqu’à 21 h (dernière entrée à 20 h) les 25 et 26 décembre 2026 et les 1er et 2 janvier 2027. Les 25 décembre et 1er janvier, l’ouverture commencera à 10 h. Vérifiez les éventuelles modifications MUVE.",es:"El Palacio Ducal abrirá hasta las 21:00 (última entrada a las 20:00) el 25 y 26 de diciembre de 2026 y el 1 y 2 de enero de 2027. El 25 de diciembre y el 1 de enero abrirá a las 10:00. Comprueba posibles cambios en MUVE.",zh:"总督宫将于2026年12月25日和26日、2027年1月1日和2日延长开放至21:00（最后入场20:00）。12月25日及1月1日于10:00开门。请以 MUVE 最新公告为准。"},
+  period:{it:"25–26 dicembre; 1–2 gennaio",en:"25–26 December; 1–2 January",de:"25.–26. Dezember; 1.–2. Januar",fr:"25–26 décembre ; 1er–2 janvier",es:"25–26 de diciembre; 1–2 de enero",zh:"12月25–26日；1月1–2日"},
+  officialUrl:"https://palazzoducale.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
+  key:"museo-correr-evening-holidays-2026-27",
+  placeSlug:"museo-correr",
+  kind:"visitor-info",
+  start:"2026-12-25",
+  end:"2027-01-02",
+  title:{it:"Aperture serali straordinarie a Natale e Capodanno",en:"Special evening openings at Christmas and New Year",de:"Sonderöffnungen am Abend zu Weihnachten und Neujahr",fr:"Ouvertures nocturnes exceptionnelles à Noël et au Nouvel An",es:"Aperturas nocturnas especiales en Navidad y Año Nuevo",zh:"圣诞和新年特别晚间开放"},
+  summary:{it:"Il Museo Correr sarà aperto fino alle 21:00 (ultimo ingresso alle 20:00) il 25 e 26 dicembre 2026 e il 1° e 2 gennaio 2027. Il Museo Archeologico Nazionale e la Biblioteca Marciana non partecipano alle serate straordinarie e saranno chiusi il 25 dicembre e il 1° gennaio.",en:"The Correr Museum will stay open until 21:00 (last admission 20:00) on 25 and 26 December 2026 and 1 and 2 January 2027. The National Archaeological Museum and the Marciana Library do not join these evening openings and will be closed on 25 December and 1 January.",de:"Das Museo Correr öffnet am 25. und 26. Dezember 2026 sowie am 1. und 2. Januar 2027 bis 21:00 Uhr (letzter Einlass 20:00 Uhr). Das Archäologische Nationalmuseum und die Biblioteca Marciana nehmen nicht teil und bleiben am 25. Dezember und 1. Januar geschlossen.",fr:"Le Musée Correr ouvrira jusqu’à 21 h (dernière entrée à 20 h) les 25 et 26 décembre 2026 et les 1er et 2 janvier 2027. Le Musée archéologique national et la Bibliothèque Marciana ne participent pas aux soirées et seront fermés les 25 décembre et 1er janvier.",es:"El Museo Correr abrirá hasta las 21:00 (última entrada a las 20:00) el 25 y 26 de diciembre de 2026 y el 1 y 2 de enero de 2027. El Museo Arqueológico Nacional y la Biblioteca Marciana no participan en estas aperturas y permanecerán cerrados el 25 de diciembre y el 1 de enero.",zh:"科雷尔博物馆将于2026年12月25日和26日、2027年1月1日和2日延长开放至21:00（最后入场20:00）。国家考古博物馆和马尔恰纳图书馆不参加夜间延长开放，并于12月25日和1月1日闭馆。"},
+  period:{it:"25–26 dicembre; 1–2 gennaio",en:"25–26 December; 1–2 January",de:"25.–26. Dezember; 1.–2. Januar",fr:"25–26 décembre ; 1er–2 janvier",es:"25–26 de diciembre; 1–2 de enero",zh:"12月25–26日；1月1–2日"},
+  officialUrl:"https://correr.visitmuve.it/informazioni-pratiche/",
+  lastVerified:'2026-11-16'
+ },
+ {
   key:'villa-pisani-park-restoration-2025',
   placeSlug:'villa-pisani-stra',
   kind:'closure',
