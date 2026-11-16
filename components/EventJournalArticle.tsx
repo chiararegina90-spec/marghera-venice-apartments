@@ -48,7 +48,8 @@ export default function EventJournalArticle({lang,data}:{lang:EventLang;data:Eve
       {'@type':'ListItem',position:3,name:data.title,item:pageUrl}
     ]
   };
-  const eventJsonLd=data.startDate&&data.endDate?{
+  // Monthly visitor guides have a date range for filtering, not an event for structured data.
+  const eventJsonLd=data.slug!=='venezia-a-dicembre-2026'&&data.startDate&&data.endDate?{
     '@context':'https://schema.org','@type':'Event',name:data.title,description:data.description,inLanguage:languageTag[lang],image:[imageUrl],
     startDate:data.startDate,endDate:data.endDate,eventStatus:eventSchemaStatus(data.endDate),eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
     ...(locations.length?{location:locations.map(place=>({'@type':'Place',name:place.name,address:{'@type':'PostalAddress',...(place.streetAddress?{streetAddress:place.streetAddress}:{}),addressLocality:place.addressLocality,addressCountry:place.addressCountry}}))}:{}),
