@@ -33,8 +33,10 @@ import {applyJournalCatchup20261029} from './journalCatchup20261029';
 import {applyJournalCatchup20261030} from './journalCatchup20261030';
 import {applyJournalCatchup20261103} from './journalCatchup20261103';
 import {applyJournalCatchup20261104} from './journalCatchup20261104';
+import {applyJournalCatchup20261116} from './journalCatchup20261116';
 import {applyJournalFaqParity20261025} from './journalFaqParity20261025';
 import {halloween2026} from './halloween2026';
+import {journalPriority2Nov2026} from './journalPriority2Nov2026';
 
 export type EventLang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type EventLocation={name:string;streetAddress?:string;addressLocality:string;addressCountry:string};
@@ -44,7 +46,7 @@ export type EventDetailBlock={title:string;lines:readonly string[]};
 export type EventDetailBlockSection={eyebrow?:string;title:string;intro?:string;blocks:readonly EventDetailBlock[];note?:string;visibleUntil?:string};
 export type EventStayCta={eyebrow?:string;title:string;text:string};
 export type EventArticle={slug:string;title:string;metaTitle?:string;cardTitle?:string;cardDescription?:string;cardEventDate?:string;cardImageAlt?:string;category:string;description:string;image:string;fallbackImage:string;imageAlt:string;commonsQuery:string;eventDate:string;lead:string;sections:readonly (readonly [string,string])[];tip:string;official:readonly [string,string];relatedSlugs:readonly string[];relatedLinks?:readonly (readonly [string,string])[];internalLink?:{text:string;label:string;href:string;tail:string};sectionLinks?:readonly EventSectionLink[];faq?:readonly EventFaq[];detailBlockSection?:EventDetailBlockSection;stayCta?:EventStayCta;startDate?:string;endDate?:string;datePublished?:string;dateModified?:string;eventLocation?:EventLocation;eventLocations?:readonly EventLocation[]};
-export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026','festa-madonna-salute-venezia','san-martino-venezia','venezia-a-novembre','arte-laguna-prize-2026','halloween-venezia-2026','cimitero-san-michele-venezia','su-e-zo-per-i-ponti-2027','salone-nautico-venezia-2027','venice-climate-week-2027','concerti-piazza-san-marco-2027','biennale-architettura-2027','regata-storica-2027','venicemarathon-2027','players-m9-mestre-2026','festa-della-sensa-2027'] as const;
+export const eventSlugs=['venicemarathon-2026','veleziana-2026','venice-cocktail-week-2026','venice-fashion-week-2026','venice-hospitality-challenge-2026','venice-design-week-2026','biennale-musica-2026','salone-alto-artigianato-italiano-2026','venice-noir-2026','festa-madonna-salute-venezia','san-martino-venezia','venezia-a-novembre','arte-laguna-prize-2026','halloween-venezia-2026','cimitero-san-michele-venezia','su-e-zo-per-i-ponti-2027','salone-nautico-venezia-2027','venice-climate-week-2027','concerti-piazza-san-marco-2027','biennale-architettura-2027','regata-storica-2027','venicemarathon-2027','players-m9-mestre-2026','festa-della-sensa-2027','marghera-on-ice-2026','venezia-a-dicembre-2026','fucina-degli-angeli-guggenheim-2026','da-cosa-nasce-cosa-forte-marghera-2026'] as const;
 const eventTechnicalData:Record<(typeof eventSlugs)[number],{startDate?:string;endDate?:string;eventLocation?:EventLocation}>={
   'venicemarathon-2026':{...eventCalendarDates['venicemarathon-2026'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
   'veleziana-2026':{...eventCalendarDates['veleziana-2026'],eventLocation:{name:'Bacino di San Marco',addressLocality:'Venezia',addressCountry:'IT'}},
@@ -69,7 +71,11 @@ const eventTechnicalData:Record<(typeof eventSlugs)[number],{startDate?:string;e
   'regata-storica-2027':{...eventCalendarDates['regata-storica-2027'],eventLocation:{name:'Canal Grande',addressLocality:'Venezia',addressCountry:'IT'}},
   'venicemarathon-2027':{...eventCalendarDates['venicemarathon-2027'],eventLocation:{name:'Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
   'players-m9-mestre-2026':{...eventCalendarDates['players-m9-mestre-2026'],eventLocation:{name:"M9 – Museo del '900",streetAddress:'Via Giovanni Pascoli 11',addressLocality:'Mestre',addressCountry:'IT'}},
-  'festa-della-sensa-2027':{...eventCalendarDates['festa-della-sensa-2027'],eventLocation:{name:'Venezia e Lido di Venezia',addressLocality:'Venezia',addressCountry:'IT'}}
+  'festa-della-sensa-2027':{...eventCalendarDates['festa-della-sensa-2027'],eventLocation:{name:'Venezia e Lido di Venezia',addressLocality:'Venezia',addressCountry:'IT'}},
+  'marghera-on-ice-2026':{...eventCalendarDates['marghera-on-ice-2026'],eventLocation:{name:'Piazza Mercato, Marghera',addressLocality:'Venezia',addressCountry:'IT'}},
+  'venezia-a-dicembre-2026':{},
+  'fucina-degli-angeli-guggenheim-2026':{...eventCalendarDates['fucina-degli-angeli-guggenheim-2026'],eventLocation:{name:'Collezione Peggy Guggenheim',streetAddress:'Dorsoduro 701',addressLocality:'Venezia',addressCountry:'IT'}},
+  'da-cosa-nasce-cosa-forte-marghera-2026':{...eventCalendarDates['da-cosa-nasce-cosa-forte-marghera-2026'],eventLocation:{name:'Casermetta 9, Forte Marghera',addressLocality:'Mestre',addressCountry:'IT'}},
 };
 const decoded=JSON.parse(gunzipSync(Buffer.from(p0+p1+p2+p3+p4,'base64')).toString('utf8')) as Record<EventLang,Record<string,EventArticle>>;
 const early2027Slugs=['biennale-architettura-2027','regata-storica-2027','venicemarathon-2027'] as const;
@@ -85,6 +91,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
   for(const slug of expansion2027Slugs)decoded[lang][slug]=journal2027Expansion[lang][slug];
   decoded[lang]['players-m9-mestre-2026']=officialNovemberEvents[lang]['players-m9-mestre-2026'];
   decoded[lang]['festa-della-sensa-2027']=officialNovemberEvents[lang]['festa-della-sensa-2027'];
+  for(const slug of ['marghera-on-ice-2026','venezia-a-dicembre-2026','fucina-degli-angeli-guggenheim-2026','da-cosa-nasce-cosa-forte-marghera-2026'] as const)decoded[lang][slug]=journalPriority2Nov2026[lang][slug];
   for(const slug of eventSlugs){
     const item=decoded[lang]?.[slug];
     const local=journalEventImagePair(slug);
@@ -101,7 +108,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
     if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);
-    applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);}
+    applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);applyJournalCatchup20261116(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;

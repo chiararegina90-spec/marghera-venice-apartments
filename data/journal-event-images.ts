@@ -1,5 +1,9 @@
 export type JournalEventImagePair={card:string;cover:string};
 export const journalEventImages:Record<string,JournalEventImagePair>={
+  'marghera-on-ice-2026':{card:'/images/journal-natale-capodanno.webp',cover:'/images/journal-natale-capodanno.webp'},
+  'venezia-a-dicembre-2026':{card:'/images/venezia.webp',cover:'/images/venezia.webp'},
+  'fucina-degli-angeli-guggenheim-2026':{card:'/images/murano-glass.webp',cover:'/images/murano-glass.webp'},
+  'da-cosa-nasce-cosa-forte-marghera-2026':{card:'/images/culture/torre-civica-mestre-card.webp',cover:'/images/culture/torre-civica-mestre-cover.webp'},
   'venicemarathon-2026':{card:'/images/journal-events/venicemarathon-2026-card.webp',cover:'/images/journal-events/venicemarathon-2026-cover.webp'},
   'veleziana-2026':{card:'/images/journal-events/veleziana-2026-card.webp',cover:'/images/journal-events/veleziana-2026-cover.webp'},
   'venice-cocktail-week-2026':{card:'/images/journal-events/venice-cocktail-week-2026-card.webp',cover:'/images/journal-events/venice-cocktail-week-2026-cover.webp'},
