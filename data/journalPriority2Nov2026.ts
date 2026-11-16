@@ -137,7 +137,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
     "dateModified": "2026-11-16"
   }
 };
-const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|'category'|'eventDate'|'description'|'lead'|'sections'|'tip'>>> = {
+const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|'category'|'eventDate'|'description'|'lead'|'sections'|'tip'> & {metaTitle?:string}>>> = {
   "it": {
     "marghera-on-ice-2026": {
       "title": "Marghera on Ice 2026–27: pattinaggio, mercatini e attività per famiglie",
