@@ -16,9 +16,8 @@ export function isOnOrAfter(date:string,referenceDate=romeToday()){
 }
 
 export function eventSchemaStatus(endDate:string,referenceDate=romeToday()){
-  return endDate<referenceDate
-    ? 'https://schema.org/EventCompleted'
-    : 'https://schema.org/EventScheduled';
+  // Google Event structured data does not support EventCompleted. For past events omit eventStatus.
+  return endDate<referenceDate ? undefined : 'https://schema.org/EventScheduled';
 }
 
 
