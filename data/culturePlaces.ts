@@ -2909,7 +2909,30 @@ export const culturePlaces:CulturePlace[] = [
     "officialUrl": "https://www.patriarcatovenezia.it/basilica-di-santa-maria-assunta-di-torcello/",
     "mapsQuery": "Basilica di Santa Maria Assunta, Torcello, Venezia, Italia"
   }
-
+,
+  {
+    "slug": "forte-marghera",
+    "name": "Forte Marghera",
+    "scope": "venice",
+    "kind": "monument",
+    "city": "Mestre",
+    "province": "Venezia",
+    "duration": "1h–2h",
+    "highlights": [
+      "fortificazioni ottocentesche",
+      "parco, canali e ponti",
+      "Casermetta 9 e mostre"
+    ],
+    "commonsQuery": "Forte Marghera entrance Mestre",
+    "family": true,
+    "panorama": false,
+    "price": "Ingresso libero al parco; Casermetta 9 gratuita, eventi da verificare",
+    "hours": "Il parco ha orari propri; per Casermetta 9 verificare la programmazione MUVE.",
+    "booking": "not_required",
+    "officialUrl": "https://fondazionefortemarghera.it/",
+    "mapsQuery": "Forte Marghera, Via Forte Marghera 30, Mestre, Venezia, Italia",
+    "lastVerified": "2026-11-16"
+  }
 ];
 
 export const veniceCulturePlaces=culturePlaces.filter(p=>p.scope==='venice');
