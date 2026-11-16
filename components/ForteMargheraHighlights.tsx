@@ -201,7 +201,7 @@ const content={
     "route": "交通与到达方式",
     "credit": "图片：Wikimedia Commons · Álvaro de la Paz Franco · CC0 1.0。"
   }
-} satisfies Record<CultureLang,{eyebrow:string;heading:string;cards:[string,string,string][];detailTitle:string;detailText:string;detailLink:string;practical:string;official:string;route:string;credit:string}>;
+} as const satisfies Record<CultureLang,{eyebrow:string;heading:string;cards:readonly (readonly [string,string,string])[];detailTitle:string;detailText:string;detailLink:string;practical:string;official:string;route:string;credit:string}>;
 
 export default function ForteMargheraHighlights({lang}:{lang:CultureLang}){
  const t=content[lang];
