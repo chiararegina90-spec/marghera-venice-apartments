@@ -67,6 +67,7 @@ const oldTitle:Record<EventLang,string>={
 };
 export function applyJournalCatchup20261116(item:EventArticle,lang:EventLang,slug:string){
  const t=l[lang];
+ if(slug==='venezia-a-novembre')item.dateModified='2026-11-16';
  if(slug==='cimitero-san-michele-venezia'){
   item.sections=(item.sections||[]).map(([heading,text])=>heading===oldTitle[lang]?[t.sanTitle,t.sanText] as const:[heading,text] as const);
   item.tip=t.sanTip;
