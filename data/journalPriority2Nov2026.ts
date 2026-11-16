@@ -137,7 +137,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
     "dateModified": "2026-11-16"
   }
 };
-const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|'category'|'eventDate'|'description'|'lead'|'sections'|'tip'> & {metaTitle?:string}>>> = {
+const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|'category'|'eventDate'|'description'|'lead'|'sections'|'tip'> & {metaTitle?:string}>> = {
   "it": {
     "marghera-on-ice-2026": {
       "title": "Marghera on Ice 2026–27: pattinaggio, mercatini e attività per famiglie",
@@ -1021,6 +1021,6 @@ export const journalPriority2Nov2026=Object.fromEntries((Object.keys(localized) 
  lang,Object.fromEntries((Object.keys(shared) as Priority2Slug[]).map(slug=>[
   slug,{...shared[slug],...localized[lang][slug],
     relatedLinks:shared[slug].relatedLinks?.map(([label,url],i)=>[linkLabels[lang][slug][i]||label,url] as const),
-    metaTitle:localized[lang][slug].title.length>74?localized[lang][slug].title.slice(0,71)+'…':localized[lang][slug].title}
+    metaTitle:localized[lang][slug].metaTitle || (localized[lang][slug].title.length>74?localized[lang][slug].title.slice(0,71)+'…':localized[lang][slug].title)}
  ]))
 ])) as Record<EventLang,Record<Priority2Slug,EventArticle>>;
