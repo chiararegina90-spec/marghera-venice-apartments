@@ -28,7 +28,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Palazzo Ducale, Venezia, Italia",
-    "lastVerified": "2026-10-25"
+    "lastVerified": "2026-11-16"
   },
   {
     "slug": "museo-correr",
@@ -50,7 +50,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "10:00–18:00; inverno 10:00–17:00",
     "booking": "recommended",
     "officialUrl": "https://correr.visitmuve.it/informazioni-pratiche/",
-    "mapsQuery": "Museo Correr, Venezia, Italia"
+    "mapsQuery": "Museo Correr, Venezia, Italia",
+    "lastVerified": "2026-11-16"
   },
   {
     "slug": "museo-archeologico-nazionale-venezia",
@@ -207,7 +208,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://carezzonico.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Ca’ Rezzonico – Museo del Settecento Veneziano, Venezia, Italia",
-    "lastVerified": "2026-10-25"
+    "lastVerified": "2026-11-16"
   },
   {
     "slug": "ca-pesaro",
@@ -230,7 +231,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://capesaro.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Ca’ Pesaro – Galleria Internazionale d’Arte Moderna, Venezia, Italia",
-    "lastVerified": "2026-10-25"
+    "lastVerified": "2026-11-16"
   },
   {
     "slug": "museo-arte-orientale",
@@ -252,7 +253,7 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Novembre–marzo: mar–dom 10:00–17:00 (ultimo ingresso 16:00). Aprile–ottobre: mar–dom 10:00–18:00 (ultimo ingresso 17:00). Chiuso lunedì.",
     "booking": "not_required",
     "officialUrl": "https://orientalevenezia.cultura.gov.it/orari-biglietti-visite-guidate/",
-    "lastVerified": "2026-11-03",
+    "lastVerified": "2026-11-16",
     "mapsQuery": "Museo d’Arte Orientale, Venezia, Italia"
   },
   {
@@ -276,7 +277,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://fortuny.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo Fortuny, Venezia, Italia",
-    "lastVerified": "2026-10-25"
+    "lastVerified": "2026-11-16"
   },
   {
     "slug": "palazzo-mocenigo",
