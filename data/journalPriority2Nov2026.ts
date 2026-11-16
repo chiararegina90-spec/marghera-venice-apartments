@@ -7,7 +7,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
   "marghera-on-ice-2026": {
     "slug": "marghera-on-ice-2026",
     "image": "/images/journal-natale-capodanno.webp",
-    "alt": "Atmosfera natalizia veneziana, fotografia illustrativa e non della pista Marghera on Ice",
+    "imageAlt": "Atmosfera natalizia veneziana, fotografia illustrativa e non della pista Marghera on Ice",
     "startDate": "2026-11-14",
     "endDate": "2027-02-09",
     "official": [
@@ -40,7 +40,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
   "venezia-a-dicembre-2026": {
     "slug": "venezia-a-dicembre-2026",
     "image": "/images/venezia.webp",
-    "alt": "Panorama di Venezia, immagine illustrativa della guida di dicembre",
+    "imageAlt": "Panorama di Venezia, immagine illustrativa della guida di dicembre",
     "official": [
       "Natale Venezia 2026 — Venezia Unica",
       "https://www.veneziaunica.it/it/cosa-fare-a-venezia/eventi/natale-venezia-2026"
@@ -72,7 +72,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
   "fucina-degli-angeli-guggenheim-2026": {
     "slug": "fucina-degli-angeli-guggenheim-2026",
     "image": "/images/murano-glass.webp",
-    "alt": "Vetro artistico di Murano, immagine di contesto e non delle opere della mostra",
+    "imageAlt": "Vetro artistico di Murano, immagine di contesto e non delle opere della mostra",
     "startDate": "2026-11-14",
     "endDate": "2027-03-29",
     "official": [
@@ -106,7 +106,7 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
   "da-cosa-nasce-cosa-forte-marghera-2026": {
     "slug": "da-cosa-nasce-cosa-forte-marghera-2026",
     "image": "/images/culture/torre-civica-mestre-cover.webp",
-    "alt": "Centro di Mestre, immagine di contesto e non della mostra a Forte Marghera",
+    "imageAlt": "Centro di Mestre, immagine di contesto e non della mostra a Forte Marghera",
     "startDate": "2026-12-04",
     "endDate": "2027-05-09",
     "official": [
@@ -900,9 +900,127 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
   }
 };
 
+const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
+  "it": {
+    "marghera-on-ice-2026": [
+      "Venezia con bambini",
+      "Natale e Capodanno a Venezia"
+    ],
+    "venezia-a-dicembre-2026": [
+      "Natale e Capodanno a Venezia",
+      "Acqua alta a Venezia",
+      "Dove parcheggiare per Venezia"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "Collezione Peggy Guggenheim",
+      "Il vetro di Murano"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "Scopri Venezia e la terraferma",
+      "Marghera on Ice"
+    ]
+  },
+  "en": {
+    "marghera-on-ice-2026": [
+      "Venice with children",
+      "Christmas and New Year in Venice"
+    ],
+    "venezia-a-dicembre-2026": [
+      "Christmas and New Year in Venice",
+      "High tide in Venice",
+      "Parking for Venice"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "Peggy Guggenheim Collection",
+      "Murano glass"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "Explore Venice and the mainland",
+      "Marghera on Ice"
+    ]
+  },
+  "de": {
+    "marghera-on-ice-2026": [
+      "Venedig mit Kindern",
+      "Weihnachten und Silvester in Venedig"
+    ],
+    "venezia-a-dicembre-2026": [
+      "Weihnachten und Silvester in Venedig",
+      "Hochwasser in Venedig",
+      "Parken für Venedig"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "Peggy Guggenheim Collection",
+      "Muranoglas"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "Venedig und das Festland entdecken",
+      "Marghera on Ice"
+    ]
+  },
+  "fr": {
+    "marghera-on-ice-2026": [
+      "Venise avec des enfants",
+      "Noël et Nouvel An à Venise"
+    ],
+    "venezia-a-dicembre-2026": [
+      "Noël et Nouvel An à Venise",
+      "Acqua alta à Venise",
+      "Stationner près de Venise"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "Collection Peggy Guggenheim",
+      "Verre de Murano"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "Découvrir Venise et la terre ferme",
+      "Marghera on Ice"
+    ]
+  },
+  "es": {
+    "marghera-on-ice-2026": [
+      "Venecia con niños",
+      "Navidad y Año Nuevo en Venecia"
+    ],
+    "venezia-a-dicembre-2026": [
+      "Navidad y Año Nuevo en Venecia",
+      "Acqua alta en Venecia",
+      "Dónde aparcar para visitar Venecia"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "Colección Peggy Guggenheim",
+      "Vidrio de Murano"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "Descubre Venecia y tierra firme",
+      "Marghera on Ice"
+    ]
+  },
+  "zh": {
+    "marghera-on-ice-2026": [
+      "带孩子游览威尼斯",
+      "威尼斯圣诞与跨年"
+    ],
+    "venezia-a-dicembre-2026": [
+      "威尼斯圣诞与跨年",
+      "威尼斯高潮位",
+      "威尼斯停车攻略"
+    ],
+    "fucina-degli-angeli-guggenheim-2026": [
+      "佩吉·古根海姆美术馆",
+      "穆拉诺玻璃"
+    ],
+    "da-cosa-nasce-cosa-forte-marghera-2026": [
+      "探索威尼斯及陆地区域",
+      "Marghera on Ice"
+    ]
+  }
+};
+
 export const journalPriority2Nov2026=Object.fromEntries((Object.keys(localized) as EventLang[]).map(lang=>[
  lang,Object.fromEntries((Object.keys(shared) as Priority2Slug[]).map(slug=>[
-  slug,{...shared[slug],...localized[lang][slug],imageAlt:localized[lang][slug].description,
+  slug,{...shared[slug],...localized[lang][slug],
+    relatedLinks:shared[slug].relatedLinks?.map(([label,url],i)=>[linkLabels[lang][slug][i]||label,url] as const),
     metaTitle:localized[lang][slug].title.length>74?localized[lang][slug].title.slice(0,71)+'…':localized[lang][slug].title}
  ]))
 ])) as Record<EventLang,Record<Priority2Slug,EventArticle>>;
