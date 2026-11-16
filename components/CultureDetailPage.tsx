@@ -8,6 +8,7 @@ import CultureBookVisitNote from '@/components/CultureBookVisitNote';
 import CultureCard from '@/components/CultureCard';
 import CultureTemporaryEvents from '@/components/CultureTemporaryEvents';
 import CultureVisitorNotices from '@/components/CultureVisitorNotices';
+import ForteMargheraHighlights from '@/components/ForteMargheraHighlights';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import type {CultureLang,CulturePlace,CultureScope} from '@/data/culturePlaces';
 import {cityLabel,cultureDetailPath,cultureIndexPath,cultureUi,highlightsLabel,kindLabel,localizedHighlights,planningText,planningTitle} from '@/data/cultureTranslations';
@@ -82,6 +83,7 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      <article className="min-w-0">
        <section><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">01</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.why}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{narrative.why}</p></section>
        <section className="mt-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">02</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{ui.miss}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{ui.missText(highlightsLabel(place,lang))}</p><div className="mt-5 flex flex-wrap gap-2">{localizedHighlights(place,lang).map(h=><span key={h} className="rounded-full bg-cream px-4 py-2 text-sm font-bold text-navy">✦ {h}</span>)}</div></section>
+       {place.slug==='forte-marghera'&&<ForteMargheraHighlights lang={lang}/>}
        <CultureTemporaryEvents placeSlug={place.slug} lang={lang}/>
        <CultureVisitorNotices placeSlug={place.slug} lang={lang}/>
        <section className="mt-8 rounded-[1.75rem] border border-[#e5dccd] bg-white p-6 sm:p-8"><div className="flex items-baseline gap-3"><p className="text-sm font-black uppercase tracking-[.18em] text-gold">03</p><h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{planningTitle(lang)}</h2></div><p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{planningText(place,lang)}</p></section>
