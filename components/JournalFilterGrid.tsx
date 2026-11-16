@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CommonsPhoto from '@/components/CommonsPhoto';
 import {eventCalendarDate} from '@/data/event-calendar';
+import {romeToday} from '@/lib/romeDate';
 
 type Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 export type JournalFilterItem={
@@ -26,7 +27,7 @@ function rank(item:JournalFilterItem,today:string){
   if(item.startDate&&item.endDate){if(item.startDate<=today&&today<=item.endDate)return 0;if(item.startDate>today)return 1;return 3;} return 2;
 }
 function sortJournal(items:JournalFilterItem[]){
-  const today=new Date().toISOString().slice(0,10);
+  const today=romeToday();
   return items.map((x,i)=>({x:withDates(x),i})).sort((a,b)=>{
     const ra=rank(a.x,today),rb=rank(b.x,today); if(ra!==rb)return ra-rb;
     if(ra===0)return (a.x.endDate||'').localeCompare(b.x.endDate||'')||a.i-b.i;
@@ -67,7 +68,7 @@ export default function JournalFilterGrid({items,dynamicEvents=[],lang='it',read
     return sortJournal([...dynamicEvents,...items].filter(a=>{if(seen.has(a.href))return false;seen.add(a.href);return true;}));
   },[items,dynamicEvents]);
   const monthOptions=useMemo(()=>{
-    const now=new Date();const current=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+    const current=romeToday().slice(0,7);
     const months=new Set<string>();
     merged.forEach(item=>{if(item.startDate&&item.endDate)monthsBetween(item.startDate,item.endDate).forEach(m=>{if(m>=current)months.add(m);});});
     return Array.from(months).sort();
