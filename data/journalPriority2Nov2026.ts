@@ -124,6 +124,10 @@ const shared:Record<Priority2Slug,Partial<EventArticle>>={
       [
         "Marghera on Ice",
         "/journal/marghera-on-ice-2026"
+      ],
+      [
+        "Visita Forte Marghera",
+        "/guide/musei-venezia/forte-marghera"
       ]
     ],
     "eventLocation": {
@@ -917,7 +921,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "Scopri Venezia e la terraferma",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "Visita Forte Marghera"
     ]
   },
   "en": {
@@ -936,7 +941,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "Explore Venice and the mainland",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "Visit Forte Marghera"
     ]
   },
   "de": {
@@ -955,7 +961,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "Venedig und das Festland entdecken",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "Forte Marghera besuchen"
     ]
   },
   "fr": {
@@ -974,7 +981,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "Découvrir Venise et la terre ferme",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "Visiter Forte Marghera"
     ]
   },
   "es": {
@@ -993,7 +1001,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "Descubre Venecia y tierra firme",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "Visitar Forte Marghera"
     ]
   },
   "zh": {
@@ -1012,7 +1021,8 @@ const linkLabels:Record<EventLang,Record<Priority2Slug,string[]>>={
     ],
     "da-cosa-nasce-cosa-forte-marghera-2026": [
       "探索威尼斯及陆地区域",
-      "Marghera on Ice"
+      "Marghera on Ice",
+      "参观 Forte Marghera"
     ]
   }
 };
