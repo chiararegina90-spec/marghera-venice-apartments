@@ -3,7 +3,7 @@ export type CultureScope='venice'|'veneto';
 export type CultureKind='museum'|'monument'|'church'|'panorama';
 export type BookingMode='required'|'recommended'|'not_required'|'check';
 export type CulturePlace={
- slug:string; name:string; scope:CultureScope; kind:CultureKind; city:string; province:string; duration:string; highlights:string[]; commonsQuery:string; family:boolean; panorama:boolean; price:string; hours:string; booking:BookingMode; officialUrl:string; mapsQuery:string; lastVerified?:string;
+ slug:string; name:string; scope:CultureScope; kind:CultureKind; city:string; province:string; duration:string; highlights:string[]; commonsQuery:string; family:boolean; panorama:boolean; price:string; hours:string; booking:BookingMode; officialUrl:string; mapsQuery:string; lastVerified?:string; lastModified?:string;
 };
 
 export const culturePlaces:CulturePlace[] = [
@@ -2931,7 +2931,8 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "not_required",
     "officialUrl": "https://fondazionefortemarghera.it/",
     "mapsQuery": "Forte Marghera, Via Forte Marghera 30, Mestre, Venezia, Italia",
-    "lastVerified": "2026-11-16"
+    "lastVerified": "2026-11-16",
+    "lastModified": "2026-11-16"
   }
 ];
 
