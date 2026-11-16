@@ -4,6 +4,10 @@ export type EventCalendarDate={startDate:string;endDate:string};
 // public Journal month filter and the private Welcome Book stay-date matcher.
 // Undated or unconfirmed events stay out until reliable dates are available.
 export const eventCalendarDates={
+  'marghera-on-ice-2026':{startDate:'2026-11-14',endDate:'2027-02-09'},
+  'venezia-a-dicembre-2026':{startDate:'2026-12-01',endDate:'2026-12-31'},
+  'fucina-degli-angeli-guggenheim-2026':{startDate:'2026-11-14',endDate:'2027-03-29'},
+  'da-cosa-nasce-cosa-forte-marghera-2026':{startDate:'2026-12-04',endDate:'2027-05-09'},
   'biennale-di-venezia':{startDate:'2026-05-09',endDate:'2026-11-22'},
   'regata-storica-2026':{startDate:'2026-09-06',endDate:'2026-09-06'},
   'mostra-del-cinema':{startDate:'2027-09-01',endDate:'2027-09-11'},
