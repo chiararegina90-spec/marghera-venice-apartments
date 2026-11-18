@@ -1,3 +1,4 @@
+import {journalNoticeModifiedDates} from './journalVisitorNotices';
 import {gunzipSync} from 'node:zlib';
 import p0 from './journal-events-payload-0';
 import p1 from './journal-events-payload-1';
@@ -108,7 +109,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='biennale-musica-2026')Object.assign(item,biennaleMusica2026Overrides[lang]);
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
     if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);
-    applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);applyJournalCatchup20261116(item,lang,slug);}
+    applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);applyJournalCatchup20261116(item,lang,slug);if(journalNoticeModifiedDates[slug])item.dateModified=journalNoticeModifiedDates[slug];}
   }
 }
 export const journalEvents2026=decoded;

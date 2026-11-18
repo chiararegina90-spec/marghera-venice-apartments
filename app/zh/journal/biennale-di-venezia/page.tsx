@@ -16,3 +16,6 @@ export const metadata:Metadata={
 };
 
 export default function Page(){return <BiennaleArte2026Article lang={lang} data={data}/>;}
+
+// Refresh short-lived visitor notices on the same cadence as culture pages.
+export const revalidate=900;
