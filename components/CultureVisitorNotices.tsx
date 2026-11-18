@@ -3,7 +3,7 @@ import type {CultureLang} from '@/data/culturePlaces';
 import {
  cultureVisitorNoticeLabels,
  cultureVisitorNoticesFor,
- cultureVisitorNoticeStatus
+ cultureVisitorNoticeStatus,type CultureVisitorNotice
 } from '@/data/cultureVisitorNotices';
 import {localePath} from '@/lib/i18n';
 
@@ -15,8 +15,8 @@ function formatDate(value:string,lang:CultureLang){
  return new Intl.DateTimeFormat(locale(lang),{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/Rome'}).format(new Date(Date.UTC(y,m-1,d,12)));
 }
 
-export default function CultureVisitorNotices({placeSlug,lang}:{placeSlug:string;lang:CultureLang}){
- const notices=cultureVisitorNoticesFor(placeSlug);
+export default function CultureVisitorNotices({placeSlug,lang,entries}:{placeSlug:string;lang:CultureLang;entries?:CultureVisitorNotice[]}){
+ const notices=cultureVisitorNoticesFor(placeSlug,undefined,undefined,entries);
  if(!notices.length)return null;
  const labels=cultureVisitorNoticeLabels[lang];
  return <section className="mt-8 rounded-[1.75rem] border border-slate-200 bg-white p-6 sm:p-8">

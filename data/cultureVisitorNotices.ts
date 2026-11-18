@@ -638,8 +638,8 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
  }
 ];
 
-export function cultureVisitorNoticesFor(placeSlug:string,referenceDate=romeToday(),referenceDateTime=romeNowMinute()){
- return cultureVisitorNotices.filter(n=>{
+export function cultureVisitorNoticesFor(placeSlug:string,referenceDate=romeToday(),referenceDateTime=romeNowMinute(),entries:CultureVisitorNotice[]=cultureVisitorNotices){
+ return entries.filter(n=>{
   if(n.placeSlug!==placeSlug)return false;
   if(n.endDateTime&&n.endDateTime<referenceDateTime)return false;
   if(!n.endDateTime&&n.end&&n.end<referenceDate)return false;

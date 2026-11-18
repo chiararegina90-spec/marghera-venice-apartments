@@ -1,3 +1,5 @@
+import JournalVisitorNotices from '@/components/JournalVisitorNotices';
+import {journalNoticeModifiedDates} from '@/data/journalVisitorNotices';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -103,7 +105,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
     author:{'@type':'Organization',name:'Marghera Venice Apartments'},
-    publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},dateModified:'2026-10-30',
+    publisher:{'@type':'Organization',name:'Marghera Venice Apartments'},dateModified:journalNoticeModifiedDates['biennale-di-venezia'],
     mainEntityOfPage:url,url
   };
   const breadcrumbJsonLd={
@@ -146,6 +148,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
       subtitle={data.heroSubtitle}
     />}
 
+    <JournalVisitorNotices slug="biennale-di-venezia" lang={lang}/>
     <section className="bg-cream py-8"><div className="mx-auto max-w-4xl px-5 lg:px-8"><div className="rounded-[1.6rem] border border-navy/10 bg-white p-6 shadow-soft sm:flex sm:items-center sm:justify-between sm:gap-8"><div><p className="text-xs font-black uppercase tracking-[.18em] text-gold">{next.eyebrow}</p><h2 className="mt-2 font-serif text-3xl text-navy">{next.title}</h2><p className="mt-3 max-w-2xl text-slate-600">{next.text}</p></div><Link href={localePath('/journal/biennale-architettura-2027',lang)} className="mt-5 inline-flex shrink-0 rounded-full bg-navy px-6 py-3 font-bold text-white sm:mt-0">{next.cta} →</Link></div></div></section>
 
     <section className="py-20"><div className="mx-auto max-w-4xl px-5 lg:px-8">

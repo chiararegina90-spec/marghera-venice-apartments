@@ -9,7 +9,7 @@ const prefix='/de/journal';
 type Params={eventSlug:string};
 
 // Refresh the event state after a date passes; no stale EventScheduled metadata.
-export const revalidate=86400;
+export const revalidate=900;
 export function generateStaticParams(){return eventSlugs.map(eventSlug=>({eventSlug}));}
 
 export async function generateMetadata({params}:{params:Promise<Params>}):Promise<Metadata>{
