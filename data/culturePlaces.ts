@@ -1122,7 +1122,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Orari legati al culto",
     "booking": "not_required",
     "officialUrl": "https://www.basilicasalutevenezia.it/",
-    "mapsQuery": "Basilica di Santa Maria della Salute, Venezia, Italia"
+    "mapsQuery": "Basilica di Santa Maria della Salute, Venezia, Italia",
+    "lastModified": "2026-11-19"
   },
   {
     "slug": "basilica-frari",

@@ -24,6 +24,77 @@ export type CultureVisitorNotice={
 };
 
 export const cultureVisitorNotices:CultureVisitorNotice[]=[
+{
+  "key": "salute-2026-extraordinary-hours",
+  "placeSlug": "basilica-salute",
+  "kind": "visitor-info",
+  "start": "2026-11-20",
+  "end": "2026-11-21",
+  "endDateTime": "2026-11-21T22:19",
+  "title": {
+    "it": "Salute 2026: orari straordinari della Basilica",
+    "en": "Salute 2026: special Basilica opening hours",
+    "de": "Salute 2026: Sonderöffnungszeiten der Basilika",
+    "fr": "Salute 2026 : horaires exceptionnels de la basilique",
+    "es": "Salute 2026: horarios extraordinarios de la basílica",
+    "zh": "2026年圣母健康节：大教堂特别开放时间"
+  },
+  "summary": {
+    "it": "Il programma della Festa della Madonna della Salute 2026 prevede orari straordinari per i fedeli: venerdì 20 novembre dalle 8:00 alle 20:00 e sabato 21 novembre dalle 5:40 alle 22:20. Durante le celebrazioni la visita turistica potrebbe essere condizionata dal pellegrinaggio.",
+    "en": "For the 2026 Festa della Madonna della Salute, special opening hours for worshippers are scheduled on Friday 20 November, 8:00–20:00, and Saturday 21 November, 5:40–22:20. Tourist visits may be affected by the pilgrimage during celebrations.",
+    "de": "Für die Festa della Madonna della Salute 2026 gelten besondere Öffnungszeiten für Gläubige: Freitag, 20. November, 8:00–20:00 Uhr, und Samstag, 21. November, 5:40–22:20 Uhr. Während der Gottesdienste kann die Wallfahrt touristische Besuche beeinträchtigen.",
+    "fr": "Pour la Festa della Madonna della Salute 2026, des horaires exceptionnels sont prévus pour les fidèles : vendredi 20 novembre de 8:00 à 20:00 et samedi 21 novembre de 5:40 à 22:20. Le pèlerinage peut perturber les visites touristiques pendant les célébrations.",
+    "es": "Para la Festa della Madonna della Salute 2026 se prevén horarios extraordinarios para los fieles: viernes 20 de noviembre de 8:00 a 20:00 y sábado 21 de noviembre de 5:40 a 22:20. La peregrinación puede condicionar las visitas turísticas durante las celebraciones.",
+    "zh": "2026年圣母健康节期间，大教堂计划于11月20日星期五8:00–20:00、11月21日星期六5:40–22:20特别向信众开放。庆典期间的旅游参观可能受到朝圣活动影响。"
+  },
+  "officialUrl": "https://live.comune.venezia.it/it/2026/11/madonna-della-salute-la-festa-dei-veneziani",
+  "internalHref": "/journal/festa-madonna-salute-venezia",
+  "lastVerified": "2026-11-19",
+  "period": {
+    "it": "20–21 novembre 2026",
+    "en": "20–21 November 2026",
+    "de": "20.–21. November 2026",
+    "fr": "20–21 novembre 2026",
+    "es": "20–21 de noviembre de 2026",
+    "zh": "2026年11月20–21日"
+  }
+},
+{
+  "key": "salute-2026-votive-bridge",
+  "placeSlug": "basilica-salute",
+  "kind": "visitor-info",
+  "start": "2026-11-19",
+  "end": "2026-11-22",
+  "startDateTime": "2026-11-19T15:00",
+  "endDateTime": "2026-11-22T22:59",
+  "title": {
+    "it": "Ponte votivo della Salute 2026",
+    "en": "Salute 2026 votive bridge",
+    "de": "Votivbrücke zur Salute 2026",
+    "fr": "Pont votif de la Salute 2026",
+    "es": "Puente votivo de la Salute 2026",
+    "zh": "2026年圣母健康节临时还愿桥"
+  },
+  "summary": {
+    "it": "Transito pedonale previsto senza interruzioni dalle 15:00 del 19 novembre alle 23:00 del 22 novembre 2026, tra Campo Santa Maria del Giglio e Calle San Gregorio. In caso di affollamento possono essere introdotti sensi unici, deviazioni o limitazioni temporanee.",
+    "en": "Continuous pedestrian access is scheduled from 15:00 on 19 November to 23:00 on 22 November 2026 between Campo Santa Maria del Giglio and Calle San Gregorio. Crowding may lead to one-way routes, diversions or temporary restrictions.",
+    "de": "Durchgehender Fußgängerverkehr ist vom 19. November, 15:00 Uhr, bis 22. November 2026, 23:00 Uhr, zwischen Campo Santa Maria del Giglio und Calle San Gregorio vorgesehen. Bei Andrang sind Einbahnregelungen, Umleitungen und zeitweilige Beschränkungen möglich.",
+    "fr": "Passage piéton ininterrompu prévu du 19 novembre à 15:00 au 22 novembre 2026 à 23:00, entre Campo Santa Maria del Giglio et Calle San Gregorio. Des sens uniques, déviations ou restrictions temporaires peuvent être instaurés en cas d’affluence.",
+    "es": "Paso peatonal ininterrumpido previsto desde las 15:00 del 19 de noviembre hasta las 23:00 del 22 de noviembre de 2026, entre Campo Santa Maria del Giglio y Calle San Gregorio. En caso de aglomeraciones se pueden establecer sentidos únicos, desvíos o restricciones temporales.",
+    "zh": "连接 Campo Santa Maria del Giglio 与 Calle San Gregorio 的临时还愿桥计划于2026年11月19日15:00至22日23:00不间断供行人通行。人流拥挤时可能实施单向通行、改道或临时限制。"
+  },
+  "officialUrl": "https://live.comune.venezia.it/it/2026/11/madonna-della-salute-dal-19-al-22-novembre-modifiche-alla-circolazione-pedonale",
+  "internalHref": "/journal/festa-madonna-salute-venezia",
+  "lastVerified": "2026-11-19",
+  "period": {
+    "it": "19 novembre 15:00 – 22 novembre 23:00",
+    "en": "19 November 15:00 – 22 November 23:00",
+    "de": "19. November 15:00 – 22. November 23:00",
+    "fr": "19 novembre 15:00 – 22 novembre 23:00",
+    "es": "19 de noviembre 15:00 – 22 de noviembre 23:00",
+    "zh": "11月19日15:00至22日23:00"
+  }
+},
  {
   key:"ca-pesaro-strike-2026-11-20",
   placeSlug:"ca-pesaro",

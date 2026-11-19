@@ -1,3 +1,4 @@
+import {applySalute20261119} from './salute2026Update';
 import {journalNoticeModifiedDates} from './journalVisitorNotices';
 import {gunzipSync} from 'node:zlib';
 import p0 from './journal-events-payload-0';
@@ -110,19 +111,8 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item&&slug==='venice-noir-2026')Object.assign(item,veniceNoir2026Overrides[lang]);
     if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);
     applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);applyJournalCatchup20261116(item,lang,slug);
-    if(slug==='festa-madonna-salute-venezia'){
-      // 18 November: no verified municipal operational timetable for the 2026 votive bridge was located.
-      const bridgeCheckDates:Record<EventLang,readonly [string,string]>={it:['25 ottobre 2026','18 novembre 2026'],en:['25 October 2026','18 November 2026'],de:['25. Oktober 2026','18. November 2026'],fr:['25 octobre 2026','18 novembre 2026'],es:['25 de octubre de 2026','18 de noviembre de 2026'],zh:['2026年10月25日','2026年11月18日']};
-      const [previous,current]=bridgeCheckDates[lang];
-      let changed=false;
-      item.sections=(item.sections||[]).map(([heading,body])=>{
-        if(!body.includes(previous))return [heading,body] as const;
-        changed=true;
-        return [heading,body.replace(previous,current)] as const;
-      });
-      if(changed)item.dateModified='2026-11-18';
-    }
-    if(journalNoticeModifiedDates[slug])item.dateModified=journalNoticeModifiedDates[slug];}
+    if(journalNoticeModifiedDates[slug])item.dateModified=journalNoticeModifiedDates[slug];
+    applySalute20261119(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;
