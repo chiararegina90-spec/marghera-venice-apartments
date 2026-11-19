@@ -1,3 +1,4 @@
+import JournalNoticeExpiry from '@/components/JournalNoticeExpiry';
 import Link from 'next/link';
 import type {CultureLang} from '@/data/culturePlaces';
 import {
@@ -19,14 +20,14 @@ export default function CultureVisitorNotices({placeSlug,lang,entries}:{placeSlu
  const notices=cultureVisitorNoticesFor(placeSlug,undefined,undefined,entries);
  if(!notices.length)return null;
  const labels=cultureVisitorNoticeLabels[lang];
- return <section className="mt-8 rounded-[1.75rem] border border-slate-200 bg-white p-6 sm:p-8">
+ const content=<section className="mt-8 rounded-[1.75rem] border border-slate-200 bg-white p-6 sm:p-8">
   <p className="text-xs font-black uppercase tracking-[.2em] text-gold">{labels.eyebrow}</p>
   <h2 className="mt-2 font-serif text-3xl leading-tight text-navy sm:text-4xl">{labels.section}</h2>
   <div className="mt-6 grid gap-4">
    {notices.map(notice=>{
     const status=cultureVisitorNoticeStatus(notice);
     const period=notice.period?.[lang]||(notice.start&&notice.end?`${formatDate(notice.start,lang)} — ${formatDate(notice.end,lang)}`:notice.end?formatDate(notice.end,lang):'');
-    return <article key={notice.key} className="rounded-2xl bg-cream p-5">
+    const card=<article key={notice.key} className="rounded-2xl bg-cream p-5">
      <div className="flex flex-wrap items-center gap-2 text-[11px] font-black uppercase tracking-[.13em]">
       <span className="rounded-full bg-gold/15 px-3 py-1.5 text-[#9a6a10]">{status==='current'?labels.current:labels.upcoming}</span>
       <span className="text-slate-500">{labels.kinds[notice.kind]}</span>
@@ -40,7 +41,11 @@ export default function CultureVisitorNotices({placeSlug,lang,entries}:{placeSlu
      </div>
      <p className="mt-3 text-xs text-slate-400">{labels.verified}: {formatDate(notice.lastVerified,lang)}</p>
     </article>;
+    return placeSlug==='basilica-salute'?<JournalNoticeExpiry key={notice.key} lastDay={notice.end||'9999-12-31'} lastMinute={notice.endDateTime}>{card}</JournalNoticeExpiry>:card;
    })}
   </div>
  </section>;
+ if(placeSlug!=='basilica-salute')return content;
+ const lastMinute=notices.map(n=>n.endDateTime||((n.end||'9999-12-31')+'T23:59')).sort().at(-1)!;
+ return <JournalNoticeExpiry lastDay={lastMinute.slice(0,10)} lastMinute={lastMinute}>{content}</JournalNoticeExpiry>;
 }
