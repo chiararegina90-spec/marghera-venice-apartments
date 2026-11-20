@@ -2,5 +2,5 @@ import AuditedPrimaryJournalArticle from '@/components/AuditedPrimaryJournalArti
 import {veniceChristmasAudit} from '@/data/veniceChristmasAudit';
 import {editorialMetadata} from '@/lib/seoContentMetadata';
 const data=veniceChristmasAudit.en;
-export const metadata=editorialMetadata({lang:'en',logicalPath:'/journal/natale-capodanno-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:'2026-11-16'});
+export const metadata=editorialMetadata({lang:'en',logicalPath:'/journal/natale-capodanno-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:'2026-11-20'});
 export default function Page(){return <AuditedPrimaryJournalArticle lang="en" data={data}/>;}
