@@ -1,3 +1,4 @@
+import {applyChristmas20261120} from './christmas20261120';
 import {applySalute20261119} from './salute2026Update';
 import {journalNoticeModifiedDates} from './journalVisitorNotices';
 import {gunzipSync} from 'node:zlib';
@@ -112,7 +113,7 @@ for(const lang of Object.keys(decoded) as EventLang[]){
     if(item){applyJournalCatchup20261015(item,lang,slug);applyJournalCatchup20261019(item,lang,slug);applyJournalCatchup20261020(item,lang,slug);applyJournalCatchup20261022(item,lang,slug);applyJournalCatchup20261023(item,lang,slug);applyJournalCatchup20261025(item,lang,slug);applyJournalCatchup20261026(item,lang,slug);
     applyJournalCatchup20261028(item,lang,slug);applyJournalCatchup20261029(item,lang,slug);applyJournalCatchup20261030(item,lang,slug);applyJournalCatchup20261103(item,lang,slug);applyJournalFaqParity20261025(item,lang,slug);applyJournalCatchup20261104(item,lang,slug);applyJournalCatchup20261116(item,lang,slug);
     if(journalNoticeModifiedDates[slug])item.dateModified=journalNoticeModifiedDates[slug];
-    applySalute20261119(item,lang,slug);}
+    applySalute20261119(item,lang,slug);applyChristmas20261120(item,lang,slug);}
   }
 }
 export const journalEvents2026=decoded;

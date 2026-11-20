@@ -2,5 +2,5 @@ import AuditedLocalizedJournalArticle from '@/components/AuditedLocalizedJournal
 import {veniceChristmasAudit} from '@/data/veniceChristmasAudit';
 import {editorialMetadata} from '@/lib/seoContentMetadata';
 const data=veniceChristmasAudit.zh;
-export const metadata=editorialMetadata({lang:'zh',logicalPath:'/journal/natale-capodanno-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:'2026-11-16'});
+export const metadata=editorialMetadata({lang:'zh',logicalPath:'/journal/natale-capodanno-venezia',title:data.title,description:data.description,image:data.image,alt:data.imageAlt,modified:'2026-11-20'});
 export default function Page(){return <AuditedLocalizedJournalArticle lang="zh" data={data} tipLabel="Marghera Venice Apartments 建议" officialLabel="官方信息" backLabel="返回旅行日志"/>;}

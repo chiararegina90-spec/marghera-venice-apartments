@@ -1,3 +1,4 @@
+import {veniceChristmasAudit} from '@/data/veniceChristmasAudit';
 import JournalFilterGrid,{type JournalFilterItem} from '@/components/JournalFilterGrid';
 import {eventArticles,type EventLang} from '@/data/journal-events-2026';
 import {journalEventImagePair} from '@/data/journal-event-images';
@@ -37,6 +38,7 @@ export default function JournalDynamicGrid({items,lang='it',readLabel}:{items:Jo
     const href=item.href.replace(/\/$/,'');
     if(href.endsWith('/journal/mostra-del-cinema'))return {...item,...film2027[lang],startDate:'2027-09-01',endDate:'2027-09-11'};
     if(href.endsWith('/journal/amerigo-vespucci-venezia-2026'))return {...item,...vespucci2026[lang],startDate:'2026-10-02',endDate:'2026-10-07'};
+    if(href.endsWith('/journal/natale-capodanno-venezia'))return {...item,text:veniceChristmasAudit[lang].description,eventDate:veniceChristmasAudit[lang].eventDate,startDate:'2026-11-20',endDate:'2027-01-06'};
     return item;
   });
   return <JournalFilterGrid items={[...currentItems,...sharedEvergreen]} dynamicEvents={dynamicEvents} lang={lang} readLabel={readLabel}/>;

@@ -95,7 +95,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Con accesso dal percorso integrato di Piazza San Marco",
     "booking": "recommended",
     "officialUrl": "https://bibliotecanazionalemarciana.cultura.gov.it/",
-    "mapsQuery": "Sale Monumentali della Biblioteca Nazionale Marciana, Venezia, Italia"
+    "mapsQuery": "Sale Monumentali della Biblioteca Nazionale Marciana, Venezia, Italia",
+    "lastModified": "2026-11-20"
   },
   {
     "slug": "gallerie-dell-accademia",
