@@ -8,6 +8,7 @@ import EditorialHero from '@/components/EditorialHero';
 import type {BiennaleArte2026Data,BiennaleArte2026Lang} from '@/data/biennaleArte2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import {localePath} from '@/lib/i18n';
+import {eventSchemaStatus,romeToday} from '@/lib/romeDate';
 
 function base(lang:BiennaleArte2026Lang){return lang==='it'?'':`/${lang}`;}
 const architecture2027:Record<BiennaleArte2026Lang,{eyebrow:string;title:string;text:string;cta:string}>={
@@ -89,6 +90,47 @@ const autumnUpdate:Record<BiennaleArte2026Lang,{title:string;text:string;ticketT
   }
 };
 
+const lastDayTicketUrl='https://www.labiennale.org/it/news/sabato-21-e-domenica-22-ingresso-ridotto-alla-biennale-arte';
+const lastDayTicket:Record<BiennaleArte2026Lang,{title:string;active:string;historical:string;source:string}>={
+  it:{
+    title:'Ultimo giorno della Biennale Arte: ingresso speciale a 5 €',
+    active:'Domenica 22 novembre 2026, ultimo giorno della Biennale Arte, tutti i visitatori possono acquistare un biglietto speciale a 5 €, disponibile nella stessa giornata online oppure presso le biglietterie e gli infopoint ufficiali. Il biglietto permette un ingresso ai Giardini e uno all’Arsenale. Verifica disponibilità e condizioni sul sito ufficiale della Biennale.',
+    historical:'Domenica 22 novembre 2026, ultimo giorno della Biennale Arte 2026, era disponibile per tutti i visitatori un biglietto speciale a 5 €, acquistabile esclusivamente quel giorno online oppure presso le biglietterie e gli infopoint ufficiali. Il biglietto permetteva un ingresso ai Giardini e uno all’Arsenale. L’offerta è conclusa e resta qui come informazione storica.',
+    source:'Comunicazione ufficiale della Biennale'
+  },
+  en:{
+    title:'Biennale Arte final day: special €5 admission',
+    active:'On Sunday 22 November 2026, the final day of Biennale Arte, all visitors can purchase a special €5 ticket on the same day, either online or at the official ticket offices and information points. The ticket includes one admission to Giardini and one to Arsenale. Check availability and conditions on the official Biennale website.',
+    historical:'On Sunday 22 November 2026, the final day of Biennale Arte 2026, a special €5 ticket was available to all visitors for purchase on that day only, online or at the official ticket offices and information points. It included one admission to Giardini and one to Arsenale. This offer has ended and is retained for historical reference.',
+    source:'Official Biennale announcement'
+  },
+  de:{
+    title:'Letzter Tag der Biennale Arte: Sonderticket für 5 €',
+    active:'Am Sonntag, 22. November 2026, dem letzten Tag der Biennale Arte, können alle Besucher ein Sonderticket für 5 € erwerben, ausschließlich an diesem Tag online oder an den offiziellen Kassen und Informationsstellen. Es gilt für je einen Eintritt in Giardini und Arsenale. Verfügbarkeit und Bedingungen bitte auf der offiziellen Biennale-Website prüfen.',
+    historical:'Am Sonntag, 22. November 2026, dem letzten Tag der Biennale Arte 2026, gab es für alle Besucher ein Sonderticket für 5 €, das nur an diesem Tag online oder an den offiziellen Kassen und Informationsstellen erhältlich war. Es galt für je einen Eintritt in Giardini und Arsenale. Die Aktion ist beendet und wird hier nur historisch dokumentiert.',
+    source:'Offizielle Mitteilung der Biennale'
+  },
+  fr:{
+    title:'Dernier jour de la Biennale Arte : billet spécial à 5 €',
+    active:'Le dimanche 22 novembre 2026, dernier jour de la Biennale Arte, tous les visiteurs peuvent acheter un billet spécial à 5 €, uniquement ce jour-là, en ligne ou aux billetteries et points d’information officiels. Il donne droit à une entrée aux Giardini et une à l’Arsenale. Vérifiez les disponibilités et conditions sur le site officiel de la Biennale.',
+    historical:'Le dimanche 22 novembre 2026, dernier jour de la Biennale Arte 2026, un billet spécial à 5 € était proposé à tous les visiteurs, à acheter uniquement le jour même en ligne ou aux billetteries et points d’information officiels. Il permettait une entrée aux Giardini et une à l’Arsenale. Cette offre est terminée et conservée ici à titre historique.',
+    source:'Annonce officielle de la Biennale'
+  },
+  es:{
+    title:'Último día de la Biennale Arte: entrada especial de 5 €',
+    active:'El domingo 22 de noviembre de 2026, último día de la Biennale Arte, todos los visitantes pueden comprar una entrada especial de 5 €, únicamente ese día, en línea o en las taquillas y puntos de información oficiales. Incluye un acceso a Giardini y otro a Arsenale. Consulta disponibilidad y condiciones en la web oficial de la Biennale.',
+    historical:'El domingo 22 de noviembre de 2026, último día de la Biennale Arte 2026, se ofreció a todos los visitantes una entrada especial de 5 €, disponible exclusivamente ese día en línea o en las taquillas y puntos de información oficiales. Incluía un acceso a Giardini y otro a Arsenale. La oferta ha finalizado y se conserva aquí como referencia histórica.',
+    source:'Comunicado oficial de la Biennale'
+  },
+  zh:{
+    title:'Biennale Arte 最后一天：5欧元特别门票',
+    active:'2026年11月22日星期日是 Biennale Arte 最后一天，所有参观者均可于当天以5欧元购买特别门票，可在官方网站或官方售票处及咨询点购买。门票包括 Giardini 和 Arsenale 各一次入场。请在 Biennale 官方网站核实余票及具体条件。',
+    historical:'2026年11月22日星期日，即 Biennale Arte 2026 最后一天，曾向所有参观者提供5欧元特别门票，仅限当天通过官方网站或官方售票处及咨询点购买，可分别进入 Giardini 和 Arsenale 一次。优惠已结束，此信息仅作为历史记录保留。',
+    source:'Biennale 官方公告'
+  }
+};
+const isTicketSection=(title:string)=>/biglietti|tickets|eintritt|billets|entradas|门票/i.test(title);
+
 const filmFestival2027:Record<BiennaleArte2026Lang,string>={
   it:'Mostra del Cinema di Venezia 2027',
   en:'Venice Film Festival 2027',
@@ -102,6 +144,9 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
   const path=`${base(lang)}/journal/biennale-di-venezia`;
   const url=`https://www.margheraveniceapartments.com${path}`;
   const next=architecture2027[lang];
+  const specialTicket=lastDayTicket[lang];
+  const isFinalDay=romeToday()==='2026-11-22';
+  const biennaleEventStatus=eventSchemaStatus('2026-11-22');
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
     author:{'@type':'Organization',name:'Marghera Venice Apartments'},
@@ -117,7 +162,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
   };
   const eventJsonLd={
     '@context':'https://schema.org','@type':'Event',name:'Biennale Arte 2026 – In Minor Keys',description:data.metaDescription,
-    startDate:'2026-05-09',endDate:'2026-11-22',eventStatus:'https://schema.org/EventScheduled',eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
+    startDate:'2026-05-09',endDate:'2026-11-22',...(biennaleEventStatus?{eventStatus:biennaleEventStatus}:{}),eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
     location:[
       {'@type':'Place',name:'Giardini della Biennale',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},
       {'@type':'Place',name:'Arsenale di Venezia',address:{'@type':'PostalAddress',addressLocality:'Venezia',addressCountry:'IT'}},
@@ -156,12 +201,12 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
       <div className="mt-14 space-y-12">{[
         ...data.sections.map(([title,text])=>{
           if(/orari|opening hours|öffnungszeiten|horaires|horarios|开放时间/i.test(title))return [autumnUpdate[lang].title,autumnUpdate[lang].text] as const;
-          if(/biglietti|tickets|eintritt|billets|entradas|门票/i.test(title))return [title,autumnUpdate[lang].ticketText] as const;
+          if(isTicketSection(title))return [title,autumnUpdate[lang].ticketText] as const;
           return [title,text] as const;
         }),
         [autumnUpdate[lang].finalTitle,autumnUpdate[lang].finalText] as const,
         [autumnUpdate[lang].lionsTitle,autumnUpdate[lang].lionsText] as const
-      ].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p>{title===autumnUpdate[lang].finalTitle&&<p className="mt-4"><a href={closingProgrammeUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].programLink} ↗</a></p>}{title===autumnUpdate[lang].lionsTitle&&<p className="mt-4"><a href={visitorLionsUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].lionsLink} ↗</a></p>}</div></section>)}</div>
+      ].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p>{isTicketSection(title)&&<aside className="mt-6 rounded-2xl border border-gold/30 bg-cream p-5 sm:p-6"><h3 className="font-serif text-2xl text-navy">{specialTicket.title}</h3><p className="mt-3 leading-7 text-slate-700">{isFinalDay?specialTicket.active:specialTicket.historical}</p><a href={lastDayTicketUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{specialTicket.source} ↗</a></aside>}{title===autumnUpdate[lang].finalTitle&&<p className="mt-4"><a href={closingProgrammeUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].programLink} ↗</a></p>}{title===autumnUpdate[lang].lionsTitle&&<p className="mt-4"><a href={visitorLionsUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].lionsLink} ↗</a></p>}</div></section>)}</div>
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">
