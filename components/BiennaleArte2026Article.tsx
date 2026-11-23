@@ -8,7 +8,7 @@ import EditorialHero from '@/components/EditorialHero';
 import type {BiennaleArte2026Data,BiennaleArte2026Lang} from '@/data/biennaleArte2026';
 import EditorialStayCta from '@/components/EditorialStayCta';
 import {localePath} from '@/lib/i18n';
-import {eventSchemaStatus,romeToday} from '@/lib/romeDate';
+import {eventSchemaStatus} from '@/lib/romeDate';
 
 function base(lang:BiennaleArte2026Lang){return lang==='it'?'':`/${lang}`;}
 const architecture2027:Record<BiennaleArte2026Lang,{eyebrow:string;title:string;text:string;cta:string}>={
@@ -91,45 +91,50 @@ const autumnUpdate:Record<BiennaleArte2026Lang,{title:string;text:string;ticketT
 };
 
 const lastDayTicketUrl='https://www.labiennale.org/it/news/sabato-21-e-domenica-22-ingresso-ridotto-alla-biennale-arte';
-const lastDayTicket:Record<BiennaleArte2026Lang,{title:string;active:string;historical:string;source:string}>={
+const lastDayTicket:Record<BiennaleArte2026Lang,{title:string;historical:string;source:string}>={
   it:{
-    title:'Ultimo giorno della Biennale Arte: ingresso speciale a 5 €',
-    active:'Domenica 22 novembre 2026, ultimo giorno della Biennale Arte, tutti i visitatori possono acquistare un biglietto speciale a 5 €, disponibile nella stessa giornata online oppure presso le biglietterie e gli infopoint ufficiali. Il biglietto permette un ingresso ai Giardini e uno all’Arsenale. Verifica disponibilità e condizioni sul sito ufficiale della Biennale.',
-    historical:'Domenica 22 novembre 2026, ultimo giorno della Biennale Arte 2026, era disponibile per tutti i visitatori un biglietto speciale a 5 €, acquistabile esclusivamente quel giorno online oppure presso le biglietterie e gli infopoint ufficiali. Il biglietto permetteva un ingresso ai Giardini e uno all’Arsenale. L’offerta è conclusa e resta qui come informazione storica.',
+    title:'Ultimo giorno della Biennale Arte 2026: ingresso speciale a 5 €',
+    historical:'La Biennale Arte 2026 si è conclusa domenica 22 novembre. Nell’ultima giornata tutti i visitatori hanno potuto acquistare un biglietto speciale a 5 €, valido per un ingresso ai Giardini e uno all’Arsenale. La promozione è terminata insieme alla mostra e non è più disponibile.',
     source:'Comunicazione ufficiale della Biennale'
   },
   en:{
-    title:'Biennale Arte final day: special €5 admission',
-    active:'On Sunday 22 November 2026, the final day of Biennale Arte, all visitors can purchase a special €5 ticket on the same day, either online or at the official ticket offices and information points. The ticket includes one admission to Giardini and one to Arsenale. Check availability and conditions on the official Biennale website.',
-    historical:'On Sunday 22 November 2026, the final day of Biennale Arte 2026, a special €5 ticket was available to all visitors for purchase on that day only, online or at the official ticket offices and information points. It included one admission to Giardini and one to Arsenale. This offer has ended and is retained for historical reference.',
+    title:'Biennale Arte 2026 final day: special €5 admission',
+    historical:'Biennale Arte 2026 ended on Sunday 22 November. On its final day, every visitor could purchase a special €5 ticket for one admission to Giardini and one to Arsenale. The offer ended with the exhibition and is no longer available.',
     source:'Official Biennale announcement'
   },
   de:{
-    title:'Letzter Tag der Biennale Arte: Sonderticket für 5 €',
-    active:'Am Sonntag, 22. November 2026, dem letzten Tag der Biennale Arte, können alle Besucher ein Sonderticket für 5 € erwerben, ausschließlich an diesem Tag online oder an den offiziellen Kassen und Informationsstellen. Es gilt für je einen Eintritt in Giardini und Arsenale. Verfügbarkeit und Bedingungen bitte auf der offiziellen Biennale-Website prüfen.',
-    historical:'Am Sonntag, 22. November 2026, dem letzten Tag der Biennale Arte 2026, gab es für alle Besucher ein Sonderticket für 5 €, das nur an diesem Tag online oder an den offiziellen Kassen und Informationsstellen erhältlich war. Es galt für je einen Eintritt in Giardini und Arsenale. Die Aktion ist beendet und wird hier nur historisch dokumentiert.',
+    title:'Letzter Tag der Biennale Arte 2026: Sonderticket für 5 €',
+    historical:'Die Biennale Arte 2026 endete am Sonntag, 22. November. Am letzten Ausstellungstag konnten alle Besucher ein Sonderticket für 5 € kaufen, das je einen Eintritt in Giardini und Arsenale ermöglichte. Die Aktion endete mit der Ausstellung und ist nicht mehr verfügbar.',
     source:'Offizielle Mitteilung der Biennale'
   },
   fr:{
-    title:'Dernier jour de la Biennale Arte : billet spécial à 5 €',
-    active:'Le dimanche 22 novembre 2026, dernier jour de la Biennale Arte, tous les visiteurs peuvent acheter un billet spécial à 5 €, uniquement ce jour-là, en ligne ou aux billetteries et points d’information officiels. Il donne droit à une entrée aux Giardini et une à l’Arsenale. Vérifiez les disponibilités et conditions sur le site officiel de la Biennale.',
-    historical:'Le dimanche 22 novembre 2026, dernier jour de la Biennale Arte 2026, un billet spécial à 5 € était proposé à tous les visiteurs, à acheter uniquement le jour même en ligne ou aux billetteries et points d’information officiels. Il permettait une entrée aux Giardini et une à l’Arsenale. Cette offre est terminée et conservée ici à titre historique.',
+    title:'Dernier jour de la Biennale Arte 2026 : billet spécial à 5 €',
+    historical:'La Biennale Arte 2026 s’est achevée le dimanche 22 novembre. Le dernier jour, tous les visiteurs ont pu acheter un billet spécial à 5 €, valable pour une entrée aux Giardini et une à l’Arsenale. L’offre a pris fin avec l’exposition et n’est plus disponible.',
     source:'Annonce officielle de la Biennale'
   },
   es:{
-    title:'Último día de la Biennale Arte: entrada especial de 5 €',
-    active:'El domingo 22 de noviembre de 2026, último día de la Biennale Arte, todos los visitantes pueden comprar una entrada especial de 5 €, únicamente ese día, en línea o en las taquillas y puntos de información oficiales. Incluye un acceso a Giardini y otro a Arsenale. Consulta disponibilidad y condiciones en la web oficial de la Biennale.',
-    historical:'El domingo 22 de noviembre de 2026, último día de la Biennale Arte 2026, se ofreció a todos los visitantes una entrada especial de 5 €, disponible exclusivamente ese día en línea o en las taquillas y puntos de información oficiales. Incluía un acceso a Giardini y otro a Arsenale. La oferta ha finalizado y se conserva aquí como referencia histórica.',
+    title:'Último día de la Biennale Arte 2026: entrada especial de 5 €',
+    historical:'La Biennale Arte 2026 concluyó el domingo 22 de noviembre. Durante la última jornada, todos los visitantes pudieron comprar una entrada especial de 5 €, válida para un acceso a Giardini y otro a Arsenale. La promoción terminó con la exposición y ya no está disponible.',
     source:'Comunicado oficial de la Biennale'
   },
   zh:{
-    title:'Biennale Arte 最后一天：5欧元特别门票',
-    active:'2026年11月22日星期日是 Biennale Arte 最后一天，所有参观者均可于当天以5欧元购买特别门票，可在官方网站或官方售票处及咨询点购买。门票包括 Giardini 和 Arsenale 各一次入场。请在 Biennale 官方网站核实余票及具体条件。',
-    historical:'2026年11月22日星期日，即 Biennale Arte 2026 最后一天，曾向所有参观者提供5欧元特别门票，仅限当天通过官方网站或官方售票处及咨询点购买，可分别进入 Giardini 和 Arsenale 一次。优惠已结束，此信息仅作为历史记录保留。',
+    title:'Biennale Arte 2026 最后一天：5欧元特别门票',
+    historical:'Biennale Arte 2026 已于11月22日星期日闭幕。闭幕当天，所有参观者均可购买5欧元特别门票，凭票可分别进入 Giardini 和 Arsenale 一次。优惠随展览结束而终止，目前已无法购买。',
     source:'Biennale 官方公告'
   }
 };
 const isTicketSection=(title:string)=>/biglietti|tickets|eintritt|billets|entradas|门票/i.test(title);
+
+
+const closingBalanceUrl='https://www.labiennale.org/it/news/la-biennale-arte-2026-numeri';
+const closingBalance:Record<BiennaleArte2026Lang,{title:string;text:string;link:string}>={
+  it:{title:'Biennale Arte 2026: il bilancio finale',text:'La 61ª Esposizione Internazionale d’Arte, In Minor Keys, ideata da Koyo Kouoh, si è conclusa il 22 novembre 2026. Secondo il bilancio ufficiale della Biennale, l’edizione ha registrato 714.015 visitatori complessivi, comprese 29.387 presenze durante la pre-apertura, e ha coinvolto 100 partecipazioni nazionali.',link:'Bilancio ufficiale della Biennale'},
+  en:{title:'Biennale Arte 2026: final figures',text:'The 61st International Art Exhibition, In Minor Keys, conceived by Koyo Kouoh, closed on 22 November 2026. According to the Biennale’s official figures, the edition welcomed 714,015 visitors, including 29,387 during the pre-opening, and featured 100 National Participations.',link:'Official Biennale figures'},
+  de:{title:'Biennale Arte 2026: Abschlussbilanz',text:'Die 61. Internationale Kunstausstellung In Minor Keys, konzipiert von Koyo Kouoh, endete am 22. November 2026. Laut der offiziellen Bilanz der Biennale verzeichnete die Ausgabe insgesamt 714.015 Besucher, darunter 29.387 in der Vorbesichtigung, und 100 nationale Beteiligungen.',link:'Offizielle Abschlusszahlen der Biennale'},
+  fr:{title:'Biennale Arte 2026 : bilan final',text:'La 61e Exposition internationale d’art, In Minor Keys, conçue par Koyo Kouoh, s’est achevée le 22 novembre 2026. Selon le bilan officiel de la Biennale, cette édition a accueilli 714 015 visiteurs au total, dont 29 387 pendant la préouverture, et compté 100 participations nationales.',link:'Bilan officiel de la Biennale'},
+  es:{title:'Biennale Arte 2026: balance final',text:'La 61.ª Exposición Internacional de Arte, In Minor Keys, concebida por Koyo Kouoh, concluyó el 22 de noviembre de 2026. Según el balance oficial de la Biennale, la edición recibió 714.015 visitantes en total, incluidos 29.387 durante la preapertura, y reunió 100 participaciones nacionales.',link:'Balance oficial de la Biennale'},
+  zh:{title:'Biennale Arte 2026：最终数据',text:'第61届国际艺术展 In Minor Keys 由 Koyo Kouoh 构思，已于2026年11月22日闭幕。根据 Biennale 官方总结，本届共接待714,015名观众，其中29,387人为预展期间入场，共有100个国家参展项目。',link:'Biennale 官方最终统计'}
+};
 
 const filmFestival2027:Record<BiennaleArte2026Lang,string>={
   it:'Mostra del Cinema di Venezia 2027',
@@ -145,7 +150,7 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
   const url=`https://www.margheraveniceapartments.com${path}`;
   const next=architecture2027[lang];
   const specialTicket=lastDayTicket[lang];
-  const isFinalDay=romeToday()==='2026-11-22';
+  const balance=closingBalance[lang];
   const biennaleEventStatus=eventSchemaStatus('2026-11-22');
   const articleJsonLd={
     '@context':'https://schema.org','@type':'Article',headline:data.heroTitle,description:data.metaDescription,
@@ -205,8 +210,9 @@ export default function BiennaleArte2026Article({lang,data}:{lang:BiennaleArte20
           return [title,text] as const;
         }),
         [autumnUpdate[lang].finalTitle,autumnUpdate[lang].finalText] as const,
-        [autumnUpdate[lang].lionsTitle,autumnUpdate[lang].lionsText] as const
-      ].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p>{isTicketSection(title)&&<aside className="mt-6 rounded-2xl border border-gold/30 bg-cream p-5 sm:p-6"><h3 className="font-serif text-2xl text-navy">{specialTicket.title}</h3><p className="mt-3 leading-7 text-slate-700">{isFinalDay?specialTicket.active:specialTicket.historical}</p><a href={lastDayTicketUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{specialTicket.source} ↗</a></aside>}{title===autumnUpdate[lang].finalTitle&&<p className="mt-4"><a href={closingProgrammeUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].programLink} ↗</a></p>}{title===autumnUpdate[lang].lionsTitle&&<p className="mt-4"><a href={visitorLionsUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].lionsLink} ↗</a></p>}</div></section>)}</div>
+        [autumnUpdate[lang].lionsTitle,autumnUpdate[lang].lionsText] as const,
+        [balance.title,balance.text] as const
+      ].map(([title,text],i)=><section key={title} className="editorial-section-row grid grid-cols-[34px_1fr] gap-3 sm:grid-cols-[42px_1fr] sm:gap-4"><div className="font-serif text-5xl text-gold">{String(i+1).padStart(2,'0')}</div><div><h2 className="font-serif text-4xl text-navy">{title}</h2><p className="mt-4 text-lg leading-8 text-slate-600">{text}</p>{isTicketSection(title)&&<aside className="mt-6 rounded-2xl border border-gold/30 bg-cream p-5 sm:p-6"><h3 className="font-serif text-2xl text-navy">{specialTicket.title}</h3><p className="mt-3 leading-7 text-slate-700">{specialTicket.historical}</p><a href={lastDayTicketUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{specialTicket.source} ↗</a></aside>}{title===autumnUpdate[lang].finalTitle&&<p className="mt-4"><a href={closingProgrammeUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].programLink} ↗</a></p>}{title===autumnUpdate[lang].lionsTitle&&<p className="mt-4"><a href={visitorLionsUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{autumnUpdate[lang].lionsLink} ↗</a></p>}{title===balance.title&&<p className="mt-4"><a href={closingBalanceUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-gold decoration-2 underline-offset-4">{balance.link} ↗</a></p>}</div></section>)}</div>
     </div></section>
 
     <section className="bg-cream py-16"><div className="mx-auto max-w-4xl px-5 lg:px-8">
