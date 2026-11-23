@@ -3,7 +3,7 @@ export type BiennaleArte2026Lang='it'|'en'|'de'|'fr'|'es'|'zh';
 export const biennaleArte2026 = {
   "it": {
     "metaTitle": "Biennale Venezia 2026: biglietti, sedi e cosa vedere",
-    "metaDescription": "Biennale Arte 2026 a Venezia: In Minor Keys, Giardini, Arsenale e Forte Marghera. Orari, biglietti e consigli pratici per organizzare la visita.",
+    "metaDescription": "Biennale Arte 2026 conclusa a Venezia: guida storica In Minor Keys, biglietti dell’edizione, Giardini, Arsenale e bilancio finale con 714.015 visitatori.",
     "category": "Arte & Cultura",
     "eventDate": "9 MAGGIO – 22 NOVEMBRE 2026",
     "imageAlt": "Biennale di Venezia",
@@ -11,11 +11,11 @@ export const biennaleArte2026 = {
     "breadcrumb": "Biennale di Venezia",
     "heroTitle": "Biennale Arte 2026",
     "heroSubtitle": "La 61ª Esposizione Internazionale d’Arte, In Minor Keys, attraversa Giardini, Arsenale, Forte Marghera e molte altre sedi di Venezia.",
-    "lead": "La Biennale Arte 2026 non è una mostra da attraversare di corsa. In Minor Keys, ideata da Koyo Kouoh, occupa le grandi sedi dei Giardini e dell’Arsenale, arriva a Forte Marghera e continua in tutta Venezia con partecipazioni nazionali ed eventi collaterali.",
+    "lead": "La Biennale Arte 2026 si è conclusa il 22 novembre. In Minor Keys, ideata da Koyo Kouoh, ha attraversato Giardini, Arsenale, Forte Marghera e numerose sedi veneziane attraverso partecipazioni nazionali ed eventi collaterali. Questa guida conserva le informazioni dell’edizione conclusa.",
     "sections": [
       [
         "In Minor Keys: la 61ª Esposizione Internazionale d’Arte",
-        "Dal 9 maggio al 22 novembre 2026 la Biennale Arte presenta In Minor Keys, progetto ideato da Koyo Kouoh. Le sedi principali sono i Giardini, l’Arsenale e Forte Marghera: tre contesti molto diversi, da considerare come tappe di una visita che richiede tempo."
+        "Dal 9 maggio al 22 novembre 2026 la Biennale Arte ha presentato In Minor Keys, progetto ideato da Koyo Kouoh. Le sedi principali sono i Giardini, l’Arsenale e Forte Marghera: tre contesti molto diversi, da considerare come tappe di una visita che richiede tempo."
       ],
       [
         "La Biennale continua anche fuori dalle sedi principali",
@@ -37,7 +37,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Il consiglio di Marghera Venice Apartments",
     "tip": "Non cercare di vedere tutto. Una Biennale vissuta bene significa scegliere poche sezioni, lasciare tempo agli spostamenti e concedersi una pausa tra Giardini e Arsenale.",
     "officialBoxLabel": "Informazioni ufficiali",
-    "sourceNote": "Orari, prezzi, aperture straordinarie e condizioni dei biglietti possono cambiare. Verifica sempre le informazioni aggiornate sul sito ufficiale prima della visita.",
+    "sourceNote": "Le tariffe, i pass e gli orari riportati riguardano esclusivamente l’edizione 2026 conclusa il 22 novembre e non sono attualmente acquistabili o utilizzabili. La fonte ufficiale documenta l’edizione.",
     "officialLabel": "Biennale Arte 2026 – sito ufficiale",
     "officialUrl": "https://www.labiennale.org/it/arte/2026",
     "moreLabel": "Potrebbe interessarti anche",
@@ -59,7 +59,7 @@ export const biennaleArte2026 = {
   },
   "en": {
     "metaTitle": "Venice Biennale 2026 | Tickets, Venues & Visitor Guide",
-    "metaDescription": "Plan the Venice Art Biennale 2026: In Minor Keys, Giardini, Arsenale and Forte Marghera, with current opening hours, ticket options and practical visit tips.",
+    "metaDescription": "Venice Art Biennale 2026 has ended: explore In Minor Keys, historic ticket prices, Giardini and Arsenale, and the final attendance of 714,015 visitors.",
     "category": "Art & Culture",
     "eventDate": "9 MAY – 22 NOVEMBER 2026",
     "imageAlt": "Venice Biennale in Venice",
@@ -67,11 +67,11 @@ export const biennaleArte2026 = {
     "breadcrumb": "Venice Biennale",
     "heroTitle": "Venice Biennale 2026",
     "heroSubtitle": "The 61st International Art Exhibition, In Minor Keys, unfolds across Giardini, Arsenale, Forte Marghera and venues throughout Venice.",
-    "lead": "The Venice Art Biennale is not something to rush. In Minor Keys, conceived by Koyo Kouoh, fills the major Giardini and Arsenale sites, reaches Forte Marghera and continues across Venice through national participations and collateral events.",
+    "lead": "The Venice Art Biennale 2026 ended on 22 November. In Minor Keys, conceived by Koyo Kouoh, spanned Giardini, Arsenale, Forte Marghera and venues throughout Venice through National Participations and Collateral Events. This guide preserves information from the completed edition.",
     "sections": [
       [
         "In Minor Keys: the 61st International Art Exhibition",
-        "Biennale Arte 2026 runs from 9 May to 22 November. In Minor Keys was conceived by Koyo Kouoh and is centred on the Giardini, Arsenale and Forte Marghera — three very different settings that are best treated as substantial parts of the visit rather than quick stops."
+        "Biennale Arte 2026 ran from 9 May to 22 November. In Minor Keys was conceived by Koyo Kouoh and is centred on the Giardini, Arsenale and Forte Marghera — three very different settings that are best treated as substantial parts of the visit rather than quick stops."
       ],
       [
         "The Biennale continues beyond the main venues",
@@ -93,7 +93,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Marghera Venice Apartments tip",
     "tip": "Do not try to see everything. Choose a few sections, allow time for moving between venues and leave enough space to actually absorb what you see.",
     "officialBoxLabel": "Official information",
-    "sourceNote": "Opening hours, prices, exceptional opening days and ticket conditions can change. Always check the latest information on the official website before your visit.",
+    "sourceNote": "All ticket prices, passes and opening hours on this page relate to the 2026 edition, which ended on 22 November. They are historical information, not currently available tickets.",
     "officialLabel": "Biennale Arte 2026 – official website",
     "officialUrl": "https://www.labiennale.org/en/art/2026",
     "moreLabel": "You may also like",
@@ -115,7 +115,7 @@ export const biennaleArte2026 = {
   },
   "de": {
     "metaTitle": "Biennale Venedig 2026 | Tickets, Kunst & Besuchstipps",
-    "metaDescription": "Biennale Arte 2026 in Venedig: In Minor Keys in Giardini, Arsenale und Forte Marghera. Aktuelle Öffnungszeiten, Tickets und praktische Besuchstipps.",
+    "metaDescription": "Die Biennale Arte 2026 in Venedig ist beendet: Rückblick auf In Minor Keys, historische Ticketpreise, Giardini, Arsenale und 714.015 Besucher.",
     "category": "Kunst & Kultur",
     "eventDate": "9. MAI – 22. NOVEMBER 2026",
     "imageAlt": "Ausstellung der Biennale di Venezia",
@@ -123,11 +123,11 @@ export const biennaleArte2026 = {
     "breadcrumb": "Biennale Venedig",
     "heroTitle": "Biennale Arte Venedig 2026",
     "heroSubtitle": "Die 61. Internationale Kunstausstellung In Minor Keys führt durch Giardini, Arsenale, Forte Marghera und viele weitere Orte in Venedig.",
-    "lead": "Für die Kunstbiennale in Venedig lohnt sich Zeit. In Minor Keys, konzipiert von Koyo Kouoh, erstreckt sich über Giardini und Arsenale, reicht bis Forte Marghera und setzt sich mit nationalen Beiträgen und Collateral Events in der ganzen Stadt fort.",
+    "lead": "Die Biennale Arte 2026 in Venedig endete am 22. November. In Minor Keys, konzipiert von Koyo Kouoh, erstreckte sich über Giardini, Arsenale, Forte Marghera und viele weitere Orte. Dieser Guide bewahrt Informationen zur abgeschlossenen Ausgabe.",
     "sections": [
       [
         "In Minor Keys: die 61. Internationale Kunstausstellung",
-        "Die Biennale Arte 2026 läuft vom 9. Mai bis 22. November. In Minor Keys wurde von Koyo Kouoh konzipiert. Die wichtigsten Orte sind Giardini, Arsenale und Forte Marghera — drei sehr unterschiedliche Bereiche, die man nicht wie kurze Zwischenstopps behandeln sollte."
+        "Die Biennale Arte 2026 fand vom 9. Mai bis 22. November statt. In Minor Keys wurde von Koyo Kouoh konzipiert. Die wichtigsten Orte sind Giardini, Arsenale und Forte Marghera — drei sehr unterschiedliche Bereiche, die man nicht wie kurze Zwischenstopps behandeln sollte."
       ],
       [
         "Die Biennale geht weit über Giardini und Arsenale hinaus",
@@ -149,7 +149,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Tipp von Marghera Venice Apartments",
     "tip": "Versuchen Sie nicht, alles abzuhaken. Wenige gut ausgewählte Stationen und genügend Zeit zwischen den Ausstellungen machen die Biennale deutlich angenehmer.",
     "officialBoxLabel": "Offizielle Informationen",
-    "sourceNote": "Öffnungszeiten, Preise, Sonderöffnungen und Ticketbedingungen können sich ändern. Prüfen Sie vor dem Besuch immer die aktuellen Angaben auf der offiziellen Website.",
+    "sourceNote": "Alle hier genannten Preise, Pässe und Öffnungszeiten beziehen sich auf die am 22. November beendete Ausgabe 2026. Sie dienen nur der historischen Information; ein Ticketkauf für diese Ausgabe ist nicht mehr möglich.",
     "officialLabel": "Biennale Arte 2026 – offizielle Website",
     "officialUrl": "https://www.labiennale.org/en/art/2026",
     "moreLabel": "Das könnte Sie auch interessieren",
@@ -171,7 +171,7 @@ export const biennaleArte2026 = {
   },
   "fr": {
     "metaTitle": "Biennale de Venise 2026 | Billets, lieux et visite",
-    "metaDescription": "Préparez la Biennale d’art de Venise 2026 : In Minor Keys aux Giardini, à l’Arsenal et à Forte Marghera, avec horaires, billets et conseils de visite.",
+    "metaDescription": "Biennale Arte de Venise 2026 terminée : archives d’In Minor Keys, anciens tarifs, Giardini, Arsenale et bilan final de 714 015 visiteurs.",
     "category": "Art & culture",
     "eventDate": "9 MAI – 22 NOVEMBRE 2026",
     "imageAlt": "Exposition de la Biennale de Venise",
@@ -179,11 +179,11 @@ export const biennaleArte2026 = {
     "breadcrumb": "Biennale de Venise",
     "heroTitle": "Biennale de Venise 2026",
     "heroSubtitle": "La 61e Exposition internationale d’art, In Minor Keys, se déploie aux Giardini, à l’Arsenale, à Forte Marghera et dans de nombreux lieux de Venise.",
-    "lead": "La Biennale d’art de Venise mérite du temps. In Minor Keys, conçue par Koyo Kouoh, occupe les grands sites des Giardini et de l’Arsenale, rejoint Forte Marghera et se prolonge dans toute Venise grâce aux participations nationales et aux événements collatéraux.",
+    "lead": "La Biennale Arte 2026 s’est achevée le 22 novembre. In Minor Keys, conçue par Koyo Kouoh, s’est déployée aux Giardini, à l’Arsenale, à Forte Marghera et dans de nombreux autres lieux de Venise. Ce guide conserve les informations de cette édition terminée.",
     "sections": [
       [
         "In Minor Keys : la 61e Exposition internationale d’art",
-        "Biennale Arte 2026 se tient du 9 mai au 22 novembre. In Minor Keys a été conçue par Koyo Kouoh. Les principaux sites sont les Giardini, l’Arsenale et Forte Marghera : trois espaces très différents qu’il vaut mieux considérer comme de véritables étapes de visite."
+        "La Biennale Arte 2026 s’est tenue du 9 mai au 22 novembre. In Minor Keys a été conçue par Koyo Kouoh. Les principaux sites sont les Giardini, l’Arsenale et Forte Marghera : trois espaces très différents qu’il vaut mieux considérer comme de véritables étapes de visite."
       ],
       [
         "La Biennale continue bien au-delà des sites principaux",
@@ -205,7 +205,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Le conseil de Marghera Venice Apartments",
     "tip": "Ne cherchez pas à tout voir. Quelques choix bien faits, du temps entre les sites et une vraie pause permettent de mieux profiter de la Biennale.",
     "officialBoxLabel": "Informations officielles",
-    "sourceNote": "Horaires, tarifs, ouvertures exceptionnelles et conditions de billetterie peuvent évoluer. Vérifiez toujours les informations à jour sur le site officiel avant la visite.",
+    "sourceNote": "Les tarifs, pass et horaires indiqués concernent uniquement l’édition 2026 terminée le 22 novembre. Ils sont conservés à titre historique ; il n’est plus possible d’acheter des billets pour cette édition.",
     "officialLabel": "Biennale Arte 2026 – site officiel",
     "officialUrl": "https://www.labiennale.org/en/art/2026",
     "moreLabel": "À découvrir aussi",
@@ -227,7 +227,7 @@ export const biennaleArte2026 = {
   },
   "es": {
     "metaTitle": "Bienal de Venecia 2026 | Entradas, sedes y visita",
-    "metaDescription": "Guía de la Bienal de Arte de Venecia 2026: In Minor Keys en Giardini, Arsenale y Forte Marghera, con horarios, entradas y consejos prácticos.",
+    "metaDescription": "Biennale Arte de Venecia 2026 finalizada: guía histórica de In Minor Keys, entradas de la edición, Giardini, Arsenale y 714.015 visitantes.",
     "category": "Arte y cultura",
     "eventDate": "9 DE MAYO – 22 DE NOVIEMBRE DE 2026",
     "imageAlt": "Exposición de la Bienal de Venecia",
@@ -235,11 +235,11 @@ export const biennaleArte2026 = {
     "breadcrumb": "Bienal de Venecia",
     "heroTitle": "Bienal de Venecia 2026",
     "heroSubtitle": "La 61.ª Exposición Internacional de Arte, In Minor Keys, ocupa Giardini, Arsenale, Forte Marghera y numerosos espacios de Venecia.",
-    "lead": "La Bienal de Arte de Venecia no se disfruta con prisas. In Minor Keys, concebida por Koyo Kouoh, se extiende por Giardini y Arsenale, llega a Forte Marghera y continúa por la ciudad mediante participaciones nacionales y eventos colaterales.",
+    "lead": "La Biennale Arte 2026 concluyó el 22 de noviembre. In Minor Keys, concebida por Koyo Kouoh, se extendió por Giardini, Arsenale, Forte Marghera y otros espacios de Venecia. Esta guía conserva los datos de aquella edición ya finalizada.",
     "sections": [
       [
         "In Minor Keys: la 61.ª Exposición Internacional de Arte",
-        "Biennale Arte 2026 se celebra del 9 de mayo al 22 de noviembre. In Minor Keys fue concebida por Koyo Kouoh. Sus sedes principales son Giardini, Arsenale y Forte Marghera, tres espacios muy diferentes que requieren tiempo y no funcionan como simples paradas rápidas."
+        "La Biennale Arte 2026 se celebró del 9 de mayo al 22 de noviembre. In Minor Keys fue concebida por Koyo Kouoh. Sus sedes principales son Giardini, Arsenale y Forte Marghera, tres espacios muy diferentes que requieren tiempo y no funcionan como simples paradas rápidas."
       ],
       [
         "La Bienal también continúa fuera de sus sedes principales",
@@ -261,7 +261,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Consejo de Marghera Venice Apartments",
     "tip": "No intentes verlo todo. Una selección más corta, con tiempo para desplazarte y detenerte, suele ofrecer una experiencia mucho mejor.",
     "officialBoxLabel": "Información oficial",
-    "sourceNote": "Los horarios, precios, aperturas extraordinarias y condiciones de las entradas pueden cambiar. Consulta siempre la información actualizada en la web oficial antes de la visita.",
+    "sourceNote": "Las tarifas, pases y horarios corresponden exclusivamente a la edición 2026, finalizada el 22 de noviembre. Se conservan como información histórica; ya no se pueden comprar entradas para esa edición.",
     "officialLabel": "Biennale Arte 2026 – web oficial",
     "officialUrl": "https://www.labiennale.org/en/art/2026",
     "moreLabel": "También puede interesarte",
@@ -283,7 +283,7 @@ export const biennaleArte2026 = {
   },
   "zh": {
     "metaTitle": "2026威尼斯艺术双年展｜门票、展区与参观指南",
-    "metaDescription": "2026威尼斯艺术双年展 In Minor Keys 参观指南：Giardini、Arsenale、Forte Marghera 的开放时间、门票与行程安排建议。",
+    "metaDescription": "2026年威尼斯艺术双年展 In Minor Keys 已闭幕：历史参观指南、当时的门票与开放时间及714,015名观众的最终数据。",
     "category": "艺术与文化",
     "eventDate": "2026年5月9日–11月22日",
     "imageAlt": "威尼斯双年展展览空间",
@@ -291,7 +291,7 @@ export const biennaleArte2026 = {
     "breadcrumb": "威尼斯艺术双年展",
     "heroTitle": "2026威尼斯艺术双年展",
     "heroSubtitle": "第61届国际艺术展 In Minor Keys 在 Giardini、Arsenale、Forte Marghera 以及威尼斯各处展开。",
-    "lead": "2026威尼斯艺术双年展并不适合匆匆打卡。由 Koyo Kouoh 构思的 In Minor Keys 横跨 Giardini 与 Arsenale，并延伸至 Forte Marghera；国家馆和外围展也让双年展进入威尼斯城市中的许多不同空间。",
+    "lead": "2026年威尼斯艺术双年展已于11月22日闭幕。由 Koyo Kouoh 构思的 In Minor Keys 曾在 Giardini、Arsenale、Forte Marghera 及威尼斯多个地点展出。本指南保留已结束展览的历史参观信息。",
     "sections": [
       [
         "In Minor Keys：第61届国际艺术展",
@@ -317,7 +317,7 @@ export const biennaleArte2026 = {
     "tipLabel": "Marghera Venice Apartments 建议",
     "tip": "不必追求“全部看完”。选少一些展区，给交通和停留留出时间，反而更容易真正感受到作品与空间。",
     "officialBoxLabel": "官方信息",
-    "sourceNote": "开放时间、票价、特别开放日和票务条件可能调整。参观前请以 La Biennale 官方网站的最新信息为准。",
+    "sourceNote": "本页的票价、通票和开放时间仅适用于2026年11月22日已结束的展览，作为历史资料保留；该届门票现已无法购买。",
     "officialLabel": "Biennale Arte 2026 官方网站（英文）",
     "officialUrl": "https://www.labiennale.org/en/art/2026",
     "moreLabel": "你可能也感兴趣",
