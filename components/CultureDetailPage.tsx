@@ -16,6 +16,7 @@ import {cultureNarrative} from '@/data/cultureNarrative';
 import {cultureImagePair} from '@/data/cultureImages';
 import {culturePilot20261015} from '@/data/culturePilot20261015';
 import {cultureTemporaryEventsFor,cultureTemporarySummary} from '@/data/cultureTemporaryEvents';
+import {eventSchemaStatus} from '@/lib/romeDate';
 
 const kindIcons={museum:'🏛️',monument:'🏰',church:'⛪',panorama:'👀'} as const;
 
@@ -47,7 +48,7 @@ export default function CultureDetailPage({place,lang,scope,allPlaces}:{place:Cu
      name:event.title,
      startDate:event.start,
      endDate:event.end,
-     eventStatus:'https://schema.org/EventScheduled',
+     ...(eventSchemaStatus(event.end)?{eventStatus:eventSchemaStatus(event.end)}:{}),
      eventAttendanceMode:'https://schema.org/OfflineEventAttendanceMode',
      location:{'@type':'Place',name:place.name,address:{'@type':'PostalAddress',addressLocality:place.city,addressRegion:'Veneto',addressCountry:'IT'}},
      url:event.officialUrl,
