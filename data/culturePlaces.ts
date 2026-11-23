@@ -96,7 +96,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://bibliotecanazionalemarciana.cultura.gov.it/",
     "mapsQuery": "Sale Monumentali della Biblioteca Nazionale Marciana, Venezia, Italia",
-    "lastModified": "2026-11-20"
+    "lastModified": "2026-11-23"
   },
   {
     "slug": "gallerie-dell-accademia",
@@ -232,7 +232,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://capesaro.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Ca’ Pesaro – Galleria Internazionale d’Arte Moderna, Venezia, Italia",
-    "lastVerified": "2026-11-16"
+    "lastModified": "2026-11-23"
   },
   {
     "slug": "museo-arte-orientale",
@@ -278,7 +278,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://fortuny.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo Fortuny, Venezia, Italia",
-    "lastVerified": "2026-11-16"
+    "lastModified": "2026-11-23"
   },
   {
     "slug": "palazzo-mocenigo",
