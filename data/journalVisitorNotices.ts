@@ -1,7 +1,7 @@
 import {cultureVisitorNotices,type CultureVisitorNotice} from './cultureVisitorNotices';
 
 // Notices are visible through 20 November, expiring on 21 November in Europe/Rome.
-export const journalNoticeModifiedDates:Record<string,string>={'venezia-a-novembre':'2026-11-18','biennale-di-venezia':'2026-11-22'};
+export const journalNoticeModifiedDates:Record<string,string>={'venezia-a-novembre':'2026-11-18','biennale-di-venezia':'2026-11-23'};
 const caPesaro=cultureVisitorNotices.find(n=>n.key==='ca-pesaro-strike-2026-11-20');
 export const journalVisitorNotices:CultureVisitorNotice[]=[
 {
