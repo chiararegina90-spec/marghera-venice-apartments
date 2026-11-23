@@ -3,6 +3,7 @@ import type {CultureLang,CultureKind,CulturePlace,CultureScope} from '@/data/cul
 import {cultureDetailPath,cultureIndexPath,cultureUi,cityLabel,localizedHighlights} from '@/data/cultureTranslations';
 import {siteLangs,hreflang} from '@/lib/i18n';
 import {cultureTemporaryEventsFor} from '@/data/cultureTemporaryEvents';
+import {romeToday} from '@/lib/romeDate';
 
 function alternates(scope:CultureScope,slug?:string){
  const languages=Object.fromEntries(siteLangs.map(lang=>[hreflang[lang],slug?cultureDetailPath(scope,lang,slug):cultureIndexPath(scope,lang)]));
@@ -28,7 +29,7 @@ function trimAtWord(value:string,max=92){
 function detailDescription(place:CulturePlace,lang:CultureLang,city:string){
  const highlights=localizedHighlights(place,lang);
  const first=highlights[0]; const second=highlights[1];
- const temporary=cultureTemporaryEventsFor(place.slug)[0];
+ const temporary=cultureTemporaryEventsFor(place.slug).find(event=>event.end>=romeToday());
 
  if(temporary){
   const eventTitle=trimAtWord(temporary.title);
