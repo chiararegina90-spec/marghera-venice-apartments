@@ -247,7 +247,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "metaTitle": "Da cosa nasce cosa a Forte Marghera: mostra 2026–2027",
       "category": "Arte a Mestre e Marghera",
       "eventDate": "4 DICEMBRE 2026 – 9 MAGGIO 2027",
-      "description": "Da cosa nasce cosa a Casermetta 9, Forte Marghera, dal 4 dicembre 2026 al 9 maggio 2027: mostra Atelier 2025–26, ventotto artisti e informazioni.",
+      "description": "Da cosa nasce cosa a Forte Marghera fino al 9 maggio 2027: MUVE indica il 3 o 4 dicembre come inizio. Mostra dei 28 artisti degli Atelier 2025–26.",
       "lead": "Forte Marghera accoglie la seconda tappa di Da cosa nasce cosa, mostra collettiva che racconta il lavoro di ventotto artisti e il valore del processo creativo, dei tentativi e dei cambiamenti.",
       "sections": [
         [
@@ -375,7 +375,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "title": "Da cosa nasce cosa at Forte Marghera: art and creative process",
       "category": "Art in Mestre and Marghera",
       "eventDate": "4 DECEMBER 2026 – 9 MAY 2027",
-      "description": "Da cosa nasce cosa at Casermetta 9, Forte Marghera, from 4 December 2026 to 9 May 2027: a group exhibition with 28 artists and visitor tips.",
+      "description": "Da cosa nasce cosa at Forte Marghera until 9 May 2027: MUVE sources list 3 or 4 December as the starting date. Exhibition of 28 Atelier artists.",
       "lead": "Forte Marghera hosts the second stage of Da cosa nasce cosa, a group exhibition focused on experimentation and the creative process of 28 artists.",
       "sections": [
         [
@@ -503,7 +503,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "title": "Da cosa nasce cosa: Ausstellung im Forte Marghera",
       "category": "Kunst in Mestre und Marghera",
       "eventDate": "4. DEZEMBER 2026 – 9. MAI 2027",
-      "description": "Da cosa nasce cosa in Casermetta 9, Forte Marghera, 4. Dezember 2026–9. Mai 2027: Ausstellung mit 28 Künstlern und Besuchshinweise.",
+      "description": "Da cosa nasce cosa im Forte Marghera bis 9. Mai 2027: MUVE nennt je nach Quelle den 3. oder 4. Dezember als Beginn. Werke von 28 Atelier-Künstlern.",
       "lead": "Die Gruppenausstellung Da cosa nasce cosa kommt ins Forte Marghera und erzählt von Experimenten und kreativen Prozessen von 28 Kunstschaffenden.",
       "sections": [
         [
@@ -631,7 +631,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "title": "Da cosa nasce cosa à Forte Marghera : art et création",
       "category": "Art à Mestre et Marghera",
       "eventDate": "4 DÉCEMBRE 2026 – 9 MAI 2027",
-      "description": "Da cosa nasce cosa à Casermetta 9, Forte Marghera, du 4 décembre 2026 au 9 mai 2027 : exposition collective de 28 artistes.",
+      "description": "Da cosa nasce cosa à Forte Marghera jusqu’au 9 mai 2027 : selon les sources MUVE, début annoncé les 3 ou 4 décembre. Exposition de 28 artistes.",
       "lead": "À Forte Marghera, l'exposition Da cosa nasce cosa met en lumière le travail et les expérimentations de vingt-huit artistes.",
       "sections": [
         [
@@ -759,7 +759,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "title": "Da cosa nasce cosa en Forte Marghera: arte y creación",
       "category": "Arte en Mestre y Marghera",
       "eventDate": "4 DICIEMBRE 2026 – 9 MAYO 2027",
-      "description": "Da cosa nasce cosa en Casermetta 9, Forte Marghera, del 4 de diciembre de 2026 al 9 de mayo de 2027: exposición de 28 artistas.",
+      "description": "Da cosa nasce cosa en Forte Marghera hasta el 9 de mayo de 2027: MUVE señala el 3 o el 4 de diciembre como inicio según la fuente. Exposición de 28 artistas.",
       "lead": "Forte Marghera acoge la segunda etapa de Da cosa nasce cosa, una exposición colectiva dedicada a los procesos creativos de veintiocho artistas.",
       "sections": [
         [
@@ -887,7 +887,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "title": "Da cosa nasce cosa：Forte Marghera 的艺术创作展",
       "category": "Mestre 与 Marghera 文化",
       "eventDate": "2026年12月4日–2027年5月9日",
-      "description": "Da cosa nasce cosa 展览2026年12月4日至2027年5月9日在 Forte Marghera 的 Casermetta 9 展出，汇集28位艺术家。",
+      "description": "Forte Marghera 的 Da cosa nasce cosa 展览持续至2027年5月9日。MUVE 官方资料分别标注12月3日或4日开始，涉及28位艺术家。",
       "lead": "Da cosa nasce cosa 在 Forte Marghera 展出，借28位艺术家的探索展现创意过程中不断尝试、调整和变化的意义。",
       "sections": [
         [
