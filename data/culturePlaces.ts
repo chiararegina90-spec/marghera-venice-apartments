@@ -51,7 +51,8 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://correr.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo Correr, Venezia, Italia",
-    "lastVerified": "2026-11-16"
+    "lastVerified": "2026-11-24",
+    "lastModified": "2026-11-24"
   },
   {
     "slug": "museo-archeologico-nazionale-venezia",
@@ -73,7 +74,8 @@ export const culturePlaces:CulturePlace[] = [
     "hours": "Con accesso dal percorso integrato di Piazza San Marco",
     "booking": "recommended",
     "officialUrl": "https://museiveneto.cultura.gov.it/musei/museo-archeologico-nazionale-di-venezia",
-    "mapsQuery": "Museo Archeologico Nazionale di Venezia, Venezia, Italia"
+    "mapsQuery": "Museo Archeologico Nazionale di Venezia, Venezia, Italia",
+    "lastModified": "2026-11-24"
   },
   {
     "slug": "biblioteca-marciana-sale-monumentali",
@@ -96,7 +98,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://bibliotecanazionalemarciana.cultura.gov.it/",
     "mapsQuery": "Sale Monumentali della Biblioteca Nazionale Marciana, Venezia, Italia",
-    "lastModified": "2026-11-23"
+    "lastModified": "2026-11-24"
   },
   {
     "slug": "gallerie-dell-accademia",
@@ -2933,8 +2935,8 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "not_required",
     "officialUrl": "https://fondazionefortemarghera.it/",
     "mapsQuery": "Forte Marghera, Via Forte Marghera 30, Mestre, Venezia, Italia",
-    "lastVerified": "2026-11-16",
-    "lastModified": "2026-11-16"
+    "lastVerified": "2026-11-24",
+    "lastModified": "2026-11-24"
   }
 ];
 
