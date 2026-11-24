@@ -241,6 +241,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "La foto di apertura è illustrativa del vetro muranese, non una riproduzione delle opere esposte. Per vedere i pezzi della mostra e prenotare usa la pagina ufficiale del museo."
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "Mostra a Casermetta 9 fino al 9 maggio 2027: MUVE indica 3 dicembre nella pagina Casermette e 4 dicembre nella scheda mostra. Verifica la prima giornata di accesso.",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa: la mostra a Forte Marghera tra arte e progettazione",
       "metaTitle": "Da cosa nasce cosa a Forte Marghera: mostra 2026–2027",
       "category": "Arte a Mestre e Marghera",
@@ -262,7 +264,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "Visita e informazioni da verificare",
-          "Date e sede della tappa a Forte Marghera sono confermate dalla pagina MUVE a Mestre. Orari giornalieri, biglietti e accessi possono essere pubblicati o aggiornati separatamente: controlla il sito ufficiale prima di partire e non applicare automaticamente le condizioni della prima sede."
+          "La sede di Casermetta 9 e la chiusura del 9 maggio 2027 sono confermate da MUVE, ma le fonti ufficiali riportano due date di inizio diverse. Orari giornalieri, biglietti e accessi possono essere pubblicati o aggiornati separatamente: controlla il sito ufficiale prima di partire e non applicare automaticamente le condizioni della prima sede. La scheda mostra MUVE indica il 4 dicembre 2026 come inizio alla Casermetta 9; la pagina ufficiale Casermette e il programma MUVE indicano invece il 3 dicembre. Non è confermato se il 3 sia un'inaugurazione e il 4 l'apertura ordinaria: verifica il giorno effettivo di ingresso sul sito MUVE prima di partire."
         ],
         [
           "Un'altra Venezia, fuori dalle calli",
@@ -368,6 +370,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "The article image illustrates Murano glass, not actual exhibition pieces; consult the official museum page for artworks and ticketing."
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "At Casermetta 9 until 9 May 2027: MUVE gives 3 December on the Casermette page and 4 December in the exhibition listing. Confirm the first visitor day.",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa at Forte Marghera: art and creative process",
       "category": "Art in Mestre and Marghera",
       "eventDate": "4 DECEMBER 2026 – 9 MAY 2027",
@@ -388,7 +392,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "Visitor information",
-          "MUVE confirms the venue and dates. Check the official website for the daily timetable, admission terms and any updates rather than assuming the Venice venue's conditions also apply here."
+          "MUVE confirms the venue and the 9 May 2027 closing date, but its official sources disagree on the opening date. Check the official website for the daily timetable, admission terms and any updates rather than assuming the Venice venue's conditions also apply here. The MUVE exhibition listing gives 4 December 2026 as the start at Casermetta 9, while its Casermette page and MUVE programme say 3 December. It has not been confirmed whether 3 December is an opening ceremony and 4 December the first regular visitor day. Check the actual admission date with MUVE before travelling."
         ],
         [
           "Discover the mainland",
@@ -494,6 +498,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "Das Titelbild illustriert Murano-Glas, nicht die konkreten Ausstellungsstücke. Bilder der Werke und Tickets bietet die offizielle Museumsseite."
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "Bis 9. Mai 2027 in Casermetta 9: MUVE nennt den 3. Dezember auf der Casermette-Seite, den 4. Dezember auf der Ausstellungsseite. Besuchsbeginn prüfen.",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa: Ausstellung im Forte Marghera",
       "category": "Kunst in Mestre und Marghera",
       "eventDate": "4. DEZEMBER 2026 – 9. MAI 2027",
@@ -514,7 +520,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "Hinweise zum Besuch",
-          "Die offiziellen MUVE-Angaben bestätigen Zeitraum und Ort. Öffnungszeiten, Eintritt und Zugänge vor dem Besuch prüfen."
+          "MUVE bestätigt Ort und Enddatum am 9. Mai 2027, aber die offiziellen Quellen nennen unterschiedliche Anfangstage. Öffnungszeiten, Eintritt und Zugänge vor dem Besuch prüfen. Auf der MUVE-Ausstellungsseite steht der 4. Dezember 2026 als Beginn in Casermetta 9, während die offizielle Casermette-Seite und das MUVE-Programm den 3. Dezember nennen. Ob der 3. Dezember eine Vernissage und der 4. Dezember der reguläre Besuchsbeginn ist, wurde nicht bestätigt. Bitte vor der Anreise den ersten Besuchstag bei MUVE prüfen."
         ],
         [
           "Kunst auf dem Festland",
@@ -620,6 +626,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "La photo d'illustration montre le verre de Murano et non des œuvres précises de l'exposition. Consultez le musée pour les images officielles."
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "À Casermetta 9 jusqu’au 9 mai 2027 : MUVE indique le 3 décembre sur la page Casermette et le 4 décembre sur la fiche exposition. Confirmez l’ouverture au public.",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa à Forte Marghera : art et création",
       "category": "Art à Mestre et Marghera",
       "eventDate": "4 DÉCEMBRE 2026 – 9 MAI 2027",
@@ -640,7 +648,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "Avant la visite",
-          "MUVE confirme les dates et le lieu. Pour les horaires, tarifs et accès, consultez les informations officielles actualisées."
+          "MUVE confirme le lieu et la fin de l’exposition au 9 mai 2027, mais ses sources divergent sur la première journée. Pour les horaires, tarifs et accès, consultez les informations officielles actualisées. La fiche de l’exposition MUVE indique le 4 décembre 2026 pour la Casermetta 9, mais la page officielle Casermette et le programme MUVE annoncent le 3 décembre. Rien ne confirme que le 3 corresponde au vernissage et le 4 à l’ouverture habituelle au public. Vérifiez auprès de MUVE la première journée de visite avant de vous déplacer."
         ],
         [
           "Découvrir la terre ferme",
@@ -746,6 +754,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "La fotografía ilustra el vidrio de Murano, no piezas concretas de la exposición. Consulta las imágenes oficiales del museo."
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "En Casermetta 9 hasta el 9 de mayo de 2027: MUVE indica el 3 de diciembre en Casermette y el 4 en la ficha de la exposición. Confirma cuándo abre al público.",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa en Forte Marghera: arte y creación",
       "category": "Arte en Mestre y Marghera",
       "eventDate": "4 DICIEMBRE 2026 – 9 MAYO 2027",
@@ -766,7 +776,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "Información práctica",
-          "MUVE confirma sede y fechas. Consulta horarios, entradas y accesos en la fuente oficial antes de la visita."
+          "MUVE confirma la sede y el final del 9 de mayo de 2027, pero sus fuentes dan fechas iniciales distintas. Consulta horarios, entradas y accesos en la fuente oficial antes de la visita. La ficha de la exposición MUVE indica el 4 de diciembre de 2026 en Casermetta 9, mientras que la página oficial Casermette y el programa MUVE señalan el 3 de diciembre. No está confirmado que el día 3 sea la inauguración y el 4 el inicio de las visitas ordinarias. Comprueba la primera fecha de acceso público con MUVE antes de ir."
         ],
         [
           "Otra Venecia en tierra firme",
@@ -872,6 +882,8 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
       "tip": "文章图片仅用于展示穆拉诺玻璃背景，并非展览实物；请以博物馆官方照片及购票信息为准。"
     },
     "da-cosa-nasce-cosa-forte-marghera-2026": {
+      "cardDescription": "Casermetta 9 展期至2027年5月9日。MUVE 的 Casermette 页面标注12月3日，展览详情页标注12月4日；请核实首日对公众开放时间。",
+      "dateModified": "2026-11-24",
       "title": "Da cosa nasce cosa：Forte Marghera 的艺术创作展",
       "category": "Mestre 与 Marghera 文化",
       "eventDate": "2026年12月4日–2027年5月9日",
@@ -892,7 +904,7 @@ const localized:Record<EventLang,Record<Priority2Slug,Pick<EventArticle,'title'|
         ],
         [
           "参观提醒",
-          "MUVE 已确认举办日期和地点；开放时间、门票及入场方式仍请以官网最新公告为准。"
+          "MUVE 已确认举办地点和2027年5月9日闭幕日期，但官方资料对起始日的标注不一致；开放时间、门票及入场方式仍请以官网最新公告为准。 MUVE 展览详情页写明 Casermetta 9 从2026年12月4日开始展出，但官方 Casermette 页面与 MUVE 展览季计划均写为12月3日。尚无官方确认12月3日仅为开幕活动、12月4日才是常规开放日。请在出发前向 MUVE 核实首日公众入场安排。"
         ],
         [
           "走进威尼斯陆地区域",
