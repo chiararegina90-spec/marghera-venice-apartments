@@ -75,6 +75,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://museiveneto.cultura.gov.it/musei/museo-archeologico-nazionale-di-venezia",
     "mapsQuery": "Museo Archeologico Nazionale di Venezia, Venezia, Italia",
+    "lastVerified": "2026-11-24",
     "lastModified": "2026-11-24"
   },
   {
@@ -98,6 +99,7 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://bibliotecanazionalemarciana.cultura.gov.it/",
     "mapsQuery": "Sale Monumentali della Biblioteca Nazionale Marciana, Venezia, Italia",
+    "lastVerified": "2026-11-24",
     "lastModified": "2026-11-24"
   },
   {
