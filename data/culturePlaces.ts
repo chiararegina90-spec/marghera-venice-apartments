@@ -28,7 +28,8 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Palazzo Ducale, Venezia, Italia",
-    "lastVerified": "2026-11-16"
+    "lastVerified": "2026-11-28",
+    "lastModified": "2026-11-28"
   },
   {
     "slug": "museo-correr",
@@ -51,8 +52,8 @@ export const culturePlaces:CulturePlace[] = [
     "booking": "recommended",
     "officialUrl": "https://correr.visitmuve.it/informazioni-pratiche/",
     "mapsQuery": "Museo Correr, Venezia, Italia",
-    "lastVerified": "2026-11-24",
-    "lastModified": "2026-11-24"
+    "lastVerified": "2026-11-28",
+    "lastModified": "2026-11-28"
   },
   {
     "slug": "museo-archeologico-nazionale-venezia",

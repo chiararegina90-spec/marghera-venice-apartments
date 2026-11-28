@@ -163,28 +163,60 @@ export const cultureVisitorNotices:CultureVisitorNotice[]=[
   lastVerified:'2026-11-16'
  },
  {
+   "key": "correr-sala-iii-maintenance-2025",
+   "placeSlug": "museo-correr",
+   "kind": "restoration",
+   "start": "2025-10-29",
+   "title": {
+     "it": "Sala III della Collezione Canoviana chiusa per manutenzione",
+     "en": "Canova Collection Room III closed for maintenance",
+     "de": "Saal III der Canova-Sammlung wegen Wartung geschlossen",
+     "fr": "Salle III de la collection Canova fermée pour maintenance",
+     "es": "Sala III de la Colección Canoviana cerrada por mantenimiento",
+     "zh": "卡诺瓦藏品第三展厅因维护关闭"
+   },
+   "summary": {
+     "it": "Dal 29 ottobre 2025 la Sala III della Collezione Canoviana (Canova, l’Impero, la Gloria: verso il mondo e verso il mito) è chiusa al pubblico per lavori di manutenzione. MUVE non indica una data di riapertura. La limitazione è distinta dal disallestimento terminato il 27 novembre 2026 e non riguarda la chiusura totale del Museo Correr.",
+     "en": "Since 29 October 2025, Room III of the Canova Collection has been closed for maintenance. MUVE has not announced a reopening date. This is separate from the exhibition dismantling that ended on 27 November 2026 and does not mean the Correr Museum is closed in its entirety.",
+     "de": "Seit dem 29. Oktober 2025 ist Saal III der Canova-Sammlung wegen Wartungsarbeiten geschlossen. MUVE nennt keinen Wiedereröffnungstermin. Die Einschränkung besteht unabhängig vom am 27. November 2026 beendeten Ausstellungsabbau; das Museo Correr ist nicht insgesamt geschlossen.",
+     "fr": "Depuis le 29 octobre 2025, la salle III de la collection Canova est fermée pour maintenance. MUVE n’a pas annoncé de date de réouverture. Cette restriction est distincte du démontage des expositions achevé le 27 novembre 2026 et ne concerne pas la totalité du musée.",
+     "es": "Desde el 29 de octubre de 2025, la Sala III de la Colección Canoviana está cerrada por mantenimiento. MUVE no ha anunciado fecha de reapertura. Esta restricción es distinta del desmontaje de exposiciones finalizado el 27 de noviembre de 2026 y no implica el cierre total del Museo Correr.",
+     "zh": "自2025年10月29日起，科雷尔博物馆卡诺瓦藏品第三展厅因维修关闭，MUVE 尚未公布重新开放日期。这与2026年11月27日结束的展览拆除工作无关，不代表整座博物馆关闭。"
+   },
+   "period": {
+     "it": "Dal 29 ottobre 2025 · riapertura non comunicata",
+     "en": "Since 29 October 2025 · reopening date not announced",
+     "de": "Seit 29. Oktober 2025 · Wiedereröffnung offen",
+     "fr": "Depuis le 29 octobre 2025 · réouverture non annoncée",
+     "es": "Desde el 29 de octubre de 2025 · reapertura sin fecha",
+     "zh": "自2025年10月29日起 · 恢复开放日期待公布"
+   },
+   "officialUrl": "https://correr.visitmuve.it/informazioni-pratiche/",
+   "lastVerified": "2026-11-28"
+ },
+ {
   key:"palazzo-ducale-evening-holidays-2026-27",
   placeSlug:"palazzo-ducale",
   kind:"visitor-info",
   start:"2026-12-25",
   end:"2027-01-02",
-  title:{it:"Aperture serali straordinarie a Natale e Capodanno",en:"Special evening openings at Christmas and New Year",de:"Sonderöffnungen am Abend zu Weihnachten und Neujahr",fr:"Ouvertures nocturnes exceptionnelles à Noël et au Nouvel An",es:"Aperturas nocturnas especiales en Navidad y Año Nuevo",zh:"圣诞和新年特别晚间开放"},
-  summary:{it:"Palazzo Ducale sarà aperto fino alle 21:00 (ultimo ingresso alle 20:00) il 25 e 26 dicembre 2026 e il 1° e 2 gennaio 2027. Il 25 dicembre e il 1° gennaio l’apertura inizierà alle 10:00. Verifica eventuali variazioni MUVE.",en:"The Doge's Palace will remain open until 21:00 (last entry 20:00) on 25 and 26 December 2026 and 1 and 2 January 2027. On 25 December and 1 January, opening starts at 10:00. Check MUVE for changes.",de:"Der Dogenpalast ist am 25. und 26. Dezember 2026 sowie am 1. und 2. Januar 2027 bis 21:00 Uhr geöffnet (letzter Einlass 20:00 Uhr). Am 25. Dezember und 1. Januar beginnt die Öffnung um 10:00 Uhr. Mögliche Änderungen bei MUVE prüfen.",fr:"Le Palais des Doges ouvrira jusqu’à 21 h (dernière entrée à 20 h) les 25 et 26 décembre 2026 et les 1er et 2 janvier 2027. Les 25 décembre et 1er janvier, l’ouverture commencera à 10 h. Vérifiez les éventuelles modifications MUVE.",es:"El Palacio Ducal abrirá hasta las 21:00 (última entrada a las 20:00) el 25 y 26 de diciembre de 2026 y el 1 y 2 de enero de 2027. El 25 de diciembre y el 1 de enero abrirá a las 10:00. Comprueba posibles cambios en MUVE.",zh:"总督宫将于2026年12月25日和26日、2027年1月1日和2日延长开放至21:00（最后入场20:00）。12月25日及1月1日于10:00开门。请以 MUVE 最新公告为准。"},
-  period:{it:"25–26 dicembre; 1–2 gennaio",en:"25–26 December; 1–2 January",de:"25.–26. Dezember; 1.–2. Januar",fr:"25–26 décembre ; 1er–2 janvier",es:"25–26 de diciembre; 1–2 de enero",zh:"12月25–26日；1月1–2日"},
+  title:{"it":"Aperture straordinarie durante le festività 2026/27","en":"Special opening arrangements for the 2026/27 holidays","de":"Sonderöffnungen während der Feiertage 2026/27","fr":"Horaires exceptionnels pendant les fêtes 2026/27","es":"Horarios especiales durante las fiestas 2026/27","zh":"2026/27年节假日特别开放安排"},
+  summary:{"it":"Palazzo Ducale resterà aperto fino alle 21:00, con ultimo ingresso alle 20:00, sabato 26 dicembre 2026 e sabato 2 gennaio 2027. Venerdì 25 dicembre 2026 e venerdì 1° gennaio 2027 l’apertura del museo è prevista alle 10:00; per queste due giornate non sono annunciate aperture fino alle 21:00. Consulta il sito ufficiale MUVE per eventuali ulteriori variazioni.","en":"The Doge’s Palace will remain open until 21:00, with last admission at 20:00, on Saturday 26 December 2026 and Saturday 2 January 2027. On Friday 25 December 2026 and Friday 1 January 2027, the museum opens at 10:00; extended opening until 21:00 has not been announced for these two dates. Check MUVE for changes.","de":"Der Dogenpalast ist am Samstag, 26. Dezember 2026, und am Samstag, 2. Januar 2027, bis 21:00 Uhr geöffnet (letzter Einlass 20:00 Uhr). Am Freitag, 25. Dezember 2026, und am Freitag, 1. Januar 2027, beginnt die Öffnung um 10:00 Uhr; eine Verlängerung bis 21:00 Uhr ist für diese beiden Tage nicht angekündigt. Aktuelle Angaben bei MUVE prüfen.","fr":"Le Palais des Doges restera ouvert jusqu’à 21 h (dernière entrée à 20 h) le samedi 26 décembre 2026 et le samedi 2 janvier 2027. Les vendredis 25 décembre 2026 et 1er janvier 2027, le musée ouvrira à 10 h ; aucune prolongation jusqu’à 21 h n’est annoncée ces deux jours. Consultez MUVE pour toute modification.","es":"El Palacio Ducal permanecerá abierto hasta las 21:00, con última entrada a las 20:00, el sábado 26 de diciembre de 2026 y el sábado 2 de enero de 2027. El viernes 25 de diciembre de 2026 y el viernes 1 de enero de 2027 abrirá a las 10:00; no se han anunciado aperturas hasta las 21:00 para esos dos días. Consulta MUVE para posibles cambios.","zh":"总督宫将于2026年12月26日（周六）及2027年1月2日（周六）延长开放至21:00，最后入场时间为20:00。2026年12月25日（周五）及2027年1月1日（周五）均于10:00开放，MUVE 未宣布这两天延长开放至21:00。出行前请查看 MUVE 官网的最新安排。"},
+  period:{"it":"25 dicembre e 1° gennaio: apertura 10:00 · 26 dicembre e 2 gennaio: fino alle 21:00","en":"25 Dec and 1 Jan: opens 10:00 · 26 Dec and 2 Jan: until 21:00","de":"25. Dez. und 1. Jan.: ab 10:00 Uhr · 26. Dez. und 2. Jan.: bis 21:00 Uhr","fr":"25 déc. et 1er janv. : ouverture à 10 h · 26 déc. et 2 janv. : jusqu’à 21 h","es":"25 dic. y 1 ene.: apertura 10:00 · 26 dic. y 2 ene.: hasta 21:00","zh":"12月25日及1月1日：10:00开门 · 12月26日及1月2日：延长至21:00"},
   officialUrl:"https://palazzoducale.visitmuve.it/informazioni-pratiche/",
-  lastVerified:'2026-11-16'
+  lastVerified:'2026-11-28'
  },
  {
   key:"museo-correr-evening-holidays-2026-27",
   placeSlug:"museo-correr",
   kind:"visitor-info",
-  start:"2026-12-25",
+  start:"2026-12-26",
   end:"2027-01-02",
-  title:{it:"Aperture serali straordinarie a Natale e Capodanno",en:"Special evening openings at Christmas and New Year",de:"Sonderöffnungen am Abend zu Weihnachten und Neujahr",fr:"Ouvertures nocturnes exceptionnelles à Noël et au Nouvel An",es:"Aperturas nocturnas especiales en Navidad y Año Nuevo",zh:"圣诞和新年特别晚间开放"},
-  summary:{it:"Il Museo Correr sarà aperto fino alle 21:00 (ultimo ingresso alle 20:00) il 25 e 26 dicembre 2026 e il 1° e 2 gennaio 2027. Il Museo Archeologico Nazionale e la Biblioteca Marciana non partecipano alle serate straordinarie e saranno chiusi il 25 dicembre e il 1° gennaio.",en:"The Correr Museum will stay open until 21:00 (last admission 20:00) on 25 and 26 December 2026 and 1 and 2 January 2027. The National Archaeological Museum and the Marciana Library do not join these evening openings and will be closed on 25 December and 1 January.",de:"Das Museo Correr öffnet am 25. und 26. Dezember 2026 sowie am 1. und 2. Januar 2027 bis 21:00 Uhr (letzter Einlass 20:00 Uhr). Das Archäologische Nationalmuseum und die Biblioteca Marciana nehmen nicht teil und bleiben am 25. Dezember und 1. Januar geschlossen.",fr:"Le Musée Correr ouvrira jusqu’à 21 h (dernière entrée à 20 h) les 25 et 26 décembre 2026 et les 1er et 2 janvier 2027. Le Musée archéologique national et la Bibliothèque Marciana ne participent pas aux soirées et seront fermés les 25 décembre et 1er janvier.",es:"El Museo Correr abrirá hasta las 21:00 (última entrada a las 20:00) el 25 y 26 de diciembre de 2026 y el 1 y 2 de enero de 2027. El Museo Arqueológico Nacional y la Biblioteca Marciana no participan en estas aperturas y permanecerán cerrados el 25 de diciembre y el 1 de enero.",zh:"科雷尔博物馆将于2026年12月25日和26日、2027年1月1日和2日延长开放至21:00（最后入场20:00）。国家考古博物馆和马尔恰纳图书馆不参加夜间延长开放，并于12月25日和1月1日闭馆。"},
-  period:{it:"25–26 dicembre; 1–2 gennaio",en:"25–26 December; 1–2 January",de:"25.–26. Dezember; 1.–2. Januar",fr:"25–26 décembre ; 1er–2 janvier",es:"25–26 de diciembre; 1–2 de enero",zh:"12月25–26日；1月1–2日"},
+  title:{"it":"Aperture serali straordinarie","en":"Special evening openings","de":"Außerordentliche Abendöffnungen","fr":"Ouvertures nocturnes exceptionnelles","es":"Aperturas nocturnas extraordinarias","zh":"特别晚间延长开放"},
+  summary:{"it":"Il Museo Correr resterà aperto fino alle 21:00, con ultimo ingresso alle 20:00, sabato 26 dicembre 2026 e sabato 2 gennaio 2027. Il Museo Archeologico Nazionale di Venezia e la Biblioteca Nazionale Marciana non partecipano alle aperture serali e resteranno chiusi il 25 dicembre 2026 e il 1° gennaio 2027.","en":"The Correr Museum will remain open until 21:00, with last admission at 20:00, on Saturday 26 December 2026 and Saturday 2 January 2027. The National Archaeological Museum of Venice and the Marciana National Library do not take part in the evening openings and will be closed on 25 December 2026 and 1 January 2027.","de":"Das Museo Correr bleibt am Samstag, 26. Dezember 2026, und am Samstag, 2. Januar 2027, bis 21:00 Uhr geöffnet (letzter Einlass 20:00 Uhr). Das Archäologische Nationalmuseum Venedig und die Biblioteca Nazionale Marciana nehmen an diesen Abendöffnungen nicht teil und bleiben am 25. Dezember 2026 und am 1. Januar 2027 geschlossen.","fr":"Le Museo Correr restera ouvert jusqu’à 21 h (dernière entrée à 20 h) le samedi 26 décembre 2026 et le samedi 2 janvier 2027. Le Musée archéologique national de Venise et la Bibliothèque nationale Marciana ne participent pas aux ouvertures nocturnes et resteront fermés les 25 décembre 2026 et 1er janvier 2027.","es":"El Museo Correr permanecerá abierto hasta las 21:00, con última entrada a las 20:00, el sábado 26 de diciembre de 2026 y el sábado 2 de enero de 2027. El Museo Arqueológico Nacional de Venecia y la Biblioteca Nacional Marciana no participan en estas aperturas y permanecerán cerrados el 25 de diciembre de 2026 y el 1 de enero de 2027.","zh":"科雷尔博物馆将于2026年12月26日（周六）及2027年1月2日（周六）延长开放至21:00，最后入场20:00。威尼斯国家考古博物馆和马尔恰纳国家图书馆不参加晚间延长开放，并于2026年12月25日及2027年1月1日闭馆。"},
+  period:{"it":"26 dicembre 2026; 2 gennaio 2027","en":"26 December 2026; 2 January 2027","de":"26. Dezember 2026; 2. Januar 2027","fr":"26 décembre 2026 ; 2 janvier 2027","es":"26 de diciembre de 2026; 2 de enero de 2027","zh":"2026年12月26日；2027年1月2日"},
   officialUrl:"https://correr.visitmuve.it/informazioni-pratiche/",
-  lastVerified:'2026-11-16'
+  lastVerified:'2026-11-28'
  },
  {
   key:'villa-pisani-park-restoration-2025',
